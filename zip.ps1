@@ -1,3 +1,3 @@
-$version=Get-Content -Path $env:GITHUB_ENV
-New-Item "./build"
-Compress-Archive -Path ".." -DestinationPath "./build/MiniGames v$version.zip"
+$version="2.27.3"
+New-Item "../build" -ItemType Directory
+Compress-Archive -Path ".." -DestinationPath "../build/MiniGames v$version.zip"
