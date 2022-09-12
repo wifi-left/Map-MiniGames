@@ -1,0 +1,2 @@
+function selfcheck/check
+function spigottestafter

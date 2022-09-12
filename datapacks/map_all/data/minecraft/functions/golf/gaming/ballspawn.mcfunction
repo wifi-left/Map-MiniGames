@@ -1,0 +1,1 @@
+execute as @e[type=marker,tag=golf.start] at @s run function golf/spawnball

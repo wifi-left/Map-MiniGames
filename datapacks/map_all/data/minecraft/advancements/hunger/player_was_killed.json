@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "player_died": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "player": {
+                    "team": "hunger"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "player_died"
+        ]
+    ],
+    "rewards": {
+        "function": "hunger/lootitem"
+    }
+}

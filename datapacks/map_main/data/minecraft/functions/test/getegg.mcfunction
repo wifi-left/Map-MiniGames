@@ -1,0 +1,1 @@
+give @s minecraft:sheep_spawn_egg{EntityTag:{id:"minecraft:marker",Tags:["getnbt"]},display:{Name:'"\\u00a7aGet Block NBT"'}} 1

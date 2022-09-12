@@ -1,0 +1,1 @@
+summon minecraft:villager ~ ~ ~ {Invulnerable:1b,Health:100f,Attributes:[{Base:100d,Name:"generic.max_health"}],VillagerData:{profession:"minecraft:armorer",type:"minecraft:desert"},NoAI:1b,Tags:["pve.zombie"]}

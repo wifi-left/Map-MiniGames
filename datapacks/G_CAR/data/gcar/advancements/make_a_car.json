@@ -1,0 +1,19 @@
+{
+    "parent": "gcar:root",
+    "criteria": {
+        "make_a_car": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "gcar:gcar"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "make_a_car"
+        ]
+    ],
+    "rewards": {
+        "function": "gcar:make_a_car"
+    }
+}

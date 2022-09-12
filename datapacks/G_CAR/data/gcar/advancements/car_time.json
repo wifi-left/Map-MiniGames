@@ -1,0 +1,1 @@
+{"display":{"title":[{"text":"汽车时代","color":"green"}],"description":[{"text":"制作您的第一辆汽车！","color":"white"}],"icon":{"item":"minecart"},"frame":"task","show_toast":true,"announce_to_chat":true,"hidden":true},"parent":"gcar:root","criteria":{"make_a_car":{"trigger":"minecraft:impossible","conditions":{}}},"requirements":[["make_a_car"]],"rewards":{}}

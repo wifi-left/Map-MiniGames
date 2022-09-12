@@ -1,0 +1,1 @@
+execute as @a[scores={zombie.hurt=1..},team=play.zombie] run function zombieever/damagetocoin

@@ -1,0 +1,2 @@
+execute as @e[tag=dmshop] at @s run data modify block ~ ~ ~ Items set from storage minecraft:dmshop Item
+execute as @e[tag=shop] at @s run data modify block ~ ~ ~ Items set from storage minecraft:shop Item

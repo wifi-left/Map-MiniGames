@@ -1,0 +1,2 @@
+clear @a[tag=chess.black]
+give @a[tag=chess.black,team=chestgame] minecraft:bat_spawn_egg{EntityTag:{id:"minecraft:marker",Tags:["chess.put.black"]},CanPlaceOn:['glass'],hideFlags:63,display:{Name:'"\\u00a7a放置棋"'}} 1
