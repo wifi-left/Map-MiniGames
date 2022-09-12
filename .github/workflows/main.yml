@@ -24,14 +24,9 @@ jobs:
       - name: Get Release Version
         shell: powershell
         run: ./version.ps1
-      - name: Archive Release
-        uses: thedoctor0/zip-release@main
-        with:
-          type: 'zip'
-          filename: 'MiniGames v${{ env.version }}.zip'
-          directory: ..
-          path: ..
-          exclusions: '*.git* /*node_modules/* .editorconfig'
+      - name: Archive the Map
+        shell: powershell
+        run: ./zip.ps1
 
       # Runs a single command using the runners shell
 
@@ -46,4 +41,4 @@ jobs:
           title: "MiniGames - v${{ env.version }}"
           prerelease: false
           files: |
-            ../MiniGames v${{ env.version }}.zip
+            ./build/*.zip
