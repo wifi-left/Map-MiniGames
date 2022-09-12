@@ -41,4 +41,4 @@ jobs:
           title: "MiniGames - v${{ env.version }}"
           prerelease: false
           files: |
-            ./build/*.zip
+            ../build/*.zip
