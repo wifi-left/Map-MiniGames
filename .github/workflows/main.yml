@@ -24,8 +24,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Get Release Version
-        shell: cmd
-        run: ./version.bat
+        shell: powershell
+        run: ./version.ps1
       - name: Get file tree
         shell: cmd
         run: dir ..
