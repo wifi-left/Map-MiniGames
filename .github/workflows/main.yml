@@ -35,6 +35,15 @@ jobs:
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "latest"
+          title: "Newest Version: v${{ env.version }}"
+          prerelease: false
+          files: |
+            ../build/*.zip
+      - name: Create GitHub release
+        uses: marvinpinto/action-automatic-releases@latest
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "${{ env.versionD }}"
           title: "MiniGames - v${{ env.version }}"
           prerelease: false
           files: |
