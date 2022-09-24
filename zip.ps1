@@ -1,6 +1,6 @@
-$version=Get-Date -Format 'yyyy.M.d (h:m:s)'
-$versionZ=Get-Date -Format 'yyyy.M.d'
-$versionD=Get-Date -Format 'yyyy.M.d.h.m.s'
+$version=Get-Date -Format 'yyyy.MM.dd (hh:mm:ss)'
+$versionZ=Get-Date -Format 'yyyy.MM.dd'
+$versionD=Get-Date -Format 'yyyy.MM.dd.hh.mm.ss'
 Add-Content -Path $env:GITHUB_ENV -Value "version=${version}"
 Add-Content -Path $env:GITHUB_ENV -Value "versionDetail=${versionD}"
 
