@@ -30,21 +30,21 @@ jobs:
       - name: Get file tree
         shell: cmd
         run: dir ..
-      - name: Create GitHub Changelog
-        uses: marvinpinto/action-automatic-releases@latest
-        with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest"
-          title: "Newest Version: v${{ env.version }}"
-          prerelease: false
-          files: |
-            ../build/*.zip
       - name: Create GitHub release
         uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "${{ env.versionDetail }}"
           title: "MiniGames - v${{ env.version }}"
+          prerelease: false
+          files: |
+            ../build/*.zip
+      - name: Create GitHub Changelog
+        uses: marvinpinto/action-automatic-releases@latest
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          title: "Newest Version: v${{ env.version }}"
           prerelease: false
           files: |
             ../build/*.zip
