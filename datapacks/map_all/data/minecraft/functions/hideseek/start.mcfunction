@@ -13,3 +13,5 @@ function hideseek/starting/ranteam
 tellraw @a[team=hide.play.ani] ["\n\u00a7c   猎人将在30秒后出动。\n"]
 tellraw @a[team=hide.play.hun] ["\n\u00a7c   你将在30秒后出动。\n"]
 scoreboard players set hide.state state 2
+gamemode spectator @a[tag=GOABLE.SPEC]
+team join hide.wait @a[tag=GOABLE.SPEC]

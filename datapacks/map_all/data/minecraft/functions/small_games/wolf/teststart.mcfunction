@@ -7,3 +7,4 @@ execute if score wolf.state state matches 1.. run function minecraft:small_games
 execute unless score wolf.state state matches 1.. if score wait.player tick matches ..2 run tellraw @s ["\u00a7c人数不够！请等待至少3人！"]
 execute unless score wolf.state state matches 1.. if score wait.player tick matches ..2 run playsound entity.enderman.teleport player @s ~ ~ ~ 1 0 1
 execute unless score wolf.state state matches 1.. if score wait.player tick matches 3.. run function minecraft:small_games/wolf/start
+execute unless score wolf.state state matches 1.. if score wait.player tick matches 13.. run tellraw @s ["\u00a7c人数过多！这可能会导致不好的游戏体验！\n\u00a7b建议游戏人数为：\u00a7e 5~12 人"]

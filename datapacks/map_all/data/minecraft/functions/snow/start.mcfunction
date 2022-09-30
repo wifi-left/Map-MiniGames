@@ -14,4 +14,5 @@ execute unless score snow.tntrun state matches 1..1 run tellraw @a[team=play.sno
 execute if score snow.tntrun state matches 0 run title @a[team=play.snow] title ["\u00a7a\u00a7lTNTRUN"]
 execute unless score snow.tntrun state matches 1..1 run title @a[team=play.snow] title ["\u00a7e\u00a7l掘一死战"]
 execute unless score snow.tntrun state matches 2.. run title @a[team=play.snow] title ["\u00a7b\u00a7l混合模式"]
+
 function fix:snow/start

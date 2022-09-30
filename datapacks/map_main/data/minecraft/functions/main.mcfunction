@@ -4,6 +4,7 @@ tp @a[tag=NEWENTER] 188 124 26 0 0
 title @a[tag=NEWENTER] title ["\u00a7a\u00a7lMini\u00a7e\u00a7lGames"]
 title @a[tag=NEWENTER] subtitle ["\u00a76You're in \u00a7dMain Lobby"]
 title @a[tag=NEWENTER] actionbar ["\u00a7aWelcome to the map!"]
+tellraw @a[tag=NEWENTER] ["\n\u00a7a  您可以随时使用 \u00a76/trigger hub \u00a7a返回大厅。\n"]
 tag @a[tag=NEWENTER] remove sur.killedbyzom
 gamemode adventure @a[tag=NEWENTER]
 team join lobby @a[tag=NEWENTER]
@@ -11,11 +12,23 @@ execute as @a[tag=NEWENTER] at @s run attribute @s minecraft:generic.attack_spee
 execute as @a[tag=NEWENTER] run bossbar set surgame:time players @a[team=wait.sur]
 clear @a[tag=NEWENTER]
 execute as @a[tag=NEWENTER] unless score @s park.uuid matches 0.. run function minecraft:npark/getuuid
+tellraw @a[tag=NEWENTER,tag=GOABLE.SPEC] ["\n\u00a77  你已开启\u00a7b全局旁观者模式\u00a77。\n  \u00a77",{"text":"\u00a7a\u00a7l点击此处，或者使用 \u00a76\u00a7l/trigger spec set 3 \u00a7a\u00a7l退出全局旁观者模式","bold":true,"clickEvent": {"action": "run_command","value": "/trigger spec set 3"},"hoverEvent": {"action": "show_text","contents": "\u00a7c点击此处退出全局旁观者模式"}},"\n"]
 tag @a[tag=NEWENTER] remove zombie.nehelp
 tag @a[tag=NEWENTER] remove parkouring
 tag @a[tag=NEWENTER] remove mazing
 tag @a[tag=NEWENTER] remove play.total
 tag @a[tag=NEWENTER] remove NEWENTER
+
+execute as @a[scores={spec=1}] run function lobby/specintroduce
+execute as @a[scores={spec=2}] run tag @s add SPEC.JOIN
+execute as @a[scores={spec=3..}] run tag @s add SPEC.REMOVE
+scoreboard players reset @a[scores={spec=1..}] spec
+tag @a[tag=SPEC.JOIN] add GOABLE.SPEC
+tellraw @a[tag=SPEC.JOIN] ["\n\u00a77  你已开启\u00a7b全局旁观者模式\u00a77。\n  \u00a77由于你进入游戏后会变为旁观模式，请使用 \u00a76/trigger hub\u00a77 返回大厅。\n  ",{"text":"\u00a7a\u00a7l点击此处，或者使用 \u00a76\u00a7l/trigger spec set 3 \u00a7a\u00a7l退出全局旁观者模式","bold":true,"clickEvent": {"action": "run_command","value": "/trigger spec set 3"},"hoverEvent": {"action": "show_text","contents": "\u00a7c点击此处退出全局旁观者模式"}},"\n"]
+tag @a[tag=SPEC.JOIN] remove SPEC.JOIN
+tellraw @a[tag=SPEC.REMOVE] ["\n\u00a7c  你已关闭\u00a7b全局旁观者模式\u00a77。\n"]
+tag @a[tag=SPEC.REMOVE] remove GOABLE.SPEC
+tag @a[tag=SPEC.REMOVE] remove SPEC.REMOVE
 
 effect give @a[team=hide.wait] resistance 1 25 true
 execute if score hide.state state matches 1.. run function hideseek/tick
@@ -102,12 +115,17 @@ scoreboard players reset @a[tag=sneaking] zombie.sneak
 
 tp @a[tag=join.snow] -22 31 -74 -90 0
 execute as @a[tag=join.snow] run tellraw @a ["\u00a7a[MESSAGE] ",{"selector":"@s"},"\u00a77 Joined \u00a7fSnow \u00a77."]
+tellraw @a[tag=GOABLE.SPEC,tag=join.snow] ["\n\u00a77  你已开启\u00a7b全局旁观者模式\u00a77。\n  \u00a77由于你进入游戏后会变为旁观模式，请使用 \u00a76/trigger hub\u00a77 返回大厅。\n  ",{"text":"\u00a7a\u00a7l点击此处，或者使用 \u00a76\u00a7l/trigger spec set 3 \u00a7a\u00a7l退出全局旁观者模式","bold":true,"clickEvent": {"action": "run_command","value": "/trigger spec set 3"},"hoverEvent": {"action": "show_text","contents": "\u00a7c点击此处退出全局旁观者模式"}},"\n"]
+execute as @a[tag=GOABLE.SPEC,tag=join.snow] at @s run gamemode spectator
 team join wait.snow @a[tag=join.snow]
 tag @a[tag=join.snow] remove join.snow
 effect give @a[team=wait.total] resistance 2 25 true
 execute as @a[tag=join.livelongest] run tp @s 25 7 0 0 0
 execute as @a[tag=join.livelongest] run team leave @s
 execute as @a[tag=join.livelongest] run tellraw @a ["\u00a7a\u00a7l[MESSAGE] \u00a7a",{"selector":"@s","color":"gray"},"\u00a7e joined \u00a76Live Longest \u00a7e."]
+
+tellraw @a[tag=GOABLE.SPEC,tag=join.livelongest] ["\n\u00a77  你已开启\u00a7b全局旁观者模式\u00a77。\n  \u00a77由于你进入游戏后会变为旁观模式，请使用 \u00a76/trigger hub\u00a77 返回大厅。\n  ",{"text":"\u00a7a\u00a7l点击此处，或者使用 \u00a76\u00a7l/trigger spec set 3 \u00a7a\u00a7l退出全局旁观者模式","bold":true,"clickEvent": {"action": "run_command","value": "/trigger spec set 3"},"hoverEvent": {"action": "show_text","contents": "\u00a7c点击此处退出全局旁观者模式"}},"\n"]
+execute as @a[tag=GOABLE.SPEC,tag=join.livelongest] at @s run gamemode spectator
 execute as @a[tag=join.livelongest] run team join wait.live @s
 execute as @a[tag=join.livelongest] run tag @s remove join.livelongest
 
