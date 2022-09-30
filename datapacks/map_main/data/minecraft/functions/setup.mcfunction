@@ -7,6 +7,8 @@ scoreboard objectives remove cooldowntime
 scoreboard objectives add cooldowntime dummy ["冷却时间"]
 scoreboard objectives remove zombie.hurt
 scoreboard objectives add zombie.hurt minecraft.custom:damage_dealt "Zombie Damage"
+scoreboard objectives remove spec
+scoreboard objectives add spec trigger ["\u00a77全局旁观者操作"]
 
 scoreboard players set -10 board -10
 scoreboard players set -9 board -9
