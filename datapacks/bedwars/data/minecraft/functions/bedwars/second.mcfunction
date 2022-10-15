@@ -30,3 +30,6 @@ recipe take @a[tag=bw.player] *
 function bedwars/shop/resetshop
 
 #execute as @a[tag=bw.play] run attribute @s minecraft:generic.attack_speed base set 10
+
+## Events
+execute if score bw.state state matches 1..3 run function bedwars/events/eventsecond

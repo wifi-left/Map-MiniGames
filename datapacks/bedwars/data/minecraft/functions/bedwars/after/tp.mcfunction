@@ -10,3 +10,8 @@ scoreboard players set §eAuthor§b:§awifi_left bw.info 3
 scoreboard players set §r游戏需要至少2人 bw.info 4
 scoreboard players set §d bw.info 2
 scoreboard players set §eBedwars@MiniGame bw.info 1
+
+bossbar set minigames:bedwars value 1
+bossbar set minigames:bedwars max 1
+bossbar set minigames:bedwars players
+bossbar set minigames:bedwars visible false

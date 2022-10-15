@@ -102,3 +102,22 @@ execute if score bw.mode state matches 5 run setblock -303 31 276 air
 execute if score bw.mode state matches 5 run setblock -303 31 277 air
 
 scoreboard players set bw.state state 1
+
+scoreboard players set bw.event state 0
+scoreboard players set bw.event.countdown board 720
+# bw.event
+# 0: Diamond Up 
+# 1: Emerlad Up
+# 2: Bed Gone
+# 3: Dragon
+bossbar set minigames:bedwars max 720
+# execute store result bossbar minigames:bedwars value run scoreboard players get bw.reset board
+bossbar set minigames:bedwars name ["\u00a7f\u00a7lBEDWARS 起床战争 \u00a77| \u00a7b钻石\u00a7e速度升级: ",{"score":{"name": "bw.event.countdown","objective": "board"},"color":"light_purple"},"\u00a7es"]
+
+execute store result score bw.event.time tick run bossbar get minigames:bedwars max
+scoreboard players operation bw.event.time tick -= bw.event.countdown board
+execute store result bossbar minigames:bedwars value run scoreboard players get bw.event.time tick
+
+
+scoreboard players set bw.set.em board 72
+scoreboard players set bw.set.dm board 48

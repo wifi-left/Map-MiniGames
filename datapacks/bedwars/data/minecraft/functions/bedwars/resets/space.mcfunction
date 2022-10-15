@@ -83,3 +83,6 @@ execute if score bw.reset board matches ..74 run schedule function bedwars/reset
 execute if score bw.reset board matches 75.. run function bedwars/resets/resetover
 
 scoreboard players add bw.reset board 1
+
+bossbar set minigames:bedwars max 75
+execute store result bossbar minigames:bedwars value run scoreboard players get bw.reset board

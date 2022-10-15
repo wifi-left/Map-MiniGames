@@ -1,4 +1,6 @@
 scoreboard objectives modify bw.info displayname ["\u00a7e\u00a7l起床战争"]
+
+bossbar add minigames:bedwars "起床战争"
 # scoreboard players reset * bw.info
 # scoreboard players set §707/28/21§8　§8m001A bw.info 14
 # scoreboard players set §a bw.info 13

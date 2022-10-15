@@ -34,6 +34,10 @@ gamemode adventure @a[tag=NEWENTER1]
 execute as @a[tag=NEWENTER1] at @s run attribute @s minecraft:generic.max_health base set 20
 team join lobby @a[tag=NEWENTER1]
 clear @a[tag=NEWENTER1]
+tag @a[tag=NEWENTER1] remove sur.killedbyzom
+tag @a[tag=NEWENTER1] remove bw.play
+tag @a[tag=NEWENTER1] remove bw.player
+tag @a[tag=NEWENTER1] remove boat.notinboat
 tag @a[tag=NEWENTER1] remove play.total
 tag @a[tag=NEWENTER1] remove NEWENTER1
 
