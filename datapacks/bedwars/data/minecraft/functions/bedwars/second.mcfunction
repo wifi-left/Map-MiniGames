@@ -13,7 +13,7 @@ effect give @a[tag=bw.fasti] haste 2 0 true
 effect give @a[tag=bw.fastii] haste 2 1 true
 effect give @a[tag=bw.armor] resistance 2 0 true
 effect give @a[tag=bw.speed] speed 2 0 true
-execute as @a[tag=bw.player] at @s run attribute @s minecraft:generic.attack_speed base set 8
+# execute as @a[tag=bw.player] at @s run attribute @s minecraft:generic.attack_speed base set 8
 ## Death
 scoreboard players remove @a[tag=bw.fhing] board 1
 execute as @a[tag=bw.fhing] if score @s board matches ..0 run function minecraft:bedwars/during/player/teleport
