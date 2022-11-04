@@ -1,5 +1,6 @@
 # execute run tellraw @a ["\u00a7b [SYS] 地图自检信息："]
 say §b [SYS] 地图自检信息：
+function version/version1
 playsound entity.experience_orb.pickup player @s ~ ~ ~ 2 1 1
 scoreboard players set syserror board 0
 setblock 31 17 -10 air
