@@ -29,10 +29,7 @@ gamemode adventure @a[team=bw.blue]
 gamemode adventure @a[team=bw.green]
 gamemode adventure @a[team=bw.red]
 # execute as @a run function minecraft:bedwars/before/teleport
-tp @a[team=bw.yellow] -383 30 210 -90 0
-tp @a[team=bw.blue] -303 30 288 -180 0
-tp @a[team=bw.green] -225 30 208 90 0
-tp @a[team=bw.red] -305 30 130 0 0
+execute as @a[tag=bw.play] run function bedwars/during/player/onlytpspawn
 
 scoreboard players set bd.blue state 1
 scoreboard players set bd.green state 1
@@ -121,3 +118,5 @@ execute store result bossbar minigames:bedwars value run scoreboard players get 
 
 scoreboard players set bw.set.em board 72
 scoreboard players set bw.set.dm board 48
+
+kill @e[type=item]
