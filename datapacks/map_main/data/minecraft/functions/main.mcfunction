@@ -11,6 +11,9 @@ tag @a[tag=NEWENTER] remove bw.player
 tag @a[tag=NEWENTER] remove boat.notinboat
 gamemode adventure @a[tag=NEWENTER]
 team join lobby @a[tag=NEWENTER]
+
+execute if entity @a[team=dropper] in dropperworld run function dropper/tick
+
 execute as @a[tag=NEWENTER] at @s run attribute @s minecraft:generic.attack_speed base set 4
 execute as @a[tag=NEWENTER] run bossbar set surgame:time players @a[team=wait.sur]
 clear @a[tag=NEWENTER]

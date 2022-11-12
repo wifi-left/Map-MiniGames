@@ -16,6 +16,8 @@ execute if score zombie.debug state matches 1 run function zombieever/test/displ
 bossbar set zombie:zombiecount players
 bossbar set zombie:zombiecount players @a[team=play.zombie]
 
+execute if entity @a[team=dropper] in dropperworld run function dropper/second
+
 execute if score wolf.state state matches 1..1 run function minecraft:small_games/wolf/second
 
 scoreboard players set play.park.player tick 0 

@@ -1,8 +1,8 @@
 ## Effects
-execute if score speed lobby.effect matches 1..1 run effect give @a[team=lobby,tag=!parkouring,tag=!mazing] speed 1 0 true
-execute if score speed lobby.effect matches 2..2 run effect give @a[team=lobby,tag=!parkouring,tag=!mazing] speed 1 1 true
-execute if score jump lobby.effect matches 1..1 run effect give @a[team=lobby,tag=!parkouring,tag=!mazing] jump_boost 1 1 true
-execute if score jump lobby.effect matches 2..2 run effect give @a[team=lobby,tag=!parkouring,tag=!mazing] jump_boost 1 3 true
+execute if score speed lobby.effect matches 1 run effect give @a[team=lobby,tag=!parkouring,tag=!mazing] speed 1 0 true
+execute if score speed lobby.effect matches 2 run effect give @a[team=lobby,tag=!parkouring,tag=!mazing] speed 1 1 true
+execute if score jump lobby.effect matches 1 run effect give @a[team=lobby,tag=!parkouring,tag=!mazing] jump_boost 1 1 true
+execute if score jump lobby.effect matches 2 run effect give @a[team=lobby,tag=!parkouring,tag=!mazing] jump_boost 1 3 true
 execute run effect give @a[team=lobby,tag=mazing] speed 1 0 true
 
 
@@ -37,8 +37,9 @@ clear @a[tag=NEWENTER1]
 tag @a[tag=NEWENTER1] remove sur.killedbyzom
 tag @a[tag=NEWENTER1] remove bw.play
 tag @a[tag=NEWENTER1] remove bw.player
-tag @a[tag=NEWENTER1] remove boat.notinboat
+tag @a[tag=NEWENTER1] remove boat.notinboats
 tag @a[tag=NEWENTER1] remove play.total
+execute as @a[tag=NEWENTER1] run function lobby/oneword
 tag @a[tag=NEWENTER1] remove NEWENTER1
 
 ## Repeling War

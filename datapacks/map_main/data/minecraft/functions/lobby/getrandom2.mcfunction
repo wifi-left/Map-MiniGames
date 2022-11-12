@@ -1,0 +1,1 @@
+scoreboard players operation random board = @e[limit=1,tag=random_saying,sort=random,scores={board=1..9}] board
