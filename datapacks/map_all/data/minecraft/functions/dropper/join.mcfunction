@@ -6,3 +6,4 @@ tellraw @s ["\n   \u00a7d ★ \u00a7b星跳水立方\n\n\u00a7a    想办法从�
 tellraw @a ["\u00a7b[Game] ",{"selector":"@s"},"\u00a7d 加入了\u00a7a星跳水立方\u00a7d游戏。"]
 scoreboard players set @s dropper.level 0
 team join dropper
+clear @s
