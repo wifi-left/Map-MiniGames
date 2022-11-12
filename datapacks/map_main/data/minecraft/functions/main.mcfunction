@@ -5,6 +5,8 @@ title @a[tag=NEWENTER] title ["\u00a7a\u00a7lMini\u00a7e\u00a7lGames"]
 title @a[tag=NEWENTER] subtitle ["\u00a76You're in \u00a7dMain Lobby"]
 title @a[tag=NEWENTER] actionbar ["\u00a7aWelcome to the map!"]
 tellraw @a[tag=NEWENTER] ["\n\u00a7a  您可以随时使用 \u00a76/trigger hub \u00a7a返回大厅。\n"]
+execute as @a[tag=NEWENTER] run attribute @s generic.max_health base set 20
+
 tag @a[tag=NEWENTER] remove sur.killedbyzom
 tag @a[tag=NEWENTER] remove bw.play
 tag @a[tag=NEWENTER] remove bw.player
