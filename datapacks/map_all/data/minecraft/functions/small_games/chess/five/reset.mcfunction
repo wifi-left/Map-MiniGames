@@ -6,5 +6,5 @@ forceload remove 82 47 66 63
 # fill -46 113 -343 -77 113 -312 orange_wool
 kill @e[tag=chess.put.black]
 kill @e[tag=chess.put.white]
-scoreboard players set blackcount board 0
-scoreboard players set whitecount board 0
+scoreboard players set blackcount board 1
+scoreboard players set whitecount board 1

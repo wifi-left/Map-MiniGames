@@ -8,7 +8,6 @@ tag @a remove chess.black
 tag @a remove chest.white
 tag @a remove chest.black
 execute as @a[tag=chess.ranteam] run function small_games/chess/five/random_team
-
 tp @a[team=chestgame,gamemode=adventure] 74 121 55 0 0
 tp @a[team=chestgame,gamemode=adventure,tag=chess.black] 85 121 55 90 0
 tp @a[team=chestgame,gamemode=adventure,tag=chess.white] 63 121 55 -90 0
