@@ -9,6 +9,7 @@ execute if score snow.state state matches 1..1 if score snow.tntrun state matche
 
 execute if entity @a[tag=bw.player] run function minecraft:bedwars/tick
 execute if entity @a[tag=parkouring,team=lobby] run function minecraft:npark/tick
+execute if entity @a[team=parkour] run function minecraft:lpark/tick
 execute if entity @a[tag=mazing,team=lobby] run function minecraft:maze/tick
 execute if score beli.state state matches 1.. run function minecraft:believer/tick
 execute if score color.state state matches 1.. run function minecraft:color/tick
