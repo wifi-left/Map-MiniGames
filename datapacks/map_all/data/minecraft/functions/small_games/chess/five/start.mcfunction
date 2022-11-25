@@ -7,13 +7,14 @@ tag @a remove chess.white
 tag @a remove chess.black
 tag @a remove chest.white
 tag @a remove chest.black
+tag @a[team=chestgame,gamemode=adventure] add chess.ranteam
 execute as @a[tag=chess.ranteam] run function small_games/chess/five/random_team
+tag @a[tag=chess.ranteam] remove chess.ranteam
 tp @a[team=chestgame,gamemode=adventure] 74 121 55 0 0
 tp @a[team=chestgame,gamemode=adventure,tag=chess.black] 85 121 55 90 0
 tp @a[team=chestgame,gamemode=adventure,tag=chess.white] 63 121 55 -90 0
 title @a[team=chestgame,gamemode=adventure] title ["\u00a7e\u00a7l游戏开始！"]
 title @a[team=chestgame,gamemode=adventure] subtitle ["\u00a7a游戏：\u00a7c五子棋！"]
-tag @a[team=chestgame,gamemode=adventure] add chess.ranteam
 scoreboard players set rand board 0
 # tellraw @a[tag=chess.black] ["\u00a76你在\u00a70\u00a7l黑队"]
 # tellraw @a[tag=chess.white] ["\u00a76你在\u00a7f\u00a7l白队"]
