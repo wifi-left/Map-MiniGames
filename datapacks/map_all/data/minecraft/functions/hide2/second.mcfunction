@@ -25,7 +25,7 @@ execute if score hide2.state state matches 1..5 if score hide2.restanimals board
 execute if score hide2.state state matches 1..5 if score hide2.resthunts board matches ..0 run function hide2/gameover/runner
 execute if score hide2.state state matches 1..5 if score hide2.resttime board matches ..0 run function hide2/gameover/runnertime
 
-scoreboard players set 60 board 240
+scoreboard players set 60 board 60
 scoreboard players operation hide2.tmp board = hide2.resttime board
 scoreboard players operation hide2.tmp board %= 60 board
 execute if score hide2.resttime board matches 1.. if score hide2.tmp board matches ..0 run function hide2/glowingeveryone

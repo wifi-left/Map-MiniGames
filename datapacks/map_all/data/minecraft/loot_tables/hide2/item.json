@@ -95,13 +95,13 @@
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{CustomPotionEffects:[{Id:14,Duration:600,Amplifier:1b,Ambient:0b,ShowParticles:0b}]}"
+                            "tag": "{CustomPotionEffects:[{Id:14,Duration:300,Amplifier:1b,Ambient:0b,ShowParticles:0b}]}"
                         }
                     ],
                     "conditions": [
                         {
                             "condition": "minecraft:random_chance",
-                            "chance": 0.5
+                            "chance": 0.2
                         }
                     ]
                 }

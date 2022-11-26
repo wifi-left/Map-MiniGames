@@ -7,3 +7,4 @@ function hide2/during/reflushitem
 # execute as @e[tag=hide2.ranitem] at @s run data merge block ~ ~ ~ {LootTable:""}
 # execute as @e[tag=hide2.ranitem] at @s run setblock ~ ~ ~ air
 # execute as @e[tag=hide2.ranitem] at @s run setblock ~ ~ ~ minecraft:barrel[open=true]{LootTable:""} replace
+kill @e[type=item]
