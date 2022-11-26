@@ -1,5 +1,5 @@
 tag @s add seel
-execute as @e[tag=hide.animals,tag=hide.cosplay] if score @s LRS_START_DJS = @a[tag=seel,limit=1] park.uuid run tag @s add shouldtp 
+execute as @e[tag=hide.animals,tag=hide.cosplay] if score @s LRS_START_DJS = @a[tag=seel,limit=1] park.uuid run tag @s add shouldtp
 tag @s remove seel
 # tp @e[tag=shouldtp] @s
 execute unless entity @e[tag=shouldtp,limit=1] run function hideseek/during/anidied

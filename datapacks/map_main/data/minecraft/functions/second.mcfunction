@@ -13,6 +13,14 @@ execute as @a[team=wait.parkour] run scoreboard players add wait.park.player tic
 
 execute if score zombie.debug state matches 1 run function zombieever/test/display
 
+effect give @a[team=hide.wait] resistance 9999 25 true
+effect give @a[team=hide.wait2] resistance 9999 25 true
+effect give @a[team=hide.killer] resistance 9999 25 true
+effect give @a[team=hide.killer] strength 2 20 true
+effect give @a[team=hide.killer] glowing 2 2 true
+
+execute if score hide2.state state matches 1.. run function minecraft:hide2/second
+
 bossbar set zombie:zombiecount players
 bossbar set zombie:zombiecount players @a[team=play.zombie]
 

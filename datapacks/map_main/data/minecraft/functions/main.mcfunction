@@ -149,6 +149,11 @@ scoreboard players reset @a[scores={die=1..},tag=!bw.play] die
 
 execute as @e[tag=getnbt,type=marker] at @s run function test/shownbt
 
+execute if score hide2.state state matches 1.. run function minecraft:hide2/tick
+
+execute in overworld as @a[x=137,y=89,z=-158,dx=2,dy=2,dz=2,gamemode=adventure] at @s run function hide2/died
+
+
 scoreboard players reset @a[tag=!bw.play] bw.kill
 
 execute in hungerworld as @a[x=101,y=-60,z=0,distance=..2] at @s run function hunger/died
