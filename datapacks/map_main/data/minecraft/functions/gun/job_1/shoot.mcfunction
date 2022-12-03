@@ -7,4 +7,4 @@ scoreboard players set @e[tag=gun.new] PSTJ 15
 tag @e[tag=gun.new] remove gun.new
 playsound minecraft:block.piston.contract player @s ~ ~ ~ 1 2 1
 # item modify entity @s weapon.mainhand usegun
-xp add @s 30 levels
+xp set @s 30 levels
