@@ -21,10 +21,12 @@ execute as @a[tag=NEWENTER] run bossbar set surgame:time players @a[team=wait.su
 clear @a[tag=NEWENTER]
 execute as @a[tag=NEWENTER] unless score @s park.uuid matches 0.. run function minecraft:npark/getuuid
 tellraw @a[tag=NEWENTER,tag=GOABLE.SPEC] ["\n\u00a77  你已开启\u00a7b全局旁观者模式\u00a77。\n  \u00a77",{"text":"\u00a7a\u00a7l点击此处，或者使用 \u00a76\u00a7l/trigger spec set 3 \u00a7a\u00a7l退出全局旁观者模式","bold":true,"clickEvent": {"action": "run_command","value": "/trigger spec set 3"},"hoverEvent": {"action": "show_text","contents": "\u00a7c点击此处退出全局旁观者模式"}},"\n"]
+effect clear @a[tag=NEWENTER]
 tag @a[tag=NEWENTER] remove zombie.nehelp
 tag @a[tag=NEWENTER] remove parkouring
 tag @a[tag=NEWENTER] remove mazing
 tag @a[tag=NEWENTER] remove play.total
+stopsound @a[tag=NEWENTER] voice
 tag @a[tag=NEWENTER] remove NEWENTER
 
 execute as @a[scores={spec=1}] run function lobby/specintroduce

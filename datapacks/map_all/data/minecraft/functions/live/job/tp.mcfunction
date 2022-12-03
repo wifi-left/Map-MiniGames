@@ -6,6 +6,6 @@ item replace entity @s armor.chest with minecraft:leather_chestplate{Unbreakable
 item replace entity @s armor.head with minecraft:player_head{Unbreakable:1b,SkullOwner:"MHF_CoconutG"}
 item replace entity @s armor.feet with minecraft:leather_boots{Unbreakable:1b,display:{color:14983439},Enchantments:[{id:"feather_falling",lvl:5}]}
 item replace entity @s armor.legs with minecraft:leather_leggings{Unbreakable:1b,display:{color:12583002}}
-give @s carrot_on_a_stick{job:3,display:{Name:'"\\u00a79空间移动 \\u00a77- 右键使用"',Lore:['"\\u00a78你突然就消失了"']}}
+give @s carrot_on_a_stick{job:3,display:{Name:'"\\u00a79空间移动 \\u00a77- 右键使用"',Lore:['"\\u00a78你突然就消失了"']},CustomModelData:6}
 # effect give @s jump_boost 99999 255 true
 # effect give @s invisibility 99999 1

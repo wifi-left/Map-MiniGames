@@ -15,3 +15,4 @@ execute as @e[tag=pvp.car] at @s run effect give @a[distance=0..1] slow_falling 
 
 execute as @a[team=job_pvp,scores={JOBPVP.die=1..}] at @s run function job_pvp/over
 execute as @a[team=job_pvp] at @s run kill @e[type=item,distance=0..6,nbt=!{Item:{tag:{job_pvp:1}}}] 
+execute as @a[team=wait.jobpvp] at @s run kill @e[type=item,distance=0..6,nbt=!{Item:{tag:{job_pvp:1}}}] 

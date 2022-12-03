@@ -5,6 +5,10 @@ execute if entity @s[nbt={SelectedItem:{tag:{job:1}}}] run tag @s add skill.old
 execute if entity @s[nbt={SelectedItem:{tag:{job:2}}}] run tag @s add skill.scientist
 execute if entity @s[nbt={SelectedItem:{tag:{job:3}}}] run tag @s add skill.tp
 execute if entity @s[nbt={SelectedItem:{tag:{job:4}}}] run tag @s add skill.creeper
+execute if entity @s[nbt={SelectedItem:{tag:{job:7}}}] run tag @s add skill.7
+
+execute as @s[tag=skill.7] at @s run function gun/job_1/shoot
+
 # execute if entity @s[nbt={SelectedItem:{tag:{gun:1}}}] run tag @s add gun.1
 effect give @s[tag=skill.scientist] speed 10 3 true
 effect give @s[tag=skill.scientist] jump_boost 10 3 true
@@ -12,6 +16,10 @@ effect give @s[tag=skill.scientist] jump_boost 10 3 true
 execute as @s[tag=skill.old] run effect give @a[distance=0.5..7,team=job_pvp,gamemode=!creative] slowness 5 5 true
 execute as @s[tag=skill.old] run effect give @a[distance=0.5..7,team=job_pvp,gamemode=!creative] blindness 5 5 true
 execute as @s[tag=skill.old] run effect give @a[distance=0.5..7,team=job_pvp,gamemode=!creative] poison 3 5 true
+# execute as @s[tag=skill.old] run effect give @a[distance=0.5..7,team=job_pvp,gamemode=!creative] poison 3 5 true
+
+execute as @s[tag=skill.old] run title @a[distance=0.5..7,team=job_pvp,gamemode=!creative] title ["\u00a7c你被定住了。"]
+execute as @s[tag=skill.old] run title @a[distance=0.5..7,team=job_pvp,gamemode=!creative] subtitle ["\u00a7e来自 ",{"selector":"@s"}," \u00a7e的范围技能"]
 execute as @s[tag=skill.old] run particle minecraft:angry_villager ~ ~1 ~ 8 5 8 1 1000 force @a
 execute as @s[tag=skill.tp] run particle minecraft:glow ~ ~ ~ 0 1 0 1 50
 execute as @s[tag=skill.tp] run particle minecraft:glow ~ ~ ~ 0 1 0 1 50
@@ -35,6 +43,7 @@ xp add @s[tag=skill.scientist] 20 levels
 xp add @s[tag=skill.creeper] 20 levels
 # execute as @s[tag=gun.1] run function gun/1/shoot
 tag @s remove skill.old
+tag @s remove skill.7
 tag @s remove skill.scientist
 tag @s remove skill.tp
 tag @s remove skill.creeper
