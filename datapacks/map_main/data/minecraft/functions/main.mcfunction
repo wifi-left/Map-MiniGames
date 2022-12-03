@@ -29,6 +29,9 @@ tag @a[tag=NEWENTER] remove play.total
 stopsound @a[tag=NEWENTER] voice
 tag @a[tag=NEWENTER] remove NEWENTER
 
+execute as @a[scores={job_kill=1..},team=job_pvp] run function job_pvp/getakill
+scoreboard players reset @a[scores={job_kill=1..}] job_kill
+
 execute as @a[scores={spec=1}] run function lobby/specintroduce
 execute as @a[scores={spec=2}] run tag @s add SPEC.JOIN
 execute as @a[scores={spec=3..}] run tag @s add SPEC.REMOVE
