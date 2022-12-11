@@ -1,45 +1,45 @@
 scoreboard players add zombie.round board 1
 tellraw @a[team=play.zombie] ["\n   \u00a7a这是第 ",{"score":{"name": "zombie.round","objective": "board"},"color":"yellow"},"\u00a7e 轮\u00a7a进攻。\n\u00a7b   僵尸现在已经生成！\n"]
 scoreboard players set zombie.state state 1
-## record
-execute if score zombie.round board matches 1 run stopsound @a[team=play.zombie] record
-execute if score zombie.round board matches 1 run playsound minecraft:music.overworld.grove record @a[team=play.zombie] ~ ~ ~ 50 2 1
+## voice
+execute if score zombie.round board matches 1 run stopsound @a[team=play.zombie] voice
+execute if score zombie.round board matches 1 run playsound minecraft:music.overworld.grove voice @a[team=play.zombie] ~ ~ ~ 50 2 0.4
 
-execute if score zombie.round board matches 3 run stopsound @a[team=play.zombie] record
-execute if score zombie.round board matches 3 run playsound minecraft:music.overworld.snowy_slopes record @a[team=play.zombie] ~ ~ ~ 50 2 1
+execute if score zombie.round board matches 3 run stopsound @a[team=play.zombie] voice
+execute if score zombie.round board matches 3 run playsound minecraft:music.overworld.snowy_slopes voice @a[team=play.zombie] ~ ~ ~ 50 2 0.4
 
-execute if score zombie.round board matches 5 run stopsound @a[team=play.zombie] record
-execute if score zombie.round board matches 5 run playsound minecraft:music.game record @a[team=play.zombie] ~ ~ ~ 50 2 1
+execute if score zombie.round board matches 5 run stopsound @a[team=play.zombie] voice
+execute if score zombie.round board matches 5 run playsound minecraft:music.game voice @a[team=play.zombie] ~ ~ ~ 50 2 0.4
 
-execute if score zombie.round board matches 7 run stopsound @a[team=play.zombie] record
-execute if score zombie.round board matches 7 run playsound minecraft:music.overworld.jungle_and_forest record @a[team=play.zombie] ~ ~ ~ 50 2 1
+execute if score zombie.round board matches 7 run stopsound @a[team=play.zombie] voice
+execute if score zombie.round board matches 7 run playsound minecraft:music.overworld.jungle_and_forest voice @a[team=play.zombie] ~ ~ ~ 50 2 0.4
 
-execute if score zombie.round board matches 9 run stopsound @a[team=play.zombie] record
-execute if score zombie.round board matches 9 run playsound minecraft:music.overworld.deep_dark record @a[team=play.zombie] ~ ~ ~ 50 2 1
+execute if score zombie.round board matches 9 run stopsound @a[team=play.zombie] voice
+execute if score zombie.round board matches 9 run playsound minecraft:music.overworld.deep_dark voice @a[team=play.zombie] ~ ~ ~ 50 2 0.4
 
-execute if score zombie.round board matches 11 run stopsound @a[team=play.zombie] record
-execute if score zombie.round board matches 11 run playsound minecraft:music_disc.13 record @a[team=play.zombie] ~ ~ ~ 50 2 1
+execute if score zombie.round board matches 11 run stopsound @a[team=play.zombie] voice
+execute if score zombie.round board matches 11 run playsound minecraft:music_disc.13 voice @a[team=play.zombie] ~ ~ ~ 50 2 0.4
 
-execute if score zombie.round board matches 13 run stopsound @a[team=play.zombie] record
-execute if score zombie.round board matches 13 run playsound minecraft:music_disc.11 record @a[team=play.zombie] ~ ~ ~ 50 2 1
+execute if score zombie.round board matches 13 run stopsound @a[team=play.zombie] voice
+execute if score zombie.round board matches 13 run playsound minecraft:music_disc.11 voice @a[team=play.zombie] ~ ~ ~ 50 2 0.4
 
-execute if score zombie.round board matches 15 run stopsound @a[team=play.zombie] record
-execute if score zombie.round board matches 15 run playsound minecraft:music_disc.pigstep record @a[team=play.zombie] ~ ~ ~ 50 2 1
+execute if score zombie.round board matches 15 run stopsound @a[team=play.zombie] voice
+execute if score zombie.round board matches 15 run playsound minecraft:music_disc.pigstep voice @a[team=play.zombie] ~ ~ ~ 50 2 0.4
 
-execute if score zombie.round board matches 17 run stopsound @a[team=play.zombie] record
-execute if score zombie.round board matches 17 run playsound minecraft:music_disc.mall record @a[team=play.zombie] ~ ~ ~ 50 2 1
+execute if score zombie.round board matches 17 run stopsound @a[team=play.zombie] voice
+execute if score zombie.round board matches 17 run playsound minecraft:music_disc.mall voice @a[team=play.zombie] ~ ~ ~ 50 2 0.4
 
-execute if score zombie.round board matches 19 run stopsound @a[team=play.zombie] record
-execute if score zombie.round board matches 19 run playsound minecraft:music_disc.blocks record @a[team=play.zombie] ~ ~ ~ 50 2 1
+execute if score zombie.round board matches 19 run stopsound @a[team=play.zombie] voice
+execute if score zombie.round board matches 19 run playsound minecraft:music_disc.blocks voice @a[team=play.zombie] ~ ~ ~ 50 2 0.4
 
-execute if score zombie.round board matches 21 run stopsound @a[team=play.zombie] record
-execute if score zombie.round board matches 21 run playsound minecraft:music_disc.stal record @a[team=play.zombie] ~ ~ ~ 50 2 1
+execute if score zombie.round board matches 21 run stopsound @a[team=play.zombie] voice
+execute if score zombie.round board matches 21 run playsound minecraft:music_disc.stal voice @a[team=play.zombie] ~ ~ ~ 50 2 0.4
 
-execute if score zombie.round board matches 23 run stopsound @a[team=play.zombie] record
-execute if score zombie.round board matches 23 run playsound minecraft:music_disc.otherside record @a[team=play.zombie] ~ ~ ~ 50 2 1
+execute if score zombie.round board matches 23 run stopsound @a[team=play.zombie] voice
+execute if score zombie.round board matches 23 run playsound minecraft:music_disc.otherside voice @a[team=play.zombie] ~ ~ ~ 50 2 0.4
 
-execute if score zombie.round board matches 25 run stopsound @a[team=play.zombie] record
-execute if score zombie.round board matches 25 run playsound minecraft:music_disc.cat record @a[team=play.zombie] ~ ~ ~ 50 2 1
+execute if score zombie.round board matches 25 run stopsound @a[team=play.zombie] voice
+execute if score zombie.round board matches 25 run playsound minecraft:music_disc.cat voice @a[team=play.zombie] ~ ~ ~ 50 2 0.4
 
 ## Tips
 execute if score zombie.round board matches 1 run tellraw @a[team=play.zombie] ["\n\u00a7e    提示：\n\u00a7a    散布在地图里的商店（牌子），右键即可交互，购买更好的装备！\n"]

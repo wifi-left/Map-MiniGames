@@ -27,6 +27,7 @@ tag @a[tag=NEWENTER] remove parkouring
 tag @a[tag=NEWENTER] remove mazing
 tag @a[tag=NEWENTER] remove play.total
 stopsound @a[tag=NEWENTER] record
+stopsound @a[tag=NEWENTER] voice
 tag @a[tag=NEWENTER] remove NEWENTER
 
 execute as @a[scores={job_kill=1..},team=job_pvp] run function job_pvp/getakill
