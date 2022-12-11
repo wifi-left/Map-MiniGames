@@ -14,4 +14,4 @@ jobs:
           target_repo_url:
             git@gitlab.com:wifi-left/Map-MiniGames.git
           ssh_private_key:
-            ${{ secrets.SSH_KEY }}
+            ${{ secrets.SSH_KEY2 }}
