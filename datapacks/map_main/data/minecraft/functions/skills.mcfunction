@@ -6,10 +6,18 @@ execute if entity @s[nbt={SelectedItem:{tag:{job:2}}}] run tag @s add skill.scie
 execute if entity @s[nbt={SelectedItem:{tag:{job:3}}}] run tag @s add skill.tp
 execute if entity @s[nbt={SelectedItem:{tag:{job:4}}}] run tag @s add skill.creeper
 execute if entity @s[nbt={SelectedItem:{tag:{job:7}}}] run tag @s add skill.7
+execute if entity @s[nbt={SelectedItem:{tag:{job:5}}}] run tag @s add skill.5
+execute if entity @s[nbt={SelectedItem:{tag:{job:6}}}] run tag @s add skill.6
 
 execute as @s[tag=skill.7] at @s run function gun/job_1/shoot
+execute as @s[tag=skill.6] at @s run function gun/job_2/shoot
 
+playsound minecraft:entity.ender_dragon.flap player @s[tag=skill.5] ~ ~ ~ 0.5 1 0.5
 # execute if entity @s[nbt={SelectedItem:{tag:{gun:1}}}] run tag @s add gun.1
+effect give @s[tag=skill.5] levitation 4 10 true
+effect give @s[tag=skill.5] slow_falling 10 1 true
+#custom model data: 18
+
 effect give @s[tag=skill.scientist] speed 10 3 true
 effect give @s[tag=skill.scientist] darkness 4 20 true
 effect give @s[tag=skill.scientist] jump_boost 10 3 true
@@ -52,6 +60,8 @@ xp set @s[tag=skill.creeper] 20 levels
 
 tag @s remove skill.old
 tag @s remove skill.7
+tag @s remove skill.6
+tag @s remove skill.5
 tag @s remove skill.scientist
 tag @s remove skill.tp
 tag @s remove skill.creeper

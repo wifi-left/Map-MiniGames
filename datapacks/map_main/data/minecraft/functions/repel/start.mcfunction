@@ -1,7 +1,8 @@
 scoreboard players set repel state 1
 scoreboard players set cnt.repel number 1
 scoreboard players set start.repel.second tick 30
-tp @a[team=wait.repel,gamemode=adventure] -58 16 -15 0 0
+execute as @a[team=wait.repel,gamemode=adventure] run spreadplayers -93 62 0 20 under 42 false @s
+
 team join play.repel @a[team=wait.repel,gamemode=adventure] 
 tellraw @a ["\u00a7b\u00a7l[GAMESTART] \u00a7eRepeling War\u00a7a 开始了！"]
 title @a[team=play.repel] title ["\u00a7e\u00a7lRepeling War"]
