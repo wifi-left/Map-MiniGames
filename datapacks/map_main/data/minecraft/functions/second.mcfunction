@@ -43,6 +43,10 @@ execute if score start.repel.second tick matches ..1 run function minecraft:repe
 effect give @a[team=lobby,scores={health=..19}] minecraft:instant_health 1 5 true
 effect give @a minecraft:saturation 1 25 true
 
+execute if score twolf.state state matches 1..1 run function minecraft:twolf/second
+
+effect give @a[team=wait.wolfpeople] resistance 2 25 true
+
 
 execute if score hunger.state state matches 1.. in hungerworld run function hunger/second
 execute if score hunger.state state matches 0 in hungerworld run effect give @a[team=hunger] resistance 2 25 true

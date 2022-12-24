@@ -8,9 +8,11 @@ execute if entity @s[nbt={SelectedItem:{tag:{job:4}}}] run tag @s add skill.cree
 execute if entity @s[nbt={SelectedItem:{tag:{job:7}}}] run tag @s add skill.7
 execute if entity @s[nbt={SelectedItem:{tag:{job:5}}}] run tag @s add skill.5
 execute if entity @s[nbt={SelectedItem:{tag:{job:6}}}] run tag @s add skill.6
+execute if entity @s[nbt={SelectedItem:{tag:{job:9}}}] run tag @s add skill.9
 
 execute as @s[tag=skill.7] at @s run function gun/job_1/shoot
 execute as @s[tag=skill.6] at @s run function gun/job_2/shoot
+execute as @s[tag=skill.9] at @s run function skills/haerkala
 
 playsound minecraft:entity.ender_dragon.flap player @s[tag=skill.5] ~ ~ ~ 0.5 1 0.5
 # execute if entity @s[nbt={SelectedItem:{tag:{gun:1}}}] run tag @s add gun.1
@@ -56,6 +58,8 @@ xp set @s[tag=skill.tp] 20 levels
 xp set @s[tag=skill.old] 20 levels
 xp set @s[tag=skill.scientist] 20 levels
 xp set @s[tag=skill.creeper] 20 levels
+xp set @s[tag=skill.6] 20 levels
+xp set @s[tag=skill.9] 45 levels
 # execute as @s[tag=gun.1] run function gun/1/shoot
 
 tag @s remove skill.old
@@ -66,3 +70,4 @@ tag @s remove skill.scientist
 tag @s remove skill.tp
 tag @s remove skill.creeper
 tag @s remove gun.1
+tag @s remove skill.9

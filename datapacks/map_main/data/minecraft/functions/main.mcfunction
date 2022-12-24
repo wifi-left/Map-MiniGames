@@ -106,6 +106,7 @@ execute as @a[scores={use.skill=1..},level=1..,team=job_pvp] at @s run scoreboar
 scoreboard players reset @a[scores={use.skill=1..}] use.skill
 
 execute if score repel state matches 1..1 run function minecraft:repel/main
+execute if score twolf.state state matches 1..1 run function minecraft:twolf/tick
 execute if score wolf.state state matches 1..1 run function minecraft:small_games/wolf/tick
 scoreboard players add tick tick 1
 execute if score tick tick matches 20.. run function minecraft:second
