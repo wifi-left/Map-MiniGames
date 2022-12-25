@@ -16,6 +16,12 @@ execute as @s[tag=GOABLE.SPEC] at @s run gamemode spectator
 
 # /give @p oak_sign{BlockEntityTag:{Text4: '{"color":"gray","clickEvent":{"action":"run_command","value":""},"text":"点击选择"}', Text3: '{"color":"yellow","clickEvent":{"action":"run_command","value":"/execute as @s[scores={kill=30..}] run function minecraft:live/job/feather"},"text":"轻飘飘使者"}', Text2: '{"color":"light_purple","clickEvent":{"action":"run_command","value":"/execute as @s[scores={kill=30..}] run function minecraft:job_pvp/start"},"text":"[30 Kills]"}', Text1: '{"color":"aqua","clickEvent":{"action":"run_command","value":""},"text":"职业战争"}'}}
 
+
+# /give @p oak_sign{BlockEntityTag:{Text4: '{"color":"gray","clickEvent":{"action":"run_command","value":""},"text":"点击选择"}', Text3: '{"color":"green","clickEvent":{"action":"run_command","value":"/execute as @s[scores={kill=40..}] run function minecraft:live/job/haerkala"},"text":"森林精灵"}', Text2: '{"color":"light_purple","clickEvent":{"action":"run_command","value":"/execute as @s[scores={kill=40..}] run function minecraft:job_pvp/start"},"text":"[40 Kills]"}', Text1: '{"color":"aqua","clickEvent":{"action":"run_command","value":""},"text":"职业战争"}'}}
+
+# /give @p oak_sign{BlockEntityTag:{Text4: '{"color":"gray","clickEvent":{"action":"run_command","value":""},"text":"点击选择"}', Text3: '{"color":"gold","clickEvent":{"action":"run_command","value":"/execute as @s[scores={kill=40..}] run function minecraft:live/job/lianjinshu"},"text":"炼金术士"}', Text2: '{"color":"light_purple","clickEvent":{"action":"run_command","value":"/execute as @s[scores={kill=40..}] run function minecraft:job_pvp/start"},"text":"[40 Kills]"}', Text1: '{"color":"aqua","clickEvent":{"action":"run_command","value":""},"text":"职业战争"}'}}
+
+
 # /give @p oak_sign{BlockEntityTag:{Text4: '{"color":"gray","clickEvent":{"action":"run_command","value":""},"text":"点击选择"}', Text3: '{"color":"yellow","clickEvent":{"action":"run_command","value":"/execute as @s[scores={kill=30..}] run function minecraft:live/job/fisherman"},"text":"棒棒糖使者"}', Text2: '{"color":"light_purple","clickEvent":{"action":"run_command","value":"/execute as @s[scores={kill=30..}] run function minecraft:job_pvp/start"},"text":"[30 Kills]"}', Text1: '{"color":"aqua","clickEvent":{"action":"run_command","value":""},"text":"职业战争"}'}}
 
 # /summon armor_stand ~ ~ ~ {NoAI:1b,DisabledSlots:2039583,Invulnerable:false,Invisible:1b,Tags:["pvp.job.display"]}
