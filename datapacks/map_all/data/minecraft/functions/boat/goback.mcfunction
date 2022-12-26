@@ -1,7 +1,7 @@
 tag @s add boat.sel
 execute as @e[tag=boat] if score @s park.uuid = @a[tag=boat.sel,limit=1] park.uuid run tag @s add boat.tmp
 tp @s @e[tag=boat.tmp,limit=1]
-execute unless entity @e[tag=boat.tmp,limit=1] run tag @s add boat.notspawn
+execute unless entity @e[tag=boat.tmp,limit=1] run tellraw @s ["\u00a7c请不要尝试卡 BUG，破坏游戏体验并不是一个很好的选择。"]
 execute unless entity @e[tag=boat.tmp,limit=1] run tellraw @s ["\u00a7c你尚未生成你的载具。"]
 execute if entity @e[tag=boat.tmp,limit=1] run tellraw @s ["\u00a7a已将你传送至你的载具。"]
 # tag @e[tag=boat,limit=1,sort=nearest] add boat.tmp
