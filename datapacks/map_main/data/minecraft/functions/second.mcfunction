@@ -82,8 +82,7 @@ function minecraft:snow/second
 execute if score car.state state matches 1.. run function minecraft:car_race/second
 execute as @e[tag=block_entity] run data merge entity @s {Time:100}
 
-## 210 116 22 拉杆1 - 烟花
-execute if block 210 116 30 lever[powered=true] run function lobby/firework
+
 
 
 ## Car
