@@ -1,3 +1,4 @@
+forceload add 6 -49 38 -81
 fill 6 10 -49 38 10 -81 minecraft:white_wool
 title @a[team=wait.beli] title [{"text":"Block Believer","color":"#a7d3ff","bold": true}]
 title @a[team=wait.beli] subtitle ["\u00a7rBelieve yourself !"]
@@ -8,4 +9,6 @@ team join play.beli @a[team=wait.beli]
 scoreboard players set beli.state state 1
 scoreboard players operation temp state = beli.num state
 schedule clear minecraft:believer/summon
+kill @e[tag=beliran,type=marker]
 schedule function minecraft:believer/summon 3s
+forceload remove 6 -49 38 -81

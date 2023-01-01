@@ -1,3 +1,5 @@
+forceload add 393 30 304 -160
+
 tp @a[team=wait.zombie,gamemode=adventure] 370.0 22 -155 0 0
 scoreboard players set zombie.state state 1
 tellraw @a[team=wait.zombie] ["\u00a72\u00a7lZombie Day \u00a7e游戏开始！"]
@@ -38,3 +40,5 @@ bossbar set zombie:zombiecount name ["\u00a7a游戏开始，\u00a7e15 秒\u00a7a
 kill @e[type=item,x=350,y=21,z=-81,distance=0..40]
 tellraw @a[team=play.zombie,tag=GOABLE.SPEC] ["\n\u00a77  你已开启\u00a7b全局旁观者模式\u00a77。\n  \u00a77由于你进入游戏后会变为旁观模式，请使用 \u00a76/trigger hub\u00a77 返回大厅。\n  ",{"text":"\u00a7a\u00a7l点击此处，或者使用 \u00a76\u00a7l/trigger spec set 3 \u00a7a\u00a7l退出全局旁观者模式","bold":true,"clickEvent": {"action": "run_command","value": "/trigger spec set 3"},"hoverEvent": {"action": "show_text","contents": "\u00a7c点击此处退出全局旁观者模式"}},"\n"]
 execute as @a[team=play.zombie,tag=GOABLE.SPEC] at @s run gamemode spectator
+
+forceload remove 393 30 304 -160

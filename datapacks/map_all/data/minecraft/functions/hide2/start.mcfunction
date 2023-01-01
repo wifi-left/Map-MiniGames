@@ -1,10 +1,18 @@
 scoreboard players set start.player tick 0 
 effect clear @a[team=hide.wait2]
 execute as @a[team=hide.wait2,gamemode=adventure] run scoreboard players add start.player tick 1
-scoreboard players operation hide2.maxtime board = start.player tick
-scoreboard players set 100 board 200
-scoreboard players operation hide2.maxtime board *= 100 board
-execute if score hide2.maxtime board matches 800.. run scoreboard players set hide2.maxtime board 800
+scoreboard players operation hide2.maxtime1 board = start.player tick
+scoreboard players set 30 board 30
+scoreboard players set 100 board 100
+scoreboard players set 120 board 120
+scoreboard players set 60 board 60
+scoreboard players set 90 board 90
+scoreboard players set hide2.maxtime board 0
+scoreboard players operation hide2.maxtime board += 60 board
+scoreboard players operation hide2.maxtime1 board *= 30 board
+scoreboard players operation hide2.maxtime board += hide2.maxtime1 board
+
+execute if score hide2.maxtime board matches 600.. run scoreboard players set hide2.maxtime board 600
 scoreboard players operation hide2.resttime board = hide2.maxtime board
 scoreboard players set hide2.huntgo board 30
 function hide2/starting/reset

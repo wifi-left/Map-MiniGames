@@ -33,13 +33,13 @@ execute as @e[tag=random_game_sel] as @a[tag=play.total] at @s run playsound ent
 # Hot Potato 9
 # Pool War 10
 scoreboard players set error state 0
-execute if score total.game board matches 1..1 if score car.state state matches 1.. run scoreboard players set error state 1
+execute if score total.game board matches 1..1 if score hide.state state matches 1.. run scoreboard players set error state 1
 execute if score total.game board matches 2..2 if score snow.state state matches 1.. run scoreboard players set error state 1
 execute if score total.game board matches 3..3 if score snow.state state matches 1.. run scoreboard players set error state 1
 execute if score total.game board matches 4..4 if score repel state matches 1.. run scoreboard players set error state 1
 execute if score total.game board matches 5..5 if score color.state state matches 1.. run scoreboard players set error state 1
 execute if score total.game board matches 6..6 if score beli.state state matches 1.. run scoreboard players set error state 1
-execute if score total.game board matches 7..7 if score killer.state state matches 1.. run scoreboard players set error state 1
+execute if score total.game board matches 7..7 if score hide2.state state matches 1.. run scoreboard players set error state 1
 execute if score total.game board matches 8..8 if score duel.state state matches 1.. run scoreboard players set error state 1
 execute if score total.game board matches 9..9 if score hotpot.state state matches 1.. run scoreboard players set error state 1
 execute if score total.game board matches 10..10 if score pw.state state matches 1.. run scoreboard players set error state 1

@@ -1,3 +1,4 @@
+forceload add 6 -49 38 -81
 scoreboard players set beli.state state 0
 tellraw @a ["\u00a7a[I] ",{"text":"Block Believer","color":"#a7d3ff","bold": true}," \u00a7a: \u00a7b游戏结束！\n\u00a7e获胜者：",{"selector":"@a[gamemode=adventure,team=play.beli]"}]
 
@@ -13,3 +14,4 @@ execute as @a[gamemode=adventure,team=wait.beli] run function believer/join
 execute as @a[gamemode=adventure,team=play.beli] run function believer/join
 schedule clear minecraft:believer/summon
 kill @e[tag=beliran,type=marker]
+forceload remove 6 -49 38 -81

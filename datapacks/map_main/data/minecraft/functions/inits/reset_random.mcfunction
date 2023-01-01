@@ -1,8 +1,13 @@
 ## 清除
+forceload add 168 -45 168 -45
 kill @e[tag=random_game,type=marker]
 ## 生成
 # Car
 # Deleted!
+# 躲猫猫 - 道具
+summon marker 168 115 -45 {Tags:["random_game","neww"],CustomName:'"\\u00a7b\\u00a7l躲猫猫（动物）"'}
+scoreboard players set @e[tag=neww] board 1
+tag @e[tag=neww] remove neww
 # Snow TNTRUN
 summon marker 168 115 -45 {Tags:["random_game","neww"],CustomName:'"\\u00a7eTNTRUN"'}
 scoreboard players set @e[tag=neww] board 2
@@ -23,8 +28,8 @@ tag @e[tag=neww] remove neww
 summon marker 168 115 -45 {Tags:["random_game","neww"],CustomName:'"\\u00a7b信仰方块"'}
 scoreboard players set @e[tag=neww] board 6
 tag @e[tag=neww] remove neww
-# Muder Mystery
-summon marker 168 115 -45 {Tags:["random_game","neww"],CustomName:'"\\u00a7c密室杀手"'}
+# 躲猫猫
+summon marker 168 115 -45 {Tags:["random_game","neww"],CustomName:'"\\u00a7b\\u00a7l躲猫猫（道具）"'}
 scoreboard players set @e[tag=neww] board 7
 tag @e[tag=neww] remove neww
 # Duel
@@ -84,3 +89,5 @@ tag @e[tag=neww] remove neww
 summon marker 168 115 -45 {Tags:["random_saying","neww"]}
 scoreboard players set @e[tag=neww] board 11
 tag @e[tag=neww] remove neww
+
+forceload remove 168 -45 168 -45

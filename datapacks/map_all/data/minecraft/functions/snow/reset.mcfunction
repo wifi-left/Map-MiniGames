@@ -1,3 +1,4 @@
+forceload add 3 -49 -47 -99
 
 fill 3 29 -49 -47 20 -99 air replace snow
 fill 3 20 -49 -47 10 -99 air replace snow
@@ -19,3 +20,5 @@ execute if score snow.mode board matches 0..0 run function minecraft:snow/map/de
 execute if score snow.mode board matches 1..1 run function minecraft:snow/map/smallvillage
 execute if score snow.mode board matches 2..2 run function minecraft:snow/map/towner
 execute if score snow.mode board matches 3..3 run function minecraft:snow/map/onlyone
+
+forceload remove 3 -49 -47 -99

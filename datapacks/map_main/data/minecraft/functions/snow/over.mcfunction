@@ -5,10 +5,8 @@ title @a[team=play.snow,gamemode=spectator] title ["\u00a7c\u00a7lGAME OVER"]
 scoreboard players add @a[team=play.snow,gamemode=adventure,tag=play.total] score 1
 execute if entity @a[team=play.snow,tag=play.total] run function small_games/total/next_game
 gamemode adventure @a[team=play.snow]
-tag @a[team=play.snow] add join.snow
+execute as @a[team=play.snow] run function snow/join
 gamemode adventure @a[team=wait.snow]
-tag @a[team=wait.snow] add join.snow
-clear @a[tag=join.snow]
-tp @a[tag=join.snow] -22 31 -74
+execute as @a[team=wait.snow] run function snow/join
 kill @e[type=marker,tag=snow.disa]
 function minecraft:snow/reset

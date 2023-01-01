@@ -129,12 +129,9 @@ tag @a[tag=sneaking] remove sneaking
 tag @a[scores={zombie.sneak=1..}] add sneaking
 scoreboard players reset @a[tag=sneaking] zombie.sneak
 
-tp @a[tag=join.snow] -22 31 -74 -90 0
-execute as @a[tag=join.snow] run tellraw @a ["\u00a7a[MESSAGE] ",{"selector":"@s"},"\u00a77 Joined \u00a7fSnow \u00a77."]
-tellraw @a[tag=GOABLE.SPEC,tag=join.snow] ["\n\u00a77  你已开启\u00a7b全局旁观者模式\u00a77。\n  \u00a77由于你进入游戏后会变为旁观模式，请使用 \u00a76/trigger hub\u00a77 返回大厅。\n  ",{"text":"\u00a7a\u00a7l点击此处，或者使用 \u00a76\u00a7l/trigger spec set 3 \u00a7a\u00a7l退出全局旁观者模式","bold":true,"clickEvent": {"action": "run_command","value": "/trigger spec set 3"},"hoverEvent": {"action": "show_text","contents": "\u00a7c点击此处退出全局旁观者模式"}},"\n"]
-execute as @a[tag=GOABLE.SPEC,tag=join.snow] at @s run gamemode spectator
-team join wait.snow @a[tag=join.snow]
+execute as @a[tag=join.snow] in overworld at @s run function snow/join
 tag @a[tag=join.snow] remove join.snow
+
 effect give @a[team=wait.total] resistance 2 25 true
 execute as @a[tag=join.livelongest] run tp @s 25 7 0 0 0
 execute as @a[tag=join.livelongest] run team leave @s

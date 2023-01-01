@@ -1,7 +1,7 @@
 scoreboard players reset @s hp.hurt
 
-tellraw @a[team=play.hotpot] ["\n    ",{"selector":"@s"},"\u00a7b 将 \u00a7aHot Potato \u00a7b传给了 ",{"selector":"@a[tag=hp.flag]"}]
-tellraw @a[team=play.hotpot.k] ["\n    ",{"selector":"@s"},"\u00a7b 将 \u00a7aHot Potato \u00a7b传给了 ",{"selector":"@a[tag=hp.flag]"}]
+tellraw @a[team=play.hotpot] ["    ",{"selector":"@s"},"\u00a7b 将 \u00a7aHot Potato \u00a7b传给了 ",{"selector":"@a[tag=hp.flag]"}]
+tellraw @a[team=play.hotpot.k] ["    ",{"selector":"@s"},"\u00a7b 将 \u00a7aHot Potato \u00a7b传给了 ",{"selector":"@a[tag=hp.flag]"}]
 tellraw @a[tag=hp.flag] ["\n\u00a7c    你被 ",{"selector":"@s"}," \u00a7c传来了 \u00a7bHot Potato \u00a7c!\n"]
 tellraw @s ["\u00a7a    你不在是 \u00a7cHot Potato\u00a7a 的拥有者！快跑！"]
 team join play.hotpot @s

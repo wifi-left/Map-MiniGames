@@ -16,4 +16,4 @@ tag @s remove mazing
 execute in minecraft:parkourworld run tp @s 8 4 8 0 0
 execute in minecraft:parkourworld at @s run playsound entity.player.levelup player @s ~ ~ ~ 10 1 1
 
-function lpark/plset
+execute in minecraft:parkourworld at @s run function lpark/plset
