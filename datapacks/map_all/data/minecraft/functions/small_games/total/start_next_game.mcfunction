@@ -10,7 +10,7 @@
 # Pool War 10
 gamemode adventure @a[tag=play.total]
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 1..1 run execute as @a[tag=play.total] run function hideseek/join
-execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 1..1 run function hideseek/trystart
+execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 1..1 run schedule function hideseek/trystart 1s
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 2..2 run execute as @a[tag=play.total] run function snow/join
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 2..2 run scoreboard players set snow.tntrun state 1
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 2..2 run function snow/trystart
