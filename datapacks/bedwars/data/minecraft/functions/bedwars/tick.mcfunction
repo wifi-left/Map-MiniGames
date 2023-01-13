@@ -17,6 +17,9 @@ scoreboard players reset @a[tag=bw.player] bw.board
 execute as @a[tag=bw.player] store success score @s bw.board run clear @s #minecraft:shopitem{bwshopitem:1} 0
 execute as @a[tag=bw.player] if score @s bw.board matches 1.. run function bedwars/shop/shoptick
 
+execute as @e[tag=tntsheep.spawn] at @s run function bedwars/item/tntsheep
+
+
 ## Other
 spawnpoint @a[tag=bw.player] -225 9 111
 

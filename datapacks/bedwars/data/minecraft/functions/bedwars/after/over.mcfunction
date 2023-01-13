@@ -27,3 +27,7 @@ bossbar set minigames:bedwars players @a[tag=bw.player]
 bossbar set minigames:bedwars name ["\u00a7e\u00a7lBEDWARS 起床战争 \u00a77| \u00a7c游戏结束。"]
 
 kill @e[tag=bw.entity]
+
+scoreboard players reset @e[type=sheep,tag=bw.tntsheep]
+kill @e[type=sheep,tag=bw.tntsheep]
+kill @e[type=marker,tag=tntsheep.spawn]

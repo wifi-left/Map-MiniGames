@@ -130,6 +130,11 @@ scoreboard players reset @s bw.board
 execute as @s store success score @s bw.board run clear @s ender_pearl{shop:-34}
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-34
 
+
+scoreboard players reset @s bw.board
+execute as @s store success score @s bw.board run clear @s tnt{shop:-35}
+execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-35
+
 ## Diamond Shop
 execute as @s[tag=bw.buy.5] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
 execute as @s[tag=bw.buy.5] run function minecraft:bedwars/shop/buy5
@@ -243,6 +248,8 @@ execute as @s[tag=bw.buy.-27] at @s run playsound minecraft:block.note_block.pli
 execute as @s[tag=bw.buy.-27] at @s run function minecraft:bedwars/shop/buyf27
 tag @s remove bw.buy.-27
 
+
+
 execute as @s[tag=bw.buy.-30] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
 execute as @s[tag=bw.buy.-30] at @s run function minecraft:bedwars/shop/buyf30
 tag @s remove bw.buy.-30
@@ -262,6 +269,10 @@ tag @s remove bw.buy.-33
 execute as @s[tag=bw.buy.-34] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
 execute as @s[tag=bw.buy.-34] at @s run function minecraft:bedwars/shop/buyf34
 tag @s remove bw.buy.-34
+
+execute as @s[tag=bw.buy.-35] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute as @s[tag=bw.buy.-35] at @s run function minecraft:bedwars/shop/buyf35
+tag @s remove bw.buy.-35
 
 execute as @s[tag=bw.buy.9] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
 execute as @s[tag=bw.buy.9] at @s run function minecraft:bedwars/shop/buy9

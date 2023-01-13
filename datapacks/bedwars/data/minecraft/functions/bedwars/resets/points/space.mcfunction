@@ -38,18 +38,19 @@ summon area_effect_cloud -224 31.5 203 {Tags:["bedwars","dmshop"],CustomName:'"\
 summon area_effect_cloud -298 31.5 289 {Tags:["bedwars","dmshop"],CustomName:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,Age:-19103293}
 summon area_effect_cloud -384 31.5 215 {Tags:["bedwars","dmshop"],CustomName:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,Age:-19103293}
 # # shop
-summon area_effect_cloud -384 31.5 205 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -385 31.5 205 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -383 31.5 205 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -300 31.5 128 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -300 31.5 129 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -300 31.5 130 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -224 31.5 213 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -223 31.5 213 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -225 31.5 213 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -308 31.5 290 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -308 31.5 289 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -308 31.5 288 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop"',CustomNameVisible:1b,Age:-19103293}
+# summon area_effect_cloud -384 31.5 205 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop"',CustomNameVisible:1b,Age:-19103293}
+summon area_effect_cloud -385 31.5 205 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a761"',CustomNameVisible:1b,Age:-19103293}
+summon area_effect_cloud -383 31.5 205 {Tags:["shop2","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a762"',CustomNameVisible:1b,Age:-19103293}
+summon area_effect_cloud -300 31.5 128 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a761"',CustomNameVisible:1b,Age:-19103293}
+# summon area_effect_cloud -300 31.5 129 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop"',CustomNameVisible:1b,Age:-19103293}
+summon area_effect_cloud -300 31.5 130 {Tags:["shop2","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a762"',CustomNameVisible:1b,Age:-19103293}
+# summon area_effect_cloud -224 31.5 213 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop"',CustomNameVisible:1b,Age:-19103293}
+summon area_effect_cloud -223 31.5 213 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a761"',CustomNameVisible:1b,Age:-19103293}
+summon area_effect_cloud -225 31.5 213 {Tags:["shop2","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a762"',CustomNameVisible:1b,Age:-19103293}
+
+summon area_effect_cloud -308 31.5 290 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a761"',CustomNameVisible:1b,Age:-19103293}
+# summon area_effect_cloud -308 31.5 289 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop"',CustomNameVisible:1b,Age:-19103293}
+summon area_effect_cloud -308 31.5 288 {Tags:["shop2","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a762"',CustomNameVisible:1b,Age:-19103293}
 # # diamond
 summon marker -346 31 167 {Tags:["diamond","bedwars"],CustomName:'"\\u00a7b\\u00a7lDiamond Spawner"',CustomNameVisible:1b,Age:-19298239}
 summon marker -260 31 167 {Tags:["diamond","bedwars"],CustomName:'"\\u00a7b\\u00a7lDiamond Spawner"',CustomNameVisible:1b,Age:-19298239}

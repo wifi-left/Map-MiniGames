@@ -9,6 +9,7 @@ kill @e[tag=diamond.subtitle,type=area_effect_cloud]
 
 kill @e[tag=dmshop]
 kill @e[tag=shop]
+kill @e[tag=shop2]
 # # iron
 summon marker -307 30 153 {Tags:["iron"]}
 # summon marker -306 29 153 {Tags:["iron"]}
@@ -37,10 +38,17 @@ summon area_effect_cloud -255 31.5 209 {Tags:["bedwars","dmshop"],CustomName:'"\
 summon area_effect_cloud -303 31.5 261 {Tags:["bedwars","dmshop"],CustomName:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,Age:-19103293}
 summon area_effect_cloud -355 31.5 212 {Tags:["bedwars","dmshop"],CustomName:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,Age:-19103293}
 # # shop
-summon area_effect_cloud -305 31.5 161 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -255 31.5 211 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -305 31.5 261 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -355 31.5 210 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop"',CustomNameVisible:1b,Age:-19103293}
+summon area_effect_cloud -305 31.5 161 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a761"',CustomNameVisible:1b,Age:-19103293}
+summon area_effect_cloud -255 31.5 211 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a761"',CustomNameVisible:1b,Age:-19103293}
+summon area_effect_cloud -305 31.5 261 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a761"',CustomNameVisible:1b,Age:-19103293}
+summon area_effect_cloud -355 31.5 210 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a761"',CustomNameVisible:1b,Age:-19103293}
+
+summon area_effect_cloud -255 31.5 210 {Tags:["shop2","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a762"',CustomNameVisible:1b,Age:-19103293}
+summon area_effect_cloud -304 31.5 261 {Tags:["shop2","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a762"',CustomNameVisible:1b,Age:-19103293}
+summon area_effect_cloud -355 31.5 211 {Tags:["shop2","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a762"',CustomNameVisible:1b,Age:-19103293}
+summon area_effect_cloud -306 31.5 161 {Tags:["shop2","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a762"',CustomNameVisible:1b,Age:-19103293}
+
+ 
 # # diamond
 summon marker -276 27 176 {Tags:["diamond","bedwars"],CustomName:'"\\u00a7b\\u00a7lDiamond Spawner"',CustomNameVisible:1b,Age:-19298239}
 summon marker -275 27 242 {Tags:["diamond","bedwars"],CustomName:'"\\u00a7b\\u00a7lDiamond Spawner"',CustomNameVisible:1b,Age:-19298239}

@@ -10,7 +10,13 @@ bossbar set minigames:bedwars players
 bossbar set minigames:bedwars players @a[team=bw.wait]
 bossbar set minigames:bedwars visible true
 
+
 forceload add -216 300 -393 121
+
+scoreboard players reset @e[type=sheep,tag=bw.tntsheep]
+kill @e[type=sheep,tag=bw.tntsheep]
+kill @e[type=marker,tag=tntsheep.spawn]
+
 scoreboard players set bw.state state -1
 schedule clear bedwars/resets/mogu
 schedule clear bedwars/resets/unnamed

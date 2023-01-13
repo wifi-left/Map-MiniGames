@@ -8,6 +8,8 @@ execute if score bw.state state matches ..-1 run function bedwars/testforreset
 #
 function minecraft:bedwars/armor
 
+execute as @e[tag=bw.tntsheep] at @s run function bedwars/item/sheepsecond
+
 effect give @a[tag=bw.attack] strength 2 0 true
 effect give @a[tag=bw.fasti] haste 2 0 true
 effect give @a[tag=bw.fastii] haste 2 1 true
