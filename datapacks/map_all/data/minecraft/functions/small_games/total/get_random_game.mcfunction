@@ -43,6 +43,7 @@ execute if score total.game board matches 7..7 if score hide2.state state matche
 execute if score total.game board matches 8..8 if score duel.state state matches 1.. run scoreboard players set error state 1
 execute if score total.game board matches 9..9 if score hotpot.state state matches 1.. run scoreboard players set error state 1
 execute if score total.game board matches 10..10 if score pw.state state matches 1.. run scoreboard players set error state 1
+execute if score total.game board matches 11..11 if score tnt.state state matches 1.. run scoreboard players set error state 1
 # execute if score total.game board matches 10..10 run 
 ## Failure: Retry
 execute as @e[tag=random_game_sel] run execute if score error state matches 1.. run function small_games/total/next_game_fail

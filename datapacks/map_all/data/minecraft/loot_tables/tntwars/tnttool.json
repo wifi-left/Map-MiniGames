@@ -1,0 +1,97 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "weight": 4,
+            "name": "minecraft:carrot_on_a_stick",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'\"\\\\u00a7c\\\\u00a7lFireball\\\\u00a77 - 右键使用\"'},tnt:4}"
+              }
+            ]
+          },{
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:carrot_on_a_stick",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'\"\\\\u00a7b\\\\u00a7lTNT Rain\\\\u00a77 - 右键使用\"'},tnt:5}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 3,
+            "name": "minecraft:carrot_on_a_stick",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'\"\\\\u00a72\\\\u00a7lCreeper\\\\u00a77 - 右键使用\"'},tnt:3}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:carrot_on_a_stick",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'\"\\\\u00a74\\\\u00a7lTNT\\\\u00a77 - 右键使用\"'},tnt:2}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 4,
+            "name": "minecraft:carrot_on_a_stick",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'\"\\\\u00a7c\\\\u00a7lTNT - Minecart\\\\u00a77 - 右键使用\"'},tnt:1}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:carrot_on_a_stick",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'\"\\\\u00a72\\\\u00a7lCreeper Rain\\\\u00a77 - 右键使用\"'},tnt:6}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:carrot_on_a_stick",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'\"\\\\u00a7c\\\\u00a7lFireball Rain\\\\u00a77 - 右键使用\"'},tnt:7}"
+              }
+            ]
+          }
+        ],
+        "functions": [
+          {
+            "function": "minecraft:set_count",
+            "count": {
+              "min": 1,
+              "max": 2
+            },
+            "add": true
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -12,8 +12,11 @@ tag @a[tag=NEWENTER] remove bw.play
 tag @a[tag=NEWENTER] remove bw.player
 tag @a[tag=NEWENTER] remove boat.notinboat
 gamemode adventure @a[tag=NEWENTER]
+tag @a[tag=NEWENTER] remove tntwars.a
+tag @a[tag=NEWENTER] remove tntwars.b
 team join lobby @a[tag=NEWENTER]
 
+execute if score tnt.state state matches 1.. run function minecraft:tntwars/tick
 execute if entity @a[team=dropper] in dropperworld run function dropper/tick
 
 execute as @a[tag=NEWENTER] at @s run attribute @s minecraft:generic.attack_speed base set 4
@@ -62,6 +65,7 @@ execute if score chess.state state matches 1.. run function small_games/chess/ti
 
 execute as @e[tag=gun.line] at @s run function gun/main
 execute as @a[scores={use.skill=1..},level=..0,team=job_pvp] at @s run function minecraft:skills
+execute as @a[scores={use.skill=1..},team=play.tntwars] at @s run function minecraft:tntwars/tnttool
 execute as @a[scores={use.skill=1..},level=..0,team=play.live.runner] at @s run function minecraft:skills
 execute as @a[scores={use.skill=1..},level=..0,team=play.live.killer] at @s run function minecraft:skills
 execute in boatworld2 as @a[scores={use.skill=1..},team=boat] at @s run function minecraft:boat/skills

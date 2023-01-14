@@ -8,14 +8,19 @@ execute run effect give @a[team=lobby,tag=mazing] speed 1 0 true
 
 ## Back to the Lobby
 effect give @a[team=lobby] resistance 1 127 true
-kill @e[type=tnt]
+kill @e[type=tnt,nbt={Fuse:80s}]
 scoreboard players enable @a hub
 tag @a[scores={hub=1..}] add NEWENTER1
 title @a[tag=NEWENTER1] reset
 execute as @a[scores={hub=1..}] run tellraw @a ["\u00a7a\u00a7l[MESSAGE] \u00a77",{"selector":"@s","color":"yellow"},"\u00a7b 返回了大厅。"]
+
 execute as @a[scores={hub=1..}] run bossbar set surgame:time players
 scoreboard players reset @a[scores={hub=1..}] hub
 tag @a[scores={hub=1..}] remove sur.killedbyzom
+
+tag @a[tag=NEWENTER1] remove tntwars.a
+tag @a[tag=NEWENTER1] remove tntwars.b
+
 execute as @a[tag=NEWENTER1] at @s run attribute @s minecraft:generic.attack_speed base set 4
 tag @a[tag=NEWENTER1] remove zombie.nehelp
 tag @a[tag=NEWENTER1] remove parkouring

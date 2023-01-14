@@ -5,9 +5,9 @@ kill @e[tag=random_game,type=marker]
 # Car
 # Deleted!
 # 躲猫猫 - 道具
-summon marker 168 115 -45 {Tags:["random_game","neww"],CustomName:'"\\u00a7b\\u00a7l躲猫猫（动物）"'}
-scoreboard players set @e[tag=neww] board 1
-tag @e[tag=neww] remove neww
+# summon marker 168 115 -45 {Tags:["random_game","neww"],CustomName:'"\\u00a7b\\u00a7l躲猫猫（动物）"'}
+# scoreboard players set @e[tag=neww] board 1
+# tag @e[tag=neww] remove neww
 # Snow TNTRUN
 summon marker 168 115 -45 {Tags:["random_game","neww"],CustomName:'"\\u00a7eTNTRUN"'}
 scoreboard players set @e[tag=neww] board 2
@@ -44,7 +44,10 @@ tag @e[tag=neww] remove neww
 summon marker 168 115 -45 {Tags:["random_game","neww"],CustomName:'"\\u00a7b冬泳怪鸽"'}
 scoreboard players set @e[tag=neww] board 10
 tag @e[tag=neww] remove neww
-
+# TNT Wars
+summon marker 168 115 -45 {Tags:["random_game","neww"],CustomName:'"\\u00a7cTNT Wars"'}
+scoreboard players set @e[tag=neww] board 11
+tag @e[tag=neww] remove neww
 
 # Car 1
 # Snow TNTRUN 2

@@ -9,3 +9,6 @@ execute as @a[team=pw.wait] run function poolwar/join
 execute as @a[team=pw.play] run function poolwar/join
 
 tellraw @a[team=pw.play] ["\u00a7e没有正确返回？输入 \u00a7b/trigger hub \u00a7e返回大厅！"]
+
+scoreboard players reset * pw.max
+scoreboard players reset * drown

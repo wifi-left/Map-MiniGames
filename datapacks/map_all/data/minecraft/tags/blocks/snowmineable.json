@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "minecraft:oak_log",
     "minecraft:snow_block",
     "minecraft:grass_block",
     "minecraft:dirt",

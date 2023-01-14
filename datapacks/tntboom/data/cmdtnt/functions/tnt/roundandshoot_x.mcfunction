@@ -1,4 +1,3 @@
-
 scoreboard players add tnt.round.x board 1
 scoreboard players set tnt.round.y board 0
 function cmdtnt:tnt/roundandshoot_y

@@ -31,3 +31,7 @@ execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matc
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 9..9 run function hotpotever/teststart
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 10..10 run execute as @a[tag=play.total] run function poolwar/join
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 10..10 run function poolwar/teststart
+
+
+execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 11..11 run execute as @a[tag=play.total] run function tntwars/join
+execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 11..11 run function tntwars/trystart
