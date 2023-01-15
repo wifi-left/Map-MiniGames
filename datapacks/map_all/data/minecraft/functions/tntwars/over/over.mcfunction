@@ -10,4 +10,4 @@ tellraw @a[team=play.tntwars] ["\u00a7e游戏将在\u00a7c5\u00a7e秒后重置�
 kill @e[type=!player,tag=tntwars.tnt]
 schedule function tntwars/over/tp 5s
 kill @e[tag=tnt.tntrain]
-schedule function tntwars/resetsmap 2s
+schedule function tntwars/cleanmap 2s

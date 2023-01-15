@@ -8,6 +8,7 @@ execute as @e[tag=emerald,type=marker] at @s run summon minecraft:area_effect_cl
 tellraw @a[tag=bw.player] ["\u00a7a重置完毕！"]
 scoreboard players set bw.reset board 0
 forceload remove -573 299 -397 121
+forceload remove -753 121 -577 299
 schedule clear bedwars/resets/mogu
 schedule clear bedwars/resets/unnamed
 
@@ -45,18 +46,7 @@ data merge block -226 30 211 {Items: []}
 data merge block -306 30 287 {Items: []}
 data merge block -382 30 207 {Items: []}
 
-setblock -371 31 210 yellow_bed[facing=west]
-setblock -372 31 210 yellow_bed[facing=west,part=head]
-
-setblock -305 31 142 red_bed[facing=north]
-setblock -305 31 141 red_bed[facing=north,part=head]
-
-setblock -237 31 208 lime_bed[facing=east]
-setblock -236 31 208 lime_bed[facing=east,part=head]
-
-setblock -303 31 276 blue_bed[facing=south]
-setblock -303 31 277 blue_bed[facing=south,part=head]
-
+function bedwars/resets/placebed
 
 execute if score bw.mode state matches 1 run setblock -371 31 210 air
 execute if score bw.mode state matches 1 run setblock -372 31 210 air
@@ -114,7 +104,6 @@ bossbar set minigames:bedwars name ["\u00a7f\u00a7lBEDWARS 起床战争 \u00a77|
 execute store result score bw.event.time tick run bossbar get minigames:bedwars max
 scoreboard players operation bw.event.time tick -= bw.event.countdown board
 execute store result bossbar minigames:bedwars value run scoreboard players get bw.event.time tick
-
 
 scoreboard players set bw.set.em board 72
 scoreboard players set bw.set.dm board 48
