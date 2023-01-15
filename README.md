@@ -22,3 +22,6 @@ GitLab 下载速度更快。
 GitLab 的 URL 为：[https://gitlab.com/wifi-left/Map-MiniGames/-/raw/master/resourcepack/MiniGameRes.zip?inline=false](https://gitlab.com/wifi-left/Map-MiniGames/-/raw/master/resourcepack/MiniGameRes.zip?inline=false)
 
 GitHub 的 URL 为：[https://github.com/wifi-left/Map-MiniGames/raw/master/resourcepack/MiniGameRes.zip](https://github.com/wifi-left/Map-MiniGames/raw/master/resourcepack/MiniGameRes.zip)
+
+# 目前待做列表
+[To-do List](./datapacks/todo.md)
