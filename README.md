@@ -25,3 +25,9 @@ GitHub 的 URL 为：[https://github.com/wifi-left/Map-MiniGames/raw/master/reso
 
 # 目前待做列表
 [To-do List](./datapacks/todo.md)
+
+# 服务端安装教程
+[开服教程 - MCAdmin](https://mcadmin.cn/server/)
+[原版服务端 / Fabric 服务端 使用本地图](https://wifi-left.github.io/MC-MiniGames/setup.html)
+
+其余的请参考上述教程。
