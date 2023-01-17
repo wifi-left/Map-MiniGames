@@ -13,6 +13,7 @@ tellraw @a[team=play.tntwars] ["\n\u00a7a「队伍A」",{"selector":"@a[tag=tntw
 
 execute if score tntwars.map state matches ..0 run function tntwars/startmaps/boat1
 execute if score tntwars.map state matches 1 run function tntwars/startmaps/ballon1
+execute if score tntwars.map state matches 2 run function tntwars/startmaps/cloud1
 # execute if score tntwars.map state matches 2.. run data merge block 496 21 240 {Text3:'"\\u00a7cError"'}
 
 

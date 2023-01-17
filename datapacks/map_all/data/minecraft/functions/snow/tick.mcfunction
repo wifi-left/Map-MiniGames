@@ -23,10 +23,6 @@ execute if score duel.state state matches 1.. run function minecraft:duel/tick
 
 scoreboard players reset @a[scores={JOBPVP.die=1..}] JOBPVP.die
 
-gamemode survival @a[scores={leave=1..}]
-execute as @a[scores={leave=1..}] in overworld run tp 188 124 26
-scoreboard players reset @a[scores={leave=1..}] leave
-
 
 scoreboard players reset @a[scores={hp.hurt=0..},team=!play.hotpot.k] hp.hurt
 scoreboard players reset @a[scores={hp.gethurt=0..}] hp.gethurt
