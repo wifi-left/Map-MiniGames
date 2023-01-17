@@ -49,6 +49,17 @@
           },
           {
             "type": "minecraft:item",
+            "weight": 2,
+            "name": "minecraft:carrot_on_a_stick",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{display:{Name:'\"\\\\u00a74\\\\u00a7lLong-Way TNT\\\\u00a77 - 右键使用\"'},tnt:8}"
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
             "weight": 4,
             "name": "minecraft:carrot_on_a_stick",
             "functions": [
