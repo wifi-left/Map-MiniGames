@@ -50,17 +50,17 @@ summon area_effect_cloud -306 31.5 161 {Tags:["shop2","bedwars"],CustomName:'"\\
 
  
 # # diamond
-summon marker -276 27 176 {Tags:["diamond","bedwars"],CustomName:'"\\u00a7b\\u00a7lDiamond Spawner"',CustomNameVisible:1b,Age:-19298239}
-summon marker -275 27 242 {Tags:["diamond","bedwars"],CustomName:'"\\u00a7b\\u00a7lDiamond Spawner"',CustomNameVisible:1b,Age:-19298239}
-summon marker -335 36 239 {Tags:["diamond","bedwars"],CustomName:'"\\u00a7b\\u00a7lDiamond Spawner"',CustomNameVisible:1b,Age:-19298239}
-summon marker -337 35 167 {Tags:["diamond","bedwars"],CustomName:'"\\u00a7b\\u00a7lDiamond Spawner"',CustomNameVisible:1b,Age:-19298239}
+summon marker -276 27 176 {Tags:["diamond","bedwars"],CustomName:'"\\u00a7b\\u00a7lDiamond Spawner"',CustomNameVisible:1b}
+summon marker -275 27 242 {Tags:["diamond","bedwars"],CustomName:'"\\u00a7b\\u00a7lDiamond Spawner"',CustomNameVisible:1b}
+summon marker -335 36 239 {Tags:["diamond","bedwars"],CustomName:'"\\u00a7b\\u00a7lDiamond Spawner"',CustomNameVisible:1b}
+summon marker -337 35 167 {Tags:["diamond","bedwars"],CustomName:'"\\u00a7b\\u00a7lDiamond Spawner"',CustomNameVisible:1b}
 
 # -276 27 176
 # -275 27 242
 # -335 36 239
 # -337 35 167
 # # emerald
-summon marker -294 41 194 {Tags:["emerald","bedwars"],CustomName:'"\\u00a7a\\u00a7lEmerald Spawner"',CustomNameVisible:1b,Age:-19298239}
-summon marker -294 45 220 {Tags:["emerald","bedwars"],CustomName:'"\\u00a7a\\u00a7lEmerald Spawner"',CustomNameVisible:1b,Age:-19298239}
+summon marker -294 41 194 {Tags:["emerald","bedwars"],CustomName:'"\\u00a7a\\u00a7lEmerald Spawner"',CustomNameVisible:1b}
+summon marker -294 45 220 {Tags:["emerald","bedwars"],CustomName:'"\\u00a7a\\u00a7lEmerald Spawner"',CustomNameVisible:1b}
 
 
