@@ -4,6 +4,9 @@
 2. 如果进行修改请添加明显提示
 3. 不可商用
 
+# 快速开始、强制进入游戏（管理员）
+详见 [QUICKPLAY.md](QUICKPLAY.md)
+
 # 反馈BUG
 请在 GitHub Issue 或者qq群里反馈
 

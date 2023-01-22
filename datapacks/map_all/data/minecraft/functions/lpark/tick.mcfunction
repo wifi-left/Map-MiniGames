@@ -7,7 +7,7 @@ execute as @a[scores={parkour=2},team=parkour] at @s run function minecraft:lpar
 execute as @a[scores={parkour=3},team=parkour] at @s run function minecraft:lpark/delect
 execute as @a[scores={parkour=4},team=parkour] at @s run function minecraft:lpark/cancel
 
-scoreboard players reset @a[scores={parkour=1..}] parkour
+scoreboard players reset @a[scores={parkour=1..},team=parkour] parkour
 # execute as @a[team=parkour,gamemode=!creative] at @s as @s[y=-1,dy=-30] run function minecraft:lpark/backpoint
 execute as @a[team=parkour] at @s if block ~ ~ ~ heavy_weighted_pressure_plate run function minecraft:lpark/setpoint
 execute as @a[team=parkour] at @s if block ~ ~ ~ polished_blackstone_pressure_plate run function minecraft:lpark/end

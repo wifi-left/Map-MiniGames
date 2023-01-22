@@ -31,3 +31,5 @@ scoreboard players reset @a[scores={eat.goldapple=0..}] eat.goldapple
 scoreboard players reset @a[scores={eat.glow=0..}] eat.glow
 
 scoreboard players reset @a[scores={zombie.died=1..}] zombie.died
+
+scoreboard players reset @a[scores={parkour=1..}] parkour

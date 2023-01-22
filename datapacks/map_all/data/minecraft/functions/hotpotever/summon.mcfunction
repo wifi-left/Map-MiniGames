@@ -15,5 +15,9 @@ tellraw @a[team=play.hotpot] ["\n    \u00a7cHot Potato 持有者：",{"selector"
 tellraw @a[team=play.hotpot.k] ["\n    \u00a7bHot Potato 持有者（包含你）：",{"selector":"@a[team=play.hotpot.k]"},"\n"]
 give @a[team=play.hotpot.k] potato{hotpot:1,display:{Name:'{"text":"Hot Potato","color":"#aed3ff","bold": true}'}}
 scoreboard players set hotpot.state state 2
-scoreboard players set hp.time tick 60
+execute if score play.hotpot.player tick matches 2.. run scoreboard players set hp.time tick 30
+execute if score play.hotpot.player tick matches 3.. run scoreboard players set hp.time tick 40
+execute if score play.hotpot.player tick matches 4.. run scoreboard players set hp.time tick 45
+execute if score play.hotpot.player tick matches 8.. run scoreboard players set hp.time tick 50
+execute if score play.hotpot.player tick matches 16.. run scoreboard players set hp.time tick 60
 team modify play.hotpot.k color dark_red

@@ -11,6 +11,9 @@ execute as @a[tag=tnt.tanteam] run function tntwars/randomteam
 team join play.tntwars @a[team=wait.tntwars,gamemode=adventure]
 tellraw @a[team=play.tntwars] ["\n\u00a7a「队伍A」",{"selector":"@a[tag=tntwars.a]"},"\n\u00a7b「队伍B」",{"selector":"@a[tag=tntwars.b]"},"\n"]
 
+tellraw @a[tag=tntwars.a] ["\u00a76你加入了 \u00a7cTNT Wars \u00a7a「队伍A」"]
+tellraw @a[tag=tntwars.b] ["\u00a76你加入了 \u00a7cTNT Wars \u00a7b「队伍B」"]
+
 execute if score tntwars.map state matches ..0 run function tntwars/startmaps/boat1
 execute if score tntwars.map state matches 1 run function tntwars/startmaps/ballon1
 execute if score tntwars.map state matches 2 run function tntwars/startmaps/cloud1

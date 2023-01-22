@@ -12,6 +12,10 @@ scoreboard players set wait.park.player tick 0
 execute as @a[team=wait.parkour] run scoreboard players add wait.park.player tick 1
 
 execute if score zombie.debug state matches 1 run function zombieever/test/display
+execute if score battle.state state matches 1.. in overworld run function battle/second
+
+effect give @a[team=wait.battle] resistance 5 25 true
+effect give @a[team=wait.battle] regeneration 5 25 true
 
 effect give @a[team=wait.tntwars] resistance 5 25 true
 effect give @a[team=play.tntwars] resistance 5 25 true

@@ -1,0 +1,2 @@
+give @s wooden_axe{CanDestroy:["white_wool","blue_wool","red_wool"],Unbreakable:1b,HideFlags:63,display:{Lore:['""','"\\u00a77在主手时："','"\\u00a72 7 攻击伤害"','"\\u00a72 0.8 攻击速度"']},Enchantments:[{id:"knockback",lvl:2}]}
+# scoreboard players remove battle.item.1 board 1

@@ -12,7 +12,7 @@ forceload remove -753 121 -577 299
 schedule clear bedwars/resets/mogu
 schedule clear bedwars/resets/unnamed
 
-tag @a[team=bw.wait] add bw.play
+tag @a[team=bw.wait,tag=!GOABLE.SPEC] add bw.play
 title @a[tag=bw.player] reset
 title @a[tag=bw.player] title ["\u00a7eBedwars"]
 title @a[tag=bw.player] subtitle ["\u00a7a游戏开始！"]

@@ -1,7 +1,9 @@
 function minecraft:lobby/elevent
 
-gamemode survival @a[scores={leave=1..}]
+
 execute as @a[scores={leave=1..}] in overworld run tp 188 124 26
+execute as @a[scores={leave=1..}] if score bw.state state matches 1.. if score @s globle.game = bw globle.game run function bedwars/during/player/rejoin
+gamemode survival @a[scores={leave=1..}]
 scoreboard players reset @a[scores={leave=1..}] leave
 
 tag @a[gamemode=survival,nbt={Dimension:"minecraft:overworld"}] add NEWENTER
@@ -58,6 +60,7 @@ execute if score hide.state state matches 1.. run function hideseek/tick
 execute if score golf.state state matches 1.. in golfworld run function golf/tick
 execute if score boat.state state matches 1.. in boatworld2 run function boat/tick
 execute if score hunger.state state matches 1.. in hungerworld run function hunger/tick
+execute if score battle.state state matches 1.. in overworld run function battle/tick
 
 execute as @a[team=lobby,tag=!parkouring] at @s if block ~ ~ ~ light_weighted_pressure_plate run function npark/join
 execute as @a[team=lobby,tag=!mazing] at @s if block ~ ~ ~ warped_pressure_plate run function maze/join
