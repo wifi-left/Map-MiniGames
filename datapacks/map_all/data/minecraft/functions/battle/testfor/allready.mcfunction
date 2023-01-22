@@ -1,1 +1,1 @@
-execute unless entity @a[tag=battle.notready,gamemode=adventure] run function battle/round_ready
+execute unless entity @a[tag=battle.notready,gamemode=adventure,tag=battle.sel] run function battle/round_ready

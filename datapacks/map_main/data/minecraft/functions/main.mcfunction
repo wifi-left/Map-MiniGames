@@ -121,6 +121,9 @@ execute if score repel state matches 1..1 run function minecraft:repel/main
 execute if score twolf.state state matches 1..1 run function minecraft:twolf/tick
 execute if score wolf.state state matches 1..1 run function minecraft:small_games/wolf/tick
 scoreboard players add tick tick 1
+execute if score tick tick matches 5 run function minecraft:seconds/1
+execute if score tick tick matches 10 run function minecraft:seconds/2
+execute if score tick tick matches 15 run function minecraft:seconds/3
 execute if score tick tick matches 20.. run function minecraft:second
 effect give @a[team=play.repel] minecraft:resistance 1 25 true
 effect give @a[team=pw.wait] minecraft:resistance 1 25 true
@@ -128,9 +131,6 @@ effect give @a[team=car.wait] minecraft:resistance 1 25 true
 effect give @a[team=wait.repel] minecraft:resistance 1 25 true
 kill @e[type=arrow,nbt={inGround:1b}]
 kill @e[type=spectral_arrow,nbt={inGround:1b}]
-function minecraft:live/tick
-function minecraft:parkourrace/tick
-function minecraft:snow/tick
 # execute as @e[type=area_effect_cloud,tag=title] at @s run data modify 
 execute if score gametotal state matches 1.. run function minecraft:small_games/total/tick
 # execute if score @a[team=wait.total] run function minecraft:small_games/total/tick
