@@ -1,3 +1,4 @@
+# say 3
 
 execute if score hunger.state state matches 1.. in hungerworld run function hunger/second
 execute if score hunger.state state matches 0 in hungerworld run effect give @a[team=hunger] resistance 2 25 true

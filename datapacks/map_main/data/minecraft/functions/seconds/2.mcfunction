@@ -1,3 +1,4 @@
+# say 2
 
 execute if score hide2.state state matches 1.. run function minecraft:hide2/second
 
