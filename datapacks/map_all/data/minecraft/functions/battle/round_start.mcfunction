@@ -13,6 +13,6 @@ execute as @a[tag=battle.sel] at @s run playsound entity.player.levelup player @
 tag @a remove battle.sel
 fill 146 39 -324 142 35 -324 air destroy
 fill 142 39 -356 146 35 -356 air destroy
+execute positioned 144 35 -340 run kill @e[type=item,distance=0..40]
 function battle/ranpotion
 playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 1 1
-execute positioned 144 35 -340 run kill @e[type=item,distance=0..40]

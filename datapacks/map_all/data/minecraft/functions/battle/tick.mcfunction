@@ -11,4 +11,6 @@ execute as @a[team=play.battle.b,gamemode=adventure] at @s as @e[type=item,dista
 fill 143 28 -339 145 28 -341 air destroy
 fill 139 28 -345 149 35 -335 air replace #minecraft:wool
 
-execute as @e[type=armor_stand,tag=battle.ranpotion] at @s run function battle/ranpotiontick
+
+
+# execute as @e[type=armor_stand,tag=battle.ranpotion] at @s run function battle/ranpotiontick
