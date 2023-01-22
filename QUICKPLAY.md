@@ -16,7 +16,7 @@
 删除线为正在制作或者已被删除。
 |游戏名|ID|
 |:----:|:----:|
-|~~Battle Box~~|battle|
+|Battle Box|battle|
 |信仰方块|believer|
 |冰船|boat|
 |赛车|car_race|
