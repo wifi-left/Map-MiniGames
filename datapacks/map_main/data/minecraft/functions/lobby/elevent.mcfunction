@@ -10,7 +10,16 @@ execute run effect give @a[team=lobby,tag=mazing] speed 1 0 true
 effect give @a[team=lobby] resistance 1 127 true
 kill @e[type=tnt,nbt={Fuse:80s}]
 scoreboard players enable @a hub
+scoreboard players enable @a rejoin
+
+tag @a[scores={rejoin=1..}] add REJOINGAME
+execute as @a[tag=REJOINGAME] run function lobby/rejoin
+scoreboard players reset @a[tag=REJOINGAME] rejoin
+tag @a[tag=REJOINGAME] remove REJOINGAME
+
+
 tag @a[scores={hub=1..}] add NEWENTER1
+
 title @a[tag=NEWENTER1] reset
 execute as @a[scores={hub=1..}] run tellraw @a ["\u00a7a\u00a7l[MESSAGE] \u00a77",{"selector":"@s","color":"yellow"},"\u00a7b 返回了大厅。"]
 

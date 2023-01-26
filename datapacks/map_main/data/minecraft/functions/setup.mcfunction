@@ -12,6 +12,11 @@ scoreboard objectives add spec trigger ["\u00a77全局旁观者操作"]
 scoreboard objectives remove globle.game
 scoreboard objectives add globle.game dummy "游戏ID，用于玩家重新加入"
 scoreboard players set globle globle.game 1
+# game.total globle.game = globle globle.game
+scoreboard objectives remove hub
+scoreboard objectives remove rejoin
+scoreboard objectives add hub trigger "\u00a7b回城操作"
+scoreboard objectives add rejoin trigger "\u00a7e重新加入游戏操作"
 
 bossbar remove minecraft:battle
 bossbar add minecraft:battle "BATTLE GAME"
@@ -24,3 +29,4 @@ say §b§l若您是第一次使用此地图，请管理员（或者控制台）�
 
 # function inits/reset_random
 # function inits/resetuuid
+kill @e[tag=lobby.car,type=minecart]

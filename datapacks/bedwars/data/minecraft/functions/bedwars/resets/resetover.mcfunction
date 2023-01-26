@@ -32,6 +32,8 @@ gamemode adventure @a[team=bw.red]
 # execute as @a run function minecraft:bedwars/before/teleport
 execute as @a[tag=bw.play] run function bedwars/during/player/onlytpspawn
 
+scoreboard players operation @a[tag=bw.play] globle.game = bw globle.game
+
 scoreboard players set bd.blue state 1
 scoreboard players set bd.green state 1
 scoreboard players set bd.yellow state 1

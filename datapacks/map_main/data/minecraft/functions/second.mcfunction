@@ -15,7 +15,7 @@ function minecraft:snow/second
 execute if score car.state state matches 1.. run function minecraft:car_race/second
 execute as @e[tag=block_entity] run data merge entity @s {Time:100}
 
-
+execute as @e[type=minecart,tag=lobby.car] at @s if block ~ ~ ~ lava run kill @s
 
 
 ## Car
