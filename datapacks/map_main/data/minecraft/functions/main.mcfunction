@@ -121,9 +121,10 @@ execute if score repel state matches 1..1 run function minecraft:repel/main
 execute if score twolf.state state matches 1..1 run function minecraft:twolf/tick
 execute if score wolf.state state matches 1..1 run function minecraft:small_games/wolf/tick
 scoreboard players add tick tick 1
-execute if score tick tick matches 5 run function minecraft:seconds/1
-execute if score tick tick matches 10 run function minecraft:seconds/2
-execute if score tick tick matches 15 run function minecraft:seconds/3
+execute if score tick tick matches 4 run function minecraft:seconds/1
+execute if score tick tick matches 8 run function minecraft:seconds/2
+execute if score tick tick matches 12 run function minecraft:seconds/3
+execute if score tick tick matches 16 run function minecraft:seconds/4
 execute if score tick tick matches 20.. run function minecraft:second
 effect give @a[team=play.repel] minecraft:resistance 1 25 true
 effect give @a[team=pw.wait] minecraft:resistance 1 25 true
