@@ -26,7 +26,7 @@ execute as @a[scores={hub=1..}] run tellraw @a ["\u00a7a\u00a7l[MESSAGE] \u00a77
 execute as @a[scores={hub=1..}] run bossbar set surgame:time players
 scoreboard players reset @a[scores={hub=1..}] hub
 tag @a[scores={hub=1..}] remove sur.killedbyzom
-
+team join lobby @a[tag=NEWENTER1]
 tag @a[tag=NEWENTER1] remove tntwars.a
 tag @a[tag=NEWENTER1] remove tntwars.b
 
@@ -50,7 +50,7 @@ title @a[tag=NEWENTER1] subtitle ["\u00a76You're in \u00a7dMain Lobby"]
 title @a[tag=NEWENTER1] actionbar ["\u00a7aWelcome to the map!"]
 gamemode adventure @a[tag=NEWENTER1]
 execute as @a[tag=NEWENTER1] at @s run attribute @s minecraft:generic.max_health base set 20
-team join lobby @a[tag=NEWENTER1]
+
 clear @a[tag=NEWENTER1]
 tag @a[tag=NEWENTER1] remove sur.killedbyzom
 tag @a[tag=NEWENTER1] remove bw.play

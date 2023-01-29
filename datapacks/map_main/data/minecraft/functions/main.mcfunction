@@ -8,6 +8,7 @@ scoreboard players reset @a[scores={leave=1..}] leave
 
 tag @a[gamemode=survival,nbt={Dimension:"minecraft:overworld"}] add NEWENTER
 tp @a[tag=NEWENTER] 188 124 26 0 0
+team join lobby @a[tag=NEWENTER]
 title @a[tag=NEWENTER] title ["\u00a7a\u00a7lMini\u00a7e\u00a7lGames"]
 title @a[tag=NEWENTER] subtitle ["\u00a76You're in \u00a7dMain Lobby"]
 title @a[tag=NEWENTER] actionbar ["\u00a7aWelcome to the map!"]
@@ -21,7 +22,6 @@ tag @a[tag=NEWENTER] remove boat.notinboat
 gamemode adventure @a[tag=NEWENTER]
 tag @a[tag=NEWENTER] remove tntwars.a
 tag @a[tag=NEWENTER] remove tntwars.b
-team join lobby @a[tag=NEWENTER]
 
 execute if score tnt.state state matches 1.. run function minecraft:tntwars/tick
 execute if entity @a[team=dropper] in dropperworld run function dropper/tick
