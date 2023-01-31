@@ -29,7 +29,7 @@ tag @a[scores={hub=1..}] remove sur.killedbyzom
 team join lobby @a[tag=NEWENTER1]
 tag @a[tag=NEWENTER1] remove tntwars.a
 tag @a[tag=NEWENTER1] remove tntwars.b
-
+tag @a[tag=NEWENTER1] remove bw.shears
 execute as @a[tag=NEWENTER1] at @s run attribute @s minecraft:generic.attack_speed base set 4
 tag @a[tag=NEWENTER1] remove zombie.nehelp
 tag @a[tag=NEWENTER1] remove parkouring
@@ -40,9 +40,7 @@ tag @a[tag=NEWENTER1] remove mazing
 tellraw @a[tag=NEWENTER1] ["\n\u00a7a  您可以随时使用 \u00a76/trigger hub \u00a7a返回大厅。\n"]
 tellraw @a[tag=NEWENTER1,tag=GOABLE.SPEC] ["\n\u00a77  你已开启\u00a7b全局旁观者模式\u00a77。\n  \u00a77",{"text":"\u00a7a\u00a7l点击此处，或者使用 \u00a76\u00a7l/trigger spec set 3 \u00a7a\u00a7l退出全局旁观者模式","bold":true,"clickEvent": {"action": "run_command","value": "/trigger spec set 3"},"hoverEvent": {"action": "show_text","contents": "\u00a7c点击此处退出全局旁观者模式"}},"\n"]
 execute as @a[tag=NEWENTER1] run attribute @s generic.max_health base set 20
-
 execute as @a[tag=NEWENTER1] at @s run effect clear @s
-
 execute in overworld run tp @a[tag=NEWENTER1] 188 124 26 0 0
 effect clear @a[tag=NEWENTER1]
 title @a[tag=NEWENTER1] title ["\u00a7a\u00a7lMini\u00a7e\u00a7lGames"]
