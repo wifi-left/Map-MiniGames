@@ -30,3 +30,5 @@ say §b§l若您是第一次使用此地图，请管理员（或者控制台）�
 # function inits/reset_random
 # function inits/resetuuid
 kill @e[tag=lobby.car,type=minecart]
+
+execute in overworld run forceload add 0 0
