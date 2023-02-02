@@ -3,7 +3,7 @@ scoreboard players set hunger.state state 0
 gamemode adventure @a[team=hunger]
 execute as @a[team=hunger] run function hunger/join
 execute in hungerworld run kill @e[type=item,distance=0..]
-forceload remove 2 3 200 100
+execute in hungerworld run forceload remove 2 3 200 100
 execute in hungerworld run kill @e[distance=0..,type=experience_orb]
-forceload remove 201 101 315 293
+execute in hungerworld run forceload remove 201 101 315 293
 team modify hunger friendlyFire false

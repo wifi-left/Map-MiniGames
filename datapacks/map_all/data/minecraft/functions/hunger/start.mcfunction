@@ -5,8 +5,8 @@ scoreboard players set hunger.time board 61
 scoreboard players set hunger.state state 1
 scoreboard players set hunger.chests board 3
 # 会补给3次箱子，每次补给5分钟一次。
-forceload add 2 3 200 100
-forceload add 201 101 315 293
+execute in hungerworld run forceload add 2 3 200 100
+execute in hungerworld run forceload add 201 101 315 293
 execute in hungerworld run kill @e[type=item,distance=0..]
 function hunger/flushitem
 team modify hunger friendlyFire false
