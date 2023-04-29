@@ -1,2 +1,2 @@
 execute if score chess.state state matches 1 if score chest.type board matches 1 run function small_games/chess/five/second
-execute if score chess.state state matches 2 if score chest.type board matches 2 run function small_games/chess/ch_chess/second
+execute if score chess.state state matches 1 if score chest.type board matches 2 run function small_games/chess/boom/second

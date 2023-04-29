@@ -39,4 +39,5 @@ tag @s remove gun.4
 tag @s remove gun.5
 tag @s remove gun.6
 tag @s remove gun.10
+tag @s remove gun.11
 tag @s remove gun.canshoot
