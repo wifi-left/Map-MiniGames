@@ -8,6 +8,7 @@ tag @a remove chess.black
 tag @a remove chest.white
 tag @a remove chest.black
 tag @a[team=chestgame,gamemode=adventure] add chess.ranteam
+scoreboard players set rand board 1
 execute as @a[tag=chess.ranteam] run function small_games/chess/five/random_team
 tag @a[tag=chess.ranteam] remove chess.ranteam
 tp @a[team=chestgame,gamemode=adventure] 74 121 55 0 0

@@ -1,6 +1,7 @@
 tag @s add sel
 execute as @a[team=job_pvp] if score @s park.uuid = @e[tag=sel,limit=1] park.uuid run tag @s add hit.player
 
+damage @a[tag=hitted,limit=1] 1 minecraft:player_gun by @a[tag=hit.player,limit=1]
 tellraw @a[tag=hit.player] ["\u00a78你击中了 ",{"selector":"@a[tag=hitted]"}]
 tellraw @a[tag=hitted] ["\u00a78你被定住了。"]
 title @a[tag=hitted] title ["\u00a7c你被定住了。"]

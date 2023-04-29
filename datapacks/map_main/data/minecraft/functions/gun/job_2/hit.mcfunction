@@ -1,6 +1,8 @@
 tag @s add sel
 execute as @a[team=job_pvp] if score @s park.uuid = @e[tag=sel,limit=1] park.uuid run tag @s add hit.player
 
+damage @a[tag=hitted,limit=1] 1 minecraft:sonic_boom by @a[tag=hit.player,limit=1]
+
 tellraw @a[tag=hit.player] ["\u00a78你与 ",{"selector":"@a[tag=hitted]"}," \u00a78交换了位置。"]
 tellraw @a[tag=hitted] ["\u00a78你与 ",{"selector":"@a[tag=hit.player]"}," 交换了位置。"]
 title @a[tag=hitted] title ["\u00a7c你交换了位置。"]

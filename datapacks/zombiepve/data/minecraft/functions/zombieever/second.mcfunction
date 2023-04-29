@@ -14,6 +14,9 @@ execute if score zombie.state state matches 1 run bossbar set zombie:zombiecount
 execute if score zombie.state state matches 1 if score zombie.count tick matches ..0 run function zombieever/thisroundover
 execute if score zombie.count tick matches ..6 run effect give @e[tag=pve.zombie] glowing 2 1 true
 
+# Display Info for player.
+execute as @a[team=play.zombie,gamemode=adventure] at @s run kill @e[type=experience_orb,distance=0..4]
+
 # Player
 scoreboard players set tmp.count tick 0
 execute as @a[team=play.zombie,gamemode=adventure] run scoreboard players add tmp.count tick 1

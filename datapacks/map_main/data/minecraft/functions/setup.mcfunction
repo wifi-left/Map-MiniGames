@@ -17,7 +17,8 @@ scoreboard objectives remove hub
 scoreboard objectives remove rejoin
 scoreboard objectives add hub trigger "\u00a7b回城操作"
 scoreboard objectives add rejoin trigger "\u00a7e重新加入游戏操作"
-
+scoreboard objectives remove xp
+scoreboard objectives add xp level "经验等级"
 bossbar remove minecraft:battle
 bossbar add minecraft:battle "BATTLE GAME"
 bossbar set minecraft:battle color green

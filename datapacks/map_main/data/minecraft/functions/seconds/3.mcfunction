@@ -5,6 +5,7 @@ execute if score hunger.state state matches 0 in hungerworld run effect give @a[
 effect give @a[team=golf] resistance 2 25 true
 
 bossbar set minecraft:hungergame players @a[team=hunger]
+function o_f_tick
 
 execute if score live.state state matches 1..1 run function minecraft:live/testfor
 effect give @a[team=play.live.killer] minecraft:saturation 2 25 true

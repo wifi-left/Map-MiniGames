@@ -25,6 +25,7 @@ execute if score wait.hit.player tick matches 2.. run title @a[team=wait.repel] 
 execute if score start.repel.second tick matches ..1 run function minecraft:repel/start
 effect give @a[team=lobby,scores={health=..19}] minecraft:instant_health 1 5 true
 effect give @a minecraft:saturation 1 25 true
+function o_f_tick
 
 execute if score twolf.state state matches 1..1 run function minecraft:twolf/second
 
