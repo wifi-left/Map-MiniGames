@@ -1,4 +1,4 @@
-setblock 74 111 33 white_wool 
+setblock 74 111 55 white_wool 
 scoreboard players set whitecount board 1
 # tellraw @a [0]
 # Part 1
