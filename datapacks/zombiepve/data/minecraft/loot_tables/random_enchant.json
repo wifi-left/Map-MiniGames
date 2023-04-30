@@ -6,17 +6,8 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:enchanted_book",
+                    "name": "minecraft:book",
                     "functions": [
-                        {
-                            "function": "minecraft:enchant_randomly",
-                            "conditions": [
-                                {
-                                    "condition": "minecraft:random_chance",
-                                    "chance": 0.5
-                                }
-                            ]
-                        },
                         {
                             "function": "minecraft:enchant_randomly",
                             "enchantments": [
@@ -28,7 +19,8 @@
                                 "minecraft:swift_sneak",
                                 "minecraft:fire_aspect",
                                 "minecraft:fire_protection",
-                                "minecraft:sweeping"
+                                "minecraft:sweeping",
+                                "minecraft:unbreaking"
                             ]
                         }
                     ]
