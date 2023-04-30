@@ -17,4 +17,3 @@
 # tag @e[tag=zombie.spawn.main] add zombie.spawn.now
 
 fill 594 3 -58 594 5 -60 minecraft:stone
-fill 584 -8 -95 584 -5 -89 minecraft:deepslate

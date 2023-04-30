@@ -36,3 +36,6 @@ kill @e[type=experience_orb,x=536,y=-24,z=-107,distance=0..80]
 tellraw @a[team=play.zombie,tag=GOABLE.SPEC] ["\n\u00a77  你已开启\u00a7b全局旁观者模式\u00a77。\n  \u00a77由于你进入游戏后会变为旁观模式，请使用 \u00a76/trigger hub\u00a77 返回大厅。\n  ",{"text":"\u00a7a\u00a7l点击此处，或者使用 \u00a76\u00a7l/trigger spec set 3 \u00a7a\u00a7l退出全局旁观者模式","bold":true,"clickEvent": {"action": "run_command","value": "/trigger spec set 3"},"hoverEvent": {"action": "show_text","contents": "\u00a7c点击此处退出全局旁观者模式"}},"\n"]
 execute as @a[team=play.zombie,tag=GOABLE.SPEC] at @s run gamemode spectator
 
+scoreboard players add globle globle.game 1
+scoreboard players operation zombie globle.game = globle globle.game
+scoreboard players operation @a[team=play.zombie] globle.game = zombie globle.game

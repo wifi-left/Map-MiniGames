@@ -25,6 +25,7 @@ execute as @a[scores={hub=1..}] run tellraw @a ["\u00a7a\u00a7l[MESSAGE] \u00a77
 
 execute as @a[scores={hub=1..}] run bossbar set surgame:time players
 scoreboard players reset @a[scores={hub=1..}] hub
+scoreboard players reset @a[scores={hub=1..}] globle.game
 tag @a[scores={hub=1..}] remove sur.killedbyzom
 team join lobby @a[tag=NEWENTER1]
 tag @a[tag=NEWENTER1] remove tntwars.a

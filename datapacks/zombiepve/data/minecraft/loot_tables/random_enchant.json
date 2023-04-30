@@ -9,19 +9,7 @@
                     "name": "minecraft:book",
                     "functions": [
                         {
-                            "function": "minecraft:enchant_randomly",
-                            "enchantments": [
-                                "minecraft:protection",
-                                "minecraft:binding_curse",
-                                "minecraft:sharpness",
-                                "minecraft:knockback",
-                                "minecraft:soul_speed",
-                                "minecraft:swift_sneak",
-                                "minecraft:fire_aspect",
-                                "minecraft:fire_protection",
-                                "minecraft:sweeping",
-                                "minecraft:unbreaking"
-                            ]
+                            "function": "minecraft:enchant_randomly"
                         }
                     ]
                 }

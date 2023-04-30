@@ -1,6 +1,6 @@
 ## In
 # Left
-fill 584 -6 -90 584 -8 -95 air destroy
+
 kill @e[type=item,x=584,y=-6,z=-90,distance=..10]
 tellraw @a[team=play.zombie] ["\n \u00a77\u00a7obong.......... 貌似又有什么东西炸开了？\n"]
 
