@@ -129,7 +129,7 @@ execute if score zombie.round board matches 21..22 as @e[tag=zombie.spawn.10,lim
 execute if score zombie.round board matches 22 as @e[tag=zombie.spawn.boss] at @s run summon wither ~ ~ ~ {Tags:["pve.zombie"],HandDropChances:[0.0f,0.0f],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],Health:200,Attributes:[{Base:0.5d,Name:"generic.movement_speed"},{Base:200d,Name:"generic.max_health"}],DeathLootTable:"minecraft:empty",CustomName:'"\\u00a7a\\u00a7l神様 \\u00a76\\u00a7lKamisama \\u00a76| \\u00a7b\\u00a7lThe God"'}
 
 # Total
-execute as @e[tag=pve.zombie] run data merge entity @s {PersistenceRequired:1b}
+execute as @e[tag=pve.zombie] run data merge entity @s {PersistenceRequired:1b,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]}
 
 ## 下一把开始（开始检测）
 scoreboard players set zombie.state state 1
