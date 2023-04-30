@@ -1,0 +1,39 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "bonus_rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.5
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "enchantments": [
+                                "minecraft:protection",
+                                "minecraft:binding_curse",
+                                "minecraft:sharpness",
+                                "minecraft:knockback",
+                                "minecraft:soul_speed",
+                                "minecraft:swift_sneak",
+                                "minecraft:fire_aspect",
+                                "minecraft:fire_protection",
+                                "minecraft:sweeping"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "values": [
+        "minecraft:zombieever/talks/10/1",
+        "minecraft:zombieever/talks/10/2",
+        "minecraft:zombieever/talks/10/3",
+        "minecraft:zombieever/talks/10/4",
+        "minecraft:zombieever/talks/10/5",
+        "minecraft:zombieever/talks/11/1",
+        "minecraft:zombieever/talks/boss/1",
+        "minecraft:zombieever/talks/boss/2",
+        "minecraft:zombieever/talks/boss/3",
+        "minecraft:zombieever/talks/boss/4",
+        "minecraft:zombieever/talks/boss/5",
+        "minecraft:zombieever/talks/boss/6",
+        "minecraft:zombieever/talks/boss/7",
+        "minecraft:zombieever/talks/boss/8",
+        "minecraft:zombieever/talks/final/1",
+        "minecraft:zombieever/talks/final/2",
+        "minecraft:zombieever/talks/pre/1",
+        "minecraft:zombieever/talks/pre/2",
+        "minecraft:zombieever/talks/pre/3",
+        "minecraft:zombieever/talks/pre/4",
+        "minecraft:zombieever/talks/pre/5",
+        "minecraft:zombieever/talks/pre/done",
+        "minecraft:zombieever/nextround",
+        "minecraft:zombieever/nextround_old"
+    ]
+}

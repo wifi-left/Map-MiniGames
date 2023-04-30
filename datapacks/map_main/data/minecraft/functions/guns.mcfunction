@@ -31,6 +31,7 @@ execute as @s[tag=gun.3,tag=gun.canshoot] run function gun/3/shoot
 execute as @s[tag=gun.4,tag=gun.canshoot] run function gun/4/shoot
 execute as @s[tag=gun.5,tag=gun.canshoot] run function gun/5/shoot
 execute as @s[tag=gun.6,tag=gun.canshoot] run function gun/6/shoot
+execute as @s[tag=gun.7,tag=gun.canshoot] run function gun/7/shoot
 execute as @s[tag=gun.11,tag=gun.canshoot] run function gun/pao/shoot
 tag @s remove gun.1
 tag @s remove gun.2
@@ -38,6 +39,7 @@ tag @s remove gun.3
 tag @s remove gun.4
 tag @s remove gun.5
 tag @s remove gun.6
+tag @s remove gun.7
 tag @s remove gun.10
 tag @s remove gun.11
 tag @s remove gun.canshoot
