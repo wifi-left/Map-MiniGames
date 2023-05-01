@@ -21,6 +21,8 @@ scoreboard players set tmp.count tick 0
 execute as @a[team=play.zombie,gamemode=adventure] run scoreboard players add tmp.count tick 1
 # execute store result bossbar zombie:zombiecount value run scoreboard players get zombie.count tick
 execute if score zombie.state state matches 1..2 if score tmp.count tick matches ..0 run function zombieever/over/lose_player
+execute if score zombie.state state matches 1 as @e[tag=pve.zombie,tag=pve.gunzombie] at @s run function gun/zombiegun/shoot
 
 # execute store result bossbar zombie:zombiecount value run scoreboard players get zombie.count tick
 # execute if score zombie.type board matches 1 if score zombie.state state matches 1 if score tmp.count tick matches ..0 run function zombieever/over/lose_villager
+kill @e[type=evoker_fangs]
