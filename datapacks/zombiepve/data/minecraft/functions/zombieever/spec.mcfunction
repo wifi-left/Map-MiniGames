@@ -11,3 +11,4 @@ item replace entity @s armor.chest with leather_chestplate{Unbreakable:1b}
 item replace entity @s armor.legs with leather_leggings{Unbreakable:1b}
 item replace entity @s armor.feet with leather_boots{Unbreakable:1b}
 give @s minecraft:carrot_on_a_stick{gun:1,bullet:500,cdtime:20,display:{Name:'"\\u00a7a手枪"',Lore:['"\\u00a7b子弹数量：\\u00a7e500"','"\\u00a7bCD: \\u00a7e10tick"','"\\u00a7b伤害：\\u00a7e3.0 HP"']},CustomModelData:9}
+scoreboard players operation @a[team=play.zombie] globle.game = zombie globle.game

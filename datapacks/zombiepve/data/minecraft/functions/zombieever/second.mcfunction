@@ -25,4 +25,4 @@ execute if score zombie.state state matches 1 as @e[tag=pve.zombie,tag=pve.gunzo
 
 # execute store result bossbar zombie:zombiecount value run scoreboard players get zombie.count tick
 # execute if score zombie.type board matches 1 if score zombie.state state matches 1 if score tmp.count tick matches ..0 run function zombieever/over/lose_villager
-kill @e[type=evoker_fangs]
+kill @e[type=vex]
