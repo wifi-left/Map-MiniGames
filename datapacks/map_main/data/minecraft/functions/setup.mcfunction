@@ -10,6 +10,8 @@ scoreboard objectives add zombie.hurt minecraft.custom:damage_dealt "Zombie Dama
 scoreboard objectives remove spec
 scoreboard objectives add spec trigger ["\u00a77全局旁观者操作"]
 scoreboard objectives remove globle.game
+scoreboard objectives remove quickplay
+scoreboard objectives add quickplay trigger "快速加入"
 scoreboard objectives add globle.game dummy "游戏ID，用于玩家重新加入"
 scoreboard players set globle globle.game 1
 # game.total globle.game = globle globle.game

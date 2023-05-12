@@ -4,7 +4,7 @@ execute store result score tmp board run clear @s bucket 1
 execute if score tmp board matches 1.. run scoreboard players add @s zombie.coin 250
 execute if score tmp board matches 1.. run tellraw @s ["\u00a7a回收牛奶桶 * 1\n\u00a76+250 Coins"]
 execute if data entity @s SelectedItem.tag.gun run tag @s add tmp.usinggun
-execute if data entity @s {SelectedItem:{id:"minecraft:enchanted_book"}} run tag @s add tmp.getenchanbook
+execute if data entity @s {SelectedItem:{id:"minecraft:enchanted_book"}} run tag @s add gun.getenchanbook
 # xp set @s 0 points
 execute as @s[tag=tmp.usinggun] run execute store result score gun.tmp board as @s at @s run data get entity @s SelectedItem.tag.bullet
 execute as @s[tag=tmp.usinggun] if score gun.tmp board matches 1.. run tag @s add gun.nohuishou
@@ -25,4 +25,4 @@ execute as @s[tag=gun.getenchanbook] run playsound entity.experience_orb.pickup 
 tag @s remove gun.nohuishou
 tag @s remove gun.huishou
 tag @s remove tmp.usinggun
-tag @s remove tmp.getenchanbook
+tag @s remove gun.getenchanbook

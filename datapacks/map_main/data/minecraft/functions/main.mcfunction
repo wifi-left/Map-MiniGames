@@ -1,6 +1,9 @@
 function minecraft:lobby/elevent
 execute if block 123 121 59 oak_button[powered=true] run function lobby/car
 
+execute as @a[team=lobby] at @s run function lobby/quickplay
+execute as @a[team=!lobby,scores={quickplay=1..}] at @s run function lobby/quickplay_refused
+
 execute as @a[scores={leave=1..}] in overworld run tp @s 188 124 26
 execute as @a[scores={leave=1..}] run function lobby/rejoin
 gamemode survival @a[scores={leave=1..}]

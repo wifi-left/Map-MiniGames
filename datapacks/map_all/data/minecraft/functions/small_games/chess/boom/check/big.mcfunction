@@ -15,3 +15,5 @@ execute if score chess.state state matches 1 if score boom.fill.result board mat
 scoreboard players set boom.fill.result board 0
 execute if score chess.state state matches 1 store result score boom.fill.result board run fill 73 106 56 75 106 54 minecraft:white_stained_glass replace white_wool
 execute if score chess.state state matches 1 if score boom.fill.result board matches 5.. run function minecraft:small_games/chess/boom/win/white
+
+execute if score chess.state state matches 1 run function minecraft:small_games/chess/boom/check/pj
