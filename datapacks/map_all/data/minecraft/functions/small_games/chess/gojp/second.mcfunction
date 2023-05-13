@@ -8,11 +8,11 @@ scoreboard players set chess.players.white board 0
 execute as @a[team=chestgame] run scoreboard players add chess.players board 1
 execute as @a[team=chestgame,tag=chess.black] run scoreboard players add chess.players.black board 1
 execute as @a[team=chestgame,tag=chess.white] run scoreboard players add chess.players.white board 1
-execute if score chess.state state matches 1..1 if score chess.players board matches ..1 run function small_games/chess/five/win/sthwrong
+execute if score chess.state state matches 1..1 if score chess.players board matches ..1 run function small_games/chess/gojp/win/sthwrong
 execute if score chess.state state matches 1..1 if score chess.players.black board matches ..0 run tellraw @a[team=chestgame] ["\u00a7c黑队目前无人。"]
-execute if score chess.state state matches 1..1 if score chess.players.black board matches ..0 run function small_games/chess/five/win/white
+execute if score chess.state state matches 1..1 if score chess.players.black board matches ..0 run function small_games/chess/gojp/win/white
 execute if score chess.state state matches 1..1 if score chess.players.white board matches ..0 run tellraw @a[team=chestgame] ["\u00a7c白队目前无人。"]
 execute if score chess.state state matches 1..1 if score chess.players.white board matches ..0 run function small_games/chess/five/win/black
 
 execute if score chess.countdown board matches 1.. if score chess.state state matches 1 run scoreboard players remove chess.countdown board 1
-execute if score chess.countdown board matches ..0 run function small_games/chess/five/turn/timeout
+execute if score chess.countdown board matches ..0 run function small_games/chess/gojp/turn/timeout
