@@ -8,6 +8,7 @@ kill @e[tag=emerald.subtitle,type=area_effect_cloud]
 kill @e[tag=diamond.subtitle,type=area_effect_cloud]
 
 kill @e[tag=dmshop]
+kill @e[tag=shop2]
 kill @e[tag=shop]
 # # iron
 summon marker -306 33 122 {Tags:["iron"]}
