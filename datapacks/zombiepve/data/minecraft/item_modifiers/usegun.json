@@ -1,0 +1,16 @@
+[
+    {
+        "function": "copy_nbt",
+        "source": {
+            "type": "storage",
+            "source": "gun:tmp"
+        },
+        "ops": [
+            {
+                "source": "count",
+                "target": "bullet",
+                "op": "replace"
+            }
+        ]
+    }
+]

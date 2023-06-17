@@ -1,0 +1,38 @@
+{
+    "display": {
+        "title": [
+            {
+                "text": "汽车大师",
+                "color": "dark_purple"
+            }
+        ],
+        "description": [
+            {
+                "text": "乘坐您的汽车一次性行驶超过 10 km ！",
+                "color": "white"
+            }
+        ],
+        "icon": {
+            "item": "minecart"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "gcar:root",
+    "criteria": {
+        "make_a_car": {
+            "trigger": "minecraft:impossible",
+            "conditions": {}
+        }
+    },
+    "requirements": [
+        [
+            "make_a_car"
+        ]
+    ],
+    "rewards": {
+        "experience": 20
+    }
+}

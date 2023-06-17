@@ -1,0 +1,1 @@
+tellraw @s ["\u00a7cSorry. 'English' translation didn't support anymore."]

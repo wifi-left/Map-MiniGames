@@ -1,0 +1,7 @@
+item replace entity @s armor.head with minecraft:bone{Unbreakable:1b,display:{color:16711808},HideFlags:63,Enchantments:[{id:"minecraft:protection",lvl:1s},{id:"fire_protection",lvl:2s},{id:"binding_curse",lvl:1s}]}
+item replace entity @s armor.chest with minecraft:leather_chestplate{Unbreakable:1b,display:{color:16711808},HideFlags:63,Enchantments:[{id:"minecraft:protection",lvl:1s},{id:"minecraft:protection",lvl:1s},{id:"fire_protection",lvl:2s}]}
+item replace entity @s armor.feet with minecraft:iron_boots{Unbreakable:1b,display:{color:16711808},HideFlags:63,Enchantments:[{id:"minecraft:protection",lvl:1s},{id:"minecraft:protection",lvl:1s},{id:"fire_protection",lvl:2s}]}
+item replace entity @s armor.legs with leather_leggings{Unbreakable:1b,display:{color:16711808},HideFlags:63,Enchantments:[{id:"minecraft:protection",lvl:1s},{id:"minecraft:protection",lvl:1s},{id:"fire_protection",lvl:2s}]}
+
+effect give @s fire_resistance 99999 25 true
+item replace entity @s container.0 with minecraft:iron_sword{Unbreakable:1b,display:{Name:'["§bSOMTHING JUST LIKE THIS"]',Lore:['["§f7§c♥"]']},HideFlags:63,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"noName",Amount:6d,Operation:0,UUID:[I;4894,7942,7863,6495],Slot:mainhand}],Enchantments:[{id:"fire_aspect",lvl:1}]} 1

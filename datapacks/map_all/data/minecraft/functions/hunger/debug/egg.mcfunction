@@ -1,0 +1,1 @@
+give @s minecraft:villager_spawn_egg{EntityTag:{id:"minecraft:marker",Tags:["hunger.chest"]},display:{Name:'"\\u00a7f箱子刷新点"'}} 1

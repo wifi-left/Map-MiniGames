@@ -1,0 +1,1 @@
+execute as @a[team=golf,gamemode=adventure] at @s run kill @e[type=item,distance=0..5]
