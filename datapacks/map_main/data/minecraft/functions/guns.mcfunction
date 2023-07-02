@@ -12,8 +12,11 @@ execute if entity @s[nbt={SelectedItem:{tag:{gun:6}}}] run tag @s add gun.6
 execute if entity @s[nbt={SelectedItem:{tag:{gun:7}}}] run tag @s add gun.7
 execute if entity @s[nbt={SelectedItem:{tag:{gun:8}}}] run tag @s add gun.8
 execute if entity @s[nbt={SelectedItem:{tag:{gun:9}}}] run tag @s add gun.9
+execute if entity @s[nbt={SelectedItem:{tag:{gun:-10}}}] run tag @s add gun.f10
 execute if entity @s[nbt={SelectedItem:{tag:{gun:"custom"}}}] run tag @s add gun.10
 execute if entity @s[nbt={SelectedItem:{tag:{gun:"pao"}}}] run tag @s add gun.11
+
+execute as @s[tag=gun.f10] at @s run function zombieever/addcoin
 
 execute store result score gun.tmp board as @s at @s run data get entity @s SelectedItem.tag.bullet
 execute store result score @s cooldowntime as @s at @s run data get entity @s SelectedItem.tag.cdtime
@@ -41,5 +44,6 @@ tag @s remove gun.5
 tag @s remove gun.6
 tag @s remove gun.7
 tag @s remove gun.10
+tag @s remove gun.f10
 tag @s remove gun.11
 tag @s remove gun.canshoot
