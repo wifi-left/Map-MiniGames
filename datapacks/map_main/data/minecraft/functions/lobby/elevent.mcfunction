@@ -38,7 +38,7 @@ effect clear @a[tag=NEWENTER1]
 stopsound @a[tag=NEWENTER1] record
 stopsound @a[tag=NEWENTER1] voice
 tag @a[tag=NEWENTER1] remove mazing
-tellraw @a[tag=NEWENTER1] ["\n\u00a7a  您可以随时使用 \u00a76/trigger hub \u00a7a返回大厅。\n"]
+tellraw @a[tag=NEWENTER1] ["\n\u00a7a  您可以随时使用 \u00a76/trigger hub \u00a7a返回大厅。\n  \u00a7a全局音乐可以通过\u00a76游戏设置 - 声音设置 - 玩家语音\u00a7a调节声音大小\n"]
 tellraw @a[tag=NEWENTER1,tag=GOABLE.SPEC] ["\n\u00a77  你已开启\u00a7b全局旁观者模式\u00a77。\n  \u00a77",{"text":"\u00a7a\u00a7l点击此处，或者使用 \u00a76\u00a7l/trigger spec set 3 \u00a7a\u00a7l退出全局旁观者模式","bold":true,"clickEvent": {"action": "run_command","value": "/trigger spec set 3"},"hoverEvent": {"action": "show_text","contents": "\u00a7c点击此处退出全局旁观者模式"}},"\n"]
 execute as @a[tag=NEWENTER1] run attribute @s generic.max_health base set 20
 execute as @a[tag=NEWENTER1] at @s run effect clear @s
