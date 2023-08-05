@@ -4,4 +4,4 @@ item replace entity @s armor.head with minecraft:diamond_helmet{Unbreakable:1b}
 item replace entity @s armor.feet with minecraft:iron_boots{Unbreakable:1b}
 item replace entity @s armor.legs with minecraft:iron_leggings{Unbreakable:1b}
 item replace entity @s container.0 with minecraft:iron_sword{Unbreakable:1b,display:{Name:'["§6Golden §rIron §bSword"]',Lore:['["§f7§c♥"]']},HideFlags:63,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"noName",Amount:6d,Operation:0,UUID:[I;4894,7942,7863,6495],Slot:mainhand}]} 1
-item replace entity @s weapon.offhand with minecraft:shield{Unbreakable:1b} 1
+item replace entity @s weapon.offhand with minecraft:shield{Damage:250} 1
