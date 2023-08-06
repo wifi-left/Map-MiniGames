@@ -9,6 +9,7 @@ schedule clear #minecraft:zom_talks
 
 forceload add 656 -41 596 -112
 forceload add 585 -67 495 -154
+kill @e[type=villager,tag=pve.npc]
 
 kill @e[tag=pve.zombie]
 kill @e[type=item,x=628,y=39,z=-82,distance=0..60]
