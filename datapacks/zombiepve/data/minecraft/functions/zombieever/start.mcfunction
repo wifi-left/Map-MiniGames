@@ -5,7 +5,7 @@ forceload add 585 -67 495 -154
 # 难度：zombie.type board 0简单 1困难
 
 tp @a[team=wait.zombie,gamemode=adventure] 630 10 -78 -180 0
-scoreboard players set zombie.state state 1
+scoreboard players set zombie.state state 2
 tellraw @a[team=wait.zombie] ["\u00a72\u00a7lZombie Day \u00a7e游戏开始！"]
 execute if score zombie.type board matches 2 run tellraw @a[team=wait.zombie] ["\u00a7b模式：\u00a7c困难模式"]
 execute if score zombie.type board matches 2 run title @a[team=wait.zombie] subtitle ["\u00a7b模式：\u00a7c困难"]

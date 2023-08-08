@@ -27,8 +27,8 @@ effect give @s[tag=skill.scientist] jump_boost 10 3 true
 execute as @s[tag=skill.old] run effect give @a[distance=0.5..7,team=job_pvp,gamemode=!creative] slowness 5 5 true
 execute as @s[tag=skill.old] run effect give @a[distance=0.5..7,team=job_pvp,gamemode=!creative] blindness 5 5 true
 execute as @s[tag=skill.old] run effect give @a[distance=0.5..7,team=job_pvp,gamemode=!creative] darkness 5 5 true
-execute as @s[tag=skill.old] run effect give @a[distance=0.5..7,team=job_pvp,gamemode=!creative] poison 2 1 true
-# execute as @s[tag=skill.old] run effect give @a[distance=0.5..7,team=job_pvp,gamemode=!creative] poison 3 5 true
+execute as @s[tag=skill.old] run effect give @a[distance=0.5..7,team=job_pvp,gamemode=!creative] poison 5 2 true
+# execute as @s[tag=skill.old] run effect give @a[distance=0.5..7,team=job_pvp,gamemode=!creative] poison 5 5 true
 
 execute as @s[tag=skill.old] run title @a[distance=0.5..7,team=job_pvp,gamemode=!creative] title ["\u00a7c你被定住了。"]
 execute as @s[tag=skill.old] run title @a[distance=0.5..7,team=job_pvp,gamemode=!creative] subtitle ["\u00a7e来自 ",{"selector":"@s"}," \u00a7e的范围技能"]
