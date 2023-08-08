@@ -1,6 +1,6 @@
 clear @s
 effect clear @s
-item replace entity @s container.0 with minecraft:wooden_sword{Enchantments:[{id:"unbreaking",lvl:1}],display:{Name:'{"text":"桃木剑","color":"#e4a10f","italic": false}',Lore:['"\\u00a77一个很基础的木剑"']},Unbreakable:1b,HideFlags:63,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"noName",Amount:6d,Operation:0,UUID:[I;4894,7942,7863,6495],Slot:mainhand}]}
+item replace entity @s container.0 with minecraft:wooden_sword{Enchantments:[{id:"unbreaking",lvl:1}],display:{Name:'{"text":"桃木剑","color":"#e4a10f","italic": false}',Lore:['"\\u00a77一个很基础的木剑"']},Unbreakable:1b,HideFlags:63,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"noName",Amount:6d,Operation:0,UUID:[I;4894,7942,7863,6495],Slot:mainhand},{AttributeName:"generic.attack_speed",Amount:-2.4,Slot:"mainhand",Operation:0,UUID:[I;1145,5145,1145,5145]}]}
 # give @s minecraft:ender_pearl{Unbreakable:1b,HideFlags:63} 32
 item replace entity @s armor.chest with minecraft:leather_chestplate{Unbreakable:1b,display:{color:24768}}
 item replace entity @s armor.head with minecraft:player_head{Unbreakable:1b,SkullOwner:"MHF_CoconutG"}

@@ -4,7 +4,7 @@ forceload add 585 -67 495 -154
 
 # 难度：zombie.type board 0简单 1困难
 
-tp @a[team=wait.zombie,gamemode=adventure] 630 10 -78 90 0
+tp @a[team=wait.zombie,gamemode=adventure] 630 10 -78 -180 0
 scoreboard players set zombie.state state 1
 tellraw @a[team=wait.zombie] ["\u00a72\u00a7lZombie Day \u00a7e游戏开始！"]
 execute if score zombie.type board matches 2 run tellraw @a[team=wait.zombie] ["\u00a7b模式：\u00a7c困难模式"]
@@ -14,6 +14,10 @@ execute if score zombie.type board matches 1 run title @a[team=wait.zombie] subt
 title @a[team=wait.zombie] title ["\u00a72Zombie Day"]
 scoreboard players reset * zombie.coin
 playsound entity.firework_rocket.twinkle player @a[team=wait.zombie] ~ ~ ~ 1 1 1
+
+xp set @a[team=wait.zombie] 0 points
+xp set @a[team=wait.zombie] 0 levels
+
 
 scoreboard players set @a[team=wait.zombie] zombie.coin 100
 
@@ -28,7 +32,6 @@ tellraw @a[team=play.zombie] ["\n\u00a7a   欢迎游玩 \u00a72\u00a7lZombie Day
 
 scoreboard players set zombie.state state 2
 function zombieever/talks/pre/1
-bossbar set zombie:zombiecount name ["\u00a7a对话：你与神様"]
 kill @e[type=item,x=628,y=39,z=-82,distance=0..60]
 kill @e[type=item,x=536,y=-24,z=-107,distance=0..80]
 kill @e[type=experience_orb,x=628,y=39,z=-82,distance=0..60]

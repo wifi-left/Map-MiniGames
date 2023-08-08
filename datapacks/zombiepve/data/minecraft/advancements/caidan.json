@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": [
+            "彩蛋"
+        ],
+        "description": [
+            "找到地图中的彩蛋们"
+        ],
+        "icon": {
+            "item": "minecraft:egg"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false,
+        "background": "minecraft:textures/block/bamboo_block.png"
+    },
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

@@ -4,4 +4,4 @@ item replace entity @s armor.feet with minecraft:iron_boots{Unbreakable:1b,displ
 item replace entity @s armor.legs with leather_leggings{Unbreakable:1b,display:{color:16711808},HideFlags:63,Enchantments:[{id:"minecraft:protection",lvl:1s},{id:"minecraft:protection",lvl:1s},{id:"fire_protection",lvl:2s}]}
 
 effect give @s fire_resistance 99999 25 true
-item replace entity @s container.0 with minecraft:iron_sword{Unbreakable:1b,display:{Name:'["§bSOMTHING JUST LIKE THIS"]',Lore:['["§f7§c♥"]']},HideFlags:63,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"noName",Amount:6d,Operation:0,UUID:[I;4894,7942,7863,6495],Slot:mainhand}],Enchantments:[{id:"fire_aspect",lvl:1}]} 1
+item replace entity @s container.0 with minecraft:iron_sword{Unbreakable:1b,display:{Name:'["§bSOMTHING JUST LIKE THIS"]',Lore:['["§f7§c♥"]']},HideFlags:63,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"noName",Amount:6d,Operation:0,UUID:[I;4894,7942,7863,6495],Slot:mainhand},{AttributeName:"generic.attack_speed",Amount:-2.4,Slot:"mainhand",Operation:0,UUID:[I;1145,5145,1145,5145]}],Enchantments:[{id:"fire_aspect",lvl:1}]} 1

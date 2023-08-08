@@ -1,7 +1,7 @@
 # say 1
 
 function o_f_tick
-execute if score zombie.state state matches 1 run function zombieever/o_f_tick
+execute if score zombie.state state matches 1.. run function zombieever/o_f_tick
 
 spawnpoint @a[team=wait.zombie] -202 17 353
 spawnpoint @a[team=lobby] 188 124 26 0

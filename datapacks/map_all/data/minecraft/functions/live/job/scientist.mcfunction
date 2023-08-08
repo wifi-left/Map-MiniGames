@@ -1,6 +1,6 @@
 clear @s
 effect clear @s
-item replace entity @s container.0 with minecraft:diamond_sword{Unbreakable:1b,HideFlags:63,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"noName",Amount:6d,Operation:0,UUID:[I;4894,7942,7863,6495],Slot:mainhand}]}
+item replace entity @s container.0 with minecraft:diamond_sword{Unbreakable:1b,HideFlags:63,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"noName",Amount:6d,Operation:0,UUID:[I;4894,7942,7863,6495],Slot:mainhand},{AttributeName:"generic.attack_speed",Amount:-2.4,Slot:"mainhand",Operation:0,UUID:[I;1145,5145,1145,5145]}]}
 item replace entity @s armor.chest with minecraft:leather_chestplate{Unbreakable:1b,display:{color:7963501}}
 item replace entity @s armor.head with minecraft:player_head{Unbreakable:1b,SkullOwner:"MHF_ArrowUp"}
 item replace entity @s armor.feet with minecraft:leather_boots{Unbreakable:1b,display:{color:7963501}}

@@ -16,7 +16,7 @@ item replace entity @s armor.legs with minecraft:leather_leggings{display:{color
 # '"\\u00a7f啊！ 充满能量！"'
 
 # item replace entity @s container.1 with potion{C}
-item replace entity @s container.0 with minecraft:iron_sword{Unbreakable:1b,display:{Name:'["§f§l小刀"]',Lore:['["\\u00a7b默认伤害：§c5 ♥"]']},HideFlags:63,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"noName",Amount:5d,Operation:0,UUID:[I;4894,7942,7863,6495],Slot:mainhand}]} 1
+item replace entity @s container.0 with minecraft:iron_sword{Unbreakable:1b,display:{Name:'["§f§l小刀"]',Lore:['["\\u00a7b默认伤害：§c5 ♥"]']},HideFlags:63,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"noName",Amount:5d,Operation:0,UUID:[I;4894,7942,7863,6495],Slot:mainhand},{AttributeName:"generic.attack_speed",Amount:-2.6,Slot:"mainhand",Operation:0,UUID:[I;1145,5145,1145,5145]}]} 1
 give @s minecraft:potion{CustomPotionEffects:[{Id:1,Duration:200,Amplifier:2b,Ambient:0b,ShowParticles:0b},{Id:3,Duration:200,Amplifier:1b,Ambient:0b,ShowParticles:0b},{Id:5,Duration:200,Amplifier:1b,Ambient:0b,ShowParticles:0b},{Id:2,Duration:400,Amplifier:2b,Ambient:0b,ShowParticles:0b},{Id:10,Duration:200,Amplifier:1b,Ambient:0b,ShowParticles:0b}],display:{Name:'"\\u00a7a魔法药水"'},CustomPotionColor:3392158} 2
 # give @s minecraft:potion{CustomPotionEffects:[{Id:1,Duration:200,Amplifier:1b,Ambient:0b,ShowParticles:0b},{Id:3,Duration:200,Amplifier:1b,Ambient:0b,ShowParticles:0b},{Id:5,Duration:200,Amplifier:1b,Ambient:0b,ShowParticles:0b},{Id:2,Duration:400,Amplifier:1b,Ambient:0b,ShowParticles:0b},{Id:10,Duration:200,Amplifier:1b,Ambient:0b,ShowParticles:0b}],display:{Name:'"\\u00a7c恢复药水"'}} 5
 

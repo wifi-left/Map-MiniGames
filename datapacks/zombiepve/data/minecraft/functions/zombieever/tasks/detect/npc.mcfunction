@@ -1,0 +1,1 @@
+execute if entity @a[team=play.zombie,x=597,y=4,z=-59,distance=..10] run function zombieever/tasks/tryenterstronghold

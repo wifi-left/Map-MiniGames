@@ -1,6 +1,7 @@
 tellraw @a ["\u00a7b\u00a7l[Gamom Datapacks] \u00a7aReloaded successfully ! \u00a7e[Language: 简体中文]"]
 function minecraft:bedwars/setup
-
+scoreboard objectives remove level
+scoreboard objectives add level level
 scoreboard objectives remove zombie.villager.click
 scoreboard objectives add zombie.villager.click minecraft.custom:minecraft.talked_to_villager
 scoreboard objectives remove hurt.1

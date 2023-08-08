@@ -1,5 +1,5 @@
 title @s title [{"text":"Zombie Day","color":"dark_green","bold": true}]
-title @s subtitle ["\u00a7bPre-release \u00a7ev0.1"]
+title @s subtitle ["\u00a7bPre-release \u00a7ev0.2"]
 team join wait.zombie @s
 tellraw @a[team=!wait.zombie] ["\u00a7a\u00a7l[MESSAGE] ",{"selector":"@s"},"\u00a77 已加入 ",{"text":"Zombie Day","color":"dark_green","bold": true}," \u00a77!"]
 scoreboard players set wait.player tick 0 
