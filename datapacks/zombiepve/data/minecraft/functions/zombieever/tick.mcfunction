@@ -10,3 +10,4 @@ execute if score zombie.round board matches 17 run function zombieever/tasks/det
 
 xp add @a[team=play.zombie,level=..200,gamemode=adventure] 1 points
 execute as @a[team=play.zombie,level=..200,gamemode=adventure] run xp add @s[nbt={Inventory:[{id:"minecraft:paper",tag:{hpdouble:true}}]}] 5 points
+execute as @a[team=play.zombie,level=30..200,gamemode=adventure] run xp add @s[nbt={Inventory:[{id:"minecraft:paper",tag:{hpdouble:true}}]}] 5 points

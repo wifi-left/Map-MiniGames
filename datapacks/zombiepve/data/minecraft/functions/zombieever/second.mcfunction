@@ -1,6 +1,5 @@
 spawnpoint @a[team=play.zombie] 671 -18 -51
 execute as @e[tag=zombie.villagers] at @s run function zombieever/villagers/displayhealth
-execute as @e[tag=pve.zombie] at @s run function zombieever/zombie/displayhealth
 execute as @e[tag=zombie.villager] at @s run kill @e[type=zombie_villager,distance=0..1]
 execute as @e[type=item,nbt={Item:{tag:{coin:1b}}}] at @s run data merge entity @s {CustomName:'"\\u00a7e\\u00a7lZombie Coin"',CustomNameVisible:1b}
 
@@ -26,3 +25,5 @@ execute if score zombie.state state matches 1..2 if score tmp.count tick matches
 # execute store result bossbar zombie:zombiecount value run scoreboard players get zombie.count tick
 # execute if score zombie.type board matches 1 if score zombie.state state matches 1 if score tmp.count tick matches ..0 run function zombieever/over/lose_villager
 kill @e[type=vex]
+
+execute if score zombie.round board matches 28 run function zombieever/tasks/detect/boss

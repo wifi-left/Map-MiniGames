@@ -10,3 +10,5 @@ tellraw @a[team=play.zombie] ["\n \u00a77\u00a7o一扇大门被打开了...\n"]
 playsound minecraft:block.chest.open player @a[team=play.zombie] ~ ~ ~ 1 0.5 1
 
 fill 579 -9 -119 578 -10 -119 minecraft:air
+
+schedule function zombieever/rounds/lava 10s

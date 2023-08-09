@@ -30,7 +30,15 @@ execute as @e[tag=pve.house.chest] at @s run data merge block ~ ~ ~ {Items:[],Lo
 fill 535 -51 -124 535 -49 -121 minecraft:iron_bars
 fill 579 -9 -119 578 -10 -119 minecraft:air
 fill 567 -9 -120 567 -10 -121 minecraft:iron_bars
-
+fill 535 -38 -123 535 -40 -125 minecraft:cracked_deepslate_bricks
+fill 504 -41 -117 503 -43 -117 minecraft:cracked_deepslate_bricks
+setblock 496 -43 -104 air
+setblock 497 -43 -104 air
+setblock 513 -43 -112 minecraft:air
+fill 527 -41 -102 527 -43 -100 minecraft:iron_bars
+setblock 513 -43 -112 minecraft:chest{Items:[{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{hp:50,gun:"pao",damage:300,bullet:380,cdtime:10,distance:40,display:{Name:'"\\u00a7e\\u00a7kaaa\\u00a7a 高级魔法棒 \\u00a7e\\u00a7kaaa"',Lore:['"\\u00a7b可使用次数：\\u00a7e380"','"\\u00a7bCD: \\u00a7e10tick"','"\\u00a7b伤害：\\u00a7e30.0 HP"','"\\u00a7b距离：\\u00a7e40 \\u00a7bblocks"','"\\u00a7b消耗能量：\\u00a7e50"']},CustomModelData:9},Slot:13},{id:"minecraft:experience_bottle",Count:64b,Slot:1}]}
+setblock 496 -43 -104 minecraft:chest[type=left]{Items:[]}
+setblock 497 -43 -104 minecraft:chest[type=right]{Items:[{id:"minecraft:tnt",Count:1b,Slot:0,tag:{display:{Name:'"\\u00a7c\\u00a7lTNT"',Lore:['"\\u00a7e用于破坏地牢中的某一个墙壁"']},lock:3,flag:1}},{id:"minecraft:tnt",Count:1b,Slot:1,tag:{display:{Name:'"\\u00a7c\\u00a7lTNT"',Lore:['"\\u00a7e用于破坏地牢中的某一个墙壁"']},lock:3,flag:2}}]}
 kill @e[type=villager,tag=pve.npc]
 kill @e[type=villager,tag=pve.npc.pre]
 summon minecraft:villager 630 10 -94 {CustomName:'["\\u00a7e亚奇洛贝 \\u00a7a[NPC]\\u00a77 - 右键互动"]',Invulnerable:1b,NoAI:1b,Silent:1b,PersistenceRequired:1b,VillagerData:{profession:"minecraft:librarian",type:"minecraft:swamp"},Offers:{Recipes:[]},Tags:["pve.npc","pve.npc.yaqiluobei"],CustomNameVisible:1b}
