@@ -54,9 +54,9 @@ execute as @s[tag=skill.old] at @s run playsound entity.ender_dragon.growl playe
 execute as @s[tag=skill.scientist] at @s run playsound entity.player.burp player @s ~ ~ ~ 1 1 1
 execute as @s[tag=skill.creeper] at @s run playsound entity.creeper.primed player @s ~ ~ ~ 1 1 1
 
-xp set @s[tag=skill.tp] 20 levels
-xp set @s[tag=skill.old] 20 levels
-xp set @s[tag=skill.scientist] 20 levels
+xp set @s[tag=skill.tp] 30 levels
+xp set @s[tag=skill.old] 30 levels
+xp set @s[tag=skill.scientist] 25 levels
 xp set @s[tag=skill.creeper] 20 levels
 xp set @s[tag=skill.6] 20 levels
 xp set @s[tag=skill.9] 45 levels
