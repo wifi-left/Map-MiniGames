@@ -60,6 +60,7 @@ xp set @s[tag=skill.scientist] 20 levels
 xp set @s[tag=skill.creeper] 20 levels
 xp set @s[tag=skill.6] 20 levels
 xp set @s[tag=skill.9] 45 levels
+xp set @s[tag=skill.5] 30 levels
 # execute as @s[tag=gun.1] run function gun/1/shoot
 
 tag @s remove skill.old
