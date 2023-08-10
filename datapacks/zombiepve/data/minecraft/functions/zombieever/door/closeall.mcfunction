@@ -16,7 +16,8 @@
 # tag @e[tag=zombie.spawn.now] remove zombie.spawn.now
 # tag @e[tag=zombie.spawn.main] add zombie.spawn.now
 forceload add 597 -111 714 1
-execute as @e[tag=pve.event.block.fruit,limit=8,sort=random] at @s run setblock ~ ~ ~ minecraft:sweet_berry_bush[age=1]
+execute as @e[tag=pve.event.block.fruit] at @s run setblock ~ ~ ~ minecraft:sweet_berry_bush[age=1]
+execute as @e[tag=pve.event.block.fruit,limit=8,sort=random] at @s run setblock ~ ~ ~ minecraft:sweet_berry_bush[age=0]
 kill @e[tag=pve.title]
 forceload add 595 -41 495 -150
 summon marker 630 9 -78 {Tags:["pve.title"],CustomName:'""'}

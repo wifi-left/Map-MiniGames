@@ -1,4 +1,4 @@
-summon minecraft:villager 630 10 -82 {CustomName:'["\\u00a74蜜斯莱哈雅 \\u00a7d[召唤师]"]',Invulnerable:0b,NoAI:1b,Silent:1b,PersistenceRequired:1b,VillagerData:{profession:"minecraft:librarian",type:"minecraft:desert"},Offers:{Recipes:[]},Tags:["pve.npc.pre","pve.zombie"],CustomNameVisible:1b,Attributes:[{Name:"generic.max_health",Base:100}],Health:100}
+summon minecraft:villager 630 10 -82 {CustomName:'["\\u00a74蜜斯莱哈雅 \\u00a7d[召唤师]"]',Invulnerable:1b,NoAI:1b,Silent:1b,PersistenceRequired:1b,VillagerData:{profession:"minecraft:librarian",type:"minecraft:desert"},Offers:{Recipes:[]},Tags:["pve.npc.pre","pve.zombie"],CustomNameVisible:1b,Attributes:[{Name:"generic.max_health",Base:100}],Health:100}
 bossbar set zombie:zombiecount name ["\u00a7a前言：\u00a7f背景"]
 tellraw @a[team=play.zombie] ["\u00a7d群众：\u00a7f欢迎勇者们的到来！"]
 effect give @a[team=play.zombie] blindness 4 25 true

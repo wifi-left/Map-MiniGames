@@ -32,6 +32,21 @@
         "minecraft:zombieever/talks/rescue_village/1",
         "minecraft:zombieever/talks/rescue_village/win",
         "minecraft:zombieever/talks/stronghold_boss/1",
-        "minecraft:zombieever/talks/stronghold_boss/2"
+        "minecraft:zombieever/talks/stronghold_boss/2",
+        "minecraft:zombieever/rounds/3",
+        "minecraft:zombieever/rounds/5",
+        "minecraft:zombieever/rounds/6",
+        "minecraft:zombieever/rounds/7",
+        "minecraft:zombieever/rounds/8",
+        "minecraft:zombieever/rounds/9",
+        "minecraft:zombieever/rounds/11",
+        "minecraft:zombieever/rounds/14",
+        "minecraft:zombieever/rounds/13",
+        "minecraft:zombieever/rounds/boss",
+        "minecraft:zombieever/rounds/boss_xb",
+        "minecraft:zombieever/rounds/lava",
+        "minecraft:zombieever/rounds/stronghold",
+        "minecraft:zombieever/rounds/strongholdboss",
+        "minecraft:zombieever/rounds/strongholdboss_xb"
     ]
 }

@@ -1,5 +1,5 @@
 schedule function zombieever/over/back 5s
-tellraw @a ["\u00a72\u00a7lZombie Day >>> \u00a76游戏结束！持续轮数：",{"score":{"objective": "board","name": "zombie.round"},"color":"yellow"}]
+tellraw @a ["\u00a72\u00a7lZombie Day >>> \u00a76游戏结束！游戏进度：",{"score":{"objective": "board","name": "zombie.round"},"color":"yellow"}]
 scoreboard players set zombie.state state 5
 schedule clear zombieever/nextround
 bossbar set zombie:zombiecount name ["\u00a7c游戏结束！"]
@@ -10,7 +10,7 @@ schedule clear #minecraft:zom_talks
 forceload add 656 -41 596 -112
 forceload add 585 -67 495 -154
 forceload add 597 -111 714 1
-
+scoreboard players set zombie.round board 0
 kill @e[type=villager,tag=pve.npc]
 
 kill @e[tag=pve.root]
