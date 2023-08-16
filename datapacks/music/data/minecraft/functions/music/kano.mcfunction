@@ -331,6 +331,6 @@ execute as @s[scores={time=745}] run function minecraft:tone/2
 execute as @s[scores={time=745}] run function minecraft:tone/2
 
 # execute as @s[scores={time=754}] run title @s actionbar ["\u00a7a正在播放：\u00a76Flower Dance"]
-execute as @s[scores={time=754}] run tag @s remove music_kano
-execute as @s[scores={time=754}] run tag @s add music_flower_dance
-execute as @s[scores={time=754}] run scoreboard players set @s time 0
+execute as @s[scores={time=754..}] run tag @s remove music_kano
+execute as @s[scores={time=754..}] run tag @s add music_flower_dance
+execute as @s[scores={time=754..}] run scoreboard players set @s time 0

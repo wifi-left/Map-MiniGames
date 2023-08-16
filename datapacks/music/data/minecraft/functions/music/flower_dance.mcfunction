@@ -903,8 +903,8 @@ execute as @s[scores={time=1915}] run function minecraft:tone/2-
 
 execute as @s[scores={time=1923}] run function minecraft:tone/2-
 
-execute as @s[scores={time=1924}] run tag @s add music_kano
-execute as @s[scores={time=1924}] run tag @s remove music_flower_dance
+execute as @s[scores={time=1934}] run function nbs_summer:play
+execute as @s[scores={time=1934}] run tag @s remove music_flower_dance
 # execute as @s[scores={time=1924}] run title @s actionbar ["\u00a7a正在播放：\u00a7bKano"]
 
-execute as @s[scores={time=1924..}] run scoreboard players set @s time 0
+execute as @s[scores={time=1934..}] run scoreboard players set @s time 0

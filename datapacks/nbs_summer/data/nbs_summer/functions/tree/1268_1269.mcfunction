@@ -1,0 +1,1 @@
+execute as @s[scores={nbs_nbssummer=101440..101680,nbs_nbssummer_t=..1267}] run function nbs_summer:notes/1268
