@@ -10,6 +10,6 @@ clear @s
 effect give @s instant_health 1 25 true
 tellraw @a[team=play.duel.blue] [{"selector":"@s"},"\u00a77 死了。"]
 tellraw @a[team=play.duel.yellow] [{"selector":"@s"},"\u00a77 死了。"]
-tp @s[team=play.duel.yellow] -108 67 -109 0 0
-tp @s[team=play.duel.blue] -108 67 -67 180 0
+tp @s[team=play.duel.yellow] -365 12 -76 -90 0
+tp @s[team=play.duel.blue] -265 12 -76 90 0
 function duel/item
