@@ -57,7 +57,7 @@ execute as @e[type=egg] if score @s board matches 2.. at @s run playsound entity
 execute as @e[type=egg] if score @s board matches 30.. run kill @s
 kill @e[type=chicken]
 execute as @e[type=egg] run scoreboard players add @s board 1
-execute as @a[gamemode=adventure] at @s run kill @s[y=-40,dy=-100]
+execute as @a[gamemode=adventure] at @s run kill @s[y=-70,dy=-100]
 
 ## Kill Shop Items
 kill @e[type=item,nbt={Item:{tag:{bwshopitem:1}}}]
