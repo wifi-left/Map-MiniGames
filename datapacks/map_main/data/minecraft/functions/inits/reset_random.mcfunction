@@ -28,7 +28,7 @@ summon marker 0 10 0 {Tags:["random_game","neww"],CustomName:'"\\u00a7b信仰方
 scoreboard players set @e[tag=neww] board 6
 tag @e[tag=neww] remove neww
 # 躲猫猫
-summon marker 0 10 0 {Tags:["random_game","neww"],CustomName:'"\\u00a7b\\u00a7l躲猫猫（道具）"'}
+summon marker 0 10 0 {Tags:["random_game","neww"],CustomName:'"\\u00a7b方块躲猫猫"'}
 scoreboard players set @e[tag=neww] board 7
 tag @e[tag=neww] remove neww
 # Duel

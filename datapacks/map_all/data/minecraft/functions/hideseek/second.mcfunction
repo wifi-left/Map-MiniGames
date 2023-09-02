@@ -1,8 +1,8 @@
 # effect give @a[team=hide.play.ani] resistance 1 25 true
 # effect give @a[team=hide.play.hun] resistance 1 25 true
 effect give @a[team=hide.wait] resistance 1 25 true
-spawnpoint @a[team=hide.play.ani] 413 69 -329 90
-spawnpoint @a[team=hide.play.hun] 413 69 -329 90
+spawnpoint @a[team=hide.play.ani] 470 2 -362 -180
+spawnpoint @a[team=hide.play.hun] 470 2 -362 -180
 function hideseek/during/testanimal
 xp add @a[level=1..,team=hide.play.hun] -1 levels
 xp add @a[level=1..,team=hide.play.ani] -1 levels

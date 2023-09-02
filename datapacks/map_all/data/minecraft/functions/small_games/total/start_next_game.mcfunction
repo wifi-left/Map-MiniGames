@@ -23,8 +23,8 @@ execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matc
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 4..4 run function repel/start
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 6..6 run execute as @a[tag=play.total] run function believer/join
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 6..6 run function believer/teststart
-execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 7..7 run execute as @a[tag=play.total] run function hide2/join
-execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 7..7 run function hide2/trystart
+execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 7..7 run execute as @a[tag=play.total] run function hideseek/join
+execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 7..7 run function hideseek/trystart
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 8..8 run execute as @a[tag=play.total] run function duel/join
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 8..8 as @r[tag=play.total] run function duel/teststart
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 9..9 run execute as @a[tag=play.total] run function hotpotever/join
