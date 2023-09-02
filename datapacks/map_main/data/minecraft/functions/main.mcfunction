@@ -122,7 +122,9 @@ execute as @a[scores={use.skill=1..},level=1..,team=job_pvp] at @s run title @s 
 execute as @a[scores={use.skill=1..},level=1..,team=job_pvp] at @s run scoreboard players reset @s use.skill
 
 scoreboard players reset @a[scores={use.skill=1..}] use.skill
-
+tag @a[tag=action.sneaking] remove action.sneaking
+execute as @a[scores={sneaking=1..}] run tag @s add action.sneaking
+execute as @a[scores={sneaking=1..}] run scoreboard players reset @s sneaking
 execute if score repel state matches 1..1 run function minecraft:repel/main
 execute if score twolf.state state matches 1..1 run function minecraft:twolf/tick
 execute if score wolf.state state matches 1..1 run function minecraft:small_games/wolf/tick

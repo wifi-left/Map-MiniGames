@@ -5,6 +5,6 @@ clear @s
 scoreboard players reset @s die
 function hideseek/during/hunitem
 team join hide.play.hun
-tp @s 413 69 -329 90 0
+tp @s 470 2 -362 -180 0
 xp set @s 0 levels
 xp set @s 0 points

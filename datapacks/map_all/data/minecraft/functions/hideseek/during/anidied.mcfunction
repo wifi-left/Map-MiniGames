@@ -14,4 +14,4 @@ tag @s remove seel
 # tp @e[tag=shouldtp] @s
 scoreboard players reset @e[tag=shouldtp,limit=1]
 kill @e[tag=shouldtp,limit=1]
-tellraw @s ["\n\u00a7a提示：请攻击动物靠上部分。\n"]
+# tellraw @s ["\n\u00a7a提示：请攻击动物靠上部分。\n"]

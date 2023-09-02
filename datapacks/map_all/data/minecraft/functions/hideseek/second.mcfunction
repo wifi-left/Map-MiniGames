@@ -12,7 +12,7 @@ scoreboard players set hide.resthunts board 0
 execute as @a[team=hide.play.ani] at @s run scoreboard players add hide.restanimals board 1
 execute as @a[team=hide.play.hun] at @s run scoreboard players add hide.resthunts board 1
 bossbar set minecraft:hideseek name ["\u00a7b剩余时间：",{"score":{"objective":"board","name":"hide.resttime"},"color":"gold"},"\u00a76s  \u00a7a剩余动物数：",{"score":{"objective":"board","name":"hide.restanimals"},"color":"gold"}]
-
+execute if score hide.resttime board matches ..30 run effect give @a[team=hide.play.ani,gamemode=adventure] glowing 2 2 true
 scoreboard players set 60 board 60
 scoreboard players operation hide.tmp board = hide.resttime board
 scoreboard players operation hide.tmp board %= 60 board
