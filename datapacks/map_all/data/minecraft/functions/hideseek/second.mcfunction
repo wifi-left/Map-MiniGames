@@ -17,6 +17,8 @@ scoreboard players set 60 board 60
 scoreboard players operation hide.tmp board = hide.resttime board
 scoreboard players operation hide.tmp board %= 60 board
 execute if score hide.tmp board matches ..0 run function hideseek/glowingeveryone
+execute as @a[team=hide.play.hun] at @s if entity @a[distance=0..10,team=hide.play.ani] run title @s actionbar ["\u00a7c检测到：\u00a76附近有躲藏者"]
+execute as @a[team=hide.play.hun] at @s as @a[distance=0..10,team=hide.play.ani] run title @s actionbar ["\u00a7c检测到：\u00a76附近有寻找者"]
 # bossbar set minecraft:hideseek max 300
 execute store result bossbar minecraft:hideseek max run scoreboard players get hide.maxtime board
 execute store result bossbar minecraft:hideseek value run scoreboard players get hide.resttime board
@@ -32,3 +34,4 @@ execute if score hide.state state matches 2.. run function hideseek/prepare/step
 execute if score hide.state state matches 1.. if score hide.restanimals board matches ..0 run function hideseek/gameover/hunt
 execute if score hide.state state matches 1.. if score hide.resthunts board matches ..0 run function hideseek/gameover/ani
 execute if score hide.state state matches 1.. if score hide.resttime board matches ..0 run function hideseek/gameover/anitime
+
