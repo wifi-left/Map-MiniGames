@@ -37,6 +37,13 @@
       "minecraft:tnt",
       "#minecraft:coral_blocks",
       "minecraft:sea_lantern",
-      "#minecraft:terracottas"
+      "#minecraft:terracottas",
+      "minecraft:grass",
+      "#minecraft:flowers",
+      "#minecraft:carpets",
+      "minecraft:moss_carpet",
+      "#minecraft:wool",
+      "minecraft:chest",
+      "minecraft:barrel"
     ]
   }

@@ -1,4 +1,4 @@
-tp @s 431 67 -262 180 0
+tp @s 406 1 -431 -90 0
 team join hide.wait
 title @s title ["\u00a7b\u00a7l方块躲猫猫"]
 title @s subtitle ["\u00a7a猜猜我是谁？"]
