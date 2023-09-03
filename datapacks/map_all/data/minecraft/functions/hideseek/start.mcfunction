@@ -8,7 +8,7 @@ scoreboard players set 90 board 90
 scoreboard players set 120 board 120
 # scoreboard players operation hide.maxtime board *= 60 board
 scoreboard players set hide.maxtime board 0
-scoreboard players add hide.maxtime board 60
+scoreboard players add hide.maxtime board 120
 scoreboard players operation hide.maxtime2 board *= 60 board
 scoreboard players operation hide.maxtime board += hide.maxtime2 board
 
