@@ -1,5 +1,11 @@
 execute in minecraft:airworld run spawnpoint @s 553 6 32
 effect give @a[team=btw.wait] resistance 1 25 true
+effect give @a[team=btw.play.a] resistance 1 25 true
+effect give @a[team=btw.play.b] resistance 1 25 true
 
-title @a[team=btw.play.a] actionbar ["\u00a76剩余血量：",{"score":{"objective": "btw.score","name": "@s"},"color": "gold"}]
-title @a[team=btw.play.b] actionbar ["\u00a76剩余血量：",{"score":{"objective": "btw.score","name": "@s"},"color": "gold"}]
+execute as @a[team=btw.play.a,gamemode=adventure] at @s run function boatwars/info
+execute as @a[team=btw.play.b,gamemode=adventure] at @s run function boatwars/info
+execute if score btw.state state matches 1..2 run function boatwars/detectplayercount
+
+execute if score btw.state state matches 1 as @a[team=btw.play.a,gamemode=adventure] run function boatwars/testgunitem
+execute if score btw.state state matches 1 as @a[team=btw.play.b,gamemode=adventure] run function boatwars/testgunitem

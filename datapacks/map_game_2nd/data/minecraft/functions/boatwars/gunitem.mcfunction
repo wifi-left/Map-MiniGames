@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick{display:{Name:'{"text":"枪 \\u00a77- 右键使用","color":"gold"}'},Unbreakable:1b}

@@ -79,6 +79,8 @@ effect give @a[team=chestgame] resistance 1 25 true
 execute if score chess.state state matches 1.. run function small_games/chess/tick
 
 execute as @e[tag=gun.line] at @s run function gun/main
+execute as @a[scores={use.skill=1..},team=btw.play.a] at @s run function minecraft:boatwars/usegun
+execute as @a[scores={use.skill=1..},team=btw.play.b] at @s run function minecraft:boatwars/usegun
 execute as @a[scores={use.skill=1..},level=..0,team=job_pvp] at @s run function minecraft:skills
 execute as @a[scores={use.skill=1..},team=play.tntwars] at @s run function minecraft:tntwars/tnttool
 execute as @a[scores={use.skill=1..},level=..0,team=play.live.runner] at @s run function minecraft:skills

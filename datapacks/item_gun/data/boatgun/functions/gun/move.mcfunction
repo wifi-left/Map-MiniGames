@@ -9,7 +9,7 @@ execute if score @s PSTJ matches 0.. run tp @s ^ ^ ^1
 execute if score @s PSTJ matches 0.. run function boatgun:gun/testfortarget
 # Target TEAM B
 # Target TEAM A
-
+# say @a[tag=hitted]
 execute if score @s PSTJ matches 0.. if data entity @s {data:{team:2}} if entity @a[team=btw.play.a,tag=hitted] run function boatgun:hit/b
 execute if score @s PSTJ matches 0.. if data entity @s {data:{team:1}} if entity @a[team=btw.play.b,tag=hitted] run function boatgun:hit/a
 # execute if score @s PSTJ matches 0.. run scoreboard players remove @s PSTJ 1
