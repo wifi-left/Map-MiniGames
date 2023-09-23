@@ -29,3 +29,5 @@ effect give @a[team=hide.wait2] resistance 9999 25 true
 effect give @a[team=hide.killer] resistance 9999 25 true
 effect give @a[team=hide.killer] strength 2 20 true
 effect give @a[team=hide.killer] glowing 2 2 true
+
+execute if score btw.state state matches 1.. in overworld run function boatwars/second

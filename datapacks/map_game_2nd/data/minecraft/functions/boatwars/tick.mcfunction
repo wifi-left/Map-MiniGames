@@ -1,0 +1,1 @@
+execute as @a[x=553,y=6,z=32,distance=..1,gamemode=adventure] at @s run function boatwars/died

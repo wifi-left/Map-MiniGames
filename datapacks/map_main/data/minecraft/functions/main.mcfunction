@@ -67,6 +67,7 @@ execute if score golf.state state matches 1.. in golfworld run function golf/tic
 execute if score boat.state state matches 1.. in boatworld2 run function boat/tick
 execute if score hunger.state state matches 1.. in hungerworld run function hunger/tick
 execute if score battle.state state matches 1.. in overworld run function battle/tick
+execute if score btw.state state matches 1.. in overworld run function boatwars/tick
 
 execute as @a[team=lobby,tag=!parkouring] at @s if block ~ ~ ~ light_weighted_pressure_plate run function npark/join
 execute as @a[team=lobby,tag=!mazing] at @s if block ~ ~ ~ warped_pressure_plate run function maze/join

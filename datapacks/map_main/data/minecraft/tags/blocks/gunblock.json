@@ -63,6 +63,7 @@
     "minecraft:redstone_block",
     "glass",
     "glowstone",
-    "sea_lantern"
+    "sea_lantern",
+    "prismarine"
   ]
 }
