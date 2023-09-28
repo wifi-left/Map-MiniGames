@@ -98,7 +98,7 @@ execute in airworld as @a[gamemode=!creative,gamemode=!spectator,team=wait.sur,x
 execute as @a[scores={cooldowntime=1..},team=play.zombie] at @s run scoreboard players remove @s cooldowntime 1
 
 execute as @a[scores={use.skill=1..},team=play.zombie] at @s run scoreboard players add @s cooldowntime 0
-execute as @a[scores={use.skill=1..,cooldowntime=..0},team=play.zombie] at @s run function minecraft:guns
+execute as @a[scores={use.skill=1..,cooldowntime=..0},team=play.zombie] at @s run function minecraft:gun/guns
 scoreboard players reset @a[scores={use.skill.2=1..}] use.skill.2
 
 execute if score sur.state state matches 1.. in airworld run function surgame:tick
