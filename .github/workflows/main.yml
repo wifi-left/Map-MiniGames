@@ -24,13 +24,6 @@ jobs:
       - name: Archive the Map
         shell: powershell
         run: ./zip.ps1
-      - name: Create GitHub Changelog
-        uses: marvinpinto/action-automatic-releases@latest
-        with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest"
-          title: "Newest Version: v${{ env.version }}"
-          prerelease: false
       - name: Create GitHub release
         uses: marvinpinto/action-automatic-releases@latest
         with:
