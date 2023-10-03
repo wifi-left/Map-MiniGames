@@ -6,7 +6,7 @@
     ],
     "style": {
       "color": "gray",
-      "italic": true
+      "italic": false
     },
     "translation_key": "\u00a7dFrom \u00a77%s\u00a77: %s"
   },
