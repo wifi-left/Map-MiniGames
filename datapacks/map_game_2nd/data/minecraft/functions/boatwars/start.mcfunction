@@ -9,9 +9,9 @@ scoreboard players set btw.score.b board 0
 scoreboard players set btw.toround board 0
 execute as @a[team=btw.wait,gamemode=adventure] run scoreboard players add btw.toround board 1
 scoreboard players set 2 board 2
-scoreboard players operation btw.toround board *= 2 board
+scoreboard players operation btw.toround board *= 1 board
 scoreboard players add btw.toround board 1
-execute if score btw.toround board matches 16.. run scoreboard players set btw.toround board 15 
+execute if score btw.toround board matches 8.. run scoreboard players set btw.toround board 8
 tellraw @a[team=btw.wait] ["\u00a76本次回合数量：",{"score":{"objective": "board","name": "btw.toround"}}]
 scoreboard players reset * btw.boattype
 scoreboard players reset * btw.gunspeed
