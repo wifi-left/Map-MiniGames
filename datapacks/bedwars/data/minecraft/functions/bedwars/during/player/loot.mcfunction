@@ -10,7 +10,6 @@ execute if entity @a[scores={bw.kill=1..}] at @a[scores={bw.kill=1..}] run score
 execute if entity @a[scores={bw.kill=1..}] at @a[scores={bw.kill=1..}] run scoreboard players operation @a[scores={bw.kill=1..},limit=1] bw.tmp.gd = @s bw.tmp.gd
 execute if entity @a[scores={bw.kill=1..}] at @a[scores={bw.kill=1..}] run scoreboard players operation @a[scores={bw.kill=1..},limit=1] bw.tmp.dm = @s bw.tmp.dm
 execute if entity @a[scores={bw.kill=1..}] at @a[scores={bw.kill=1..}] run scoreboard players operation @a[scores={bw.kill=1..},limit=1] bw.tmp.em = @s bw.tmp.em
-# execute unless entity @a[scores={bw.kill=1..}] run summon marker ~ ~ ~ {Duration:100000,Tags:["neweee","bedwars","loot"]}
 # execute unless entity @a[scores={bw.kill=1..}] run data modify entity @e[type=marker,tag=loot,tag=neweee,limit=1] Pos set from storage test Pos
 # scoreboard players operation @e[type=marker,tag=loot,tag=neweee] bw.tmp.ir = @s bw.tmp.ir
 # scoreboard players operation @e[type=marker,tag=loot,tag=neweee] bw.tmp.gd = @s bw.tmp.gd

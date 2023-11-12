@@ -22,7 +22,7 @@ execute as @a[tag=bw.fhing] if score @s board matches ..0 run function minecraft
 tellraw @a[tag=bw.fhing] ["\u00a7e你将在",{"score":{"objective": "board","name": "*"},"color":"red"},"\u00a7e秒后重生！"]
 title @a[tag=bw.fhing] title ["\u00a7c你死了！"]
 title @a[tag=bw.fhing] subtitle ["\u00a7e你将在",{"score":{"objective": "board","name": "*"},"color":"red"},"\u00a7e秒后重生！"]
-execute as @a[tag=INV] at @s run particle minecraft:block gold_block ~ ~ ~ 0 0 0 1 15 force
+# execute as @a[tag=INV] at @s run particle minecraft:block gold_block ~ ~ ~ 0 0 0 1 15 force
 
 
 ## Other

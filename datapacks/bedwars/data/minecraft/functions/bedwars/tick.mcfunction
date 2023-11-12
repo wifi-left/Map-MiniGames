@@ -107,8 +107,9 @@ kill @e[type=item,nbt={Item:{tag:{bwshopitem:1}}}]
 
 ## Invis
 tag @a[tag=INV] remove INV
-tag @a[nbt={ActiveEffects:[{Id:14}]}] add INV
+tag @a[nbt={active_effects:[{id:"minecraft:invisibility"}]}] add INV
 execute if entity @e[scores={attack.1=1..},tag=bw.player] run effect clear @a[tag=INV,scores={hurt.1=1..}] invisibility
 execute if entity @e[scores={attack.1=1..},tag=bw.player] run tellraw @a[tag=INV,scores={hurt.1=1..}] ["\u00a7c你的隐身状态因为受到伤害被取消！"]
 scoreboard players reset @a[scores={hurt.1=1..}] hurt.1
 scoreboard players reset @a[scores={attack.1=1..}] attack.1
+execute as @a[tag=INV] at @s run particle minecraft:dust 0.388 0.388 0.388 1 ~ ~ ~ 0 0 0 1 1 force

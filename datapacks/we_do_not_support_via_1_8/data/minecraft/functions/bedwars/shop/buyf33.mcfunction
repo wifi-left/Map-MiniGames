@@ -7,6 +7,4 @@ execute if score @s bw.tmp.em matches 2.. run clear @s emerald 2
 execute unless score @s bw.tmp.em matches 2.. run tellraw @s ["\u00a7c你的资源不够买这个东西!"]
 execute unless score @s bw.tmp.em matches 2.. run playsound minecraft:entity.enderman.teleport player @s ~ ~ ~ 1 0 1
 execute if score @s bw.tmp.em matches 2.. run tellraw @s ["\u00a7a你购买了\u00a76Speed Jump Potion * 1"]
-execute if score @s bw.tmp.em matches 2.. run give @s minecraft:potion{CustomPotionEffects:[{Id:1,Amplifier:1,Duration:1200},{Id:8,Amplifier:3,Duration:1200}],CustomPotionColor:63205,display:{Name:'"可口可乐药水"'}}
-
-#/give @p minecraft:potion{CustomPotionEffects:[{Id:1,Amplifier:1,Duration:1200},{Id:8,Amplifier:3,Duration:1200}],CustomPotionColor:63205,display:{Name:"\"可口可乐药水\""}}
+execute if score @s bw.tmp.em matches 2.. run give @s minecraft:potion{custom_potion_effects:[{id:"speed",amplifier:1,duration:1200},{id:"jump_boost",amplifier:3,duration:1200}],CustomPotionColor:63205,display:{Name:'"雷碧"'}}

@@ -13,7 +13,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{CustomPotionEffects:[{Id:1,Duration:600,Amplifier:1b,Ambient:0b,ShowParticles:0b}]}"
+                            "tag": "{custom_potion_effects:[{id:\"speed\",duration:600,amplifier:1b,ambient:0b,show_particles:0b}]}"
                         },
                         {
                             "function": "minecraft:set_count",
@@ -52,7 +52,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{CustomPotionEffects:[{Id:8,Duration:600,Amplifier:1b,Ambient:0b,ShowParticles:0b}]}"
+                            "tag": "{custom_potion_effects:[{id:\"jump_boost\",duration:600,amplifier:1b,ambient:0b,show_particles:0b}]}"
                         },
                         {
                             "function": "minecraft:set_count",
@@ -95,7 +95,7 @@
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{CustomPotionEffects:[{Id:14,Duration:300,Amplifier:1b,Ambient:0b,ShowParticles:0b}]}"
+                            "tag": "{custom_potion_effects:[{id:\"invisibility\",duration:300,amplifier:1b,ambient:0b,show_particles:0b}]}"
                         }
                     ],
                     "conditions": [
@@ -116,7 +116,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{CustomPotionEffects:[{Id:2,Duration:200,Amplifier:127b,Ambient:0b,ShowParticles:0b}]}"
+                            "tag": "{custom_potion_effects:[{id:\"slowness\",duration:200,amplifier:127b,ambient:0b,show_particles:0b}]}"
                         },
                         {
                             "function": "minecraft:set_count",
@@ -151,7 +151,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{CustomPotionEffects:[{Id:4,Duration:200,Amplifier:127b,Ambient:0b,ShowParticles:0b}]}"
+                            "tag": "{custom_potion_effects:[{id:\"mining_fatigue\",duration:200,amplifier:127b,ambient:0b,show_particles:0b}]}"
                         },
                         {
                             "function": "minecraft:set_count",
@@ -200,7 +200,7 @@
                         },
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{CustomPotionEffects:[{Id:15,Duration:200,Amplifier:127b,Ambient:0b,ShowParticles:0b}]}"
+                            "tag": "{custom_potion_effects:[{id:\"blindness\",duration:200,amplifier:127b,ambient:0b,show_particles:0b}]}"
                         }
                     ],
                     "conditions": [
