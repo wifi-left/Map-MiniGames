@@ -1,3 +1,7 @@
+tellraw @s ["\u00a7c该游戏质量堪忧，故准备进行返修，请关注更新动态！"]
+return 0
+
+
 team join boat @s
 title @s reset
 tellraw @a [{"selector":"@s"},"\u00a7a 加入了\u00a79冰船游戏\u00a7a。"]
