@@ -1,0 +1,3 @@
+item replace entity @s hotbar.0 with warped_fungus_on_a_stick{display:{Name:'"\\u00a7b选择玩家 - \\u00a77右键点击"'},wolfItem:1,CustomModelData:5}
+item replace entity @s hotbar.1 with warped_fungus_on_a_stick{display:{Name:'"\\u00a7a确认选择 - \\u00a77右键点击"'},wolfItem:2,CustomModelData:4}
+item replace entity @s hotbar.2 with warped_fungus_on_a_stick{display:{Name:'"\\u00a7c取消选择 - \\u00a77右键点击"'},wolfItem:3,CustomModelData:6}

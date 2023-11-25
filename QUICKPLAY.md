@@ -34,11 +34,10 @@
 |关卡跑酷|lpark|
 |冬泳怪鸽|poolwar|
 |五子棋|small_games/chess|
-|狼人杀（文字）|small_games/wolf|
 |小游戏合集|small_games/total|
 |Snow|snow|
 |TNT Wars|tntwars|
-|~~狼人杀（非文字）~~|twolf|
+|狼人杀|twolf|
 |Zombie Days（PVE）|zombieever|
 
 ### 例外

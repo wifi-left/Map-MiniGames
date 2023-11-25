@@ -1,7 +1,0 @@
-tellraw @a[team=Who_Killer_Text] [""]
-tellraw @a[team=Who_Killer_Text] ["\u00a7c狼人：",{"selector":"@a[scores={LRS_JOB=1}]"}]
-tellraw @a[team=Who_Killer_Text] ["\u00a7e女巫：",{"selector":"@a[scores={LRS_JOB=2}]"}]
-tellraw @a[team=Who_Killer_Text] ["\u00a7b预言家：",{"selector":"@a[scores={LRS_JOB=3}]"}]
-tellraw @a[team=Who_Killer_Text] ["\u00a7d守卫：",{"selector":"@a[scores={LRS_JOB=4}]"}]
-tellraw @a[team=Who_Killer_Text] ["\u00a7a平民：",{"selector":"@a[scores={LRS_JOB=0}]"}]
-tellraw @a[team=Who_Killer_Text] [""]

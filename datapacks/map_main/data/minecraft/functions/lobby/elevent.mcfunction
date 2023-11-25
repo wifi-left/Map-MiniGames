@@ -19,6 +19,7 @@ tag @a[tag=REJOINGAME] remove REJOINGAME
 
 
 tag @a[scores={hub=1..}] add NEWENTER1
+execute as @a[tag=NEWENTER1] unless score @s park.uuid matches 0.. run function minecraft:npark/getuuid
 
 title @a[tag=NEWENTER1] reset
 execute as @a[scores={hub=1..}] run tellraw @a ["\u00a7a\u00a7l[MESSAGE] \u00a77",{"selector":"@s","color":"yellow"},"\u00a7b 返回了大厅。"]

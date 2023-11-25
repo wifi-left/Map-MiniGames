@@ -19,7 +19,7 @@ execute if score @s quickplay matches 16 run tag @s add join.livelongest
 execute if score @s quickplay matches 17 run function lpark/join
 execute if score @s quickplay matches 18 run function poolwar/join
 execute if score @s quickplay matches 19 run function small_games/chess/join
-execute if score @s quickplay matches 20 run function small_games/wolf/join
+execute if score @s quickplay matches 20 run function twolf/join
 execute if score @s quickplay matches 21 run function small_games/total/join
 execute if score @s quickplay matches 22 run function snow/join
 execute if score @s quickplay matches 23 run function tntwars/join

@@ -88,8 +88,11 @@ execute as @a[scores={use.skill=1..},level=..0,team=play.live.runner] at @s run 
 execute as @a[scores={use.skill=1..},level=..0,team=play.live.killer] at @s run function minecraft:skills
 execute in boatworld2 as @a[scores={use.skill=1..},team=boat] at @s run function minecraft:boat/skills
 execute in boatworld2 as @a[scores={use.skill.2=1..},team=boat] at @s run function minecraft:boat/skills
+execute in killerworld as @a[scores={use.skill.2=1..},team=wolfpeople] at @s run function minecraft:twolf/controls
 execute as @a[scores={use.skill=1..},level=..0,team=hide.play.hun] at @s run function minecraft:hideseek/skillss
 execute as @a[scores={use.skill=1..},level=..0,team=hide.play.ani] at @s run function minecraft:hideseek/skillss
+
+
 
 execute in airworld as @a[gamemode=!creative,gamemode=!spectator,team=play.sur,x=-46,y=-26,z=3,distance=0..4] run function surgame:died
 execute in airworld as @a[gamemode=!creative,gamemode=!spectator,team=play.sur.zom,x=-46,y=-26,z=3,distance=0..4] run function surgame:died
@@ -104,7 +107,6 @@ scoreboard players reset @a[scores={use.skill.2=1..}] use.skill.2
 
 execute if score sur.state state matches 1.. in airworld run function surgame:tick
 
-effect give @a[team=Who_Killer_Text] resistance 2 25 true
 execute as @a[scores={use.skill=1..},level=1..,team=hide.play.hun] at @s run title @s actionbar ["\u00a7c\u00a7l技能还在冷却。"]
 execute as @a[scores={use.skill=1..},level=1..,team=hide.play.ani] at @s run title @s actionbar ["\u00a7c\u00a7l变身冷却中。"]
 execute as @a[scores={use.skill=1..},level=1..,team=hide.play.hun] at @s run playsound entity.enderman.teleport player @s
@@ -130,8 +132,7 @@ tag @a[tag=action.sneaking] remove action.sneaking
 execute as @a[scores={sneaking=1..}] run tag @s add action.sneaking
 execute as @a[scores={sneaking=1..}] run scoreboard players reset @s sneaking
 execute if score repel state matches 1..1 run function minecraft:repel/main
-execute if score twolf.state state matches 1..1 run function minecraft:twolf/tick
-execute if score wolf.state state matches 1..1 run function minecraft:small_games/wolf/tick
+execute in killerworld if score twolf.state state matches 1..1 run function minecraft:twolf/tick
 scoreboard players add tick tick 1
 execute if score tick tick matches 4 run function minecraft:seconds/1
 execute if score tick tick matches 8 run function minecraft:seconds/2
