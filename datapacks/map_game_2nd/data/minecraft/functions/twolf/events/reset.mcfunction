@@ -19,6 +19,9 @@ scoreboard players reset * LRS_CS
 scoreboard players set wolf.witch.rescue board 1
 scoreboard players set wolf.witch.kill board 1
 
+# 丘比特
+scoreboard players set wolf.cupid.type board 1
+
 scoreboard players set wolf.round board 0
 # scoreboard players set wolf.guard.lastprotected board 0
 
@@ -31,5 +34,16 @@ tag @a remove wolf.acting
 tag @a remove wolf.protected
 tag @a remove wolf.killed
 tag @a remove wolf.fired
+# 守卫
 tag @a remove wolf.lastprotected
+# 行动
 tag @a remove wolf.acting
+tag @a remove wolf.white
+# 丘比特
+tag @a remove wolf.connected
+
+tag @e[tag=wolf.tppoint] remove wolf.used
+kill @e[tag=wolf.nametags]
+scoreboard players reset @e[tag=wolf.tp.sell,limit=1] 
+
+schedule clear #wolffunctions

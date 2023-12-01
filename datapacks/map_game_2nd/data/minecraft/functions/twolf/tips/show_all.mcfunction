@@ -1,5 +1,6 @@
 tellraw @s ["\u00a7e----------------------------"]
 function minecraft:twolf/tips/wolf
+function minecraft:twolf/tips/whitewolf
 function minecraft:twolf/tips/witch
 function minecraft:twolf/tips/predictor
 function minecraft:twolf/tips/guard

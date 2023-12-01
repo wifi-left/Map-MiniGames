@@ -132,7 +132,7 @@ tag @a[tag=action.sneaking] remove action.sneaking
 execute as @a[scores={sneaking=1..}] run tag @s add action.sneaking
 execute as @a[scores={sneaking=1..}] run scoreboard players reset @s sneaking
 execute if score repel state matches 1..1 run function minecraft:repel/main
-execute in killerworld if score twolf.state state matches 1..1 run function minecraft:twolf/tick
+execute in killerworld if score twolf.state state matches 1.. run function minecraft:twolf/tick
 scoreboard players add tick tick 1
 execute if score tick tick matches 4 run function minecraft:seconds/1
 execute if score tick tick matches 8 run function minecraft:seconds/2

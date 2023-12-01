@@ -25,7 +25,7 @@ effect give @a[team=lobby,scores={health=..19}] minecraft:instant_health 1 5 tru
 effect give @a minecraft:saturation 1 25 true
 function o_f_tick
 
-execute in killerworld if score twolf.state state matches 1..1 run function minecraft:twolf/second
+execute in killerworld if score twolf.state state matches 1.. run function minecraft:twolf/second
 
 effect give @a[team=wait.wolfpeople] resistance 2 25 true
 effect give @a[team=wolfpeople] resistance 2 25 true

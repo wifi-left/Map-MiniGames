@@ -4,6 +4,8 @@ execute as @e[tag=wolf.tp.sell,limit=1] at @s run data merge entity @e[tag=wolf.
 
 tag @e[tag=wolf.tp.sell] add wolf.died
 tag @e[tag=wolf.tp.sell] remove wolf.tp.sell
+team join wait.wolfpeople
+tellraw @s ["\u00a7c你死了\n\u00a7b你已进入等待队列。为保证游戏公平，请使用 \u00a76/tm <消息>\u00a7b 在旁观玩家中交流"]
 gamemode spectator
 # tellraw @s ["\u00a7c你死了"]
 # execute at @s run tp @s ~ -20 ~
