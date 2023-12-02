@@ -31,16 +31,16 @@ execute if score wolf.total board matches 8.. run execute as @r[team=wait.wolfpe
 execute if score wolf.total board matches 14.. run execute as @r[team=wait.wolfpeople,gamemode=adventure] run function twolf/job/arsonist
 
 # A 模式
-scoreboard players set wolf.mode board 1
-execute if score wolf.total board matches 5 run scoreboard players set wolf.mode board 2
-execute if score wolf.total board matches 7 run scoreboard players set wolf.mode board 2
-execute if score wolf.total board matches 9 run scoreboard players set wolf.mode board 2
-execute if score wolf.total board matches 10 run scoreboard players set wolf.mode board 2
-execute if score wolf.total board matches 11 run scoreboard players set wolf.mode board 2
-execute if score wolf.total board matches 12 run scoreboard players set wolf.mode board 2
-execute if score wolf.total board matches 14 run scoreboard players set wolf.mode board 2
-execute if score wolf.total board matches 16 run scoreboard players set wolf.mode board 2
-execute if score wolf.total board matches 18 run scoreboard players set wolf.mode board 2
-execute if score wolf.total board matches 20 run scoreboard players set wolf.mode board 2
-execute if score wolf.total board matches 22 run scoreboard players set wolf.mode board 2
-execute if score wolf.total board matches 24 run scoreboard players set wolf.mode board 2
+scoreboard players set wolf.mode board 2
+execute if score wolf.total board matches 5 run scoreboard players set wolf.mode board 1
+execute if score wolf.total board matches 7 run scoreboard players set wolf.mode board 1
+execute if score wolf.total board matches 9 run scoreboard players set wolf.mode board 1
+execute if score wolf.total board matches 10 run scoreboard players set wolf.mode board 1
+execute if score wolf.total board matches 11 run scoreboard players set wolf.mode board 1
+execute if score wolf.total board matches 12 run scoreboard players set wolf.mode board 1
+execute if score wolf.total board matches 14 run scoreboard players set wolf.mode board 1
+execute if score wolf.total board matches 16 run scoreboard players set wolf.mode board 1
+execute if score wolf.total board matches 18 run scoreboard players set wolf.mode board 1
+execute if score wolf.total board matches 20 run scoreboard players set wolf.mode board 1
+execute if score wolf.total board matches 22 run scoreboard players set wolf.mode board 1
+execute if score wolf.total board matches 24 run scoreboard players set wolf.mode board 1

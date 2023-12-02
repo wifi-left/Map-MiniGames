@@ -7,7 +7,8 @@ scoreboard players set wolf.r.god board 0
 scoreboard players set wolf.r.tnt board 0
 scoreboard players set wolf.r.cupids board 0
 
-execute as @a[tag=wolf.tip,gamemode=adventure,team=wolfpeople] run scoreboard players add wolf.r.all board 1
+execute as @a[tag=wolf.tip,gamemode=adventure,team=wolfpeople,scores={LRS_JOB=0..}] run scoreboard players add wolf.r.all board 1
+
 ## 好人
 execute if score wolf.cupid.type board matches 1 as @a[tag=wolf.tip,gamemode=adventure,team=wolfpeople] if score @s LRS_JOB matches 0 run scoreboard players add wolf.r.person board 1
 execute if score wolf.cupid.type board matches 1 as @a[tag=wolf.tip,gamemode=adventure,team=wolfpeople] if score @s LRS_JOB matches 1..3 run scoreboard players add wolf.r.god board 1

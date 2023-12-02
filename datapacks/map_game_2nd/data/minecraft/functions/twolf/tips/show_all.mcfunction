@@ -10,4 +10,4 @@ function minecraft:twolf/tips/arsonist
 function minecraft:twolf/tips/cupid
 function minecraft:twolf/tips/tnt
 function minecraft:twolf/tips/day
-tellraw @s ["\u00a7e----------------------------"]
+tellraw @s ["\u00a7e============================\n\u00a78 | \u00a7c\u00a7l屠城：\u00a7f狼人必须杀死所有好人\n\u00a78 | \u00a7a\u00a7l屠边：\u00a7f狼人只需要杀死平民或者神任意一方\n\u00a7e----------------------------"]

@@ -1,4 +1,3 @@
-function minecraft:twolf/persons
 # 屠城
 ## 没炸弹人 普通丘比特
 execute unless score twolf.state state matches 3 if score wolf.mode board matches 2 unless score wolf.r.tnt board matches 1.. if score wolf.r.bad board matches ..0 run function minecraft:twolf/over/good

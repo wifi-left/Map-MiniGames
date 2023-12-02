@@ -18,6 +18,11 @@ execute as @a[team=wolfpeople,gamemode=adventure,tag=wolf.acting] run function t
 scoreboard players set wolf.total board 0
 execute as @a[team=wolfpeople,gamemode=adventure] run scoreboard players add wolf.total board 0
 
-execute if score wolf.event board matches 0 run function minecraft:twolf/overdetect
-execute if score wolf.event board matches 10 run function minecraft:twolf/overdetect
-execute if score wolf.event board matches 18 run function minecraft:twolf/overdetect
+execute unless score twolf.state state matches 3 run function minecraft:twolf/persons
+
+execute unless score twolf.state state matches 3 if score wolf.r.all board matches ..2 run function twolf/over/unexpected
+execute unless score twolf.state state matches 3 if score wolf.event board matches 0 run function minecraft:twolf/overdetect
+execute unless score twolf.state state matches 3 if score wolf.event board matches 10 run function minecraft:twolf/overdetect
+execute unless score twolf.state state matches 3 if score wolf.event board matches 18 run function minecraft:twolf/overdetect
+
+
