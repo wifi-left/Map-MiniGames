@@ -9,6 +9,6 @@ scoreboard players set 3 board 3
 scoreboard players operation wolf.OtoT board = wolf.peoplecount.all board
 scoreboard players operation wolf.OtoT board /= 3 board
 
-execute if score wolf.peoplecount.skip board >= wolf.OtoT board run function minecraft:twolf/control/day/skipp 
+execute if score wolf.peoplecount.skip board > wolf.OtoT board run function minecraft:twolf/control/day/skipp 
 execute if score wolf.peoplecount board >= wolf.peoplecount.all board run scoreboard players set wolf.event board 10
 execute if score wolf.peoplecount board >= wolf.peoplecount.all board run function minecraft:twolf/events/next_event 
