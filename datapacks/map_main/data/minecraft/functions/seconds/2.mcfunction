@@ -3,7 +3,8 @@
 execute if score hide2.state state matches 1.. run function minecraft:hide2/second
 
 execute if score tnt.state state matches 1.. run function minecraft:tntwars/second
-
+bossbar set minecraft:wolfkiller players
+bossbar set minecraft:wolfkiller players @a[tag=wolf.tip]
 bossbar set zombie:zombiecount players
 bossbar set zombie:zombiecount players @a[team=play.zombie]
 
