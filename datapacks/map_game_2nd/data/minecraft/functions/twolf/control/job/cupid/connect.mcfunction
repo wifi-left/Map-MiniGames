@@ -6,3 +6,4 @@ execute if entity @a[tag=wolf.connected,team=wolfpeople] run function minecraft:
 
 tag @a[tag=wolf.selected] add wolf.connected
 scoreboard players reset @a LRS_CS
+playsound entity.experience_orb.pickup player @s ~ ~ ~ 1 1 1

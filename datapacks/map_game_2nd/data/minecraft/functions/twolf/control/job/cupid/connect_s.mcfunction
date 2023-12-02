@@ -5,3 +5,7 @@ function minecraft:twolf/action/tppoint
 tag @s remove wolf.acting
 execute as @a[tag=wolf.connected,team=wolfpeople] run function minecraft:twolf/events/job/cupidconnection
 execute run function minecraft:twolf/events/job/cupidconnection_s
+scoreboard players set wolf.time board -1
+scoreboard players set wolf.event board 2
+scoreboard players set wolf.ttime board 5
+tellraw @a[tag=wolf.tip] ["\u00a7c请闭眼。"]
