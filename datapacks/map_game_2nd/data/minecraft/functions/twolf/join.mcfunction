@@ -1,4 +1,4 @@
-tellraw @s ["\n\u00a7c很抱歉，此游戏还在策划中...\n"]
+tellraw @s ["\n\u00a7e该游戏还在公开测试阶段！如发现BUG，最好请录制一个视频，然后向作者反馈。\n"]
 title @s title ["\u00a7b\u00a7l狼人杀"]
 title @s subtitle ["\u00a77Who Killed me?"]
 execute in killerworld run tp @s 30 6 31 0 0

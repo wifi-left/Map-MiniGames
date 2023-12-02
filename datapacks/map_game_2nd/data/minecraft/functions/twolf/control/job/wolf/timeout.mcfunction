@@ -1,3 +1,4 @@
+tag @a remove wolf.selected
 execute as @r[tag=wolf.acting,gamemode=adventure,scores={LRS_CS=1..}] run function minecraft:twolf/action/tagselected
 
 scoreboard players set wolf.tmp board 0

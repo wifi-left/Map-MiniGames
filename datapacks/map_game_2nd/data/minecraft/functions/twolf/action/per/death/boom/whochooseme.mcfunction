@@ -1,0 +1,1 @@
+execute if score @s LRS_CS = @a[tag=wolf.sell,limit=1,team=wolfpeople] park.uuid run tag @s add wolf.boomed

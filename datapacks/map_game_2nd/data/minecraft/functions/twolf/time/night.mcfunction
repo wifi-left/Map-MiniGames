@@ -5,4 +5,7 @@ team modify wolfpeople nametagVisibility hideForOwnTeam
 tellraw @a[tag=wolf.tip] ["\u00a7f\u00a7l天黑请闭眼。"]
 title @a[tag=wolf.tip] title [""]
 title @a[tag=wolf.tip] subtitle ["\u00a7f\u00a7l天黑请闭眼。"]
+schedule clear #wolffunctions
+scoreboard players set wolf.time board -1
+scoreboard players set wolf.ttime board -1
 function twolf/action/tppoint

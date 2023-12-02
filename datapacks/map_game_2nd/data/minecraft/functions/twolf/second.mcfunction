@@ -17,3 +17,7 @@ execute as @a[team=wolfpeople,gamemode=adventure,scores={LRS_CS=1..}] run functi
 execute as @a[team=wolfpeople,gamemode=adventure,tag=wolf.acting] run function twolf/action/per/highlight_acting
 scoreboard players set wolf.total board 0
 execute as @a[team=wolfpeople,gamemode=adventure] run scoreboard players add wolf.total board 0
+
+execute if score wolf.event board matches 0 run function minecraft:twolf/overdetect
+execute if score wolf.event board matches 10 run function minecraft:twolf/overdetect
+execute if score wolf.event board matches 18 run function minecraft:twolf/overdetect
