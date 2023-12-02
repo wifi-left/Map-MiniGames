@@ -45,5 +45,6 @@ execute as @a[tag=wolf.tip] at @s run playsound entity.firework_rocket.twinkle p
 scoreboard players set twolf.state state 1
 scoreboard players set wolf.time board 6
 scoreboard players set wolf.ttime board -1
-
+execute if score wolf.mode board matches 1 run tellraw @a[tag=wolf.tip] ["\u00a76游戏模式：\u00a7a\u00a7l屠边"]
+execute if score wolf.mode board matches 2 run tellraw @a[tag=wolf.tip] ["\u00a76游戏模式：\u00a7c\u00a7l屠城"]
 schedule clear #wolffunctions
