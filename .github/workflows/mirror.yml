@@ -15,10 +15,3 @@ jobs:
             git@gitlab.com:wifi-left/Map-MiniGames.git
           ssh_private_key:
             ${{ secrets.SSH_KEY2 }}
-      - name: 'Mirror to Gitee'
-        uses: pixta-dev/repository-mirroring-action@v1
-        with:
-          target_repo_url:
-            git@gitee.com:wifi-left/Map-MiniGames.git
-          ssh_private_key:
-            ${{ secrets.SSH_KEY2 }}
