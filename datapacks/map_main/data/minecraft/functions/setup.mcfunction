@@ -33,6 +33,7 @@ bossbar set minecraft:battle max 60
 bossbar set minecraft:battle value 0
 # function selfcheck/check
 say §b§l若您是第一次使用此地图，请管理员（或者控制台）先运行 §6/function selfcheck/check §b§l检查兼容情况。§a(建议在有玩家的情况下测试)
+say 建议您安装 https://modrinth.com/mod/speech-manager-by-command-scoreboard 模组（仅需服务端），即可在需要的时候控制玩家说话，提升游戏体验感。
 function minecraft:version/version1
 function minecraft:version/gamev
 # say §b§l若您是第一次使用此地图，请管理员（或者控制台）先运行 §6/function selfcheck/check §b§l查看兼容情况。
@@ -42,3 +43,13 @@ function minecraft:version/gamev
 kill @e[tag=lobby.car,type=minecart]
 
 execute in overworld run forceload add 0 0
+
+# MOD：
+## 0 for nothing; 1 ban other team; 2 ban own team; 4 ban /shout
+scoreboard players set wait.wolfpeople BAMBOO_MOD_SAYING 0
+scoreboard players set wolfpeople BAMBOO_MOD_SAYING 0
+scoreboard players set bw.blue BAMBOO_MOD_SAYING 2
+scoreboard players set bw.wait BAMBOO_MOD_SAYING 2
+scoreboard players set bw.green BAMBOO_MOD_SAYING 2
+scoreboard players set bw.yellow BAMBOO_MOD_SAYING 2
+scoreboard players set bw.red BAMBOO_MOD_SAYING 2

@@ -9,3 +9,9 @@ schedule clear #wolffunctions
 scoreboard players set wolf.time board -1
 scoreboard players set wolf.ttime board -1
 function twolf/action/tppoint
+
+scoreboard players set wait.wolfpeople BAMBOO_MOD_SAYING 0
+
+## 0 for nothing; 1 ban other team; 2 ban own team; 3 all banned; 4 ban /tshout
+scoreboard players set wait.wolfpeople BAMBOO_MOD_SAYING 1
+scoreboard players set wolfpeople BAMBOO_MOD_SAYING 3
