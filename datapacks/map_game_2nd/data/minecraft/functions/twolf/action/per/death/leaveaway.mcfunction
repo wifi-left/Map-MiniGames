@@ -13,6 +13,8 @@ tag @e[tag=wolf.tp.sell] add wolf.died
 tag @e[tag=wolf.tp.sell] remove wolf.tp.sell
 
 tellraw @a[tag=wolf.tip] [{"selector":"@s"},"\u00a7c 被放逐了。"]
+title @a[tag=wolf.tip] title [""]
+title @a[tag=wolf.tip] subtitle [{"selector":"@s"},"\u00a7c 被放逐了。"]
 
 
 gamemode spectator

@@ -16,5 +16,7 @@ execute unless score wolf.highest.score board matches ..0 if score wolf.highest.
 execute if score wolf.highest.score board >= wolf.OtoT board run function minecraft:twolf/events/day/chooseout
 
 scoreboard players reset * LRS_ZT
+function twolf/overdetect
+
 execute unless score wolf.event board matches 12 run scoreboard players set wolf.event board 18
 execute unless score wolf.event board matches 12 run function minecraft:twolf/events/next_event

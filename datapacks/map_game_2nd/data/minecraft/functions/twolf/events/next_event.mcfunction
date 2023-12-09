@@ -46,7 +46,7 @@ scoreboard players reset @a LRS_CS
 tag @a remove wolf.selected
 
 # 新一局 9
-execute if score wolf.event board matches 18.. run function minecraft:twolf/events/end/trigger
+execute if score wolf.event board matches 18.. unless score twolf.state state matches 3 run function minecraft:twolf/events/end/trigger
 
 # 14 结束
 execute if score wolf.event board matches 14 run function minecraft:twolf/over/tpback
