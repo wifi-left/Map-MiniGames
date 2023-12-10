@@ -4,7 +4,9 @@ tag @a[tag=wolf.connected,tag=!wolf.1,team=wolfpeople,limit=1] add wolf.2
 execute store result score wolf.1 board as @a[tag=wolf.1] run function twolf/action/per/getjobtype
 execute store result score wolf.2 board as @a[tag=wolf.2] run function twolf/action/per/getjobtype
 
-execute if score wolf.1 board = wolf.2 board run scoreboard players set wolf.cupid.type board 1
+execute if score wolf.1 board = wolf.2 board if score wolf.1 board matches 1 run scoreboard players set wolf.cupid.type board 1
+execute if score wolf.1 board = wolf.2 board if score wolf.1 board matches 3 run scoreboard players set wolf.cupid.type board 1
+execute if score wolf.1 board = wolf.2 board if score wolf.1 board matches 2 run scoreboard players set wolf.cupid.type board 0
 execute unless score wolf.1 board = wolf.2 board run scoreboard players set wolf.cupid.type board 2
 
 tag @a[tag=wolf.connected,team=wolfpeople] add wolf.cupidmsg

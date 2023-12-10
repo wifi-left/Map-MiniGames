@@ -18,7 +18,8 @@ I | 职业 | 注释
 <!-- LRS_UUID -->
 # scores
 wolf.cupid.type：
- - 1: 同属性
+ - 0: 狼+狼
+ - 1: 好人+好人
  - 2: 异属性
 
 wolf.auto 
