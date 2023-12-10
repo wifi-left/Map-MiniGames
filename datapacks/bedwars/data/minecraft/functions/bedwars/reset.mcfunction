@@ -3,6 +3,23 @@ title @a[tag=bw.player] title ["\u00a7eReseting..."]
 title @a[tag=bw.player] subtitle ["\u00a7fIt may take some time..."]
 gamemode spectator @a[tag=bw.player,gamemode=!creative]
 
+# kill @e[tag=bw.bed.red]
+# kill @e[tag=bw.bed.blue]
+# kill @e[tag=bw.bed.yellow]
+# kill @e[tag=bw.bed.green]
+kill @e[tag=bw.bed.beds]
+kill @e[tag=iron,type=marker]
+kill @e[tag=gold,type=marker]
+kill @e[tag=diamond,type=marker]
+kill @e[tag=emerald,type=marker]
+kill @e[tag=emerald.title,type=area_effect_cloud]
+kill @e[tag=diamond.title,type=area_effect_cloud]
+kill @e[tag=emerald.subtitle,type=area_effect_cloud]
+kill @e[tag=diamond.subtitle,type=area_effect_cloud]
+kill @e[tag=dmshop]
+kill @e[tag=shop]
+kill @e[tag=shop2]
+
 bossbar set minigames:bedwars name ["\u00a7e\u00a7lBEDWARS 起床战争 \u00a77| \u00a7a重置中..."]
 bossbar set minigames:bedwars value 1
 bossbar set minigames:bedwars max 1
@@ -21,6 +38,8 @@ scoreboard players set bw.state state -1
 schedule clear bedwars/resets/mogu
 schedule clear bedwars/resets/unnamed
 schedule clear bedwars/resets/space
+schedule clear bedwars/resets/special1
+schedule clear bedwars/resets/glassworld
 scoreboard players set bw.reset board 0
 title @a[tag=bw.player] times 0 200 0
 gamemode spectator @a[tag=bw.player,gamemode=adventure]

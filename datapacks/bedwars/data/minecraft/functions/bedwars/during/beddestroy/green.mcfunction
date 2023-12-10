@@ -1,7 +1,7 @@
 scoreboard players reset bd.green state
 execute as @a[scores={pickgreen=1..},team=bw.green] run tellraw @s ["\u00a7c你不能破坏自己的床！"]
-execute as @a[scores={pickgreen=1..},team=bw.green] run setblock -237 31 208 lime_bed[facing=east]
-execute as @a[scores={pickgreen=1..},team=bw.green] run setblock -236 31 208 lime_bed[facing=east,part=head]
+execute as @a[scores={pickgreen=1..},team=bw.green] run function minecraft:bedwars/resets/beds/green
+# execute as @a[scores={pickgreen=1..},team=bw.green] run setblock -236 31 208 lime_bed[facing=east,part=head]
 execute as @a[scores={pickgreen=1..},team=bw.green] run scoreboard players set bd.green state 1
 
 # execute unless entity @a[scores={pickgreen=1..}] run setblock -237 31 208 lime_bed[facing=east]

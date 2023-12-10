@@ -1,15 +1,15 @@
-kill @e[tag=iron,type=marker]
-kill @e[tag=gold,type=marker]
-kill @e[tag=diamond,type=marker]
-kill @e[tag=emerald,type=marker]
-kill @e[tag=emerald.title,type=area_effect_cloud]
-kill @e[tag=diamond.title,type=area_effect_cloud]
-kill @e[tag=emerald.subtitle,type=area_effect_cloud]
-kill @e[tag=diamond.subtitle,type=area_effect_cloud]
-
-kill @e[tag=dmshop]
-kill @e[tag=shop2]
-kill @e[tag=shop]
+# yellow
+summon marker -371 31 210 {Tags:["bw.bed.beds","bw.bed.yellow"]}
+summon marker -372 31 210 {Tags:["bw.bed.beds","bw.bed.yellow"]}
+# red
+summon marker -305 31 142 {Tags:["bw.bed.beds","bw.bed.red"]}
+summon marker -305 31 141 {Tags:["bw.bed.beds","bw.bed.red"]}
+# green
+summon marker -237 31 208 {Tags:["bw.bed.beds","bw.bed.green"]}
+summon marker -236 31 208 {Tags:["bw.bed.beds","bw.bed.green"]}
+# blue
+summon marker -303 31 276 {Tags:["bw.bed.beds","bw.bed.blue"]}
+summon marker -303 31 277 {Tags:["bw.bed.beds","bw.bed.blue"]}
 # # iron
 summon marker -306 33 122 {Tags:["iron"]}
 summon marker -305 33 122 {Tags:["iron"]}

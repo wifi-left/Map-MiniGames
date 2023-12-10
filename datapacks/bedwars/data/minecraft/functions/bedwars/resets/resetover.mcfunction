@@ -7,8 +7,8 @@ execute as @e[tag=emerald,type=marker] at @s run summon minecraft:area_effect_cl
 
 tellraw @a[tag=bw.player] ["\u00a7a重置完毕！"]
 scoreboard players set bw.reset board 0
-forceload remove -573 299 -397 121
-forceload remove -753 121 -577 299
+execute in bedwars_backup run forceload remove -573 299 -397 121
+execute in bedwars_backup run forceload remove -753 121 -577 299
 schedule clear bedwars/resets/mogu
 schedule clear bedwars/resets/unnamed
 team join bw.wait @a[tag=GOABLE.SPEC,team=bw.green]
@@ -54,17 +54,8 @@ data merge block -382 30 207 {Items: []}
 
 function bedwars/resets/placebed
 
-execute if score bw.mode state matches 1 run setblock -371 31 210 air
-execute if score bw.mode state matches 1 run setblock -372 31 210 air
-
-execute if score bw.mode state matches 1 run setblock -305 31 142 air
-execute if score bw.mode state matches 1 run setblock -305 31 141 air
-
-execute if score bw.mode state matches 1 run setblock -237 31 208 air
-execute if score bw.mode state matches 1 run setblock -236 31 208 air
-
-execute if score bw.mode state matches 1 run setblock -303 31 276 air
-execute if score bw.mode state matches 1 run setblock -303 31 277 air
+execute if score bw.mode state matches 1 as @e[tag=bw.bed.beds] at @s run setblock -371 31 210 air
+execute if score bw.mode state matches 5 as @e[tag=bw.bed.beds] at @s run setblock -371 31 210 air
 
 execute if score bw.mode state matches 1 run tellraw @a[tag=bw.player] ["\n   \u00a7c\u00a7l无床模式\u00a76已启用。\n"]
 execute if score bw.mode state matches 5 run tellraw @a[tag=bw.player] ["\n   \u00a7c\u00a7l无床模式\u00a76已启用。\n"]
@@ -80,19 +71,6 @@ execute if score bw.mode state matches 6 run tag @a[tag=bw.player] add bw.attack
 execute if score bw.mode state matches 6 run tag @a[tag=bw.player] add bw.armor
 execute if score bw.mode state matches 6 run tag @a[tag=bw.player] add bw.speed
 execute if score bw.mode state matches 6 run tag @a[tag=bw.player] add bw.fastii
-
-
-execute if score bw.mode state matches 5 run setblock -371 31 210 air
-execute if score bw.mode state matches 5 run setblock -372 31 210 air
-
-execute if score bw.mode state matches 5 run setblock -305 31 142 air
-execute if score bw.mode state matches 5 run setblock -305 31 141 air
-
-execute if score bw.mode state matches 5 run setblock -237 31 208 air
-execute if score bw.mode state matches 5 run setblock -236 31 208 air
-
-execute if score bw.mode state matches 5 run setblock -303 31 276 air
-execute if score bw.mode state matches 5 run setblock -303 31 277 air
 
 scoreboard players set bw.state state 1
 

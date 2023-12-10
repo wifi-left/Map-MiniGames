@@ -1,4 +1,4 @@
-execute if score bw.reset board matches 0..0 run forceload add -753 121 -577 299
+execute if score bw.reset board matches 0..0 in bedwars_backup run forceload add -753 121 -577 299
 execute if score bw.reset board matches 1..1 run fill -216 0 299 -392 0 121 air
 execute if score bw.reset board matches 2..2 run fill -216 1 299 -392 1 121 air
 execute if score bw.reset board matches 3..3 run fill -216 2 299 -392 2 121 air
@@ -12,36 +12,36 @@ execute if score bw.reset board matches 10..10 run fill -216 9 299 -392 9 121 ai
 execute if score bw.reset board matches 11..11 run fill -216 10 299 -392 10 121 air
 execute if score bw.reset board matches 12..12 run fill -216 11 299 -392 11 121 air
 execute if score bw.reset board matches 13..13 run fill -216 12 299 -392 12 121 air
-execute if score bw.reset board matches 14..14 run clone -753 3 121 -577 3 299 -392 13 121
-execute if score bw.reset board matches 15..15 run clone -753 4 121 -577 4 299 -392 14 121
-execute if score bw.reset board matches 16..16 run clone -753 5 121 -577 5 299 -392 15 121
-execute if score bw.reset board matches 17..17 run clone -753 6 121 -577 6 299 -392 16 121
-execute if score bw.reset board matches 18..18 run clone -753 7 121 -577 7 299 -392 17 121
-execute if score bw.reset board matches 19..19 run clone -753 8 121 -577 8 299 -392 18 121
-execute if score bw.reset board matches 20..20 run clone -753 9 121 -577 9 299 -392 19 121
-execute if score bw.reset board matches 21..21 run clone -753 10 121 -577 10 299 -392 20 121
-execute if score bw.reset board matches 22..22 run clone -753 11 121 -577 11 299 -392 21 121
-execute if score bw.reset board matches 23..23 run clone -753 12 121 -577 12 299 -392 22 121
-execute if score bw.reset board matches 24..24 run clone -753 13 121 -577 13 299 -392 23 121
-execute if score bw.reset board matches 25..25 run clone -753 14 121 -577 14 299 -392 24 121
-execute if score bw.reset board matches 26..26 run clone -753 15 121 -577 15 299 -392 25 121
-execute if score bw.reset board matches 27..27 run clone -753 16 121 -577 16 299 -392 26 121
-execute if score bw.reset board matches 28..28 run clone -753 17 121 -577 17 299 -392 27 121
-execute if score bw.reset board matches 29..29 run clone -753 18 121 -577 18 299 -392 28 121
-execute if score bw.reset board matches 30..30 run clone -753 19 121 -577 19 299 -392 29 121
-execute if score bw.reset board matches 31..31 run clone -753 20 121 -577 20 299 -392 30 121
-execute if score bw.reset board matches 32..32 run clone -753 21 121 -577 21 299 -392 31 121
-execute if score bw.reset board matches 33..33 run clone -753 22 121 -577 22 299 -392 32 121
-execute if score bw.reset board matches 34..34 run clone -753 23 121 -577 23 299 -392 33 121
-execute if score bw.reset board matches 35..35 run clone -753 24 121 -577 24 299 -392 34 121
-execute if score bw.reset board matches 36..36 run clone -753 25 121 -577 25 299 -392 35 121
-execute if score bw.reset board matches 37..37 run clone -753 26 121 -577 26 299 -392 36 121
-execute if score bw.reset board matches 38..38 run clone -753 27 121 -577 27 299 -392 37 121
-execute if score bw.reset board matches 39..39 run clone -753 28 121 -577 28 299 -392 38 121
-execute if score bw.reset board matches 40..40 run clone -753 29 121 -577 29 299 -392 39 121
-execute if score bw.reset board matches 41..41 run clone -753 30 121 -577 30 299 -392 40 121
-execute if score bw.reset board matches 42..42 run clone -753 31 121 -577 31 299 -392 41 121
-execute if score bw.reset board matches 43..43 run clone -753 32 121 -577 32 299 -392 42 121
+execute if score bw.reset board matches 14..14 run clone from bedwars_backup -753 3 121 -577 3 299 -392 13 121
+execute if score bw.reset board matches 15..15 run clone from bedwars_backup -753 4 121 -577 4 299 -392 14 121
+execute if score bw.reset board matches 16..16 run clone from bedwars_backup -753 5 121 -577 5 299 -392 15 121
+execute if score bw.reset board matches 17..17 run clone from bedwars_backup -753 6 121 -577 6 299 -392 16 121
+execute if score bw.reset board matches 18..18 run clone from bedwars_backup -753 7 121 -577 7 299 -392 17 121
+execute if score bw.reset board matches 19..19 run clone from bedwars_backup -753 8 121 -577 8 299 -392 18 121
+execute if score bw.reset board matches 20..20 run clone from bedwars_backup -753 9 121 -577 9 299 -392 19 121
+execute if score bw.reset board matches 21..21 run clone from bedwars_backup -753 10 121 -577 10 299 -392 20 121
+execute if score bw.reset board matches 22..22 run clone from bedwars_backup -753 11 121 -577 11 299 -392 21 121
+execute if score bw.reset board matches 23..23 run clone from bedwars_backup -753 12 121 -577 12 299 -392 22 121
+execute if score bw.reset board matches 24..24 run clone from bedwars_backup -753 13 121 -577 13 299 -392 23 121
+execute if score bw.reset board matches 25..25 run clone from bedwars_backup -753 14 121 -577 14 299 -392 24 121
+execute if score bw.reset board matches 26..26 run clone from bedwars_backup -753 15 121 -577 15 299 -392 25 121
+execute if score bw.reset board matches 27..27 run clone from bedwars_backup -753 16 121 -577 16 299 -392 26 121
+execute if score bw.reset board matches 28..28 run clone from bedwars_backup -753 17 121 -577 17 299 -392 27 121
+execute if score bw.reset board matches 29..29 run clone from bedwars_backup -753 18 121 -577 18 299 -392 28 121
+execute if score bw.reset board matches 30..30 run clone from bedwars_backup -753 19 121 -577 19 299 -392 29 121
+execute if score bw.reset board matches 31..31 run clone from bedwars_backup -753 20 121 -577 20 299 -392 30 121
+execute if score bw.reset board matches 32..32 run clone from bedwars_backup -753 21 121 -577 21 299 -392 31 121
+execute if score bw.reset board matches 33..33 run clone from bedwars_backup -753 22 121 -577 22 299 -392 32 121
+execute if score bw.reset board matches 34..34 run clone from bedwars_backup -753 23 121 -577 23 299 -392 33 121
+execute if score bw.reset board matches 35..35 run clone from bedwars_backup -753 24 121 -577 24 299 -392 34 121
+execute if score bw.reset board matches 36..36 run clone from bedwars_backup -753 25 121 -577 25 299 -392 35 121
+execute if score bw.reset board matches 37..37 run clone from bedwars_backup -753 26 121 -577 26 299 -392 36 121
+execute if score bw.reset board matches 38..38 run clone from bedwars_backup -753 27 121 -577 27 299 -392 37 121
+execute if score bw.reset board matches 39..39 run clone from bedwars_backup -753 28 121 -577 28 299 -392 38 121
+execute if score bw.reset board matches 40..40 run clone from bedwars_backup -753 29 121 -577 29 299 -392 39 121
+execute if score bw.reset board matches 41..41 run clone from bedwars_backup -753 30 121 -577 30 299 -392 40 121
+execute if score bw.reset board matches 42..42 run clone from bedwars_backup -753 31 121 -577 31 299 -392 41 121
+execute if score bw.reset board matches 43..43 run clone from bedwars_backup -753 32 121 -577 32 299 -392 42 121
 execute if score bw.reset board matches 44..44 run fill -216 43 299 -392 43 121 air
 execute if score bw.reset board matches 45..45 run fill -216 44 299 -392 44 121 air
 execute if score bw.reset board matches 46..46 run fill -216 45 299 -392 45 121 air

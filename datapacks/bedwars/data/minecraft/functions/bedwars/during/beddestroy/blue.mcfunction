@@ -1,7 +1,7 @@
 scoreboard players reset bd.blue state
 execute as @a[scores={pickblue=1..},team=bw.blue] run tellraw @s ["\u00a7c你不能破坏自己的床！"]
-execute as @a[scores={pickblue=1..},team=bw.blue] run setblock -303 31 276 blue_bed[facing=south]
-execute as @a[scores={pickblue=1..},team=bw.blue] run setblock -303 31 277 blue_bed[facing=south,part=head]
+execute as @a[scores={pickblue=1..},team=bw.blue] run function minecraft:bedwars/resets/beds/blue
+# execute as @a[scores={pickblue=1..},team=bw.blue] run setblock -303 31 277 blue_bed[facing=south,part=head]
 execute as @a[scores={pickblue=1..},team=bw.blue] run scoreboard players set bd.blue state 1
 
 # execute unless entity @a[scores={pickblue=1..}] run setblock -303 31 276 blue_bed[facing=south]
