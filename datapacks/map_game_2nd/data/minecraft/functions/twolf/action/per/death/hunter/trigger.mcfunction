@@ -1,7 +1,7 @@
 scoreboard players add wolf.deathcount board 1
 
 function minecraft:twolf/events/job/hunter
-
+tag @a remove wolf.acting
 scoreboard players operation wolf.save.time board = wolf.time board
 scoreboard players operation wolf.save.ttime board = wolf.ttime board
 execute unless score wolf.event board matches 12 run scoreboard players operation wolf.save.event board = wolf.event board

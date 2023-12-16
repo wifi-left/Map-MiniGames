@@ -17,7 +17,7 @@ execute as @a[tag=wolf.killed,tag=!wolf.protected,tag=wolf.rescued,gamemode=adve
 execute as @a[tag=!wolf.killed,tag=wolf.protected,gamemode=adventure,team=wolfpeople] at @s run function twolf/action/per/tag/protected
 
 # 女巫 毒药
-execute as @a[tag=wolf.poisoned,gamemode=adventure,team=wolfpeople] at @s run function twolf/action/per/death/died_no
+execute as @a[tag=wolf.poisoned,gamemode=adventure,team=wolfpeople] at @s run function twolf/action/per/death/died_witch
 
 # 纵火犯 火烧
 execute as @a[tag=wolf.fired,tag=!wolf.killed,gamemode=adventure,team=wolfpeople] at @s run function twolf/action/per/death/died

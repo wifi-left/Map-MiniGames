@@ -14,7 +14,7 @@ tag @s remove wolf.fired
 tag @s remove wolf.rescued
 tag @s remove wolf.poisoned
 tag @s remove wolf.lastprotected
-
+tag @s remove wolf.acting
 execute as @s[tag=wolf.connected] run function minecraft:twolf/action/per/death/died_cupid
 
 tag @s remove wolf.connected

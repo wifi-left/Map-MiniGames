@@ -1,13 +1,13 @@
 # execute as @a[team=golf,gamemode=adventure] at @s run kill @e[type=item,distance=0..5]
 
-title @a[team=boat,x=-71,y=134,z=547,distance=0..3] actionbar ["\u00a76您已进入 \u00a7b[神秘区域]"]
+# title @a[team=boat,x=-71,y=134,z=547,distance=0..3] actionbar ["\u00a76您已进入 \u00a7b[神秘区域]"]
 execute as @a[team=boat] at @s run kill @e[type=item,distance=0..5]
 kill @e[type=item,nbt={Item:{tag:{boatItem:1b}}}]
 kill @e[type=item,nbt={Item:{tag:{boatItem:2b}}}]
-title @a[team=boat,x=-43,y=134,z=196,distance=0..4] actionbar ["\u00a76您已进入 \u00a7a[Part 2 - 街道]"]
-title @a[team=boat,x=285,y=134,z=554,distance=0..5] actionbar ["\u00a76您已进入 \u00a7d[Part 3 - 隧道]"]
-title @a[team=boat,x=285,y=134,z=560,distance=0..5] actionbar ["\u00a76您已进入 \u00a7d[Part 3 - 隧道]"]
-title @a[team=boat,x=735,y=-61,z=582,distance=0..5] actionbar ["\u00a76您已进入 \u00a73[Part 4 - 地下桃园]"]
+# title @a[team=boat,x=-43,y=134,z=196,distance=0..4] actionbar ["\u00a76您已进入 \u00a7a[Part 2 - 街道]"]
+# title @a[team=boat,x=285,y=134,z=554,distance=0..5] actionbar ["\u00a76您已进入 \u00a7d[Part 3 - 隧道]"]
+# title @a[team=boat,x=285,y=134,z=560,distance=0..5] actionbar ["\u00a76您已进入 \u00a7d[Part 3 - 隧道]"]
+# title @a[team=boat,x=735,y=-61,z=582,distance=0..5] actionbar ["\u00a76您已进入 \u00a73[Part 4 - 地下桃园]"]
 
 # 735 -61 582 
 # boat.notinboat 玩家不在载具里

@@ -10,10 +10,14 @@
 # execute if score boat.type board matches 4 run 
 # execute if score boat.type board matches 5 run 
 forceload add -32 88 -102 313
+tag @a remove boat.notspawn
 
 execute as @e[tag=boat.reset.structure] at @s run function boat/reset_marker
+
 scoreboard players reset @e[tag=boat]
 kill @e[tag=boat]
 kill @e[type=marker,tag=boat.trap]
+execute unless score boat.type board matches 4 run tag @a[team=boat] add boat.notspawn
+
 schedule function minecraft:boat/reset_doit 5t
 forceload remove -32 88 -102 313
