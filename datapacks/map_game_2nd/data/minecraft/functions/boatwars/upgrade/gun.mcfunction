@@ -1,14 +1,14 @@
 playsound ui.button.click player @s ~ ~ ~ 1 1 1
-execute if score @s btw.gunspeed matches 0 run scoreboard players set boat.needcoin board 100
-execute if score @s btw.gunspeed matches 1 run scoreboard players set boat.needcoin board 150
-execute if score @s btw.gunspeed matches 2 run scoreboard players set boat.needcoin board 200
-execute if score @s btw.gunspeed matches 3 run scoreboard players set boat.needcoin board 250
-execute if score @s btw.gunspeed matches 4 run scoreboard players set boat.needcoin board 300
-execute if score @s btw.gunspeed matches 5 run scoreboard players set boat.needcoin board 350
-execute if score @s btw.gunspeed matches 6 run scoreboard players set boat.needcoin board 400
-execute if score @s btw.gunspeed matches 7 run scoreboard players set boat.needcoin board 450
-execute if score @s btw.gunspeed matches 8 run scoreboard players set boat.needcoin board 500
-execute if score @s btw.gunspeed matches 9 run scoreboard players set boat.needcoin board 550
+execute if score @s btw.gunspeed matches 0 run scoreboard players set boat.needcoin board 500
+execute if score @s btw.gunspeed matches 1 run scoreboard players set boat.needcoin board 600
+execute if score @s btw.gunspeed matches 2 run scoreboard players set boat.needcoin board 600
+execute if score @s btw.gunspeed matches 3 run scoreboard players set boat.needcoin board 700
+execute if score @s btw.gunspeed matches 4 run scoreboard players set boat.needcoin board 700
+execute if score @s btw.gunspeed matches 5 run scoreboard players set boat.needcoin board 800
+execute if score @s btw.gunspeed matches 6 run scoreboard players set boat.needcoin board 800
+execute if score @s btw.gunspeed matches 7 run scoreboard players set boat.needcoin board 900
+execute if score @s btw.gunspeed matches 8 run scoreboard players set boat.needcoin board 900
+execute if score @s btw.gunspeed matches 9 run scoreboard players set boat.needcoin board 1000
 execute if score @s btw.gunspeed matches 10 run tellraw @s ["\u00a7c无法升级：已经达到最满级。"]
 execute if score @s btw.gunspeed matches 10 run return 0
 execute if score @s btw.coin < boat.needcoin board run tellraw @s ["\u00a7c无法升级：金币不够。需要：",{"score":{"name": "boat.needcoin","objective": "board"},"color": "yellow"}]
