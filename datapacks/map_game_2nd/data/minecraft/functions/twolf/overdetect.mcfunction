@@ -1,6 +1,6 @@
 # 屠城
 ## 没炸弹人 普通丘比特
-execute unless score twolf.state state matches 3 if score wolf.mode board matches 2 unless score wolf.r.tnt board matches 1.. if score wolf.r.bad board matches ..0 run function minecraft:twolf/over/good
+execute unless score twolf.state state matches 3 unless score wolf.r.tnt board matches 1.. if score wolf.r.bad board matches ..0 run function minecraft:twolf/over/good
 
 execute if score wolf.cupid.type board matches 0..1 unless score twolf.state state matches 3 if score wolf.mode board matches 2 unless score wolf.r.tnt board matches 1.. if score wolf.r.good board matches ..0 run function minecraft:twolf/over/bad
 

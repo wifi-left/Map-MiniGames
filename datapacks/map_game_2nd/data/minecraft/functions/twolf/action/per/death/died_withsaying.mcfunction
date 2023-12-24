@@ -14,9 +14,10 @@ scoreboard players set wolf.ttime board -1
 
 scoreboard players add wolf.time board 15
 
-team join wait.wolfpeople
 # tellraw @s ["\u00a7c你死了"]
 # execute at @s run tp @s ~ -20 ~
 tag @s remove wolf.sell
 function minecraft:twolf/action/per/death/died_all
 tellraw @a[tag=wolf.tip] [{"selector":"@s"},"\u00a7c 死了。他可以说遗言。"]
+team join wolfpeople
+

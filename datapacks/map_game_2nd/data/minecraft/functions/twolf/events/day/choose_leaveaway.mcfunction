@@ -18,5 +18,5 @@ execute if score wolf.highest.score board >= wolf.OtoT board run function minecr
 scoreboard players reset * LRS_ZT
 function twolf/overdetect
 
-execute unless score wolf.event board matches 12 run scoreboard players set wolf.event board 18
-execute unless score wolf.event board matches 12 run function minecraft:twolf/events/next_event
+execute unless score twolf.state state matches 3 unless score wolf.event board matches 12 run scoreboard players set wolf.event board 18
+execute unless score twolf.state state matches 3 unless score wolf.event board matches 12 run function minecraft:twolf/events/next_event

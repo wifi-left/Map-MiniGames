@@ -46,7 +46,9 @@ tag @a remove wolf.rescued
 tag @a remove wolf.lastprotected
 # 行动
 tag @a remove wolf.acting
+tag @a remove wolf.whitewolf
 tag @a remove wolf.white
+tag @a remove wolf.selected
 # 丘比特
 tag @a remove wolf.connected
 

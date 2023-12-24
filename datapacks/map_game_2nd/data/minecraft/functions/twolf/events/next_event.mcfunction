@@ -49,4 +49,4 @@ tag @a remove wolf.selected
 execute if score wolf.event board matches 18.. unless score twolf.state state matches 3 run function minecraft:twolf/events/end/trigger
 
 # 14 结束
-execute if score wolf.event board matches 14 run function minecraft:twolf/over/tpback
+execute if score wolf.event board matches 100.. run function minecraft:twolf/over/tpback

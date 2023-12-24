@@ -1,5 +1,6 @@
 # say day
 tag @a remove wolf.toupaoed
+team join wait.wolfpeople @a[team=wolfpeople,gamemode=spectator]
 tellraw @a[tag=wolf.tip,gamemode=spectator] ["\u00a7c死者现在开始请勿发言。"]
 title @a[tag=wolf.tip,gamemode=spectator] title ["\u00a7c停止发言"]
 title @a[tag=wolf.tip,gamemode=spectator] subtitle ["\u00a7f死者现在开始请勿发言。"]

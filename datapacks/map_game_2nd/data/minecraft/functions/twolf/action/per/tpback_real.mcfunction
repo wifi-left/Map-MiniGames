@@ -4,3 +4,5 @@ tp @s @e[tag=wolf.tp.sell,limit=1]
 # execute at @s run tp @s ~ -20 ~
 tag @e[tag=wolf.tp.sell] remove wolf.tp.sell
 tag @s remove wolf.sell
+effect clear @s darkness
+effect clear @s blindness

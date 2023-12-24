@@ -27,6 +27,11 @@ execute as @a[tag=wolf.fired,tag=wolf.killed,gamemode=adventure,team=wolfpeople]
 
 # 狼 杀死了
 execute if score wolf.round board matches 1 as @a[tag=wolf.killed] at @s run function twolf/action/per/death/died_withsaying
+execute unless score wolf.round board matches 1 as @a[tag=wolf.killed] at @s run function twolf/action/per/death/died_no
 
 execute if score wolf.deathcount board matches ..0 run tellraw @a[tag=wolf.tip] ["\u00a7a是个平安夜。"]
-# tag @a remove wolf.death
+
+tag @a remove wolf.killed
+tag @a remove wolf.protected
+tag @a remove wolf.poisoned
+tag @a remove wolf.rescued
