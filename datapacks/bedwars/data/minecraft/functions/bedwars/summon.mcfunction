@@ -27,7 +27,7 @@ execute as @e[tag=emerald] at @s run fill ~2 ~-2 ~2 ~-2 ~2 ~-2 air replace #mine
 execute if score bw.dm board matches ..0 run scoreboard players operation bw.dm board = bw.set.dm board
 execute if score bw.em board matches ..0 run scoreboard players operation bw.em board = bw.set.em board
 
-execute if score bw.gd board matches ..0 run scoreboard players set bw.gd board 9
+execute if score bw.gd board matches ..0 run scoreboard players set bw.gd board 11
 execute if score bw.ir board matches ..0 run scoreboard players set bw.ir board 3
 
 scoreboard players remove bw.gd board 1

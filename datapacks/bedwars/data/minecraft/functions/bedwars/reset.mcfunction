@@ -48,7 +48,8 @@ execute if score bw.mode board matches 2 run function bedwars/resets/unnamed
 execute if score bw.mode board matches ..0 run function bedwars/resets/unnamed
 execute if score bw.mode board matches 3 run function bedwars/resets/space
 execute if score bw.mode board matches 4 run function bedwars/resets/special1
-execute if score bw.mode board matches 5.. run function bedwars/resets/glassworld
+execute if score bw.mode board matches 5 run function bedwars/resets/glassworld
+execute if score bw.mode board matches 6.. run function bedwars/resets/siheyuan
 scoreboard objectives modify bw.info displayname ["\u00a7e\u00a7l起床战争"]
 scoreboard players reset * bw.info
 scoreboard players set §707/28/21§8　§8m001A bw.info 14

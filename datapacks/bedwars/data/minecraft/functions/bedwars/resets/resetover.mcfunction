@@ -89,7 +89,7 @@ execute store result score bw.event.time tick run bossbar get minigames:bedwars 
 scoreboard players operation bw.event.time tick -= bw.event.countdown board
 execute store result bossbar minigames:bedwars value run scoreboard players get bw.event.time tick
 
-scoreboard players set bw.set.em board 72
-scoreboard players set bw.set.dm board 48
+scoreboard players set bw.set.em board 90
+scoreboard players set bw.set.dm board 60
 
 kill @e[type=item]
