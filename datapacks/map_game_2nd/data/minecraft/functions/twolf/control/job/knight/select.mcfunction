@@ -15,5 +15,7 @@ execute unless score @a[tag=wolf.selected,limit=1] LRS_JOB matches 4 unless scor
 # execute as @a[tag=wolf.selected] run function twolf/action/per/death/died
 
 # tag @a[tag=wolf.selected] add wolf.protected
-function twolf/action/special_day_night
+execute if score @a[tag=wolf.selected,limit=1] LRS_JOB matches 4 run function twolf/action/special_day_night
+execute if score @a[tag=wolf.selected,limit=1] LRS_JOB matches 7 run function twolf/action/special_day_night
 # function twolf/events/event_over
+execute unless score @a[tag=wolf.selected,limit=1] LRS_JOB matches 4 unless score @a[tag=wolf.selected,limit=1] LRS_JOB matches 7 run function twolf/action/special_day_back

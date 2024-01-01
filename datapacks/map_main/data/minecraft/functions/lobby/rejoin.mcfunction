@@ -4,6 +4,6 @@ execute unless score @s leave matches 1.. if score @s globle.game matches 2.. ru
 execute if score bw.state state matches 1.. if score @s globle.game = bw globle.game run function bedwars/during/player/rejoin
 execute if score zombie.state state matches 1.. if score @s globle.game = zombie globle.game run function zombieever/rejoin
 execute if score gametotal state matches 1.. if score @s globle.game = game.total globle.game run function small_games/total/rejoin
-execute if score twolf.state state matches 1.. as @s[team=wolfpeople] run function twolf/join
-execute if score twolf.state state matches 1.. as @s[team=wait.wolfpeople] run function twolf/join
+execute if score twolf.state state matches 1.. as @s[team=wolfpeople] run function twolf/rejoin
+execute if score twolf.state state matches 1.. as @s[team=wait.wolfpeople] run function twolf/rejoin
 execute if score @s globle.game matches ..1 run scoreboard players reset @s globle.game

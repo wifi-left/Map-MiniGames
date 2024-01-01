@@ -7,5 +7,6 @@ execute if entity @a[tag=wolf.selected,tag=wolf.lastprotected] run return 0
 tellraw @a[tag=wolf.tip,gamemode=spectator] ["",{"selector":"@s"},"\u00a76 守护了 ",{"selector":"@a[tag=wolf.selected]"}]
 tellraw @a[tag=wolf.acting] ["\u00a76你守护了 ",{"selector":"@a[tag=wolf.selected]"}]
 
+tag @a remove wolf.lastprotected
 tag @a[tag=wolf.selected] add wolf.protected
 function twolf/events/event_over

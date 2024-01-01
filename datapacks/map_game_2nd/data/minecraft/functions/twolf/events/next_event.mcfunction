@@ -14,10 +14,10 @@ clear @a[tag=wolf.tip]
 # 白天自爆身份技能
 
 # 白天 8 9 10
-execute if score wolf.event board matches 10 run function minecraft:twolf/events/day/choose_leaveaway
-execute if score wolf.event board matches 9 run function minecraft:twolf/events/day/start_talking
-execute if score wolf.event board matches 8 run function minecraft:twolf/events/day/show_death
-execute if score wolf.event board matches 7 run function minecraft:twolf/events/day/trigger
+execute unless score twolf.state state matches 3 if score wolf.event board matches 10 run function minecraft:twolf/events/day/choose_leaveaway
+execute unless score twolf.state state matches 3 if score wolf.event board matches 9 run function minecraft:twolf/events/day/start_talking
+execute unless score twolf.state state matches 3 if score wolf.event board matches 8 run function minecraft:twolf/events/day/show_death
+execute unless score twolf.state state matches 3 if score wolf.event board matches 7 run function minecraft:twolf/events/day/trigger
 
 # 预言家 7
 execute if score wolf.event board matches 6 run function minecraft:twolf/events/6/trigger
@@ -46,7 +46,8 @@ scoreboard players reset @a LRS_CS
 tag @a remove wolf.selected
 
 # 新一局 9
-execute if score wolf.event board matches 18.. unless score twolf.state state matches 3 run function minecraft:twolf/events/end/trigger
+execute unless score twolf.state state matches 3 if score wolf.event board matches 18.. unless score twolf.state state matches 3 run function minecraft:twolf/events/end/trigger
 
 # 14 结束
 execute if score wolf.event board matches 100.. run function minecraft:twolf/over/tpback
+execute if score twolf.state state matches 3 unless score wolf.event board matches 100.. run function minecraft:twolf/over/tpback

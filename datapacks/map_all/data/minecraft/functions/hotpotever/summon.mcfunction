@@ -4,8 +4,8 @@ scoreboard players set play.hotpot.player tick 0
 execute as @a[team=play.hotpot,gamemode=adventure] run scoreboard players add play.hotpot.player tick 1
 
 team join play.hotpot.k @r[team=play.hotpot,gamemode=adventure]
-execute if score play.hotpot.player tick matches 6.. run team join play.hotpot.k @r[team=play.hotpot,gamemode=adventure]
-execute if score play.hotpot.player tick matches 9.. run team join play.hotpot.k @r[team=play.hotpot,gamemode=adventure]
+execute if score play.hotpot.player tick matches 5.. run team join play.hotpot.k @r[team=play.hotpot,gamemode=adventure]
+execute if score play.hotpot.player tick matches 8.. run team join play.hotpot.k @r[team=play.hotpot,gamemode=adventure]
 execute if score play.hotpot.player tick matches 12.. run team join play.hotpot.k @r[team=play.hotpot,gamemode=adventure]
 execute if score play.hotpot.player tick matches 16.. run team join play.hotpot.k @r[team=play.hotpot,gamemode=adventure]
 execute as @a[team=play.hotpot] at @s run playsound entity.ender_dragon.growl player @s

@@ -8,6 +8,6 @@ execute run function minecraft:twolf/events/job/cupidconnection_s
 scoreboard players set wolf.time board -1
 scoreboard players set wolf.event board 2
 scoreboard players set wolf.ttime board 5
-tellraw @s ["\u00a7c请闭眼。"]
+# tellraw @s ["\u00a7c请闭眼。"]
 title @s title [""]
 title @s subtitle ["\u00a7f请闭眼。"]
