@@ -31,3 +31,5 @@ jobs:
           automatic_release_tag: "v${{ env.versionDetail }}"
           title: "MiniGames - v${{ env.version }}"
           prerelease: false
+          files: |
+            ../build/*.zip
