@@ -1,5 +1,6 @@
 $version=Get-Date -Format 'yyyy.MM.dd (hh:mm:ss)'
 $versionZ=Get-Date -Format 'yyyy.MM.dd'
+$version_=Get-Date -Format 'yyyy_MM_dd'
 $versionD=Get-Date -Format 'yyyy.MM.dd.hh.mm.ss'
 
 function Out-FileUtf8NoBom {
@@ -56,4 +57,4 @@ Add-Content -Path $env:GITHUB_ENV -Value "versionDetail=${versionD}"
 
 echo "Compressing the file."
 New-Item "../build" -ItemType Directory
-Compress-Archive -Path "." -DestinationPath "../build/Map_MiniGames.zip"
+Compress-Archive -Path "." -DestinationPath "../build/[${version_}]_MiniGames.zip"
