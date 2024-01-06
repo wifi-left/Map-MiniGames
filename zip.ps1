@@ -53,3 +53,7 @@ function Out-FileUtf8NoBom {
 
 Add-Content -Path $env:GITHUB_ENV -Value "version=${version}"
 Add-Content -Path $env:GITHUB_ENV -Value "versionDetail=${versionD}"
+
+echo "Compressing the file."
+New-Item "../build" -ItemType Directory
+Compress-Archive -Path "." -DestinationPath "../build/Map_MiniGames.zip"
