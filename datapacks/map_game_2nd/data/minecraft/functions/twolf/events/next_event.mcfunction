@@ -1,3 +1,5 @@
+# tellraw @a ["!",{"score":{"name": "wolf.time","objective": "board"}},":",{"score":{"name": "wolf.ttime","objective": "board"}},"[]",{"score":{"name": "wolf.event","objective": "board"}},":",{"score":{"name": "wolf.ttime","objective": "board"}}]
+scoreboard players set wolf.return board 0
 tag @a remove wolf.acting
 schedule clear minecraft:twolf/events/next_event
 function minecraft:twolf/action/resethighlight
@@ -9,8 +11,16 @@ clear @a[tag=wolf.tip]
 
 # execute unless score wolf.failed state matches 1 if score wolf.event board matches 2..7 run tellraw @a[tag=wolf.tip] ["\u00a7c请闭眼。"]
 
+# 14 结束
+execute if score wolf.event board matches 100.. run function minecraft:twolf/over/tpback
+execute if score twolf.state state matches 3 unless score wolf.event board matches 100.. run function minecraft:twolf/over/tpback
+execute if score twolf.state state matches 3 run return 0
+execute if score wolf.return board matches 1.. run return 0
 
+# 新一局 9
+execute unless score twolf.state state matches 3 if score wolf.event board matches 18.. unless score twolf.state state matches 3 run function minecraft:twolf/events/end/trigger
 
+execute if score wolf.return board matches 1.. run return 0
 # 白天自爆身份技能
 
 # 白天 8 9 10
@@ -45,9 +55,7 @@ execute if score wolf.event board matches 1 run function minecraft:twolf/events/
 scoreboard players reset @a LRS_CS
 tag @a remove wolf.selected
 
-# 新一局 9
-execute unless score twolf.state state matches 3 if score wolf.event board matches 18.. unless score twolf.state state matches 3 run function minecraft:twolf/events/end/trigger
+# say 1
 
-# 14 结束
-execute if score wolf.event board matches 100.. run function minecraft:twolf/over/tpback
-execute if score twolf.state state matches 3 unless score wolf.event board matches 100.. run function minecraft:twolf/over/tpback
+
+# tellraw @a ["@",{"score":{"name": "wolf.time","objective": "board"}},":",{"score":{"name": "wolf.ttime","objective": "board"}},"[]",{"score":{"name": "wolf.event","objective": "board"}},":",{"score":{"name": "wolf.ttime","objective": "board"}}]

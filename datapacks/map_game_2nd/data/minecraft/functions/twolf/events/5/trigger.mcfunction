@@ -1,4 +1,5 @@
 scoreboard players add wolf.event board 1
+# say [debugdd]5/trigger.mcfunction
 execute unless score wolf.witch board matches 1.. run scoreboard players set wolf.failed state 1
 execute unless score wolf.witch board matches 1.. run function minecraft:twolf/events/next_event
 

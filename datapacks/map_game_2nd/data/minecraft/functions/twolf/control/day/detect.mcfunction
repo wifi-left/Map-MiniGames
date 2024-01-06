@@ -12,4 +12,5 @@ scoreboard players operation wolf.OtoT board += wolf.OtoT board
 
 execute if score wolf.peoplecount.skip board >= wolf.OtoT board run function minecraft:twolf/control/day/skipp 
 execute if score wolf.peoplecount board >= wolf.peoplecount.all board run scoreboard players set wolf.event board 10
-execute if score wolf.peoplecount board >= wolf.peoplecount.all board run function minecraft:twolf/events/next_event 
+# say [debugdd]detect.mcfunction
+execute if score wolf.peoplecount board >= wolf.peoplecount.all board run function twolf/events/next_event

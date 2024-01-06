@@ -55,3 +55,9 @@ board -> 使用
  - witch 女巫
  - wolf 狼 
  - people 民
+
+# Settings
+(state)
+wolf.setting.knight - 1: 只有一次
+wolf.setting.arsonist - 1: 只有一次
+wolf.setting.milked - 1: 禁用奶穿
