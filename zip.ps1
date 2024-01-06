@@ -57,4 +57,4 @@ Add-Content -Path $env:GITHUB_ENV -Value "versionDetail=${versionD}"
 
 echo "Compressing the file."
 New-Item "../build" -ItemType Directory
-Compress-Archive -Path "." -DestinationPath "../build/[${version_}]_MiniGames.zip"
+Compress-Archive -Path "." -DestinationPath "../build/[${version_}]MiniGames.zip"
