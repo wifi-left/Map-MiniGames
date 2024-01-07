@@ -28,8 +28,8 @@ jobs:
         uses: marvinpinto/action-automatic-releases@latest
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "v${{ env.versionDetail }}"
-          title: "MiniGames - v${{ env.version }}"
+          automatic_release_tag: "v${{ env.version }}"
+          title: "MiniGames - v${{ env.versionDetail }}"
           prerelease: false
           files: |
             ../build/*.zip
