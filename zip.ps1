@@ -2,6 +2,7 @@ $version=Get-Date -Format 'yyyy.MM.dd (hh:mm:ss)'
 $versionZ=Get-Date -Format 'yyyy.MM.dd'
 $versionD=Get-Date -Format 'yyyy.MM.dd.hh.mm.ss'
 $version_=Get-Date -Format 'yyyy_MM_dd'
+# $version_D=Get-Date -Format 'yyyy.MM.dd.hh.mm.ss'
 $Path = 'mcversion.txt' 
 $mcversion = Get-Content -Path $Path
 
@@ -55,6 +56,7 @@ function Out-FileUtf8NoBom {
 }
 
 Add-Content -Path $env:GITHUB_ENV -Value "version=${version}"
+Add-Content -Path $env:GITHUB_ENV -Value "versionD=${versionD}"
 Add-Content -Path $env:GITHUB_ENV -Value "versionDetail=[Minecraft ${mcversion}] ${versionD}"
 
 echo "Compressing the file..."
