@@ -1,6 +1,7 @@
 $version=Get-Date -Format 'yyyy.MM.dd (hh:mm:ss)'
 $versionZ=Get-Date -Format 'yyyy.MM.dd'
 $versionD=Get-Date -Format 'yyyy.MM.dd.hh.mm.ss'
+$version_=Get-Date -Format 'yyyy_MM_dd'
 $Path = 'mcversion.txt' 
 $mcversion = Get-Content -Path $Path
 
@@ -58,4 +59,4 @@ Add-Content -Path $env:GITHUB_ENV -Value "versionDetail=[Minecraft $mcversion] $
 
 echo "Compressing the file."
 New-Item "../build" -ItemType Directory
-Compress-Archive -Path "." -DestinationPath "../build/(MC$mcversion)Map_MiniGames.zip"
+Compress-Archive -Path "." -DestinationPath "../build/(MC$mcversion)MiniGames_${version_}.zip"
