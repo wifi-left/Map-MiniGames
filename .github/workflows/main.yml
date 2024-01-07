@@ -29,7 +29,7 @@ jobs:
         with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "v${{ env.versionD }}"
-          title: "MiniGames - v${{ env.versionDetail }}"
+          title: "${{ env.versionDetail }}"
           prerelease: false
           files: |
             ../build/*.zip
