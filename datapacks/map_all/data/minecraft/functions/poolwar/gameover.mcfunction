@@ -1,4 +1,4 @@
-tellraw @a [{"text":"冬泳怪鸽","color":"#1E90FF","bold":true},"\u00a7a 游戏结束！ 获胜者：",{"selector":"@a[team=pw.play,gamemode=adventure]","color":"reset"}]
+tellraw @a [{"text":"冬泳怪鸽","color":"#1E90FF","bold":true},"\u00a7a 游戏结束！ 获胜者：",{"selector":"@a[team=pw.play,gamemode=adventure]","color":"white"}]
 scoreboard players set pw.state state 0
 scoreboard players add @a[gamemode=adventure,team=pw.play,tag=play.total] score 1
 execute if entity @a[team=pw.play,tag=play.total] run function small_games/total/next_game
