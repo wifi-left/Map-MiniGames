@@ -55,8 +55,8 @@ function Out-FileUtf8NoBom {
 }
 
 Add-Content -Path $env:GITHUB_ENV -Value "version=${version}"
-Add-Content -Path $env:GITHUB_ENV -Value "versionDetail=[Minecraft $mcversion] ${versionD}"
+Add-Content -Path $env:GITHUB_ENV -Value "versionDetail=[Minecraft ${mcversion}] ${versionD}"
 
 echo "Compressing the file."
 New-Item "../build" -ItemType Directory
-Compress-Archive -Path "." -DestinationPath "../build/(MC$mcversion)MiniGames_${version_}.zip"
+Compress-Archive -Path "." -DestinationPath "../build/(MC${mcversion})MiniGames_${version_}.zip"
