@@ -4,6 +4,8 @@ scoreboard players add tick2 tick 1
 execute if score tick2 tick matches 4.. run function minecraft:tsecond
 scoreboard players add tick3 tick 1
 execute if score tick3 tick matches 10.. run function minecraft:ttsecond
+effect give @a[team=play.color] resistance 1 25 true
+effect give @a[team=wait.color] resistance 1 25 true
 
 
 execute store result bossbar minecraft:live value run scoreboard players get live.time live.all
