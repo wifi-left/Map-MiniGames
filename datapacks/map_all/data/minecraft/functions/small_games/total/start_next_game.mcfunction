@@ -14,8 +14,8 @@ execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matc
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 2..2 run execute as @a[tag=play.total] run function snow/join
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 2..2 run scoreboard players set snow.tntrun state 1
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 2..2 run function snow/trystart
-execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 3..3 run execute as @a[tag=play.total] run function snow/join
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 3..3 run scoreboard players set snow.tntrun state 0
+execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 3..3 run execute as @a[tag=play.total] run function snow/join
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 3..3 run function snow/trystart
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 5..5 run execute as @a[tag=play.total] run function color/join
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 5..5 run function color/teststart

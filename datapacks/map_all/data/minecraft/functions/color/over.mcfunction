@@ -1,7 +1,7 @@
 scoreboard players set color.state state 0
 
-tellraw @a ["\u00a7a[I] ",{"text":"Block Believer","color":"#a7d3ff","bold": true}," \u00a7a: \u00a7b游戏结束！\n\u00a7e获胜者：",{"selector":"@a[gamemode=adventure,team=play.color]"}]
-
+tellraw @a ["\u00a7a[I] ",{"text":"Block Believer","color":"#a7d3ff","bold": true}," \u00a7a: \u00a7b游戏结束！"]
+execute if entity @a[gamemode=adventure,team=play.color] run tellraw @a ["\u00a7e获胜者：",{"selector":"@a[gamemode=adventure,team=play.color]"}]
 title @a[gamemode=adventure,team=play.color] title ["\u00a76You won!"]
 title @a[gamemode=spectator,team=play.color] title ["\u00a7c\u00a7lGAME OVER"]
 scoreboard players add @a[gamemode=adventure,team=play.color,tag=play.total] score 1
@@ -14,3 +14,4 @@ execute as @a[gamemode=adventure,team=play.color] run function color/join
 execute as @a[team=play.color] at @s run playsound entity.ender_dragon.growl player @s -32 28 33 1 1 1
 kill @e[tag=colorran,type=marker]
 schedule clear minecraft:color/summon
+forceload remove 29 111 -7 75
