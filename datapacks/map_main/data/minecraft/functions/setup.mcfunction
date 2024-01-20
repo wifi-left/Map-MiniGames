@@ -56,6 +56,6 @@ scoreboard players set bw.yellow BAMBOO_MOD_SAYING 2
 scoreboard players set bw.red BAMBOO_MOD_SAYING 2
 bossbar set minigames:bedwars players @a[tag=bw.player]
 
-gamerule maxCommandChainLength 11451419
+gamerule maxCommandChainLength 114514
 
 forceload add 0 0 0 0
