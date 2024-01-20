@@ -62,6 +62,11 @@ execute if score bw.mode state matches 5 run tellraw @a[tag=bw.player] ["\n   \u
 execute if score bw.mode state matches 2 run tellraw @a[tag=bw.player] ["\n   \u00a7a\u00a7l全解锁模式\u00a76已启用。\n"]
 execute if score bw.mode state matches 6 run tellraw @a[tag=bw.player] ["\n   \u00a7a\u00a7l全解锁模式\u00a76已启用。\n"]
 
+execute if score bw.mode state matches 1 run scoreboard players display name info1 bw.info ["游戏模式：\u00a7c无床模式"]
+execute if score bw.mode state matches 5 run scoreboard players display name info1 bw.info ["游戏模式：\u00a7c无床模式"]
+execute if score bw.mode state matches 2 run scoreboard players display name info1 bw.info ["游戏模式：\u00a7a全解锁模式"]
+execute if score bw.mode state matches 6 run scoreboard players display name info1 bw.info ["游戏模式：\u00a7a全解锁模式"]
+
 execute if score bw.mode state matches 2 run tag @a[tag=bw.player] add bw.attack
 execute if score bw.mode state matches 2 run tag @a[tag=bw.player] add bw.armor
 execute if score bw.mode state matches 2 run tag @a[tag=bw.player] add bw.speed
@@ -84,6 +89,7 @@ scoreboard players set bw.event.countdown board 720
 bossbar set minigames:bedwars max 720
 # execute store result bossbar minigames:bedwars value run scoreboard players get bw.reset board
 bossbar set minigames:bedwars name ["\u00a7f\u00a7lBEDWARS 起床战争 \u00a77| \u00a7b钻石\u00a7e速度升级: ",{"score":{"name": "bw.event.countdown","objective": "board"},"color":"light_purple"},"\u00a7es"]
+scoreboard players display name event bw.info ["即将：\u00a7b钻石\u00a7r速度升级"]
 
 execute store result score bw.event.time tick run bossbar get minigames:bedwars max
 scoreboard players operation bw.event.time tick -= bw.event.countdown board

@@ -5,6 +5,7 @@ execute if score color.rantype board matches 1 run function minecraft:color/ran_
 execute if score color.rantype board matches 2 run function minecraft:color/ran_fill/1_init
 execute if score color.rantype board matches 3 run function minecraft:color/ran_fill/3_init
 execute if score color.rantype board matches 4 run function minecraft:color/ran_fill/4_init
+execute if score color.rantype board matches 5 run function minecraft:color/ran_fill/5_init
 # 1: Block - color.ran.blockwidth (Block Width)
 # 2: All random
 # 3: Line 星射线

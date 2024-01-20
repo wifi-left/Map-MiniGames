@@ -1,4 +1,4 @@
-scoreboard players reset bd.yellow state
+scoreboard players set bd.yellow state 0
 execute as @a[scores={pickyellow=1..},team=bw.yellow] run tellraw @s ["\u00a7c你不能破坏自己的床！"]
 execute as @a[scores={pickyellow=1..},team=bw.yellow] run function minecraft:bedwars/resets/beds/yellow
 # execute as @a[scores={pickyellow=1..},team=bw.yellow] run 
@@ -25,6 +25,6 @@ execute unless entity @a[scores={pickyellow=1..},team=bw.yellow] run title @a[te
 # setblock -303 31 276 yellow_bed[facing=south]
 # setblock -303 31 277 yellow_bed[facing=south,part=head]
 
-execute unless entity @a[scores={pickyellow=1..},team=bw.yellow] run scoreboard players reset §e黄§8　§r黄队:§a§l✓ bw.info
-execute unless entity @a[scores={pickyellow=1..},team=bw.yellow] run scoreboard players set §e黄§8　§r黄队:§e§l❁ bw.info 7
+execute unless entity @a[scores={pickyellow=1..},team=bw.yellow] run function minecraft:bedwars/during/updateinfo/yellow
+
 scoreboard players reset * pickyellow

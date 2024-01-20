@@ -1,4 +1,4 @@
-scoreboard players reset bd.blue state
+scoreboard players set bd.blue state 0
 execute as @a[scores={pickblue=1..},team=bw.blue] run tellraw @s ["\u00a7c你不能破坏自己的床！"]
 execute as @a[scores={pickblue=1..},team=bw.blue] run function minecraft:bedwars/resets/beds/blue
 # execute as @a[scores={pickblue=1..},team=bw.blue] run setblock -303 31 277 blue_bed[facing=south,part=head]
@@ -25,7 +25,8 @@ execute unless entity @a[scores={pickblue=1..},team=bw.blue] run title @a[team=b
 # setblock -303 31 276 blue_bed[facing=south]
 # setblock -303 31 277 blue_bed[facing=south,part=head]
 
-execute unless entity @a[scores={pickblue=1..},team=bw.blue] run scoreboard players reset §9蓝§8　§r蓝队:§a§l✓ bw.info
-execute unless entity @a[scores={pickblue=1..},team=bw.blue] run scoreboard players set §9蓝§8　§r蓝队:§e§l❁ bw.info 9
-##coreboard players set §9蓝§8　§r蓝队:§c§l✗ bw.info 9
+# execute unless entity @a[scores={pickblue=1..},team=bw.blue] run scoreboard players reset §9蓝§8　§r蓝队:§a§l✓ bw.info
+# execute unless entity @a[scores={pickblue=1..},team=bw.blue] run scoreboard players set §9蓝§8　§r蓝队:§e§l❁ bw.info 9
+# execute unless entity @a[scores={pickblue=1..},team=bw.blue] run scoreboard players display name blue bw.info "§9蓝§8 §r蓝队:§a§l"
+execute unless entity @a[scores={pickblue=1..},team=bw.blue] run function minecraft:bedwars/during/updateinfo/blue
 scoreboard players reset * pickblue

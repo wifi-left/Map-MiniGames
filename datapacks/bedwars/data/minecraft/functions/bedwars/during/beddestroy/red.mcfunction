@@ -1,4 +1,4 @@
-scoreboard players reset bd.red state
+scoreboard players set bd.red state 0
 execute as @a[scores={pickred=1..},team=bw.red] run tellraw @s ["\u00a7c你不能破坏自己的床！"]
 execute as @a[scores={pickred=1..},team=bw.red] run function minecraft:bedwars/resets/beds/red
 # execute as @a[scores={pickred=1..},team=bw.red] run setblock -305 31 141 red_bed[facing=north,part=head]
@@ -25,7 +25,6 @@ execute unless entity @a[scores={pickred=1..},team=bw.red] run title @a[team=bw.
 # setblock -303 31 276 red_bed[facing=south]
 # setblock -303 31 277 red_bed[facing=south,part=head]
 
-execute unless entity @a[scores={pickred=1..},team=bw.red] run scoreboard players reset §c红§8　§r红队:§a§l✓ bw.info
-execute unless entity @a[scores={pickred=1..},team=bw.red] run scoreboard players set §c红§8　§r红队:§e§l❁ bw.info 10
-##scoreboard players set §c红§8　§r红队:§c§l✗ bw.info 10
+execute unless entity @a[scores={pickred=1..},team=bw.red] run function minecraft:bedwars/during/updateinfo/red
+
 scoreboard players reset * pickred

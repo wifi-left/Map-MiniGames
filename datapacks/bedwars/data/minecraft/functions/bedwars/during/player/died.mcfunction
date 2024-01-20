@@ -16,3 +16,5 @@ scoreboard players set @s[tag=bw.fhing] board 6
 execute as @s[tag=!bw.fhing] at @s run tag @s remove bw.play
 execute as @s[tag=!bw.play] run tellraw @a[tag=bw.player] ["\u00a7b\u00a7l最终击杀！"]
 execute as @s[tag=!bw.fhing] at @s run tellraw @s ["\u00a7c你已被淘汰！"]
+
+execute as @s[tag=!bw.play] run function minecraft:bedwars/during/updateinfo/update

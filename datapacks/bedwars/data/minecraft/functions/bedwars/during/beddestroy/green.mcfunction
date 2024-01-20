@@ -1,4 +1,4 @@
-scoreboard players reset bd.green state
+scoreboard players set bd.green state 0
 execute as @a[scores={pickgreen=1..},team=bw.green] run tellraw @s ["\u00a7c你不能破坏自己的床！"]
 execute as @a[scores={pickgreen=1..},team=bw.green] run function minecraft:bedwars/resets/beds/green
 # execute as @a[scores={pickgreen=1..},team=bw.green] run setblock -236 31 208 lime_bed[facing=east,part=head]
@@ -25,7 +25,7 @@ execute unless entity @a[scores={pickgreen=1..},team=bw.green] run title @a[team
 # setblock -303 31 276 blue_bed[facing=south]
 # setblock -303 31 277 blue_bed[facing=south,part=head]
 
-execute unless entity @a[scores={pickgreen=1..},team=bw.green] run scoreboard players reset §a绿§8　§r绿队:§a§l✓ bw.info
-execute unless entity @a[scores={pickgreen=1..},team=bw.green] run scoreboard players set §a绿§8　§r绿队:§e§l❁ bw.info 8
-##scoreboard players set §a绿§8　§r绿队:§c§l✗ bw.info 8
+# execute unless entity @a[scores={pickgreen=1..},team=bw.green] run scoreboard players reset §a绿§8　§r绿队:§a§l✓ bw.info
+# execute unless entity @a[scores={pickgreen=1..},team=bw.green] run scoreboard players set §a绿§8　§r绿队:§e§l❁ bw.info 8
+execute unless entity @a[scores={pickgreen=1..},team=bw.green] run function minecraft:bedwars/during/updateinfo/green
 scoreboard players reset * pickgreen

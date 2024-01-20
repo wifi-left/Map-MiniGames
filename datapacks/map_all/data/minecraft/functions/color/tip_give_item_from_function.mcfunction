@@ -1,0 +1,1 @@
+$execute as @a[team=play.color] run item replace entity @s container.8 with $(block){Color:1b}

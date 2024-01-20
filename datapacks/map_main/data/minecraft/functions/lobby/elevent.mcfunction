@@ -8,7 +8,7 @@ execute run effect give @a[team=lobby,tag=mazing] speed 1 0 true
 
 ## Back to the Lobby
 effect give @a[team=lobby] resistance 1 127 true
-kill @e[type=tnt,nbt={Fuse:80s}]
+kill @e[type=tnt,nbt={fuse:80s}]
 scoreboard players enable @a hub
 scoreboard players enable @a rejoin
 

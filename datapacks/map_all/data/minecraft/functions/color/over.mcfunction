@@ -11,7 +11,8 @@ gamemode adventure @a[gamemode=spectator,team=wait.color]
 execute if entity @a[team=play.color,tag=play.total] run function small_games/total/next_game
 execute as @a[gamemode=adventure,team=wait.color] run function color/join
 execute as @a[gamemode=adventure,team=play.color] run function color/join
-execute as @a[team=play.color] at @s run playsound entity.ender_dragon.growl player @s -32 28 33 1 1 1
 kill @e[tag=colorran,type=marker]
 schedule clear minecraft:color/summon
+fill -7 17 75 32 17 114 air
 forceload remove 29 111 -7 75
+

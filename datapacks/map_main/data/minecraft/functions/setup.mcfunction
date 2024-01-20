@@ -19,6 +19,7 @@ scoreboard objectives remove quickplay
 scoreboard objectives add quickplay trigger "快速加入"
 scoreboard objectives add globle.game dummy "游戏ID，用于玩家重新加入"
 scoreboard players set globle globle.game 1
+scoreboard objectives add old dummy "老玩家检测"
 # game.total globle.game = globle globle.game
 scoreboard objectives remove hub
 scoreboard objectives remove rejoin

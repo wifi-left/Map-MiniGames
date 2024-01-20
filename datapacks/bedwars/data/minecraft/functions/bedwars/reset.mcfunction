@@ -52,20 +52,55 @@ execute if score bw.mode board matches 5 run function bedwars/resets/glassworld
 execute if score bw.mode board matches 6.. run function bedwars/resets/siheyuan
 scoreboard objectives modify bw.info displayname ["\u00a7e\u00a7l起床战争"]
 scoreboard players reset * bw.info
-scoreboard players set §707/28/21§8　§8m001A bw.info 14
-scoreboard players set §a bw.info 13
-scoreboard players set §r没有任何事情 bw.info 12
-scoreboard players set §b bw.info 11
-scoreboard players set §c红§8　§r红队:§a§l✓ bw.info 10
-scoreboard players set §9蓝§8　§r蓝队:§a§l✓ bw.info 9
-scoreboard players set §a绿§8　§r绿队:§a§l✓ bw.info 8
-scoreboard players set §e黄§8　§r黄队:§a§l✓ bw.info 7
-scoreboard players set §c bw.info 6
-scoreboard players set §r没有任何信息：§a0§c bw.info 5
-scoreboard players set §r没有任何信息：§a0§b bw.info 4
-scoreboard players set §r没有任何信息：§a0 bw.info 3
-scoreboard players set §d bw.info 2
-scoreboard players set §eBedwars@MiniGame bw.info 1
+scoreboard players set date bw.info 14
+scoreboard players set air1 bw.info 13
+scoreboard players set event bw.info 12
+scoreboard players set air2 bw.info 11
+scoreboard players set red bw.info 10
+scoreboard players set blue bw.info 9
+scoreboard players set green bw.info 8
+scoreboard players set yellow bw.info 7
+scoreboard players set air3 bw.info 6
+scoreboard players set info1 bw.info 5
+scoreboard players set info2 bw.info 4
+scoreboard players set info3 bw.info 3
+scoreboard players set air4 bw.info 2
+scoreboard players set BottomTitle bw.info 1
+
+scoreboard players display name date bw.info ["\u00a7701/19/24§8 \u00a78m001A"]
+
+scoreboard players display name red bw.info "§c红§8 §r红队: §a§l✓"
+scoreboard players display name blue bw.info "§9蓝§8 §r蓝队: §a§l✓"
+scoreboard players display name green bw.info "§a绿§8 §r绿队: §a§l✓"
+scoreboard players display name yellow bw.info "§e黄§8 §r黄队: §a§l✓"
+
+scoreboard players display name event bw.info ["没有任何事情"]
+
+scoreboard players display name air1 bw.info [""]
+scoreboard players display name air2 bw.info [""]
+scoreboard players display name air3 bw.info [""]
+scoreboard players display name air4 bw.info [""]
+
+scoreboard players display name info1 bw.info ["没有任何信息：\u00a7a0"]
+scoreboard players display name info2 bw.info ["没有任何信息：\u00a7a0"]
+scoreboard players display name info3 bw.info ["没有任何信息：\u00a7a0"]
+
+scoreboard players display name BottomTitle bw.info ["\u00a7eBedwars@MiniGame"]
+
+# scoreboard players set §707/28/21§8　§8m001A bw.info 14
+# scoreboard players set §a bw.info 13
+# scoreboard players set §r没有任何事情 bw.info 12
+# scoreboard players set §b bw.info 11
+# scoreboard players set §c红§8　§r红队:§a§l✓ bw.info 10
+# scoreboard players set §9蓝§8　§r蓝队:§a§l✓ bw.info 9
+# scoreboard players set §a绿§8　§r绿队:§a§l✓ bw.info 8
+# scoreboard players set §e黄§8　§r黄队:§a§l✓ bw.info 7
+# scoreboard players set §c bw.info 6
+# scoreboard players set §r没有任何信息：§a0§c bw.info 5
+# scoreboard players set §r没有任何信息：§a0§b bw.info 4
+# scoreboard players set §r没有任何信息：§a0 bw.info 3
+# scoreboard players set §d bw.info 2
+# scoreboard players set §eBedwars@MiniGame bw.info 1
 
 scoreboard players reset * bw.axe
 scoreboard players reset * bw.pickaxe

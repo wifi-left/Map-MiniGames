@@ -2,9 +2,7 @@
 ##scoreboard players set §9蓝§8　§r蓝队:§a✓ bw.info 9
 ##scoreboard players set §a绿§8　§r绿队:§a✓ bw.info 8
 ##scoreboard players set §e黄§8　§r黄队:§a✓ bw.info 7
-scoreboard players reset §a绿§8　§r绿队:§a§l✓ bw.info
-scoreboard players reset §a绿§8　§r绿队:§e§l❁ bw.info
-scoreboard players set §a绿§8　§r绿队:§c§l✗ bw.info 8
+scoreboard players display name green bw.info "§a绿§8 §r绿队: §c§l✗"
 tellraw @a[tag=bw.player] ["\n\u00a7r\u00a7l团灭 > \u00a7a绿队\u00a7c已被淘汰！\n"]
 scoreboard players reset bw.green state
 scoreboard players reset bd.green state

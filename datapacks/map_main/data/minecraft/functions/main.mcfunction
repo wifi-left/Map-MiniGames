@@ -4,6 +4,8 @@ function foodparty:tick
 execute as @a[team=lobby] at @s run function lobby/quickplay
 execute as @a[team=!lobby,scores={quickplay=1..}] at @s run function lobby/quickplay_refused
 
+execute as @a unless score @s old matches 1.. run function minecraft:check_rename
+
 execute as @a[scores={leave=1..}] in overworld run tp @s 188 124 26
 execute as @a[scores={leave=1..}] run function lobby/rejoin
 gamemode survival @a[scores={leave=1..}]
@@ -15,6 +17,7 @@ tag @a[gamemode=survival,nbt={Dimension:"minecraft:overworld"}] add NEWENTER
 tp @a[tag=NEWENTER] 188 124 26 0 0
 team join lobby @a[tag=NEWENTER]
 clear @a[tag=NEWENTER]
+execute as @a[tag=NEWENTER] at @s run tag @s add map.old
 execute as @a[tag=NEWENTER] at @s run function lobby/cleartags
 title @a[tag=NEWENTER] title ["\u00a7a\u00a7lMini\u00a7e\u00a7lGames"]
 title @a[tag=NEWENTER] subtitle ["\u00a76You're in \u00a7dMain Lobby"]

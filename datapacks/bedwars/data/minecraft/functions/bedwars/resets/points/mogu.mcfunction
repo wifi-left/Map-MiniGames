@@ -69,3 +69,5 @@ summon marker -346 31 253 {Tags:["diamond","bedwars"]}
 
 summon marker -314 36 198 {Tags:["emerald","bedwars"]}
 summon marker -294 36 222 {Tags:["emerald","bedwars"]}
+
+scoreboard players display name date bw.info ["\u00a7701/19/24§8 \u00a78m001A"]
