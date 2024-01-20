@@ -57,5 +57,6 @@ scoreboard players set bw.red BAMBOO_MOD_SAYING 2
 bossbar set minigames:bedwars players @a[tag=bw.player]
 
 gamerule maxCommandChainLength 114514
+gamerule disableElytraMovementCheck true
 
 forceload add 0 0 0 0

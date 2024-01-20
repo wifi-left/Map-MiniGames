@@ -6,3 +6,5 @@ scoreboard players reset * job_kill
 scoreboard players reset * leave
 scoreboard players reset * dropper.level
 scoreboard players reset * old
+
+# function ttsecond
