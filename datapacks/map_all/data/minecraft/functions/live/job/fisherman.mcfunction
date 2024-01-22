@@ -1,4 +1,4 @@
-#/summon minecraft:creeper ~ ~1 ~ {CustomName:"[\"CREEPER\"]",CustomNameVisible:1b,Invulnerable:1b,Silent:1b,PersistenceRequired:1b,Glowing:1b,powered:true,ignited:true,ExplosionRadius:2b,Fuse:20s}
+#/summon minecraft:creeper ~ ~1 ~ {CustomName:"[\"CREEPER\"]",CustomNameVisible:1b,Invulnerable:1b,Silent:1b,PersistenceRequired:1b,Glowing:1b,powered:true,ignited:true,ExplosionRadius:2b,fuse:20s}
 item replace entity @s armor.chest with minecraft:leather_chestplate{display:{color:15158200},Unbreakable:1b,HideFlags:63,Enchantments:[{id:"minecraft:protection",lvl:1s}]}
 item replace entity @s armor.head with minecraft:leather_helmet{display:{color:10554854},Unbreakable:1b,HideFlags:63,Enchantments:[{id:"minecraft:protection",lvl:1s}]}
 item replace entity @s armor.feet with minecraft:leather_boots{display:{color:16711786},Unbreakable:1b,Enchantments:[{id:"feather_falling",lvl:0}]}
