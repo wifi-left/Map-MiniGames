@@ -54,8 +54,8 @@ data merge block -382 30 207 {Items: []}
 
 function bedwars/resets/placebed
 
-execute if score bw.mode state matches 1 as @e[tag=bw.bed.beds] at @s run setblock -371 31 210 air
-execute if score bw.mode state matches 5 as @e[tag=bw.bed.beds] at @s run setblock -371 31 210 air
+execute if score bw.mode state matches 1 as @e[tag=bw.bed.beds] at @s run setblock ~ ~ ~ air
+execute if score bw.mode state matches 5 as @e[tag=bw.bed.beds] at @s run setblock ~ ~ ~ air
 
 execute if score bw.mode state matches 1 run tellraw @a[tag=bw.player] ["\n   \u00a7c\u00a7l无床模式\u00a76已启用。\n"]
 execute if score bw.mode state matches 5 run tellraw @a[tag=bw.player] ["\n   \u00a7c\u00a7l无床模式\u00a76已启用。\n"]

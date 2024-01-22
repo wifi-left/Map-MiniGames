@@ -1,8 +1,8 @@
-tp @s 87 125 20 -90 0
+execute in overworld run tp @s 87 125 20 -90 0
 title @s title ["\u00a7c\u00a7l棋类游戏"]
 title @s subtitle ["\u00a7f打发时间的休闲小游戏"]
 team join chestgame @s
-spawnpoint @s -65 139 -363
+execute in overworld run spawnpoint @s -65 139 -363
 tag @s remove chest.white
 tag @s remove chest.black
 tag @s remove chess.white

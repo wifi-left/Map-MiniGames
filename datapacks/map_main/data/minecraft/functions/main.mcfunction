@@ -60,6 +60,8 @@ tag @a[tag=SPEC.REMOVE] remove GOABLE.SPEC
 tag @a[tag=SPEC.REMOVE] remove SPEC.REMOVE
 
 effect give @a[team=hide.wait] resistance 1 25 true
+effect give @a[team=deskgame] resistance 1 25 true
+effect give @a[team=hide.wait] resistance 1 25 true
 execute if score hide.state state matches 1.. run function hideseek/tick
 execute if score golf.state state matches 1.. in golfworld run function golf/tick
 execute if score boat.state state matches 1.. in boatworld2 run function boat/tick
@@ -78,6 +80,7 @@ execute if score chess.state state matches 1.. run function small_games/chess/ti
 
 execute as @e[tag=gun.line] at @s run function gun/main
 # 检测到玩家右键后：
+execute as @a[scores={use.skill=1..},team=deskgame] at @s run function minecraft:desk/skill_handle
 execute as @a[scores={use.skill=1..},team=btw.play.a] at @s run function minecraft:boatwars/usegun
 execute as @a[scores={use.skill=1..},team=btw.play.b] at @s run function minecraft:boatwars/usegun
 execute as @a[scores={use.skill=1..},level=..0,team=job_pvp] at @s run function minecraft:skills
@@ -129,6 +132,7 @@ scoreboard players reset @a[scores={use.skill=1..}] use.skill
 tag @a[tag=action.sneaking] remove action.sneaking
 execute as @a[scores={sneaking=1..}] run tag @s add action.sneaking
 execute as @a[scores={sneaking=1..}] run scoreboard players reset @s sneaking
+execute if score desk.state state matches 1.. run function minecraft:desk/tick
 execute if score repel state matches 1..1 run function minecraft:repel/main
 execute in killerworld if score twolf.state state matches 1.. run function minecraft:twolf/tick
 scoreboard players add tick tick 1

@@ -60,3 +60,5 @@ gamerule maxCommandChainLength 114514
 gamerule disableElytraMovementCheck true
 
 forceload add 0 0 0 0
+
+scoreboard objectives add touzi.count dummy "还能刷新几次骰子"

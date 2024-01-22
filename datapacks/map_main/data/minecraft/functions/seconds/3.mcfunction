@@ -24,3 +24,4 @@ execute if score live.state state matches 3..3 if score gamestart live.all match
 execute if entity @a[team=wait.total] run function minecraft:small_games/total/start_second
 # execute unless entity @a[team=wait.total] if entity @a[tag=play.total] run function minecraft:small_games/total/start_second
 execute if score gametotal state matches 1.. run function minecraft:small_games/total/second
+execute if score desk.state state matches 1.. run function minecraft:desk/second

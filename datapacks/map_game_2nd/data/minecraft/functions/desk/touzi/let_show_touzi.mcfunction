@@ -1,0 +1,1 @@
+execute as @e[type=armor_stand,tag=desk.touzi.place] at @s run function minecraft:desk/touzi/show_touzi
