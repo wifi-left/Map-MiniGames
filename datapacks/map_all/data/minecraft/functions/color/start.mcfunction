@@ -1,4 +1,6 @@
 forceload add 29 111 -7 75
+fill -5 17 77 30 17 112 glass
+
 title @a[team=wait.color] title [{"text":"Color Blindness Game","color":"#009966","bold": true}]
 title @a[team=wait.color] subtitle ["\u00a7rShine your eyes !"]
 tellraw @a[team=wait.color] ["\n\u00a76    游戏开始！方块将在\u00a7e3\u00a76秒后开始变化！ ","\n"]
