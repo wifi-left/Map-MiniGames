@@ -101,6 +101,25 @@
                 {
                     "type": "minecraft:item",
                     "weight": 3,
+                    "name": "minecraft:shield",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "enchantments": [
+                                "minecraft:unbreaking"
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.5
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
                     "name": "minecraft:iron_helmet",
                     "functions": [
                         {
