@@ -2,8 +2,8 @@ scoreboard players set touzi.health.a board 0
 scoreboard players reset * touzi.count
 
 scoreboard players set touzi.health.b board 0
-execute as @a[team=deskgame,gamemode=adventure] run scoreboard players add touzi.health.a board 100
-execute as @a[team=deskgame,gamemode=adventure] run scoreboard players add touzi.health.b board 100
+execute as @a[team=deskgame,gamemode=adventure] run scoreboard players add touzi.health.a board 50
+execute as @a[team=deskgame,gamemode=adventure] run scoreboard players add touzi.health.b board 50
 scoreboard players set touzi.money.a board 0
 scoreboard players set touzi.money.b board 0
 kill @e[type=armor_stand,tag=desk.touzi.place]

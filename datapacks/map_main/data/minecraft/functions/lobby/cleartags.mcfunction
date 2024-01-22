@@ -17,6 +17,6 @@ tag @s remove bw.shears
 tag @s remove boat.notinboat
 tag @s remove tntwars.a
 tag @s remove tntwars.b
-tag @a remove touzi.team.a
-tag @a remove touzi.team.b
+tag @s remove touzi.team.a
+tag @s remove touzi.team.b
 # tag @s remove 
