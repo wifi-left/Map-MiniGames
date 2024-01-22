@@ -1,5 +1,5 @@
 scoreboard players set bw.event state 1
-scoreboard players set bw.event.countdown board 720
+scoreboard players set bw.event.countdown board 360
 # bw.event
 # 0: Diamond Up 
 # 1: Emerlad Up

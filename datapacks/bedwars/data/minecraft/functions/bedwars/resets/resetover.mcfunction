@@ -86,7 +86,7 @@ scoreboard players set bw.event.countdown board 720
 # 1: Emerlad Up
 # 2: Bed Gone
 # 3: Dragon
-bossbar set minigames:bedwars max 720
+bossbar set minigames:bedwars max 360
 # execute store result bossbar minigames:bedwars value run scoreboard players get bw.reset board
 bossbar set minigames:bedwars name ["\u00a7f\u00a7lBEDWARS 起床战争 \u00a77| \u00a7b钻石\u00a7e速度升级: ",{"score":{"name": "bw.event.countdown","objective": "board"},"color":"light_purple"},"\u00a7es"]
 scoreboard players display name event bw.info ["即将：\u00a7b钻石\u00a7r速度升级"]
