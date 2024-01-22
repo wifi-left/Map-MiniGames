@@ -2,7 +2,8 @@ forceload add 29 111 -7 75
 title @a[team=wait.color] title [{"text":"Color Blindness Game","color":"#009966","bold": true}]
 title @a[team=wait.color] subtitle ["\u00a7rShine your eyes !"]
 tellraw @a[team=wait.color] ["\n\u00a76    游戏开始！方块将在\u00a7e3\u00a76秒后开始变化！ ","\n"]
-execute as @a[team=wait.color] run spreadplayers 13 95 0 16 under 22 false @s
+tp @a[team=wait.color] 13 18 95
+execute as @a[team=wait.color] positioned 13 18 95 run spreadplayers 13 95 0 16 under 22 false @s
 execute as @a[team=wait.color] at @s run playsound entity.player.levelup player @s 11 17 93 1 1 1
 team join play.color @a[team=wait.color]
 scoreboard players set color.state state 1
