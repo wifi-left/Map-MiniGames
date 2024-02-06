@@ -1,0 +1,15 @@
+name: 新功能 | New Features
+description: 为 MiniGames地图 提出新功能
+title: "[Feature] "
+labels: [enhancement]
+body:
+- type: markdown
+  attributes:
+    value: 请确认 Issues 列表无重复的项目。
+- type: textarea
+  id: description
+  attributes:
+    label: 描述 | Description
+    description: 请详细描述你想加入的新功能。
+  validations:
+    required: true
