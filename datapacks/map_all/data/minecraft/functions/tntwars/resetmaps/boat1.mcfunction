@@ -1,6 +1,8 @@
 forceload add 465 205 539 279
 forceload add 465 281 539 355
 
+fill 619 -63 355 693 -63 281 air
+
 clone 465 -63 205 539 -61 279 465 -63 281 replace
 clone 465 -60 205 539 -56 279 465 -60 281 replace
 clone 465 -55 205 539 -51 279 465 -55 281 replace

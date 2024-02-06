@@ -2,7 +2,7 @@ forceload add 542 205 616 279
 forceload add 465 281 539 355
 
 #  542 -3 205 616 -3 279
-
+fill 619 -63 355 693 -63 281 air
 clone 542 -63 205 616 -61 279 465 -63 281 replace
 clone 542 -60 205 616 -56 279 465 -60 281 replace
 clone 542 -55 205 616 -51 279 465 -55 281 replace
