@@ -6,6 +6,6 @@ tellraw @a ["\n\u00a74\u00a7l饥饿游戏 ＞ \u00a7a游戏结束。获胜者：
 tellraw @a[team=hunger] ["\u00a7a你已加入游戏队列，将在 5 秒后进入游戏等待大厅。"]
 gamemode spectator @a[team=hunger]
 scoreboard players set hunger.state state 10
-execute in hungerworld run forceload remove all
 execute in hungerworld run kill @e[distance=0..,type=experience_orb]
+execute in hungerworld run forceload remove all
 team modify hunger friendlyFire false

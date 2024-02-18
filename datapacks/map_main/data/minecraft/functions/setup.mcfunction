@@ -62,3 +62,5 @@ gamerule disableElytraMovementCheck true
 forceload add 0 0 0 0
 
 scoreboard objectives add touzi.count dummy "还能刷新几次骰子"
+
+execute unless score hunger.state state matches 1.. run execute in hungerworld run forceload remove all
