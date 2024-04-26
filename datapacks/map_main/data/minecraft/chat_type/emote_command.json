@@ -1,0 +1,16 @@
+{
+  "chat": {
+    "parameters": [
+      "sender",
+      "content"
+    ],
+    "translation_key": "\u00a7d * \u00a77%s \u00a7f%s"
+  },
+  "narration": {
+    "parameters": [
+      "sender",
+      "content"
+    ],
+    "translation_key": "chat.type.emote"
+  }
+}

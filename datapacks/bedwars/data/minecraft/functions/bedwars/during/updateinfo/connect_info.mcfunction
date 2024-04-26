@@ -1,0 +1,1 @@
+$scoreboard players display name $(info_from) bw.info "$(info_message)$(info_count)"

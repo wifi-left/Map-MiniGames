@@ -1,0 +1,2 @@
+clear @a[tag=chess.white]
+give @a[tag=chess.white,team=chestgame] minecraft:ghast_spawn_egg{EntityTag:{id:"minecraft:marker",Tags:["chess.put.white"]},CanPlaceOn:['glass'],hideFlags:63,display:{Name:'"\\u00a7a放置棋"'}} 1

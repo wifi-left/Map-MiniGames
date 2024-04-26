@@ -1,0 +1,3 @@
+execute as @a[team=play.color,gamemode=adventure] at @s if block ~ ~-1 ~ water run function color/died
+execute as @a[team=play.color,gamemode=adventure] at @s if block ~ ~ ~ water run function color/died
+kill @e[type=item,nbt={Item:{tag:{Color:1b}}}]

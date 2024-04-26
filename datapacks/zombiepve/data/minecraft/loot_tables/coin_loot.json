@@ -1,0 +1,39 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 2,
+                "max": 1
+            },
+            "bonus_rolls": {
+                "min": 0,
+                "max": 0
+            },
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:sunflower",
+                    "weight": 5,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{display:{Name:'\"§e§lZombie Coin\"',Lore:['\"§7丧尸之日货币\"']},coin:1b,Unbreakable:1b,HideFlags:63,ench:[{id:114s,lvl:1s}]}"
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 6
+                            }
+                        },
+                        {
+                            "function": "minecraft:looting_enchant",
+                            "limit": 0,
+                            "count": 5
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

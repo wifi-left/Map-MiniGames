@@ -1,0 +1,21 @@
+{
+    "criteria": {
+        "player_hit_entity": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "team": "golf",
+                    "type": "zombie"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "player_hit_entity"
+        ]
+    ],
+    "rewards": {
+        "function": "minecraft:golf/player_hit_ball"
+    }
+}

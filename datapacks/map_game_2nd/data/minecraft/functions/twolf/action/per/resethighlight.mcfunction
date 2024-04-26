@@ -1,0 +1,1 @@
+execute as @s at @s as @e[type=armor_stand,limit=1,sort=nearest,distance=0..1] run item replace entity @s armor.chest with leather_chestplate{}

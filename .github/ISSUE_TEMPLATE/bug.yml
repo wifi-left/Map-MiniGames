@@ -1,0 +1,48 @@
+name: Bug 反馈 | Bug Feedback
+description: 
+  反馈一个 MiniGames 地图的错误。
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        提交前请确认：
+        * 该问题确实是 **MiniGames 地图 的错误**，而**不算服务端的问题**。如果实在不确定，也可以直接发 Issue 询问。
+        * 你的地图版本是**最新的版本**。
+    
+        如果你的问题并不属于上述两类，你可以选取另一种 Issue 类型，或者直接前往官方QQ群进行反馈：958572618
+  - type: textarea
+    id: server-platform
+    attributes:
+      label: 服务端信息
+      description: 请输入您遇到服务端信息。包含模组/插件列表等等。
+      placeholder: e.g. Fabric 1.20.4 + carpet
+    validations:
+      required: true
+  - type: textarea
+    id: client-platform
+    attributes:
+      label: 客户端信息
+      description: 请输入您遇到客户端端信息。包含模组/插件列表等等。
+      placeholder: e.g. Fabric 1.20.4 + sodium + carpet
+    validations:
+      required: true
+  - type: textarea
+    id: bug-report
+    attributes:
+      label: 问题描述
+      description: 请尽可能地详细描述你所遇到的问题，并描述如何重新触发这个问题。 
+      placeholder: |
+        1. ...
+    validations:
+      required: true
+  - type: textarea
+    id: server-log
+    attributes:
+      label: 客户端/服务端日志
+      description: |
+        如果和服务端有关，请提供您的服务端日志。
+        如果和客户端有关，请提供您的客户端日志。
+    validations:
+      required: false

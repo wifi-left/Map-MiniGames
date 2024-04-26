@@ -1,0 +1,1 @@
+item replace entity @s hotbar.8 with carrot_on_a_stick{Unbreakable:1b,display:{Name:'"\\u00a7a刷新骰子 \\u00a77- 右键点击"'},desk:1,desk_item:1}

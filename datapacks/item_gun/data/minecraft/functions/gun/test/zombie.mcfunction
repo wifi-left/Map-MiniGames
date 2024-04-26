@@ -1,0 +1,1 @@
+summon minecraft:zombie ~ ~ ~ {Health:100f,Attributes:[{Base:100d,Name:"generic.max_health"}],NoAI:1b,Tags:["pve.zombie"]}

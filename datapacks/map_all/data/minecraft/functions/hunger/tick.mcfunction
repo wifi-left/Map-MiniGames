@@ -1,0 +1,1 @@
+# execute as @a[scores={die=1..}] at @s run function hunger/lootitem
