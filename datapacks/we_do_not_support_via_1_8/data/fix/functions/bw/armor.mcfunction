@@ -2,9 +2,9 @@
 ## Datapack Upgrader v1.0.0 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
-give @a[tag=bw.play,gamemode=!spectator] minecraft:wooden_sword[custom_data={bw:1},unbreakable={show_in_tooltip:false},can_break={predicates:[{blocks:["#minecraft:bedblocks"]}],show_in_tooltip:false},can_place_on={predicates:[{blocks:["#minecraft:bwplace"]}],show_in_tooltip:false}]
+give @a[tag=bw.play,tag=bwneeds,gamemode=!spectator] minecraft:wooden_sword[custom_data={bw:1},unbreakable={show_in_tooltip:false},can_break={predicates:[{blocks:["#minecraft:bedblocks"]}],show_in_tooltip:false},can_place_on={predicates:[{blocks:["#minecraft:bwplace"]}],show_in_tooltip:false}]
 tag @a remove bwneeds
-give @a[tag=bw.play,gamemode=!spectator,nbt=!{Inventory:[{id:"minecraft:shears"}]}] shears[unbreakable={show_in_tooltip:false},custom_data={bw:1},can_place_on={predicates:[{blocks:["#minecraft:bwplace"]}],show_in_tooltip:false},can_break={predicates:[{blocks:["#minecraft:bedblocks"]}],show_in_tooltip:false}]
+give @a[tag=bw.play,tag=,gamemode=!spectator,nbt=!{Inventory:[{id:"minecraft:shears"}]}] shears[unbreakable={show_in_tooltip:false},custom_data={bw:1},can_place_on={predicates:[{blocks:["#minecraft:bwplace"]}],show_in_tooltip:false},can_break={predicates:[{blocks:["#minecraft:bedblocks"]}],show_in_tooltip:false}]
 
 give @a[scores={bw.pickaxe=1..1},gamemode=!spectator,tag=bw.play,nbt=!{Inventory:[{id:"minecraft:wooden_pickaxe"}]}] wooden_pickaxe[enchantments={levels:{"minecraft:efficiency":1s},show_in_tooltip:false},unbreakable={show_in_tooltip:false},custom_data={bw:1},can_place_on={predicates:[{blocks:["#minecraft:bwplace"]}],show_in_tooltip:false},can_break={predicates:[{blocks:["#minecraft:bedblocks"]}],show_in_tooltip:false}]
 give @a[scores={bw.axe=1..1},gamemode=!spectator,tag=bw.play,nbt=!{Inventory:[{id:"minecraft:wooden_axe"}]}] wooden_axe[attribute_modifiers={modifiers:[{type:"generic.attack_damage",slot:"any",uuid:[7777,8425,9963,3879],name:"noName",amount:1d,operation:"add_value"}],show_in_tooltip:false},enchantments={levels:{"minecraft:efficiency":1s},show_in_tooltip:false},unbreakable={show_in_tooltip:false},custom_data={bw:1},can_place_on={predicates:[{blocks:["#minecraft:bwplace"]}],show_in_tooltip:false},can_break={predicates:[{blocks:["#minecraft:bedblocks"]}],show_in_tooltip:false}]

@@ -37,20 +37,20 @@ summon marker -363 29 211 {Tags:["gold"]}
 # -305 31 122
 # # effect
 
-summon area_effect_cloud -307 31.5 161 {Tags:["bedwars","dmshop"],CustomName:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -255 31.5 209 {Tags:["bedwars","dmshop"],CustomName:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -303 31.5 261 {Tags:["bedwars","dmshop"],CustomName:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -355 31.5 212 {Tags:["bedwars","dmshop"],CustomName:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,Age:-19103293}
+summon text_display -307 32.5 161 {Tags:["bedwars","dmshop"],text:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,billboard:"vertical"}
+summon text_display -255 32.5 209 {Tags:["bedwars","dmshop"],text:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,billboard:"vertical"}
+summon text_display -303 32.5 261 {Tags:["bedwars","dmshop"],text:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,billboard:"vertical"}
+summon text_display -355 32.5 212 {Tags:["bedwars","dmshop"],text:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,billboard:"vertical"}
 # # shop
-summon area_effect_cloud -305 31.5 161 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a761"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -255 31.5 211 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a761"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -305 31.5 261 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a761"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -355 31.5 210 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a761"',CustomNameVisible:1b,Age:-19103293}
+summon text_display -305 32.5 161 {Tags:["shop","bedwars"],text:'"\\u00a7a\\u00a7lItem Shop \\u00a761"',CustomNameVisible:1b,billboard:"vertical"}
+summon text_display -255 32.5 211 {Tags:["shop","bedwars"],text:'"\\u00a7a\\u00a7lItem Shop \\u00a761"',CustomNameVisible:1b,billboard:"vertical"}
+summon text_display -305 32.5 261 {Tags:["shop","bedwars"],text:'"\\u00a7a\\u00a7lItem Shop \\u00a761"',CustomNameVisible:1b,billboard:"vertical"}
+summon text_display -355 32.5 210 {Tags:["shop","bedwars"],text:'"\\u00a7a\\u00a7lItem Shop \\u00a761"',CustomNameVisible:1b,billboard:"vertical"}
 
-summon area_effect_cloud -255 31.5 210 {Tags:["shop2","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a762"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -304 31.5 261 {Tags:["shop2","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a762"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -355 31.5 211 {Tags:["shop2","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a762"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -306 31.5 161 {Tags:["shop2","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a762"',CustomNameVisible:1b,Age:-19103293}
+summon text_display -255 32.5 210 {Tags:["shop2","bedwars"],text:'"\\u00a7a\\u00a7lItem Shop \\u00a762"',CustomNameVisible:1b,billboard:"vertical"}
+summon text_display -304 32.5 261 {Tags:["shop2","bedwars"],text:'"\\u00a7a\\u00a7lItem Shop \\u00a762"',CustomNameVisible:1b,billboard:"vertical"}
+summon text_display -355 32.5 211 {Tags:["shop2","bedwars"],text:'"\\u00a7a\\u00a7lItem Shop \\u00a762"',CustomNameVisible:1b,billboard:"vertical"}
+summon text_display -306 32.5 161 {Tags:["shop2","bedwars"],text:'"\\u00a7a\\u00a7lItem Shop \\u00a762"',CustomNameVisible:1b,billboard:"vertical"}
 
 
 # # diamond

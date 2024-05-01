@@ -35,24 +35,24 @@ summon marker -305 29.5 131 {Tags:["gold"]}
 # -305 31 122
 # # effect
 
-summon area_effect_cloud -230 30.5 206 {Tags:["bedwars","dmshop"],CustomName:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -229 30.5 206 {Tags:["bedwars","dmshop"],CustomName:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -301 30.5 284 {Tags:["bedwars","dmshop"],CustomName:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -301 30.5 285 {Tags:["bedwars","dmshop"],CustomName:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -378 30.5 212 {Tags:["bedwars","dmshop"],CustomName:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -379 30.5 212 {Tags:["bedwars","dmshop"],CustomName:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -307 30.5 135 {Tags:["bedwars","dmshop"],CustomName:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -307 30.5 134 {Tags:["bedwars","dmshop"],CustomName:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,Age:-19103293}
+summon text_display -230 31.5 206 {Tags:["bedwars","dmshop"],text:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,billboard:"vertical"}
+summon text_display -229 31.5 206 {Tags:["bedwars","dmshop"],text:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,billboard:"vertical"}
+summon text_display -301 31.5 284 {Tags:["bedwars","dmshop"],text:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,billboard:"vertical"}
+summon text_display -301 31.5 285 {Tags:["bedwars","dmshop"],text:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,billboard:"vertical"}
+summon text_display -378 31.5 212 {Tags:["bedwars","dmshop"],text:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,billboard:"vertical"}
+summon text_display -379 31.5 212 {Tags:["bedwars","dmshop"],text:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,billboard:"vertical"}
+summon text_display -307 31.5 135 {Tags:["bedwars","dmshop"],text:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,billboard:"vertical"}
+summon text_display -307 31.5 134 {Tags:["bedwars","dmshop"],text:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,billboard:"vertical"}
 # # shop
-summon area_effect_cloud -229 30.5 210 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a761"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -305 30.5 285 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a761"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -379 30.5 208 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a761"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -303 30.5 134 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a761"',CustomNameVisible:1b,Age:-19103293}
+summon text_display -229 31.5 210 {Tags:["shop","bedwars"],text:'"\\u00a7a\\u00a7lItem Shop \\u00a761"',CustomNameVisible:1b,billboard:"vertical"}
+summon text_display -305 31.5 285 {Tags:["shop","bedwars"],text:'"\\u00a7a\\u00a7lItem Shop \\u00a761"',CustomNameVisible:1b,billboard:"vertical"}
+summon text_display -379 31.5 208 {Tags:["shop","bedwars"],text:'"\\u00a7a\\u00a7lItem Shop \\u00a761"',CustomNameVisible:1b,billboard:"vertical"}
+summon text_display -303 31.5 134 {Tags:["shop","bedwars"],text:'"\\u00a7a\\u00a7lItem Shop \\u00a761"',CustomNameVisible:1b,billboard:"vertical"}
 
-summon area_effect_cloud -230 30.5 210 {Tags:["shop2","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a762"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -305 30.5 284 {Tags:["shop2","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a762"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -378 30.5 208 {Tags:["shop2","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a762"',CustomNameVisible:1b,Age:-19103293}
-summon area_effect_cloud -303 30.5 135 {Tags:["shop2","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a762"',CustomNameVisible:1b,Age:-19103293}
+summon text_display -230 31.5 210 {Tags:["shop2","bedwars"],text:'"\\u00a7a\\u00a7lItem Shop \\u00a762"',CustomNameVisible:1b,billboard:"vertical"}
+summon text_display -305 31.5 284 {Tags:["shop2","bedwars"],text:'"\\u00a7a\\u00a7lItem Shop \\u00a762"',CustomNameVisible:1b,billboard:"vertical"}
+summon text_display -378 31.5 208 {Tags:["shop2","bedwars"],text:'"\\u00a7a\\u00a7lItem Shop \\u00a762"',CustomNameVisible:1b,billboard:"vertical"}
+summon text_display -303 31.5 135 {Tags:["shop2","bedwars"],text:'"\\u00a7a\\u00a7lItem Shop \\u00a762"',CustomNameVisible:1b,billboard:"vertical"}
 
 summon marker -305 27 175 {Tags:["diamond","bedwars"],CustomName:'"\\u00a7b\\u00a7lDiamond Spawner"',CustomNameVisible:1b}
 summon marker -341 27 210 {Tags:["diamond","bedwars"],CustomName:'"\\u00a7b\\u00a7lDiamond Spawner"',CustomNameVisible:1b}
