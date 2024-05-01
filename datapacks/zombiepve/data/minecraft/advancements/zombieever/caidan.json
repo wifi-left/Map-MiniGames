@@ -7,7 +7,7 @@
             "这只是一个装饰物而已...\nPVE中的彩蛋！"
         ],
         "icon": {
-            "item": "minecraft:zombie_head"
+            "id": "minecraft:zombie_head"
         },
         "frame": "goal",
         "show_toast": true,

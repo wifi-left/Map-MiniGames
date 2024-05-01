@@ -12,13 +12,13 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "hunger/sword",
+                    "value": "hunger/sword",
                     "weight": 4,
                     "quality": 2
                 },
                 {
                     "type": "loot_table",
-                    "name": "hunger/skills",
+                    "value": "hunger/skills",
                     "weight": 1,
                     "quality": 3
                 }
@@ -36,19 +36,19 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "hunger/potion",
+                    "value": "hunger/potion",
                     "weight": 5,
                     "quality": 2
                 },
                 {
                     "type": "loot_table",
-                    "name": "hunger/other",
+                    "value": "hunger/other",
                     "weight": 1,
                     "quality": 3
                 },
                 {
                     "type": "loot_table",
-                    "name": "hunger/sword",
+                    "value": "hunger/sword",
                     "weight": 4,
                     "quality": 2
                 }
@@ -66,7 +66,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "hunger/armor",
+                    "value": "hunger/armor",
                     "weight": 5,
                     "quality": 2
                 }
@@ -84,13 +84,13 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "hunger/potion",
+                    "value": "hunger/potion",
                     "weight": 3,
                     "quality": 2
                 },
                 {
                     "type": "loot_table",
-                    "name": "hunger/other",
+                    "value": "hunger/other",
                     "weight": 3,
                     "quality": 3
                 }

@@ -7,7 +7,7 @@
             "找到地图中的彩蛋们"
         ],
         "icon": {
-            "item": "minecraft:egg"
+            "id": "minecraft:egg"
         },
         "frame": "task",
         "show_toast": true,

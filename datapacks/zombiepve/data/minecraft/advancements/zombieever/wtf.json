@@ -7,7 +7,7 @@
             "\u00a7f在地牢中进行奇怪的探索\nPVE中的彩蛋！"
         ],
         "icon": {
-            "item": "minecraft:diamond_sword"
+            "id": "minecraft:diamond_sword"
         },
         "frame": "goal",
         "show_toast": true,

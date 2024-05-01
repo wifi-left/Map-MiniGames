@@ -7,10 +7,10 @@ execute if data entity @s {data:{guntype:7}} run particle minecraft:dust{color:[
 execute if data entity @s {data:{guntype:10}} run particle minecraft:dust{color:[0.973, 0.545, 0.059],scale:1} ~ ~ ~ 0 0 0 1 1
 execute if data entity @s {data:{guntype:2}} run particle minecraft:lava ~ ~ ~ 0 0 0 1 1
 execute if data entity @s {data:{guntype:3}} run particle minecraft:dust{color:[0.82, 0.059, 0.973],scale:1} ~ ~ ~ 0 0 0 1 1
-execute if data entity @s {data:{guntype:-1}} run particle minecraft:dust{color:[1, 0.125, 0.533],scale:1} ~ ~ ~ 0 0 0 1 1
+execute if data entity @s {data:{guntype:-1}} run particle minecraft:dust{color:[1.0, 0.125, 0.533],scale:1} ~ ~ ~ 0 0 0 1 1
 execute if data entity @s {data:{guntype:-2}} run particle minecraft:dust{color:[0.455, 0.204, 0.322],scale:1} ~ ~ ~ 0 0 0 1 1
 execute if data entity @s {data:{guntype:11}} run particle minecraft:dust{color:[0.455, 0.204, 0.322],scale:1} ~ ~ ~ 0 0 0 1 1
-execute if data entity @s {data:{guntype:12}} run particle minecraft:dust{color:[0, 1, 0.835],scale:1} ~ ~ ~ 0 0 0 1 1
+execute if data entity @s {data:{guntype:12}} run particle minecraft:dust{color:[0.0, 1.0, 0.835],scale:1} ~ ~ ~ 0 0 0 1 1
 execute if data entity @s {data:{guntype:11}} run particle minecraft:campfire_signal_smoke ~ ~ ~ 0 0 0 1 1
 execute if score @s PSTJ matches ..-1 run function gun/die
 execute if score @s PSTJ matches 0.. if block ^ ^ ^1 #gunblock run function gun/die
