@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players add color.ran.tpy board 1
 scoreboard players set color.ran.tpx board 0
 execute if score color.ran.blockwidth board matches 1 at @s positioned 30 ~ ~ run tp ~ ~ ~1

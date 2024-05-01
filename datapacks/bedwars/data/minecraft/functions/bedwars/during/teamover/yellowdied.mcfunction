@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 ##scoreboard players set §c红§8　§r红队:§a✓ bw.info 10
 ##scoreboard players set §9蓝§8　§r蓝队:§a✓ bw.info 9
 ##scoreboard players set §a绿§8　§r绿队:§a✓ bw.info 8

@@ -1,12 +1,16 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players set tmp board 0
 playsound entity.enderman.teleport player @s ~ ~ ~ 1 1 0.5
 execute store result score tmp board run clear @s bucket 1
 execute if score tmp board matches 1.. run scoreboard players add @s zombie.coin 250
 execute if score tmp board matches 1.. run tellraw @s ["\u00a7a回收牛奶桶 * 1\n\u00a76+250 Coins"]
-execute if data entity @s SelectedItem.tag.gun run tag @s add tmp.usinggun
+execute if data entity @s SelectedItem.components."minecraft:custom_data".gun run tag @s add tmp.usinggun
 execute if data entity @s {SelectedItem:{id:"minecraft:enchanted_book"}} run tag @s add gun.getenchanbook
 # xp set @s 0 points
-execute as @s[tag=tmp.usinggun] run execute store result score gun.tmp board as @s at @s run data get entity @s SelectedItem.tag.bullet
+execute as @s[tag=tmp.usinggun] run execute store result score gun.tmp board as @s at @s run data get entity @s SelectedItem.components."minecraft:custom_data".bullet
 execute as @s[tag=tmp.usinggun] if score gun.tmp board matches 1.. run tag @s add gun.nohuishou
 execute as @s[tag=tmp.usinggun] unless score gun.tmp board matches 1.. run tag @s add gun.huishou
 execute as @s[tag=gun.huishou] run item replace entity @s weapon.mainhand with air

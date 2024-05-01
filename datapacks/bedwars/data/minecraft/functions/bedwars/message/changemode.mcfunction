@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute if score bw.mode state matches 0..3 run tellraw @a[team=bw.wait] ["\u00a7a起床战争模式调整为 [\u00a76四队模式\u00a7a]"]
 
 execute if score bw.mode state matches 0 run tellraw @a[team=bw.wait] ["\u00a7a起床战争特殊模式禁用"]

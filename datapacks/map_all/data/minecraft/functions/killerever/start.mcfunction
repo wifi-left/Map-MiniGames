@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 tag @a remove killer.killer
 tag @a remove killer.saver
 tag @a remove killer.runner
@@ -10,13 +14,13 @@ team join play.killer @a[team=wait.killer]
 scoreboard players set killer.state state 1
 kill @e[type=armor_stand,tag=killer.bow]
 tag @a[team=play.killer,gamemode=adventure] add killer.runner
-scoreboard players set play.player tick 0 
+scoreboard players set play.player tick 0
 execute as @a[team=play.killer,gamemode=adventure] run scoreboard players add play.player tick 1
-execute if score play.player tick matches 8.. run execute as @r[tag=killer.runner,gamemode=adventure,team=play.killer,tag=!killer.saver] at @s run function killerever/getjob/killer
-execute if score play.player tick matches 8.. run execute as @r[tag=killer.runner,gamemode=adventure,team=play.killer,tag=!killer.saver] at @s run function killerever/getjob/saver
+execute if score play.player tick matches 8.. run execute as @r[tag=!killer.saver,gamemode=adventure,team=play.killer] at @s run function killerever/getjob/killer
+execute if score play.player tick matches 8.. run execute as @r[tag=!killer.saver,gamemode=adventure,team=play.killer] at @s run function killerever/getjob/saver
 execute if score play.player tick matches 8.. run tellraw @a[team=play.killer] ["\u00a76\u00a7l因为本局人数较多，已分配2杀手 + 2侦探。"]
-execute as @r[tag=killer.runner,team=play.killer,tag=!killer.saver,gamemode=adventure] at @s run function killerever/getjob/killer
-execute as @r[tag=killer.runner,team=play.killer,tag=!killer.saver,gamemode=adventure] at @s run function killerever/getjob/saver
+execute as @r[tag=!killer.saver,team=play.killer,gamemode=adventure] at @s run function killerever/getjob/killer
+execute as @r[tag=!killer.saver,team=play.killer,gamemode=adventure] at @s run function killerever/getjob/saver
 # execute if score wait.player tick matches 6.. run execute as @r[tag=killer.runner,team=play.killer] at @s run function killerever/getjob/killer
 # execute if score wait.player tick matches 6.. run execute as @r[tag=killer.runner,team=play.killer] at @s run function killerever/getjob/saver
 title @a[team=play.killer] title ["\u00a7c\u00a7l密室杀手"]
@@ -37,3 +41,4 @@ tellraw @a[tag=killer.saver] ["\u00a7a [I] \u00a7b你的团队成员： ",{"sele
 tellraw @a[team=play.killer] ["\n\u00a7a为了防止打扰其他游戏的玩家，可使用 \u00a76/tm <信息> \u00a7a进行聊天。"]
 schedule clear minecraft:killerever/summon
 schedule function minecraft:killerever/summon 8s
+

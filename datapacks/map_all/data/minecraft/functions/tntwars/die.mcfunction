@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 tellraw @s ["\n\u00a7c你掉入了虚空，淘汰了。\n"]
 gamemode spectator @s
 clear @s
@@ -12,5 +16,6 @@ execute as @s[tag=tntwars.b] run tellraw @a[team=play.tntwars] ["\u00a7b「队�
 
 execute as @a[team=wait.tntwars] at @s run playsound entity.player.death player @s ~ ~ ~ 1 1 0
 execute as @a[team=play.tntwars] at @s run playsound entity.player.death player @s ~ ~ ~ 1 1 0
+
 
 

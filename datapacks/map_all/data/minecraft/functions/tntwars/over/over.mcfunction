@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 tag @a remove tntwars.a
 tag @a remove tntwars.b
 tellraw @a ["\u00a7cTNT Wars \u00a76游戏结束。"]
@@ -11,3 +15,4 @@ kill @e[type=!player,tag=tntwars.tnt]
 schedule function tntwars/over/tp 5s
 kill @e[tag=tnt.tntrain]
 schedule function tntwars/cleanmap 2s
+

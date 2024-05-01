@@ -1,6 +1,10 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # xp add @s 1 levels
 # xp add @s -1 levels
-# 
+#
 execute if score @s bw.tmp.em matches 100.. run function minecraft:zombieever/removelevel/100
 execute if score @s bw.tmp.em matches 75..99 run function minecraft:zombieever/removelevel/75
 execute if score @s bw.tmp.em matches 50..74 run function minecraft:zombieever/removelevel/50

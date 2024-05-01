@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # say @a[tag=bw.play]
 schedule clear bedwars/resets/mogu
 schedule clear bedwars/resets/unnamed
@@ -20,7 +24,7 @@ scoreboard players set bw.state state 6
 tag @a remove bw.play
 gamemode spectator @a[tag=bw.player]
 clear @a[tag=bw.player]
-effect clear @a[tag=bw.player] 
+effect clear @a[tag=bw.player]
 function bedwars/after/tp
 forceload remove -216 300 -393 121
 kill @e[type=item]

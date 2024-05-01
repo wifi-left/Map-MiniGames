@@ -236,8 +236,15 @@
                     "quality": 3,
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{display:{Name:'\"§f击退棍\"'},Enchantments:[{id:\"knockback\",lvl:2}]}"
+                            "function": "set_components",
+                            "components": {
+                                "minecraft:custom_name": "\"§f击退棍\"",
+                                "minecraft:enchantments": {
+                                    "levels": {
+                                        "minecraft:knockback": 2
+                                    }
+                                }
+                            }
                         }
                     ]
                 },
@@ -248,8 +255,14 @@
                     "quality": 1,
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{Enchantments:[{id:\"knockback\",lvl:2}]}"
+                            "function": "set_components",
+                            "components": {
+                                "minecraft:enchantments": {
+                                    "levels": {
+                                        "minecraft:knockback": 2
+                                    }
+                                }
+                            }
                         }
                     ]
                 }

@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players add duel.clear state 1
 execute if score duel.clear state matches 2.. run scoreboard players set duel.clear state 0
 execute if score duel.clear state matches 0 run data modify block -111 78 -88 front_text.messages[1] set value '"\\u00a76[每局得分自动清除]"'

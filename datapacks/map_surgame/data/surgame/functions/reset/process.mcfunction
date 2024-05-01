@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute in airworld if score sur.reset board matches -64 run clone -104 -64 1 0 -64 -142 -103 -64 28
 execute in airworld if score sur.reset board matches -63 run clone -104 -63 1 0 -63 -142 -103 -63 28
 execute in airworld if score sur.reset board matches -62 run clone -104 -62 1 0 -62 -142 -103 -62 28

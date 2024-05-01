@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 
 execute if score chest.type board matches 1 if score chess.state state matches 1 run function small_games/chess/five/tick
 execute if score chest.type board matches 2 if score chess.state state matches 1 run function small_games/chess/boom/tick

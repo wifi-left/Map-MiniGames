@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 tellraw @s ["\n\u00a7e游戏公开测试中...遇到BUG请及时反馈！\n"]
 title @s title [{"text":"\u00a7b\u00a7lBoat Wars","color":"#F28500"}]
 title @s subtitle ["\u00a77Shoot them down!"]

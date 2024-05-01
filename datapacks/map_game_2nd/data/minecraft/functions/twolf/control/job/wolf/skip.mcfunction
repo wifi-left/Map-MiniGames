@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 tellraw @a[tag=wolf.acting] ["\u00a7d[!] ",{"selector":"@s"}," \u00a7c放弃了操作。"]
 function minecraft:twolf/action/per/tpback
 scoreboard players set wolf.tmp board 0

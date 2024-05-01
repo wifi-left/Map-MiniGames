@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 tag @s add sel
 execute as @e[tag=btw.boat,type=boat] if score @s park.uuid = @a[tag=sel,limit=1] park.uuid run tag @s add damage.boat
 scoreboard players set boat.health board 0

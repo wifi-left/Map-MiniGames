@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players enable @a[team=lobby,tag=parkouring] parkour
 execute as @a[scores={park.click=1..},team=lobby,tag=parkouring] at @s run function minecraft:npark/backpoint
 scoreboard players reset @a[scores={park.click=1..},team=lobby,tag=parkouring] park.click
@@ -17,3 +21,4 @@ execute as @a[team=lobby,tag=parkouring] at @s if block ~ ~ ~ light_weighted_pre
 
 scoreboard players add @a[tag=parkouring,team=lobby] parkour.tick 5
 # 100 'tick' -> 's'
+

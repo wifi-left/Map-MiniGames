@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # fill 428 72 -267 434 72 -273 black_concrete
 # kill @e[tag=hide.animals,type=!player]
 # scoreboard players reset * LRS_START_DJS

@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 data modify block 36 8 0 front_text.messages[1] set value "[{\"text\":\"Normal Mode\",\"color\":\"aqua\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/function minecraft:live/settings/settonormal\"}}]"
 data modify block 36 8 0 front_text.messages[2] set value "[{\"text\":\"\\u00a7a[\\u00a76Guess Killer\\u00a7a]\",\"color\":\"gold\"}]"
 playsound minecraft:ui.button.click player @s

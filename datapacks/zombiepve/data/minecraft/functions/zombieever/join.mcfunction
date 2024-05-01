@@ -1,8 +1,12 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 title @s title [{"text":"Zombie Day","color":"dark_green","bold": true}]
 title @s subtitle ["\u00a7bPre-release \u00a7ev0.3"]
 team join wait.zombie @s
 tellraw @a[team=!wait.zombie] ["\u00a7a\u00a7l[MESSAGE] ",{"selector":"@s"},"\u00a77 已加入 ",{"text":"Zombie Day","color":"dark_green","bold": true}," \u00a77!"]
-scoreboard players set wait.player tick 0 
+scoreboard players set wait.player tick 0
 execute as @a[team=wait.zombie,gamemode=adventure] run scoreboard players add wait.player tick 1
 tellraw @s ["\n\u00a7a    Welcome to ",{"text":"Zombie Day","color":"dark_green","bold": true},"\n"]
 tellraw @s ["\n\u00a7a    ",{"text":"Zombie Day","color":"dark_green","bold": true},"\n\n    \u00a7b版本：\u00a7ePre-release v0.3\n"]

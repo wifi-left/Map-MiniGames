@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute in lobby run tp @s 35 7 43 -90 0
 tellraw @s ["\n\u00a7e该类游戏还在公开测试阶段！\n如发现BUG，最好请录制一个视频，然后向作者反馈。\n\u00a77从4000年前古埃及的塞尼特棋直至40,000年的茫茫星海，演绎于一桌之上!\n"]
 title @s title [{"text":"桌游","color":"#0099CC","bold": true}]

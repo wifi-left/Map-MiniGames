@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 fill 79 120 50 69 120 60 minecraft:orange_stained_glass replace glass
 
 scoreboard players set boom.fill.result board 0

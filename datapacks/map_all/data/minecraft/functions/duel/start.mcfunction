@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard objectives setdisplay sidebar.team.dark_gray gg.duel
 
 title @a[team=wait.duel] title [{"text":"Duel Game","color":"yellow","bold": true}]
@@ -14,4 +18,5 @@ scoreboard players set score.blue tick 0
 scoreboard players reset * gg.duel
 schedule function duel/reset 1s replace
 function duel/score/flush
+
 

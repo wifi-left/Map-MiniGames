@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 team join boat @s
 title @s reset
 tellraw @a [{"selector":"@s"},"\u00a7a 加入了\u00a79冰船游戏\u00a7a。"]

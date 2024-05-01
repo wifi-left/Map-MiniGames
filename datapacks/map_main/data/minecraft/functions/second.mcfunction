@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players set tick tick 0
 
 scoreboard players add tick2 tick 1
@@ -23,8 +27,8 @@ execute as @e[type=minecart,tag=lobby.car] at @s if block ~ ~ ~ lava run kill @s
 ## Car
 # execute as @e[tag=lobby.car.start] at @s unless entity @e[tag=lobby.car,type=!player,distance=0..1] run function lobby/spawncar
 # execute as @e[tag=lobby.car.end] at @s run kill @e[tag=lobby.car,type=!player,distance=0..3]
-xp add @a[team=play.live.runner,level=1..] -1 levels 
-xp add @a[team=play.live.killer,level=1..] -1 levels 
+xp add @a[team=play.live.runner,level=1..] -1 levels
+xp add @a[team=play.live.killer,level=1..] -1 levels
 effect give @a[team=wait.sur] resistance 2 25 true
 execute if score golf.state state matches 1.. in golfworld run function golf/second
 execute if score boat.state state matches 1.. in boatworld2 run function boat/second
@@ -38,7 +42,7 @@ tag @a[team=lobby] add music.playing
 tag @a[team=dropper] add music.playing
 tag @a[team=chestgame] add music.playing
 tag @a[team=parkour] add music.playing
-tag @a[tag=music.playing,team=!lobby,team=!dropper,team=!parkour,team=!chestgame] remove music_kano
-tag @a[tag=music.playing,team=!lobby,team=!dropper,team=!parkour,team=!chestgame] remove music_little_stars
-tag @a[tag=music.playing,team=!lobby,team=!dropper,team=!parkour,team=!chestgame] remove music.playing
+tag @a[tag=music.playing,team=!chestgame] remove music_kano
+tag @a[tag=music.playing,team=!chestgame] remove music_little_stars
+tag @a[tag=music.playing,team=!chestgame] remove music.playing
 scoreboard players reset @a[tag=!music.playing] time

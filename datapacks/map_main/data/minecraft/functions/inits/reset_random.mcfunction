@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 ## 清除
 kill @e[tag=random_game,type=marker]
 ## 生成
@@ -52,7 +56,7 @@ tag @e[tag=neww] remove neww
 # Snow TNTRUN 2
 # Snow Pick 3
 # Repeling 4
-# Color 5 
+# Color 5
 # Block Believer 6
 # Muder Mystery 7
 # Duel 8
@@ -93,3 +97,4 @@ scoreboard players set @e[tag=neww] board 11
 tag @e[tag=neww] remove neww
 
 # forceload remove 168 -45 168 -45
+

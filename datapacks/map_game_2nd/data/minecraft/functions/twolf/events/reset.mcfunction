@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players set wolf.arsonist board 0
 scoreboard players set wolf.cupid board 0
 scoreboard players set wolf.guard board 0
@@ -54,6 +58,6 @@ tag @a remove wolf.connected
 
 tag @e[tag=wolf.tppoint] remove wolf.used
 kill @e[tag=wolf.nametags]
-scoreboard players reset @e[tag=wolf.tp.sell,limit=1] 
+scoreboard players reset @e[tag=wolf.tp.sell,limit=1]
 
 schedule clear #wolffunctions

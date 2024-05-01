@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 tag @a[gamemode=adventure,team=wait.battle] add battle.random
 execute as @a[tag=battle.random] run function battle/spr
 tag @a remove battle.random
@@ -18,3 +22,4 @@ scoreboard players operation battle.toolcount board = tmp board
 kill @e[type=armor_stand,tag=battle.ranpotion]
 
 function battle/nextround
+

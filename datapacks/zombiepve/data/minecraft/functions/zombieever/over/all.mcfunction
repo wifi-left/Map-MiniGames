@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 schedule function zombieever/over/back 5s
 tellraw @a ["\u00a72\u00a7lZombie Day >>> \u00a76游戏结束！游戏进度：",{"score":{"objective": "board","name": "zombie.round"},"color":"yellow"}]
 scoreboard players set zombie.state state 5

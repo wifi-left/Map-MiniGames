@@ -1,12 +1,12 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 tellraw @a[tag=bw.player] ["\u00a7e重置中..."]
 title @a[tag=bw.player] title ["\u00a7eReseting..."]
 title @a[tag=bw.player] subtitle ["\u00a7fIt may take some time..."]
 gamemode spectator @a[tag=bw.player,gamemode=!creative]
 
-# kill @e[tag=bw.bed.red]
-# kill @e[tag=bw.bed.blue]
-# kill @e[tag=bw.bed.yellow]
-# kill @e[tag=bw.bed.green]
 kill @e[tag=bw.bed.beds]
 kill @e[tag=iron,type=marker]
 kill @e[tag=gold,type=marker]

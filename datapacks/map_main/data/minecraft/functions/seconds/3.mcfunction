@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # say 3
 # execute if score zombie.state state matches 1 run function zombieever/o_f_tick
 execute if score zombie.state state matches 1.. run function zombieever/o_f_tick
@@ -25,3 +29,4 @@ execute if entity @a[team=wait.total] run function minecraft:small_games/total/s
 # execute unless entity @a[team=wait.total] if entity @a[tag=play.total] run function minecraft:small_games/total/start_second
 execute if score gametotal state matches 1.. run function minecraft:small_games/total/second
 execute if score desk.state state matches 1.. run function minecraft:desk/second
+

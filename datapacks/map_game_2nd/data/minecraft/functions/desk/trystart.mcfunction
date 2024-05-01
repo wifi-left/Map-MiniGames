@@ -1,6 +1,10 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 playsound ui.button.click player @s ~ ~ ~ 1 1 1
 # 重置人数统计
-scoreboard players set wait.player tick 0 
+scoreboard players set wait.player tick 0
 # 计算人数
 execute as @a[team=deskgame,gamemode=adventure] run scoreboard players add wait.player tick 1
 # 判断人数、游戏状态

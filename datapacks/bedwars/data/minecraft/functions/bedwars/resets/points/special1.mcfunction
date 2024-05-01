@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # yellow
 summon marker -362 35 189 {Tags:["bw.bed.beds","bw.bed.yellow"]}
 summon marker -362 35 188 {Tags:["bw.bed.beds","bw.bed.yellow"]}
@@ -48,7 +52,7 @@ summon area_effect_cloud -304 31.5 261 {Tags:["shop2","bedwars"],CustomName:'"\\
 summon area_effect_cloud -355 31.5 211 {Tags:["shop2","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a762"',CustomNameVisible:1b,Age:-19103293}
 summon area_effect_cloud -306 31.5 161 {Tags:["shop2","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a762"',CustomNameVisible:1b,Age:-19103293}
 
- 
+
 # # diamond
 summon marker -276 27 176 {Tags:["diamond","bedwars"],CustomName:'"\\u00a7b\\u00a7lDiamond Spawner"',CustomNameVisible:1b}
 summon marker -275 27 242 {Tags:["diamond","bedwars"],CustomName:'"\\u00a7b\\u00a7lDiamond Spawner"',CustomNameVisible:1b}
@@ -65,3 +69,4 @@ summon marker -294 45 220 {Tags:["emerald","bedwars"],CustomName:'"\\u00a7a\\u00
 
 
 scoreboard players display name date bw.info ["\u00a7701/19/24§8 \u00a78m002B"]
+

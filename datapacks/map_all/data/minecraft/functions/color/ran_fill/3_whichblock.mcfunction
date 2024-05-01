@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 data merge storage minecraft:temp {block:"terracotta"}
 execute if block ~ ~ ~ terracotta run data merge storage minecraft:temp {block:"terracotta"}
 execute if block ~ ~ ~ white_terracotta run data merge storage minecraft:temp {block:"white_terracotta"}

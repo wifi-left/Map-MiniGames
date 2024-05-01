@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players add @s globle.game 0
 execute unless score @s leave matches 1.. if score @s globle.game matches ..1 run tellraw @s ["\u00a7c很抱歉，您无法重新加入游戏！"]
 execute unless score @s leave matches 1.. if score @s globle.game matches 2.. run tellraw @s ["\u00a76正在为您检查游戏状态！如果游戏仍在运行且支持重新加入，您将会重新进入游戏！\n\u00a77您的游戏状态码：",{"score":{"objective": "globle.game","name": "@s"},"color":"gray","bold": true}]

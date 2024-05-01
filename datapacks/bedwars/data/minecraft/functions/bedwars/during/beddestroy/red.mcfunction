@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players set bd.red state 0
 execute as @a[scores={pickred=1..},team=bw.red] run tellraw @s ["\u00a7c你不能破坏自己的床！"]
 execute as @a[scores={pickred=1..},team=bw.red] run function minecraft:bedwars/resets/beds/red
@@ -28,3 +32,4 @@ execute unless entity @a[scores={pickred=1..},team=bw.red] run title @a[team=bw.
 execute unless entity @a[scores={pickred=1..},team=bw.red] run function minecraft:bedwars/during/updateinfo/red
 
 scoreboard players reset * pickred
+

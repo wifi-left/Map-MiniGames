@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute as @a[team=play.duel.yellow,gamemode=adventure] at @s if block ~ ~-1 ~ magma_block run function duel/died
 execute as @a[team=play.duel.blue,gamemode=adventure] at @s if block ~ ~-1 ~ magma_block run function duel/died
 execute as @a[team=play.duel.yellow,gamemode=adventure] at @s if block ~ ~-1 ~ diamond_block run function duel/score/yellow
@@ -8,7 +12,7 @@ execute as @a[team=play.duel.yellow,gamemode=adventure] at @s if block ~ ~-1 ~ g
 fill -379 -3 -69 -251 -1 -83 air replace #minecraft:terracotta
 fill -379 15 -69 -251 17 -83 air replace #minecraft:terracotta
 
-kill @e[type=item,nbt={Item:{tag:{duel:1}}}]
+kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{duel:1}}}}]
 
 execute as @a[team=play.duel.yellow] at @s run kill @e[type=item,distance=0..5]
 execute as @a[team=play.duel.blue] at @s run kill @e[type=item,distance=0..5]

@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute if score @s LRS_JOB matches 7 run function minecraft:twolf/action/per/death/boom
 
 execute if score @s LRS_JOB matches 9 run function minecraft:twolf/action/per/death/hunter/trigger
@@ -7,7 +11,7 @@ tag @s add wolf.sell
 execute as @e[tag=wolf.used] if score @s LRS_UUID = @a[tag=wolf.sell,limit=1] park.uuid run tag @s add wolf.tp.sell
 execute unless score @s LRS_JOB matches 7 as @e[tag=wolf.tp.sell,limit=1] at @s run data merge entity @e[tag=wolf.nametags,distance=0..2,limit=1] {text:'["\\u00a7e※ ",{"selector":"@a[tag=wolf.sell]"},"\\u00a7c (被放逐)"]'}
 execute if score @s LRS_JOB matches 7 as @e[tag=wolf.tp.sell,limit=1] at @s run data merge entity @e[tag=wolf.nametags,distance=0..2,limit=1] {text:'["\\u00a7e※ ",{"selector":"@a[tag=wolf.sell]"},"\\u00a7c (炸弹人，被放逐)"]'}
-execute as @e[tag=wolf.tp.sell,limit=1,tag=wolf.knight] at @s run data merge entity @e[tag=wolf.nametags,distance=0..2,limit=1] {text:'["\\u00a7e※ ",{"selector":"@a[tag=wolf.sell]"},"\\u00a7c (骑士，被放逐)"]'}
+execute as @e[tag=wolf.knight,limit=1] at @s run data merge entity @e[tag=wolf.nametags,distance=0..2,limit=1] {text:'["\\u00a7e※ ",{"selector":"@a[tag=wolf.sell]"},"\\u00a7c (骑士，被放逐)"]'}
 
 tag @e[tag=wolf.tp.sell] add wolf.died
 tag @e[tag=wolf.tp.sell] remove wolf.tp.sell
@@ -37,4 +41,5 @@ execute as @s[tag=wolf.connected] run function minecraft:twolf/action/per/death/
 tag @s remove wolf.connected
 
 tellraw @s ["\n\u00a7e\u00a7lWARNING：\u00a76你不可以说遗言。\n"]
+
 

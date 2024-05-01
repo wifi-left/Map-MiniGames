@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute if block ~ ~-2 ~ command_block[facing=south] run data modify entity @s Motion[2] set value 0.13
 execute if block ~ ~-2 ~ command_block[facing=south] at @s run tp @s ~ ~ ~ 0 ~
 execute if block ~ ~-2 ~ command_block[facing=north] run data modify entity @s Motion[2] set value -0.13

@@ -16,8 +16,25 @@
                     "weight": 5,
                     "functions": [
                         {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{display:{Name:'\"§e§lZombie Coin\"',Lore:['\"§7丧尸之日货币\"']},coin:1b,Unbreakable:1b,HideFlags:63,ench:[{id:114s,lvl:1s}]}"
+                            "function": "set_components",
+                            "components": {
+                                "minecraft:custom_name": "\"§e§lZombie Coin\"",
+                                "minecraft:lore": [
+                                    "\"§7丧尸之日货币\""
+                                ],
+                                "minecraft:custom_data": {
+                                    "coin": 1,
+                                    "ench": [
+                                        {
+                                            "id": 114,
+                                            "lvl": 1
+                                        }
+                                    ]
+                                },
+                                "minecraft:unbreakable": {
+                                    "show_in_tooltip": false
+                                }
+                            }
                         },
                         {
                             "function": "minecraft:set_count",

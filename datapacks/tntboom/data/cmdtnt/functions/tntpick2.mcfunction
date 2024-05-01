@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 
 
 ## TNT 基本信息
@@ -14,7 +18,7 @@
 # 最大爆炸半径:6.9（默认）
 summon marker ~ ~ ~ {Tags:["cmd.tnt","cmd.tnt.spawn"]}
 scoreboard players set tnt.round.x board 0
-summon creeper ~ ~ ~ {DeathLootTable:"",Tags:["cmd.tnt.boom"],fuse:0,CustomName:'["\\u00a7c\\u00a7lTNT SHEEP"]',CustomNameVisible:1b,Invulnerable:1b,Silent:1b,PersistenceRequired:1b,Attributes:[{Base:1d,Name:"generic.max_health"},{Base:1d,Name:"generic.knockback_resistance"},{Base:0d,Name:"generic.movement_speed"},{Base:1d,Name:"generic.follow_range"},{Base:0d,Name:"generic.attack_damage"},{Base:1d,Name:"generic.attack_speed"},{Base:1d,Name:"generic.armor"},{Base:1d,Name:"generic.armor_toughness"}],ignited:true,ExplosionRadius:4b}
+summon creeper ~ ~ ~ {DeathLootTable:"",Tags:["cmd.tnt.boom"],fuse:0,CustomName:'["\\u00a7c\\u00a7lTNT SHEEP"]',CustomNameVisible:1b,Invulnerable:1b,Silent:1b,PersistenceRequired:1b,Attributes:[{Base:1d,Name:"generic.max_health"},{Base:1d,Name:"generic.knockback_resistance"},{Base:0d,Name:"generic.movement_speed"},{Base:1d,Name:"generic.follow_range"},{Base:0d,Name:"generic.attack_damage"},{Base:1d,Name:"generic.attack_speed"},{Base:1d,Name:"generic.armor"},{Base:1d,Name:"generic.armor_toughness"}],ignited:"true",ExplosionRadius:4b}
 execute as @e[tag=cmd.tnt.spawn] at @s run tp @s ~ ~ ~ 0 -90
 execute as @e[tag=cmd.tnt.spawn] run function cmdtnt:tnt/roundandshoot_x
 execute run playsound entity.generic.explode block @a ~ ~ ~ 6 0.7 0

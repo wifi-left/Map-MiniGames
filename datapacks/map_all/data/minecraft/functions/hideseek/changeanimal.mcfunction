@@ -1,6 +1,10 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 tag @s add seel
 
-execute as @e[tag=hide.animals,tag=hide.cosplay] if score @s LRS_START_DJS = @a[tag=seel,limit=1] park.uuid run tag @s add shouldtp 
+execute as @e[tag=hide.cosplay] if score @s LRS_START_DJS = @a[tag=seel,limit=1] park.uuid run tag @s add shouldtp
 tag @s remove seel
 # tp @e[tag=shouldtp] @s
 
@@ -19,4 +23,4 @@ execute at @s align xyz if block ~ ~-0.5 ~ #hideseek run tellraw @s ["\n\u00a7a 
 execute at @s align xyz unless block ~ ~-0.5 ~ #hideseek run tellraw @s ["\n\u00a7a   \u00a7l无法切换：方块不支持\n"]
 
 tag @e[tag=neww] remove neww
-tag @e remove shouldtp 
+tag @e remove shouldtp

@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 
 # data modify entity @e[type=fireball,limit=1,sort=nearest] Motion set from entity @s Motion
 # data modify entity @e[type=fireball,limit=1,sort=nearest] power set from entity @s Motion

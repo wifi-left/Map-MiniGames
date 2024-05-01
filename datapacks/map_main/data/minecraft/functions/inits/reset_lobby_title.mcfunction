@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 kill @e[tag=lobby,type=area_effect_cloud]
 kill @e[tag=lobby,type=armor_stand]
 
@@ -40,7 +44,7 @@ summon minecraft:area_effect_cloud 74 116.7 37 {CustomName:'["\\u00a77Event Plaz
 
 summon minecraft:area_effect_cloud 123 117 5 {CustomName:'["\\u00a7e\\u00a7l神庙"]',CustomNameVisible:1b,Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],Duration:2147483647}
 summon minecraft:area_effect_cloud 123 116.7 5 {CustomName:'["\\u00a77Temple"]',CustomNameVisible:1b,Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],Duration:2147483647}
- 
+
 summon minecraft:area_effect_cloud 108 117 5 {CustomName:'["\\u00a7e\\u00a7l神庙"]',CustomNameVisible:1b,Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],Duration:2147483647}
 summon minecraft:area_effect_cloud 108 116.7 5 {CustomName:'["\\u00a77Temple"]',CustomNameVisible:1b,Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],Duration:2147483647}
 
@@ -67,3 +71,4 @@ summon minecraft:area_effect_cloud 183 125.7 50 {CustomName:'["\\u00a773rd Floor
 
 summon minecraft:area_effect_cloud 238 116 66 {CustomName:'["\\u00a7a\\u00a7l迷宫"]',CustomNameVisible:1b,Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],Duration:2147483647}
 summon minecraft:area_effect_cloud 238 115.7 66 {CustomName:'["\\u00a77寻找出口吧！"]',CustomNameVisible:1b,Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],Duration:2147483647}
+

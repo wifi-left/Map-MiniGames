@@ -1,8 +1,12 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # Car 1
 # Snow TNTRUN 2
 # Snow Pick 3
 # Repeling 4
-# Color 5 
+# Color 5
 # Block Believer 6
 # Muder Mystery 7
 # Duel 8
@@ -35,3 +39,4 @@ execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matc
 
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 11..11 run execute as @a[tag=play.total] run function tntwars/join
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 11..11 run function tntwars/trystart
+

@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 function small_games/chess/boom/action/getpos
 execute if score boom.tmp.idx1 board matches 0 if score boom.tmp.idx2 board matches 0 run fill 79 125 60 77 125 58 white_wool
 execute if score boom.tmp.idx1 board matches 0 if score boom.tmp.idx2 board matches 1 run fill 79 125 56 77 125 54 white_wool
@@ -32,3 +36,4 @@ execute if score boom.tmp.idx1 board matches 2 if score boom.tmp.idx2 board matc
 tellraw @a[team=chestgame] [{"translate":"\u00a7f\u00a7l白队\u00a76占领了 [%s, %s]","color": "gold","with":[{"score":{"name": "boom.tmp.idx1","objective": "board"},"color": "yellow"},{"score":{"name": "boom.tmp.idx2","objective": "board"},"color": "yellow"}]}]
 
 function minecraft:small_games/chess/boom/action/takeover/after_a
+

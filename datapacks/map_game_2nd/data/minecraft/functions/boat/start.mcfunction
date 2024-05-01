@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute as @a[team=boat] at @s run spreadplayers -82 299 0 3 false @s
 execute as @a[team=boat] at @s run tp @s ~ ~ ~ 180 0
 # fill -66 165 -94 -60 160 -95 minecraft:stone_brick_wall keep
@@ -6,7 +10,7 @@ fill -76 141 295 -89 135 294 cobblestone_wall keep
 scoreboard players set boat.state state 2
 execute as @a[team=boat] at @s run playsound minecraft:block.anvil.land player @s ~ ~ ~ 5 2 1
 title @a[team=boat] title ["\u00a79\u00a9\u00a7l 冰船游戏 Ice Boat Game"]
-# execute if score boat.type state matches 1 run 
+# execute if score boat.type state matches 1 run
 team modify boat prefix ["\u00a7e[R]\u00a79 冰船\u00a78 | "]
 
 
@@ -23,3 +27,4 @@ tag @a remove boat.notspawn
 execute unless score boat.type board matches 4 run tag @a[team=boat] add boat.notspawn
 
 # forceload remove -32 88 -102 313
+

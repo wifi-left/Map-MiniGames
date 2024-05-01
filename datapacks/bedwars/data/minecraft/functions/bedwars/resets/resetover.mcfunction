@@ -1,9 +1,13 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 title @a[tag=bw.player] title ["\u00a7aBedwars"]
 title @a[tag=bw.player] subtitle ["\u00a7fEnjoy the game!"]
-execute as @e[tag=diamond,type=marker] at @s run summon minecraft:area_effect_cloud ~ ~1.8 ~ {Age:-2147483648,Duration:-1,WaitTime: -2147483648,Tags:["bedwars","diamond.title"],CustomName:'"\\u00a7b\\u00a7l钻石"',CustomNameVisible:1b}
-execute as @e[tag=diamond,type=marker] at @s run summon minecraft:area_effect_cloud ~ ~1.5 ~ {Age:-2147483648,Duration:-1,WaitTime: -2147483648,Tags:["bedwars","diamond.subtitle"],CustomName:'"To be edited"',CustomNameVisible:1b}
-execute as @e[tag=emerald,type=marker] at @s run summon minecraft:area_effect_cloud ~ ~1.8 ~ {Age:-2147483648,Duration:-1,WaitTime: -2147483648,Tags:["bedwars","emerald.title"],CustomName:'"\\u00a72绿宝石"',CustomNameVisible:1b}
-execute as @e[tag=emerald,type=marker] at @s run summon minecraft:area_effect_cloud ~ ~1.5 ~ {Age:-2147483648,Duration:-1,WaitTime: -2147483648,Tags:["bedwars","emerald.subtitle"],CustomName:'"To be edited"',CustomNameVisible:1b}
+execute as @e[tag=diamond,type=marker] at @s run summon minecraft:area_effect_cloud ~ ~1.8 ~ {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["bedwars","diamond.title"],CustomName:'"\\u00a7b\\u00a7l钻石"',CustomNameVisible:1b}
+execute as @e[tag=diamond,type=marker] at @s run summon minecraft:area_effect_cloud ~ ~1.5 ~ {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["bedwars","diamond.subtitle"],CustomName:'"To be edited"',CustomNameVisible:1b}
+execute as @e[tag=emerald,type=marker] at @s run summon minecraft:area_effect_cloud ~ ~1.8 ~ {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["bedwars","emerald.title"],CustomName:'"\\u00a72绿宝石"',CustomNameVisible:1b}
+execute as @e[tag=emerald,type=marker] at @s run summon minecraft:area_effect_cloud ~ ~1.5 ~ {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["bedwars","emerald.subtitle"],CustomName:'"To be edited"',CustomNameVisible:1b}
 
 tellraw @a[tag=bw.player] ["\u00a7a重置完毕！"]
 scoreboard players set bw.reset board 0
@@ -82,7 +86,7 @@ scoreboard players set bw.state state 1
 scoreboard players set bw.event state 0
 scoreboard players set bw.event.countdown board 720
 # bw.event
-# 0: Diamond Up 
+# 0: Diamond Up
 # 1: Emerlad Up
 # 2: Bed Gone
 # 3: Dragon

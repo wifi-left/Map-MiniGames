@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 fill 6 10 -49 38 10 -81 minecraft:white_wool
 title @a[team=wait.hotpot] title [{"text":"Hot Potato","color":"#5ed3ff","bold": true}]
 title @a[team=wait.hotpot] subtitle ["\u00a7rBe Careful !"]
@@ -9,4 +13,5 @@ scoreboard players set hotpot.state state 1
 scoreboard players operation temp state = hotpot.num state
 schedule clear minecraft:hotpotever/summon
 schedule function minecraft:hotpotever/summon 5s
+
 

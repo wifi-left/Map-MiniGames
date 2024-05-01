@@ -1,8 +1,12 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 tellraw @a ["\u00a7b\u00a7l[Gamom Datapacks] \u00a7aReloaded successfully ! \u00a7e[Language: 简体中文]"]
 function minecraft:bedwars/setup
 scoreboard objectives remove level
 scoreboard objectives remove sneaking
-scoreboard objectives add sneaking minecraft.custom:minecraft.sneak_time 
+scoreboard objectives add sneaking minecraft.custom:minecraft.sneak_time
 scoreboard objectives add level level
 scoreboard objectives remove zombie.villager.click
 scoreboard objectives add zombie.villager.click minecraft.custom:minecraft.talked_to_villager
@@ -64,3 +68,4 @@ forceload add 0 0 0 0
 scoreboard objectives add touzi.count dummy "还能刷新几次骰子"
 
 execute unless score hunger.state state matches 1.. run execute in hungerworld run forceload remove all
+

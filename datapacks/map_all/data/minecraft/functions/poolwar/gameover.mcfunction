@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 tellraw @a [{"text":"冬泳怪鸽","color":"#1E90FF","bold":true},"\u00a7a 游戏结束！ 获胜者：",{"selector":"@a[team=pw.play,gamemode=adventure]","color":"white"}]
 scoreboard players set pw.state state 0
 scoreboard players add @a[gamemode=adventure,team=pw.play,tag=play.total] score 1

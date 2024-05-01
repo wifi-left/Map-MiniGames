@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute as @e[tag=hide2.ranitem] at @s run data merge block ~ ~ ~ {LootTable:""}
 execute as @e[tag=hide2.ranitem] at @s run setblock ~ ~ ~ air
 execute as @e[tag=hide2.ranitem] at @s run setblock ~ ~ ~ minecraft:barrel[open=true]{LootTable:"hide2/item"} replace

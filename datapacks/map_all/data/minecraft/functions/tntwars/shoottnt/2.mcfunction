@@ -1,6 +1,10 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # execute at @s positioned 0.0 0.0 0.0 rotated as @s anchored eyes run summon marker ^ ^ ^3 {Tags:["tmp"]}
-execute as @s at @s positioned 0.0 0.0 0.0 run summon marker ^ ^ ^1.2 {Tags: ["t.tmp"]}
-execute anchored eyes run summon tnt ^ ^ ^1 {Tags: ["t.new", "tntwars.tnt"], fuse: 50s}
+execute as @s at @s positioned 0.0 0.0 0.0 run summon marker ^ ^ ^1.2 {Tags:["t.tmp"]}
+execute anchored eyes run summon tnt ^ ^ ^1 {Tags:["t.new","tntwars.tnt"],fuse:50s}
 tag @s add t.t.tmp
 execute as @e[tag=t.new] run data modify entity @s Owner set from entity @a[limit=1,tag=t.t.tmp] UUID
 tag @s remove t.t.tmp

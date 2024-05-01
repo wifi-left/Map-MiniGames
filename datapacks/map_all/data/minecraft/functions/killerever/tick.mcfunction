@@ -1,12 +1,16 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 spawnpoint @a[team=play.killer] 235 56 33
 execute as @a[team=play.killer,x=235.0,y=56.0,z=33.0,distance=0..2,gamemode=adventure] at @s run function killerever/died
 tag @a[team=play.killer,nbt={Inventory:[{id:"minecraft:enchanted_book",Slot:-106b}]}] add killer.sb
 tag @a[team=play.killer,nbt={Inventory:[{id:"minecraft:rabbit_stew",Slot:-106b}]}] add killer.te
 tag @a[team=play.killer,nbt={Inventory:[{id:"minecraft:mushroom_stew",Slot:-106b}]}] add killer.gis
 
-# execute as @e[tag=killer.bow] at @s run function 
+# execute as @e[tag=killer.bow] at @s run function
 execute as @a[team=play.killer,tag=killer.killer] at @s run function killerever/action/check_if_get_bow
-execute as @a[team=play.killer,tag=killer.runner,tag=!killer.saver] at @s run function killerever/action/check_bow
+execute as @a[team=play.killer,tag=!killer.saver] at @s run function killerever/action/check_bow
 
 tag @a[scores={eat.goldapple=1..}] add killer.ga
 tag @a[scores={eat.glow=1..}] add killer.glow

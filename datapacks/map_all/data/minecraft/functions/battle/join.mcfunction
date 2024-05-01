@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 title @s title [{"text":"Battle Box","color":"white","bold": true}]
 title @s subtitle ["\u00a7f与对方开启抢夺羊毛大作战！"]
 gamemode adventure @s[gamemode=spectator]
@@ -16,3 +20,4 @@ tellraw @s[tag=GOABLE.SPEC] ["\n\u00a77  你已开启\u00a7b全局旁观者模�
 execute as @s[tag=GOABLE.SPEC] at @s run gamemode spectator
 
 execute if score battle.state state matches 1.. run function minecraft:battle/spec
+

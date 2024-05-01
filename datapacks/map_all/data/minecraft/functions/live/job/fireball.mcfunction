@@ -1,8 +1,12 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 #/summon minecraft:creeper ~ ~1 ~ {CustomName:"[\"CREEPER\"]",CustomNameVisible:1b,Invulnerable:1b,Silent:1b,PersistenceRequired:1b,Glowing:1b,powered:true,ignited:true,ExplosionRadius:2b,fuse:20s}
-item replace entity @s armor.chest with minecraft:leather_chestplate{display:{color:15488341},Unbreakable:1b,HideFlags:63,Enchantments:[{id:"minecraft:protection",lvl:1s},{id:"fire_protection",lvl:1}]}
-item replace entity @s armor.head with minecraft:note_block{Unbreakable:1b,Enchantments:[{id:"binding_curse",lvl:1}]}
-item replace entity @s armor.feet with minecraft:leather_boots{display:{color:15488341},Unbreakable:1b,Enchantments:[{id:"blast_protection",lvl:1}]}
-item replace entity @s armor.legs with minecraft:leather_leggings{display:{color:15488341},Unbreakable:1b,Enchantments:[{id:"fire_protection",lvl:1}]}
-item replace entity @s container.0 with minecraft:red_dye{Unbreakable:1b,display:{Name:'["§4Red §bSword"]',Lore:['["§c5 HP"]']},Enchantments:[{id:"unbreaking",lvl:1}],HideFlags:63,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"noName",Amount:5d,Operation:0,UUID:[I;4894,7942,7863,6495],Slot:mainhand},{AttributeName:"generic.attack_speed",Amount:-2.2,Slot:"mainhand",Operation:0,UUID:[I;1145,5145,1145,5145]}]} 1
-give @s minecraft:snowball{Enchantments:[{id:"unbreaking",lvl:1}],display:{Name:'"\\u00a74\\u00a7lFIREBALL"',Lore:['"\\u00a7b小心！火球可能会误伤你"']},HideFlags:63} 4
+item replace entity @s armor.chest with minecraft:leather_chestplate[dyed_color={rgb:15488341},unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:protection":1s,"minecraft:fire_protection":1},show_in_tooltip:false}]
+item replace entity @s armor.head with minecraft:note_block[unbreakable={},enchantments={levels:{"minecraft:binding_curse":1}}]
+item replace entity @s armor.feet with minecraft:leather_boots[dyed_color={rgb:15488341},unbreakable={},enchantments={levels:{"minecraft:blast_protection":1}}]
+item replace entity @s armor.legs with minecraft:leather_leggings[dyed_color={rgb:15488341},unbreakable={},enchantments={levels:{"minecraft:fire_protection":1}}]
+item replace entity @s container.0 with minecraft:red_dye[unbreakable={show_in_tooltip:false},custom_name='["§4Red §bSword"]',lore=['["§c5 HP"]'],enchantments={levels:{"minecraft:unbreaking":1},show_in_tooltip:false},attribute_modifiers={modifiers:[{type:"generic.attack_damage",slot:mainhand,uuid:[4894,7942,7863,6495],name:"noName",amount:5d,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",uuid:[1145,5145,1145,5145],name:"noName",amount:-2.2,operation:"add_value"}],show_in_tooltip:false}] 1
+give @s minecraft:snowball[enchantments={levels:{"minecraft:unbreaking":1},show_in_tooltip:false},custom_name='"\\u00a74\\u00a7lFIREBALL"',lore=['"\\u00a7b小心！火球可能会误伤你"']]
 # give @s carrot_on_a_stick{job:3,display:{Name:'"\\u00a7c火球 \\u00a77- 右键使用"',Lore:['"\\u00a78小心误伤！"']}}

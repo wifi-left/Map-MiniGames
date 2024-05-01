@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # beds
 # yellow -369 28 217 -369 28 218
 summon marker -369 28 217 {Tags:["bw.bed.beds","bw.bed.yellow"]}
@@ -21,7 +25,7 @@ summon area_effect_cloud -298 19.5 291 {Tags:["shop","bedwars"],CustomName:'"\\u
 summon area_effect_cloud -298 19.5 293 {Tags:["shop2","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a762"',CustomNameVisible:1b,Age:-19103293}
 summon area_effect_cloud -384 19.5 215 {Tags:["shop","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a761"',CustomNameVisible:1b,Age:-19103293}
 summon area_effect_cloud -386 19.5 215 {Tags:["shop2","bedwars"],CustomName:'"\\u00a7a\\u00a7lItem Shop \\u00a762"',CustomNameVisible:1b,Age:-19103293}
-# EFFECT 
+# EFFECT
 summon area_effect_cloud -300 19.5 127 {Tags:["bedwars","dmshop"],CustomName:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,Age:-19103293}
 summon area_effect_cloud -300 19.5 129 {Tags:["bedwars","dmshop"],CustomName:'"\\u00a7b\\u00a7lEffect Shop"',CustomNameVisible:1b,Age:-19103293}
 
@@ -60,3 +64,4 @@ summon marker -305 33.5 210 {Tags:["emerald","bedwars"],CustomName:'"\\u00a7a\\u
 summon marker -305 17.5 210 {Tags:["emerald","bedwars"],CustomName:'"\\u00a7a\\u00a7lEmerald Spawner"',CustomNameVisible:1b}
 
 scoreboard players display name date bw.info ["\u00a7701/19/24§8 \u00a78m004A"]
+

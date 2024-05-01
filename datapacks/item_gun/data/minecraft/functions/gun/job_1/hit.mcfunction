@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 tag @s add sel
 execute as @a[team=job_pvp] if score @s park.uuid = @e[tag=sel,limit=1] park.uuid run tag @s add hit.player
 
@@ -17,4 +21,4 @@ execute as @a[tag=hit.player] at @s run playsound entity.arrow.hit_player player
 tag @a remove hit.player
 tag @s remove sel
 # say 1
-function gun/die 
+function gun/die

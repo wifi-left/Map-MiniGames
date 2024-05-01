@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 forceload add 3 -49 -47 -99
 
 fill 3 29 -49 -47 20 -99 air replace snow
@@ -28,3 +32,4 @@ kill @e[tag=snow.tp]
 forceload remove 3 -49 -47 -99
 schedule clear minecraft:snow/final
 schedule clear minecraft:snow/smaller/remove1
+

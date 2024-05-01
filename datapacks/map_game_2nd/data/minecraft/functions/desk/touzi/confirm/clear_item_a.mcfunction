@@ -1,7 +1,11 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players set tmp.type board 0
 scoreboard players set tmp.type1 board 0
-execute store result score tmp.type board run data get entity @e[type=armor_stand,tag=desk.touzi.place,limit=1,sort=nearest] HandItems[0].tag.touzi
-execute store result score tmp.type1 board run data get entity @e[type=armor_stand,tag=desk.touzi.place,limit=1,sort=nearest] HandItems[0].tag.touzit
+execute store result score tmp.type board run data get entity @e[type=armor_stand,tag=desk.touzi.place,limit=1,sort=nearest] HandItems[0].components."minecraft:custom_data".touzi
+execute store result score tmp.type1 board run data get entity @e[type=armor_stand,tag=desk.touzi.place,limit=1,sort=nearest] HandItems[0].components."minecraft:custom_data".touzit
 
 execute if score tmp.type1 board matches 0 run scoreboard players remove touzit.a.number tick 1
 

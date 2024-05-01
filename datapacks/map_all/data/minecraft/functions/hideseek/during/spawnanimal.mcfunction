@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 tag @e[tag=random_game,limit=1,sort=random] add hide.sel
 scoreboard players operation hide.ranani board = @e[tag=hide.sel,limit=1] board
 tag @e remove hide.sel
@@ -13,5 +17,5 @@ execute if score hide.ranani board matches 9 run summon minecraft:block_display 
 execute if score hide.ranani board matches 10.. run summon minecraft:block_display 501 -1 -365 {Invulnerable:1b,Tags:["hide.animals","neww","hide.wtf"],block_state:{Name:"minecraft:dirt"}}
 # execute if score hide.ranani board matches 1
 execute as @e[tag=neww] run spreadplayers 468.0 -364.0 0 40 under 20 false @s
-execute as @e[tag=neww] at @s align xyz run tp @s ~ ~ ~ 
+execute as @e[tag=neww] at @s align xyz run tp @s ~ ~ ~
 tag @e[tag=neww] remove neww

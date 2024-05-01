@@ -1,5 +1,9 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 gamemode spectator @s
-scoreboard players add number boat.rounds 1 
+scoreboard players add number boat.rounds 1
 scoreboard players operation @s boat.rounds = number boat.rounds
 tellraw @s ["\n\u00a7a\u00a7l   您到达了终点。\n\u00a7b\u00a7l   您是\u00a76\u00a7l 第",{"score":{"name": "@s","objective": "boat.rounds"},"color":"gold","bold": true},"\u00a76\u00a7l名\n"]
 tellraw @a[team=boat,distance=1..] [{"selector":"@s"},"\n\u00a7a\u00a7l到达了终点。"]

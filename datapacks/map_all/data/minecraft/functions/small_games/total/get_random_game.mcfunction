@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players reset count.1 board
 scoreboard players reset count.2 board
 execute as @e[type=marker,tag=random_game] run scoreboard players add count.1 board 1
@@ -26,7 +30,7 @@ execute as @e[tag=random_game_sel] as @a[tag=play.total] at @s run playsound ent
 # Snow TNTRUN 2
 # Snow Pick 3
 # Repeling 4
-# Color 5 
+# Color 5
 # Block Believer 6
 # Muder Mystery 7
 # Duel 8
@@ -44,7 +48,7 @@ execute if score total.game board matches 8..8 if score duel.state state matches
 execute if score total.game board matches 9..9 if score hotpot.state state matches 1.. run scoreboard players set error state 1
 execute if score total.game board matches 10..10 if score pw.state state matches 1.. run scoreboard players set error state 1
 execute if score total.game board matches 11..11 if score tnt.state state matches 1.. run scoreboard players set error state 1
-# execute if score total.game board matches 10..10 run 
+# execute if score total.game board matches 10..10 run
 ## Failure: Retry
 execute as @e[tag=random_game_sel] run execute if score error state matches 1.. run function small_games/total/next_game_fail
 # execute as @e[tag=random_game_sel] run tag @s remove random_game_able
@@ -53,3 +57,4 @@ execute as @e[tag=random_game_sel] run tag @s remove random_game_sel
 
 execute unless score error state matches 1.. run schedule function small_games/total/start_next_game 5s
 scoreboard players reset error state
+

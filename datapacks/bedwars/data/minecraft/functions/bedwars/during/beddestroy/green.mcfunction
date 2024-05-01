@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players set bd.green state 0
 execute as @a[scores={pickgreen=1..},team=bw.green] run tellraw @s ["\u00a7c你不能破坏自己的床！"]
 execute as @a[scores={pickgreen=1..},team=bw.green] run function minecraft:bedwars/resets/beds/green
@@ -29,3 +33,4 @@ execute unless entity @a[scores={pickgreen=1..},team=bw.green] run title @a[team
 # execute unless entity @a[scores={pickgreen=1..},team=bw.green] run scoreboard players set §a绿§8　§r绿队:§e§l❁ bw.info 8
 execute unless entity @a[scores={pickgreen=1..},team=bw.green] run function minecraft:bedwars/during/updateinfo/green
 scoreboard players reset * pickgreen
+

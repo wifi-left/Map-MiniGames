@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # yellow
 summon marker -371 31 210 {Tags:["bw.bed.beds","bw.bed.yellow"]}
 summon marker -372 31 210 {Tags:["bw.bed.beds","bw.bed.yellow"]}
@@ -63,3 +67,4 @@ summon marker -315 38 222 {Tags:["emerald","bedwars"],CustomName:'"\\u00a7a\\u00
 summon marker -303 44 210 {Tags:["emerald","bedwars"],CustomName:'"\\u00a7a\\u00a7lEmerald Spawner"',CustomNameVisible:1b}
 
 scoreboard players display name date bw.info ["\u00a7701/19/24§8 \u00a78m002A"]
+

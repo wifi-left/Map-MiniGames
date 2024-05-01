@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 title @a[team=hide.runner,gamemode=adventure] title ["\u00a76You won!"]
 title @a[team=hide.runner,gamemode=spectator] title ["\u00a7cGame Over"]
 

@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 tellraw @s ["\u00a7e你复活了。"]
 tellraw @a[team=hide.play.hun] [{"selector":"@s"},"\u00a7c 死了。"]
 tellraw @a[team=hide.play.ani] [{"selector":"@s"},"\u00a7c 死了。"]

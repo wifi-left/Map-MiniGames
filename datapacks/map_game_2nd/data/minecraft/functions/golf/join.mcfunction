@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # team join golf @s
 # tellraw @a [{"selector":"@s"},"\u00a7a 加入了\u00a7d高尔夫游戏\u00a7a。"]
 # title @s title ["\u00a7dGOLF 高尔夫游戏"]

@@ -1,9 +1,13 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 tellraw @a[tag=bw.player] ["\n\u00a7e\u00a7lBEDWARS \u00a7c死亡决斗开始。凋灵已召唤。\n"]
 
 scoreboard players set bw.event state 4
 scoreboard players set bw.event.countdown board 360
 # bw.event
-# 0: Diamond Up 
+# 0: Diamond Up
 # 1: Emerlad Up
 # 2: Bed Gone
 # 3: Dragon

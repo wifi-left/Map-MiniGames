@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 function minecraft:twolf/action/tagselected
 execute unless entity @a[tag=wolf.selected] run return 0
 execute if entity @a[tag=wolf.selected] run tellraw @a[tag=wolf.acting] ["\u00a7d[!] ",{"selector":"@s"},"\u00a76 想要杀死 ",{"selector":"@a[tag=wolf.selected]"}]

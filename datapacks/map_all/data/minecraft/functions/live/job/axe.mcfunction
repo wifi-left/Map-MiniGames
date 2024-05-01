@@ -1,5 +1,9 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 item replace entity @s armor.head with air
-item replace entity @s armor.chest with minecraft:leather_chestplate{Unbreakable:1b,HideFlags:63,Enchantments:[{id:"minecraft:protection",lvl:1s}]}
-item replace entity @s armor.feet with minecraft:iron_boots{Unbreakable:1b}
+item replace entity @s armor.chest with minecraft:leather_chestplate[unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:protection":1s},show_in_tooltip:false}]
+item replace entity @s armor.feet with minecraft:iron_boots[unbreakable={}]
 item replace entity @s armor.legs with air
-item replace entity @s container.0 with minecraft:iron_axe{Unbreakable:1b,display:{Name:'["§6Golden §fIron §bAxe"]',Lore:['["§f7§c♥"]']},HideFlags:63,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"noName",Amount:7d,Operation:0,UUID:[I;4894,7942,7863,6495],Slot:mainhand},{AttributeName:"generic.attack_speed",Amount:-3.1,Slot:"mainhand",Operation:0,UUID:[I;1145,5145,1145,5145]}]} 1
+item replace entity @s container.0 with minecraft:iron_axe[unbreakable={show_in_tooltip:false},custom_name='["§6Golden §fIron §bAxe"]',lore=['["§f7§c♥"]'],attribute_modifiers={modifiers:[{type:"generic.attack_damage",slot:mainhand,uuid:[4894,7942,7863,6495],name:"noName",amount:7d,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",uuid:[1145,5145,1145,5145],name:"noName",amount:-3.1,operation:"add_value"}],show_in_tooltip:false}] 1

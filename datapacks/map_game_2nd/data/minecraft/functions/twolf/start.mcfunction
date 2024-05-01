@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 function minecraft:twolf/events/reset
 
 scoreboard players reset * LRS_JOB
@@ -49,3 +53,4 @@ execute if score wolf.mode board matches 1 run tellraw @a[tag=wolf.tip] ["\u00a7
 execute if score wolf.mode board matches 2 run tellraw @a[tag=wolf.tip] ["\u00a76游戏模式：\u00a7c\u00a7l屠城"]
 execute as @a[tag=wolf.tip] run function minecraft:twolf/tips/new_game
 schedule clear #wolffunctions
+

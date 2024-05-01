@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 tag @s add sel
 tag @a[team=btw.play.b,tag=hitted] add seled
 execute as @a[team=btw.play.a] if score @s park.uuid = @e[tag=sel,limit=1] park.uuid run tag @s add hit.player
@@ -8,7 +12,7 @@ execute if score tmp board matches ..0 run scoreboard players set tmp board 1
 
 
 execute as @e[tag=damage.boat] at @s run scoreboard players operation @s btw.score -= tmp board
-execute as @a[tag=seled] at @s run particle minecraft:block redstone_block ~ ~1.5 ~ 0 0 0 1 10
+execute as @a[tag=seled] at @s run particle minecraft:block{block_state:{Name:redstone_block,Properties:{}}} ~ ~1.5 ~ 0 0 0 1 10
 execute as @a[tag=seled] at @s run playsound entity.player.hurt player @s ~ ~ ~ 1 1 0.5
 execute as @a[tag=hit.player] at @s run playsound entity.arrow.hit_player player @s ~ ~ ~ 1 1 0.5
 scoreboard players add @a[tag=hit.player] btw.coin 10

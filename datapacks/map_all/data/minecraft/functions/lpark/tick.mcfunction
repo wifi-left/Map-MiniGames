@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players enable @a[team=parkour] parkour
 execute as @a[scores={park.click=1..},team=parkour] at @s run function minecraft:lpark/backpoint
 scoreboard players reset @a[scores={park.click=1..},team=parkour] park.click
@@ -18,7 +22,7 @@ execute as @a[team=parkour] at @s if block ~ ~ ~ light_weighted_pressure_plate r
 scoreboard players add @a[team=parkour] parkour.tick 5
 # 100 'tick' -> 's'
 
-execute as @a[team=parkour] at @s as @s[y=-10,dy=-50] run function lpark/backpoint 
-execute as @a[team=parkour,gamemode=adventure] at @s if block ~ ~ ~ lava run function lpark/backpoint 
-# execute as @a[team=parkour,gamemode=adventure] at @s if block ~ ~-0.2 ~ lava run function lpark/backpoint 
+execute as @a[team=parkour] at @s as @s[y=-10,dy=-50] run function lpark/backpoint
+execute as @a[team=parkour,gamemode=adventure] at @s if block ~ ~ ~ lava run function lpark/backpoint
+# execute as @a[team=parkour,gamemode=adventure] at @s if block ~ ~-0.2 ~ lava run function lpark/backpoint
 execute as @a[team=parkour,gamemode=survival] at @s run gamemode adventure @s

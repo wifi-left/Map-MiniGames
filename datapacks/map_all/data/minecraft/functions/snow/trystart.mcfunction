@@ -1,4 +1,8 @@
-scoreboard players set wait.snow.player tick 0 
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
+scoreboard players set wait.snow.player tick 0
 playsound ui.button.click player @s
 execute as @a[team=wait.snow,gamemode=adventure] run scoreboard players add wait.snow.player tick 1
 

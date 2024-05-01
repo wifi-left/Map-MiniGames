@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 function surgame:reset/start
 gamemode spectator @a[team=wait.sur]
 
@@ -9,3 +13,4 @@ tag @a remove sur.killedbyzom
 # 1: 游戏中
 # 2: 重置中
 # 3: 结束中
+

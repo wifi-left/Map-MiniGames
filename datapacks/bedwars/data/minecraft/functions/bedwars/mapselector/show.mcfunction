@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 
 execute if score bw.mode board matches 1 run data modify block -299 76 210 front_text.messages[2] set value '"\\u00a7c蘑菇岛"'
 execute if score bw.mode board matches 2 run data modify block -299 76 210 front_text.messages[2] set value '"\\u00a7b一枝花"'

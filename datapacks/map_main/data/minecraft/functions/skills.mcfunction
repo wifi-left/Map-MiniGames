@@ -1,14 +1,18 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 title @s actionbar ["\u00a7b\u00a7lSkills Actived"]
 playsound ui.button.click player @s ~ ~ ~ 1 2 1
 
-execute if entity @s[nbt={SelectedItem:{tag:{job:1}}}] run tag @s add skill.old
-execute if entity @s[nbt={SelectedItem:{tag:{job:2}}}] run tag @s add skill.scientist
-execute if entity @s[nbt={SelectedItem:{tag:{job:3}}}] run tag @s add skill.tp
-execute if entity @s[nbt={SelectedItem:{tag:{job:4}}}] run tag @s add skill.creeper
-execute if entity @s[nbt={SelectedItem:{tag:{job:7}}}] run tag @s add skill.7
-execute if entity @s[nbt={SelectedItem:{tag:{job:5}}}] run tag @s add skill.5
-execute if entity @s[nbt={SelectedItem:{tag:{job:6}}}] run tag @s add skill.6
-execute if entity @s[nbt={SelectedItem:{tag:{job:9}}}] run tag @s add skill.9
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{job:1}}}}] run tag @s add skill.old
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{job:2}}}}] run tag @s add skill.scientist
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{job:3}}}}] run tag @s add skill.tp
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{job:4}}}}] run tag @s add skill.creeper
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{job:7}}}}] run tag @s add skill.7
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{job:5}}}}] run tag @s add skill.5
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{job:6}}}}] run tag @s add skill.6
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{job:9}}}}] run tag @s add skill.9
 
 execute as @s[tag=skill.7] at @s run function gun/job_1/shoot
 execute as @s[tag=skill.6] at @s run function gun/job_2/shoot
@@ -39,9 +43,10 @@ execute as @s[tag=skill.tp] run tp @s @e[limit=1,tag=pvp.tp,sort=random]
 # Creeper
 execute as @s[tag=skill.creeper] run execute as @s at @s positioned 0.0 0.0 0.0 run summon marker ^ ^ ^2 {Tags:["f.tmp"]}
 # execute if entity @s[team=job_pvp] anchored eyes run summon fireball ^ ^ ^1 {Tags:["f.new"],ExplosionPower:1}
-execute as @s[tag=skill.creeper] run execute anchored eyes run summon minecraft:spectral_arrow ^ ^ ^1 {Glowing:1b,damage:1d,pickup:0b,Passengers:[{id:"minecraft:creeper",CustomName:'["CREEPER"]',CustomNameVisible:1b,Invulnerable:1b,Silent:1b,PersistenceRequired:1b,Glowing:1b,powered:true,ignited:true,ExplosionRadius:2b,fuse:30s}],Tags:["f.new"]}
+execute as @s[tag=skill.creeper] run execute anchored eyes run summon minecraft:spectral_arrow ^ ^ ^1 {Glowing:1b,damage:1d,pickup:0b,Passengers:[{id:"minecraft:creeper",CustomName:'["CREEPER"]',CustomNameVisible:1b,Invulnerable:1b,Silent:1b,PersistenceRequired:1b,Glowing:1b,powered:"true",ignited:"true",ExplosionRadius:2b,fuse:30s}],Tags:["f.new"]}
 execute as @s[tag=skill.creeper] run execute as @e[tag=f.new] run data modify entity @s Owner set from entity @p[tag=skill.creeper] UUID
 # execute as @e[tag=f.new] run data modify entity @s Motion set from entity @e[limit=1,sort=nearest,tag=f.tmp] Pos
+
 execute as @s[tag=skill.creeper] run execute as @e[tag=f.new] run data modify entity @s Motion set from entity @e[limit=1,tag=f.tmp] Pos
 tag @e[tag=f.new] remove f.new
 # kill @e[type=snowball,distance=0..5,sort=nearest]
@@ -72,3 +77,4 @@ tag @s remove skill.tp
 tag @s remove skill.creeper
 tag @s remove gun.1
 tag @s remove skill.9
+

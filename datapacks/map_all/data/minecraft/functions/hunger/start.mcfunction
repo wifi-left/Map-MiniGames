@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 bossbar set minecraft:hungergame players @a[team=hunger]
 bossbar set minecraft:hungergame name ["\u00a74饥饿游戏 \u00a78| \u00a7e游戏开始"]
 execute as @a[team=hunger] at @s run spreadplayers 159 147 1 40 under 0 false @s

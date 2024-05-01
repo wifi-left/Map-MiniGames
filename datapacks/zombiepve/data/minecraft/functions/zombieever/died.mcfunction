@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute if score zombie.mode board matches 1 run tellraw @s ["\u00a7c很抱歉，你死了。"]
 execute if score zombie.mode board matches 2 run tellraw @s ["\u00a7c很抱歉，你死了。\n\u00a7e如果还有玩家存活，你将在当前进度完成后复活。"]
 execute if score zombie.mode board matches 3 run tellraw @s ["\u00a7c很抱歉，你死了。\n\u00a7c由于模式设置，您已无法复活。"]

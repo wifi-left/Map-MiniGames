@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players remove hide2.resttime board 1
 scoreboard players set hide2.restanimals board 0
 scoreboard players set hide2.resthunts board 0
@@ -36,3 +40,4 @@ scoreboard players operation hide2.tmp board %= 180 board
 execute if score hide2.resttime board matches 1.. if score hide2.tmp board matches ..0 run function hide2/during/reflushitem
 
 tag @a[tag=hide2.sel] remove hide2.sel
+

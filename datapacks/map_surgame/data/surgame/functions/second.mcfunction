@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute in airworld run spawnpoint @a[team=play.sur] -46 -26 3
 execute in airworld run spawnpoint @a[team=play.sur.zom] -46 -26 3
 
@@ -35,3 +39,4 @@ effect give @e[team=play.sur.zom] jump_boost 2 1 true
 effect give @e[team=play.sur.zom] minecraft:strength 3 2 true
 effect give @e[team=play.sur.zom] minecraft:haste 3 0 true
 effect give @e[team=play.sur] minecraft:haste 3 1 true
+

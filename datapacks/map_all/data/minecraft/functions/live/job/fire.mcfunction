@@ -1,7 +1,11 @@
-item replace entity @s armor.head with minecraft:bone{Unbreakable:1b,display:{color:16711808},HideFlags:63,Enchantments:[{id:"minecraft:protection",lvl:1s},{id:"fire_protection",lvl:2s},{id:"binding_curse",lvl:1s}]}
-item replace entity @s armor.chest with minecraft:leather_chestplate{Unbreakable:1b,display:{color:16711808},HideFlags:63,Enchantments:[{id:"minecraft:protection",lvl:1s},{id:"minecraft:protection",lvl:1s},{id:"fire_protection",lvl:2s}]}
-item replace entity @s armor.feet with minecraft:iron_boots{Unbreakable:1b,display:{color:16711808},HideFlags:63,Enchantments:[{id:"minecraft:protection",lvl:1s},{id:"minecraft:protection",lvl:1s},{id:"fire_protection",lvl:2s}]}
-item replace entity @s armor.legs with leather_leggings{Unbreakable:1b,display:{color:16711808},HideFlags:63,Enchantments:[{id:"minecraft:protection",lvl:1s},{id:"minecraft:protection",lvl:1s},{id:"fire_protection",lvl:2s}]}
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
+item replace entity @s armor.head with minecraft:bone[unbreakable={show_in_tooltip:false},dyed_color={rgb:16711808},enchantments={levels:{"minecraft:protection":1s,"minecraft:fire_protection":2s,"minecraft:binding_curse":1s},show_in_tooltip:false}]
+item replace entity @s armor.chest with minecraft:leather_chestplate[unbreakable={show_in_tooltip:false},dyed_color={rgb:16711808},enchantments={levels:{"minecraft:protection":1s,"minecraft:fire_protection":2s},show_in_tooltip:false}]
+item replace entity @s armor.feet with minecraft:iron_boots[unbreakable={show_in_tooltip:false},dyed_color={rgb:16711808},enchantments={levels:{"minecraft:protection":1s,"minecraft:fire_protection":2s},show_in_tooltip:false}]
+item replace entity @s armor.legs with leather_leggings[unbreakable={show_in_tooltip:false},dyed_color={rgb:16711808},enchantments={levels:{"minecraft:protection":1s,"minecraft:fire_protection":2s},show_in_tooltip:false}]
 
 effect give @s fire_resistance 99999 25 true
-item replace entity @s container.0 with minecraft:iron_sword{Unbreakable:1b,display:{Name:'["§bSOMTHING JUST LIKE THIS"]',Lore:['["§f7§c♥"]']},HideFlags:63,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"noName",Amount:6d,Operation:0,UUID:[I;4894,7942,7863,6495],Slot:mainhand},{AttributeName:"generic.attack_speed",Amount:-2.4,Slot:"mainhand",Operation:0,UUID:[I;1145,5145,1145,5145]}],Enchantments:[{id:"fire_aspect",lvl:1}]} 1
+item replace entity @s container.0 with minecraft:iron_sword[unbreakable={show_in_tooltip:false},custom_name='["§bSOMTHING JUST LIKE THIS"]',lore=['["§f7§c♥"]'],attribute_modifiers={modifiers:[{type:"generic.attack_damage",slot:mainhand,uuid:[4894,7942,7863,6495],name:"noName",amount:6d,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",uuid:[1145,5145,1145,5145],name:"noName",amount:-2.4,operation:"add_value"}],show_in_tooltip:false},enchantments={levels:{"minecraft:fire_aspect":1},show_in_tooltip:false}] 1

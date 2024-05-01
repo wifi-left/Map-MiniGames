@@ -1,2 +1,0 @@
-tellraw @s ["\n \u00a76※ ",{"text":"Car Race","color":"#009966","bold":true}," \u00a76游戏介绍\n\n\u00a7B ※ 任务：\u00a7a使用赛车进行比赛！争取第一！\n\u00a7b ※ 作者：\u00a7aGamom\n\n    \u00a7d\u00a7l祝您游玩愉快！\n"]
-playsound ui.toast.challenge_complete player @s ~ ~ ~

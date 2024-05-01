@@ -1,7 +1,11 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players set bd.yellow state 0
 execute as @a[scores={pickyellow=1..},team=bw.yellow] run tellraw @s ["\u00a7c你不能破坏自己的床！"]
 execute as @a[scores={pickyellow=1..},team=bw.yellow] run function minecraft:bedwars/resets/beds/yellow
-# execute as @a[scores={pickyellow=1..},team=bw.yellow] run 
+# execute as @a[scores={pickyellow=1..},team=bw.yellow] run
 execute as @a[scores={pickyellow=1..},team=bw.yellow] run scoreboard players set bd.yellow state 1
 
 # execute unless entity @a[scores={pickyellow=1..}] run setblock -371 31 210 yellow_bed[facing=west]
@@ -28,3 +32,4 @@ execute unless entity @a[scores={pickyellow=1..},team=bw.yellow] run title @a[te
 execute unless entity @a[scores={pickyellow=1..},team=bw.yellow] run function minecraft:bedwars/during/updateinfo/yellow
 
 scoreboard players reset * pickyellow
+

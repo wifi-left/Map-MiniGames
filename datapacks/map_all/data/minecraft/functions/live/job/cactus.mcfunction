@@ -1,8 +1,13 @@
-item replace entity @s armor.head with minecraft:cactus{Unbreakable:1b,Enchantments:[{id:"minecraft:protection",lvl:2s},{id:"minecraft:thorns",lvl:2s}],AttributeModifiers:[{AttributeName:"generic.movement_speed",Name:"noName",Amount:0.01d,Operation:0,UUID:[I;1693,9851,4672,6648]}]} 1
-item replace entity @s armor.chest with minecraft:leather_chestplate{Unbreakable:1b,HideFlags:63,Enchantments:[{id:"minecraft:protection",lvl:1s}]}
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
+item replace entity @s armor.head with minecraft:cactus[unbreakable={},enchantments={levels:{"minecraft:protection":2s,"minecraft:thorns":2s}},attribute_modifiers={modifiers:[{type:"generic.movement_speed",slot:"any",uuid:[1693,9851,4672,6648],name:"noName",amount:0.01d,operation:"add_value"}]}] 1
+item replace entity @s armor.chest with minecraft:leather_chestplate[unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:protection":1s},show_in_tooltip:false}]
 
-item replace entity @s armor.feet with minecraft:leather_boots{Unbreakable:1b}
+item replace entity @s armor.feet with minecraft:leather_boots[unbreakable={}]
 
-item replace entity @s armor.legs with minecraft:iron_leggings{Unbreakable:1b}
+item replace entity @s armor.legs with minecraft:iron_leggings[unbreakable={}]
 
-item replace entity @s container.0 with minecraft:iron_sword{Unbreakable:1b,display:{Name:'["§6Golden §rIron §bSword"]',Lore:['["§f5§c♥"]']},HideFlags:63,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"noName",Amount:5d,Operation:0,UUID:[I;4894,7942,7863,6495],Slot:mainhand},{AttributeName:"generic.attack_speed",Amount:-2.4,Slot:"mainhand",Operation:0,UUID:[I;1145,5145,1145,5145]}]} 1
+item replace entity @s container.0 with minecraft:iron_sword[unbreakable={show_in_tooltip:false},custom_name='["§6Golden §rIron §bSword"]',lore=['["§f5§c♥"]'],attribute_modifiers={modifiers:[{type:"generic.attack_damage",slot:mainhand,uuid:[4894,7942,7863,6495],name:"noName",amount:5d,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",uuid:[1145,5145,1145,5145],name:"noName",amount:-2.4,operation:"add_value"}],show_in_tooltip:false}] 1
+

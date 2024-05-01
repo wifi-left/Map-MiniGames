@@ -1,4 +1,8 @@
-scoreboard players set start.player tick 0 
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
+scoreboard players set start.player tick 0
 effect clear @a[team=hide.wait2]
 execute as @a[team=hide.wait2,gamemode=adventure] run scoreboard players add start.player tick 1
 scoreboard players operation hide2.maxtime1 board = start.player tick

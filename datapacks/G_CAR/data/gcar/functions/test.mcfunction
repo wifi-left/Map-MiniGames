@@ -1,1 +1,0 @@
-say @a[nbt={Inventory:[{id:"minecraft:minecart",Slot:-106b,tag:{display:{}}}]}]

@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 tellraw @a[team=chestgame] ["\u00a76轮到\u00a7f\u00a7l白队\u00a76下棋了。"]
 tellraw @a[tag=chess.white] ["\u00a7a轮到你下棋了。\n\u00a77注意：你与你的队友本局只有1颗棋子可以下。"]
 execute as @a[tag=chess.white] at @s run playsound entity.experience_orb.pickup player @s

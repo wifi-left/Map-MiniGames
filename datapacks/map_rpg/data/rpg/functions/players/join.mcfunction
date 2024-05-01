@@ -1,2 +1,6 @@
+##
+## Datapack Upgrader v1.0.0 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 tellraw @s ["\n\u00a7c    此游戏需要 MiniGames RPG 附加包，但服务器尚未安装。\n    \u00a76附加包介绍：",{"text":"[点击打开 GitLab]","color":"aqua","bold": true,"clickEvent": {"action":"open_url","value": "https://gitlab.com/wifi-left/map-minigames-rpg/-/blob/master/README.md"}},"\n"]
 playsound entity.enderman.teleport player @s ~ ~ ~ 1 0 1
