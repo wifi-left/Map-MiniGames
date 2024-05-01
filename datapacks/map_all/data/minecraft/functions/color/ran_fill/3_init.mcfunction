@@ -12,16 +12,19 @@ execute store result score color.ran.targetcount board run random value 1..18
 function color/rancolor
 execute if score color.ran.targetcount board matches 1 run clone -52 35 64 -52 35 64 -52 35 61
 execute positioned -52 35 61 run function minecraft:color/ran_fill/3_whichblock
+
 data merge storage minecraft:temp {x1:-5,x2:30,y1:17,y2:17,z1:112,z2:77}
 function color/ran_fill/3_place with storage minecraft:temp
 function color/rancolor
 execute if score color.ran.targetcount board matches 2 run clone -52 35 64 -52 35 64 -52 35 61
 execute positioned -52 35 61 run function minecraft:color/ran_fill/3_whichblock
+
 data merge storage minecraft:temp {x1:-4,x2:29,y1:17,y2:17,z1:111,z2:78}
 function color/ran_fill/3_place with storage minecraft:temp
 function color/rancolor
 execute if score color.ran.targetcount board matches 3 run clone -52 35 64 -52 35 64 -52 35 61
 execute positioned -52 35 61 run function minecraft:color/ran_fill/3_whichblock
+
 data merge storage minecraft:temp {x1:-3,x2:28,y1:17,y2:17,z1:110,z2:79}
 function color/ran_fill/3_place with storage minecraft:temp
 function color/rancolor

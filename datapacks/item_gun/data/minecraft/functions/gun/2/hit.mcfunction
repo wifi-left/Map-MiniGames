@@ -20,7 +20,12 @@ scoreboard players add tmp.health.calc1 board 0
 scoreboard players add tmp.health.calc2 board 0
 tellraw @a[tag=hit.player] ["\u00a76+30\u00a76 Coins"]
 tellraw @a[tag=hit.player] ["\u00a78 - 剩余血量：",{"score":{"objective": "board","name": "tmp.health.calc1"},"color":"yellow"},".",{"score":{"objective": "board","name": "tmp.health.calc2"},"color":"yellow"},"\u00a7c♥"]
+
 data merge entity @e[tag=hitted,limit=1] {Fire:20s}
+
+data modify entity @e[tag=hitted,limit=1] AngryAt set from entity @s UUID
+
+data merge entity @e[tag=hitted,limit=1] {AngerTime:540}
 execute as @e[tag=hitted] at @s run particle minecraft:block{block_state:{Name:redstone_block,Properties:{}}} ~ ~1.5 ~ 0 0 0 1 10
 execute as @a[tag=hit.player] at @s run playsound entity.arrow.hit_player player @s ~ ~ ~ 1 1 0.5
 execute as @a[tag=hit.player] at @s run scoreboard players add @s zombie.coin 30

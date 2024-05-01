@@ -6,9 +6,11 @@ scoreboard players set tick3 tick 0
 give @a[team=play.live.runner,gamemode=adventure] arrow
 # give  arrow 1
 ## 210 116 30 拉杆2 - 烟花
+
 execute if block 210 116 22 lever[powered=true] run function lobby/firework
 
 ## 210 116 22 拉杆1 - 烟花
+
 execute if block 210 116 30 lever[powered=true] run function lobby/firework2
 
 execute if score killer.state state matches 1.. run function minecraft:killerever/tsecond

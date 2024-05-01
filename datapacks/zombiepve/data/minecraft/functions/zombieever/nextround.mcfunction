@@ -8,8 +8,8 @@ tellraw @a[team=play.zombie] ["\u00a7e进度推进 \u00a7b[Process ",{"score":{"
 # Total
 
 execute as @e[tag=pve.zombie] run data merge entity @s {PersistenceRequired:1b,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]}
-execute if score zombie.round board matches 12 if entity @e[tag=pve.root] run function zombieever/rounds/11
-execute if score zombie.round board matches 12 unless entity @e[tag=pve.root] run function zombieever/talks/crazyrabbit/win
+execute if score zombie.round board matches 12 if entity @e[tag=pve.zombie,tag=pve.root] run function zombieever/rounds/11
+execute if score zombie.round board matches 12 unless entity @e[tag=pve.zombie,tag=pve.root] run function zombieever/talks/crazyrabbit/win
 
 ## 下一把开始（开始检测）
 # scoreboard players set zombie.state state 1
@@ -26,7 +26,7 @@ execute if score zombie.round board matches 18..22 run schedule function zombiee
 execute if score zombie.round board matches 23 run function zombieever/door/open_cave_loot_out
 execute if score zombie.round board matches 24 run function zombieever/rounds/lava
 execute if score zombie.round board matches 25 run function zombieever/door/stronghold_tpup
-execute if score zombie.round board matches 27 if entity @e[tag=pve.root] run function zombieever/rounds/strongholdboss_xb
+execute if score zombie.round board matches 27 if entity @e[tag=pve.zombie,tag=pve.root] run function zombieever/rounds/strongholdboss_xb
 # execute if score zombie.round board matches 28 if entity @e[tag=pve.zombie,tag=pve.root] run function zombieever/rounds/strongholdboss_xb
 execute if score zombie.round board matches 27 run function zombieever/door/open_cave_wall_boss
 

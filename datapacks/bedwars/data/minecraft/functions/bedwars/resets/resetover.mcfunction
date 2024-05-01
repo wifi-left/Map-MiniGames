@@ -51,9 +51,13 @@ scoreboard players set bw.green state 1
 scoreboard players set bw.yellow state 1
 scoreboard players set bw.red state 1
 
+
 data merge block -302 30 131 {Items: []}
+
 data merge block -226 30 211 {Items: []}
+
 data merge block -306 30 287 {Items: []}
+
 data merge block -382 30 207 {Items: []}
 
 function bedwars/resets/placebed

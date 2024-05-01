@@ -5,8 +5,11 @@
 # setblock ~ ~ ~ air
 fill ~ ~ ~ ~15 ~15 ~31 air
 kill @e[type=item,distance=0..30]
+
 execute store result storage boat:main random int 1 run random value 1..15
+
 execute as @s[tag=boat.reset.structure.water] at @s run data merge storage boat:main {type:"water"}
+
 execute as @s[tag=boat.reset.structure.normal] at @s run data merge storage boat:main {type:"ice"}
 function minecraft:boat/reset_set_random with storage boat:main
 # PIG

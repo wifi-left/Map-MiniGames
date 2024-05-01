@@ -3,6 +3,7 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 function minecraft:lobby/elevent
+
 execute if block 123 121 59 oak_button[powered=true] run function lobby/car
 function foodparty:tick
 execute as @a[team=lobby] at @s run function lobby/quickplay
@@ -38,7 +39,7 @@ execute as @a[tag=NEWENTER] at @s run attribute @s minecraft:generic.attack_spee
 execute as @a[tag=NEWENTER] run bossbar set surgame:time players @a[team=wait.sur]
 
 execute as @a[tag=NEWENTER] unless score @s park.uuid matches 0.. run function minecraft:npark/getuuid
-tellraw @a[tag=GOABLE.SPEC] ["\n\u00a77  你已开启\u00a7b全局旁观者模式\u00a77。\n  \u00a77",{"text":"\u00a7a\u00a7l点击此处，或者使用 \u00a76\u00a7l/trigger spec set 3 \u00a7a\u00a7l退出全局旁观者模式","bold":true,"clickEvent": {"action": "run_command","value": "/trigger spec set 3"},"hoverEvent": {"action": "show_text","contents": "\u00a7c点击此处退出全局旁观者模式"}},"\n"]
+tellraw @a[tag=NEWENTER,tag=GOABLE.SPEC] ["\n\u00a77  你已开启\u00a7b全局旁观者模式\u00a77。\n  \u00a77",{"text":"\u00a7a\u00a7l点击此处，或者使用 \u00a76\u00a7l/trigger spec set 3 \u00a7a\u00a7l退出全局旁观者模式","bold":true,"clickEvent": {"action": "run_command","value": "/trigger spec set 3"},"hoverEvent": {"action": "show_text","contents": "\u00a7c点击此处退出全局旁观者模式"}},"\n"]
 effect clear @a[tag=NEWENTER]
 tag @a[tag=NEWENTER] remove zombie.nehelp
 tag @a[tag=NEWENTER] remove parkouring
@@ -99,9 +100,9 @@ execute as @a[scores={use.skill=1..},level=..0,team=hide.play.ani] at @s run fun
 
 
 
-execute in airworld as @a[gamemode=!spectator,team=play.sur,x=-46,y=-26,z=3,distance=0..4] run function surgame:died
-execute in airworld as @a[gamemode=!spectator,team=play.sur.zom,x=-46,y=-26,z=3,distance=0..4] run function surgame:died
-execute in airworld as @a[gamemode=!spectator,team=wait.sur,x=-46,y=-26,z=3,distance=0..4] run function surgame:join
+execute in airworld as @a[gamemode=!creative,gamemode=!spectator,team=play.sur,x=-46,y=-26,z=3,distance=0..4] run function surgame:died
+execute in airworld as @a[gamemode=!creative,gamemode=!spectator,team=play.sur.zom,x=-46,y=-26,z=3,distance=0..4] run function surgame:died
+execute in airworld as @a[gamemode=!creative,gamemode=!spectator,team=wait.sur,x=-46,y=-26,z=3,distance=0..4] run function surgame:join
 
 # execute as @a[scores={use.skill=1..,cooldowntime=1..},team=play.zombie] at @s run title @s actionbar ["\u00a7c\u00a7l冷却中: ",{"score":{"objective": "cooldowntime","name": "@s"},"color":"yellow"},"\u00a7et"]
 execute as @a[scores={cooldowntime=1..},team=play.zombie] at @s run scoreboard players remove @s cooldowntime 1
@@ -151,6 +152,7 @@ effect give @a[team=car.wait] minecraft:resistance 1 25 true
 effect give @a[team=wait.repel] minecraft:resistance 1 25 true
 kill @e[type=arrow,nbt={inGround:1b}]
 kill @e[type=spectral_arrow,nbt={inGround:1b}]
+# execute as @e[type=area_effect_cloud,tag=title] at @s run data modify
 execute if score gametotal state matches 1.. run function minecraft:small_games/total/tick
 # execute if score @a[team=wait.total] run function minecraft:small_games/total/tick
 
@@ -168,8 +170,8 @@ execute as @a[tag=join.livelongest] run tp @s 25 7 0 0 0
 execute as @a[tag=join.livelongest] run team leave @s
 execute as @a[tag=join.livelongest] run tellraw @a ["\u00a7a\u00a7l[MESSAGE] \u00a7a",{"selector":"@s","color":"gray"},"\u00a7e joined \u00a76Live Longest \u00a7e."]
 
-tellraw @a[tag=join.livelongest] ["\n\u00a77  你已开启\u00a7b全局旁观者模式\u00a77。\n  \u00a77由于你进入游戏后会变为旁观模式，请使用 \u00a76/trigger hub\u00a77 返回大厅。\n  ",{"text":"\u00a7a\u00a7l点击此处，或者使用 \u00a76\u00a7l/trigger spec set 3 \u00a7a\u00a7l退出全局旁观者模式","bold":true,"clickEvent": {"action": "run_command","value": "/trigger spec set 3"},"hoverEvent": {"action": "show_text","contents": "\u00a7c点击此处退出全局旁观者模式"}},"\n"]
-execute as @a[tag=join.livelongest] at @s run gamemode spectator
+tellraw @a[tag=GOABLE.SPEC,tag=join.livelongest] ["\n\u00a77  你已开启\u00a7b全局旁观者模式\u00a77。\n  \u00a77由于你进入游戏后会变为旁观模式，请使用 \u00a76/trigger hub\u00a77 返回大厅。\n  ",{"text":"\u00a7a\u00a7l点击此处，或者使用 \u00a76\u00a7l/trigger spec set 3 \u00a7a\u00a7l退出全局旁观者模式","bold":true,"clickEvent": {"action": "run_command","value": "/trigger spec set 3"},"hoverEvent": {"action": "show_text","contents": "\u00a7c点击此处退出全局旁观者模式"}},"\n"]
+execute as @a[tag=GOABLE.SPEC,tag=join.livelongest] at @s run gamemode spectator
 execute as @a[tag=join.livelongest] run team join wait.live @s
 execute as @a[tag=join.livelongest] run tag @s remove join.livelongest
 

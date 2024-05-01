@@ -10,7 +10,7 @@ tag @a[team=play.killer,nbt={Inventory:[{id:"minecraft:mushroom_stew",Slot:-106b
 
 # execute as @e[tag=killer.bow] at @s run function
 execute as @a[team=play.killer,tag=killer.killer] at @s run function killerever/action/check_if_get_bow
-execute as @a[team=play.killer,tag=!killer.saver] at @s run function killerever/action/check_bow
+execute as @a[team=play.killer,tag=killer.runner,tag=!killer.saver] at @s run function killerever/action/check_bow
 
 tag @a[scores={eat.goldapple=1..}] add killer.ga
 tag @a[scores={eat.glow=1..}] add killer.glow

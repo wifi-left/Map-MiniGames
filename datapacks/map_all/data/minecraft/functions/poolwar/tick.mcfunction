@@ -11,7 +11,9 @@ execute as @a[team=pw.play,gamemode=adventure] at @s if block ~ ~ ~ air if block
 execute as @a[team=pw.play,gamemode=adventure] at @s if block ~ ~ ~ water if score @s drown matches 50.. run title @s actionbar ["\u00a7e\u00a7l请注意您的体力 ",{"score":{"objective": "drown","name": "@s"},"color": "red"},"\u00a76 / \u00a7a",{"score":{"objective": "pw.max","name": "@s"},"color": "green"}]
 execute as @a[team=pw.play,gamemode=adventure] at @s if block ~ ~ ~ water if score @s drown matches ..49 run title @s actionbar ["\u00a7c\u00a7l您感觉有点累 ",{"score":{"objective": "drown","name": "@s"},"color": "red"},"\u00a76 / \u00a7a",{"score":{"objective": "pw.max","name": "@s"},"color": "green"}]
 execute as @a[team=pw.play,gamemode=adventure] at @s if block ~ ~ ~ water if score @s drown matches ..99 run effect give @s slowness 1 3 true
+
 execute as @a[team=pw.play,gamemode=adventure] at @s as @e[type=item,distance=..3,sort=nearest] at @s run data modify entity @s Owner set from entity @s Thrower
+
 execute as @a[team=pw.play,gamemode=adventure] at @s as @e[type=item,distance=..3,sort=nearest] at @s run data merge entity @s {PickupDelay:0}
 # PickupDelay
 # execute as @a[team=pw.play] at @s  run scoreboard players add @s drown 1

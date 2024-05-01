@@ -2,8 +2,8 @@
 ## Datapack Upgrader v1.0.0 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
-title @s[team=!play.duel.blue] title [{"text":"Duel Game","color":"yellow","bold": true}]
-title @s[team=!play.duel.blue] subtitle ["\u00a7rFight !"]
+title @s[team=!play.duel.yellow,team=!play.duel.blue] title [{"text":"Duel Game","color":"yellow","bold": true}]
+title @s[team=!play.duel.yellow,team=!play.duel.blue] subtitle ["\u00a7rFight !"]
 team join wait.duel @s
 tellraw @a[team=!wait.duel] ["\u00a7a\u00a7l[MESSAGE] ",{"selector":"@s"},"\u00a77 已加入 ",{"text":"Duel Game","color":"yellow","bold": true}," \u00a77!"]
 scoreboard players set wait.player tick 0

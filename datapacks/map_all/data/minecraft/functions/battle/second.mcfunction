@@ -41,7 +41,7 @@ execute if score battle.state state matches 1..4 if score battle.player.b tick m
 
 execute if score battle.state state matches 1 run function battle/testfor/secondblock
 execute if score battle.state state matches 1 if score battle.time board matches ..0 run function battle/testfor/finalblock
-execute if score battle.state state matches 3 if score battle.time board matches ..0 as @a[tag=battle.notready] run function battle/choose/auto
+execute if score battle.state state matches 3 if score battle.time board matches ..0 as @a[tag=battle.sel,tag=battle.notready] run function battle/choose/auto
 execute if score battle.state state matches 3 if score battle.time board matches ..0 run function battle/round_ready
 execute if score battle.state state matches 3 run function battle/testfor/allready
 execute if score battle.state state matches 4 if score battle.time board matches 1.. run tellraw @a[tag=battle.sel] ["\u00a7e笼子将在",{"score":{"name": "battle.time","objective": "board"},"color":"red"},"\u00a7e秒后打开。"]

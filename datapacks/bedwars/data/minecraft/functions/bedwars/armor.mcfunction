@@ -10,5 +10,5 @@ tag @a[tag=bwneeds,nbt={Inventory:[{id:"minecraft:diamond_sword"}]}] remove bwne
 
 function fix:bw/armor
 
-execute as @a[tag=bw.play,gamemode=!spectator] run function minecraft:bedwars/during/player/removearmor
-execute as @a[tag=bw.play,gamemode=!spectator] run function minecraft:bedwars/during/player/getarmor
+execute as @a[tag=INV,tag=bw.play,gamemode=!spectator] run function minecraft:bedwars/during/player/removearmor
+execute as @a[tag=!INV,tag=bw.play,gamemode=!spectator] run function minecraft:bedwars/during/player/getarmor

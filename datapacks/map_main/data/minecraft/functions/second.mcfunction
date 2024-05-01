@@ -19,6 +19,7 @@ execute if score park.state state matches 1.. run function minecraft:parkourrace
 execute if score pw.state state matches 1.. run function minecraft:poolwar/second
 function minecraft:snow/second
 execute if score car.state state matches 1.. run function minecraft:car_race/second
+
 execute as @e[tag=block_entity] run data merge entity @s {Time:100}
 
 execute as @e[type=minecart,tag=lobby.car] at @s if block ~ ~ ~ lava run kill @s
@@ -35,6 +36,7 @@ execute if score boat.state state matches 1.. in boatworld2 run function boat/se
 execute if score sur.state state matches 1.. in airworld run function surgame:second
 effect give @a[team=boat] resistance 3 25 true
 
+
 execute as @e[type=area_effect_cloud,tag=lobby] at @s run data merge entity @s {Duration:2147483647,Age:0}
 
 function foodparty:second
@@ -42,7 +44,7 @@ tag @a[team=lobby] add music.playing
 tag @a[team=dropper] add music.playing
 tag @a[team=chestgame] add music.playing
 tag @a[team=parkour] add music.playing
-tag @a[tag=music.playing,team=!chestgame] remove music_kano
-tag @a[tag=music.playing,team=!chestgame] remove music_little_stars
-tag @a[tag=music.playing,team=!chestgame] remove music.playing
+tag @a[tag=music.playing,team=!lobby,team=!dropper,team=!parkour,team=!chestgame] remove music_kano
+tag @a[tag=music.playing,team=!lobby,team=!dropper,team=!parkour,team=!chestgame] remove music_little_stars
+tag @a[tag=music.playing,team=!lobby,team=!dropper,team=!parkour,team=!chestgame] remove music.playing
 scoreboard players reset @a[tag=!music.playing] time

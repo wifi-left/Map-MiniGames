@@ -13,5 +13,5 @@ execute if score zombie.round board matches 16 run function zombieever/tasks/det
 execute if score zombie.round board matches 17 run function zombieever/tasks/detect/stronghold_open
 
 xp add @a[team=play.zombie,level=..200,gamemode=adventure] 1 points
-execute as @a[team=play.zombie,level=..200,gamemode=adventure] run xp add @s[nbt={Inventory:[{id:"minecraft:paper",components:{"minecraft:custom_data":{hpdouble:"true"}}}]}] 5 points
-execute as @a[team=play.zombie,level=30..200,gamemode=adventure] run xp add @s[nbt={Inventory:[{id:"minecraft:paper",components:{"minecraft:custom_data":{hpdouble:"true"}}}]}] 5 points
+execute as @a[team=play.zombie,level=..200,gamemode=adventure] run xp add @s[nbt={Inventory:[{id:"minecraft:paper",components:{"minecraft:custom_data":{hpdouble:true}}}]}] 5 points
+execute as @a[team=play.zombie,level=30..200,gamemode=adventure] run xp add @s[nbt={Inventory:[{id:"minecraft:paper",components:{"minecraft:custom_data":{hpdouble:true}}}]}] 5 points

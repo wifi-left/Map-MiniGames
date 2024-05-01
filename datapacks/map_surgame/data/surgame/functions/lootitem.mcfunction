@@ -12,8 +12,11 @@ data modify block -46 -20 3 front_text.messages[0] set value '[{"selector":"@a[t
 forceload remove -46 3 -46 3
 team join play.sur @s
 summon item ~ ~ ~ {Item:{id:"minecraft:bundle",count:1,components:{"minecraft:custom_data":{surItem:1b}}},Tags:["sur.loot.new"],CustomNameVisible:1b}
+
 data modify entity @e[limit=1,type=item,tag=sur.loot.new] Item.components."minecraft:bundle_contents" set from entity @s Inventory
+
 data modify entity @e[limit=1,type=item,tag=sur.loot.new] Item.components."minecraft:custom_name" set from block -46 -20 3 front_text.messages[0]
+
 data modify entity @e[limit=1,type=item,tag=sur.loot.new] CustomName set from block -46 -20 3 front_text.messages[0]
 tag @e[tag=sur.loot.new] remove sur.loot.new
 # execute as @a[team=sur] if predicate minecraft:sur/killed

@@ -2,8 +2,8 @@
 ## Datapack Upgrader v1.0.0 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
-execute if data entity @s {data:{team:1}} run particle minecraft:dust{color:[0.059, 0.973, 0.439],scale:1} ~ ~ ~ 0 0 0 1 1
-execute if data entity @s {data:{team:2}} run particle minecraft:dust{color:[0.973, 0.059, 0.059],scale:1} ~ ~ ~ 0 0 0 1 1
+execute if data entity @s {data:{team:1}} run particle minecraft:dust{color:[0.059d, 0.973d, 0.439d],scale:1} ~ ~ ~ 0 0 0 1 1
+execute if data entity @s {data:{team:2}} run particle minecraft:dust{color:[0.973d, 0.059d, 0.059d],scale:1} ~ ~ ~ 0 0 0 1 1
 
 execute if score @s PSTJ matches ..-1 run function boatgun:gun/die
 execute if score @s PSTJ matches 0.. if block ^ ^ ^1 #gunblock run function boatgun:gun/die

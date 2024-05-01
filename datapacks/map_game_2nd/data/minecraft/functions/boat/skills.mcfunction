@@ -5,7 +5,7 @@
 execute as @s[level=..0] run tag @s add boat.skillok
 execute at @s run playsound ui.button.click player @s
 execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{boatItem:3b}}}},tag=boat.notspawn] run tag @s add skill.boat.3
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{boatItem:2b}}}},tag=!boat.notspawn] run tag @s add skill.boat.2
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{boatItem:2b}}}},tag=boat.skillok,tag=!boat.notspawn] run tag @s add skill.boat.2
 execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{boatItem:1b}}}},tag=!boat.notspawn] run tag @s add skill.boat.1
 
 execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{boatItem:4b}}}},tag=!boat.notspawn] run tag @s add skill.boat.trap
@@ -36,9 +36,9 @@ execute as @s[tag=skill.boat.trap] at @s run title @s actionbar ["\u00a7a\u00a7l
 execute as @s[tag=skill.boat.trap] at @s run clear @s carrot_on_a_stick[custom_data~{boatItem:4b}]
 
 
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{boatItem:2b}}}},tag=!boat.notspawn] run title @s actionbar ["\u00a7c\u00a7l此技能冷却中"]
-execute if entity @s[tag=!boat.skillok] run title @s actionbar ["\u00a7c\u00a7l此技能冷却中"]
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{boatItem:2b}}}},tag=!boat.notspawn] run playsound entity.enderman.teleport player @s ~ ~ ~ 5 0 1
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{boatItem:2b}}}},tag=!boat.skillok,tag=!boat.notspawn] run title @s actionbar ["\u00a7c\u00a7l此技能冷却中"]
+execute if entity @s[tag=boat.trap,tag=!boat.skillok] run title @s actionbar ["\u00a7c\u00a7l此技能冷却中"]
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{boatItem:2b}}}},tag=!boat.skillok,tag=!boat.notspawn] run playsound entity.enderman.teleport player @s ~ ~ ~ 5 0 1
 
 tag @s remove skill.boat.3
 tag @s remove skill.boat.2

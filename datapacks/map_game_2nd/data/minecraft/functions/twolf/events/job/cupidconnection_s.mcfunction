@@ -3,7 +3,7 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 tag @a[tag=wolf.connected,limit=1,team=wolfpeople] add wolf.1
-tag @a[tag=!wolf.1,team=wolfpeople,limit=1] add wolf.2
+tag @a[tag=wolf.connected,tag=!wolf.1,team=wolfpeople,limit=1] add wolf.2
 
 execute store result score wolf.1 board as @a[tag=wolf.1] run function twolf/action/per/getjobtype
 execute store result score wolf.2 board as @a[tag=wolf.2] run function twolf/action/per/getjobtype

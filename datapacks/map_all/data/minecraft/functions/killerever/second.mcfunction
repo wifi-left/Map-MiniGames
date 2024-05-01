@@ -16,4 +16,5 @@ execute if score killer.state state matches 1..3 if score play.killer.player tic
 
 item replace entity @a[team=play.killer,nbt={Inventory:[{id:"minecraft:bow"}]}] container.8 with arrow[custom_data={ms:1}]
 
+
 execute as @e[tag=killer.bow,nbt={Glowing:1b}] at @s unless data entity @s {HandItems:[{id:"minecraft:bow"},{}]} at @s run data merge entity @s {Glowing:0b,CustomName:'""',CustomNameVisible:0b,Marker:1b}

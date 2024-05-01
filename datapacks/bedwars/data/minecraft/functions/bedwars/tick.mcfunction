@@ -37,6 +37,7 @@ kill @e[type=item,nbt={Item:{id:"minecraft:yellow_bed"}}]
 kill @e[type=item,nbt={Item:{id:"minecraft:lime_bed"}}]
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{bw:1}}}}]
 
+
 execute as @e[tag=bedwars,type=area_effect_cloud] at @s run data merge entity @s {Duration:-1,Age: -2147483648,WaitTime: -2147483648}
 # [!]
 function fix:bw/editnbt
@@ -68,5 +69,5 @@ execute if entity @e[scores={attack.1=1..},tag=bw.player] run effect clear @a[ta
 execute if entity @e[scores={attack.1=1..},tag=bw.player] run tellraw @a[tag=INV,scores={hurt.1=1..}] ["\u00a7c你的隐身状态因为受到伤害被取消！"]
 scoreboard players reset @a[scores={hurt.1=1..}] hurt.1
 scoreboard players reset @a[scores={attack.1=1..}] attack.1
-execute as @a[tag=INV] at @s run particle minecraft:dust{color:[0.388, 0.388, 0.388],scale:1} ~ ~ ~ 0 0 0 1 1 force
+execute as @a[tag=INV] at @s run particle minecraft:dust{color:[0.388d, 0.388d, 0.388d],scale:1} ~ ~ ~ 0 0 0 1 1 force
 
