@@ -8,4 +8,4 @@ item replace entity @s armor.feet with minecraft:iron_boots[unbreakable={}]
 item replace entity @s armor.legs with minecraft:iron_leggings[unbreakable={}]
 item replace entity @s container.0 with minecraft:iron_sword[unbreakable={show_in_tooltip:false},custom_name='["§6Golden §rIron §bSword"]',lore=['["§f3§c♥"]'],attribute_modifiers={modifiers:[{type:"generic.attack_damage",slot:mainhand,uuid:[4894,7942,7863,6495],name:"noName",amount:3d,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",uuid:[1145,5145,1145,5145],name:"noName",amount:-2.4,operation:"add_value"}],show_in_tooltip:false}] 1
 item replace entity @s container.1 with minecraft:bow[unbreakable={},custom_name='["§aR§ba§ci§dn §eB§fo§6w"]',lore=['["§aR§ba§ci§dn §eB§fo§6w"]','["§aR§ba§ci§dn §eB§fo§6w"]','["§aR§ba§ci§dn §eB§fo§6w"]'],enchantments={levels:{"minecraft:power":0s}}] 1
-give @s arrow
+give @s arrow 32

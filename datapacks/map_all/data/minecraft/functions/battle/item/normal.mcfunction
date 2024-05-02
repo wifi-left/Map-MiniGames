@@ -8,8 +8,8 @@
 clear @s
 give @s wooden_sword[can_break={predicates:[{blocks:["white_wool","blue_wool","red_wool"]}],show_in_tooltip:false},unbreakable={show_in_tooltip:false},lore=['""','"\\u00a77在主手时："','"\\u00a72 4 攻击伤害"','"\\u00a72 1.6 攻击速度"']]
 give @s shears[can_break={predicates:[{blocks:["white_wool","blue_wool","red_wool"]}],show_in_tooltip:false},unbreakable={show_in_tooltip:false}]
-give @s[team=play.battle.r] red_wool[can_break={predicates:[{blocks:["white_wool","blue_wool","red_wool"]}],show_in_tooltip:false},can_place_on={predicates:[{blocks:["sea_lantern","white_wool","blue_wool","red_wool"]}],show_in_tooltip:false},unbreakable={show_in_tooltip:false}]
-give @s[team=play.battle.b] blue_wool[can_break={predicates:[{blocks:["white_wool","blue_wool","red_wool"]}],show_in_tooltip:false},can_place_on={predicates:[{blocks:["sea_lantern","white_wool","blue_wool","red_wool"]}],show_in_tooltip:false},unbreakable={show_in_tooltip:false}]
+give @s[team=play.battle.r] red_wool[can_break={predicates:[{blocks:["white_wool","blue_wool","red_wool"]}],show_in_tooltip:false},can_place_on={predicates:[{blocks:["sea_lantern","white_wool","blue_wool","red_wool"]}],show_in_tooltip:false},unbreakable={show_in_tooltip:false}] 64
+give @s[team=play.battle.b] blue_wool[can_break={predicates:[{blocks:["white_wool","blue_wool","red_wool"]}],show_in_tooltip:false},can_place_on={predicates:[{blocks:["sea_lantern","white_wool","blue_wool","red_wool"]}],show_in_tooltip:false},unbreakable={show_in_tooltip:false}] 64
 give @s bow[can_break={predicates:[{blocks:["white_wool","blue_wool","red_wool"]}],show_in_tooltip:false},unbreakable={show_in_tooltip:false}]
 
 item replace entity @s armor.feet with leather_boots[can_break={predicates:[{blocks:["white_wool","blue_wool","red_wool"]}],show_in_tooltip:false},unbreakable={show_in_tooltip:false}]

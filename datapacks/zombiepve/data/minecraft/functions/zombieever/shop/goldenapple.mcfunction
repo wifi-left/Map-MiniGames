@@ -3,7 +3,7 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 execute if score @s zombie.coin matches 500.. run tag @s add buy.pass
-execute as @s[tag=buy.pass] run give @s golden_apple
+execute as @s[tag=buy.pass] run give @s golden_apple 1
 execute as @s[tag=buy.pass] run scoreboard players remove @s zombie.coin 500
 execute as @s[tag=buy.pass] run playsound entity.experience_orb.pickup player @s ~ ~ ~ 1 1 1
 execute as @s[tag=!buy.pass] run playsound entity.enderman.teleport player @s ~ ~ ~ 1 0 1

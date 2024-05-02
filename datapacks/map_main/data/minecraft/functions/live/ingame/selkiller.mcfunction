@@ -13,4 +13,4 @@ title @a[team=play.live.runner] title ["\u00a7b你是 Runner"]
 title @a[tag=play.live.runner] subtitle ["\u00a7e快跑！"]
 
 scoreboard players set live.time live.all -20
-give @a[team=play.live.killer] minecraft:bow[unbreakable={},custom_name='["§aR§ba§ci§dn §eB§fo§6w"]',lore=['["§aR§ba§ci§dn §eB§fo§6w"]','["§aR§ba§ci§dn §eB§fo§6w"]','["§aR§ba§ci§dn §eB§fo§6w"]'],enchantments={levels:{"minecraft:power":2s}}]
+give @a[team=play.live.killer] minecraft:bow[unbreakable={},custom_name='["§aR§ba§ci§dn §eB§fo§6w"]',lore=['["§aR§ba§ci§dn §eB§fo§6w"]','["§aR§ba§ci§dn §eB§fo§6w"]','["§aR§ba§ci§dn §eB§fo§6w"]'],enchantments={levels:{"minecraft:power":2s}}] 1
