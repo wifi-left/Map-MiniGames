@@ -17,7 +17,7 @@ execute as @s[tag=gun.huishou] run item replace entity @s weapon.mainhand with a
 execute as @s[tag=gun.huishou] run scoreboard players add @s zombie.coin 500
 execute as @s[tag=gun.huishou] run tellraw @s ["\u00a7a回收魔法棒/枪械 * 1\n\u00a76+500 Coins"]
 execute as @s[tag=gun.huishou] run playsound entity.experience_orb.pickup player @s ~ ~ ~ 1 1 1
-execute as @s[tag=gun.nohuishou] run tellraw @s ["\u00a7c\u00a76[",{"nbt":"SelectedItem.tag.display.Name","interpret":true,"entity":"@s"},"\u00a76] \u00a7c不能被回收，因为他还没有被损坏。"]
+execute as @s[tag=gun.nohuishou] run tellraw @s ["\u00a7c\u00a76[",{"nbt":"SelectedItem.components.\"minecraft:custom_name\"","interpret":true,"entity":"@s"},"\u00a76] \u00a7c不能被回收，因为他还没有被损坏。"]
 execute unless score tmp board matches 1.. run tellraw @s[tag=!tmp.usinggun] ["\u00a7c它不能被回收，因为它不是枪械、魔法棒、桶或者附魔书。"]
 
 execute as @s[tag=gun.getenchanbook] run item replace entity @s weapon.mainhand with air
