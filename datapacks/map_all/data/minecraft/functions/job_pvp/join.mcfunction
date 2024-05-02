@@ -2,6 +2,12 @@
 ## Datapack Upgrader v1.0.0 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
+
+## 检测是否禁止启动
+execute if score game.pvp board matches 0 run tellraw @s ["\u00a7c游戏已被管理员禁用。\n\u00a77如果您是管理员，您可以在大厅设置中切换模式。"]
+execute if score game.pvp board matches 0 run playsound block.anvil.land player @s ~ ~ ~ 1 1 0
+execute if score game.pvp board matches 0 run return 0
+
 team join job_pvp @s
 tellraw @a [{"selector":"@s"},"\u00a77 已加入 \u00a7a职业战争\u00a77!"]
 tp @s -121 6 234 90 0

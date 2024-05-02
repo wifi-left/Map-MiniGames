@@ -4,10 +4,10 @@
 ## 
 title @a[tag=bw.player] title ["\u00a7aBedwars"]
 title @a[tag=bw.player] subtitle ["\u00a7fEnjoy the game!"]
-execute as @e[tag=diamond,type=marker] at @s run summon minecraft:text_display ~ ~2.8 ~ {Tags:["bedwars","diamond.title"],text:'"\\u00a7b\\u00a7l钻石"',CustomNameVisible:1b,billboard:"vertical"}
-execute as @e[tag=diamond,type=marker] at @s run summon minecraft:text_display ~ ~2.5 ~ {Tags:["bedwars","diamond.subtitle"],text:'"To be edited"',CustomNameVisible:1b,billboard:"vertical"}
-execute as @e[tag=emerald,type=marker] at @s run summon minecraft:text_display ~ ~2.8 ~ {Tags:["bedwars","emerald.title"],text:'"\\u00a72绿宝石"',CustomNameVisible:1b,billboard:"vertical"}
-execute as @e[tag=emerald,type=marker] at @s run summon minecraft:text_display ~ ~2.5 ~ {Tags:["bedwars","emerald.subtitle"],text:'"To be edited"',CustomNameVisible:1b,billboard:"vertical"}
+execute as @e[tag=diamond,type=marker] at @s run summon minecraft:text_display ~ ~2.8 ~ {Tags:["bedwars","diamond.title"],text:'"\\u00a7b\\u00a7l钻石"',CustomNameVisible:0b,billboard:"vertical",see_through:false,view_range:0.4f}
+execute as @e[tag=diamond,type=marker] at @s run summon minecraft:text_display ~ ~2.5 ~ {Tags:["bedwars","diamond.subtitle"],text:'"To be edited"',CustomNameVisible:0b,billboard:"vertical",see_through:false,view_range:0.4f}
+execute as @e[tag=emerald,type=marker] at @s run summon minecraft:text_display ~ ~2.8 ~ {Tags:["bedwars","emerald.title"],text:'"\\u00a72绿宝石"',CustomNameVisible:0b,billboard:"vertical",see_through:false,view_range:0.4f}
+execute as @e[tag=emerald,type=marker] at @s run summon minecraft:text_display ~ ~2.5 ~ {Tags:["bedwars","emerald.subtitle"],text:'"To be edited"',CustomNameVisible:0b,billboard:"vertical",see_through:false,view_range:0.4f}
 
 tellraw @a[tag=bw.player] ["\u00a7a重置完毕！"]
 scoreboard players set bw.reset board 0

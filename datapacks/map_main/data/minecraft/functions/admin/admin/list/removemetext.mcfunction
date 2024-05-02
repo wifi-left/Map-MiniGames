@@ -1,0 +1,1 @@
+$tellraw @a[tag=map.admin.target] [" \u00a7e- ",{"selector":"@s","color":"aqua"}," ",{"text":"[删除]","color":"red","clickEvent": {"action": "run_command","value": "/function admin/admin/list/remove {id:$(controlid),menu:1}"}}]
