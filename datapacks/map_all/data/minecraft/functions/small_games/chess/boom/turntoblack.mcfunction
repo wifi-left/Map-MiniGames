@@ -9,4 +9,3 @@ execute at @s run function small_games/chess/boom/action/placeblack
 # execute if score chess.state state matches 1 run function small_games/chess/boom/check/pj
 kill @s
 
-#/give @p minecraft:bat_spawn_egg{EntityTag:{id:"minecraft:marker",Tags:["chess.put.black"]},CanPlaceOn:['glass'],hideFlags:63,display:{Name:'"\\u00a7a放置棋"'}} 1

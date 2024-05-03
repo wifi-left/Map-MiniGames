@@ -5,14 +5,14 @@
 # title @s actionbar ["\u00a7"]
 playsound entity.arrow.shoot player @s ~ ~ ~ 1 2 1
 
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{tnt:1}}}}] run tag @s add tnt.tool.1
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{tnt:2}}}}] run tag @s add tnt.tool.2
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{tnt:3}}}}] run tag @s add tnt.tool.3
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{tnt:4}}}}] run tag @s add tnt.tool.4
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{tnt:5}}}}] unless entity @e[tag=tnt.tntrain.tnt] run tag @s add tnt.tool.5
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{tnt:6}}}}] unless entity @e[tag=tnt.tntrain.creeper] run tag @s add tnt.tool.6
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{tnt:7}}}}] unless entity @e[tag=tnt.tntrain.fireball] run tag @s add tnt.tool.7
-execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{tnt:8}}}}] run tag @s add tnt.tool.8
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{tnt:1b}}}}] run tag @s add tnt.tool.1
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{tnt:2b}}}}] run tag @s add tnt.tool.2
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{tnt:3b}}}}] run tag @s add tnt.tool.3
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{tnt:4b}}}}] run tag @s add tnt.tool.4
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{tnt:5b}}}}] unless entity @e[tag=tnt.tntrain.tnt] run tag @s add tnt.tool.5
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{tnt:6b}}}}] unless entity @e[tag=tnt.tntrain.creeper] run tag @s add tnt.tool.6
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{tnt:7b}}}}] unless entity @e[tag=tnt.tntrain.fireball] run tag @s add tnt.tool.7
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{tnt:8b}}}}] run tag @s add tnt.tool.8
 
 execute as @s[tag=tnt.tool.1] at @s run item replace entity @s weapon.mainhand with air
 execute as @s[tag=tnt.tool.2] at @s run item replace entity @s weapon.mainhand with air

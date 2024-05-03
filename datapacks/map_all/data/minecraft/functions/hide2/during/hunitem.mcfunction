@@ -6,7 +6,6 @@ give @s wooden_sword[unbreakable={},attribute_modifiers={modifiers:[{type:"gener
 # effect give @s strength 99998 20 true
 # give @s bow{Unbreakable:1b,Enchantments:[{id:"power",lvl:1},{id:"infinity",lvl:1}]}
 # item replace entity @s inventory.26 with arrow 1
-# give @s carrot_on_a_stick{Unbreakable:1b,hun:1,display:{Name:'"\\u00a7cBoom!\\u00a77 - 右键点击"'}}
 item replace entity @s armor.head with leather_helmet[unbreakable={},enchantments={levels:{"minecraft:binding_curse":1}}]
 item replace entity @s armor.chest with leather_chestplate[unbreakable={},enchantments={levels:{"minecraft:binding_curse":1}}]
 item replace entity @s armor.legs with leather_leggings[unbreakable={},enchantments={levels:{"minecraft:binding_curse":1}}]

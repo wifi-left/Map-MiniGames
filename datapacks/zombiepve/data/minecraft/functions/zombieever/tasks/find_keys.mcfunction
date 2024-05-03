@@ -25,9 +25,9 @@ tellraw @a[team=play.zombie] ["\n\u00a7b收到任务 \u00a7a",{"color":"green","
 
 execute as @e[tag=pve.house.chest] at @s run data merge block ~ ~ ~ {Items:[],Lock:"娃娃的wer114514",CustomName:'"\\u00a7r箱子"'}
 
-execute as @e[tag=pve.house.chest,limit=1,sort=random] at @s run data merge block ~ ~ ~ {Items:[{id:"minecraft:tripwire_hook",Count:1b,tag:{display:{Name:'"\\u00a7e地牢钥匙"',Lore:['"\\u00a77用于打开地牢的钥匙"']},lock:2},Slot:13}],Lock:"",CustomName:'"\\u00a77貌似另外一个钥匙藏在樱花花园的角落里？"'}
+execute as @e[tag=pve.house.chest,limit=1,sort=random] at @s run data merge block ~ ~ ~ {Items:[{id:"minecraft:tripwire_hook",count:1,components:{"minecraft:custom_name":'"\\u00a7e地牢钥匙"',"minecraft:lore":['"\\u00a77用于打开地牢的钥匙"'],"minecraft:custom_data":{lock:2}},Slot:13}],Lock:"",CustomName:'"\\u00a77貌似另外一个钥匙藏在樱花花园的角落里？"'}
 
-data merge block 597 11 1 {Items:[{id:"minecraft:tripwire_hook",Count:1b,tag:{display:{Name:'"\\u00a7a大门钥匙"',Lore:['"\\u00a77用于打开大门的钥匙"']},lock:1},Slot:13}]}
+data merge block 597 11 1 {Items:[{id:"minecraft:tripwire_hook",count:1,components:{"minecraft:custom_name":'"\\u00a7a大门钥匙"',"minecraft:lore":['"\\u00a7e用于打开大门的钥匙"'],"minecraft:custom_data":{lock:1}},Slot:13}]}
 forceload remove 597 -45 714 1
 # 召唤僵尸
 scoreboard players set zombie.round board 13
