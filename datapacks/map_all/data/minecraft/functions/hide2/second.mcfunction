@@ -31,7 +31,7 @@ execute if score hide2.state state matches 1..5 if score hide2.resttime board ma
 
 scoreboard players set 60 board 60
 scoreboard players operation hide2.tmp board = hide2.resttime board
-scoreboard players operation hide2.tmp board %= 60 board
+scoreboard players operation hide2.tmp board %= hide2.glowgap board
 execute if score hide2.resttime board matches 1.. if score hide2.tmp board matches ..0 run function hide2/glowingeveryone
 
 scoreboard players set 180 board 180
