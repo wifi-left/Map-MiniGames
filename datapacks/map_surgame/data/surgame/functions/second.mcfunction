@@ -39,4 +39,3 @@ effect give @e[team=play.sur.zom] jump_boost 2 1 true
 effect give @e[team=play.sur.zom] minecraft:strength 3 2 true
 effect give @e[team=play.sur.zom] minecraft:haste 3 0 true
 effect give @e[team=play.sur] minecraft:haste 3 1 true
-

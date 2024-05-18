@@ -30,3 +30,5 @@ execute if entity @a[team=wait.total] run function minecraft:small_games/total/s
 execute if score gametotal state matches 1.. run function minecraft:small_games/total/second
 execute if score desk.state state matches 1.. run function minecraft:desk/second
 
+execute if score sw.state state matches 1.. run function minecraft:cloud/second
+

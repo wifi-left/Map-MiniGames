@@ -116,7 +116,8 @@ execute in airworld if score cloud.reset board matches 105 run fill 599 40 266 7
 execute in airworld if score cloud.reset board matches ..105 run title @a[team=wait.sw] title ["\u00a7b重置地图中..."]
 execute in airworld if score cloud.reset board matches ..105 run title @a[team=wait.sw] subtitle [{"score":{"name": "cloud.reset","objective": "board"},"color": "green"},"\u00a7b / 105"]
 execute in airworld if score cloud.reset board matches ..105 run schedule function minecraft:cloud/maps/ungrassed 1t
-execute in airworld if score cloud.reset board matches ..105 run scoreboard players add cloud.reset board 1
 execute in airworld if score cloud.reset board matches 106.. run forceload remove 365 266 546 442
 execute in airworld if score cloud.reset board matches 106.. run function minecraft:cloud/maps/points/ungrassed
+
+execute in airworld if score cloud.reset board matches ..105 run scoreboard players add cloud.reset board 1
 

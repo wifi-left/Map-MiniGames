@@ -84,20 +84,10 @@ execute if score chess.state state matches 1.. run function small_games/chess/ti
 
 execute as @e[tag=gun.line] at @s run function gun/main
 # 检测到玩家右键后：
-execute as @a[scores={use.skill=1..},team=deskgame] at @s run function minecraft:desk/skill_handle
-execute as @a[scores={use.skill=1..},team=btw.play.a] at @s run function minecraft:boatwars/usegun
-execute as @a[scores={use.skill=1..},team=btw.play.b] at @s run function minecraft:boatwars/usegun
-execute as @a[scores={use.skill=1..},level=..0,team=job_pvp] at @s run function minecraft:skills
-execute as @a[scores={use.skill=1..},team=play.tntwars] at @s run function minecraft:tntwars/tnttool
-execute as @a[scores={use.skill=1..},level=..0,team=play.live.runner] at @s run function minecraft:skills
-execute as @a[scores={use.skill=1..},level=..0,team=play.live.killer] at @s run function minecraft:skills
-execute in boatworld2 as @a[scores={use.skill=1..},team=boat] at @s run function minecraft:boat/skills
-execute in boatworld2 as @a[scores={use.skill.2=1..},team=boat] at @s run function minecraft:boat/skills
-execute in killerworld as @a[scores={use.skill.2=1..},team=wolfpeople] at @s run function minecraft:twolf/controls
-execute as @a[scores={use.skill=1..},level=..0,team=hide.play.hun] at @s run function minecraft:hideseek/skillss
-execute as @a[scores={use.skill=1..},level=..0,team=hide.play.ani] at @s run function minecraft:hideseek/skillss
+execute as @a[scores={use.skill=1..}] at @s run function carrot_stick_main
+execute as @a[scores={use.skill.2=1..}] at @s run function carrot_stick_main
 
-
+effect give @a[team=wait.sw] resistance 2 25 true
 
 execute in airworld as @a[gamemode=!creative,gamemode=!spectator,team=play.sur,x=-46,y=-26,z=3,distance=0..4] run function surgame:died
 execute in airworld as @a[gamemode=!creative,gamemode=!spectator,team=play.sur.zom,x=-46,y=-26,z=3,distance=0..4] run function surgame:died
@@ -106,33 +96,11 @@ execute in airworld as @a[gamemode=!creative,gamemode=!spectator,team=wait.sur,x
 # execute as @a[scores={use.skill=1..,cooldowntime=1..},team=play.zombie] at @s run title @s actionbar ["\u00a7c\u00a7l冷却中: ",{"score":{"objective": "cooldowntime","name": "@s"},"color":"yellow"},"\u00a7et"]
 execute as @a[scores={cooldowntime=1..},team=play.zombie] at @s run scoreboard players remove @s cooldowntime 1
 
-execute as @a[scores={use.skill=1..},team=play.zombie] at @s run scoreboard players add @s cooldowntime 0
-execute as @a[scores={use.skill=1..,cooldowntime=..0},team=play.zombie] at @s run function minecraft:gun/guns
-scoreboard players reset @a[scores={use.skill.2=1..}] use.skill.2
+
 
 execute if score sur.state state matches 1.. in airworld run function surgame:tick
 
-execute as @a[scores={use.skill=1..},level=1..,team=hide.play.hun] at @s run title @s actionbar ["\u00a7c\u00a7l技能还在冷却。"]
-execute as @a[scores={use.skill=1..},level=1..,team=hide.play.ani] at @s run title @s actionbar ["\u00a7c\u00a7l变身冷却中。"]
-execute as @a[scores={use.skill=1..},level=1..,team=hide.play.hun] at @s run playsound entity.enderman.teleport player @s
-execute as @a[scores={use.skill=1..},level=1..,team=hide.play.ani] at @s run playsound entity.enderman.teleport player @s
 
-execute as @a[scores={use.skill=1..},level=1..,team=play.live.runner] at @s run playsound entity.enderman.teleport player @s
-execute as @a[scores={use.skill=1..},level=1..,team=play.live.runner] at @s run title @s actionbar ["\u00a7c\u00a7l技能还在冷却。"]
-execute as @a[scores={use.skill=1..},level=1..,team=play.live.runner] at @s run scoreboard players reset @s use.skill
-# scoreboard players reset @a[scores={use.skill=1..}] use.skill
-
-execute as @a[scores={use.skill=1..},level=1..,team=play.live.killer] at @s run playsound entity.enderman.teleport player @s
-execute as @a[scores={use.skill=1..},level=1..,team=play.live.killer] at @s run title @s actionbar ["\u00a7c\u00a7l技能还在冷却。"]
-execute as @a[scores={use.skill=1..},level=1..,team=play.live.killer] at @s run scoreboard players reset @s use.skill
-# scoreboard players reset @a[scores={use.skill=1..}] use.skill
-
-
-execute as @a[scores={use.skill=1..},level=1..,team=job_pvp] at @s run playsound entity.enderman.teleport player @s
-execute as @a[scores={use.skill=1..},level=1..,team=job_pvp] at @s run title @s actionbar ["\u00a7c\u00a7l技能还在冷却。"]
-execute as @a[scores={use.skill=1..},level=1..,team=job_pvp] at @s run scoreboard players reset @s use.skill
-
-scoreboard players reset @a[scores={use.skill=1..}] use.skill
 tag @a[tag=action.sneaking] remove action.sneaking
 execute as @a[scores={sneaking=1..}] run tag @s add action.sneaking
 execute as @a[scores={sneaking=1..}] run scoreboard players reset @s sneaking
@@ -197,3 +165,10 @@ execute in hungerworld as @a[x=101,y=-60,z=0,distance=..2] at @s run function hu
 execute as @e[type=minecart,tag=lobby.car] at @s if block ~ ~-1 ~ piston_head run data modify entity @s Motion[2] set value -1
 
 execute positioned 29 17 -4 as @a[distance=0..3,gamemode=adventure] at @s run function minecraft:live/ingame/died
+
+execute if score sw.state state matches 1.. run function minecraft:cloud/tick
+
+execute as @a[team=play.sw,gamemode=adventure] at @s as @s[y=-70,dy=14] run kill @s
+execute as @a[team=play.sw,gamemode=survival] at @s as @s[y=-70,dy=14] run kill @s
+
+execute in airworld as @a[x=594,y=-44,z=345,dx=3,dy=5,dz=3,gamemode=!creative] at @s run function cloud/died

@@ -1,10 +1,23 @@
+# 1.20.6 to 1.21
+移除了 powerNBT标签，取而代之的是 acceleration_power标签，以用于控制弹射物的加速度和最大速度
 # 通用启动游戏检测
 ```mcfunction
+## 检测是否能启动游戏
 scoreboard players set tmp.canplay board 0
 execute store result score tmp.canplay board run function admin/play/canplay
 execute if score tmp.canplay board matches 0 run tellraw @s ["\u00a7c游戏仅管理员可以开始。\n\u00a77如果您是管理员，您可以在大厅设置中切换模式。"]
 execute if score tmp.canplay board matches 0 run playsound block.anvil.land player @s ~ ~ ~ 1 1 0
 execute if score tmp.canplay board matches 0 run return 0
+```
+
+# 通用设置检测
+```mcfunction
+## 检测是否禁止设置
+scoreboard players set tmp.canset board 0
+execute store result score tmp.canset board run function admin/setting/canset
+execute if score tmp.canset board matches 0 run tellraw @s ["\u00a7c游戏仅管理员可以设定游戏选项。\n\u00a77如果您是管理员，您可以在大厅设置中切换模式。"]
+execute if score tmp.canset board matches 0 run playsound block.anvil.land player @s ~ ~ ~ 1 1 0
+execute if score tmp.canset board matches 0 run return 0
 ```
 
 # To-do Lists

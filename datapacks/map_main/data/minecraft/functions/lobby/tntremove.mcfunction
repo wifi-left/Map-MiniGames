@@ -1,0 +1,1 @@
+execute unless dimension airworld run kill @s

@@ -31,7 +31,8 @@ execute as @a[tag=killer.te] at @s run effect give @a[team=play.killer,gamemode=
 
 execute as @a[tag=killer.sb] at @s run effect give @a[team=play.killer,gamemode=adventure,distance=1..6] slowness 5 25 true
 execute as @a[tag=killer.sb] at @s run effect give @a[team=play.killer,gamemode=adventure,distance=1..6] blindness 5 25 true
-execute as @a[tag=killer.sb] at @s run effect give @a[team=play.killer,gamemode=adventure,distance=1..6] jump_boost 5 128 true
+execute as @a[tag=killer.sb] at @s run effect give @a[team=play.killer,gamemode=adventure,distance=1..6] darkness 5 25 true
+execute as @a[tag=killer.sb] at @s run effect give @a[team=play.killer,gamemode=adventure,distance=1..6] slow_falling 5 128 true
 
 item replace entity @a[tag=killer.sb] weapon.offhand with air
 item replace entity @a[tag=killer.te] weapon.offhand with air

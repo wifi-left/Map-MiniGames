@@ -24,3 +24,5 @@ tag @s remove tntwars.b
 tag @s remove touzi.team.a
 tag @s remove touzi.team.b
 # tag @s remove
+
+execute in overworld run spawnpoint @s 209 84 27

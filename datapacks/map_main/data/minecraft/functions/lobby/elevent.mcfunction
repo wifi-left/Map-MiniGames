@@ -12,7 +12,7 @@ execute run effect give @a[team=lobby,tag=mazing] speed 1 0 true
 
 ## Back to the Lobby
 effect give @a[team=lobby] resistance 1 127 true
-kill @e[type=tnt,nbt={fuse:80s}]
+execute as @e[type=tnt,nbt={fuse:80s}] at @s run function minecraft:lobby/tntremove
 scoreboard players enable @a hub
 scoreboard players enable @a rejoin
 
