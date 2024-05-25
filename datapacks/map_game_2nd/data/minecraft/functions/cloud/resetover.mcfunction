@@ -12,10 +12,11 @@ title @a[team=wait.sw] subtitle ["\u00a7a重置完毕"]
 clear @a[team=wait.sw]
 effect clear @a[team=wait.sw]
 effect give @a[team=wait.sw] instant_health 1 25 true
+execute in airworld run forceload add 599 266 780 442
 
 
 tag @e[tag=sw.spawn] add cloud.place.tobetp
-execute in airworld as @a[team=wait.sw] at @s run function minecraft:cloud/giveplace
+execute in airworld as @a[team=wait.sw,tag=!GOABLE.SPEC] at @s run function minecraft:cloud/giveplace
 kill @e[tag=cloud.place.tobetp]
 
 scoreboard players set cloud.step board 1

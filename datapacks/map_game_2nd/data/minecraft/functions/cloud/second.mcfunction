@@ -1,6 +1,7 @@
 tag @a[tag=sw.msg] remove sw.msg
 tag @a[team=play.sw] add sw.msg
 tag @a[team=wait.sw] add sw.msg
+recipe give @a[team=play.sw] *
 
 execute in airworld run spawnpoint @a[team=play.sw] 595 -43 346
 execute in overworld run spawnpoint @a[team=wait.sw] 209 84 27

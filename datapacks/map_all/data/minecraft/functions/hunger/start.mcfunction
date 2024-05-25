@@ -12,6 +12,13 @@ scoreboard players set hunger.chests board 3
 execute in hungerworld run forceload add 2 3 200 100
 execute in hungerworld run forceload add 201 101 315 293
 execute in hungerworld run kill @e[type=item,distance=0..]
+execute in hungerworld run setblock 168 -35 127 anvil replace
+execute in hungerworld run setblock 164 -37 112 anvil replace
+execute in hungerworld run setblock 162 -38 98 anvil replace
+execute in hungerworld run setblock 130 -6 82 anvil replace
+execute in hungerworld run setblock 126 -23 92 anvil replace
+execute in hungerworld run setblock 167 -48 166 anvil replace
+execute in hungerworld run setblock 193 -51 185 anvil replace
 function hunger/flushitem
 team modify hunger friendlyFire false
 execute in hungerworld run kill @e[distance=0..,type=experience_orb]

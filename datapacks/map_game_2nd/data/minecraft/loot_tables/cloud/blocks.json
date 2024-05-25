@@ -1,0 +1,85 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": {
+          "min": 0,
+          "max": 3
+        },
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stone",
+            "weight": 8,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 0,
+                  "max": 64
+                },
+                "add": true
+              }
+            ]
+          },{
+            "type": "minecraft:item",
+            "name": "minecraft:oak_planks",
+            "weight": 6,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 0,
+                  "max": 64
+                },
+                "add": true
+              }
+            ]
+          },{
+            "type": "minecraft:item",
+            "name": "minecraft:cobblestone",
+            "weight": 6,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 0,
+                  "max": 64
+                },
+                "add": true
+              }
+            ]
+          },{
+            "type": "minecraft:item",
+            "name": "minecraft:sandstone",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 0,
+                  "max": 64
+                },
+                "add": true
+              }
+            ]
+          },{
+            "type": "minecraft:item",
+            "name": "minecraft:oak_wood",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 0,
+                  "max": 64
+                },
+                "add": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
