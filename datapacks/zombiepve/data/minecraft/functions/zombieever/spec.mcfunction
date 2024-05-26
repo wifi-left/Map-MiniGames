@@ -19,3 +19,4 @@ scoreboard players operation @a[team=play.zombie] globle.game = zombie globle.ga
 xp set @s 0 levels
 xp set @s 0 points
 
+execute if score zombie.mode board matches 1 unless entity @s[tag=GOABLE.SPEC] run function zombieever/fuhuo

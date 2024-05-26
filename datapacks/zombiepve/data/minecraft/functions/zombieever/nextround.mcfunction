@@ -4,7 +4,7 @@
 ## 
 scoreboard players add zombie.round board 1
 scoreboard players reset * zombie.villager.click
-tellraw @a[team=play.zombie] ["\u00a77\u00a7o进度推进 [Process ",{"score":{"name": "zombie.round","objective": "board"},"color":"green","italic": true},"\u00a77\u00a7o]"]
+tellraw @a[team=play.zombie] ["\u00a77\u00a7o进度推进 [ID ",{"score":{"name": "zombie.round","objective": "board"},"color":"green","italic": true},"\u00a77\u00a7o]"]
 # Total
 
 execute as @e[tag=pve.zombie] run data merge entity @s {PersistenceRequired:1b,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]}
