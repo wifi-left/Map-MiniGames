@@ -15,5 +15,7 @@ execute if score tmp.canplay board matches 0 run return 0
 
 
 execute unless score sw.state state matches 1.. if score wait.player tick matches ..1 run tellraw @s ["\u00a7c人数不够！请等待至少2人！"]
+execute unless score sw.state state matches 1.. if score wait.player tick matches 13.. run tellraw @s ["\u00a7c人数太多！最多12人！"]
 execute unless score sw.state state matches 1.. if score wait.player tick matches ..1 run playsound entity.enderman.teleport player @s ~ ~ ~ 1 0 1
-execute unless score sw.state state matches 1.. if score wait.player tick matches 2.. run function minecraft:cloud/start
+execute unless score sw.state state matches 1.. if score wait.player tick matches 13.. run playsound entity.enderman.teleport player @s ~ ~ ~ 1 0 1
+execute unless score sw.state state matches 1.. if score wait.player tick matches 2..12 run function minecraft:cloud/start
