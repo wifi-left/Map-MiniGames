@@ -54,14 +54,14 @@ summon marker 716 3 395 {Tags:["sw.spawn","sw.marker"]}
 summon marker 740 3 379 {Tags:["sw.spawn","sw.marker"]}
 summon marker 763 3 348 {Tags:["sw.spawn","sw.marker"]}
 
-summon marker 689 4 319 {Tags:["sw.marker","sw.chest.sidemiddle"]}
-summon marker 656 4 352 {Tags:["sw.marker","sw.chest.sidemiddle"]}
-summon marker 689 4 385 {Tags:["sw.marker","sw.chest.sidemiddle"]}
-summon marker 722 4 352 {Tags:["sw.marker","sw.chest.sidemiddle"]}
+summon marker 689 4 319 {Tags:["sw.marker","sw.chests","sw.chest.sidemiddle"]}
+summon marker 656 4 352 {Tags:["sw.marker","sw.chests","sw.chest.sidemiddle"]}
+summon marker 689 4 385 {Tags:["sw.marker","sw.chests","sw.chest.sidemiddle"]}
+summon marker 722 4 352 {Tags:["sw.marker","sw.chests","sw.chest.sidemiddle"]}
 
-summon marker 704 0 352 {Tags:["sw.marker","sw.chest.middle"]}
-summon marker 689 0 367 {Tags:["sw.marker","sw.chest.middle"]}
-summon marker 674 0 352 {Tags:["sw.marker","sw.chest.middle"]}
-summon marker 689 0 337 {Tags:["sw.marker","sw.chest.middle"]}
+summon marker 704 0 352 {Tags:["sw.marker","sw.chests","sw.chest.middle"]}
+summon marker 689 0 367 {Tags:["sw.marker","sw.chests","sw.chest.middle"]}
+summon marker 674 0 352 {Tags:["sw.marker","sw.chests","sw.chest.middle"]}
+summon marker 689 0 337 {Tags:["sw.marker","sw.chests","sw.chest.middle"]}
 
 function minecraft:cloud/resetover
