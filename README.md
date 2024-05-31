@@ -33,3 +33,15 @@ GitHub 的 URL 为：[https://github.com/wifi-left/Map-MiniGames/raw/master/reso
 1. [教程 - 服务器建设 - Minecraft Wiki](https://zh.minecraft.wiki/w/%E6%95%99%E7%A8%8B#%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AE%BE%E7%BD%AE)
 
 请参考上述教程。
+
+# 感谢列表
+排名不分先后
+
+- 感谢 Domnick_JYH 提供的大量帮助
+- 感谢 00ɹɐəlϽ 提供的战利品表设计
+- 感谢 616789 提供的帮助
+- 感谢 lawyer112 提供的服务器支持
+- 感谢 LateTea 提供的支持
+- 感谢 Wemsur 进行的测试、反馈
+- 感谢 残月sama 提供的支持
+- 感谢 群友、地图使用者 的支持
