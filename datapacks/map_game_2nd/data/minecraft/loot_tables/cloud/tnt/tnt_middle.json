@@ -8,8 +8,24 @@
             },
             "entries": [
                 {
+                    "type": "minecraft:loot_table",
+                    "value": "minecraft:cloud/normal/middle",
+                    "weight": 8,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 0,
+                                "max": 2
+                            },
+                            "add": true
+                        }
+                    ]
+                },
+                {
                     "type": "minecraft:item",
                     "name": "minecraft:fire_charge",
+                    "weight": 8,
                     "functions": [
                         {
                             "function": "minecraft:set_count",

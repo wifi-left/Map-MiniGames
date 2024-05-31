@@ -3,6 +3,19 @@
     "pools": [
         {
             "rolls": {
+                "min": 0,
+                "max": 8
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "minecraft:cloud/normal/sidemi",
+                    "weight": 8
+                }
+            ]
+        },
+        {
+            "rolls": {
                 "min": 4,
                 "max": 10
             },

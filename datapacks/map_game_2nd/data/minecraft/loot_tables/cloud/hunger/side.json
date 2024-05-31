@@ -3,54 +3,32 @@
     "pools": [
         {
             "rolls": {
-                "min": 1,
-                "max": 3
+                "min": 0,
+                "max": 4
             },
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "value": "minecraft:cloud/blocks",
-                    "weight": 5,
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 3
-                            },
-                            "add": true
-                        }
-                    ]
-                },
+                    "value": "minecraft:cloud/normal/side",
+                    "weight": 8
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 1,
+                "max": 4
+            },
+            "entries": [
                 {
                     "type": "minecraft:loot_table",
                     "value": "minecraft:hunger/armor",
-                    "weight": 3,
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 0,
-                                "max": 1
-                            },
-                            "add": true
-                        }
-                    ]
+                    "weight": 1
                 },
                 {
                     "type": "minecraft:loot_table",
                     "value": "minecraft:hunger/sword",
-                    "weight": 3,
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 0,
-                                "max": 1
-                            },
-                            "add": true
-                        }
-                    ]
+                    "weight": 1
                 }
             ]
         }

@@ -7,11 +7,12 @@ execute if score tmp.canset board matches 0 run playsound block.anvil.land playe
 execute if score tmp.canset board matches 0 run return 0
 
 scoreboard players add sw.mode state 1
-execute if score sw.mode state matches 4.. run scoreboard players set sw.mode state 1
+execute if score sw.mode state matches 5.. run scoreboard players set sw.mode state 1
 
 
 execute if score sw.mode state matches 1 run data modify block ~ ~ ~ front_text.messages[2] set value '"\\u00a7cTNT Mode"'
 execute if score sw.mode state matches 3 run data modify block ~ ~ ~ front_text.messages[2] set value '"\\u00a7a药水模式"'
+execute if score sw.mode state matches 4 run data modify block ~ ~ ~ front_text.messages[2] set value '"\\u00a7b普通模式"'
 execute if score sw.mode state matches 2 run data modify block ~ ~ ~ front_text.messages[2] set value '"\\u00a7e疯狂模式"'
 
 playsound minecraft:ui.button.click player @s
