@@ -19,7 +19,7 @@ bossbar set minecraft:hideseek name ["\u00a7b剩余时间：",{"score":{"objecti
 execute if score hide.resttime board matches ..30 run effect give @a[team=hide.play.ani,gamemode=adventure] glowing 2 2 true
 scoreboard players set 60 board 60
 scoreboard players operation hide.tmp board = hide.resttime board
-scoreboard players operation hide.tmp board %= 60 board
+scoreboard players operation hide.tmp board %= hide2.glowgap board
 execute if score hide.tmp board matches ..0 run function hideseek/glowingeveryone
 execute as @a[team=hide.play.hun] at @s if entity @a[distance=0..10,team=hide.play.ani] run title @s actionbar ["\u00a7c检测到：\u00a76附近有躲藏者"]
 execute as @a[team=hide.play.hun] at @s as @a[distance=0..10,team=hide.play.ani] run title @s actionbar ["\u00a7c检测到：\u00a76附近有寻找者"]
