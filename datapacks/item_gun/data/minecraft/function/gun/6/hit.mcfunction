@@ -4,7 +4,7 @@
 ## 
 tag @s add sel
 execute unless data entity @s {Invulnerable:1b} run damage @s 10 minecraft:player_gun by @a[tag=hit.player,limit=1]
-execute store result score tmp.health board as @s run data get entity @s Health
+execute store result score tmp.health board as @s run data get entity @s Health 10
 # tellraw @a[tag=hit.player] ["\u00a7c 剩余",{"score":{"objective": "board","name": "@s"},"color":"yellow"},"\u00a7c♥"]
 # scoreboard players set tmp.health board 0
 # execute unless data entity @e[tag=hitted,limit=1] {Invulnerable:1b} run scoreboard players remove tmp.health board 30
