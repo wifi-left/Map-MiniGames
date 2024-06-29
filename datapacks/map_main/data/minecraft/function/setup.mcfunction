@@ -71,3 +71,6 @@ scoreboard objectives add touzi.count dummy "还能刷新几次骰子"
 
 execute unless score hunger.state state matches 1.. run execute in hungerworld run forceload remove all
 
+kill @e[type=firework_rocket]
+kill @e[type=fireball]
+# kill @e[type=item]
