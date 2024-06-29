@@ -22,13 +22,13 @@ summon minecraft:area_effect_cloud 188 126 18 {CustomName:'["\\u00a7e\\u00a7l跑
 summon minecraft:area_effect_cloud 188 125.7 18 {CustomName:'["\\u00a77Parkour & Activity"]',CustomNameVisible:1b,Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],Duration:2147483647}
 
 ## 210 116 22 拉杆1 - 烟花
-summon minecraft:area_effect_cloud 211 116.9 22 {CustomName:'["\\u00a7e\\u00a7l烟花 (纪念区)"]',CustomNameVisible:1b,Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],Duration:2147483647}
-summon minecraft:area_effect_cloud 211 116.6 22 {CustomName:'["\\u00a7d\\u00a7lFireworks (Here)"]',CustomNameVisible:1b,Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],Duration:2147483647}
+# summon minecraft:area_effect_cloud 211 116.9 22 {CustomName:'["\\u00a7e\\u00a7l烟花 (纪念区)"]',CustomNameVisible:1b,Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],Duration:2147483647}
+# summon minecraft:area_effect_cloud 211 116.6 22 {CustomName:'["\\u00a7d\\u00a7lFireworks (Here)"]',CustomNameVisible:1b,Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],Duration:2147483647}
 
 
 ## 210 116 30 拉杆2 - 烟花
-summon minecraft:area_effect_cloud 211 116.9 30 {CustomName:'["\\u00a7a\\u00a7l烟花 (其他)"]',CustomNameVisible:1b,Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],Duration:2147483647}
-summon minecraft:area_effect_cloud 211 116.6 30 {CustomName:'["\\u00a7b\\u00a7lFireworks (Other Places)"]',CustomNameVisible:1b,Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],Duration:2147483647}
+# summon minecraft:area_effect_cloud 211 116.9 30 {CustomName:'["\\u00a7a\\u00a7l烟花 (其他)"]',CustomNameVisible:1b,Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],Duration:2147483647}
+# summon minecraft:area_effect_cloud 211 116.6 30 {CustomName:'["\\u00a7b\\u00a7lFireworks (Other Places)"]',CustomNameVisible:1b,Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],Duration:2147483647}
 
 # 跑酷 188 117 -3
 summon minecraft:area_effect_cloud 188 117.4 -3 {CustomName:'["\\u00a7e\\u00a7l大厅跑酷区 \\u00a7b\\u00a7lParkour"]',CustomNameVisible:1b,Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],Duration:2147483647}
