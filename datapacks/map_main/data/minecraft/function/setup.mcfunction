@@ -37,6 +37,7 @@ bossbar remove minecraft:battle
 bossbar add minecraft:battle "BATTLE GAME"
 bossbar set minecraft:battle color green
 bossbar set minecraft:battle max 60
+
 bossbar set minecraft:battle value 0
 # function selfcheck/check
 say §b§l若您是第一次使用此地图，请管理员（或者控制台）先运行 §6/function selfcheck/check §b§l检查兼容情况。§a(建议在有玩家的情况下测试)
