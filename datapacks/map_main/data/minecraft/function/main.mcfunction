@@ -53,7 +53,8 @@ scoreboard players reset @a[scores={job_kill=1..}] job_kill
 
 execute as @a[scores={spec=1}] run function lobby/specintroduce
 execute as @a[scores={spec=2}] run tag @s add SPEC.JOIN
-execute as @a[scores={spec=3..}] run tag @s add SPEC.REMOVE
+execute as @a[scores={spec=3}] run tag @s add SPEC.REMOVE
+execute as @a[scores={spec=4}] run function lobby/spec
 scoreboard players enable @a spec
 scoreboard players reset @a[scores={spec=1..}] spec
 tag @a[tag=SPEC.JOIN] add GOABLE.SPEC
