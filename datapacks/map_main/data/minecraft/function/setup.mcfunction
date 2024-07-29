@@ -5,6 +5,9 @@
 tellraw @a ["\u00a7b\u00a7l[Gamom Datapacks] \u00a7aReloaded successfully ! \u00a7e[Language: 简体中文]"]
 function minecraft:bedwars/setup
 scoreboard objectives remove use.egg
+# scoreboard objectives remove ingameid
+scoreboard objectives add ingameid dummy "游戏内ID"
+scoreboard objectives add merchant.coin dummy "\u00a7b\u00a7l商贾传奇 \u00a7e金钱"
 scoreboard objectives add use.egg used:minecraft.egg
 scoreboard objectives remove level
 scoreboard objectives remove sneaking

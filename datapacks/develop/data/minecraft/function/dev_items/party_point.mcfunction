@@ -1,0 +1,1 @@
+give @s cat_spawn_egg[entity_data={id:"minecraft:marker",Tags:["deskparty.point"]},item_name='"\\u00a7a添加点位"']

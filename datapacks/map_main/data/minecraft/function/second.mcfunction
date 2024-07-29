@@ -48,3 +48,5 @@ tag @a[tag=music.playing,team=!lobby,team=!dropper,team=!parkour,team=!chestgame
 tag @a[tag=music.playing,team=!lobby,team=!dropper,team=!parkour,team=!chestgame] remove music_little_stars
 tag @a[tag=music.playing,team=!lobby,team=!dropper,team=!parkour,team=!chestgame] remove music.playing
 scoreboard players reset @a[tag=!music.playing] time
+
+function dev/second

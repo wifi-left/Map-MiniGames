@@ -173,3 +173,5 @@ execute as @a[team=play.sw,gamemode=adventure] at @s as @s[y=-70,dy=14] run kill
 execute as @a[team=play.sw,gamemode=survival] at @s as @s[y=-70,dy=14] run kill @s
 
 execute in airworld as @a[x=594,y=-44,z=345,dx=3,dy=5,dz=3,gamemode=!creative] at @s run function cloud/died
+
+function dev/tick
