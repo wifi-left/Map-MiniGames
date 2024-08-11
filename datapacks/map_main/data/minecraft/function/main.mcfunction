@@ -84,9 +84,7 @@ effect give @a[team=chestgame] resistance 1 25 true
 execute if score chess.state state matches 1.. run function small_games/chess/tick
 
 execute as @e[tag=gun.line] at @s run function gun/main
-# 检测到玩家右键后：
-execute as @a[scores={use.skill=1..}] at @s run function carrot_stick_main
-execute as @a[scores={use.skill.2=1..}] at @s run function carrot_stick_main
+
 
 effect give @a[team=wait.sw] resistance 2 25 true
 
@@ -175,3 +173,4 @@ execute as @a[team=play.sw,gamemode=survival] at @s as @s[y=-70,dy=14] run kill 
 execute in airworld as @a[x=594,y=-44,z=345,dx=3,dy=5,dz=3,gamemode=!creative] at @s run function cloud/died
 
 function dev/tick
+function actions/main

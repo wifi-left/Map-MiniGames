@@ -8,6 +8,8 @@
 	  "#minecraft:stainglass",
     "minecraft:water",
     "minecraft:ladder",
+    "minecraft:wet_sponge",
+    "minecraft:sponge",
     "#minecraft:beds"
   ]
 }

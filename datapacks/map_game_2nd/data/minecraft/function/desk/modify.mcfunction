@@ -13,7 +13,7 @@ execute if score tmp.canset board matches 0 run return 0
 
 execute unless score desk.state state matches 1.. run scoreboard players add desk.type board 1
 execute if score desk.state state matches 1.. run tellraw @s ["\u00a7c游戏开始后无法修改。"]
-execute if score desk.type board matches 2.. run scoreboard players set desk.type board 1
+execute if score desk.type board matches 3.. run scoreboard players set desk.type board 1
 
 
 execute if score desk.type board matches ..1 run data modify block ~ ~ ~ front_text.messages[1] set value '"\\u00a7a\\u00a7l[骰子游戏]"'

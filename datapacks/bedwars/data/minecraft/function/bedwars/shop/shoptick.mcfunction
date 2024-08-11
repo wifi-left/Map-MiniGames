@@ -142,6 +142,21 @@ scoreboard players reset @s bw.board
 execute as @s store success score @s bw.board run clear @s wind_charge[custom_data~{shop:-36}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-36
 
+#MACE 重锤
+scoreboard players reset @s bw.board
+execute as @s store success score @s bw.board run clear @s mace[custom_data~{shop:-37}]
+execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-37
+
+# 海绵
+scoreboard players reset @s bw.board
+execute as @s store success score @s bw.board run clear @s sponge[custom_data~{shop:-38}]
+execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-38
+
+# 盾
+scoreboard players reset @s bw.board
+execute as @s store success score @s bw.board run clear @s shield[custom_data~{shop:-39}]
+execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-39
+
 ## Diamond Shop
 execute as @s[tag=bw.buy.5] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
 execute as @s[tag=bw.buy.5] run function minecraft:bedwars/shop/buy5
@@ -284,6 +299,18 @@ tag @s remove bw.buy.-35
 execute as @s[tag=bw.buy.-36] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
 execute as @s[tag=bw.buy.-36] at @s run function minecraft:bedwars/shop/buy36
 tag @s remove bw.buy.-36
+
+#
+execute as @s[tag=bw.buy.-37] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute as @s[tag=bw.buy.-37] at @s run function minecraft:bedwars/shop/buy37
+tag @s remove bw.buy.-37
+execute as @s[tag=bw.buy.-38] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute as @s[tag=bw.buy.-38] at @s run function minecraft:bedwars/shop/buy38
+tag @s remove bw.buy.-38
+execute as @s[tag=bw.buy.-39] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute as @s[tag=bw.buy.-39] at @s run function minecraft:bedwars/shop/buy39
+tag @s remove bw.buy.-39
+#
 
 execute as @s[tag=bw.buy.9] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
 execute as @s[tag=bw.buy.9] at @s run function minecraft:bedwars/shop/buy9
