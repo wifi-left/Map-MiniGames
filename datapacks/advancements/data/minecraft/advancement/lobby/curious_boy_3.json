@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": [
+            "充满好奇心的孩子 \u00a77#3"
+        ],
+        "description": [
+            "东张西望，找到了奇怪的东西。#3\n\u00a7d\u00a7m\u00a7n\u00a7o谁会猜到纪念处背后有彩蛋呢？"
+        ],
+        "icon": {
+            "id": "minecraft:copper_ingot"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:lobby/curious_boy_2",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

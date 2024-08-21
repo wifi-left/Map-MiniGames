@@ -12,3 +12,5 @@ team join hide.play.hun
 tp @s 470 2 -362 -180 0
 xp set @s 0 levels
 xp set @s 0 points
+
+advancement grant @s only games/hide_hunter_died

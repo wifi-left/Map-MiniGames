@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": [
+            "这下面也太冷了吧！"
+        ],
+        "description": [
+            "这冬天也太冷了吧！冬泳拐鸽都经受不住。"
+        ],
+        "icon": {
+            "id": "minecraft:ice"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:games",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

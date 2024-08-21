@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": [
+            "嗷呜呜呜呜~"
+        ],
+        "description": [
+            "狼人杀开始啦！"
+        ],
+        "icon": {
+            "id": "minecraft:wolf_armor"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:games",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

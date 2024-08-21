@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": [
+            "鸣谢 Special Thanks"
+        ],
+        "description": [
+            "\u00a7e- lawyer112\n\u00a7d- Domnick_JYH\n\u00a7f- 00ɹɐəlϽ\n\u00a7a- LateTea\n\u00a7b- Wemsur\n\u00a72- 残月sama\n\u00a73...\n\u00a76- 作为群友、地图使用者或者是游玩者的你"
+        ],
+        "icon": {
+            "id": "minecraft:paper"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "parent":"minecraft:minigames",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

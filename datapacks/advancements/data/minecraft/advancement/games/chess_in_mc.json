@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": [
+            "在MC里下棋"
+        ],
+        "description": [
+            "我居然在MC里下棋！"
+        ],
+        "icon": {
+            "id": "minecraft:iron_bars"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:games",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

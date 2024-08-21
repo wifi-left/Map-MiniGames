@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": [
+            "充满好奇心的孩子 \u00a77#2"
+        ],
+        "description": [
+            "东张西望，找到了奇怪的东西。\n #2"
+        ],
+        "icon": {
+            "id": "minecraft:gold_ingot"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:lobby/curious_boy_1",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

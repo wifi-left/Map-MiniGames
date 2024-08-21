@@ -15,3 +15,4 @@ tag @s remove chess.black
 clear @s
 tellraw @a ["\u00a7a\u00a7l[棋类游戏] ",{"selector":"@s"}," \u00a7d加入。"]
 tellraw @s ["\u00a77欢迎光临咖啡厅~\n请您随便就坐。"]
+advancement grant @s only games/chess_in_mc

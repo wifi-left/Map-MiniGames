@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": [
+            "我无法相信他人，命运掌握在我的手里！"
+        ],
+        "description": [
+            "相信运气这种东西，也太不可靠了吧！"
+        ],
+        "icon": {
+            "id": "minecraft:red_wool"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:games",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

@@ -1,0 +1,36 @@
+{
+    "display": {
+        "title": [
+            "重锤真重啊"
+        ],
+        "description": [
+            "这...是重锤？"
+        ],
+        "icon": {
+            "id": "minecraft:mace"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:games/wind_charge_bw",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "mace"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

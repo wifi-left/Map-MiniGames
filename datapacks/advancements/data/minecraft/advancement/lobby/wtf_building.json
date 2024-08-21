@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": [
+            "奇怪的建筑群"
+        ],
+        "description": [
+            "这里为什么会有这么奇怪的建筑？\n\u00a77\u00a7n\u00a7m其实是作者以前建造的奇怪东西，用来占位置，让地图不至于那么空。"
+        ],
+        "icon": {
+            "id": "minecraft:iron_block"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:lobby/other_builder",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

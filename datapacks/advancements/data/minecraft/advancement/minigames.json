@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": [
+            "\u00a7aMini\u00a7eGames \u00a7d小游戏地图"
+        ],
+        "description": [
+            "\u00a7b\u00a7lHave Fun"
+        ],
+        "icon": {
+            "id": "minecraft:recovery_compass"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false,
+        "background": "minecraft:textures/block/bamboo_block.png"
+    },
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {
+    }
+}

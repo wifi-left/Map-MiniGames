@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": [
+            "亲吻脚尖"
+        ],
+        "description": [
+            "史蒂夫的脚，真的是好臭啊！"
+        ],
+        "icon": {
+            "id": "minecraft:rabbit_foot"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:lobby/curious_boy_3",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": [
+            "没有完成的游戏"
+        ],
+        "description": [
+            "\u00a7b你说什么？这个游戏还没做好？！"
+        ],
+        "icon": {
+            "id": "minecraft:iron_golem_spawn_egg"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:unbelievable",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

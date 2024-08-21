@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": [
+            "不是？猎人原来还能死的啊！"
+        ],
+        "description": [
+            "为什么躲猫猫里的猎人是可以趋势的啊？"
+        ],
+        "icon": {
+            "id": "minecraft:wooden_sword"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:games/hide_animal_died",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

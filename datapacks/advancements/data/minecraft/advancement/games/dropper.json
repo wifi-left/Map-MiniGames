@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": [
+            "又是星跳水立方大佬"
+        ],
+        "description": [
+            "成功完成星跳水立方挑战！\n那么，你到底死了多少次呢？"
+        ],
+        "icon": {
+            "id": "minecraft:hopper"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:games",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": [
+            "色盲竟是我自己"
+        ],
+        "description": [
+            "垂死病中惊坐起，色盲竟是我自己"
+        ],
+        "icon": {
+            "id": "minecraft:green_terracotta"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:games",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

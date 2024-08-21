@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": [
+            "藏在森林中"
+        ],
+        "description": [
+            "我就不信了，藏得那么好，会被你发现？\n\u00a77\u00a7n\u00a7mFLAG立的飞起"
+        ],
+        "icon": {
+            "id": "minecraft:oak_sapling"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:games",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

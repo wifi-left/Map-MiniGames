@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": [
+            "其他建筑者"
+        ],
+        "description": [
+            "发现了制作地图的其他建筑者们"
+        ],
+        "icon": {
+            "id": "minecraft:bricks"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:egg",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

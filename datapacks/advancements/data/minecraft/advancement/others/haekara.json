@@ -1,0 +1,38 @@
+{
+    "display": {
+        "title": [
+            "你怎么知道哈尔卡拉营养酒的？"
+        ],
+        "description": [
+            "\u00a7a累的时候来一瓶\n",
+            "\u00a7b头脑清醒，身体健壮\n",
+            "\u00a7c\u00a7l哈尔克拉特制营养酒\n",
+            "\u00a7d克服劳累的工作吧！\n",
+            "\u00a7e（喝下后）\n",
+            "\u00a7f啊！充满能量！\n",
+            "\u00a77-------------------\n\u00a72出处：\u00a7b《打了300年的史莱姆，不知不觉就练到了满级》"
+        ],
+        "icon": {
+            "id": "minecraft:carrot_on_a_stick",
+            "components": {
+                "custom_model_data": 20
+            }
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:egg",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

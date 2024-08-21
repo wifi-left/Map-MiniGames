@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": [
+            "迷宫挑战者"
+        ],
+        "description": [
+            "成功完成迷宫挑战！\n那么，你到底花了多久呢？"
+        ],
+        "icon": {
+            "id": "minecraft:oak_leaves"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:games",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

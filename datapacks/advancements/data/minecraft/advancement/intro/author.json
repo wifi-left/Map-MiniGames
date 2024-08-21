@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": [
+            "作者"
+        ],
+        "description": [
+            "\u00a7bwifi_left\n\u00a7awifi_right"
+        ],
+        "icon": {
+            "id": "minecraft:paper"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "parent":"minecraft:minigames",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

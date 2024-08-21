@@ -3,7 +3,6 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 function minecraft:twolf/events/reset
-
 scoreboard players reset * LRS_JOB
 scoreboard players add @a[team=wait.wolfpeople,gamemode=adventure] LRS_JOB 0
 scoreboard players set wolf.total board 0
@@ -16,6 +15,8 @@ tag @a[team=wolfpeople] add wolf.tip
 tag @a[team=wait.wolfpeople] add wolf.tip
 clear @a[tag=wolf.tip]
 effect clear @a[tag=wolf.tip]
+
+advancement grant @a[tag=wolf.tip] only games/twolfstart
 
 team join wolfpeople @a[team=wait.wolfpeople,gamemode=adventure]
 

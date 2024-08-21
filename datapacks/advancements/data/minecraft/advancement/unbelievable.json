@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": [
+            "无法理解的东西"
+        ],
+        "description": [
+            "可能有点抽象？也可能是奇怪的东西。"
+        ],
+        "icon": {
+            "id": "minecraft:trial_key"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false,
+        "background": "minecraft:textures/block/bamboo_block.png"
+
+    },
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

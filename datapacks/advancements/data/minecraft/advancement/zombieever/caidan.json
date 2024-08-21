@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": [
+            "装饰物就别在意啦~"
+        ],
+        "description": [
+            "这只是一个装饰物而已...\nPVE中的彩蛋！"
+        ],
+        "icon": {
+            "id": "minecraft:zombie_head"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:egg",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

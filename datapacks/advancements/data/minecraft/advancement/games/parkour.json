@@ -1,20 +1,20 @@
 {
     "display": {
         "title": [
-            "装饰物就别在意啦~"
+            "跑酷大蛇"
         ],
         "description": [
-            "这只是一个装饰物而已...\nPVE中的彩蛋！"
+            "成功完成大厅的跑酷挑战！\n那么，你到底回了多少次记录点呢？"
         ],
         "icon": {
-            "id": "minecraft:zombie_head"
+            "id": "minecraft:light_weighted_pressure_plate"
         },
-        "frame": "goal",
+        "frame": "challenge",
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": true
     },
-    "parent": "minecraft:caidan",
+    "parent": "minecraft:games",
     "criteria": {
         "a": {
             "trigger": "minecraft:impossible"

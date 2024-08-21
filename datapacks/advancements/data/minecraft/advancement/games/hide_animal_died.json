@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": [
+            "被找到啦"
+        ],
+        "description": [
+            "面码，找到你了。"
+        ],
+        "icon": {
+            "id": "minecraft:wooden_sword"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "games/hide_block_animal",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

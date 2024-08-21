@@ -14,7 +14,7 @@
         "announce_to_chat": true,
         "hidden": true
     },
-    "parent": "minecraft:caidan",
+    "parent": "minecraft:zombieever/caidan",
     "criteria": {
         "a": {
             "trigger": "minecraft:impossible"

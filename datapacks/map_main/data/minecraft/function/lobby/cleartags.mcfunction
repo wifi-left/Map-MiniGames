@@ -28,3 +28,8 @@ xp set @s 0 levels
 xp set @s 0 points
 
 execute in overworld run spawnpoint @s 209 84 27
+
+advancement grant @s only minigames
+advancement grant @s only egg
+advancement grant @s only games
+advancement grant @s only unbelievable

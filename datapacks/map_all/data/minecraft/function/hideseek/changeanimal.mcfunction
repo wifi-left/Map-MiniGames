@@ -25,3 +25,5 @@ execute at @s align xyz unless block ~ ~-0.5 ~ #hideseek run tellraw @s ["\n\u00
 
 tag @e[tag=neww] remove neww
 tag @e remove shouldtp
+
+advancement grant @s only games/hide_block_animal

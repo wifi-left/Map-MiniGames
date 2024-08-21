@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": [
+            "炸了！完了！我到异世界了！"
+        ],
+        "description": [
+            "这土豆怎么会爆炸啊！难道是...土豆炸弹？！"
+        ],
+        "icon": {
+            "id": "minecraft:baked_potato"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:games",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

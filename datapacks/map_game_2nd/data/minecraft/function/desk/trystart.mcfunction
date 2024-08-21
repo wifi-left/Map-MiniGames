@@ -18,6 +18,7 @@ execute if score tmp.canplay board matches 0 run playsound block.anvil.land play
 execute if score tmp.canplay board matches 0 run return 0
 
 
+execute if score desk.type board matches 2 run advancement grant @s only minecraft:games/imcompleted_game
 execute if score desk.type board matches 2 run tellraw @s ["\u00a7c新游戏鸽了，等更新吧..."]
 execute if score desk.type board matches 2 run return 0
 
