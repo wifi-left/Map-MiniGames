@@ -1,0 +1,70 @@
+{
+    "display": {
+        "title": [
+            "全成就！"
+        ],
+        "description": [
+            "\u00a7b获得所有能够获得的成就（进度）！"
+        ],
+        "icon": {
+            "id": "minecraft:redstone_torch"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minigames",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "type_specific": {
+                        "type": "player",
+                        "advancements":{
+                            "minecraft:minigames": true,
+                            "minecraft:games": true,
+                            "minecraft:egg": true,
+                            "minecraft:unbelievable": true,
+                            "minecraft:zombieever/caidan": true,
+                            "minecraft:zombieever/wtf": true,
+                            "minecraft:others/haekara": true,
+                            "minecraft:intro/author": true,
+                            "minecraft:intro/other": true,
+                            "minecraft:lobby/cue_feet": true,
+                            "minecraft:lobby/curious_boy_1": true,
+                            "minecraft:lobby/curious_boy_2": true,
+                            "minecraft:lobby/curious_boy_3": true,
+                            "minecraft:lobby/good_view_ontop": true,
+                            "minecraft:lobby/other_builder": true,
+                            "minecraft:lobby/wtf_building": true,
+                            "minecraft:games/chess_in_mc": true,
+                            "minecraft:games/dropper": true,
+                            "minecraft:games/hide_animal_died": true,
+                            "minecraft:games/hide_block_animal": true,
+                            "minecraft:games/hide_hunter_died": true,
+                            "minecraft:games/i_am_colorblindness": true,
+                            "minecraft:games/i_cant_believe_myself": true,
+                            "minecraft:games/imcompleted_game": true,
+                            "minecraft:games/mace_bw": true,
+                            "minecraft:games/migong": true,
+                            "minecraft:games/parkour": true,
+                            "minecraft:games/pool_cold_underwater": true,
+                            "minecraft:games/potato_boom": true,
+                            "minecraft:games/remaking_game": true,
+                            "minecraft:games/twolfstart": true,
+                            "minecraft:games/wind_charge_bw": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}
