@@ -8,3 +8,5 @@ tellraw @s ["\n\u00a77   本次游戏仍然有效，您已加入游戏！\n   \u
 team join play.zombie
 gamemode spectator @s
 tp @s 630 40 -78 90 0
+
+execute if score zombie.mode board matches 1 unless entity @s[tag=GOABLE.SPEC] run function zombieever/fuhuo

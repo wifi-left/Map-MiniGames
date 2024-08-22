@@ -24,6 +24,3 @@ kill @e[type=item,x=536,y=-24,z=-107,distance=0..80]
 kill @e[type=experience_orb,x=628,y=39,z=-82,distance=0..60]
 kill @e[type=experience_orb,x=536,y=-24,z=-107,distance=0..80]
 
-forceload remove 597 -111 714 1
-forceload remove 656 -41 596 -112
-forceload remove 585 -67 495 -154
