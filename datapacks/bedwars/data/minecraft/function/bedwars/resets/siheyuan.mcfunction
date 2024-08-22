@@ -71,6 +71,12 @@ execute if score bw.reset board matches 56 run fill -216 63 299 -392 63 121 air
 execute if score bw.reset board matches 57 run fill -216 64 299 -392 64 121 air
 execute if score bw.reset board matches 58 run fill -216 65 299 -392 65 121 air
 execute if score bw.reset board matches 59 run fill -216 66 299 -392 66 121 air
+execute if score bw.reset board matches 59 run fill -216 67 299 -392 67 121 air
+execute if score bw.reset board matches 59 run fill -216 68 299 -392 68 121 air
+execute if score bw.reset board matches 59 run fill -216 69 299 -392 69 121 air
+execute if score bw.reset board matches 59 run fill -216 70 299 -392 70 121 air
+execute if score bw.reset board matches 59 run fill -216 71 299 -392 71 121 air
+execute if score bw.reset board matches 59 run fill -216 72 299 -392 72 121 air
 execute if score bw.reset board matches 60 run function bedwars/resets/points/siheyuan
 title @a[tag=bw.player] title ["\u00a7eReseting..."]
 title @a[tag=bw.player] subtitle ["\u00a7bMap: \u00a7f四合院\u00a77 ; ",{"score":{"objective": "board","name": "bw.reset"},"color":"green"},"\u00a7b / \u00a7c60"]
