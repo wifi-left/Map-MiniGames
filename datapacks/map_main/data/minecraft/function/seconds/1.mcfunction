@@ -36,3 +36,4 @@ effect give @a[team=hide.killer] glowing 2 2 true
 
 execute if score btw.state state matches 1.. in overworld run function boatwars/second
 
+execute if score duel.state state matches 1.. run function minecraft:duel/hftick

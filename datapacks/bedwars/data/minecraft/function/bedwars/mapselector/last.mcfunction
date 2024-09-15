@@ -11,6 +11,6 @@ execute if score tmp.canset board matches 0 run tellraw @s ["\u00a7c游戏仅管
 execute if score tmp.canset board matches 0 run playsound block.anvil.land player @s ~ ~ ~ 1 1 0
 execute if score tmp.canset board matches 0 run return 0
 
-execute if score bw.mode board matches 2.. run scoreboard players remove bw.mode board 1
+execute if score bw.map board matches 1.. run scoreboard players remove bw.map board 1
 function bedwars/mapselector/show
 # function tntwars/mapselector/show

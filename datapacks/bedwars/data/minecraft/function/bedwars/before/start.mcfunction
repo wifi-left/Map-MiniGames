@@ -6,6 +6,7 @@ tellraw @a[team=bw.wait] ["",{"text":"▬▬▬▬▬▬▬▬▬▬▬▬▬▬
 
 scoreboard players add globle globle.game 1
 scoreboard players operation bw globle.game = globle globle.game
+scoreboard players operation bw.mode board = bw.map board
 tag @a[team=bw.wait] add bw.player
 execute as @a[team=bw.wait] at @s run playsound entity.ender_dragon.growl player @s
 schedule clear bedwars/resets/space

@@ -73,7 +73,8 @@ execute if score bw.reset board matches 64 run clone from bedwars_backup -573 27
 execute if score bw.reset board matches 65 run clone from bedwars_backup -573 278 121 -397 278 299 -392 64 121
 execute if score bw.reset board matches 66 run clone from bedwars_backup -573 279 121 -397 279 299 -392 65 121
 execute if score bw.reset board matches 67 run clone from bedwars_backup -573 280 121 -397 280 299 -392 66 121
-execute if score bw.reset board matches 68 run fill -216 68 299 -392 68 121 air
+execute if score bw.reset board matches 68 run fill -216 67 299 -392 67 121 air
+execute if score bw.reset board matches 73 run fill -216 68 299 -392 68 121 air
 execute if score bw.reset board matches 69 run fill -216 69 299 -392 69 121 air
 execute if score bw.reset board matches 70 run fill -216 70 299 -392 70 121 air
 execute if score bw.reset board matches 71 run fill -216 71 299 -392 71 121 air

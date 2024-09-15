@@ -47,9 +47,11 @@ schedule clear bedwars/resets/glassworld
 scoreboard players set bw.reset board 0
 title @a[tag=bw.player] times 0 200 0
 gamemode spectator @a[tag=bw.player,gamemode=adventure]
+execute if score bw.mode board matches ..0 store result score bw.mode board run random value 1..6
+
+
 execute if score bw.mode board matches 1 run function bedwars/resets/mogu
 execute if score bw.mode board matches 2 run function bedwars/resets/unnamed
-execute if score bw.mode board matches ..0 run function bedwars/resets/unnamed
 execute if score bw.mode board matches 3 run function bedwars/resets/space
 execute if score bw.mode board matches 4 run function bedwars/resets/special1
 execute if score bw.mode board matches 5 run function bedwars/resets/glassworld

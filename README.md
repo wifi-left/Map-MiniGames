@@ -44,6 +44,10 @@ GitHub 的 URL 为：[https://github.com/wifi-left/Map-MiniGames/raw/master/reso
 - 感谢 残月sama 提供的支持
 - 感谢 群友、地图使用者 的支持
 - 感谢 Akita丶 有偿提供的建筑
+  >
   > 如果您有需要建筑地图的可以与他（Akita丶）联系。
+  > 
   > MineBBS链接地址：[https://www.minebbs.com/threads/1-12-1-20-4-rpg-pvp.30597/](https://www.minebbs.com/threads/1-12-1-20-4-rpg-pvp.30597/)
+  >
   > 本作者仅提供宣传，不保证该第三方作者的质量，如果出现问题请双方自行解决。
+  >
