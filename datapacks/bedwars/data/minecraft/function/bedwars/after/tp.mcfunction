@@ -19,3 +19,5 @@ bossbar set minigames:bedwars value 1
 bossbar set minigames:bedwars max 1
 bossbar set minigames:bedwars players
 bossbar set minigames:bedwars visible false
+
+title @a[tag=bw.player] reset

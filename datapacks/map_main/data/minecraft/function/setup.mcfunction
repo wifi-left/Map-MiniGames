@@ -5,6 +5,8 @@
 tellraw @a ["\u00a7b\u00a7l[Gamom Datapacks] \u00a7aReloaded successfully ! \u00a7e[Language: 简体中文]"]
 function minecraft:bedwars/setup
 scoreboard objectives remove use.egg
+scoreboard objectives remove bw.team
+scoreboard objectives add bw.team dummy "起床|队伍选择"
 # scoreboard objectives remove ingameid
 scoreboard objectives add ingameid dummy "游戏内ID"
 scoreboard objectives add merchant.coin dummy "\u00a7b\u00a7l商贾传奇 \u00a7e金钱"

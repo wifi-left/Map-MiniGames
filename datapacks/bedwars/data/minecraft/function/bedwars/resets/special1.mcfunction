@@ -5,6 +5,7 @@
 # /clone -573 153 121 -397 153 299
 # -> 225
 #
+execute unless score bw.state state matches -1 run return 0
 execute if score bw.reset board matches 0..0 in bedwars_backup run forceload add -573 299 -397 121
 execute if score bw.reset board matches 1..1 run fill -216 0 299 -392 0 121 air
 execute if score bw.reset board matches 2..2 run fill -216 1 299 -392 1 121 air

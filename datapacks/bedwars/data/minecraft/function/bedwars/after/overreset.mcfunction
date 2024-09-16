@@ -6,6 +6,9 @@
 schedule clear bedwars/resets/mogu
 schedule clear bedwars/resets/unnamed
 schedule clear bedwars/resets/space
+schedule clear bedwars/resets/special1
+schedule clear bedwars/resets/glassworld
+schedule clear bedwars/resets/siheyuan
 scoreboard players reset * bw.tmp.ir
 scoreboard players reset * bw.tmp.gd
 scoreboard players reset * bw.tmp.dm
@@ -25,6 +28,6 @@ tag @a remove bw.play
 gamemode spectator @a[tag=bw.player]
 clear @a[tag=bw.player]
 effect clear @a[tag=bw.player]
-function bedwars/after/tp
+function bedwars/after/over
 forceload remove -216 300 -393 121
 kill @e[type=item]

@@ -24,8 +24,12 @@ tag @a[team=bw.wait,tag=!GOABLE.SPEC] add bw.play
 title @a[tag=bw.player] reset
 title @a[tag=bw.player] title ["\u00a7eBedwars"]
 title @a[tag=bw.player] subtitle ["\u00a7a游戏开始！"]
+
+execute if score bw.custom_team board matches 0 run function bedwars/before/selected_team
+
 execute if score bw.mode state matches 0..3 run execute as @a[team=bw.wait,tag=!GOABLE.SPEC] at @s run function minecraft:bedwars/before/random_team
 execute if score bw.mode state matches 4..7 run execute as @a[team=bw.wait,tag=!GOABLE.SPEC] at @s run function minecraft:bedwars/before/random_team_2teams
+scoreboard players reset * bw.team
 tag @a[team=bw.wait] remove bw.play
 tellraw @a ["\u00a7a\u00a7l[MESSAGE] \u00a76起床战争\u00a7b游戏已经开始！"]
 tellraw @a[team=bw.blue] ["\u00a76你加入了\u00a79蓝队"]

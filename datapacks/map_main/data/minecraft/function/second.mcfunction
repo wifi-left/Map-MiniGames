@@ -11,13 +11,13 @@ execute if score tick3 tick matches 10.. run function minecraft:ttsecond
 effect give @a[team=play.color] resistance 1 25 true
 effect give @a[team=wait.color] resistance 1 25 true
 
+function minecraft:snow/second
 
 execute store result bossbar minecraft:live value run scoreboard players get live.time live.all
 execute if score live.state state matches 1..1 run scoreboard players add live.time live.all 1
 
 execute if score park.state state matches 1.. run function minecraft:parkourrace/testfor
 execute if score pw.state state matches 1.. run function minecraft:poolwar/second
-function minecraft:snow/second
 execute if score car.state state matches 1.. run function minecraft:car_race/second
 
 execute as @e[tag=block_entity] run data merge entity @s {Time:100}
@@ -40,13 +40,5 @@ effect give @a[team=boat] resistance 3 25 true
 execute as @e[type=area_effect_cloud,tag=lobby] at @s run data merge entity @s {Duration:2147483647,Age:0}
 
 function foodparty:second
-tag @a[team=lobby] add music.playing
-tag @a[team=dropper] add music.playing
-tag @a[team=chestgame] add music.playing
-tag @a[team=parkour] add music.playing
-tag @a[tag=music.playing,team=!lobby,team=!dropper,team=!parkour,team=!chestgame] remove music_kano
-tag @a[tag=music.playing,team=!lobby,team=!dropper,team=!parkour,team=!chestgame] remove music_little_stars
-tag @a[tag=music.playing,team=!lobby,team=!dropper,team=!parkour,team=!chestgame] remove music.playing
-scoreboard players reset @a[tag=!music.playing] time
 
 function dev/second

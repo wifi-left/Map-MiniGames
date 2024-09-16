@@ -33,3 +33,5 @@ advancement grant @s only minigames
 advancement grant @s only egg
 advancement grant @s only games
 advancement grant @s only unbelievable
+
+title @s reset

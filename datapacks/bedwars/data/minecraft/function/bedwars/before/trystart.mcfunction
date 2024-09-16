@@ -3,6 +3,7 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 playsound ui.button.click player @s
+execute if score bw.state state matches ..-1 run tellraw @s ["\u00a7c游戏正在准备，请稍等游戏开始！"]
 
 ## 检测是否禁止启动
 scoreboard players set tmp.canplay board 0
