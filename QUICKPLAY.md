@@ -18,8 +18,8 @@
 |:----:|:----:|
 |Battle Box|battle|
 |信仰方块|believer|
-|冰船|boat|
-|赛车|car_race|
+|~~冰船~~|boat|
+|~~赛车~~|car_race|
 |色盲大战|color|
 |星跳水立方|dropper|
 |战桥|duel|
@@ -35,10 +35,13 @@
 |冬泳怪鸽|poolwar|
 |五子棋|small_games/chess|
 |小游戏合集|small_games/total|
+|桌游类|desk|
 |Snow|snow|
 |TNT Wars|tntwars|
 |狼人杀|twolf|
 |Zombie Days（PVE）|zombieever|
+|云端争霸（Cloudwars）|cloud|
+|Boatwars|boatwars|
 
 ### 例外
 1. 生存游戏：
