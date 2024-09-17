@@ -10,4 +10,5 @@ scoreboard players set wolf.time board 60
 scoreboard players set wolf.event board 11
 tag @s add wolf.acting
 execute as @a[tag=wolf.tip] run function twolf/tips/knight
+tellraw @a[tag=wolf.tip] ["\n\u00a7a\u00a7l「骑士」\u00a76发动了技能。\n"]
 function minecraft:twolf/action/per/tag/knight

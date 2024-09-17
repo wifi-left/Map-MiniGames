@@ -5,7 +5,7 @@
 execute if score wolf.round board matches 1 as @a[tag=wolf.tip] at @s run function twolf/tips/witch
 tag @a remove wolf.acting
 execute as @a[team=wolfpeople,gamemode=adventure] if score @s LRS_JOB matches 5 run tag @s add wolf.acting
-tellraw @a[tag=wolf.tip] ["\u00a76\u00a7l女巫\u00a7a请睁眼。"]
+tellraw @a[tag=wolf.tip] ["\n\n\n\u00a76\u00a7l女巫\u00a7a请睁眼。"]
 title @a[tag=wolf.tip] title [""]
 title @a[tag=wolf.tip] subtitle ["\u00a76\u00a7l女巫\u00a7a请睁眼。"]
 
