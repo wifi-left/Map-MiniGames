@@ -5,7 +5,9 @@
 playsound ui.button.click player @s
 scoreboard players set wait.player tick 0
 execute as @a[team=pw.wait,gamemode=adventure] run scoreboard players add wait.player tick 1
+
 scoreboard players add pw.state state 0
+
 execute if score pw.state state matches 1.. run function minecraft:poolwar/spec
 
 ## 检测是否禁止启动
