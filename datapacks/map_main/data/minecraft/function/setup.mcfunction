@@ -6,6 +6,8 @@ tellraw @a ["\u00a7b\u00a7l[Gamom Datapacks] \u00a7aReloaded successfully ! \u00
 function minecraft:bedwars/setup
 scoreboard objectives remove use.egg
 scoreboard objectives remove bw.team
+scoreboard objectives remove snow.tick
+scoreboard objectives add snow.tick dummy "Snow: TNTRUN block Time"
 scoreboard objectives add bw.team dummy "起床|队伍选择"
 # scoreboard objectives remove ingameid
 scoreboard objectives add ingameid dummy "游戏内ID"
