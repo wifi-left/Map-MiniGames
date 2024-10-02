@@ -6,7 +6,7 @@ scoreboard players set wait.player tick 0
 execute as @a[team=pw.wait,gamemode=adventure] run scoreboard players add wait.player tick 1
 
 scoreboard players set tmp board 0
-execute if entity @a[team=pw.wait,tag=play.total] if score wait.player tick matches 8.. run scoreboard players set tmp board 1
+execute if entity @a[team=pw.wait,tag=play.total] if score wait.player tick matches 7.. run scoreboard players set tmp board 1
 execute if score tmp board matches 1.. run function minecraft:poolwar/over_toomany
 execute if score tmp board matches 1.. run return 0
 

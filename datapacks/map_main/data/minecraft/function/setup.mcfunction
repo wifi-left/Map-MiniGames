@@ -42,6 +42,8 @@ scoreboard objectives add hub trigger "\u00a7b回城操作"
 scoreboard objectives add rejoin trigger "\u00a7e重新加入游戏操作"
 scoreboard objectives remove xp
 scoreboard objectives add xp level "经验等级"
+scoreboard objectives remove temp
+scoreboard objectives add temp dummy "\u00a7c临时变量"
 bossbar remove minecraft:battle
 bossbar add minecraft:battle "BATTLE GAME"
 bossbar set minecraft:battle color green
@@ -84,3 +86,5 @@ execute unless score hunger.state state matches 1.. run execute in hungerworld r
 kill @e[type=firework_rocket]
 kill @e[type=fireball]
 # kill @e[type=item]
+
+gamerule commandModificationBlockLimit 114514

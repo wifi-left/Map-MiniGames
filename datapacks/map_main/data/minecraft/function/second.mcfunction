@@ -11,6 +11,8 @@ execute if score tick3 tick matches 10.. run function minecraft:ttsecond
 effect give @a[team=play.color] resistance 1 25 true
 effect give @a[team=wait.color] resistance 1 25 true
 
+execute as @a[team=golf,gamemode=survival] run scoreboard players set @s hub 1
+
 function minecraft:snow/second
 
 execute store result bossbar minecraft:live value run scoreboard players get live.time live.all

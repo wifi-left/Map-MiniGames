@@ -13,6 +13,7 @@ execute if data entity @s {SelectedItem:{id:"minecraft:iron_shovel"}} run scoreb
 execute if data entity @s {SelectedItem:{id:"minecraft:diamond_shovel"}} run scoreboard players set golf.scb.tmp board 30
 execute if data entity @s {SelectedItem:{id:"minecraft:netherite_shovel"}} run scoreboard players set golf.scb.tmp board 35
 scoreboard players operation @s golf.nowroundscore += golf.scb.tmp board
-tellraw @s ["\u00a7c + ",{"score":{"name": "golf.scb.tmp","objective": "board"},"color": "red"},""]
+tellraw @s ["\u00a7c - ",{"score":{"name": "golf.scb.tmp","objective": "board"},"color": "red"},""]
+title @a[team=golf] actionbar ["\u00a7c - ",{"score":{"name": "golf.scb.tmp","objective": "board"},"color": "red"}," \u00a76| \u00a7e使用总能量：",{"score":{"name": "@s","objective": "golf.nowroundscore"},"color": "aqua"}]
 playsound entity.experience_orb.pickup player @s ~ ~ ~ 3 1 1
 effect give @e[tag=golf.ball] regeneration 2 25 true

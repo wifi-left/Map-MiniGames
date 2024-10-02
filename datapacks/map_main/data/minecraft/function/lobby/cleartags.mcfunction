@@ -35,3 +35,5 @@ advancement grant @s only games
 advancement grant @s only unbelievable
 
 title @s reset
+bossbar set minecraft:golf players @a[team=golf]
+
