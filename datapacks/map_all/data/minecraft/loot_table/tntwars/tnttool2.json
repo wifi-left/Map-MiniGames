@@ -1,0 +1,155 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "minecraft:carrot_on_a_stick",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "minecraft:custom_name": "\"\\u00a7c\\u00a7lFireball\\u00a77 - 右键使用\"",
+                                "minecraft:custom_data": {
+                                    "tnt": 4
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:carrot_on_a_stick",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "minecraft:custom_name": "\"\\u00a7b\\u00a7lTNT Rain\\u00a77 - 右键使用\"",
+                                "minecraft:custom_data": {
+                                    "tnt": 5
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "minecraft:carrot_on_a_stick",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "minecraft:custom_name": "\"\\u00a72\\u00a7lCreeper\\u00a77 - 右键使用\"",
+                                "minecraft:custom_data": {
+                                    "tnt": 3
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "minecraft:carrot_on_a_stick",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "minecraft:custom_name": "\"\\u00a74\\u00a7lTNT\\u00a77 - 右键使用\"",
+                                "minecraft:custom_data": {
+                                    "tnt": 2
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "minecraft:bow",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "minecraft:custom_name": "\"\\u00a79\\u00a7lTNT BOW\"",
+                                "minecraft:custom_data": {
+                                    "tnt": 9
+                                },
+                                "max_damage": 1
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "minecraft:carrot_on_a_stick",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "minecraft:custom_name": "\"\\u00a74\\u00a7lLong-Way TNT\\u00a77 - 右键使用\"",
+                                "minecraft:custom_data": {
+                                    "tnt": 8
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "minecraft:carrot_on_a_stick",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "minecraft:custom_name": "\"\\u00a7c\\u00a7lTNT - Minecart\\u00a77 - 右键使用\"",
+                                "minecraft:custom_data": {
+                                    "tnt": 1
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:carrot_on_a_stick",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "minecraft:custom_name": "\"\\u00a72\\u00a7lCreeper Rain\\u00a77 - 右键使用\"",
+                                "minecraft:custom_data": {
+                                    "tnt": 6
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "minecraft:carrot_on_a_stick",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "minecraft:custom_name": "\"\\u00a7c\\u00a7lFireball Rain\\u00a77 - 右键使用\"",
+                                "minecraft:custom_data": {
+                                    "tnt": 7
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
