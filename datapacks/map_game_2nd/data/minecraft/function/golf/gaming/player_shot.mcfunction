@@ -1,5 +1,5 @@
 # 成功！
-execute as @s run scoreboard players set @s temp 10000
+execute as @s run scoreboard players set @s temp 5000
 execute as @s run scoreboard players operation @s temp -= @s golf.nowroundscore 
 execute as @s run scoreboard players operation @s golf.score += @s temp
 tellraw @s ["\u00a76你成功让 \u00a7bBall \u00a76进洞\u00a76。\u00a7e 分数 +",{"score":{"name": "@s","objective": "temp"},"color": "aqua"}]
