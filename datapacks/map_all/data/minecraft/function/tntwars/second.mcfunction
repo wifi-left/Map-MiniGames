@@ -19,4 +19,3 @@ execute if score tnt.creeperrain board matches ..0 run kill @e[tag=tnt.tntrain.c
 execute if score tnt.fireballrain board matches ..0 run kill @e[tag=tnt.tntrain.fireball]
 effect give @a[team=play.tntwars] glowing 2 25 true
 execute as @a[team=play.tntwars,gamemode=adventure] if items entity @s container.* bow[custom_data~{tnt:9b}] run item replace entity @s container.35 with minecraft:tipped_arrow[custom_data={tnt:10}]
-execute as @a[team=play.tntwars,gamemode=adventure] at @s as @e[type=arrow,tag=!tnt.arrowold,distance=..20] at @s if data entity @s {item:{components:{"minecraft:custom_data":{tnt:10}}}} run function minecraft:tntwars/shoottnt/arrow
