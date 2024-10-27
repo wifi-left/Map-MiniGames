@@ -4,7 +4,7 @@
 ## 
 scoreboard players add btw.round board 1
 scoreboard players set btw.state state 2
-kill @e[type=boat,tag=btw.boat]
+kill @e[type=#boat,tag=btw.boat]
 xp set @a[team=btw.play.b] 0 points
 xp set @a[team=btw.play.b] 0 levels
 xp set @a[team=btw.play.a] 0 points

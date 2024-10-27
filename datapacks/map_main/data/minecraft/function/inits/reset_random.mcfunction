@@ -44,7 +44,7 @@ summon marker 0 10 0 {Tags:["random_game","neww"],CustomName:'"\\u00a7c烫手的
 scoreboard players set @e[tag=neww] board 9
 tag @e[tag=neww] remove neww
 # Pool War
-summon marker 0 10 0 {Tags:["random_game","neww"],CustomName:'"\\u00a7b冬泳怪鸽"'}
+summon marker 0 10 0 {Tags:["random_game","neww"],CustomName:'"\\u00a76高尔夫"'}
 scoreboard players set @e[tag=neww] board 10
 tag @e[tag=neww] remove neww
 # TNT Wars
@@ -62,39 +62,6 @@ tag @e[tag=neww] remove neww
 # Duel 8
 # Hot Potato 9
 # Pool War 10
-summon marker 0 10 0 {Tags:["random_saying","neww"]}
-scoreboard players set @e[tag=neww] board 1
-tag @e[tag=neww] remove neww
-summon marker 0 10 0 {Tags:["random_saying","neww"]}
-scoreboard players set @e[tag=neww] board 2
-tag @e[tag=neww] remove neww
-summon marker 0 10 0 {Tags:["random_saying","neww"]}
-scoreboard players set @e[tag=neww] board 3
-tag @e[tag=neww] remove neww
-summon marker 0 10 0 {Tags:["random_saying","neww"]}
-scoreboard players set @e[tag=neww] board 4
-tag @e[tag=neww] remove neww
-summon marker 0 10 0 {Tags:["random_saying","neww"]}
-scoreboard players set @e[tag=neww] board 5
-tag @e[tag=neww] remove neww
-summon marker 0 10 0 {Tags:["random_saying","neww"]}
-scoreboard players set @e[tag=neww] board 6
-tag @e[tag=neww] remove neww
-summon marker 0 10 0 {Tags:["random_saying","neww"]}
-scoreboard players set @e[tag=neww] board 7
-tag @e[tag=neww] remove neww
-summon marker 0 10 0 {Tags:["random_saying","neww"]}
-scoreboard players set @e[tag=neww] board 8
-tag @e[tag=neww] remove neww
-summon marker 0 10 0 {Tags:["random_saying","neww"]}
-scoreboard players set @e[tag=neww] board 9
-tag @e[tag=neww] remove neww
-summon marker 0 10 0 {Tags:["random_saying","neww"]}
-scoreboard players set @e[tag=neww] board 10
-tag @e[tag=neww] remove neww
-summon marker 0 10 0 {Tags:["random_saying","neww"]}
-scoreboard players set @e[tag=neww] board 11
-tag @e[tag=neww] remove neww
 
 # forceload remove 168 -45 168 -45
 

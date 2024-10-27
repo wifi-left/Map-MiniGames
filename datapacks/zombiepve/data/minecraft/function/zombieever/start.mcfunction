@@ -30,7 +30,7 @@ scoreboard players set zombie.round board 0
 function zombieever/door/closeall
 kill @e[type=villager,tag=zombie.villagers]
 kill @e[type=!player,tag=pve.zombie]
-execute if score zombie.type board matches 1 as @e[tag=zombie.villager] at @s run summon villager ~ ~ ~ {Tags:["zombie.villagers"],NoAI:1b,PersistenceRequired:1b,Glowing:1b,VillagerData:{profession:"minecraft:none",type:"minecraft:snow"},Offers:{Recipes:[]},Rotation:[0.0f,0.0f],Health:20f,CustomNameVisible:1b,Team:"play.zombie",attributes:[{base:20d,id:"generic.max_health"}]}
+execute if score zombie.type board matches 1 as @e[tag=zombie.villager] at @s run summon villager ~ ~ ~ {Tags:["zombie.villagers"],NoAI:1b,PersistenceRequired:1b,Glowing:1b,VillagerData:{profession:"minecraft:none",type:"minecraft:snow"},Offers:{Recipes:[]},Rotation:[0.0f,0.0f],Health:20f,CustomNameVisible:1b,Team:"play.zombie",attributes:[{base:20d,id:"max_health"}]}
 
 tellraw @a[team=play.zombie] ["\n\u00a7a   欢迎游玩 \u00a72\u00a7lZombie Day\u00a7a！\n   \u00a7b目前此游戏处于测试阶段，如发现 BUG 请及时反馈！\n\u00a7a   第一波僵尸将会在 \u00a7e15秒 \u00a7a后来临！\n"]
 

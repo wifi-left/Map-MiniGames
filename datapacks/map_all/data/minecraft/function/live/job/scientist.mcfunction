@@ -4,7 +4,7 @@
 ## 
 clear @s
 effect clear @s
-item replace entity @s container.0 with minecraft:diamond_sword[unbreakable={show_in_tooltip:false},attribute_modifiers={modifiers:[{type:"generic.attack_damage",slot:mainhand,id:"uuid_4894794278636495",name:"noName",amount:6d,operation:"add_value"},{type:"generic.attack_speed",slot:"mainhand",id:"uuid_1145514511455145",name:"noName",amount:-2.4,operation:"add_value"}],show_in_tooltip:false}]
+item replace entity @s container.0 with minecraft:diamond_sword[unbreakable={show_in_tooltip:false},attribute_modifiers={modifiers:[{type:"attack_damage",slot:mainhand,id:"uuid_4894794278636495",amount:6d,operation:"add_value"},{type:"attack_speed",slot:"mainhand",id:"uuid_1145514511455145",amount:-2.4,operation:"add_value"}],show_in_tooltip:false}]
 item replace entity @s armor.chest with minecraft:leather_chestplate[unbreakable={},dyed_color={rgb:7963501}]
 item replace entity @s armor.head with minecraft:player_head[unbreakable={},profile="MHF_ArrowUp"]
 item replace entity @s armor.feet with minecraft:leather_boots[unbreakable={},dyed_color={rgb:7963501}]

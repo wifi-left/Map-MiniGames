@@ -13,4 +13,4 @@ give @s zombie_spawn_egg 2
 give @s skeleton_spawn_egg 2
 execute unless score sur.state state matches 1.. run scoreboard players set @s hub 1
 execute unless score sur.state state matches 1.. run tellraw @s ["\n\u00a7c游戏出错。你已返回大厅。\n"]
-item replace entity @s armor.head with minecraft:zombie_head[enchantments={levels:{"minecraft:binding_curse":1}},attribute_modifiers={modifiers:[{type:"generic.armor",slot:head,id:"uuid_1041146773349500",name:"noName",amount:20d,operation:"add_value"},{type:"generic.armor_toughness",slot:head,id:"uuid_2169772434783358",name:"noName",amount:4d,operation:"add_value"}]}]
+item replace entity @s armor.head with minecraft:zombie_head[enchantments={levels:{"minecraft:binding_curse":1}},attribute_modifiers={modifiers:[{type:"armor",slot:head,id:"uuid_1041146773349500",amount:20d,operation:"add_value"},{type:"armor_toughness",slot:head,id:"uuid_2169772434783358",amount:4d,operation:"add_value"}]}]

@@ -16,7 +16,7 @@ execute if score random board matches 5 run title @s subtitle ["\u00a7e —— �
 execute if score random board matches 6 run title @s title ["\u00a7a你担心什么，什么就控制你。你所拥有的，亦是你的枷锁。"]
 execute if score random board matches 6 run title @s subtitle ["\u00a7e —— 约翰·洛克 / 未知"]
 execute if score random board matches 7 run title @s title ["\u00a7a我与我周旋久，宁做我。"]
-execute if score random board matches 7 run title @s subtitle ["\u00a7e —— 汪曾祺《世说新语》"]
+execute if score random board matches 7 run title @s subtitle ["\u00a7e —— 《世说新语》"]
 execute if score random board matches 8 run title @s title ["\u00a7a有些人污蔑诋毁你，却又想成为你。"]
 execute if score random board matches 8 run title @s subtitle ["\u00a7e —— 俗语"]
 execute if score random board matches 9 run title @s title ["\u00a7a没有什么会踏雾而来，喜欢的风景要自己去看。"]
@@ -25,6 +25,37 @@ execute if score random board matches 10 run title @s title ["\u00a7a我既年�
 execute if score random board matches 10 run title @s subtitle ["\u00a7e —— 托尼·凯耶《超脱》"]
 execute if score random board matches 11 run title @s title ["\u00a7a哀其不幸，怒其不争。从来如此，便对么？"]
 execute if score random board matches 11 run title @s subtitle ["\u00a7e —— 鲁迅《孔乙己》&《狂人日记》"]
+
+execute if score random board matches 12 run title @s title "\u00a7a招待不周——"
+execute if score random board matches 12 run title @s subtitle ["\u00a7e —— 《食戟之灵》"]
+execute if score random board matches 13 run title @s title "\u00a7a没必要的事不做，必要的事尽快做。"
+execute if score random board matches 13 run title @s subtitle ["\u00a7e —— 折木奉太郎《冰菓》"]
+execute if score random board matches 14 run title @s title "\u00a7a藏好了吗？"
+execute if score random board matches 14 run title @s subtitle ["\u00a7e —— 《未闻花名》"]
+execute if score random board matches 15 run title @s title "\u00a7a遥远的不是距离，而是次元啊！"
+execute if score random board matches 15 run title @s subtitle ["\u00a7e —— 安艺伦也《路人女主的养成方法》"]
+execute if score random board matches 16 run title @s title "\u00a74群聚的都是弱者。弱小的草食动物才喜欢群聚。"
+execute if score random board matches 16 run title @s subtitle ["\u00a7e —— 《家庭教师》"]
+execute if score random board matches 17 run title @s title "\u00a73无论发生了什么，也不要后悔与我相遇。"
+execute if score random board matches 17 run title @s subtitle ["\u00a7e —— 《CLANNAD AFTER STORY》"]
+execute if score random board matches 18 run title @s title "\u00a72初见幽灵现真身，始知其为枯芒草。"
+execute if score random board matches 18 run title @s subtitle ["\u00a7e —— 《冰菓》"]
+execute if score random board matches 19 run title @s title "\u00a71不能逃避，不能逃避，不能逃避。"
+execute if score random board matches 19 run title @s subtitle ["\u00a7e —— 碇真嗣《EVA》"]
+execute if score random board matches 20 run title @s title "\u00a7b没有未来的未来不是我想要的未来！"
+execute if score random board matches 20 run title @s subtitle ["\u00a7e —— 神原秋人《境界的彼方》"]
+execute if score random board matches 21 run title @s title "\u00a7e我们总是在意错过了多少，却不注意自己拥有多少。"
+execute if score random board matches 21 run title @s subtitle ["\u00a7e —— 《未闻花名》"]
+execute if score random board matches 22 run title @s title "\u00a76总有一天我会让这里座无虚席!"
+execute if score random board matches 22 run title @s subtitle ["\u00a7e —— 高坂穗乃果《LoveLive!》"]
+execute if score random board matches 23 run title @s title "\u00a75谁都无法相信未来，谁都无法接受未来。"
+execute if score random board matches 23 run title @s subtitle ["\u00a7e —— 晓美焰《魔法少女小圆》"]
+execute if score random board matches 24 run title @s title "\u00a7a隐约雷鸣，阴霾天空，但盼风雨来，能留你在此。"
+execute if score random board matches 24 run title @s subtitle ["\u00a7e —— 《言叶之庭》"]
+execute if score random board matches 25 run title @s title "\u00a7c来吧！颤抖吧！惊叹吧！绝望吧！放声大哭吧！我的艺术就是——爆炸！"
+execute if score random board matches 25 run title @s subtitle ["\u00a7e —— 《火影忍者》迪达拉"]
+execute if score random board matches 26 run title @s title "\u00a7f我们终会相知，在那悠远的苍穹。"
+execute if score random board matches 26 run title @s subtitle ["\u00a7e —— 《缘之空》"]
 
 function lobby/getrandom2
 tellraw @s [""]
@@ -37,4 +68,59 @@ execute if score random board matches 6 run tellraw @s ["   \u00a7b今日永远�
 execute if score random board matches 7 run tellraw @s ["   \u00a7b青春总是焦急的，连一勺砂糖溶于杯中的时间都等不及。"]
 execute if score random board matches 8 run tellraw @s ["   \u00a7b后悔带来的苦涩，是对过去的见证，终将逐一化为杯中咖啡的味道。"]
 execute if score random board matches 9 run tellraw @s ["   \u00a7b有些东西，只有放手后才能得到，也许并不是只有握在手里才是幸福的。"]
-tellraw @s ["\u00a77    —— 玉子市场 · 咖啡店人生导师\n"]
+execute if score random board matches 1..9 run tellraw @s ["\u00a77    —— 玉子市场 · 咖啡店人生导师"]
+execute if score random board matches 10 run tellraw @s ["   \u00a7b我喜欢你。对君之爱，胜于世上万千，思君之意，亙古如斯，唯有这份心意不输给任何人。纵使此身魂去魄散，消失离散于世间，若有来生，我心依旧。"]
+execute if score random board matches 10 run tellraw @s ["\u00a77    —— 五更琉璃《我的妹妹不可能那么可爱》"]
+execute if score random board matches 11 run tellraw @s ["   \u00a7b我们每天度过的称之为日常的生活，其实是一个个奇迹的连续也说不定。"]
+execute if score random board matches 11 run tellraw @s ["\u00a77    —— 《日常》"]
+execute if score random board matches 12 run tellraw @s ["   \u00a7b把手伸向不属于人类领域的愚者啊……天上天下只有一人有资格欣赏你的破灭，除了我吉尔伽美什别无他人。耀眼而虚幻的人啊，投入我的怀抱吧。这就是我的决定。"]
+execute if score random board matches 12 run tellraw @s ["\u00a77    —— 吉尔伽美什《fate stay night》"]
+execute if score random board matches 13 run tellraw @s ["   \u00a7b苦恼着，歇斯底里着，痛苦着，不断挣扎的数月时间，这一切会在未来的某一瞬间得到回报。我们或许就是被那个瞬间迷住的，一种无可救药的生物吧。"]
+execute if score random board matches 13 run tellraw @s ["\u00a77    —— 《四月是你的谎言》"]
+execute if score random board matches 14 run tellraw @s ["   \u00a7b就算悲伤难抑，遍体鳞伤的处于谷底，也不能停下演奏，只有这样我们才是真正活着的。-你真的可以忘记么？"]
+execute if score random board matches 14 run tellraw @s ["\u00a77    —— 《四月是你的谎言》"]
+execute if score random board matches 15 run tellraw @s ["   \u00a7b明明感觉距离很近 但伸手却又抓不到 即使这样 即使望尘莫及 亦有留在心中的东西 曾身处同一时间层 曾仰望过同一样东西 只要记着这些 就算相互远离 也依然可以相信我们还是同在 现在要不停蹦跑 只要目标远大 总有一天 会赶上那目标"]
+execute if score random board matches 15 run tellraw @s ["\u00a77    —— 《fate/stay night》"]
+execute if score random board matches 16 run tellraw @s ["   \u00a7b可能会有迷茫的時候，也可能会有因为不如意而觉得烦躁的时候。无论是谁都会遇到低谷，但只有跨越低谷的人才能得到大家的认可。"]
+execute if score random board matches 16 run tellraw @s ["\u00a77    —— 《花开伊吕波》"]
+execute if score random board matches 17 run tellraw @s ["   \u00a7b秒速5厘米，那是樱花飘落的速度，那么怎样的速度，才能走完我与你之间的距离？"]
+execute if score random board matches 17 run tellraw @s ["\u00a77    —— 《秒速五厘米》"]
+execute if score random board matches 18 run tellraw @s ["   \u00a7b或许前路永夜，即便如此我也要前进，因为星光即使微弱也会为我照亮前途。"]
+execute if score random board matches 18 run tellraw @s ["\u00a77    —— 《四月是你的谎言》"]
+execute if score random board matches 19 run tellraw @s ["   \u00a7b你不是牺牲了自己的一切，养育我到今天了吗？为了我这样没出息的儿子，耗费了自己的一生。已经足够了！"]
+execute if score random board matches 19 run tellraw @s ["\u00a77    —— 冈崎朋也《CLANNAD》"]
+execute if score random board matches 20 run tellraw @s ["   \u00a7b即使交不到 100 个朋友也没有关系，只要交到一个比 100 个朋友更重要的朋友。"]
+execute if score random board matches 20 run tellraw @s ["\u00a77    —— 《我的朋友很少》"]
+execute if score random board matches 21 run tellraw @s ["   \u00a7b大家回答我　为什么要低头，重复一遍　为什么要低头，我们是弱者！现在如此　过去也如此！是的　不是什么都没有改变吗！强者模仿弱者夺来的武器　是无法发挥出其真正的力量的，要说为什么的话　我们的武器本质在于，那弱小到悲屈的软弱啊！我在此强调，我们是弱者！我们宣誓作为弱者活下去，像弱者一样战斗然后已弱者的方式消灭强者！就像过去一样　今后也会贯彻到底！承认吧　我们是最弱的种族！正因为我们天生什么都没有，所以才能驾驭一切的，最弱的种族！"]
+execute if score random board matches 21 run tellraw @s ["\u00a77    —— 空《no game no life》"]
+execute if score random board matches 22 run tellraw @s ["   \u00a7b你不是一个人，我们是共犯。如果你是魔女的话，我只要成为魔王就可以了吧。"]
+execute if score random board matches 22 run tellraw @s ["\u00a77    —— 《叛逆的鲁鲁修》"]
+execute if score random board matches 23 run tellraw @s ["   \u00a7b我讨厌温柔的女孩子。温柔的女孩子其实对所有人都温柔，我却会误以为只对我温柔，然后就沾沾自喜得意忘形，最后闹得不欢而散，双方都受到伤害。——所以我才讨厌温柔的女孩子。"]
+execute if score random board matches 23 run tellraw @s ["\u00a77    —— 《我的青春恋爱物语果然有问题》"]
+execute if score random board matches 24 run tellraw @s ["   \u00a7b如果能在六十亿分之一的概率下次与你相遇，即使你那时候你还是身体无法动弹，我也会和你结婚。」"]
+execute if score random board matches 24 run tellraw @s ["\u00a77    —— 日向秀树《AngelBeats！》"]
+execute if score random board matches 25 run tellraw @s ["   \u00a7b莫扎特曾经说过大胆地踏上旅途吧，我不知道路途的前方究竟有什么，但是，我们还是迈出了步伐，我们仍在旅途之中。"]
+execute if score random board matches 25 run tellraw @s ["\u00a77    —— 有马公生《四月是你的谎言》"]
+execute if score random board matches 26 run tellraw @s ["   \u00a7b如果每个人都能为自己所爱的事情付诸努力，那崭新的地方定是梦想的终点"]
+execute if score random board matches 26 run tellraw @s ["\u00a77    —— 《LOVE LIVE》"]
+execute if score random board matches 27 run tellraw @s ["   \u00a7b你的所言所行，全都闪烁着光芒，太过刺目，于是我闭上双眼，但内心还是无法停止对你的憧憬。"]
+execute if score random board matches 27 run tellraw @s ["\u00a77    —— 《四月是你的谎言》"]
+execute if score random board matches 28 run tellraw @s ["   \u00a7b那个……其实啊，我想说的是，就算我死了，你也要努力活下去。活下去，看着这个世界直到最后，请帮我找出创造这个世界的意义，像我这样的胆小鬼来到这个世界的意义，还有我跟你相遇所代表的意义。"]
+execute if score random board matches 28 run tellraw @s ["\u00a77    —— 幸《刀剑神域》"]
+execute if score random board matches 29 run tellraw @s ["   \u00a7b你要是没有胜算的话，就由我来创造胜算，尝试一切可能的方法。"]
+execute if score random board matches 29 run tellraw @s ["\u00a77    —— Saber《Fate stay night》"]
+execute if score random board matches 30 run tellraw @s ["   \u00a7b悲伤也是会有的, 倒不如说尽是这样的事, 可正是如此我们才更需要前进, 令人唾弃的事由我们来做, 剩下的就去改变世界吧! 塔兹米! 用你炽热的灵魂呐喊吧!"]
+execute if score random board matches 30 run tellraw @s ["\u00a77    —— 布兰德《斩赤红之瞳》"]
+execute if score random board matches 31 run tellraw @s ["   \u00a7b谢谢你们! 比谢谢更加的谢谢!"]
+execute if score random board matches 31 run tellraw @s ["\u00a77    —— 真白《樱花庄的宠物女孩》"]
+execute if score random board matches 32 run tellraw @s ["   \u00a7b「我——撒了一个谎，宫园薰，喜欢渡亮太的，这样的一个谎。这个谎把你——有马公生君，命运般地带到了我的面前。」马上，春天就要来了，与你相遇的春天，一个没有你的春天."]
+execute if score random board matches 32 run tellraw @s ["\u00a77    —— 《四月是你的谎言》"]
+execute if score random board matches 33 run tellraw @s ["   \u00a7b把已经失去的东西重新变得有意义的职业只有两个，作家和侦探。只有作家才能在梦想中将其复活，只有侦探才能将其从坟墓中挖掘出来还原成信息。"]
+execute if score random board matches 33 run tellraw @s ["\u00a77    —— 爱丽丝《神的记事本》"]
+execute if score random board matches 34 run tellraw @s ["   \u00a7b我终于明白了，你并不是因为命令或者身为 Servant 来保护我，而是出于自身意志，保护了我啊"]
+execute if score random board matches 34 run tellraw @s ["\u00a77    —— 伊莉亚《Fate stay night》"]
+execute if score random board matches 35 run tellraw @s ["   \u00a7b这是你若不能理解的，人类感情的极致，比希望更热烈，比绝望更深邃的——爱啊！"]
+execute if score random board matches 35 run tellraw @s ["\u00a77    —— 晓美焰《魔法少女小圆—叛逆的物语》"]
+execute if score random board matches 36 run tellraw @s ["   \u00a7b与其有闲琢磨如何漂亮死去，还不如漂亮的活到最后一刻。"]
+execute if score random board matches 36 run tellraw @s ["\u00a77    —— 《银魂》"]
+tellraw @s [""]

@@ -4,19 +4,19 @@
 ## 
 # tp @s[team=btw.play.a] 628 14 -40 45 0
 # tp @s[team=btw.play.b] 554 14 28 -135 0
-execute as @s[team=btw.play.a] if score @s btw.boattype matches 0 run summon boat 628 14 -40 {Type:"bamboo",Tags:["boat.new","btw.boat"],Invulnerable:1b}
-execute as @s[team=btw.play.a] if score @s btw.boattype matches 1 run summon boat 628 14 -40 {Type:"birch",Tags:["boat.new","btw.boat"],Invulnerable:1b}
-execute as @s[team=btw.play.a] if score @s btw.boattype matches 2 run summon boat 628 14 -40 {Type:"acacia",Tags:["boat.new","btw.boat"],Invulnerable:1b}
-execute as @s[team=btw.play.a] if score @s btw.boattype matches 3 run summon boat 628 14 -40 {Type:"dark_oak",Tags:["boat.new","btw.boat"],Invulnerable:1b}
-execute as @s[team=btw.play.a] if score @s btw.boattype matches 4 run summon boat 628 14 -40 {Type:"cherry",Tags:["boat.new","btw.boat"],Invulnerable:1b}
-execute as @s[team=btw.play.a] if score @s btw.boattype matches 5 run summon boat 628 14 -40 {Type:"mangrove",Tags:["boat.new","btw.boat"],Invulnerable:1b}
+execute as @s[team=btw.play.a] if score @s btw.boattype matches 0 run summon bamboo_raft 628 14 -40 {Tags:["boat.new","btw.boat"],Invulnerable:1b}
+execute as @s[team=btw.play.a] if score @s btw.boattype matches 1 run summon birch_boat 628 14 -40 {Tags:["boat.new","btw.boat"],Invulnerable:1b}
+execute as @s[team=btw.play.a] if score @s btw.boattype matches 2 run summon acacia_boat 628 14 -40 {Tags:["boat.new","btw.boat"],Invulnerable:1b}
+execute as @s[team=btw.play.a] if score @s btw.boattype matches 3 run summon dark_oak_boat 628 14 -40 {Tags:["boat.new","btw.boat"],Invulnerable:1b}
+execute as @s[team=btw.play.a] if score @s btw.boattype matches 4 run summon cherry_boat 628 14 -40 {Tags:["boat.new","btw.boat"],Invulnerable:1b}
+execute as @s[team=btw.play.a] if score @s btw.boattype matches 5 run summon mangrove_boat 628 14 -40 {Tags:["boat.new","btw.boat"],Invulnerable:1b}
 
-execute as @s[team=btw.play.b] if score @s btw.boattype matches 0 run summon boat 554 14 28 {Type:"bamboo",Tags:["boat.new","btw.boat"],Invulnerable:1b}
-execute as @s[team=btw.play.b] if score @s btw.boattype matches 1 run summon boat 554 14 28 {Type:"birch",Tags:["boat.new","btw.boat"],Invulnerable:1b}
-execute as @s[team=btw.play.b] if score @s btw.boattype matches 2 run summon boat 554 14 28 {Type:"acacia",Tags:["boat.new","btw.boat"],Invulnerable:1b}
-execute as @s[team=btw.play.b] if score @s btw.boattype matches 3 run summon boat 554 14 28 {Type:"dark_oak",Tags:["boat.new","btw.boat"],Invulnerable:1b}
-execute as @s[team=btw.play.b] if score @s btw.boattype matches 4 run summon boat 554 14 28 {Type:"cherry",Tags:["boat.new","btw.boat"],Invulnerable:1b}
-execute as @s[team=btw.play.b] if score @s btw.boattype matches 5 run summon boat 554 14 28 {Type:"mangrove",Tags:["boat.new","btw.boat"],Invulnerable:1b}
+execute as @s[team=btw.play.b] if score @s btw.boattype matches 0 run summon bamboo_raft 554 14 28 {Tags:["boat.new","btw.boat"],Invulnerable:1b}
+execute as @s[team=btw.play.b] if score @s btw.boattype matches 1 run summon birch_boat 554 14 28 {Tags:["boat.new","btw.boat"],Invulnerable:1b}
+execute as @s[team=btw.play.b] if score @s btw.boattype matches 2 run summon acacia_boat 554 14 28 {Tags:["boat.new","btw.boat"],Invulnerable:1b}
+execute as @s[team=btw.play.b] if score @s btw.boattype matches 3 run summon dark_oak_boat 554 14 28 {Tags:["boat.new","btw.boat"],Invulnerable:1b}
+execute as @s[team=btw.play.b] if score @s btw.boattype matches 4 run summon cherry_boat 554 14 28 {Tags:["boat.new","btw.boat"],Invulnerable:1b}
+execute as @s[team=btw.play.b] if score @s btw.boattype matches 5 run summon mangrove_boat 554 14 28 {Tags:["boat.new","btw.boat"],Invulnerable:1b}
 
 execute as @s[team=btw.play.a] run tp @s 628 14 -40 45 0
 # execute as @s[team=btw.play.a] run tp @e[tag=boat.new] 628 14 -40 45 0

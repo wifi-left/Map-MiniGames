@@ -7,7 +7,7 @@
 # tag=potion.strength,
 # tag=potion.slowfall,
 # tag=potion.resistance,
-scoreboard players operation random board = @e[limit=1,tag=random_saying,sort=random,scores={board=1..8}] board
+execute store result score random board run random value 1..8
 execute if score random board matches 1 run summon item ~ ~0.5 ~ {Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{custom_effects:[{id:"speed",duration:200,amplifier:0b,ambient:false,show_particles:false}]},"minecraft:custom_name":'"\\u00a7f速度药水"'}}}
 execute if score random board matches 2 run summon item ~ ~0.5 ~ {Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{custom_effects:[{id:"slowness",duration:200,amplifier:0b,ambient:false,show_particles:false}]},"minecraft:custom_name":'"\\u00a7f缓慢药水"'}}}
 execute if score random board matches 3 run summon item ~ ~0.5 ~ {Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{custom_effects:[{id:"haste",duration:200,amplifier:0b,ambient:false,show_particles:false}]},"minecraft:custom_name":'"\\u00a7f急迫药水"'}}}

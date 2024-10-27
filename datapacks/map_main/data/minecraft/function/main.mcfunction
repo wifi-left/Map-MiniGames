@@ -27,14 +27,14 @@ title @a[tag=NEWENTER] title ["\u00a7a\u00a7lMini\u00a7e\u00a7lGames"]
 title @a[tag=NEWENTER] subtitle ["\u00a76You're in \u00a7dMain Lobby"]
 title @a[tag=NEWENTER] actionbar ["\u00a7aWelcome to the map!"]
 tellraw @a[tag=NEWENTER] ["\n\u00a7a  您可以随时使用 \u00a76/trigger hub \u00a7a返回大厅。\n  \u00a7a全局音乐可以通过\u00a76游戏设置 - 声音设置 - 玩家语音\u00a7a调节声音大小\n  \u00a7e部分游戏支持使用 \u00a76/trigger rejoin\u00a7e 重新加入退出的游戏！\n\n\u00a7b  下载资源包：",{"text":"\u00a7d\u00a7n[GitLab](推荐)","underlined": true,"clickEvent": {"action":"open_url","value": "https://gitlab.com/wifi-left/Map-MiniGames/-/raw/master/resourcepack/MiniGameRes.zip"}}," ",{"underlined": true,"text":"\u00a7e\u00a7n[GitHub](备用)","clickEvent": {"action":"open_url","value": "https://github.com/wifi-left/Map-MiniGames/raw/master/resourcepack/MiniGameRes.zip"}},"\n"]
-execute as @a[tag=NEWENTER] run attribute @s generic.max_health base set 20
+execute as @a[tag=NEWENTER] run attribute @s max_health base set 20
 
 gamemode adventure @a[tag=NEWENTER]
 
 execute if score tnt.state state matches 1.. run function minecraft:tntwars/tick
 execute if entity @a[team=dropper] in dropperworld run function dropper/tick
 
-execute as @a[tag=NEWENTER] at @s run attribute @s minecraft:generic.attack_speed base set 4
+execute as @a[tag=NEWENTER] at @s run attribute @s minecraft:attack_speed base set 4
 execute as @a[tag=NEWENTER] run bossbar set surgame:time players @a[team=wait.sur]
 
 execute as @a[tag=NEWENTER] unless score @s park.uuid matches 0.. run function minecraft:npark/getuuid

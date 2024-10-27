@@ -10,6 +10,7 @@
     "minecraft:ladder",
     "minecraft:wet_sponge",
     "minecraft:sponge",
-    "#minecraft:beds"
+    "#minecraft:beds",
+    "minecraft:cut_sandstone"
   ]
 }
