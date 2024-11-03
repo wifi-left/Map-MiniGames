@@ -52,8 +52,8 @@ execute if score random board matches 23 run title @s title "\u00a75谁都无法
 execute if score random board matches 23 run title @s subtitle ["\u00a7e —— 晓美焰《魔法少女小圆》"]
 execute if score random board matches 24 run title @s title "\u00a7a隐约雷鸣，阴霾天空，但盼风雨来，能留你在此。"
 execute if score random board matches 24 run title @s subtitle ["\u00a7e —— 《言叶之庭》"]
-execute if score random board matches 25 run title @s title "\u00a7c来吧！颤抖吧！惊叹吧！绝望吧！放声大哭吧！我的艺术就是——爆炸！"
-execute if score random board matches 25 run title @s subtitle ["\u00a7e —— 《火影忍者》迪达拉"]
+execute if score random board matches 25 run title @s title "谢谢你们! 比谢谢更加的谢谢!"
+execute if score random board matches 25 run title @s subtitle ["\u00a7e —— 真白《樱花庄的宠物女孩》"]
 execute if score random board matches 26 run title @s title "\u00a7f我们终会相知，在那悠远的苍穹。"
 execute if score random board matches 26 run title @s subtitle ["\u00a7e —— 《缘之空》"]
 
@@ -111,8 +111,8 @@ execute if score random board matches 29 run tellraw @s ["   \u00a7b你要是没
 execute if score random board matches 29 run tellraw @s ["\u00a77    —— Saber《Fate stay night》"]
 execute if score random board matches 30 run tellraw @s ["   \u00a7b悲伤也是会有的, 倒不如说尽是这样的事, 可正是如此我们才更需要前进, 令人唾弃的事由我们来做, 剩下的就去改变世界吧! 塔兹米! 用你炽热的灵魂呐喊吧!"]
 execute if score random board matches 30 run tellraw @s ["\u00a77    —— 布兰德《斩赤红之瞳》"]
-execute if score random board matches 31 run tellraw @s ["   \u00a7b谢谢你们! 比谢谢更加的谢谢!"]
-execute if score random board matches 31 run tellraw @s ["\u00a77    —— 真白《樱花庄的宠物女孩》"]
+execute if score random board matches 31 run tellraw @s ["   \u00a7b\u00a7c来吧！颤抖吧！惊叹吧！绝望吧！放声大哭吧！我的艺术就是——爆炸！"]
+execute if score random board matches 31 run tellraw @s ["\u00a77    —— 《火影忍者》迪达拉"]
 execute if score random board matches 32 run tellraw @s ["   \u00a7b「我——撒了一个谎，宫园薰，喜欢渡亮太的，这样的一个谎。这个谎把你——有马公生君，命运般地带到了我的面前。」马上，春天就要来了，与你相遇的春天，一个没有你的春天."]
 execute if score random board matches 32 run tellraw @s ["\u00a77    —— 《四月是你的谎言》"]
 execute if score random board matches 33 run tellraw @s ["   \u00a7b把已经失去的东西重新变得有意义的职业只有两个，作家和侦探。只有作家才能在梦想中将其复活，只有侦探才能将其从坟墓中挖掘出来还原成信息。"]
