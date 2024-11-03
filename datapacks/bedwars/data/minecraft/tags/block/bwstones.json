@@ -62,6 +62,22 @@
 		"minecraft:stone_slab",
 		"minecraft:stone_stairs",
 		"minecraft:stonecutter",
-		"minecraft:water_cauldron"
+		"minecraft:water_cauldron",
+		"deepslate",
+		"#deepslate_ore_replaceables",
+		"deepslate_gold_ore",
+		"deepslate_iron_ore",
+		"deepslate_emerald_ore",
+		"deepslate_coal_ore",
+		"deepslate_diamond_ore",
+		"clay",
+		"moss_block",
+		"glow_lichen",
+		"cave_vines_plant",
+		"cave_vines",
+		"copper_block",
+		"deepslate_lapis_ore",
+		"deepslate_redstone_ore",
+		"deepslate_copper_ore"
 	]
 }

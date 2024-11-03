@@ -4,6 +4,14 @@
 ## 
 tellraw @a ["\u00a7b\u00a7l[Gamom Datapacks] \u00a7aReloaded successfully ! \u00a7e[Language: 简体中文]"]
 function minecraft:bedwars/setup
+scoreboard objectives remove bw.tmp.ir
+scoreboard objectives remove bw.tmp.gd
+scoreboard objectives remove bw.tmp.dm
+scoreboard objectives remove bw.tmp.em
+scoreboard objectives add bw.tmp.ir dummy
+scoreboard objectives add bw.tmp.gd dummy
+scoreboard objectives add bw.tmp.dm dummy
+scoreboard objectives add bw.tmp.em dummy
 scoreboard objectives remove use.egg
 scoreboard objectives remove bw.team
 scoreboard objectives remove snow.tick

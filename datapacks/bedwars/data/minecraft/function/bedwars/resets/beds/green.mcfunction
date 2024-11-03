@@ -18,5 +18,7 @@ execute if score bw.mode board matches 4 run setblock -248 35 233 lime_bed[facin
 
 
 execute if score bw.mode board matches 6 run setblock -239 28 201 lime_bed[occupied=true,facing=north]
-
 execute if score bw.mode board matches 6 run setblock -239 28 200 lime_bed[occupied=true,facing=north,part=head]
+
+execute if score bw.mode board matches 7 run setblock -280 26 246 lime_bed[occupied=true,facing=south]
+execute if score bw.mode board matches 7 run setblock -280 26 247 lime_bed[occupied=true,facing=south,part=head]

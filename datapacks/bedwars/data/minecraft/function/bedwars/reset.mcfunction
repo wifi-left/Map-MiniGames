@@ -44,10 +44,11 @@ schedule clear bedwars/resets/unnamed
 schedule clear bedwars/resets/space
 schedule clear bedwars/resets/special1
 schedule clear bedwars/resets/glassworld
+schedule clear bedwars/resets/shenjing
 scoreboard players set bw.reset board 0
 title @a[tag=bw.player] times 0 200 0
 gamemode spectator @a[tag=bw.player,gamemode=adventure]
-execute if score bw.mode board matches ..0 store result score bw.mode board run random value 1..6
+execute if score bw.mode board matches ..0 store result score bw.mode board run random value 1..7
 
 
 execute if score bw.mode board matches 1 run function bedwars/resets/mogu
@@ -55,7 +56,8 @@ execute if score bw.mode board matches 2 run function bedwars/resets/unnamed
 execute if score bw.mode board matches 3 run function bedwars/resets/space
 execute if score bw.mode board matches 4 run function bedwars/resets/special1
 execute if score bw.mode board matches 5 run function bedwars/resets/glassworld
-execute if score bw.mode board matches 6.. run function bedwars/resets/siheyuan
+execute if score bw.mode board matches 6 run function bedwars/resets/siheyuan
+execute if score bw.mode board matches 7.. run function bedwars/resets/shenjing
 scoreboard objectives modify bw.info displayname ["\u00a7e\u00a7l起床战争"]
 scoreboard players reset * bw.info
 scoreboard players set date bw.info 14
@@ -125,6 +127,22 @@ scoreboard players set bw.em board 0
 scoreboard players set bw.dm board 0
 scoreboard players set bw.gd board 0
 scoreboard players set bw.ir board 0
+
+# 加成
+scoreboard players set bw.armor.green board 0
+scoreboard players set bw.armor.red board 0
+scoreboard players set bw.armor.blue board 0
+scoreboard players set bw.armor.yellow board 0
+
+scoreboard players set bw.sharpness.green board 0
+scoreboard players set bw.sharpness.red board 0
+scoreboard players set bw.sharpness.blue board 0
+scoreboard players set bw.sharpness.yellow board 0
+
+scoreboard players set bw.haste.green board 0
+scoreboard players set bw.haste.red board 0
+scoreboard players set bw.haste.blue board 0
+scoreboard players set bw.haste.yellow board 0
 
 item replace entity @a enderchest.0 with air
 item replace entity @a enderchest.1 with air

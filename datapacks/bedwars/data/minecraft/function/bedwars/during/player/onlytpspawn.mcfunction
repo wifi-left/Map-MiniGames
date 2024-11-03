@@ -20,3 +20,8 @@ execute if score bw.mode board matches 6 run tp @s[team=bw.yellow] -377 19 210 -
 execute if score bw.mode board matches 6 run tp @s[team=bw.blue] -303 19 284 -180 0
 execute if score bw.mode board matches 6 run tp @s[team=bw.green] -231 19 208 90 0
 execute if score bw.mode board matches 6 run tp @s[team=bw.red] -305 19 136 0 0
+
+execute if score bw.mode board matches 7 run tp @s[team=bw.yellow] -343 22 164 45 0
+execute if score bw.mode board matches 7 run tp @s[team=bw.blue] -331 29 253 90 0
+execute if score bw.mode board matches 7 run tp @s[team=bw.green] -280 25 240 0 0
+execute if score bw.mode board matches 7 run tp @s[team=bw.red] -263 26 167 -90 0

@@ -19,11 +19,11 @@ function minecraft:bedwars/armor
 
 execute as @e[tag=bw.tntsheep] at @s run function bedwars/item/sheepsecond
 
-effect give @a[tag=bw.attack] strength 2 0 true
-effect give @a[tag=bw.fasti] haste 2 0 true
-effect give @a[tag=bw.fastii] haste 2 1 true
-effect give @a[tag=bw.armor] resistance 2 0 true
-effect give @a[tag=bw.speed] speed 2 0 true
+# effect give @a[tag=bw.attack] strength 2 0 true
+# effect give @a[tag=bw.fasti] haste 2 0 true
+# effect give @a[tag=bw.fastii] haste 2 1 true
+# effect give @a[tag=bw.armor] resistance 2 0 true
+function minecraft:bedwars/buffs
 # execute as @a[tag=bw.player] at @s run attribute @s minecraft:attack_speed base set 8
 ## Death
 scoreboard players remove @a[tag=bw.fhing] board 1

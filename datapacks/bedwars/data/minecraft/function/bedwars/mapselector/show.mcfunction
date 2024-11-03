@@ -10,3 +10,4 @@ execute if score bw.map board matches 3 run data modify block -299 76 210 front_
 execute if score bw.map board matches 4 run data modify block -299 76 210 front_text.messages[2] set value '"\\u00a7d迷途岛"'
 execute if score bw.map board matches 5 run data modify block -299 76 210 front_text.messages[2] set value '"\\u00a7f玻璃世界"'
 execute if score bw.map board matches 6 run data modify block -299 76 210 front_text.messages[2] set value '"\\u00a7a四合院"'
+execute if score bw.map board matches 7 run data modify block -299 76 210 front_text.messages[2] set value '"\\u00a7f\\u00a7l洞穴\\u00a77\\u00a7o[奇怪的地图]"'

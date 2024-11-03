@@ -79,15 +79,9 @@ execute if score bw.mode state matches 5 run scoreboard players display name inf
 execute if score bw.mode state matches 2 run scoreboard players display name info1 bw.info ["游戏模式：\u00a7a全解锁模式"]
 execute if score bw.mode state matches 6 run scoreboard players display name info1 bw.info ["游戏模式：\u00a7a全解锁模式"]
 
-execute if score bw.mode state matches 2 run tag @a[tag=bw.player] add bw.attack
-execute if score bw.mode state matches 2 run tag @a[tag=bw.player] add bw.armor
-execute if score bw.mode state matches 2 run tag @a[tag=bw.player] add bw.speed
-execute if score bw.mode state matches 2 run tag @a[tag=bw.player] add bw.fastii
 
-execute if score bw.mode state matches 6 run tag @a[tag=bw.player] add bw.attack
-execute if score bw.mode state matches 6 run tag @a[tag=bw.player] add bw.armor
-execute if score bw.mode state matches 6 run tag @a[tag=bw.player] add bw.speed
-execute if score bw.mode state matches 6 run tag @a[tag=bw.player] add bw.fastii
+execute if score bw.mode state matches 2 run function minecraft:bedwars/resets/unlock_all_buffs
+execute if score bw.mode state matches 6 run function minecraft:bedwars/resets/unlock_all_buffs
 
 scoreboard players set bw.state state 1
 

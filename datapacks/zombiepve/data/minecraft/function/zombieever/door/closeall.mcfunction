@@ -33,7 +33,7 @@ data merge block 597 11 1 {Items:[]}
 
 data merge block 597 11 1 {Items:[{id:"minecraft:tripwire_hook",count:1,components:{"minecraft:custom_name":'"\\u00a7a钥匙"',"minecraft:lore":['"\\u00a7e用于打开大门的钥匙"'],"minecraft:custom_data":{lock:1}},Slot:13}]}
 
-execute as @e[tag=pve.house.chest] at @s run data merge block ~ ~ ~ {Items:[],Lock:"ss114514",CustomName:'"\\u00a7r箱子"'}
+execute as @e[tag=pve.house.chest] at @s run data merge block ~ ~ ~ {Items:[],lock:{components:{custom_name:'"114514"'}},CustomName:'"\\u00a7r箱子"'}
 fill 535 -51 -124 535 -49 -121 minecraft:iron_bars
 fill 579 -9 -119 578 -10 -119 minecraft:air
 fill 567 -9 -120 567 -10 -121 minecraft:iron_bars
