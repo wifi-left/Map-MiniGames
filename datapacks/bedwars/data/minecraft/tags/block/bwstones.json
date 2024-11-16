@@ -64,6 +64,7 @@
 		"minecraft:stonecutter",
 		"minecraft:water_cauldron",
 		"deepslate",
+		"cobbled_deepslate",
 		"#deepslate_ore_replaceables",
 		"deepslate_gold_ore",
 		"deepslate_iron_ore",
