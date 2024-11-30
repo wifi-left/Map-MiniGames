@@ -8,8 +8,13 @@ scoreboard players reset @e[tag=boat]
 kill @e[tag=boat]
 scoreboard players set boat.state state 0
 
-gamemode adventure @a[team=boat]
-execute as @a[team=boat] run function boat/join
+gamemode adventure @a[team=boat,gamemode=!creative]
+execute as @a[team=boat,gamemode=!creative] run function boat/join
 kill @e[type=marker,tag=boat.trap]
+kill @e[type=marker,tag=boat.speedmarker]
+kill @e[type=armor_stand,tag=boat.speedmarker]
+kill @e[type=marker,tag=boat.speedmarkerroot]
+kill @e[type=armor_stand,tag=boat.speedmarkerroot]
+
 team modify hunger friendlyFire false
 

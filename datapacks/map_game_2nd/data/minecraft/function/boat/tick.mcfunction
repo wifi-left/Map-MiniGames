@@ -41,3 +41,9 @@ execute as @a[team=boat,tag=!boat.notinboat] at @s if block ~ ~-1 ~ blue_ice run
 # execute as @e[type=marker,tag=boat.trap,tag=trap2] at @s run particle flame ~ ~ ~ 3 0 3 0 15
 # execute as @e[tag=boat.trap,scores={park.uuid=1..}] at @s run tp ~ ~-0.1 ~
 # execute as @e[tag=boat.trap,scores={park.uuid=1..}] at @s run scoreboard players remove @s park.uuid 1
+execute if score boat.type board matches 2 as @a[team=boat,tag=!boat.notinboat] at @s run function minecraft:boat/check_input
+execute as @a[team=boat] if score @s car.speed matches 1.. run scoreboard players remove @s car.speed 2
+execute as @a[team=boat] if score @s car.speed matches ..0 run scoreboard players set @s car.speed 0
+execute if score boat.type board matches 2 as @e[type=!player,tag=boat] run function minecraft:boat/move/car_getmotion
+execute as @a[team=boat] if score @s car.speed matches 1..97 unless score boat.type board matches 4 run title @s actionbar ["\u00a76Car Speed: ",{"score": {"name": "@s","objective": "car.speed"},"color": "red"}]
+execute as @a[team=boat] if score @s car.speed matches 98.. unless score boat.type board matches 4 run title @s actionbar ["\u00a76Car Speed: \u00a7c99"]

@@ -2,15 +2,15 @@
 ## Datapack Upgrader v1.0.0 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
-tellraw @s ["\n\u00a7c因为有致命BUG，本游戏将进行重构。预计在1年后\u00a7m\u00a7n不一定\u00a7c恢复。\n"]
-advancement grant @s only minecraft:games/remaking_game
-return 0
+# tellraw @s ["\n\u00a7c因为有致命BUG，本游戏将进行重构。预计在1年后\u00a7m\u00a7n不一定\u00a7c恢复。\n"]
+# advancement grant @s only minecraft:games/remaking_game
+# return 0
 team join boat @s
 title @s reset
 tellraw @a [{"selector":"@s"},"\u00a7a 加入了\u00a79冰船游戏\u00a7a。"]
 title @s title ["\u00a79冰船游戏"]
 title @s subtitle ["\u00a7bIce Boat Game"]
-tellraw @s ["\u00a79\u00a7l冰船游戏\n\n\u00a76\u00a7l   Builders: \u00a7b\u00a7lDomnick_JYH \u00a7a&\u00a7b wifi_left\n"]
+tellraw @s ["\u00a79\u00a7l冰船游戏\n\n\u00a76\u00a7l   Idea from: \u00a7b\u00a7lDomnick_JYH \u00a7a&\u00a7b wifi_left\n"]
 # execute in minecraft:boatworld run tp @s -142 -56 -42 180 0
 execute in minecraft:boatworld2 run tp @s -12 146 -43 0 0
 playsound entity.player.levelup player @s ~ ~ ~ 10 1 1

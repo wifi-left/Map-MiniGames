@@ -18,8 +18,8 @@ execute as @s[tag=skill.boat.trap] if entity @s[nbt={SelectedItem:{components:{"
 # Trap 2    Stop!
 # Trap 3    to-do
 # Trap 4    to-do
-execute as @s[tag=boat.trap.1] at @s run function boat/trap/1/spawn
-execute as @s[tag=boat.trap.2] at @s run function boat/trap/2/spawn
+# execute as @s[tag=boat.trap.1] at @s run function boat/trap/1/spawn
+# execute as @s[tag=boat.trap.2] at @s run function boat/trap/2/spawn
 # execute as @s[tag=boat.trap.3] at @s run function boat/trap/3/spawn
 # execute as @s[tag=boat.trap.4] at @s run function boat/trap/4/spawn
 execute as @s[tag=skill.boat.trap] at @s run playsound minecraft:block.piston.contract player @s ~ ~ ~ 5 1 1

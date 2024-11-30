@@ -4,6 +4,8 @@
 ## 
 tellraw @a ["\u00a7b\u00a7l[Gamom Datapacks] \u00a7aReloaded successfully ! \u00a7e[Language: 简体中文]"]
 function minecraft:bedwars/setup
+scoreboard objectives remove car.speed
+scoreboard objectives add car.speed dummy "Speed of car"
 scoreboard objectives remove bw.tmp.ir
 scoreboard objectives remove bw.tmp.gd
 scoreboard objectives remove bw.tmp.dm

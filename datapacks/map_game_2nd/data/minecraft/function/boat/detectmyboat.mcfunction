@@ -4,6 +4,7 @@
 ## 
 tag @s add boat.sel
 execute as @e[tag=boat] if score @s park.uuid = @a[tag=boat.sel,limit=1] park.uuid run tag @s add boat.tmp1
+# execute as @e[tag=boat.speedmarkerroot] if score @s park.uuid = @a[tag=boat.sel,limit=1] park.uuid run tag @s add boat.tmp1
 # tag @e[tag=boat,limit=1,sort=nearest] add boat.tmp
 # execute if score @s park.uuid = @e[tag=boat.tmp,limit=1] park.uuid run tag @s add boat.ok
 # execute as @e[tag=boat.tmp1,limit=1] at @s run tag @a[tag=boat.sel] add boat.ok

@@ -21,6 +21,11 @@ execute as @e[tag=boat.reset.structure] at @s run function boat/reset_marker
 scoreboard players reset @e[tag=boat]
 kill @e[tag=boat]
 kill @e[type=marker,tag=boat.trap]
+kill @e[type=marker,tag=boat.speedmarker]
+kill @e[type=armor_stand,tag=boat.speedmarker]
+kill @e[type=marker,tag=boat.speedmarkerroot]
+kill @e[type=armor_stand,tag=boat.speedmarkerroot]
+
 execute unless score boat.type board matches 4 run tag @a[team=boat] add boat.notspawn
 
 schedule function minecraft:boat/reset_doit 5t

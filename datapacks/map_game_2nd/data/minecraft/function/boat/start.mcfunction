@@ -2,6 +2,7 @@
 ## Datapack Upgrader v1.0.0 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
+forceload add 0 0 0 0
 execute as @a[team=boat] at @s run spreadplayers -82 299 0 3 false @s
 execute as @a[team=boat] at @s run tp @s ~ ~ ~ 180 0
 # fill -66 165 -94 -60 160 -95 minecraft:stone_brick_wall keep
@@ -27,4 +28,4 @@ tag @a remove boat.notspawn
 execute unless score boat.type board matches 4 run tag @a[team=boat] add boat.notspawn
 
 # forceload remove -32 88 -102 313
-
+scoreboard players reset * car.speed
