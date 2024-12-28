@@ -16,11 +16,11 @@
 但请不要对其抱有太大期待。很可能大部分游戏无法正常游玩。
 
 # 资源包的使用
-您可以在服务器配置资源包的 GitHub / GitLab 直链达到自动下载资源包。
+您可以在服务器配置资源包的 GitHub / Gitea 直链达到自动下载资源包。
 
-GitLab 下载速度更快。
+Gitea 下载速度更快。
 
-GitLab 的 URL 为：[https://gitlab.com/wifi-left/Map-MiniGames/-/raw/master/resourcepack/MiniGameRes.zip?inline=false](https://gitlab.com/wifi-left/Map-MiniGames/-/raw/master/resourcepack/MiniGameRes.zip?inline=false)
+Gitea 的 URL 为：[https://gitea.com/wifi-left/Map-MiniGames/raw/branch/master/resourcepack/MiniGameRes.zip](https://gitea.com/wifi-left/Map-MiniGames/raw/branch/master/resourcepack/MiniGameRes.zip)
 
 GitHub 的 URL 为：[https://github.com/wifi-left/Map-MiniGames/raw/master/resourcepack/MiniGameRes.zip](https://github.com/wifi-left/Map-MiniGames/raw/master/resourcepack/MiniGameRes.zip)
 
