@@ -15,7 +15,11 @@
         "icon": {
             "id": "minecraft:carrot_on_a_stick",
             "components": {
-                "custom_model_data": 20
+                "custom_model_data": {
+                    "floats": [
+                        20
+                    ]
+                }
             }
         },
         "frame": "goal",

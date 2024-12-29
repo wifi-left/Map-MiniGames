@@ -9,4 +9,4 @@ item replace entity @s armor.feet with minecraft:leather_boots[dyed_color={rgb:5
 item replace entity @s armor.legs with minecraft:leather_leggings[dyed_color={rgb:5764183},unbreakable={},enchantments={levels:{"minecraft:fire_protection":1}}]
 item replace entity @s container.0 with minecraft:green_dye[unbreakable={show_in_tooltip:false},custom_name='["§2Green §bSword"]',lore=['["§c5 HP"]'],enchantments={levels:{"minecraft:unbreaking":1},show_in_tooltip:false},attribute_modifiers={modifiers:[{type:"attack_damage",slot:mainhand,id:"uuid_4894794278636495",amount:5d,operation:"add_value"},{type:"attack_speed",slot:"mainhand",id:"uuid_1145514511455145",amount:-2.4,operation:"add_value"}],show_in_tooltip:false}] 1
 
-give @s carrot_on_a_stick[custom_data={job:4},custom_name='"\\u00a72苦力怕 \\u00a77- 右键使用"',lore=['"\\u00a7c小心！他可能会误伤你"'],custom_model_data=2]
+give @s carrot_on_a_stick[custom_data={job:4},custom_name='"\\u00a72苦力怕 \\u00a77- 右键使用"',lore=['"\\u00a7c小心！他可能会误伤你"'],custom_model_data={floats:[2f]}]

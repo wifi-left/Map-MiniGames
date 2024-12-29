@@ -14,7 +14,7 @@ item replace entity @s armor.head with leather_helmet[unbreakable={}]
 item replace entity @s armor.chest with leather_chestplate[unbreakable={}]
 item replace entity @s armor.legs with leather_leggings[unbreakable={}]
 item replace entity @s armor.feet with leather_boots[unbreakable={}]
-give @s minecraft:carrot_on_a_stick[custom_data={hp:2,gun:1,bullet:300,cdtime:10},custom_name='"\\u00a7a基础魔法棒"',lore=['"\\u00a7b可使用次数：\\u00a7e300"','"\\u00a7bCD: \\u00a7e10tick"','"\\u00a7b伤害：\\u00a7e3.0 HP"','"\\u00a7b消耗能量：\\u00a7e2"'],custom_model_data=9]
+give @s minecraft:carrot_on_a_stick[custom_data={hp:2,gun:1,bullet:300,cdtime:10},custom_name='"\\u00a7a基础魔法棒"',lore=['"\\u00a7b可使用次数：\\u00a7e300"','"\\u00a7bCD: \\u00a7e10tick"','"\\u00a7b伤害：\\u00a7e3.0 HP"','"\\u00a7b消耗能量：\\u00a7e2"'],custom_model_data={floats:[9f]}]
 scoreboard players operation @a[team=play.zombie] globle.game = zombie globle.game
 xp set @s 0 levels
 xp set @s 0 points

@@ -10,6 +10,6 @@ item replace entity @s armor.chest with minecraft:leather_chestplate[unbreakable
 item replace entity @s armor.head with minecraft:player_head[unbreakable={},profile="MHF_CoconutG"]
 item replace entity @s armor.feet with minecraft:leather_boots[unbreakable={},dyed_color={rgb:14983439},enchantments={levels:{"minecraft:feather_falling":5}}]
 item replace entity @s armor.legs with minecraft:leather_leggings[unbreakable={},dyed_color={rgb:12583002}]
-give @s carrot_on_a_stick[custom_data={job:3},custom_name='"\\u00a79空间移动 \\u00a77- 右键使用"',lore=['"\\u00a78你突然就消失了"'],custom_model_data=6]
+give @s carrot_on_a_stick[custom_data={job:3},custom_name='"\\u00a79空间移动 \\u00a77- 右键使用"',lore=['"\\u00a78你突然就消失了"'],custom_model_data={floats:[6f]}]
 # effect give @s jump_boost 99999 255 true
 # effect give @s invisibility 99999 1

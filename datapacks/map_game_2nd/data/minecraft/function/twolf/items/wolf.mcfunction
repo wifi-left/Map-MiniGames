@@ -10,4 +10,4 @@ tellraw @s ["\u00a7a请选择你们今晚要杀死的人"]
 function minecraft:twolf/items/selector
 execute at @s run playsound entity.firework_rocket.blast player @s ~ ~ ~ 1 1 1
 
-item replace entity @s hotbar.8 with warped_fungus_on_a_stick[custom_name='"\\u00a7e啥也不干 - \\u00a77右键点击"',custom_data={wolfItem:0},custom_model_data=3]
+item replace entity @s hotbar.8 with warped_fungus_on_a_stick[custom_name='"\\u00a7e啥也不干 - \\u00a77右键点击"',custom_data={wolfItem:0},custom_model_data={floats:[3f]}]

@@ -7,6 +7,6 @@ execute in parkourworld run spawnpoint @a[team=parkour] 8 4 8 0
 effect give @a[team=parkour] resistance 5 25 true
 effect give @a[team=parkour] fire_resistance 5 25 true
 
-item replace entity @a[team=parkour,nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{park:1}}}]}] hotbar.4 with carrot_on_a_stick[unbreakable={},enchantments={levels:{"minecraft:unbreaking":1}},custom_name='"\\u00a7aCheckpoint \\u00a77(Right click)"',lore=['"\\u00a7bReturn to parkour checkpoint"'],custom_data={park:1},custom_model_data=5]
+item replace entity @a[team=parkour,nbt=!{Inventory:[{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{park:1}}}]}] hotbar.4 with carrot_on_a_stick[unbreakable={},enchantments={levels:{"minecraft:unbreaking":1}},custom_name='"\\u00a7aCheckpoint \\u00a77(Right click)"',lore=['"\\u00a7bReturn to parkour checkpoint"'],custom_data={park:1},custom_model_data={floats:[5f]}]
 
 

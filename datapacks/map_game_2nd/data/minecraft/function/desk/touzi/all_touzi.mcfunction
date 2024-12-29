@@ -2,12 +2,12 @@
 ## Datapack Upgrader v1.0.0 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
-give @s minecraft:candle[custom_data={touzit:0,desk_item:1,touzi:1,number:1},custom_model_data=1,custom_name='"\\u00a7a数字骰子 \\u00a77- \\u00a7e1"']
-give @s minecraft:candle[custom_data={touzit:0,desk_item:1,touzi:1,number:2},custom_model_data=2,custom_name='"\\u00a7a数字骰子 \\u00a77- \\u00a7e2"']
-give @s minecraft:candle[custom_data={touzit:0,desk_item:1,touzi:1,number:3},custom_model_data=3,custom_name='"\\u00a7a数字骰子 \\u00a77- \\u00a7e3"']
-give @s minecraft:candle[custom_data={touzit:0,desk_item:1,touzi:1,number:4},custom_model_data=4,custom_name='"\\u00a7a数字骰子 \\u00a77- \\u00a7e4"']
-give @s minecraft:candle[custom_data={touzit:0,desk_item:1,touzi:1,number:5},custom_model_data=5,custom_name='"\\u00a7a数字骰子 \\u00a77- \\u00a7e5"']
-give @s minecraft:candle[custom_data={touzit:0,desk_item:1,touzi:1,number:6},custom_model_data=6,custom_name='"\\u00a7a数字骰子 \\u00a77- \\u00a7e6"']
+give @s minecraft:candle[custom_data={touzit:0,desk_item:1,touzi:1,number:1},custom_model_data={floats:[1f]},custom_name='"\\u00a7a数字骰子 \\u00a77- \\u00a7e1"']
+give @s minecraft:candle[custom_data={touzit:0,desk_item:1,touzi:1,number:2},custom_model_data={floats:[2f]},custom_name='"\\u00a7a数字骰子 \\u00a77- \\u00a7e2"']
+give @s minecraft:candle[custom_data={touzit:0,desk_item:1,touzi:1,number:3},custom_model_data={floats:[3f]},custom_name='"\\u00a7a数字骰子 \\u00a77- \\u00a7e3"']
+give @s minecraft:candle[custom_data={touzit:0,desk_item:1,touzi:1,number:4},custom_model_data={floats:[4f]},custom_name='"\\u00a7a数字骰子 \\u00a77- \\u00a7e4"']
+give @s minecraft:candle[custom_data={touzit:0,desk_item:1,touzi:1,number:5},custom_model_data={floats:[5f]},custom_name='"\\u00a7a数字骰子 \\u00a77- \\u00a7e5"']
+give @s minecraft:candle[custom_data={touzit:0,desk_item:1,touzi:1,number:6},custom_model_data={floats:[6f]},custom_name='"\\u00a7a数字骰子 \\u00a77- \\u00a7e6"']
 
 # 木镐
 give @s minecraft:wooden_pickaxe[custom_name='"\\u00a7a木镐骰子 \\u00a77- \\u00a7c⛏(2)"',custom_data={desk_item:1,touzi:2,number:2,touzit:1}]

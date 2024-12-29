@@ -8,7 +8,7 @@ tellraw @a[team=play.zombie] ["\u00a76+100 Coins (来自蜜斯莱哈雅)\n\u00a7
 
 give @a[team=play.zombie] wooden_sword[unbreakable={}]
 give @a[team=play.zombie] wooden_axe[unbreakable={}]
-give @a[team=play.zombie] minecraft:carrot_on_a_stick[custom_data={hp:2,gun:1,bullet:300,cdtime:10},custom_name='"\\u00a7a基础魔法棒"',lore=['"\\u00a7b可使用次数：\\u00a7e300"','"\\u00a7bCD: \\u00a7e10tick"','"\\u00a7b伤害：\\u00a7e3.0 HP"','"\\u00a7b消耗能量：\\u00a7e2"'],custom_model_data=9]
+give @a[team=play.zombie] minecraft:carrot_on_a_stick[custom_data={hp:2,gun:1,bullet:300,cdtime:10},custom_name='"\\u00a7a基础魔法棒"',lore=['"\\u00a7b可使用次数：\\u00a7e300"','"\\u00a7bCD: \\u00a7e10tick"','"\\u00a7b伤害：\\u00a7e3.0 HP"','"\\u00a7b消耗能量：\\u00a7e2"'],custom_model_data={floats:[9f]}]
 item replace entity @a[team=play.zombie] armor.head with leather_helmet[unbreakable={}]
 item replace entity @a[team=play.zombie] armor.chest with leather_chestplate[unbreakable={}]
 item replace entity @a[team=play.zombie] armor.legs with leather_leggings[unbreakable={}]
