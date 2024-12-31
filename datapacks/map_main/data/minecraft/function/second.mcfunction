@@ -20,7 +20,6 @@ execute if score live.state state matches 1..1 run scoreboard players add live.t
 
 execute if score park.state state matches 1.. run function minecraft:parkourrace/testfor
 execute if score pw.state state matches 1.. run function minecraft:poolwar/second
-execute if score car.state state matches 1.. run function minecraft:car_race/second
 
 execute as @e[tag=block_entity] run data merge entity @s {Time:100}
 

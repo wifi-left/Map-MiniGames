@@ -164,6 +164,7 @@ execute in hungerworld as @a[x=101,y=-60,z=0,distance=..2] at @s run function hu
 execute as @e[type=minecart,tag=lobby.car] at @s if block ~ ~-1 ~ piston_head run data modify entity @s Motion[2] set value -1
 
 execute positioned 29 17 -4 as @a[distance=0..3,gamemode=adventure] at @s run function minecraft:live/ingame/died
+execute if score car.state state matches 1.. run function minecraft:car_race/tick
 
 execute if score sw.state state matches 1.. run function minecraft:cloud/tick
 
