@@ -12,6 +12,8 @@ execute as @a[team=car.play] at @s if items entity @s weapon.offhand minecart[cu
 execute as @a[team=car.play,tag=riding,gamemode=adventure] at @s run function minecraft:car_race/check_input
 execute if score car.state state matches 1 as @a[gamemode=adventure,team=car.play,tag=!riding] at @s run function car_race/back_my_car
 execute as @e[tag=GCAR] at @s if block ~ ~-0.5 ~ lime_glazed_terracotta run effect give @s levitation 1 4 true
+execute as @e[tag=GCAR] at @s if block ~ ~-0.5 ~ glowstone on passengers run scoreboard players remove @s car.speed 2
+
 execute as @e[type=!player,tag=GCAR] run function minecraft:car_race/move/car_getmotion
 execute as @a[team=car.play] if score @s car.speed matches 1.. run scoreboard players remove @s car.speed 3
 execute as @a[team=car.play] if score @s car.speed matches ..0 run scoreboard players set @s car.speed 0
