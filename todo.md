@@ -24,8 +24,8 @@ execute if score tmp.canset board matches 0 run return 0
 
 也许很久都完成不了哈哈
 
-# 烫手的山芋
-新地图大一点
+# 道具竞速
+IDEA BY 物骨
 
 # 无尽狼夜
 
@@ -37,27 +37,9 @@ execute if score tmp.canset board matches 0 run return 0
 6. 狼人铁剑击杀人后，收回物品在bossbar上显示冷却60秒
 7. 最后一名活着的/最后一名死亡的玩家胜利，以title显示
 
-# 空战
-
-## 战利品表
-残月sama
-
-## 建筑地图协助
-Late_Tea
-
-# 老虎机
-
 # 棋类游戏
 
 **制作优先级：Low**
-
-# Golf
-
-**制作优先级：Low**
-
-咕咕咕~
-
-看情况
 
 # Food Party
 

@@ -61,4 +61,4 @@ Add-Content -Path $env:GITHUB_ENV -Value "versionDetail=[Minecraft ${mcversion}]
 
 echo "Compressing the file..."
 New-Item "../build" -ItemType Directory
-Compress-Archive -Path "." -DestinationPath "../build/(MC${mcversion})MiniGames_${version_}.zip"
+Compress-Archive -Path "." -DestinationPath "../build/(MC${mcversion})_wifi_MiniGames_${version_}.zip"

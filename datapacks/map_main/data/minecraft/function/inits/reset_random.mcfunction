@@ -44,9 +44,9 @@ summon marker 0 10 0 {Tags:["random_game","neww"],CustomName:'"\\u00a7c烫手的
 scoreboard players set @e[tag=neww] board 9
 tag @e[tag=neww] remove neww
 # Pool War
-summon marker 0 10 0 {Tags:["random_game","neww"],CustomName:'"\\u00a76高尔夫"'}
-scoreboard players set @e[tag=neww] board 10
-tag @e[tag=neww] remove neww
+# summon marker 0 10 0 {Tags:["random_game","neww"],CustomName:'"\\u00a76高尔夫"'}
+# scoreboard players set @e[tag=neww] board 10
+# tag @e[tag=neww] remove neww
 # TNT Wars
 summon marker 0 10 0 {Tags:["random_game","neww"],CustomName:'"\\u00a7cTNT Wars"'}
 scoreboard players set @e[tag=neww] board 11
