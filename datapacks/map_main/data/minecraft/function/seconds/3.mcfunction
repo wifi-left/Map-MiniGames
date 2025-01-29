@@ -34,3 +34,4 @@ execute if score sw.state state matches 1.. run function minecraft:cloud/second
 
 execute if score duel.state state matches 1.. run function minecraft:duel/hftick
 execute if score car.state state matches 1.. run function minecraft:car_race/second
+execute if score endwolf.state state matches 1.. run function endless_wolf/second

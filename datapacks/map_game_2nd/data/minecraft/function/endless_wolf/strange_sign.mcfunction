@@ -1,0 +1,1 @@
+advancement grant @s only games/endless_wolf_sign

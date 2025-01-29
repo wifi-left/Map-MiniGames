@@ -167,7 +167,7 @@ execute positioned 29 17 -4 as @a[distance=0..3,gamemode=adventure] at @s run fu
 execute if score car.state state matches 1.. run function minecraft:car_race/tick
 
 execute if score sw.state state matches 1.. run function minecraft:cloud/tick
-
+execute if score endwolf.state state matches 1.. run function endless_wolf/tick
 execute as @a[team=play.sw,gamemode=adventure] at @s as @s[y=-70,dy=14] run kill @s
 execute as @a[team=play.sw,gamemode=survival] at @s as @s[y=-70,dy=14] run kill @s
 
@@ -175,3 +175,5 @@ execute in airworld as @a[x=594,y=-44,z=345,dx=3,dy=5,dz=3,gamemode=!creative] a
 
 function dev/tick
 function actions/main
+
+execute in overworld positioned -376 54 624 as @a[gamemode=adventure,distance=..3] at @s run function endless_wolf/died

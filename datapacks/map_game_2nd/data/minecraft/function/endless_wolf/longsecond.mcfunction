@@ -1,0 +1,1 @@
+function minecraft:endless_wolf/item

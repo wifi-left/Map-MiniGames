@@ -54,7 +54,8 @@
                             "minecraft:games/potato_boom": true,
                             "minecraft:games/remaking_game": true,
                             "minecraft:games/twolfstart": true,
-                            "minecraft:games/wind_charge_bw": true
+                            "minecraft:games/wind_charge_bw": true,
+                            "minecraft:games/endless_wolf_sign": true
                         }
                     }
                 }

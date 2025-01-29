@@ -1,0 +1,32 @@
+{
+    "display": {
+        "title": [
+            "\u00a7a\u00a7k???????"
+        ],
+        "description": [
+            "\u00a7b\u00a7k???????",
+            "\u00a7c\u00a7k???????",
+            "\u00a7d\u00a7k???????",
+            "\u00a7e\u00a7k???????"
+        ],
+        "icon": {
+            "id": "minecraft:dragon_egg"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "games",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

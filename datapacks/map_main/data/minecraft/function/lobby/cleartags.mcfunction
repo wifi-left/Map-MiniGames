@@ -23,6 +23,8 @@ tag @s remove tntwars.a
 tag @s remove tntwars.b
 tag @s remove touzi.team.a
 tag @s remove touzi.team.b
+tag @s remove endless.vampire
+
 # tag @s remove
 xp set @s 0 levels
 xp set @s 0 points
