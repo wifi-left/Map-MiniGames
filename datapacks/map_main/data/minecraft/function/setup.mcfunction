@@ -98,3 +98,4 @@ kill @e[type=fireball]
 # kill @e[type=item]
 
 gamerule commandModificationBlockLimit 114514
+# setblock 0 -40 0 shulker_box{lock:{components:{unbreakable:{show_in_tooltip:false}}}}

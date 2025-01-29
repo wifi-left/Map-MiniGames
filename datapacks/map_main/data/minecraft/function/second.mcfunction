@@ -15,6 +15,8 @@ execute as @a[team=golf,gamemode=survival] run scoreboard players set @s hub 1
 
 function minecraft:snow/second
 
+effect give @a[team=wait.endwolf] resistance 1 25 true
+
 execute store result bossbar minecraft:live value run scoreboard players get live.time live.all
 execute if score live.state state matches 1..1 run scoreboard players add live.time live.all 1
 
