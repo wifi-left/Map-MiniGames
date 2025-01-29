@@ -3,6 +3,7 @@ execute if score endwolf.state state matches 5.. run return 0
 scoreboard players operation endwolf.time board = endwolf.day state
 # function minecraft:endless_wolf/
 clear @a[team=play.endwolf] *[custom_data~{vampire:true}]
+function minecraft:endless_wolf/vampire_item
 time set day
 scoreboard players set endwolf.state state 1
 title @a[team=play.endwolf] title ["\u00a7f天亮了"]
