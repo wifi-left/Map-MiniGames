@@ -39,7 +39,7 @@ execute as @s[tag=skill.old] run title @a[distance=0.5..7,team=job_pvp,gamemode=
 execute as @s[tag=skill.old] run particle minecraft:angry_villager ~ ~1 ~ 8 5 8 1 1000 force @a
 execute as @s[tag=skill.tp] run particle minecraft:glow ~ ~ ~ 0 1 0 1 50
 execute as @s[tag=skill.tp] run particle minecraft:glow ~ ~ ~ 0 1 0 1 50
-execute as @s[tag=skill.tp] run tp @s @e[limit=1,tag=pvp.tp,sort=random]
+execute as @s[tag=skill.tp] run function minecraft:job_pvp/random_tp
 # Creeper
 execute as @s[tag=skill.creeper] run execute as @s at @s positioned 0.0 0.0 0.0 run summon marker ^ ^ ^2 {Tags:["f.tmp"]}
 # execute if entity @s[team=job_pvp] anchored eyes run summon fireball ^ ^ ^1 {Tags:["f.new"],ExplosionPower:1}
