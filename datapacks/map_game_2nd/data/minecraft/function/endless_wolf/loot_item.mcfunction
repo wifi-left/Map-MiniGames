@@ -9,7 +9,7 @@ execute if score tmp board matches 5 run summon item ~ ~ ~ {Item:{id:"minecraft:
 execute if score tmp board matches 6 run summon item ~ ~ ~ {Item:{id:"minecraft:leather_leggings",count:1,components:{"minecraft:enchantments":{"fire_protection":1}}},Glowing:true,CustomNameVisible:true}
 execute if score tmp board matches 7 run summon item ~ ~ ~ {Item:{id:"minecraft:leather_boots",count:1,components:{"minecraft:enchantments":{"fire_protection":1}}},Glowing:true,CustomNameVisible:true}
 execute if score tmp board matches 8 run summon item ~ ~ ~ {Item:{id:"minecraft:wind_charge",count:8,components:{"minecraft:enchantments":{"fire_protection":1}}},Glowing:true,CustomNameVisible:true}
-execute if score tmp board matches 9 run summon item ~ ~ ~ {Item:{id:"minecraft:shield",count:9,components:{"minecraft:enchantments":{"fire_protection":1}}},Glowing:true,CustomNameVisible:true}
+execute if score tmp board matches 9 run summon item ~ ~ ~ {Item:{id:"minecraft:shield",count:1,components:{"minecraft:enchantments":{"fire_protection":1}}},Glowing:true,CustomNameVisible:true}
 execute if score tmp board matches 10 run summon item ~ ~ ~ {Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{"custom_color":3200767,potion:swiftness}}},Glowing:true,CustomNameVisible:true}
 execute if score tmp board matches 11 run summon item ~ ~ ~ {Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{"custom_color":12392957,potion:slowness}}},Glowing:true,CustomNameVisible:true}
 execute if score tmp board matches 12 run summon item ~ ~ ~ {Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{"custom_color":1572747,potion:"strong_leaping"}}},Glowing:true,CustomNameVisible:true}

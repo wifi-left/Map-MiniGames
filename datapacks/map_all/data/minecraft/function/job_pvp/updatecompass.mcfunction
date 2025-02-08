@@ -1,6 +1,6 @@
 tag @a remove job.sel
 # clear @s compass[custom_data~{job_pvp:1}]
-execute at @s as @a[limit=1,sort=nearest,distance=1..] run tag @s add job.sel
+execute at @s as @a[limit=1,sort=nearest,distance=1..,team=job_pvp,gamemode=adventure] run tag @s add job.sel
 item replace block 0 -64 0 container.0 with minecraft:compass[lodestone_tracker={target:{dimension:"minecraft:airworld",pos:[I;0,0,0]},tracked:0b},custom_name='"\\u00a7f玩家指南针 \\u00a78- \\u00a7c失去目标"',lore=['"\\u00a77默认追踪离你最近的玩家"'],custom_data={job_pvp:2}]
 # execute unless entity @a[tag=sur.sel,limit=1] run item replace entity @s[team=play.sur.zom] hotbar.8 with 
 execute in overworld positioned 0 -64 0 run data modify block 0 -64 0 Items[0].components."minecraft:lodestone_tracker".target.pos set from entity @a[tag=job.sel,limit=1] Pos
