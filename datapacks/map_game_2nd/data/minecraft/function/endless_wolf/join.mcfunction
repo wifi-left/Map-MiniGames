@@ -3,7 +3,7 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 tellraw @s ["\n\u00a7e游戏公开测试中...遇到BUG请及时反馈！\n"]
-title @s title [{"text":"\u00a7l无尽狼夜","color":"#8b038b"}]
+title @s title [{"text":"\u00a7l吸血鬼之夜","color":"#8b038b"}]
 title @s subtitle ["\u00a77Vampire Night"]
 gamemode adventure @s[gamemode=spectator]
 execute in overworld run tp @s -373 20.1 624 -90 0
