@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 #153 211
 execute unless score bw.state state matches -1 run return 0
 execute if score bw.reset board matches 0..0 in bedwars_backup run forceload add -753 121 -577 299
@@ -85,3 +89,4 @@ scoreboard players add bw.reset board 1
 
 bossbar set minigames:bedwars max 70
 execute store result bossbar minigames:bedwars value run scoreboard players get bw.reset board
+

@@ -19,7 +19,8 @@
                             }
                         }
                     ]
-                },{
+                },
+                {
                     "type": "minecraft:item",
                     "weight": 4,
                     "name": "minecraft:ender_pearl",

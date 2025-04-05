@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # 确认操作
 # 丘比特
 execute if score wolf.event board matches 1..7 if score @s LRS_JOB matches 1 run function minecraft:twolf/control/job/cupid/connect
@@ -27,4 +31,5 @@ execute if score wolf.event board matches 11 if score @s LRS_JOB matches 8 run f
 
 # 投票
 execute if score wolf.event board matches 10 run function minecraft:twolf/control/day/select
+
 

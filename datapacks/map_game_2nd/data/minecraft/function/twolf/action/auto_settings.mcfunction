@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # execute if score
 # 无论多少人都有啦
 execute as @r[team=wait.wolfpeople,gamemode=adventure] run function twolf/job/wolf
@@ -44,3 +48,4 @@ execute if score wolf.total board matches 18 run scoreboard players set wolf.mod
 execute if score wolf.total board matches 20 run scoreboard players set wolf.mode board 1
 execute if score wolf.total board matches 22 run scoreboard players set wolf.mode board 1
 execute if score wolf.total board matches 24 run scoreboard players set wolf.mode board 1
+

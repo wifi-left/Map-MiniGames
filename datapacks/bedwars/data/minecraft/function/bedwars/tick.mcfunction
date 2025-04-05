@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # /say @e[nbt={Inventory:[{id:"minecraft:white_wool"}]}]
 #data modify block -183 11 126 Items set from storage minecraft:shop Item
 #tag @a[nbt={Inventory:[{id:"minecraft:gray_stained_glass_pane",tag:{shop:1}}]}] add bw.buy.1
@@ -34,7 +38,8 @@ kill @e[type=item,nbt={Item:{id:"minecraft:lime_bed"}}]
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{bw:1}}}}]
 
 
-execute as @e[tag=bedwars,type=area_effect_cloud] at @s run data merge entity @s {Duration:-1,Age: -2147483648,WaitTime: -2147483648}
+## WARNING: The transformation may cause problem. You might need to modify it by yourself.
+execute as @e[tag=bedwars,type=area_effect_cloud] at @s run data merge entity @s {Duration:-1,Age:-2147483648,WaitTime:-2147483648}
 # [!]
 function fix:bw/editnbt
 #
@@ -56,8 +61,9 @@ kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{bwshopitem:1}}
 tag @a[tag=INV] remove INV
 tag @a[nbt={active_effects:[{id:"minecraft:invisibility"}]}] add INV
 execute if entity @e[scores={attack.1=1..},tag=bw.player] run effect clear @a[tag=INV,scores={hurt.1=1..}] invisibility
-execute if entity @e[scores={attack.1=1..},tag=bw.player] run tellraw @a[tag=INV,scores={hurt.1=1..}] ["\u00a7c你的隐身状态因为受到伤害被取消！"]
+execute if entity @e[scores={attack.1=1..},tag=bw.player] run tellraw @a[tag=INV,scores={hurt.1=1..}] ["§c你的隐身状态因为受到伤害被取消！"]
 scoreboard players reset @a[scores={hurt.1=1..}] hurt.1
 scoreboard players reset @a[scores={attack.1=1..}] attack.1
 execute as @a[tag=INV] at @s run particle minecraft:dust{color:[0.388d, 0.388d, 0.388d],scale:1} ~ ~ ~ 0 0 0 1 1 force
+
 

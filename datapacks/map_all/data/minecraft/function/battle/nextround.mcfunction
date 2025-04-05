@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 tag @a[team=wait.battle] add battle.sel
 tag @a[team=play.battle.r] add battle.sel
 tag @a[team=play.battle.b] add battle.sel
@@ -43,3 +47,4 @@ execute as @a[tag=battle.sel] run tag @s add battle.notready
 tag @a remove battle.sel
 
 scoreboard players set battle.time board 61
+

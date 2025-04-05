@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 clone 79 125 50 79 125 50 75 106 54
 clone 79 125 54 79 125 54 75 106 55
 clone 79 125 58 79 125 58 75 106 56
@@ -14,8 +18,9 @@ execute if score chess.state state matches 1 store result score boom.fill.result
 scoreboard players set boom.fill.result.white board 0
 execute if score chess.state state matches 1 store result score boom.fill.result.white board run fill 73 106 56 75 106 54 minecraft:white_stained_glass replace white_wool
 
-tellraw @a[team=chestgame] {"translate":"当前占领：\n\u00a70\u00a7l黑队 %s 个\n\u00a7f\u00a7l白队 %s 个","color": "gold","with":[{"score":{"name": "boom.fill.result.black","objective": "board"},"color": "yellow"},{"score":{"name": "boom.fill.result.white","objective": "board"},"color": "yellow"}]}
+tellraw @a[team=chestgame] {"translate":"当前占领：\n§0§l黑队 %s 个\n§f§l白队 %s 个","color":"gold","with":[{"score":{"name":"boom.fill.result.black","objective":"board"},"color":"yellow"},{"score":{"name":"boom.fill.result.white","objective":"board"},"color":"yellow"}]}
 
 execute if score chess.state state matches 1 if score boom.fill.result.white board = boom.fill.result.black board run function minecraft:small_games/chess/boom/win/pj
 execute if score chess.state state matches 1 if score boom.fill.result.white board < boom.fill.result.black board run function minecraft:small_games/chess/boom/win/black
 execute if score chess.state state matches 1 if score boom.fill.result.white board > boom.fill.result.black board run function minecraft:small_games/chess/boom/win/white
+

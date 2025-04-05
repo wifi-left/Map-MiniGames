@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # 3 17 -74 ->  2 17 -74
 # fill 3 3 -99 -47 29 -99 air replace #minecraft:snowmineable
 # fill 3 29 -49 -47 3 -49 air replace #minecraft:snowmineable
@@ -40,4 +44,5 @@ execute as @e[tag=snow.tp] at @s run tp @s ~ ~ ~1
 execute as @e[tag=snow.tp] at @s run fill ~-25 3 ~ ~25 29 ~ snow_block replace #minecraft:snowmineable
 
 kill @e[tag=snow.tp]
+
 

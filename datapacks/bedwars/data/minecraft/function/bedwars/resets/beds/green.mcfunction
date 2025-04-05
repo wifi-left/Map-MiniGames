@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 
 execute if score bw.mode board matches 5 run setblock -237 31 208 lime_bed[facing=east,occupied=true]
 
@@ -18,3 +22,4 @@ execute if score bw.mode board matches 6 run setblock -239 28 200 lime_bed[occup
 
 execute if score bw.mode board matches 7 run setblock -280 26 246 lime_bed[occupied=true,facing=south]
 execute if score bw.mode board matches 7 run setblock -280 26 247 lime_bed[occupied=true,facing=south,part=head]
+

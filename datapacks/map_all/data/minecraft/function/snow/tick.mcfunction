@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute as @a[team=play.snow,gamemode=adventure] at @s if block ~ ~-1 ~ minecraft:magma_block run function minecraft:snow/died
 # execute if score snow.state state matches 1.. run kill @e[type=item,nbt={Item:{id:"minecraft:snowball"}}]
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{snow:1}}}}]
@@ -33,4 +37,5 @@ scoreboard players reset @a[scores={eat.glow=0..}] eat.glow
 scoreboard players reset @a[scores={zombie.died=1..}] zombie.died
 
 scoreboard players reset @a[scores={parkour=1..}] parkour
+
 

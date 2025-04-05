@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 
 scoreboard players set btw.c.a board 0
 scoreboard players set btw.c.b board 0
@@ -14,3 +18,4 @@ execute as @a[team=btw.play.b,gamemode=adventure] run scoreboard players add btw
 
 execute if score btw.state state matches 1 if score btw.d.a board matches ..0 run function boatwars/roundover/b
 execute if score btw.state state matches 1 if score btw.d.b board matches ..0 run function boatwars/roundover/a
+

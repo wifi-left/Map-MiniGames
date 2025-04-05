@@ -1,4 +1,8 @@
-tellraw @a[tag=bw.player] ["\n\u00a7e\u00a7lBEDWARS \u00a7c死亡决斗开始。凋灵已召唤。\n"]
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
+tellraw @a[tag=bw.player] ["\n§e§lBEDWARS §c死亡决斗开始。凋灵已召唤。\n"]
 
 scoreboard players set bw.event state 4
 scoreboard players set bw.event.countdown board 360
@@ -23,3 +27,4 @@ execute if score bw.green state matches 1.. run summon wither -303 60 210 {Team:
 execute store result score bw.event.time tick run bossbar get minigames:bedwars max
 scoreboard players operation bw.event.time tick -= bw.event.countdown board
 execute store result bossbar minigames:bedwars value run scoreboard players get bw.event.time tick
+

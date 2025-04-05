@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # execute positioned ~-0.5 ~ ~-0.5 run tag @e[dx=0.5,dy=2,dz=0.5,tag=pve.zombie] add hitted
 # execute positioned ~ ~ ~ run tag @e[distance=..0.5,tag=pve.zombie] add hitted
 tag @s add selel
@@ -8,3 +12,4 @@ execute as @a[tag=hitted] if score @s park.uuid = @e[tag=selel,limit=1] park.uui
 # say hello2 @a[tag=hitted]
 # execute as @a[tag=hitted] if score @s park.uuid = @e[tag=selel,limit=1] park.uuid run tellraw wifi_left [{"score":{"name": "@e[tag=selel,limit=1]","objective": "park.uuid"}}]
 tag @s remove selel
+

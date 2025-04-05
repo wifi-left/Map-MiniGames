@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 function minecraft:bedwars/before/count_team_players
 ## 寻找人数最少的队伍 存储在bw.team.random board
 scoreboard players set bw.team.random board -1
@@ -19,4 +23,5 @@ execute if score bw.team.random board matches 2..2 run team join bw.red @a[tag=b
 execute if score bw.team.random board matches 3..3 run team join bw.blue @a[tag=bw.rd.sel]
 tag @a[tag=bw.rd.sel] remove bw.rd.sel
 execute if score bw.team.random board matches 4.. run scoreboard players set bw.team.random board 0
+
 

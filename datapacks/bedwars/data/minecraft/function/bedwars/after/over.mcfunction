@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # say @a[tag=bw.play]
 scoreboard players reset * bw.tmp.ir
 scoreboard players reset * bw.tmp.gd
@@ -31,3 +35,4 @@ kill @e[tag=bw.entity]
 scoreboard players reset @e[type=sheep,tag=bw.tntsheep]
 kill @e[type=sheep,tag=bw.tntsheep]
 kill @e[type=marker,tag=tntsheep.spawn]
+

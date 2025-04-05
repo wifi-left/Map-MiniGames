@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players set battle.state state 4
 # 选择
 # scoreboard players set battle.score.r board 0
@@ -17,4 +21,5 @@ title @a[tag=battle.sel] subtitle ["\u00a7bPreparing Fighting!"]
 tag @a remove battle.sel
 
 execute positioned 144 30 -340 run kill @e[type=item,distance=0..50]
+
 

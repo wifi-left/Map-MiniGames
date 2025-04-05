@@ -1,5 +1,9 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players set bd.yellow state 0
-execute as @a[scores={pickyellow=1..},team=bw.yellow] run tellraw @s ["\u00a7c你不能破坏自己的床！"]
+execute as @a[scores={pickyellow=1..},team=bw.yellow] run tellraw @s ["§c你不能破坏自己的床！"]
 execute as @a[scores={pickyellow=1..},team=bw.yellow] run function minecraft:bedwars/resets/beds/yellow
 # execute as @a[scores={pickyellow=1..},team=bw.yellow] run
 execute as @a[scores={pickyellow=1..},team=bw.yellow] run scoreboard players set bd.yellow state 1
@@ -8,7 +12,7 @@ execute as @a[scores={pickyellow=1..},team=bw.yellow] run scoreboard players set
 # execute unless entity @a[scores={pickyellow=1..}] run setblock -372 31 210 yellow_bed[facing=west,part=head]
 # execute unless entity @a[scores={pickyellow=1..}] run scoreboard players set bd.yellow state 1
 
-execute unless entity @a[scores={pickyellow=1..},team=bw.yellow] run tellraw @a[tag=bw.player] ["\n\u00a7f\u00a7l床被破坏了 > \u00a7e黄队的床\u00a77被",{"selector":"@a[scores={pickyellow=1..}]"},"\u00a77破坏了！\n"]
+execute unless entity @a[scores={pickyellow=1..},team=bw.yellow] run tellraw @a[tag=bw.player] ["\n§f§l床被破坏了 > §e黄队的床§7被",{"selector":"@a[scores={pickyellow=1..}]"},"§7破坏了！\n"]
 execute unless entity @a[scores={pickyellow=1..},team=bw.yellow] as @a at @s run playsound entity.ender_dragon.growl player @s
 execute unless entity @a[scores={pickyellow=1..},team=bw.yellow] run title @a[team=bw.yellow] title ["\u00a7c床已被破坏"]
 execute unless entity @a[scores={pickyellow=1..},team=bw.yellow] run title @a[team=bw.yellow] subtitle ["\u00a7r你将无法重生！"]
@@ -28,4 +32,5 @@ execute unless entity @a[scores={pickyellow=1..},team=bw.yellow] run title @a[te
 execute unless entity @a[scores={pickyellow=1..},team=bw.yellow] run function minecraft:bedwars/during/updateinfo/yellow
 
 scoreboard players reset * pickyellow
+
 

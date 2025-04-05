@@ -1,5 +1,9 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players set bd.green state 0
-execute as @a[scores={pickgreen=1..},team=bw.green] run tellraw @s ["\u00a7c你不能破坏自己的床！"]
+execute as @a[scores={pickgreen=1..},team=bw.green] run tellraw @s ["§c你不能破坏自己的床！"]
 execute as @a[scores={pickgreen=1..},team=bw.green] run function minecraft:bedwars/resets/beds/green
 # execute as @a[scores={pickgreen=1..},team=bw.green] run setblock -236 31 208 lime_bed[facing=east,part=head]
 execute as @a[scores={pickgreen=1..},team=bw.green] run scoreboard players set bd.green state 1
@@ -8,7 +12,7 @@ execute as @a[scores={pickgreen=1..},team=bw.green] run scoreboard players set b
 # execute unless entity @a[scores={pickgreen=1..}] run setblock -236 31 208 lime_bed[facing=east,part=head]
 # execute unless entity @a[scores={pickgreen=1..}] run scoreboard players set bd.green state 1
 
-execute unless entity @a[scores={pickgreen=1..},team=bw.green] run tellraw @a[tag=bw.player] ["\n\u00a7f\u00a7l床被破坏了 > \u00a7a绿队的床\u00a77被",{"selector":"@a[scores={pickgreen=1..}]"},"\u00a77破坏了！\n"]
+execute unless entity @a[scores={pickgreen=1..},team=bw.green] run tellraw @a[tag=bw.player] ["\n§f§l床被破坏了 > §a绿队的床§7被",{"selector":"@a[scores={pickgreen=1..}]"},"§7破坏了！\n"]
 execute unless entity @a[scores={pickgreen=1..},team=bw.green] as @a at @s run playsound entity.ender_dragon.growl player @s
 execute unless entity @a[scores={pickgreen=1..},team=bw.green] run title @a[team=bw.green] title ["\u00a7c床已被破坏"]
 execute unless entity @a[scores={pickgreen=1..},team=bw.green] run title @a[team=bw.green] subtitle ["\u00a7r你将无法重生！"]
@@ -29,4 +33,5 @@ execute unless entity @a[scores={pickgreen=1..},team=bw.green] run title @a[team
 # execute unless entity @a[scores={pickgreen=1..},team=bw.green] run scoreboard players set §a绿§8　§r绿队:§e§l❁ bw.info 8
 execute unless entity @a[scores={pickgreen=1..},team=bw.green] run function minecraft:bedwars/during/updateinfo/green
 scoreboard players reset * pickgreen
+
 

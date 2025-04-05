@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players add wolf.deathcount board 1
 
 function minecraft:twolf/events/job/hunter
@@ -13,3 +17,4 @@ function twolf/action/special_day_choose
 function twolf/action/per/tpback_real
 execute as @a[tag=wolf.acting] at @s run function twolf/items/hunter
 schedule clear #wolffunctions
+

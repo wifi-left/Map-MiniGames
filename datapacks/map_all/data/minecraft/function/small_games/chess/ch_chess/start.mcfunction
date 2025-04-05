@@ -1,4 +1,8 @@
-tellraw @s ["\u00a7c该棋类仍在制作！"]
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
+tellraw @s ["§c该棋类仍在制作！"]
 # kill @e[tag=chess.put.white]
 # kill @e[tag=chess.put.black]
 # function small_games/chess/five/reset
@@ -23,3 +27,4 @@ tellraw @s ["\u00a7c该棋类仍在制作！"]
 # tellraw @a[tag=chess.white] ["\n\u00a77    你在： \u00a7f\u00a7l白队\n\u00a7a    队友：",{"selector":"@a[tag=chess.white]"},"\n\u00a7c    对手：",{"selector":"@a[tag=chess.black]"},"\n"]
 # function small_games/chess/five/nextround
 # # Black First
+

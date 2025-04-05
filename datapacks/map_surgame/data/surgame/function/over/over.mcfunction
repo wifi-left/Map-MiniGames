@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players set sur.state state 3
 tag @a[team=play.sur] add surback
 tag @a[team=wait.sur] add surback
@@ -11,3 +15,4 @@ bossbar set surgame:time max 1
 bossbar set surgame:time value 1
 bossbar set surgame:time players @a[team=wait.sur]
 tag @a remove sur.killedbyzom
+

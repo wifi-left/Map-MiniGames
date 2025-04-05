@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # scoreboard players set live.state state 1
 effect clear @s
 scoreboard players add @s live.job 0
@@ -11,4 +15,5 @@ execute if score @s live.job matches 6..6 run function minecraft:live/job/creepe
 execute if score @s live.job matches 7..7 run function minecraft:live/job/old
 # function minecraft:live/ingame/selkiller
 # execute if score live.set.mode live.all matches 1..1 run team modify play.live.runner friendlyFire true
+
 

@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute if score boom.tmp.idx1 board matches 0 if score boom.tmp.idx2 board matches 0 run fill 79 125 60 77 125 58 red_wool
 execute if score boom.tmp.idx1 board matches 0 if score boom.tmp.idx2 board matches 1 run fill 79 125 56 77 125 54 red_wool
 execute if score boom.tmp.idx1 board matches 0 if score boom.tmp.idx2 board matches 2 run fill 79 125 52 77 125 50 red_wool
@@ -28,6 +32,7 @@ execute if score boom.tmp.idx1 board matches 2 if score boom.tmp.idx2 board matc
 execute if score boom.tmp.idx1 board matches 2 if score boom.tmp.idx2 board matches 1 run fill 71 120 56 69 120 54 pink_stained_glass
 execute if score boom.tmp.idx1 board matches 2 if score boom.tmp.idx2 board matches 2 run fill 71 120 52 69 120 50 pink_stained_glass
 
-tellraw @a[team=chestgame] [{"translate":"\u00a7e\u00a7l平局：\u00a76 [%s, %s]","color": "gold","with":[{"score":{"name": "boom.tmp.idx1","objective": "board"},"color": "yellow"},{"score":{"name": "boom.tmp.idx2","objective": "board"},"color": "yellow"}]}]
+tellraw @a[team=chestgame] [{"translate":"§e§l平局：§6 [%s, %s]","color":"gold","with":[{"score":{"name":"boom.tmp.idx1","objective":"board"},"color":"yellow"},{"score":{"name":"boom.tmp.idx2","objective":"board"},"color":"yellow"}]}]
 
 function minecraft:small_games/chess/boom/check/pj
+

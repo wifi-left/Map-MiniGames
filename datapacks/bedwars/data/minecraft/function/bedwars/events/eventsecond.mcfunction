@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 bossbar set minigames:bedwars players
 bossbar set minigames:bedwars players @a[tag=bw.player]
 
@@ -13,3 +17,4 @@ execute if score bw.event state matches 3 run function bedwars/events/during/dra
 execute if score bw.event state matches 4.. run function bedwars/events/during/overgame
 
 scoreboard players remove bw.event.countdown board 1
+

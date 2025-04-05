@@ -296,13 +296,11 @@
                             "function": "set_components",
                             "components": {
                                 "minecraft:enchantments": {
-                                    "levels": {
-                                        "minecraft:knockback": 2
-                                    }
+                                    "minecraft:knockback": 2
                                 },
-                                "minecraft:custom_name": "\"\\u00a7a击退棍\"",
+                                "minecraft:custom_name": "§a击退棍",
                                 "minecraft:lore": [
-                                    "\"\\u00a7eKnockback LV.2\""
+                                    
                                 ],
                                 "minecraft:custom_data": {
                                     "HideFlag": 63

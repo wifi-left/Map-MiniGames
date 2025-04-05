@@ -1,4 +1,8 @@
 ##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
+##
 ## Datapack Upgrader v1.0.0 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ##
@@ -9,7 +13,9 @@ execute as @a[team=play.zombie,gamemode=adventure] as @e[tag=pve.spawn.village.i
 
 
 ## WARNING: Unsupport transformation
+## WARNING: The transformation may cause problem. You might need to modify it by yourself.
 execute as @e[tag=pve.zombie] run data merge entity @s {PersistenceRequired:1b,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]}
 scoreboard players set zombie.state state 1
+
 
 

@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 title @a[tag=bw.player] title ["\u00a7aBedwars"]
 title @a[tag=bw.player] subtitle ["\u00a7fEnjoy the game!"]
 execute as @e[tag=diamond,type=marker] at @s run summon minecraft:text_display ~ ~2.8 ~ {Tags:["bedwars","diamond.title"],text:'"\\u00a7b\\u00a7l钻石"',CustomNameVisible:0b,billboard:"vertical",see_through:false,view_range:0.4f}
@@ -5,7 +9,7 @@ execute as @e[tag=diamond,type=marker] at @s run summon minecraft:text_display ~
 execute as @e[tag=emerald,type=marker] at @s run summon minecraft:text_display ~ ~2.8 ~ {Tags:["bedwars","emerald.title"],text:'"\\u00a72绿宝石"',CustomNameVisible:0b,billboard:"vertical",see_through:false,view_range:0.4f}
 execute as @e[tag=emerald,type=marker] at @s run summon minecraft:text_display ~ ~2.5 ~ {Tags:["bedwars","emerald.subtitle"],text:'"To be edited"',CustomNameVisible:0b,billboard:"vertical",see_through:false,view_range:0.4f}
 
-tellraw @a[tag=bw.player] ["\u00a7a重置完毕！"]
+tellraw @a[tag=bw.player] ["§a重置完毕！"]
 scoreboard players set bw.reset board 0
 execute in bedwars_backup run forceload remove -573 299 -397 121
 execute in bedwars_backup run forceload remove -753 121 -577 299
@@ -27,12 +31,12 @@ execute if score bw.mode state matches 0..3 run execute as @a[team=bw.wait,tag=!
 execute if score bw.mode state matches 4..7 run execute as @a[team=bw.wait,tag=!GOABLE.SPEC] at @s run function minecraft:bedwars/before/random_team_2teams
 scoreboard players reset * bw.team
 tag @a[team=bw.wait] remove bw.play
-tellraw @a ["\u00a7a\u00a7l[MESSAGE] \u00a76起床战争\u00a7b游戏已经开始！"]
-tellraw @a[team=bw.blue] ["\u00a76你加入了\u00a79蓝队"]
-tellraw @a[team=bw.green] ["\u00a76你加入了\u00a7a绿队"]
-tellraw @a[team=bw.red] ["\u00a76你加入了\u00a7c红队"]
-tellraw @a[team=bw.yellow] ["\u00a76你加入了\u00a7e黄队"]
-tellraw @a[team=bw.wait] ["\u00a77你现在处于旁观模式。"]
+tellraw @a ["§a§l[MESSAGE] §6起床战争§b游戏已经开始！"]
+tellraw @a[team=bw.blue] ["§6你加入了§9蓝队"]
+tellraw @a[team=bw.green] ["§6你加入了§a绿队"]
+tellraw @a[team=bw.red] ["§6你加入了§c红队"]
+tellraw @a[team=bw.yellow] ["§6你加入了§e黄队"]
+tellraw @a[team=bw.wait] ["§7你现在处于旁观模式。"]
 gamemode adventure @a[team=bw.yellow]
 gamemode adventure @a[team=bw.blue]
 gamemode adventure @a[team=bw.green]
@@ -52,23 +56,27 @@ scoreboard players set bw.yellow state 1
 scoreboard players set bw.red state 1
 
 
-data merge block -302 30 131 {Items: []}
+## WARNING: The transformation may cause problem. You might need to modify it by yourself.
+data merge block -302 30 131 {Items:[]}
 
-data merge block -226 30 211 {Items: []}
+## WARNING: The transformation may cause problem. You might need to modify it by yourself.
+data merge block -226 30 211 {Items:[]}
 
-data merge block -306 30 287 {Items: []}
+## WARNING: The transformation may cause problem. You might need to modify it by yourself.
+data merge block -306 30 287 {Items:[]}
 
-data merge block -382 30 207 {Items: []}
+## WARNING: The transformation may cause problem. You might need to modify it by yourself.
+data merge block -382 30 207 {Items:[]}
 
 function bedwars/resets/placebed
 
 execute if score bw.mode state matches 1 as @e[tag=bw.bed.beds] at @s run setblock ~ ~ ~ air
 execute if score bw.mode state matches 5 as @e[tag=bw.bed.beds] at @s run setblock ~ ~ ~ air
 
-execute if score bw.mode state matches 1 run tellraw @a[tag=bw.player] ["\n   \u00a7c\u00a7l无床模式\u00a76已启用。\n"]
-execute if score bw.mode state matches 5 run tellraw @a[tag=bw.player] ["\n   \u00a7c\u00a7l无床模式\u00a76已启用。\n"]
-execute if score bw.mode state matches 2 run tellraw @a[tag=bw.player] ["\n   \u00a7a\u00a7l全解锁模式\u00a76已启用。\n"]
-execute if score bw.mode state matches 6 run tellraw @a[tag=bw.player] ["\n   \u00a7a\u00a7l全解锁模式\u00a76已启用。\n"]
+execute if score bw.mode state matches 1 run tellraw @a[tag=bw.player] ["\n   §c§l无床模式§6已启用。\n"]
+execute if score bw.mode state matches 5 run tellraw @a[tag=bw.player] ["\n   §c§l无床模式§6已启用。\n"]
+execute if score bw.mode state matches 2 run tellraw @a[tag=bw.player] ["\n   §a§l全解锁模式§6已启用。\n"]
+execute if score bw.mode state matches 6 run tellraw @a[tag=bw.player] ["\n   §a§l全解锁模式§6已启用。\n"]
 
 execute if score bw.mode state matches 1 run scoreboard players display name info1 bw.info ["游戏模式：\u00a7c无床模式"]
 execute if score bw.mode state matches 5 run scoreboard players display name info1 bw.info ["游戏模式：\u00a7c无床模式"]
@@ -101,3 +109,4 @@ scoreboard players set bw.set.em board 90
 scoreboard players set bw.set.dm board 60
 
 kill @e[type=item]
+

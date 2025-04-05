@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 
 tp @s -302 68 210
 gamemode spectator @s
@@ -14,7 +18,8 @@ execute at @e[limit=1,tag=bw.bed.red] if block ~ ~ ~ red_bed run tag @s[team=bw.
 scoreboard players set @s[tag=bw.fhing] board 6
 
 execute as @s[tag=!bw.fhing] at @s run tag @s remove bw.play
-execute as @s[tag=!bw.play] run tellraw @a[tag=bw.player] ["\u00a7b\u00a7l最终击杀！"]
-execute as @s[tag=!bw.fhing] at @s run tellraw @s ["\u00a7c你已被淘汰！"]
+execute as @s[tag=!bw.play] run tellraw @a[tag=bw.player] ["§b§l最终击杀！"]
+execute as @s[tag=!bw.fhing] at @s run tellraw @s ["§c你已被淘汰！"]
 
 execute as @s[tag=!bw.play] run function minecraft:bedwars/during/updateinfo/update
+

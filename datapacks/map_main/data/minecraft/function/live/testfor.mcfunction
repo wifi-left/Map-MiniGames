@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 tag @a[team=wait.live] add liveshowboss
 tag @a[team=play.live.killer] add liveshowboss
 tag @a[team=play.live.runner] add liveshowboss
@@ -12,3 +16,4 @@ execute as @a[team=play.live.runner,gamemode=adventure] run scoreboard players a
 execute if score live.state state matches 1.. if score live.runner tick matches ..0 run function minecraft:live/gameover_killer
 execute if score live.state state matches 1.. if score live.time live.all >= live.timelimit live.all as @a[team=play.live.killer] run function minecraft:live/ingame/died
 execute if score live.state state matches 1.. unless entity @a[team=play.live.killer] run function minecraft:live/gameover_runner
+

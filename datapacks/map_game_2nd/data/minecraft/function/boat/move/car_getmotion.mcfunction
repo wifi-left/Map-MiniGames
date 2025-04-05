@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players set car.tmp tick 1
 
 execute on passengers run scoreboard players set car.tmp tick 0
@@ -9,3 +13,4 @@ execute store result entity @s attributes[0].base double 0.01 on passengers run 
 # data get entity @s Motion
 # say @s
 # kill @e[tag=f.tmp]
+

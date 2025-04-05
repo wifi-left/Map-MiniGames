@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # say 3
 # execute if score zombie.state state matches 1 run function zombieever/o_f_tick
 execute if score zombie.state state matches 1.. run function zombieever/o_f_tick
@@ -31,3 +35,4 @@ execute if score sw.state state matches 1.. run function minecraft:cloud/second
 execute if score duel.state state matches 1.. run function minecraft:duel/hftick
 execute if score car.state state matches 1.. run function minecraft:car_race/second
 execute if score endwolf.state state matches 1.. run function endless_wolf/second
+

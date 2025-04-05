@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # say 1
 
 function o_f_tick
@@ -33,3 +37,4 @@ effect give @a[team=hide.killer] glowing 2 2 true
 execute if score btw.state state matches 1.. in overworld run function boatwars/second
 
 execute if score duel.state state matches 1.. run function minecraft:duel/hftick
+

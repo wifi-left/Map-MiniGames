@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute positioned 29 16 31 run tag @e[tag=wolf.tppoint,tag=!wolf.used,limit=1,sort=nearest] add wolf.sel
 scoreboard players operation @e[tag=wolf.sel,limit=1] LRS_UUID = @s park.uuid
 tag @e[tag=wolf.sel] add wolf.used
@@ -9,3 +13,4 @@ item modify entity @e[tag=wolf.new] armor.head gethead
 tag @s remove wolf.sell
 tag @e[tag=wolf.new] remove wolf.new
 tag @e[tag=wolf.sel] remove wolf.sel
+

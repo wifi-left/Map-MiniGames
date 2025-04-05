@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 
 execute if block ~ ~-2 ~ command_block[facing=south] run data modify entity @s Motion[2] set value 0.13
 
@@ -23,6 +27,9 @@ execute as @s[tag=npc.hungry] if block ~ ~-2 ~ lime_terracotta run data modify e
 execute as @s[tag=npc.hungry] if block ~ ~-2 ~ lime_terracotta at @s run tp @s ~ ~ ~ 0 ~
 tag @s remove npc.moving
 
+## WARNING: The transformation may cause problem. You might need to modify it by yourself.
 execute as @s[tag=!npc.moving] run data merge entity @s {NoAI:0b}
 
+## WARNING: The transformation may cause problem. You might need to modify it by yourself.
 execute as @s[tag=npc.moving] run data merge entity @s {NoAI:1b}
+

@@ -1,2 +1,7 @@
-tellraw @s ["\n \u00a76※ ",{"text":"赛猪","color":"#00f7ff","bold": true}," \u00a76游戏介绍\n\n\u00a7B ※ 任务：\u00a7a使用载具进行比赛！争取第一！\n\u00a7b ※ 作者：\u00a7aGamom\n\n    \u00a7d\u00a7l祝您游玩愉快！\n"]
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
+tellraw @s ["\n §6※ ",{"text":"赛猪","color":"#00f7ff","bold":true}," §6游戏介绍\n\n§B ※ 任务：§a使用载具进行比赛！争取第一！\n§b ※ 作者：§aGamom\n\n    §d§l祝您游玩愉快！\n"]
 playsound ui.toast.challenge_complete player @s ~ ~ ~
+

@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # title @s actionbar ["\u00a7b\u00a7lSkills Actived"]
 # playsound ui.button.click player @s ~ ~ ~ 1 2 1
 # /give @s minecraft:carrot_on_a_stick{gun:1,bullet:1000,cdtime:30}
@@ -26,6 +30,7 @@ execute if score gun.tmp board matches 1.. run tag @s add gun.canshoot
 execute unless score gun.tmp board matches 1.. run playsound minecraft:entity.enderman.teleport player @s ~ ~ ~ 1 0 1
 execute as @s[tag=gun.canshoot] run scoreboard players remove gun.tmp board 1
 
+## WARNING: 'storage' will not be transformed because we don't know what to do with it.
 execute as @s[tag=gun.canshoot] run execute store result storage gun:tmp count int 1 run scoreboard players get gun.tmp board
 # execute as @s[tag=gun.canshoot] run xp add @s -1 levels
 # execute as @s[tag=gun.canshoot] run title @s actionbar [{"score":{"name": "gun.tmp","objective": "board"},"color":"green"}," Amo\u00a7e Rest"]
@@ -51,3 +56,4 @@ tag @s remove gun.10
 tag @s remove gun.f10
 tag @s remove gun.11
 tag @s remove gun.canshoot
+

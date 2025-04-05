@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # 统计人数
 scoreboard players set wolf.r.all board 0
 scoreboard players set wolf.r.bad board 0
@@ -39,5 +43,6 @@ execute as @a[tag=wolf.tip,gamemode=adventure,team=wolfpeople] if score @s LRS_J
 
 ## 炸弹人
 execute as @a[tag=wolf.tip,gamemode=adventure,team=wolfpeople,tag=!wolf.connected] if score @s LRS_JOB matches 7 run scoreboard players add wolf.r.tnt board 1
+
 
 

@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 #execute if score bw.em board matches ..0 as @e[type=marker,tag=emerald] at @s run summon item ~ ~ ~ {Item:{id:"minecraft:emerald",Count:1b,tag:{HideFlags:63,CanDe1stroy:["#minecraft:bedblocks"],CanPlaceOn:["#minecraft:bwplace"]}}}
 #execute if score bw.dm board matches ..0 as @e[type=marker,tag=diamond] at @s run summon item ~ ~ ~ {Item:{id:"minecraft:diamond",Count:1b,tag:{HideFlags:63,CanDe1stroy:["#minecraft:bedblocks"],CanPlaceOn:["#minecraft:bwplace"]}}}
 #execute if score bw.ir board matches ..0 as @e[type=marker,tag=iron] at @s run summon item ~ ~ ~ {Item:{id:"minecraft:iron_ingot",Count:1b,tag:{HideFlags:63,CanDe1stroy:["#minecraft:bedblocks"],CanPlaceOn:["#minecraft:bwplace"]}}}
@@ -10,7 +14,9 @@ execute if score bw.em board matches ..0 as @e[type=marker,tag=emerald] at @s ru
 
 data modify block -307 74 207 front_text.messages[0] set value '["\\u00a7e将在",{"score":{"objective":"board","name":"bw.em"},"color":"red"},"\\u00a7e秒后产生"]'
 data modify block -307 74 207 front_text.messages[1] set value '["\\u00a7e将在",{"score":{"objective":"board","name":"bw.dm"},"color":"red"},"\\u00a7e秒后产生"]'
+## WARNING: The transformation may cause problem. You might need to modify it by yourself.
 execute as @e[type=text_display,tag=emerald.subtitle] at @s run data modify entity @s text set from block -307 74 207 front_text.messages[0]
+## WARNING: The transformation may cause problem. You might need to modify it by yourself.
 execute as @e[type=text_display,tag=diamond.subtitle] at @s run data modify entity @s text set from block -307 74 207 front_text.messages[1]
 
 execute if score bw.dm board matches ..0 as @e[type=marker,tag=diamond] at @s run function minecraft:bedwars/summont/diamond
@@ -32,3 +38,4 @@ execute if score bw.ir board matches ..0 run scoreboard players set bw.ir board 
 
 scoreboard players remove bw.gd board 1
 scoreboard players remove bw.ir board 1
+

@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute in airworld run forceload add 1 0 1 0
 execute in airworld run setblock 1 -64 0 air
 execute in airworld run setblock 1 -64 0 diamond_block
@@ -7,3 +11,4 @@ execute in airworld unless block 1 -64 0 diamond_block run scoreboard players ad
 execute in airworld run forceload remove 1 0 1 0
 
 function selfcheck/check_random
+

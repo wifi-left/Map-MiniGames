@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute in minecraft:hungerworld run spawnpoint @a[team=hunger] 101 -60 0
 
 # 人数检测
@@ -15,3 +19,4 @@ execute if score hunger.state state matches 5 run function hunger/step/waitend
 
 # 结束检测
 execute if score hunger.state state matches 1..9 if score hunger.player tick matches ..1 run function hunger/over/over
+

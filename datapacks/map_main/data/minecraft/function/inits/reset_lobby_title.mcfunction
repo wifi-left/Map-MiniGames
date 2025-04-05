@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 kill @e[tag=lobby,type=text_display]
 kill @e[tag=lobby,type=armor_stand]
 
@@ -55,6 +59,7 @@ summon minecraft:text_display 240 118 -31 {text:'["\\u00a79\\u00a7l海滩"]',Inv
 summon minecraft:text_display 240 117.7 -31 {text:'["\\u00a77Beach"]',Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],billboard:"vertical",see_through:false}
 
 
+## WARNING: The transformation may cause problem. You might need to modify it by yourself.
 execute as @e[type=item_frame] run data merge entity @s {Fixed:1b}
 
 summon minecraft:text_display 188 117 50 {text:'["\\u00a7a\\u00a7l小游戏"]',Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],billboard:"vertical",see_through:false}

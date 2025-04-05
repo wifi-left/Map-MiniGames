@@ -1,4 +1,8 @@
-tellraw @a ["\u00a7b\u00a7l[Gamom Datapacks] \u00a7aReloaded successfully ! \u00a7e[Language: 简体中文]"]
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
+tellraw @a ["§b§l[Gamom Datapacks] §aReloaded successfully ! §e[Language: 简体中文]"]
 function minecraft:bedwars/setup
 scoreboard objectives remove car.speed
 scoreboard objectives add car.speed dummy "Speed of car"

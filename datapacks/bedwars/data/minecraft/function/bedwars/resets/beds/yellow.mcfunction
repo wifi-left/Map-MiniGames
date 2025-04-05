@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 
 execute if score bw.mode board matches 1..3 run setblock -371 31 210 yellow_bed[facing=west,occupied=true]
 

@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute as @s[tag=map.op] run return 1
 execute unless entity @s run return 1
 execute as @s[tag=play.total] run return 1

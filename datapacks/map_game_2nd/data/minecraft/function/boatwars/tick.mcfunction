@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute as @e[tag=boat.gun.line] at @s run function boatgun:gun/main
 
 execute in airworld as @a[x=553,y=6,z=32,distance=..1,gamemode=adventure] at @s run function boatwars/died
@@ -16,3 +20,4 @@ execute as @a[team=btw.play.b,scores={btw.gunspeed=1..}] at @s run xp add @s -1 
 
 execute as @a[team=btw.play.a,scores={btw.gunspeed=3..}] at @s run xp add @s -1 points
 execute as @a[team=btw.play.b,scores={btw.gunspeed=3..}] at @s run xp add @s -1 points
+

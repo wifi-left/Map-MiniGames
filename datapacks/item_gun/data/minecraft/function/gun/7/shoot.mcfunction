@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 summon marker ~ ~ ~ {Tags:["gun.line","gun.new"],data:{guntype:7}}
 tp @e[tag=gun.new] @s
 tp @e[tag=gun.new] ~ ~1.6 ~
@@ -27,3 +31,4 @@ execute store result score @e[tag=gun.new,limit=1] btw.gunspeed run data get ent
 
 playsound minecraft:block.piston.contract player @s ~ ~ ~ 1 2 1
 item modify entity @s weapon.mainhand usegun
+

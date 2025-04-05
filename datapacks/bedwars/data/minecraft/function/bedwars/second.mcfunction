@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # execute as @e[tag=emerald] at @s run title @a[distance=0..2] actionbar ["\u00a7aEmerald \u00a7e将在 ",{"score":{"objective":"board","name":"bw.em","value":"1"},"color":"aqua"},"\u00a7bs\u00a7e 后产出。"]
 # execute as @e[tag=diamond] at @s run title @a[distance=0..2] actionbar ["\u00a7bDiamond \u00a7e将在 ",{"score":{"objective":"board","name":"bw.dm","value":"1"},"color":"green"},"\u00a7as\u00a7e 后产出。"]
 execute if score bw.state state matches 1.. run function minecraft:bedwars/summon
@@ -24,7 +28,7 @@ function minecraft:bedwars/buffs
 ## Death
 scoreboard players remove @a[tag=bw.fhing] board 1
 execute as @a[tag=bw.fhing] if score @s board matches ..0 run function minecraft:bedwars/during/player/teleport
-tellraw @a[tag=bw.fhing] ["\u00a7e你将在",{"score":{"objective": "board","name": "*"},"color":"red"},"\u00a7e秒后重生！"]
+tellraw @a[tag=bw.fhing] ["§e你将在",{"score":{"objective":"board","name":"*"},"color":"red"},"§e秒后重生！"]
 title @a[tag=bw.fhing] title ["\u00a7c你死了！"]
 title @a[tag=bw.fhing] subtitle ["\u00a7e你将在",{"score":{"objective": "board","name": "*"},"color":"red"},"\u00a7e秒后重生！"]
 # execute as @a[tag=INV] at @s run particle minecraft:block gold_block ~ ~ ~ 0 0 0 1 15 force
@@ -40,3 +44,4 @@ function bedwars/shop/resetshop
 
 ## Events
 execute if score bw.state state matches 1..3 run function bedwars/events/eventsecond
+

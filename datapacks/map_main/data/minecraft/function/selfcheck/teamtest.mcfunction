@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players set debug board 0
 execute if entity @a[team=lobby] run scoreboard players set debug board 1
 team join selfcheck.debug @a[team=lobby]
@@ -9,3 +13,4 @@ tag @a remove check.sel
 function selfcheck/worldtest
 
 team join lobby @a[team=selfcheck.debug]
+

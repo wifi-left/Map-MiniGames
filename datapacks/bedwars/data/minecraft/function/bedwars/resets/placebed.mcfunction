@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # setblock -371 31 210 yellow_bed[facing=west]
 # setblock -372 31 210 yellow_bed[facing=west,part=head]
 
@@ -14,3 +18,4 @@ function minecraft:bedwars/resets/beds/blue
 function minecraft:bedwars/resets/beds/green
 function minecraft:bedwars/resets/beds/red
 function minecraft:bedwars/resets/beds/yellow
+

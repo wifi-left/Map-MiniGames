@@ -1,11 +1,15 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 tag @s add boat.sel
 execute as @e[tag=boat] if score @s park.uuid = @a[tag=boat.sel,limit=1] park.uuid run tag @s add boat.tmp
 tp @s @e[tag=boat.tmp,limit=1]
 ride @s dismount
 ride @s mount @e[tag=boat.tmp,limit=1]
-execute unless entity @e[tag=boat.tmp,limit=1] run tellraw @s ["\u00a7c请不要尝试卡 BUG，破坏游戏体验并不是一个很好的选择。"]
-execute unless entity @e[tag=boat.tmp,limit=1] run tellraw @s ["\u00a7c你尚未生成你的载具。"]
-execute if entity @e[tag=boat.tmp,limit=1] run tellraw @s ["\u00a7a已将你传送至你的载具。"]
+execute unless entity @e[tag=boat.tmp,limit=1] run tellraw @s ["§c请不要尝试卡 BUG，破坏游戏体验并不是一个很好的选择。"]
+execute unless entity @e[tag=boat.tmp,limit=1] run tellraw @s ["§c你尚未生成你的载具。"]
+execute if entity @e[tag=boat.tmp,limit=1] run tellraw @s ["§a已将你传送至你的载具。"]
 # tag @e[tag=boat,limit=1,sort=nearest] add boat.tmp
 # execute if score @s park.uuid = @e[tag=boat.tmp,limit=1] park.uuid run tag @s add boat.ok
 # execute as @s[tag=!boat.ok] run tp @s ~ ~0.5 ~
@@ -13,3 +17,4 @@ execute if entity @e[tag=boat.tmp,limit=1] run tellraw @s ["\u00a7a已将你传�
 tag @s remove boat.sel
 tag @e remove boat.tmp
 tag @s remove boat.ok
+

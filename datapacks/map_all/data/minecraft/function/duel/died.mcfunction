@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # tellraw @s ["\u00a7c对不起，你淘汰了！"]
 # tellraw @a[team=play.beli] [{"selector":"@s"},"\u00a7c 淘汰！"]
 # tellraw @a[team=wait.beli] [{"selector":"@s"},"\u00a7c 淘汰！"]
@@ -8,8 +12,9 @@
 effect clear @s
 clear @s
 effect give @s instant_health 1 25 true
-tellraw @a[team=play.duel.blue] [{"selector":"@s"},"\u00a77 死了。"]
-tellraw @a[team=play.duel.yellow] [{"selector":"@s"},"\u00a77 死了。"]
+tellraw @a[team=play.duel.blue] [{"selector":"@s"},"§7 死了。"]
+tellraw @a[team=play.duel.yellow] [{"selector":"@s"},"§7 死了。"]
 tp @s[team=play.duel.yellow] -350 12 -76 -90 0
 tp @s[team=play.duel.blue] -280 12 -76 90 0
 function duel/item
+

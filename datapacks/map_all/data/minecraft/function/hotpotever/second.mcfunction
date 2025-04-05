@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players set play.hotpot.player tick 0
 execute as @a[team=play.hotpot,gamemode=adventure] run scoreboard players add play.hotpot.player tick 1
 execute as @a[team=play.hotpot.k,gamemode=adventure] run scoreboard players add play.hotpot.player tick 1
@@ -21,3 +25,4 @@ execute if score hotpot.state state matches 2.. as @a[team=play.hotpot] run titl
 execute if score hotpot.state state matches 2.. if score hp.time tick matches ..0 run function hotpotever/onceover
 execute if score hotpot.state state matches 2.. run scoreboard players remove hp.time tick 1
 clear @a[team=play.hotpot] potato
+

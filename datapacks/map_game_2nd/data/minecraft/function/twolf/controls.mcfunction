@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players reset @s use.skill.2
 # 跳过
 execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{wolfItem:0}}}}] run function twolf/control/skip
@@ -18,4 +22,5 @@ execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{wol
 # 自爆
 execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{wolfItem:10}}}}] run function twolf/control/selfdied
 execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{wolfItem:12}}}}] run function twolf/action/per/death/hunter/died
+
 

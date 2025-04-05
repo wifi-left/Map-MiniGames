@@ -1,5 +1,9 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 tag @e[tag=cloud.place.tobetp,limit=1,sort=random] add cloud.sel
-execute unless entity @e[tag=cloud.sel] run tellraw @s ["\u00a7c很抱歉！无法为您分配到位置。"]
+execute unless entity @e[tag=cloud.sel] run tellraw @s ["§c很抱歉！无法为您分配到位置。"]
 execute unless entity @e[tag=cloud.sel] run function minecraft:cloud/giveplace_failded
 execute unless entity @e[tag=cloud.sel] run return 0
 tp @s @e[tag=cloud.sel,limit=1]

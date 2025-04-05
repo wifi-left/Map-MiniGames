@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # tellraw @a [{"score":{"objective": "board","name": "tnt.round.go"}}]
 scoreboard players remove tnt.round.go board 10
 # execute as @s at @s run particle dust 1 1 1 1 ~ ~ ~ 0 0 0 1 1
@@ -17,3 +21,4 @@ execute if block ~ ~ ~ #cmdtnt:tnt_0_8 run scoreboard players remove tnt.round.g
 
 execute as @s at @s run tp @s ^ ^ ^0.5
 execute if score tnt.round.go board matches 1.. at @s run function cmdtnt:tnt/tntgo
+

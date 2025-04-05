@@ -1,5 +1,9 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players set hotpot.state state 0
-tellraw @a ["\u00a7a[I] ",{"text":"Hot Potato","color":"#aed3ff","bold": true}," \u00a7a: \u00a7b游戏结束！\n\u00a7e获胜者：",{"selector":"@a[gamemode=adventure,team=play.hotpot]"}]
+tellraw @a ["§a[I] ",{"text":"Hot Potato","color":"#aed3ff","bold":true}," §a: §b游戏结束！\n§e获胜者：",{"selector":"@a[gamemode=adventure,team=play.hotpot]"}]
 
 title @a[gamemode=adventure,team=play.hotpot] title ["\u00a76You won!"]
 title @a[gamemode=spectator,team=play.hotpot] subtitle ["\u00a7c\u00a7lGAME OVER"]
@@ -16,3 +20,4 @@ execute if entity @a[team=wait.hotpot,tag=play.total] run function small_games/t
 # Reset
 
 schedule clear minecraft:hotpotever/summon
+

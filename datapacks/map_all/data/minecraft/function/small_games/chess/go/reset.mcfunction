@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # fill -77 138 -343 -46 138 -312 glass
 forceload add 82 47 66 63
 fill 81 120 62 67 120 48 glass
@@ -238,3 +242,4 @@ summon marker 81 120 59 {Tags:["chess.marker"]}
 summon marker 81 120 60 {Tags:["chess.marker"]}
 summon marker 81 120 61 {Tags:["chess.marker"]}
 summon marker 81 120 62 {Tags:["chess.marker"]}
+

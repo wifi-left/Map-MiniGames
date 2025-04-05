@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players reset * btw.coin
 scoreboard players set @a[team=btw.wait] btw.coin 0
 scoreboard players reset * btw.score
@@ -11,3 +15,4 @@ schedule function boatwars/over/tp 5s
 schedule clear boatwars/startround
 kill @e[tag=btw.boat]
 kill @e[tag=boat.gun.line]
+

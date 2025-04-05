@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute in airworld if score sur.reset board matches -64 run clone -104 -64 1 0 -64 -142 -103 -64 28
 execute in airworld if score sur.reset board matches -63 run clone -104 -63 1 0 -63 -142 -103 -63 28
 execute in airworld if score sur.reset board matches -62 run clone -104 -62 1 0 -62 -142 -103 -62 28
@@ -248,3 +252,4 @@ title @a[team=wait.sur] title ["\u00a7e正在重置地图中..."]
 title @a[team=wait.sur] subtitle ["\u00a7b进度：",{"score":{"objective": "board","name": "sur.reset"},"color":"green"},"\u00a7b / \u00a7c180"]
 execute if score sur.reset board matches ..180 run schedule function surgame:reset/process 1t
 execute if score sur.reset board matches 181.. run function surgame:reset/end
+

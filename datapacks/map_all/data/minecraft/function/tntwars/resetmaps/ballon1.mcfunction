@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 forceload add 542 205 616 279
 forceload add 465 281 539 355
 
@@ -23,3 +27,4 @@ clone 542 -6 205 616 -2 279 465 -6 281 replace
 execute in overworld positioned 502 -38 315 run kill @e[type=item,distance=0..60]
 forceload remove 542 205 616 279
 forceload remove 465 281 539 355
+

@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 tag @s add hit.player
 execute as @e[tag=pve.zombie,distance=0..10] at @s run function gun/6/hit
 # execute as @s at @s positioned 0.0 0.0 0.0 run summon marker ^ ^ ^3 {Tags:["f.tmp"]}
@@ -14,3 +18,4 @@ execute as @e[tag=pve.zombie,distance=0..10] at @s run function gun/6/hit
 playsound minecraft:block.piston.contract player @s ~ ~ ~ 1 2 1
 item modify entity @s weapon.mainhand usegun
 tag @s remove hit.player
+

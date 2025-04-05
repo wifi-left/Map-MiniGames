@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute as @a[team=play.parkour] at @s if block ~ ~-1 ~ minecraft:light_blue_concrete run effect give @s minecraft:speed 1 3 true
 execute as @a[team=play.parkour] at @s if block ~ ~-1 ~ minecraft:lime_concrete run effect give @s minecraft:jump_boost 1 3 true
 
@@ -16,3 +20,4 @@ execute as @a[team=play.parkour] at @s if block ~ ~-1 ~ minecraft:glass run effe
 
 effect give @a[team=play.parkour] saturation 2 25 true
 effect give @a[team=play.parkour] minecraft:resistance 2 25 true
+

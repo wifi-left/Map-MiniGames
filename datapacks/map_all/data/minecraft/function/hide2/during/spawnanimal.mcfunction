@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 tag @e[tag=random_game,limit=1,sort=random] add hide.sel
 scoreboard players operation hide.ranani board = @e[tag=hide.sel,limit=1] board
 tag @e remove hide.sel
@@ -14,3 +18,4 @@ execute if score hide.ranani board matches 10.. run summon minecraft:sheep 335 6
 # execute if score hide.ranani board matches 1
 execute as @e[tag=neww] run spreadplayers 382 -310 0 30 under 72 false @s
 tag @e[tag=neww] remove neww
+

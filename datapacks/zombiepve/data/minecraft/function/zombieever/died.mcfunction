@@ -1,6 +1,10 @@
-execute if score zombie.mode board matches 1 run tellraw @s ["\u00a7c很抱歉，你死了。"]
-execute if score zombie.mode board matches 2 run tellraw @s ["\u00a7c很抱歉，你死了。\n\u00a7e如果还有玩家存活，你将在当前进度完成后复活。"]
-execute if score zombie.mode board matches 3 run tellraw @s ["\u00a7c很抱歉，你死了。\n\u00a7c由于模式设置，您已无法复活。"]
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
+execute if score zombie.mode board matches 1 run tellraw @s ["§c很抱歉，你死了。"]
+execute if score zombie.mode board matches 2 run tellraw @s ["§c很抱歉，你死了。\n§e如果还有玩家存活，你将在当前进度完成后复活。"]
+execute if score zombie.mode board matches 3 run tellraw @s ["§c很抱歉，你死了。\n§c由于模式设置，您已无法复活。"]
 title @s title ["\u00a7c你死了"]
 execute if score zombie.mode board matches 1 run title @s subtitle ["\u00a7f您已复活"]
 execute if score zombie.mode board matches 2 run title @s subtitle ["\u00a7e如果还有玩家存活，你将在当前进度完成后复活"]
@@ -12,3 +16,4 @@ execute if score zombie.mode board matches 2.. run title @a[team=play.zombie] ac
 tp @s 630 40 -78 90 0
 execute if score zombie.mode board matches 1 run function zombieever/fuhuo
 execute if score zombie.mode board matches 2.. run gamemode spectator @s
+

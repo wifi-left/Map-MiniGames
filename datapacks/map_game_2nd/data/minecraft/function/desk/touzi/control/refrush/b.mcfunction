@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute if score touzit.b.number tick matches 3.. run function minecraft:desk/touzi/control/refrush/touzi/number
 execute if score touzit.b.number tick matches 2.. run function minecraft:desk/touzi/control/refrush/touzi/number
 execute if score touzit.b.number tick matches 1.. run function minecraft:desk/touzi/control/refrush/touzi/number
@@ -27,3 +31,4 @@ execute if score touzit.b.touzi2 tick matches 1 if score touzit.b.touzi2 board m
 execute if score touzit.b.touzi2 tick matches 1 if score touzit.b.touzi2 board matches 9 run function minecraft:desk/touzi/control/refrush/touzi/undying
 execute if score touzit.b.touzi2 tick matches 1 if score touzit.b.touzi2 board matches 10 run function minecraft:desk/touzi/control/refrush/touzi/cb
 execute if score touzit.b.touzi2 tick matches 1 if score touzit.b.touzi2 board matches 11 run function minecraft:desk/touzi/control/refrush/touzi/light
+

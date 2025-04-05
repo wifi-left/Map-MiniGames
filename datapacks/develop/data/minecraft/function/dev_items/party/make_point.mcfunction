@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 clone 38 37 -92 42 40 -88 ~-2 ~ ~-2
 summon marker ~ ~ ~ {Tags:["merchant.point","neww"]}
 scoreboard players add merchant.point board 1

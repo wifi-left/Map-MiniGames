@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute if score bw.mode board matches ..3 run tp @s[team=bw.yellow] -383 30 210 -90 0
 execute if score bw.mode board matches ..3 run tp @s[team=bw.blue] -303 30 288 -180 0
 execute if score bw.mode board matches ..3 run tp @s[team=bw.green] -225 30 208 90 0

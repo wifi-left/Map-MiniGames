@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players set bw.green.1 tick 0
 execute as @a[team=bw.wait,tag=!GOABLE.SPEC,scores={bw.team=4}] run scoreboard players add bw.green.1 tick 1
 scoreboard players set bw.blue.1 tick 0

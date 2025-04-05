@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players set bw.event state 3
 scoreboard players set bw.event.countdown board 120
 # bw.event
@@ -19,3 +23,4 @@ execute store result bossbar minigames:bedwars value run scoreboard players get 
 
 title @a[tag=bw.play] title ["\u00a7c床已被破坏"]
 title @a[tag=bw.play] subtitle ["\u00a7f所有的床都已被破坏"]
+

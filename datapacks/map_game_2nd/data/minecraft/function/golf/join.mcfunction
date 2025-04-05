@@ -1,10 +1,14 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 team join golf @s
 tag @s remove golf.waittoplay
 gamemode adventure @s[gamemode=spectator]
-tellraw @a [{"selector":"@s"},"\u00a7a 加入了\u00a7d高尔夫游戏\u00a7a。"]
+tellraw @a [{"selector":"@s"},"§a 加入了§d高尔夫游戏§a。"]
 title @s title ["\u00a7dGOLF 高尔夫游戏"]
 title @s subtitle ["\u00a7aShoot the \u00a7eBall \u00a7ainto the \u00a7bHole"]
-tellraw @s ["\n\u00a7d\u00a7lGOLF 高尔夫游戏 \u00a76| \u00a7a将 \u00a7e高尔夫球 \u00a7a射进 \u00a7b洞 \u00a7a中。\n"]
+tellraw @s ["\n§d§lGOLF 高尔夫游戏 §6| §a将 §e高尔夫球 §a射进 §b洞 §a中。\n"]
 execute in minecraft:golfworld run tp @s -121 -60 115 90 0
 playsound entity.player.levelup player @s ~ ~ ~ 10 1 1
 clear @s
@@ -12,6 +16,7 @@ effect clear @s
 execute if score golf.state state matches 1.. run function minecraft:golf/spec
 effect give @s instant_health 2 25 true
 tag @s remove golf.waitshoot
-tellraw @s[tag=GOABLE.SPEC] ["\n\u00a77  你已开启\u00a7b全局旁观者模式\u00a77。\n  \u00a77由于你进入游戏后会变为旁观模式，请使用 \u00a76/trigger hub\u00a77 返回大厅。\n  ",{"text":"\u00a7a\u00a7l点击此处，或者使用 \u00a76\u00a7l/trigger spec set 3 \u00a7a\u00a7l退出全局旁观者模式","bold":true,"clickEvent": {"action": "run_command","value": "/trigger spec set 3"},"hoverEvent": {"action": "show_text","contents": "\u00a7c点击此处退出全局旁观者模式"}},"\n"]
+tellraw @s[tag=GOABLE.SPEC] ["\n§7  你已开启§b全局旁观者模式§7。\n  §7由于你进入游戏后会变为旁观模式，请使用 §6/trigger hub§7 返回大厅。\n  ",{"text":"§a§l点击此处，或者使用 §6§l/trigger spec set 3 §a§l退出全局旁观者模式","bold":true,"click_event":{"action":"run_command","command":"/trigger spec set 3"},"hover_event":{"action":"show_text","value":"§c点击此处退出全局旁观者模式"}},"\n"]
 execute as @s[tag=GOABLE.SPEC] at @s run gamemode spectator
 # tellraw @s ["\n\u00a7c仍在制作，敬请期待。\n"]
+

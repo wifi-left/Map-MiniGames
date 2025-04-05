@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # execute as @a[team=golf,gamemode=adventure] at @s run kill @e[type=item,distance=0..5]
 
 # title @a[team=boat,x=-71,y=134,z=547,distance=0..3] actionbar ["\u00a76您已进入 \u00a7b[神秘区域]"]
@@ -43,3 +47,4 @@ execute as @a[team=boat] if score @s car.speed matches ..0 run scoreboard player
 execute if score boat.type board matches 2 as @e[type=!player,tag=boat] run function minecraft:boat/move/car_getmotion
 execute as @a[team=boat] if score @s car.speed matches 1..97 unless score boat.type board matches 4 run title @s actionbar ["\u00a76Car Speed: ",{"score": {"name": "@s","objective": "car.speed"},"color": "red"}]
 execute as @a[team=boat] if score @s car.speed matches 98.. unless score boat.type board matches 4 run title @s actionbar ["\u00a76Car Speed: \u00a7c99"]
+

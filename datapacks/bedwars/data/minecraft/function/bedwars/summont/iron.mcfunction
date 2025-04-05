@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players set temp board 0
 scoreboard players set temp1 board 0
 execute store result score temp board run data get entity @e[type=item,distance=0..2,limit=1,sort=nearest,nbt={Item:{id:"minecraft:iron_ingot"}}] Item.count
@@ -6,4 +10,5 @@ execute if score temp1 board matches ..1 run function fix:bw/irspan
 execute if score temp1 board matches 2.. run function fix:bw/irgive
 execute if score temp1 board matches 2.. run playsound entity.item.pickup player @a[tag=bw.play,gamemode=!spectator,distance=0..2] ~ ~ ~ 1 1 0.5
 scoreboard players reset temp board
+
 

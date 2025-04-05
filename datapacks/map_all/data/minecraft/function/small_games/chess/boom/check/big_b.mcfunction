@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 function minecraft:small_games/chess/boom/check/big
 
 clone 79 125 50 79 125 50 75 106 54
@@ -19,3 +23,4 @@ execute if score boom.tmp.idx1 board matches 1 if score boom.tmp.idx2 board matc
 execute if score boom.tmp.idx1 board matches 2 if score boom.tmp.idx2 board matches 0 positioned 73 106 56 run function minecraft:small_games/chess/boom/check/bigcheck2_b
 execute if score boom.tmp.idx1 board matches 2 if score boom.tmp.idx2 board matches 1 positioned 73 106 55 run function minecraft:small_games/chess/boom/check/bigcheck2_b
 execute if score boom.tmp.idx1 board matches 2 if score boom.tmp.idx2 board matches 2 positioned 73 106 54 run function minecraft:small_games/chess/boom/check/bigcheck2_b
+

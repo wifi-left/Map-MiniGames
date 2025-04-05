@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard objectives modify bw.info displayname ["\u00a7e\u00a7l起床战争"]
 
 bossbar add minigames:bedwars "起床战争"
@@ -16,3 +20,4 @@ bossbar add minigames:bedwars "起床战争"
 # scoreboard players set §r没有任何信息：§a0 bw.info 3
 # scoreboard players set §d bw.info 2
 # scoreboard players set §eBedwars@MiniGame bw.info 1
+

@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 ## 清除
 kill @e[tag=random_game,type=marker]
 ## 生成
@@ -60,4 +64,5 @@ tag @e[tag=neww] remove neww
 # Pool War 10
 
 # forceload remove 168 -45 168 -45
+
 

@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players reset count.1 board
 scoreboard players reset count.2 board
 execute as @e[type=marker,tag=random_game] run scoreboard players add count.1 board 1
@@ -16,7 +20,7 @@ execute if score count.4 board matches ..1 run function small_games/total/neover
 execute if score count.4 board matches ..1 run tag @e[tag=random_game_sel] remove random_game_sel
 execute as @e[tag=random_game_sel] run tag @s remove random_game_able
 execute as @e[tag=random_game_sel] run scoreboard players operation total.game board = @s board
-execute as @e[tag=random_game_sel] run tellraw @a[team=play.total] ["\n    \u00a7a\u00a7l下一局游戏 \u00a7e(",{"score":{"name": "count.3","objective": "board"},"color":"aqua"},"\u00a7e/",{"score":{"name": "count.1","objective": "board"},"color":"aqua"},"\u00a7e)\u00a7a\u00a7l：",{"selector":"@s","color":"light_purple","bold":true},"\n    \u00a7e将会在 \u00a7c5 \u00a7e秒后开始。\n"]
+execute as @e[tag=random_game_sel] run tellraw @a[team=play.total] ["\n    §a§l下一局游戏 §e(",{"score":{"name":"count.3","objective":"board"},"color":"aqua"},"§e/",{"score":{"name":"count.1","objective":"board"},"color":"aqua"},"§e)§a§l：",{"selector":"@s","color":"light_purple","bold":true},"\n    §e将会在 §c5 §e秒后开始。\n"]
 execute as @e[tag=random_game_sel] run title @a[team=play.total] title ["\u00a7b下一轮游戏"]
 execute as @e[tag=random_game_sel] run title @a[team=play.total] subtitle [{"selector":"@s","color":"light_purple","bold":true}]
 
@@ -53,4 +57,5 @@ execute as @e[tag=random_game_sel] run tag @s remove random_game_sel
 
 execute unless score error state matches 1.. run schedule function small_games/total/start_next_game 5s
 scoreboard players reset error state
+
 

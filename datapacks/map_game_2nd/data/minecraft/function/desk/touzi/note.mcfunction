@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # 这只是一个笔记本，没有任何用处的方法
 # wdpick 1 攻击
 # stpick 2 攻击
@@ -17,3 +21,4 @@
 # 4: attack role
 # 5: defend role
 # 0: none
+

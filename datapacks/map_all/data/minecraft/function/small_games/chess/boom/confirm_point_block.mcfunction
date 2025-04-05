@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute store result score boom.tmp.x1 board run data get block ~ ~ ~ x
 execute store result score boom.tmp.z1 board run data get block ~ ~ ~ z
 
@@ -23,4 +27,5 @@ execute if score boom.tmp.x board matches 4.. run scoreboard players remove boom
 execute if score boom.tmp.z board matches 4.. run scoreboard players add boom.tmp.idx2 board 1
 execute if score boom.tmp.z board matches 4.. run scoreboard players remove boom.tmp.z board 4
 
-tellraw @a [{"score":{"objective": "board","name": "boom.tmp.idx1"}},":",{"score":{"objective": "board","name": "boom.tmp.idx2"}},":",{"score":{"objective": "board","name": "boom.tmp.x"}},",",{"score":{"objective": "board","name": "boom.tmp.z"}}]
+tellraw @a [{"score":{"objective":"board","name":"boom.tmp.idx1"}},":",{"score":{"objective":"board","name":"boom.tmp.idx2"}},":",{"score":{"objective":"board","name":"boom.tmp.x"}},",",{"score":{"objective":"board","name":"boom.tmp.z"}}]
+

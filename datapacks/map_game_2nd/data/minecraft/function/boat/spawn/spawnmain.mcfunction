@@ -1,4 +1,8 @@
-clear @s carrot_on_a_stick[custom_data~{boatItem:3b}]
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
+clear @s carrot_on_a_stick[]
 tag @s remove boat.notspawn
 tag @s add boat.sel
 team leave @s
@@ -16,14 +20,19 @@ execute if score boat.type board matches 5 run summon minecraft:horse ~ ~ ~ {Cus
 execute as @e[tag=boat.new] run scoreboard players operation @s park.uuid = @a[limit=1,tag=boat.sel] park.uuid
 execute as @e[tag=boat.new1] run scoreboard players operation @s park.uuid = @a[limit=1,tag=boat.sel] park.uuid
 
+## WARNING: The transformation may cause problem. You might need to modify it by yourself.
 execute as @e[tag=boat.new] run data modify entity @s CustomName set from block -54 160 -100 front_text.messages[0]
+## WARNING: The transformation may cause problem. You might need to modify it by yourself.
 execute as @e[tag=boat.new1] run data modify entity @s CustomName set from block -54 160 -100 front_text.messages[0]
 
+## WARNING: The transformation may cause problem. You might need to modify it by yourself.
 execute as @e[tag=boat.new] run data modify entity @s Owner set from entity @a[limit=1,tag=boat.sel] UUID
+## WARNING: The transformation may cause problem. You might need to modify it by yourself.
 execute as @e[tag=boat.new1] run data modify entity @s Owner set from entity @a[limit=1,tag=boat.sel] UUID
 execute as @e[tag=boat.new] run team join boat @s
 ride @s mount @e[tag=boat.new,limit=1]
 execute as @e[tag=boat.new] run tag @s remove boat.new
 execute as @e[tag=boat.new1] run tag @s remove boat.new1
 tag @s remove boat.sel
-tellraw @s ["\n\u00a7b你已经骑上载具！\n"]
+tellraw @s ["\n§b你已经骑上载具！\n"]
+

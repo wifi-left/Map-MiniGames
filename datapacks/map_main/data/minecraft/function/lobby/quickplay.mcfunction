@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players enable @s quickplay
 execute if score @s quickplay matches 1 run function minecraft:lobby/quickplay_lists
 
@@ -28,6 +32,7 @@ execute if score @s quickplay matches 25 run function surgame:join
 execute if score @s quickplay matches 26 run function bedwars/message/join
 execute if score @s quickplay matches 27 run function desk/join
 execute if score @s quickplay matches 1.. run playsound entity.experience_orb.pickup player @s ~ ~ ~ 1 1 1
-execute if score @s quickplay matches 28.. run tellraw @s ["\u00a7c很抱歉，未知游戏的ID！"]
+execute if score @s quickplay matches 28.. run tellraw @s ["§c很抱歉，未知游戏的ID！"]
 
 execute if score @s quickplay matches 1.. run scoreboard players reset @s quickplay
+

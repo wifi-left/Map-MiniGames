@@ -1,10 +1,14 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 tag @s add boat.sel
 execute as @e[tag=boat] if score @s park.uuid = @a[tag=boat.sel,limit=1] park.uuid run tag @s add boat.tmp
 # tag @e[tag=boat,limit=1,sort=nearest] add boat.tmp
 effect give @e[tag=boat.tmp,limit=1] speed 5 3 true
 effect give @s speed 5 3 true
 execute unless score boat.type board matches 4 run execute unless entity @e[tag=boat.tmp,limit=1] run tag @s add boat.notspawn
-execute unless score boat.type board matches 4 run execute unless entity @e[tag=boat.tmp,limit=1] run tellraw @s ["\u00a7c你尚未生成你的载具。"]
+execute unless score boat.type board matches 4 run execute unless entity @e[tag=boat.tmp,limit=1] run tellraw @s ["§c你尚未生成你的载具。"]
 # execute if entity @e[tag=boat.tmp,limit=1] run tellraw @s ["\u00a7a已将你传送至你的载具。"]
 
 # execute if score @s park.uuid = @e[tag=boat.tmp,limit=1] park.uuid run tag @s add boat.ok
@@ -13,3 +17,4 @@ execute unless score boat.type board matches 4 run execute unless entity @e[tag=
 tag @s remove boat.sel
 tag @e remove boat.tmp
 tag @s remove boat.ok
+

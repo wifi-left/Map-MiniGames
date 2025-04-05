@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute as @s[level=..0] run tag @s add boat.skillok
 execute at @s run playsound ui.button.click player @s
 execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{boatItem:3b}}}},tag=boat.notspawn] run tag @s add skill.boat.3
@@ -29,7 +33,7 @@ execute as @s[tag=skill.boat.1] at @s run function boat/goback
 execute as @s[tag=skill.boat.trap] at @s run xp add @s 3 levels
 execute as @s[tag=skill.boat.trap] at @s run xp set @s 0 points
 execute as @s[tag=skill.boat.trap] at @s run title @s actionbar ["\u00a7a\u00a7l已使用道具"]
-execute as @s[tag=skill.boat.trap] at @s run clear @s carrot_on_a_stick[custom_data~{boatItem:4b}]
+execute as @s[tag=skill.boat.trap] at @s run clear @s carrot_on_a_stick[]
 
 
 execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{boatItem:2b}}}},tag=!boat.skillok,tag=!boat.notspawn] run title @s actionbar ["\u00a7c\u00a7l此技能冷却中"]
@@ -48,3 +52,4 @@ tag @s remove boat.trap.6
 tag @s remove boat.trap.7
 tag @s remove skill.boat.trap
 tag @s remove boat.skillok
+

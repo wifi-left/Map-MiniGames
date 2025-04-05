@@ -1,1 +1,6 @@
-tellraw @s ["\u00a7c大厅效果已禁用：\u00a72\u00a7l跳跃提升"]
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
+tellraw @s ["§c大厅效果已禁用：§2§l跳跃提升"]
+

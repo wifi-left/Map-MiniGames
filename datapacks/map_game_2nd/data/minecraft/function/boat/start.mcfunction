@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 forceload add 0 0 0 0
 execute as @a[team=boat] at @s run spreadplayers -82 299 0 3 false @s
 execute as @a[team=boat] at @s run tp @s ~ ~ ~ 180 0
@@ -25,3 +29,4 @@ execute unless score boat.type board matches 4 run tag @a[team=boat] add boat.no
 
 # forceload remove -32 88 -102 313
 scoreboard players reset * car.speed
+

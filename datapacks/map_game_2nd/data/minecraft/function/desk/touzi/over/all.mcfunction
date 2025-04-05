@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{desk_item:1}}}}]
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{desk_clear:1}}}}]
 kill @e[type=armor_stand,tag=desk.touzi.place]
@@ -14,3 +18,4 @@ scoreboard players set desk.time board -1
 
 schedule clear minecraft:desk/touzi/round/atrun
 schedule clear minecraft:desk/touzi/round/new_round
+

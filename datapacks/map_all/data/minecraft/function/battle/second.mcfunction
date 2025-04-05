@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute if score battle.state state matches 1 run scoreboard players remove battle.time board 1
 execute if score battle.state state matches 3..4 run scoreboard players remove battle.time board 1
 tag @a[team=wait.battle] add battle.sel
@@ -40,9 +44,10 @@ execute if score battle.state state matches 1 if score battle.time board matches
 execute if score battle.state state matches 3 if score battle.time board matches ..0 as @a[tag=battle.sel,tag=battle.notready] run function battle/choose/auto
 execute if score battle.state state matches 3 if score battle.time board matches ..0 run function battle/round_ready
 execute if score battle.state state matches 3 run function battle/testfor/allready
-execute if score battle.state state matches 4 if score battle.time board matches 1.. run tellraw @a[tag=battle.sel] ["\u00a7e笼子将在",{"score":{"name": "battle.time","objective": "board"},"color":"red"},"\u00a7e秒后打开。"]
+execute if score battle.state state matches 4 if score battle.time board matches 1.. run tellraw @a[tag=battle.sel] ["§e笼子将在",{"score":{"name":"battle.time","objective":"board"},"color":"red"},"§e秒后打开。"]
 execute if score battle.state state matches 4 if score battle.time board matches 1.. as @a[tag=battle.sel] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 0 1
 execute if score battle.state state matches 4 if score battle.time board matches ..0 run function battle/round_start
 tag @a remove battle.sel
 
 # execute as @e[type=marker,tag=battle.ranpotion] at @s run
+

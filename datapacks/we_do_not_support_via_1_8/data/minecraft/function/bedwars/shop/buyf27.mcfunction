@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute as @s at @s store result score @s bw.tmp.ir run clear @s iron_ingot 0
 execute as @s at @s store result score @s bw.tmp.gd run clear @s gold_ingot 0
 execute as @s at @s store result score @s bw.tmp.dm run clear @s diamond 0
@@ -9,10 +13,11 @@ execute as @s[team=bw.red] if score bw.sharpness.red board matches 1.. run score
 execute as @s[team=bw.yellow] if score bw.sharpness.yellow board matches 1.. run scoreboard players set bw.buy.sharpness.tmp board 1
 execute as @s[team=bw.blue] if score bw.sharpness.blue board matches 1.. run scoreboard players set bw.buy.sharpness.tmp board 1
 execute if score @s bw.tmp.em matches 3.. run clear @s emerald 3
-execute unless score @s bw.tmp.em matches 3.. run tellraw @s ["\u00a7c你的资源不够买这个东西!"]
+execute unless score @s bw.tmp.em matches 3.. run tellraw @s ["§c你的资源不够买这个东西!"]
 execute unless score @s bw.tmp.em matches 3.. run playsound minecraft:entity.enderman.teleport player @s ~ ~ ~ 1 0 1
-execute if score @s bw.tmp.em matches 3.. run tellraw @s ["\u00a7a你购买了\u00a76Diamond Sword ([W]) * 1"]
-execute if score @s bw.tmp.em matches 3.. if score bw.buy.sharpness.tmp board matches 0 run give @s diamond_sword[can_place_on={predicates:[{blocks:"#minecraft:bwplace"}],show_in_tooltip:false},can_break={predicates:[{blocks:"#minecraft:bedblocks"}],show_in_tooltip:false}] 1
-execute if score @s bw.tmp.em matches 3.. if score bw.buy.sharpness.tmp board matches 1 run give @s diamond_sword[can_place_on={predicates:[{blocks:"#minecraft:bwplace"}],show_in_tooltip:false},can_break={predicates:[{blocks:"#minecraft:bedblocks"}],show_in_tooltip:false},enchantments={sharpness:1}] 1
+execute if score @s bw.tmp.em matches 3.. run tellraw @s ["§a你购买了§6Diamond Sword ([W]) * 1"]
+execute if score @s bw.tmp.em matches 3.. if score bw.buy.sharpness.tmp board matches 0 run give @s diamond_sword[can_place_on=[{blocks:"#minecraft:bwplace"}],tooltip_display={hidden_components:[can_place_on,can_break]},can_break=[{blocks:"#minecraft:bedblocks"}]] 1
+execute if score @s bw.tmp.em matches 3.. if score bw.buy.sharpness.tmp board matches 1 run give @s diamond_sword[can_place_on=[{blocks:"#minecraft:bwplace"}],tooltip_display={hidden_components:[can_place_on,can_break]},can_break=[{blocks:"#minecraft:bedblocks"}]] 1
 clear @s wooden_sword
+
 

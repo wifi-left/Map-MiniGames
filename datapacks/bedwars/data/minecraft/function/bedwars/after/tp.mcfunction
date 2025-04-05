@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players set bw.state state 0
 gamemode adventure @a[tag=bw.player]
 
@@ -17,3 +21,4 @@ bossbar set minigames:bedwars players
 bossbar set minigames:bedwars visible false
 
 title @a[tag=bw.player] reset
+

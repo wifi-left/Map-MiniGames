@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute in minecraft:airworld run spawnpoint @s 553 6 32
 effect give @a[team=btw.wait] resistance 1 25 true
 effect give @a[team=btw.play.a] resistance 1 25 true
@@ -9,4 +13,5 @@ execute if score btw.state state matches 1..2 run function boatwars/detectplayer
 
 execute if score btw.state state matches 1 as @a[team=btw.play.a,gamemode=adventure] run function boatwars/testgunitem
 execute if score btw.state state matches 1 as @a[team=btw.play.b,gamemode=adventure] run function boatwars/testgunitem
+
 

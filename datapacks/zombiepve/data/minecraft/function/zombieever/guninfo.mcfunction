@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute if data entity @s SelectedItem.components."minecraft:custom_data".gun run tag @s add tmp.usinggun
 execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{gun:-10}}}} run tag @s remove tmp.usinggun
 execute if data entity @s {SelectedItem:{components:{"minecraft:custom_data":{gun:-10}}}} run tag @s add tmp.coindisplay
@@ -14,4 +18,5 @@ execute as @s[tag=tmp.usinggun] run execute unless score gun.tmp board matches 1
 # scoreboard players reset @s bw.tmp.em
 tag @s remove tmp.usinggun
 tag @s remove tmp.coindisplay
+
 

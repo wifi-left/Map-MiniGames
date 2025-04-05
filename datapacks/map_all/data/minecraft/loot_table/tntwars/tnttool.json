@@ -12,7 +12,7 @@
                         {
                             "function": "set_components",
                             "components": {
-                                "minecraft:custom_name": "\"\\u00a7c\\u00a7lFireball\\u00a77 - 右键使用\"",
+                                "minecraft:custom_name": "§c§lFireball§7 - 右键使用",
                                 "minecraft:custom_data": {
                                     "tnt": 4
                                 }
@@ -28,7 +28,7 @@
                         {
                             "function": "set_components",
                             "components": {
-                                "minecraft:custom_name": "\"\\u00a7b\\u00a7lTNT Rain\\u00a77 - 右键使用\"",
+                                "minecraft:custom_name": "§b§lTNT Rain§7 - 右键使用",
                                 "minecraft:custom_data": {
                                     "tnt": 5
                                 }
@@ -44,7 +44,7 @@
                         {
                             "function": "set_components",
                             "components": {
-                                "minecraft:custom_name": "\"\\u00a72\\u00a7lCreeper\\u00a77 - 右键使用\"",
+                                "minecraft:custom_name": "§2§lCreeper§7 - 右键使用",
                                 "minecraft:custom_data": {
                                     "tnt": 3
                                 }
@@ -60,7 +60,7 @@
                         {
                             "function": "set_components",
                             "components": {
-                                "minecraft:custom_name": "\"\\u00a74\\u00a7lTNT\\u00a77 - 右键使用\"",
+                                "minecraft:custom_name": "§4§lTNT§7 - 右键使用",
                                 "minecraft:custom_data": {
                                     "tnt": 2
                                 }
@@ -76,7 +76,7 @@
                         {
                             "function": "set_components",
                             "components": {
-                                "minecraft:custom_name": "\"\\u00a74\\u00a7lLong-Way TNT\\u00a77 - 右键使用\"",
+                                "minecraft:custom_name": "§4§lLong-Way TNT§7 - 右键使用",
                                 "minecraft:custom_data": {
                                     "tnt": 8
                                 }
@@ -92,7 +92,7 @@
                         {
                             "function": "set_components",
                             "components": {
-                                "minecraft:custom_name": "\"\\u00a7c\\u00a7lTNT - Minecart\\u00a77 - 右键使用\"",
+                                "minecraft:custom_name": "§c§lTNT - Minecart§7 - 右键使用",
                                 "minecraft:custom_data": {
                                     "tnt": 1
                                 }
@@ -108,7 +108,7 @@
                         {
                             "function": "set_components",
                             "components": {
-                                "minecraft:custom_name": "\"\\u00a72\\u00a7lCreeper Rain\\u00a77 - 右键使用\"",
+                                "minecraft:custom_name": "§2§lCreeper Rain§7 - 右键使用",
                                 "minecraft:custom_data": {
                                     "tnt": 6
                                 }
@@ -124,7 +124,7 @@
                         {
                             "function": "set_components",
                             "components": {
-                                "minecraft:custom_name": "\"\\u00a7c\\u00a7lFireball Rain\\u00a77 - 右键使用\"",
+                                "minecraft:custom_name": "§c§lFireball Rain§7 - 右键使用",
                                 "minecraft:custom_data": {
                                     "tnt": 7
                                 }

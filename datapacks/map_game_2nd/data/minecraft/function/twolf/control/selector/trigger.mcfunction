@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 summon marker ~ ~ ~ {Tags:["wolf.pointer","gun.new"]}
 tp @e[tag=gun.new] @s
 tp @e[tag=gun.new] ~ ~1 ~
@@ -17,3 +21,4 @@ scoreboard players operation @s LRS_CS = @a[tag=wolf.pointed,limit=1] park.uuid
 tag @a[tag=wolf.pointed] remove wolf.pointed
 kill @e[tag=wolf.pointer,type=marker]
 # item modify entity @s weapon.mainhand usegun
+

@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players set sw.state state 101
 schedule function minecraft:cloud/over/tp 5s
 kill @e[tag=sw.marker,type=marker]
@@ -12,4 +16,5 @@ execute in airworld run forceload remove 599 266 780 442
 scoreboard players set cloud.step board 0
 scoreboard players set cloud.countdown board -1
 tag @a[tag=sw.msg] remove sw.msg
-tellraw @a ["\u00a7a\u00a7l[MESSAGE] \u00a7f云端争霸\u00a7c游戏结束。"]
+tellraw @a ["§a§l[MESSAGE] §f云端争霸§c游戏结束。"]
+

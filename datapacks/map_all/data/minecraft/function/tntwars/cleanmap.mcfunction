@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 
 forceload add 465 281 539 355
 fill 465 -63 281 539 -61 355 air
@@ -16,3 +20,4 @@ fill 465 -2 281 539 -5 355 air
 
 execute in overworld positioned 502 -38 315 run kill @e[type=item,distance=0..60]
 forceload remove 465 281 539 355
+

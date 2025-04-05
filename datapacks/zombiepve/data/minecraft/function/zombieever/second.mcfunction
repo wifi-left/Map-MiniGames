@@ -1,7 +1,12 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 spawnpoint @a[team=play.zombie] 671 -18 -51
 execute as @e[tag=zombie.villagers] at @s run function zombieever/villagers/displayhealth
 execute as @e[tag=zombie.villager] at @s run kill @e[type=zombie_villager,distance=0..1]
 
+## WARNING: The transformation may cause problem. You might need to modify it by yourself.
 execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{coin:1b}}}}] at @s run data merge entity @s {CustomName:'"\\u00a7e\\u00a7lZombie Coin"',CustomNameVisible:1b}
 
 tag @e[type=slime] add pve.zombie
@@ -28,3 +33,4 @@ execute if score zombie.state state matches 1..2 if score tmp.count tick matches
 kill @e[type=vex]
 
 execute if score zombie.round board matches 28 run function zombieever/tasks/detect/boss
+

@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # scoreboard players add @a[gamemode=adventure,team=pw.play,tag=play.total] score 1
 scoreboard players set golf.state state 0
 execute if entity @a[team=golf,tag=play.total] run function small_games/total/next_game
@@ -9,3 +13,4 @@ scoreboard objectives setdisplay sidebar.team.dark_red
 bossbar set minecraft:golf name ["\u00a76欢迎来到高尔夫游戏 \u00a7bWELCOME TO GOLF GAME"]
 bossbar set minecraft:golf players
 kill @e[type=!player,tag=golf.ball]
+

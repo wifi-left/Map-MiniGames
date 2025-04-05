@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute as @a[team=wait.endwolf] at @s run function minecraft:endless_wolf/tips
 # endless.item
 function minecraft:endless_wolf/reset
@@ -32,3 +36,4 @@ title @a[team=play.endwolf] subtitle ["\u00a7a在第一天晚上PVP就会开始�
 
 execute as @a[team=play.endwolf] at @s run tp @s @e[limit=1,sort=random,tag=endless.tppoint]
 execute as @a[team=play.endwolf,tag=endless.vampire] at @s run function minecraft:endless_wolf/vampire_item
+

@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players set tick tick 0
 
 scoreboard players add tick2 tick 1
@@ -19,6 +23,7 @@ execute if score live.state state matches 1..1 run scoreboard players add live.t
 execute if score park.state state matches 1.. run function minecraft:parkourrace/testfor
 execute if score pw.state state matches 1.. run function minecraft:poolwar/second
 
+## WARNING: The transformation may cause problem. You might need to modify it by yourself.
 execute as @e[tag=block_entity] run data merge entity @s {Time:100}
 
 execute as @e[type=minecart,tag=lobby.car] at @s if block ~ ~ ~ lava run kill @s
@@ -36,6 +41,7 @@ execute if score sur.state state matches 1.. in airworld run function surgame:se
 effect give @a[team=boat] resistance 3 25 true
 
 
+## WARNING: The transformation may cause problem. You might need to modify it by yourself.
 execute as @e[type=area_effect_cloud,tag=lobby] at @s run data merge entity @s {Duration:2147483647,Age:0}
 
 function foodparty:second

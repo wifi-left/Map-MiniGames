@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players reset * golf.score
 scoreboard players reset * golf.nowroundscore
 
@@ -12,7 +16,7 @@ gamemode spectator @a[team=golf,gamemode=adventure]
 kill @e[type=marker,tag=golf.spawn]
 execute as @a[team=golf,gamemode=adventure] run function minecraft:golf/gaming/back
 bossbar set minecraft:golf name ["\u00a7a游戏开始！"]
-tellraw @a[team=golf] ["\u00a76游戏开始！"]
+tellraw @a[team=golf] ["§6游戏开始！"]
 
 function minecraft:golf/gaming/next_map
 scoreboard players set golf.state state 1

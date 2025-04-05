@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # xp add @s 1 levels
 # xp add @s -1 levels
 #
@@ -10,3 +14,4 @@ execute if score @s bw.tmp.em matches 5..9 run function minecraft:zombieever/rem
 execute if score @s bw.tmp.em matches 1..4 run function minecraft:zombieever/removelevel/1
 scoreboard players reset @s bw.tmp.em
 stopsound @s * minecraft:entity.player.levelup
+

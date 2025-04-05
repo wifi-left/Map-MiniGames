@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute if data entity @s {data:{guntype:1}} run particle minecraft:dust{color:[0.059d, 0.973d, 0.439d],scale:1} ~ ~ ~ 0 0 0 1 1
 execute if data entity @s {data:{guntype:7}} run particle minecraft:dust{color:[0.404d, 0.459d, 0.427d],scale:1} ~ ~ ~ 0 0 0 1 1
 execute if data entity @s {data:{guntype:10}} run particle minecraft:dust{color:[0.973d, 0.545d, 0.059d],scale:1} ~ ~ ~ 0 0 0 1 1
@@ -31,3 +35,4 @@ execute if score @s PSTJ matches 0.. if data entity @s {data:{guntype:-2}} if en
 tag @e[tag=hitted] remove hitted
 # execute if score @s PSTJ matches 0.. run scoreboard players remove @s PSTJ 1
 execute if score @s PSTJ matches 0.. run scoreboard players remove @s PSTJ 1
+

@@ -1,9 +1,13 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 tag @s add sel
 execute as @a[team=job_pvp] if score @s park.uuid = @e[tag=sel,limit=1] park.uuid run tag @s add hit.player
 
 damage @a[tag=hitted,limit=1] 1 minecraft:player_gun by @a[tag=hit.player,limit=1]
-tellraw @a[tag=hit.player] ["\u00a78你击中了 ",{"selector":"@a[tag=hitted]"}]
-tellraw @a[tag=hitted] ["\u00a78你被定住了。"]
+tellraw @a[tag=hit.player] ["§8你击中了 ",{"selector":"@a[tag=hitted]"}]
+tellraw @a[tag=hitted] ["§8你被定住了。"]
 title @a[tag=hitted] title ["\u00a7c你被定住了。"]
 title @a[tag=hitted] subtitle ["\u00a7e来自 ",{"selector":"@a[tag=hit.player]"}," \u00a7e的技能"]
 
@@ -18,3 +22,4 @@ tag @a remove hit.player
 tag @s remove sel
 # say 1
 function gun/die
+

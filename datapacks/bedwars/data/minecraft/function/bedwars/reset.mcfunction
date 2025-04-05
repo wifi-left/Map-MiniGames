@@ -1,4 +1,8 @@
-tellraw @a[tag=bw.player] ["\u00a7e重置中..."]
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
+tellraw @a[tag=bw.player] ["§e重置中..."]
 title @a[tag=bw.player] title ["\u00a7eReseting..."]
 title @a[tag=bw.player] subtitle ["\u00a7fIt may take some time..."]
 gamemode spectator @a[tag=bw.player,gamemode=!creative]
@@ -173,3 +177,4 @@ kill @e[type=fireball]
 kill @e[type=egg]
 kill @e[type=creeper]
 kill @e[type=item]
+

@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players set desk.player.a tick 0
 scoreboard players set desk.player.b tick 0
 
@@ -11,4 +15,5 @@ execute if score desk.state state matches 1..9 if score touzi.health.a board mat
 
 execute if score desk.state state matches 1..9 if score touzi.health.a board matches ..0 run function minecraft:desk/touzi/over/b
 execute if score desk.state state matches 1..9 if score touzi.health.b board matches ..0 run function minecraft:desk/touzi/over/a
+
 

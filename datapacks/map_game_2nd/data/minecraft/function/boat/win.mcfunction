@@ -1,8 +1,12 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 gamemode spectator @s
 scoreboard players add number boat.rounds 1
 scoreboard players operation @s boat.rounds = number boat.rounds
-tellraw @s ["\n\u00a7a\u00a7l   您到达了终点。\n\u00a7b\u00a7l   您是\u00a76\u00a7l 第",{"score":{"name": "@s","objective": "boat.rounds"},"color":"gold","bold": true},"\u00a76\u00a7l名\n"]
-tellraw @a[team=boat,distance=1..] [{"selector":"@s"},"\n\u00a7a\u00a7l到达了终点。"]
+tellraw @s ["\n§a§l   您到达了终点。\n§b§l   您是§6§l 第",{"score":{"name":"@s","objective":"boat.rounds"},"color":"gold","bold":true},"§6§l名\n"]
+tellraw @a[team=boat,distance=1..] [{"selector":"@s"},"\n§a§l到达了终点。"]
 
 tag @s add boat.sel
 execute as @e[tag=boat] if score @s park.uuid = @a[tag=boat.sel,limit=1] park.uuid run tag @s add boat.tmp
@@ -15,3 +19,4 @@ kill @e[tag=boat.tmp]
 tag @s remove boat.sel
 tag @e remove boat.tmp
 tag @s remove boat.ok
+

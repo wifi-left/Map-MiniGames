@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 execute store result score tmp board run random value 1..28
 execute if score tmp board matches 1 run tp @s -657 -29 244
 execute if score tmp board matches 2 run tp @s -677 -29 254

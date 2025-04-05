@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 scoreboard players set start.player tick 0
 effect clear @a[team=hide.wait]
 execute as @a[team=hide.wait,gamemode=adventure] run scoreboard players add start.player tick 1
@@ -20,9 +24,10 @@ function hideseek/starting/ranteam
 
 scoreboard players reset * die
 
-tellraw @a[team=hide.play.ani] ["\n\u00a7c   猎人将在30秒后出动。\n"]
-tellraw @a[team=hide.play.hun] ["\n\u00a7c   你将在30秒后出动。\n"]
+tellraw @a[team=hide.play.ani] ["\n§c   猎人将在30秒后出动。\n"]
+tellraw @a[team=hide.play.hun] ["\n§c   你将在30秒后出动。\n"]
 scoreboard players set hide.state state 2
 gamemode spectator @a[tag=GOABLE.SPEC]
 team join hide.wait @a[tag=GOABLE.SPEC]
+
 

@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # title @s actionbar ["\u00a7"]
 playsound entity.arrow.shoot player @s ~ ~ ~ 1 2 1
 
@@ -35,4 +39,5 @@ tag @s remove tnt.tool.5
 tag @s remove tnt.tool.6
 tag @s remove tnt.tool.7
 tag @s remove tnt.tool.8
+
 

@@ -1,3 +1,7 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
 # 主入口：当游戏未结束时执行所有检查
 
 # ===== 全局情况检查 =====
@@ -10,7 +14,7 @@ execute unless score twolf.state state matches 3 if score wolf.r.all board match
 # ===== 通用胜利条件 =====
 # 无连接时的好人胜利
 execute unless score twolf.state state matches 3 unless entity @a[tag=wolf.connected] if score wolf.r.bad board matches ..0 unless score wolf.r.tnt board matches 1.. run function minecraft:twolf/over/good
-# 无连接时的坏人胜利 
+# 无连接时的坏人胜利
 execute unless score twolf.state state matches 3 unless entity @a[tag=wolf.connected] if score wolf.r.good board matches ..0 unless score wolf.r.tnt board matches 1.. run function minecraft:twolf/over/bad
 
 # ===== 屠城模式 =====

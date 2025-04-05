@@ -1,1 +1,6 @@
-tellraw @s ["\u00a7c大厅效果已禁用：\u00a7f\u00a7l速度"]
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
+tellraw @s ["§c大厅效果已禁用：§f§l速度"]
+
