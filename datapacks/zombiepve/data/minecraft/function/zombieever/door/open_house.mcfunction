@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 fill 637 13 -46 639 11 -46 minecraft:air replace iron_bars
 fill 637 13 -46 637 11 -47 minecraft:iron_bars
 

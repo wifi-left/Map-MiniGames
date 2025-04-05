@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 scoreboard players set sur.state state 1
 execute in airworld run kill @e[type=item,distance=0..]
 execute as @a[team=wait.sur] run tp @s @e[limit=1,sort=random,tag=sur.tp,type=marker]

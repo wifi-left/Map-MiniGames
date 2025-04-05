@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 # 木剑
 execute if score bw.sharpness.green board matches 0 run give @a[tag=bwneeds,gamemode=!spectator,tag=bw.play,team=bw.green] minecraft:wooden_sword[custom_data={bw:1},unbreakable={show_in_tooltip:false},can_break={predicates:[{blocks:"#minecraft:bedblocks"}],show_in_tooltip:false},can_place_on={predicates:[{blocks:"#minecraft:bwplace"}],show_in_tooltip:false}] 1
 execute if score bw.sharpness.red board matches 0 run give @a[tag=bwneeds,gamemode=!spectator,tag=bw.play,team=bw.red] minecraft:wooden_sword[custom_data={bw:1},unbreakable={show_in_tooltip:false},can_break={predicates:[{blocks:"#minecraft:bedblocks"}],show_in_tooltip:false},can_place_on={predicates:[{blocks:"#minecraft:bwplace"}],show_in_tooltip:false}] 1

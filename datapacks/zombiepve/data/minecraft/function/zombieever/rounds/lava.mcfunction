@@ -1,10 +1,6 @@
 ##
 ## Datapack Upgrader v1.0.0 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ##
 # summon marker ~ ~ ~ {Tags:["pve","pve.spawn","pve.spawn.lava"]}
 execute if score zombie.round board matches 23..24 as @e[tag=pve.spawn.lava,limit=5,sort=random] at @s run summon blaze ~ ~ ~ {Tags:["pve.zombie"],DeathLootTable:"minecraft:empty",ArmorItems:[{},{},{},{id:"minecraft:leather_helmet"}],HandItems:[{id:"minecraft:iron_axe"},{}],attributes:[{base:0.3d,id:"movement_speed"},{base:3d,id:"attack_damage"},{base:1d,id:"attack_speed"}]}

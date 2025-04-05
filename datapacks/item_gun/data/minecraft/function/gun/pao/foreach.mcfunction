@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 
 execute store result score tmp.health board as @e[tag=hitted,limit=1,sort=nearest] run data get entity @s Health
 # tellraw @a[tag=hit.player] ["\u00a7c 剩余",{"score":{"objective": "board","name": "@s"},"color":"yellow"},"\u00a7c♥"]

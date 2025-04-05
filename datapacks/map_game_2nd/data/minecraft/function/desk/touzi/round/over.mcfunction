@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 execute as @a[team=deskgame] at @s run playsound block.anvil.place player @s ~ ~ ~ 1 1 1
 scoreboard players set touzi.tmp.money board 0
 scoreboard players operation touzi.tmp.money board = touzi.a.attack board

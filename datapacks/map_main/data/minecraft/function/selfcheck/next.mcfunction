@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 tag @a[limit=1,sort=random] add check.sel
 execute store result score check.tmp board run clear @a paper[custom_data~{testfor:1b}]
 execute if score check.tmp board matches 1.. run say §a [√] /give 命令未受影响

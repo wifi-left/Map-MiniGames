@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 title @s title [{"text":"密室杀手","color":"red","bold": true}]
 title @s subtitle ["\u00a7r小心！ 杀手也许就在你身边！"]
 team join wait.killer @s

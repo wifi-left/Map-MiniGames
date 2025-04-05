@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 
 execute in airworld if score cloud.reset board matches 0 run forceload add 365 266 546 442
 execute in airworld if score cloud.reset board matches 1 run fill 599 -64 266 780 -64 442 air

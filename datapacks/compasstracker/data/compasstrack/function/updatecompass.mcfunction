@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 execute at @s run tag @p[team=play.sur,gamemode=survival] add sur.sel
 clear @s compass
 

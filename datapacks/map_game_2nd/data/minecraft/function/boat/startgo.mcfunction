@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 title @a[team=boat] subtitle ["\u00a7b游戏开始"]
 tellraw @a[team=boat] ["\u00a7e游戏开始！"]
 # fill -66 165 -94 -60 160 -95 air replace stone_brick_wall

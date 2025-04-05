@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 tellraw @a[team=wait.sur] ["\u00a7a重置地图完毕！"]
 title @a[team=wait.sur] reset
 title @a[team=wait.sur] title ["\u00a7b地图重置完毕"]

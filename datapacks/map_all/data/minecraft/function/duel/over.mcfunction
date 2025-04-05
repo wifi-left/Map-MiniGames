@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 scoreboard players set duel.state state 0
 tellraw @a ["\u00a7a[I] ",{"text":"Duel Game","color":"yellow","bold": true}," \u00a7a: \u00a7b游戏结束！\n"]
 gamemode adventure @a[gamemode=spectator,team=play.duel.blue]

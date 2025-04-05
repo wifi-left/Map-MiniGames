@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 execute positioned 688 -1 352 run kill @e[type=item,distance=0..200]
 
 execute as @e[tag=sw.chests] at @s run setblock ~ ~ ~ chest

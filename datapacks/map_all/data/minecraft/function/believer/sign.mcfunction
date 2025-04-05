@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 playsound ui.button.click player @s
 execute if score beli.num state matches ..0 run scoreboard players set beli.num state 1
 execute if score beli.num state matches 7.. run scoreboard players set beli.num state 6

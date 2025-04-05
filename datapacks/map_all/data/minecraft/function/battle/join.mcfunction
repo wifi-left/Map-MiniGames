@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 title @s title [{"text":"Battle Box","color":"white","bold": true}]
 title @s subtitle ["\u00a7f与对方开启抢夺羊毛大作战！"]
 gamemode adventure @s[gamemode=spectator]

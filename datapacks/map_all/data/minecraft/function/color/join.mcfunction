@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 title @s[team=!play.color] title [{"text":"Color Blindness Game","color":"#009966","bold": true}]
 title @s[team=!play.color] subtitle ["\u00a7rShine your eyes !"]
 team join wait.color @s

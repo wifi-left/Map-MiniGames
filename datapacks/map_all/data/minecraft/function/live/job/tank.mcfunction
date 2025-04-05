@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 ## ok?
 item replace entity @s armor.chest with diamond_chestplate[unbreakable={show_in_tooltip:false},enchantments={levels:{"minecraft:protection":1s},show_in_tooltip:false},attribute_modifiers={modifiers:[{type:"movement_speed",slot:"any",id:"uuid_1693985146726648",amount:-0.03d,operation:"add_value"},{type:"knockback_resistance",slot:"any",id:"uuid_1393985146726648",amount:-0.3d,operation:"add_value"},{type:"armor",slot:"any",id:"uuid_1393985144726648",amount:10d,operation:"add_value"}],show_in_tooltip:false}]
 item replace entity @s armor.head with minecraft:diamond_helmet[unbreakable={}]

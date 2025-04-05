@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 tag @s remove parkouring
 tellraw @s ["\u00a7a\u00a7l\n你完成了这个跑酷！"]
 playsound entity.player.levelup player @s

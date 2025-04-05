@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 # tp @s[team=btw.play.a] 628 14 -40 45 0
 # tp @s[team=btw.play.b] 554 14 28 -135 0
 execute as @s[team=btw.play.a] if score @s btw.boattype matches 0 run summon bamboo_raft 628 14 -40 {Tags:["boat.new","btw.boat"],Invulnerable:1b}

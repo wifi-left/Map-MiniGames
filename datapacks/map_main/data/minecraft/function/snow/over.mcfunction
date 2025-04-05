@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 scoreboard players set snow.state state 0
 tellraw @a ["\u00a7f[SNOW] \u00a7c游戏结束 ! \u00a7a获胜者: ",{"selector":"@a[team=play.snow,gamemode=adventure]"}]
 title @a[team=play.snow,gamemode=adventure] title ["\u00a76You won!"]

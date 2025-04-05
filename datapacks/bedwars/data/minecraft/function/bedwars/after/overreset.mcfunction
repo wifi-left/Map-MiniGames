@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 # say @a[tag=bw.play]
 schedule clear bedwars/resets/mogu
 schedule clear bedwars/resets/unnamed

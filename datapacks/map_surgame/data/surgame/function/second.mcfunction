@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 execute in airworld run spawnpoint @a[team=play.sur] -46 -26 3
 execute in airworld run spawnpoint @a[team=play.sur.zom] -46 -26 3
 

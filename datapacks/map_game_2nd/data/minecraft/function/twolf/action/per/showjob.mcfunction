@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 execute if score @s LRS_JOB matches 3 run title @s actionbar ["\u00a7b你的身份是：\u00a7a\u00a7l纵火犯"]
 execute if score @s LRS_JOB matches 1 run title @s actionbar ["\u00a7b你的身份是：\u00a7e\u00a7l丘比特"]
 execute if score @s LRS_JOB matches 2 run title @s actionbar ["\u00a7b你的身份是：\u00a7a\u00a7l守卫"]

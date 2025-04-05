@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 scoreboard players set battle.tmp.1 board 0
 execute if block 143 27 -341 red_wool run scoreboard players add battle.tmp.1 board 1
 execute if block 143 27 -340 red_wool run scoreboard players add battle.tmp.1 board 1

@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 scoreboard players set repel state 0
 execute as @a[team=play.repel,gamemode=adventure] run scoreboard players operation @s number = cnt.repel number
 execute as @a[team=play.repel,gamemode=adventure] run scoreboard players add cnt.repel number 1

@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 execute in airworld run forceload add 1 0 1 0
 execute in airworld run setblock 1 -64 0 air
 execute in airworld run setblock 1 -64 0 diamond_block

@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 # execute as @e[tag=chess.point] at @s if block ~ ~-1 ~ black_wool run particle minecraft:dust 0 0 0 1 ~ ~10 ~ 0 0 0 1 5 normal
 # execute as @e[tag=chess.point] at @s if block ~ ~-1 ~ white_wool run particle minecraft:dust 1 1 1 1 ~ ~10 ~ 0 0 0 1 5 normal
 title @a[tag=chess.white] actionbar ["\u00a76\u00a7l你在\u00a7f\u00a7l白队。\u00a7b\u00a7l下棋时间限制：",{"score":{"name": "chess.countdown","objective": "board"},"color": "red","bold": true},"\u00a7a秒"]

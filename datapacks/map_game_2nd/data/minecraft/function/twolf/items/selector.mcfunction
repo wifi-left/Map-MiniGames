@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 item replace entity @s hotbar.0 with warped_fungus_on_a_stick[custom_name='"\\u00a7b选择玩家 - \\u00a77右键点击"',custom_data={wolfItem:1},custom_model_data={floats:[5f]}]
 item replace entity @s hotbar.1 with warped_fungus_on_a_stick[custom_name='"\\u00a7a确认选择 - \\u00a77右键点击"',custom_data={wolfItem:2},custom_model_data={floats:[4f]}]
 item replace entity @s hotbar.2 with warped_fungus_on_a_stick[custom_name='"\\u00a7c取消选择 - \\u00a77右键点击"',custom_data={wolfItem:3},custom_model_data={floats:[6f]}]

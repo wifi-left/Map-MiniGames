@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 effect give @e[team=golf] resistance 3 25 true
 # effect give @e[tag=golf.ball] invisibility 3 25 true
 execute if score golf.state state matches 1.. as @e[type=zombie,tag=golf.ball] at @s if block ~ ~-1 ~ copper_block run function golf/gaming/next

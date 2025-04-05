@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 # tellraw @a ["!",{"score":{"name": "wolf.time","objective": "board"}},":",{"score":{"name": "wolf.ttime","objective": "board"}},"[]",{"score":{"name": "wolf.event","objective": "board"}},":",{"score":{"name": "wolf.ttime","objective": "board"}}]
 scoreboard players set wolf.return board 0
 tag @a remove wolf.acting

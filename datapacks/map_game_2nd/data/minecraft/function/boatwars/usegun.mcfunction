@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 # scoreboard players
 title @s[level=1..] actionbar ["\u00a7c冷却中..."]
 execute as @s[level=1..] at @s run playsound block.chest.locked player @s ~ ~ ~ 1 2 1

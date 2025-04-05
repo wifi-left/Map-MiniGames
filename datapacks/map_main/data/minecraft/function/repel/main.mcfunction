@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 execute as @a[team=play.repel,gamemode=adventure] at @s if block ~ ~-2 ~ minecraft:orange_stained_glass run tag @s add out.repel
 execute as @a[tag=out.repel] run tellraw @a[team=play.repel] [{"selector":"@s"},"\u00a7c 淘汰了 ！"]
 execute as @a[tag=out.repel] run scoreboard players operation @s number = cnt.repel number

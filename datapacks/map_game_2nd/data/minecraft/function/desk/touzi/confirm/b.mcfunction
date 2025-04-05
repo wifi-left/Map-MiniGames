@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 execute unless score desk.state state matches 4 run tellraw @s ["\u00a7c这不是你们的轮合。"]
 execute unless score desk.state state matches 4 run return 0
 execute if score desk.time board matches ..59 run scoreboard players set desk.time board 60

@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 # execute as @e[tag=emerald] at @s run title @a[distance=0..2] actionbar ["\u00a7aEmerald \u00a7e将在 ",{"score":{"objective":"board","name":"bw.em","value":"1"},"color":"aqua"},"\u00a7bs\u00a7e 后产出。"]
 # execute as @e[tag=diamond] at @s run title @a[distance=0..2] actionbar ["\u00a7bDiamond \u00a7e将在 ",{"score":{"objective":"board","name":"bw.dm","value":"1"},"color":"green"},"\u00a7as\u00a7e 后产出。"]
 execute if score bw.state state matches 1.. run function minecraft:bedwars/summon

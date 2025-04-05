@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 tellraw @s ["\u00a7c对不起，你淘汰了！"]
 execute if entity @s[tag=killer.saver] run tellraw @a[team=play.killer] ["\u00a7a侦探 ",{"selector":"@s"},"\u00a7c 淘汰！"]
 execute if entity @s[tag=killer.saver] run tellraw @a[team=wait.killer] ["\u00a7a侦探 ",{"selector":"@s"},"\u00a7c 淘汰！"]

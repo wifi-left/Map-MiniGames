@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 # tellraw @s ["\n\u00a7c因为有致命BUG，本游戏将进行重构。预计在1年后\u00a7m\u00a7n不一定\u00a7c恢复。\n"]
 # advancement grant @s only minecraft:games/remaking_game
 # return 0

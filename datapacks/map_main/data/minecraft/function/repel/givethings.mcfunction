@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 tellraw @a[team=play.repel] ["\u00a7a\u00a7lYou was be able to attack!"]
 title @a[team=play.repel] title ["\u00a7e\u00a7lWARNING"]
 title @a[team=play.repel] subtitle ["\u00a7rYou was be able to attack!"]

@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 execute as @a[x=148,y=29,z=-420,dx=1,dy=1,dz=1,gamemode=!creative] at @s run function battle/died
 
 # execute as @a[team=play.battle.r,gamemode=adventure] at @s as @e[type=item,distance=..3,sort=nearest] at @s run

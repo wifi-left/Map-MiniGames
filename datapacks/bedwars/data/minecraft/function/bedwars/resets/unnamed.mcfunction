@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 execute unless score bw.state state matches -1 run return 0
 execute if score bw.reset board matches 0..0 in bedwars_backup run forceload add -573 299 -397 121
 execute if score bw.reset board matches 1..1 run clone from bedwars_backup -573 0 299 -397 0 121 -392 0 121

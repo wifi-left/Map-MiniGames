@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 execute as @e[tag=zombie.spawn.main] at @s run particle dust{color:[0.118d, 1d, 0.192d],scale:1} ~ ~ ~ 0 0 0 1 30
 execute as @e[tag=zombie.spawn.1] at @s run particle dust{color:[0.961d, 0.749d, 0.165d],scale:1} ~ ~ ~ 0 0 0 1 30
 execute as @e[tag=zombie.spawn.2] at @s run particle dust{color:[0.373d, 0.91d, 0.945d],scale:1} ~ ~ ~ 0 0 0 1 30

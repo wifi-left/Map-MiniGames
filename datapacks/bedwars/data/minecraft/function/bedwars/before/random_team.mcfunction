@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 function minecraft:bedwars/before/count_team_players
 ## 寻找人数最少的队伍 存储在bw.team.random board
 scoreboard players set bw.team.random board -1

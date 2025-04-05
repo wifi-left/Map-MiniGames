@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 tellraw @a ["\u00a7b\u00a7l小游戏派对 \u00a72游戏结束！"]
 tag @a remove total.win
 scoreboard players reset total.best board

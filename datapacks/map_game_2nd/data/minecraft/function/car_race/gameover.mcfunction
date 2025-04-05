@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 tellraw @a [{"text":"Car Race","color":"#009966","bold": true},"\u00a7a 游戏结束！"]
 scoreboard players set car.state state 4
 kill @e[tag=GCAR]

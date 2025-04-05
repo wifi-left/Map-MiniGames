@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 execute store result score boom.tmp.x1 board run data get entity @s Pos[0]
 execute store result score boom.tmp.z1 board run data get entity @s Pos[2]
 

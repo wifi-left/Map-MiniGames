@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 execute as @e[tag=beliran] run spreadplayers 22 -65 0 16 false @s
 execute as @e[tag=beliran] at @s if block ~ ~-1 ~ red_wool run setblock ~ ~-1 ~ air
 execute as @e[tag=beliran] at @s if block ~ ~-1 ~ orange_wool run setblock ~ ~-1 ~ red_wool

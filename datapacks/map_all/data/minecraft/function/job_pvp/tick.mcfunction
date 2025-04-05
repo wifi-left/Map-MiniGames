@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 execute as @e[tag=pvp.car] at @s if block ~ ~3.9 ~ minecraft:dropper[facing=north] run tp ~ ~0.05 ~-0.5
 execute as @e[tag=pvp.car] at @s if block ~ ~3.9 ~ minecraft:dropper[facing=east] run tp ~0.5 ~0.05 ~
 execute as @e[tag=pvp.car] at @s if block ~ ~3.9 ~ minecraft:dropper[facing=south] run tp ~ ~0.05 ~0.5

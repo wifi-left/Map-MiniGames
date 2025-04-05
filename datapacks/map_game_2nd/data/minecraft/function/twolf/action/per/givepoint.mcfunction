@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 execute positioned 29 16 31 run tag @e[tag=wolf.tppoint,tag=!wolf.used,limit=1,sort=nearest] add wolf.sel
 scoreboard players operation @e[tag=wolf.sel,limit=1] LRS_UUID = @s park.uuid
 tag @e[tag=wolf.sel] add wolf.used

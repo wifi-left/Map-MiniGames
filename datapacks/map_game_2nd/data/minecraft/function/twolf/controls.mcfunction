@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 scoreboard players reset @s use.skill.2
 # 跳过
 execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{wolfItem:0}}}}] run function twolf/control/skip

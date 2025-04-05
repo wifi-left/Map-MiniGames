@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 
 tellraw @a[team=play.zombie] ["\u00a74蜜斯莱哈雅：\u00a7f虽然这么说有点冒昧，请勇者们击败魔王！"]
 tellraw @a[team=play.zombie] ["\u00a76+100 Coins (来自蜜斯莱哈雅)\n\u00a76+1 木剑 (来自蜜斯莱哈雅)\n\u00a76+1 木斧 (来自蜜斯莱哈雅)\n\u00a76+1 手枪 (来自蜜斯莱哈雅)\n\u00a76+1 皮革装备 (来自蜜斯莱哈雅)"]

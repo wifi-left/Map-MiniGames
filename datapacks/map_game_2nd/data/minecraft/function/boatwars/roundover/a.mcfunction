@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 scoreboard players add @a[team=btw.play.a,gamemode=adventure] btw.coin 150
 scoreboard players add @a[team=btw.play.a,gamemode=spectator] btw.coin 75
 scoreboard players add @a[team=btw.play.b] btw.coin 20

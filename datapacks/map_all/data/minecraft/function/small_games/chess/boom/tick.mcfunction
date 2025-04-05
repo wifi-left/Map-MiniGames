@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 execute as @e[tag=chess.put.white] at @s run function small_games/chess/boom/turntowhite
 execute as @e[tag=chess.put.black] at @s run function small_games/chess/boom/turntoblack
 tag @a[team=!chestgame] remove chess.black

@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 scoreboard players remove hide.huntgo board 1
 data modify block 347 4 -451 front_text.messages[2] set value '["\\u00a7a你将在 ",{"score":{"objective":"board","name":"hide.huntgo"},"color":"yellow"},"\\u00a7es\\u00a7a 后出动"]'
 title @a[team=hide.play.ani] actionbar ["\u00a7c猎人将在 ",{"score":{"objective":"board","name":"hide.huntgo"},"color":"yellow"},"\u00a7es\u00a7c 后出动"]

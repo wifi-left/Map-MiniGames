@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 team leave @s
 execute if score @s LRS_JOB matches 3 run tellraw @a[tag=wolf.tip] ["\u00a7d - ",{"selector":"@s"},"\u00a7e：\u00a7a纵火犯"]
 execute if score @s LRS_JOB matches 1 run tellraw @a[tag=wolf.tip] ["\u00a7d - ",{"selector":"@s"},"\u00a7e：\u00a7e丘比特"]

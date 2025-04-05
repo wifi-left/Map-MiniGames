@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 scoreboard players remove hide2.resttime board 1
 scoreboard players set hide2.restanimals board 0
 scoreboard players set hide2.resthunts board 0

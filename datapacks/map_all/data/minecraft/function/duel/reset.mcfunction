@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 # fill -113 45 -113 -103 63 -63 air replace #minecraft:terracottas
 # forceload add -272 -76 -358 -76
 forceload add -251 -83 -379 -69

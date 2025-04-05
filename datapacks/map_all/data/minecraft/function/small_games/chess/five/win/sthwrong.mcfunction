@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 tellraw @a[team=chestgame] ["\u00a7c\u00a7l人数不够！"]
 title @a[team=chestgame] title ["\u00a7c\u00a7lGame Over!"]
 title @a[team=chestgame] subtitle ["\u00a7e出现错误"]

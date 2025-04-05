@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 execute if score live.timelimit live.all matches ..29 run tellraw @s ["\u00a7e[Warn] \u00a7e这个时间太短了！"]
 execute if score live.timelimit live.all matches ..29 run scoreboard players set live.timelimit live.all 30
 execute if score live.timelimit live.all matches 301.. run tellraw @s ["\u00a7e[Warn] \u00a7e这个时间太长了！"]

@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 scoreboard players set live.state state 1
 effect clear @a[team=play.live.runner]
 scoreboard players add @a[team=play.live.runner] live.job 0

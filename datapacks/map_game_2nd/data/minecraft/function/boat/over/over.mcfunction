@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 team modify boat prefix ["\u00a7c[O]\u00a79 竞速\u00a78 | "]
 tellraw @a ["\u00a79\u00a7l竞速游戏 ＞ \u00a7a游戏结束。"]
 forceload add -32 88 -102 313

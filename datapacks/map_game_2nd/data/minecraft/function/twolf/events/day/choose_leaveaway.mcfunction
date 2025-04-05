@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 scoreboard players set wolf.peoplecount board 0
 # execute as @a[tag=wolf.tip,team=wolfpeople,gamemode=adventure] at @s run scob
 tellraw @a[tag=wolf.tip] ["\n\n\n"]

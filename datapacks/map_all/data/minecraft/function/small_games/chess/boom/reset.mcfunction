@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 # fill -77 138 -343 -46 138 -312 glass
 forceload add 82 47 66 63
 fill 81 120 62 67 120 48 minecraft:acacia_leaves[persistent=false]

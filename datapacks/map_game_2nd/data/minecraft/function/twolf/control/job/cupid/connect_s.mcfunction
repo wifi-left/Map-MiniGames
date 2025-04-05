@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 tag @a[tag=wolf.selected] add wolf.connected
 scoreboard players reset @a LRS_CS
 tellraw @s ["\u00a7a你连接了 ",{"selector":"@a[tag=wolf.connected,team=wolfpeople]"}]

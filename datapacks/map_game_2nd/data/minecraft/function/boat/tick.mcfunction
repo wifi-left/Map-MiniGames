@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 # execute as @a[team=golf,gamemode=adventure] at @s run kill @e[type=item,distance=0..5]
 
 # title @a[team=boat,x=-71,y=134,z=547,distance=0..3] actionbar ["\u00a76您已进入 \u00a7b[神秘区域]"]

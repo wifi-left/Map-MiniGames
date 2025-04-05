@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 # start from 30 17 77 to -5 17 77
 # start from 30 17 77 to 30 17 112
 execute at @s run function minecraft:color/ran_fill/2_place

@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 forceload add 0 0 0 0
 execute as @a[team=boat] at @s run spreadplayers -82 299 0 3 false @s
 execute as @a[team=boat] at @s run tp @s ~ ~ ~ 180 0

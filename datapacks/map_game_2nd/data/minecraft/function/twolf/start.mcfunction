@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 function minecraft:twolf/events/reset
 scoreboard players reset * LRS_JOB
 scoreboard players add @a[team=wait.wolfpeople,gamemode=adventure] LRS_JOB 0

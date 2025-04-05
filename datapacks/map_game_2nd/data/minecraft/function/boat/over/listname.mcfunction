@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 # boat.rounds
 tellraw @a[team=boat] [""]
 execute as @a[team=boat,gamemode=spectator,scores={boat.rounds=1..}] at @s run tellraw @a[team=boat] [{"selector":"@s"},"\u00a76 是\u00a7a第",{"score":{"name": "@s","objective": "boat.rounds"},"color":"aqua"},"\u00a7a名"]

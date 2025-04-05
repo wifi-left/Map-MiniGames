@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 tag @s add sel
 execute unless data entity @s {Invulnerable:1b} run damage @s 10 minecraft:player_gun by @a[tag=hit.player,limit=1]
 execute store result score tmp.health board as @s run data get entity @s Health 10

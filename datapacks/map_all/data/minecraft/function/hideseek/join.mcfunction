@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 tp @s 406 1 -431 -90 0
 team join hide.wait
 title @s title ["\u00a7b\u00a7l方块躲猫猫"]

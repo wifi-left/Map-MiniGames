@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 ## 哈尔卡拉
 # 类型：森林精灵
 # 出处：《打了300年的史莱姆，不知不觉就练到了满级》

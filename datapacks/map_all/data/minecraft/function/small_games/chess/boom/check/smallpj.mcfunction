@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 function small_games/chess/boom/action/getpos
 execute if score boom.tmp.idx1 board matches 0 if score boom.tmp.idx2 board matches 0 run clone 79 120 60 77 120 58 77 101 50
 execute if score boom.tmp.idx1 board matches 0 if score boom.tmp.idx2 board matches 1 run clone 79 120 56 77 120 54 77 101 50

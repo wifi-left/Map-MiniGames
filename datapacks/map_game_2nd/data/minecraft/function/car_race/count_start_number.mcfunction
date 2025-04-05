@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 
 title @a[team=car.play] title [{"text":"Car Race","color":"#009966","bold": true}]
 title @a[team=car.play] subtitle ["\u00a7e将在" ,{"score":{"name": "car.number","objective": "tick"},"color": "red"},"\u00a7e 秒后开始。"]

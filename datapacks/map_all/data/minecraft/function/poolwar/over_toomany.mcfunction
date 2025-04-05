@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 tellraw @a [{"text":"冬泳怪鸽","color":"#1E90FF","bold":true},"\u00a7a 游戏结束！ 原因：人数过多，已跳过此小游戏。"]
 scoreboard players set pw.state state 0
 execute if entity @a[team=pw.play,tag=play.total] run function small_games/total/next_game

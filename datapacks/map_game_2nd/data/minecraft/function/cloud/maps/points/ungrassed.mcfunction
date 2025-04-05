@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 kill @e[tag=sw.marker,type=marker]
 
 summon marker 735 3 323 {Tags:["sw.chest.side","sw.chests","sw.marker"]}

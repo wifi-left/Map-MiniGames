@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 scoreboard players add zombie.round board 1
 scoreboard players reset * zombie.villager.click
 tellraw @a[team=play.zombie] ["\u00a77\u00a7o进度推进 [ID ",{"score":{"name": "zombie.round","objective": "board"},"color":"green","italic": true},"\u00a77\u00a7o]"]

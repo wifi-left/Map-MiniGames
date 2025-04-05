@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 execute if entity @e[tag=battle.potion.sel,tag=potion.speed,type=armor_stand] run effect give @s speed 15 0 true
 execute if entity @e[tag=battle.potion.sel,tag=potion.jump,type=armor_stand] run effect give @s jump_boost 15 1 true
 execute if entity @e[tag=battle.potion.sel,tag=potion.strength,type=armor_stand] run effect give @s strength 15 0 true

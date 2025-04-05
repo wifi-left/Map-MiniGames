@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 item replace entity @s container.0 with iron_sword[custom_data={duel:1},unbreakable={show_in_tooltip:false},can_break={predicates:[{blocks:"#minecraft:terracottas"}],show_in_tooltip:false}]
 item replace entity @s container.1 with diamond_pickaxe[custom_data={duel:1},unbreakable={show_in_tooltip:false},can_break={predicates:[{blocks:"#minecraft:terracottas"}],show_in_tooltip:false}]
 item replace entity @s[team=play.duel.yellow] container.2 with yellow_terracotta[enchantments={levels:{"minecraft:efficiency":2s},show_in_tooltip:false},custom_data={duel:1},unbreakable={show_in_tooltip:false},can_place_on={predicates:[{blocks:["glass","oak_wood","yellow_wool","light_blue_wool"]},{blocks:"#minecraft:terracottas"},{blocks:"#minecraft:concrete"}],show_in_tooltip:false},can_break={predicates:[{blocks:"#minecraft:terracottas"}],show_in_tooltip:false}] 64

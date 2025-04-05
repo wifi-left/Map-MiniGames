@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 tag @s add sel
 tag @a[team=btw.play.a,tag=hitted] add seled
 execute as @a[team=btw.play.b] if score @s park.uuid = @e[tag=sel,limit=1] park.uuid run tag @s add hit.player

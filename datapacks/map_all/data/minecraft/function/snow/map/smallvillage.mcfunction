@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 forceload add -113 -113 -63 -63
 clone -113 20 -113 -63 29 -63 -47 20 -99
 clone -113 10 -113 -63 20 -63 -47 10 -99

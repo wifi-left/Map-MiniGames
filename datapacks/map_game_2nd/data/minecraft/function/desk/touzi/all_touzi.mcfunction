@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 give @s minecraft:candle[custom_data={touzit:0,desk_item:1,touzi:1,number:1},custom_model_data={floats:[1f]},custom_name='"\\u00a7a数字骰子 \\u00a77- \\u00a7e1"']
 give @s minecraft:candle[custom_data={touzit:0,desk_item:1,touzi:1,number:2},custom_model_data={floats:[2f]},custom_name='"\\u00a7a数字骰子 \\u00a77- \\u00a7e2"']
 give @s minecraft:candle[custom_data={touzit:0,desk_item:1,touzi:1,number:3},custom_model_data={floats:[3f]},custom_name='"\\u00a7a数字骰子 \\u00a77- \\u00a7e3"']

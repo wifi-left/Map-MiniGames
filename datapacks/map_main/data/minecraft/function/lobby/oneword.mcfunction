@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 function lobby/getrandom1
 execute if score random board matches 1 run title @s title ["\u00a7a世间万物皆有裂痕，那是光照进来的地方。"]
 execute if score random board matches 1 run title @s subtitle ["\u00a7e —— 莱昂纳德·科恩《颂歌》"]

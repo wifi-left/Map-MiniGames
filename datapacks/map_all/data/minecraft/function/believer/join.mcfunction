@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 title @s[team=!play.beli] title [{"text":"Block Believer","color":"#a7d3ff","bold": true}]
 title @s[team=!play.beli] subtitle ["\u00a7rBelieve yourself !"]
 team join wait.beli @s

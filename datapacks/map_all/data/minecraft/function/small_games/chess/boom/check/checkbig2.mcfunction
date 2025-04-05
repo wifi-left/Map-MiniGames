@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 clone 79 125 50 79 125 50 75 106 54
 clone 79 125 54 79 125 54 75 106 55
 clone 79 125 58 79 125 58 75 106 56

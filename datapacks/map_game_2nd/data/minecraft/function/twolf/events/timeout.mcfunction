@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 # say timeout
 scoreboard players set wolf.time board -1
 scoreboard players set wolf.ttime board -1

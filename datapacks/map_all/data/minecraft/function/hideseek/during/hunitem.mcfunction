@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 give @s wooden_sword[unbreakable={},attribute_modifiers={modifiers:[{type:"attack_damage",slot:mainhand,id:"ejuwh",amount:7d,operation:"add_value"}]}]
 # give @s bow{Unbreakable:1b,Enchantments:[{id:"power",lvl:1},{id:"infinity",lvl:1}]}
 # item replace entity @s inventory.26 with arrow 1

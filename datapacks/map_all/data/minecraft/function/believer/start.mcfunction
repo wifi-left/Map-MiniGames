@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 forceload add 6 -49 38 -81
 fill 6 10 -49 38 10 -81 minecraft:white_wool
 title @a[team=wait.beli] title [{"text":"Block Believer","color":"#a7d3ff","bold": true}]

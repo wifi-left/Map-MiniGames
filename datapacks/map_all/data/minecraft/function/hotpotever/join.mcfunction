@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 clear @s
 title @s[team=!play.hotpot] title [{"text":"Hot Potato","color":"#5ed3ff","bold": true}]
 title @s[team=!play.hotpot] subtitle ["\u00a7rBe Careful !"]

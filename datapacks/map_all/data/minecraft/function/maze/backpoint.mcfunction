@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 tag @s add park.sel
 execute as @e[type=marker,tag=park] at @s if score @s park.uuid = @a[tag=park.sel,limit=1] park.uuid rotated ~ 0 run tp @a[tag=park.sel] ~ ~ ~
 tag @a[tag=park.sel] remove park.sel

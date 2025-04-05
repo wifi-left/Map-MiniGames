@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 execute if score duel.clear state matches 0 run function duel/reset
 forceload add -251 -83 -379 -69
 scoreboard players operation §e战桥黄队得分 gg.duel = score.yellow tick

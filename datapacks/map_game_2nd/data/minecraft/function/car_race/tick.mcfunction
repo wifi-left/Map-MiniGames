@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 effect give @a[team=car.play] resistance 2 25 true
 tag @a[team=car.play] remove riding
 execute as @e[tag=GCAR] on passengers run tag @s[type=player,team=car.play] add riding

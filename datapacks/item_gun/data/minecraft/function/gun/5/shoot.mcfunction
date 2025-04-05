@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 tag @s add sel
 execute as @s at @s positioned 0.0 0.0 0.0 run summon marker ^ ^ ^2 {Tags:["f.tmp"]}
 # execute if entity @s[team=job_pvp] anchored eyes run summon arrow ^ ^ ^1 {Tags:["f.new"],ExplosionPower:1}

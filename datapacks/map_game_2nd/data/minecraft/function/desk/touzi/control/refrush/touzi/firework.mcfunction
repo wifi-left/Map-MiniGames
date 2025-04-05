@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 scoreboard players set desk.random board 0
 execute store result score desk.random board run random value 1..6
 execute if score desk.random board matches 1 run give @s minecraft:firework_star[custom_name='"\\u00a7b烟花骰子 \\u00a77- \\u00a7b信号弹(3)"',custom_data={desk_item:1,touzi:3,number:3,touzit:8}]

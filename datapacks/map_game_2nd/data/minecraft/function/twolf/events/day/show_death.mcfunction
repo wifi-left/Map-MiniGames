@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 # say day
 scoreboard players set wolf.ttime board 4
 scoreboard players set wolf.event board 9

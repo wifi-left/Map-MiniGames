@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 execute unless score desk.time board matches 1.. run title @a[team=deskgame,tag=touzi.team.a] actionbar ["\u00a76你在\u00a79队伍A"]
 execute unless score desk.time board matches 1.. run title @a[team=deskgame,tag=touzi.team.b] actionbar ["\u00a76你在\u00a74队伍B"]
 

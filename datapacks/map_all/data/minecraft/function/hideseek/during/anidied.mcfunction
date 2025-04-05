@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 scoreboard players reset @s die
 tellraw @a[team=hide.play.hun] [{"selector":"@s"},"\u00a7c 变成了猎人。"]
 tellraw @a[team=hide.play.ani] [{"selector":"@s"},"\u00a7c 变成了猎人。"]

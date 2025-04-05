@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 title @s title [{"text":"Zombie Day","color":"dark_green","bold": true}]
 title @s subtitle ["\u00a7bPre-release \u00a7ev0.3"]
 team join wait.zombie @s

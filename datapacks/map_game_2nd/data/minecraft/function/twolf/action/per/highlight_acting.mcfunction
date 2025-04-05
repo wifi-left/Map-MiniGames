@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 tag @s add wolf.sell1
 execute as @e[tag=wolf.used] if score @s LRS_UUID = @a[tag=wolf.sell1,limit=1] park.uuid run tag @s add wolf.selll
 execute as @e[tag=wolf.selll] at @s as @e[type=armor_stand,limit=1,sort=nearest,distance=0..1] run tag @s add wolf.sell

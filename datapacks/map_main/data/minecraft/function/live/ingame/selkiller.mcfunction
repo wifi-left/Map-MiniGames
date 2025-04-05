@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 tag @r[team=play.live.runner,gamemode=adventure] add live.Killer
 tellraw @a[team=play.live.runner] ["\u00a7a[Info] \u00a7bKiller 已经选出！请小心！"]
 title @a[tag=live.Killer] title ["\u00a7c你是 Killer"]

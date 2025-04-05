@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 scoreboard players set repel state 1
 scoreboard players set cnt.repel number 1
 scoreboard players set start.repel.second tick 30

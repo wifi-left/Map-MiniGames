@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 scoreboard players set color.state state 3
 execute if score color.tre tick matches 1.. run scoreboard players remove color.tt tick 1
 execute if score color.tre tick matches 1.. run scoreboard players remove color.tre tick 1

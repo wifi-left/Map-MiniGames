@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 # execute at @s positioned 0.0 0.0 0.0 rotated as @s anchored eyes run summon marker ^ ^ ^3 {Tags:["tmp"]}
 execute as @s at @s in overworld positioned 0.0 0.0 0.0 run summon marker ^ ^ ^0.25 {Tags:["t.tmp"]}
 execute as @s[team=play.tntwars] anchored eyes run summon fireball ^ ^ ^1 {Tags:["t.new","tntwars.tnt"],ExplosionPower:5,acceleration_power:0.4d}

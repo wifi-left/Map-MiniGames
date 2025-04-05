@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 effect give @e[distance=0..6,team=boat] slowness 5 5 true
 effect give @a[distance=0..6,team=boat] blindness 5 5 true
 particle minecraft:explosion ~ ~ ~ 1 1 1 1 5

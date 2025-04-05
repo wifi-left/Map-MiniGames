@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 #execute if score bw.em board matches ..0 as @e[type=marker,tag=emerald] at @s run summon item ~ ~ ~ {Item:{id:"minecraft:emerald",Count:1b,tag:{HideFlags:63,CanDe1stroy:["#minecraft:bedblocks"],CanPlaceOn:["#minecraft:bwplace"]}}}
 #execute if score bw.dm board matches ..0 as @e[type=marker,tag=diamond] at @s run summon item ~ ~ ~ {Item:{id:"minecraft:diamond",Count:1b,tag:{HideFlags:63,CanDe1stroy:["#minecraft:bedblocks"],CanPlaceOn:["#minecraft:bwplace"]}}}
 #execute if score bw.ir board matches ..0 as @e[type=marker,tag=iron] at @s run summon item ~ ~ ~ {Item:{id:"minecraft:iron_ingot",Count:1b,tag:{HideFlags:63,CanDe1stroy:["#minecraft:bedblocks"],CanPlaceOn:["#minecraft:bwplace"]}}}

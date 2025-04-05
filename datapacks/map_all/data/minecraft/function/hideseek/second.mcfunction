@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 # effect give @a[team=hide.play.ani] resistance 1 25 true
 # effect give @a[team=hide.play.hun] resistance 1 25 true
 effect give @a[team=hide.wait] resistance 1 25 true

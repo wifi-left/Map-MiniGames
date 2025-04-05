@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 function zombieever/door/open_cave_loot_in
 
 data merge entity @e[tag=pve.title,limit=1] {CustomName:'"\\u00a7c地牢探险"'}

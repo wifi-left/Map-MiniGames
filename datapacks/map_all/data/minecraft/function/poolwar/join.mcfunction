@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 tellraw @a[team=!pw.wait] ["\u00a7a\u00a7l[MESSAGE] ",{"selector":"@s"},"\u00a77 加入了 ",{"text":"冬泳怪鸽","color":"#1E90FF","bold": true}," \u00a77!"]
 team join pw.wait
 scoreboard players set wait.player tick 0

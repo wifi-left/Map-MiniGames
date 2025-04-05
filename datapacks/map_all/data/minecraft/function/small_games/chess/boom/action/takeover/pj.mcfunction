@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 execute if score boom.tmp.idx1 board matches 0 if score boom.tmp.idx2 board matches 0 run fill 79 125 60 77 125 58 red_wool
 execute if score boom.tmp.idx1 board matches 0 if score boom.tmp.idx2 board matches 1 run fill 79 125 56 77 125 54 red_wool
 execute if score boom.tmp.idx1 board matches 0 if score boom.tmp.idx2 board matches 2 run fill 79 125 52 77 125 50 red_wool

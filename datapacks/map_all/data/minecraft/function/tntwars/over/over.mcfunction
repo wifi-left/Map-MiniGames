@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 tag @a remove tntwars.a
 tag @a remove tntwars.b
 tellraw @a ["\u00a7cTNT Wars \u00a76游戏结束。"]

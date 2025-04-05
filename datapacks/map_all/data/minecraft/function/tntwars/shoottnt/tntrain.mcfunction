@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 spreadplayers 502 318 0 32 false @s
 # execute at @s run tp @s ~ ~ ~5
 execute as @s[tag=tnt.tntrain.tnt] at @s run summon tnt ~ ~-3 ~ {fuse:50,Motion:[0.0,-0.8,0.0],Tags:["tntwars.tnt"]}

@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 scoreboard players remove @s PSTJ 1
 tp @s ^ ^ ^1
 tag @e[tag=wolf.used,distance=0..0.8,limit=1] add wolf.ptdmarker

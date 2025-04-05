@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 
 scoreboard players display name blue bw.info "§9蓝§8 §r蓝队: §c§l✗"
 # scoreboard players set §9蓝§8　§r蓝队:§c§l✗ bw.info 9

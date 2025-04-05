@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 tag @s add sel
 execute as @a[team=play.zombie] if score @s park.uuid = @e[tag=sel,limit=1] park.uuid run tag @s add hit.player
 execute as @e[tag=hitted,limit=1] unless data entity @s {Invulnerable:1b} run damage @s 6 minecraft:player_gun by @a[tag=hit.player,limit=1]

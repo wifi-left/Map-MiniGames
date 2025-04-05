@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 tag @s add park.sel
 execute at @s as @e[type=marker,tag=lpark] if score @s park.uuid = @a[tag=park.sel,limit=1] park.uuid run tag @s add flaged1
 kill @e[tag=flaged1]

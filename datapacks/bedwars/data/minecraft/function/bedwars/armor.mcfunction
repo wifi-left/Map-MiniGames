@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 tag @a[tag=bw.play] add bwneeds
 tag @a[tag=bwneeds,nbt={Inventory:[{id:"minecraft:wooden_sword"}]}] remove bwneeds
 tag @a[tag=bwneeds,nbt={Inventory:[{id:"minecraft:stone_sword"}]}] remove bwneeds

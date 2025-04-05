@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 scoreboard players reset count.1 board
 scoreboard players reset count.2 board
 execute as @e[type=marker,tag=random_game] run scoreboard players add count.1 board 1

@@ -1,7 +1,3 @@
-##
-## Datapack Upgrader v1.0.0 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 function twolf/persons
 function twolf/overdetect
 execute if score twolf.state state matches 3 run return 0
