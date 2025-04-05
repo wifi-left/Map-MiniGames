@@ -2,251 +2,251 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
-execute in airworld if score sur.reset board matches -64 run clone -104 -64 1 0 -64 -142 -103 -64 28
-execute in airworld if score sur.reset board matches -63 run clone -104 -63 1 0 -63 -142 -103 -63 28
-execute in airworld if score sur.reset board matches -62 run clone -104 -62 1 0 -62 -142 -103 -62 28
-execute in airworld if score sur.reset board matches -61 run clone -104 -61 1 0 -61 -142 -103 -61 28
-execute in airworld if score sur.reset board matches -60 run clone -104 -60 1 0 -60 -142 -103 -60 28
-execute in airworld if score sur.reset board matches -59 run clone -104 -59 1 0 -59 -142 -103 -59 28
-execute in airworld if score sur.reset board matches -58 run clone -104 -58 1 0 -58 -142 -103 -58 28
-execute in airworld if score sur.reset board matches -57 run clone -104 -57 1 0 -57 -142 -103 -57 28
-execute in airworld if score sur.reset board matches -56 run clone -104 -56 1 0 -56 -142 -103 -56 28
-execute in airworld if score sur.reset board matches -55 run clone -104 -55 1 0 -55 -142 -103 -55 28
-execute in airworld if score sur.reset board matches -54 run clone -104 -54 1 0 -54 -142 -103 -54 28
-execute in airworld if score sur.reset board matches -53 run clone -104 -53 1 0 -53 -142 -103 -53 28
-execute in airworld if score sur.reset board matches -52 run clone -104 -52 1 0 -52 -142 -103 -52 28
-execute in airworld if score sur.reset board matches -51 run clone -104 -51 1 0 -51 -142 -103 -51 28
-execute in airworld if score sur.reset board matches -50 run clone -104 -50 1 0 -50 -142 -103 -50 28
-execute in airworld if score sur.reset board matches -49 run clone -104 -49 1 0 -49 -142 -103 -49 28
-execute in airworld if score sur.reset board matches -48 run clone -104 -48 1 0 -48 -142 -103 -48 28
-execute in airworld if score sur.reset board matches -47 run clone -104 -47 1 0 -47 -142 -103 -47 28
-execute in airworld if score sur.reset board matches -46 run clone -104 -46 1 0 -46 -142 -103 -46 28
-execute in airworld if score sur.reset board matches -45 run clone -104 -45 1 0 -45 -142 -103 -45 28
-execute in airworld if score sur.reset board matches -44 run clone -104 -44 1 0 -44 -142 -103 -44 28
-execute in airworld if score sur.reset board matches -43 run clone -104 -43 1 0 -43 -142 -103 -43 28
-execute in airworld if score sur.reset board matches -42 run clone -104 -42 1 0 -42 -142 -103 -42 28
-execute in airworld if score sur.reset board matches -41 run clone -104 -41 1 0 -41 -142 -103 -41 28
-execute in airworld if score sur.reset board matches -40 run clone -104 -40 1 0 -40 -142 -103 -40 28
-execute in airworld if score sur.reset board matches -39 run clone -104 -39 1 0 -39 -142 -103 -39 28
-execute in airworld if score sur.reset board matches -38 run clone -104 -38 1 0 -38 -142 -103 -38 28
-execute in airworld if score sur.reset board matches -37 run clone -104 -37 1 0 -37 -142 -103 -37 28
-execute in airworld if score sur.reset board matches -36 run clone -104 -36 1 0 -36 -142 -103 -36 28
-execute in airworld if score sur.reset board matches -35 run clone -104 -35 1 0 -35 -142 -103 -35 28
-execute in airworld if score sur.reset board matches -34 run clone -104 -34 1 0 -34 -142 -103 -34 28
-execute in airworld if score sur.reset board matches -33 run clone -104 -33 1 0 -33 -142 -103 -33 28
-execute in airworld if score sur.reset board matches -32 run clone -104 -32 1 0 -32 -142 -103 -32 28
-execute in airworld if score sur.reset board matches -31 run clone -104 -31 1 0 -31 -142 -103 -31 28
-execute in airworld if score sur.reset board matches -30 run clone -104 -30 1 0 -30 -142 -103 -30 28
-execute in airworld if score sur.reset board matches -29 run clone -104 -29 1 0 -29 -142 -103 -29 28
-execute in airworld if score sur.reset board matches -28 run clone -104 -28 1 0 -28 -142 -103 -28 28
-execute in airworld if score sur.reset board matches -27 run clone -104 -27 1 0 -27 -142 -103 -27 28
-execute in airworld if score sur.reset board matches -26 run clone -104 -26 1 0 -26 -142 -103 -26 28
-execute in airworld if score sur.reset board matches -25 run clone -104 -25 1 0 -25 -142 -103 -25 28
-execute in airworld if score sur.reset board matches -24 run clone -104 -24 1 0 -24 -142 -103 -24 28
-execute in airworld if score sur.reset board matches -23 run clone -104 -23 1 0 -23 -142 -103 -23 28
-execute in airworld if score sur.reset board matches -22 run clone -104 -22 1 0 -22 -142 -103 -22 28
-execute in airworld if score sur.reset board matches -21 run clone -104 -21 1 0 -21 -142 -103 -21 28
-execute in airworld if score sur.reset board matches -20 run clone -104 -20 1 0 -20 -142 -103 -20 28
-execute in airworld if score sur.reset board matches -19 run clone -104 -19 1 0 -19 -142 -103 -19 28
-execute in airworld if score sur.reset board matches -18 run clone -104 -18 1 0 -18 -142 -103 -18 28
-execute in airworld if score sur.reset board matches -17 run clone -104 -17 1 0 -17 -142 -103 -17 28
-execute in airworld if score sur.reset board matches -16 run clone -104 -16 1 0 -16 -142 -103 -16 28
-execute in airworld if score sur.reset board matches -15 run clone -104 -15 1 0 -15 -142 -103 -15 28
-execute in airworld if score sur.reset board matches -14 run clone -104 -14 1 0 -14 -142 -103 -14 28
-execute in airworld if score sur.reset board matches -13 run clone -104 -13 1 0 -13 -142 -103 -13 28
-execute in airworld if score sur.reset board matches -12 run clone -104 -12 1 0 -12 -142 -103 -12 28
-execute in airworld if score sur.reset board matches -11 run clone -104 -11 1 0 -11 -142 -103 -11 28
-execute in airworld if score sur.reset board matches -10 run clone -104 -10 1 0 -10 -142 -103 -10 28
-execute in airworld if score sur.reset board matches -9 run clone -104 -9 1 0 -9 -142 -103 -9 28
-execute in airworld if score sur.reset board matches -8 run clone -104 -8 1 0 -8 -142 -103 -8 28
-execute in airworld if score sur.reset board matches -7 run clone -104 -7 1 0 -7 -142 -103 -7 28
-execute in airworld if score sur.reset board matches -6 run clone -104 -6 1 0 -6 -142 -103 -6 28
-execute in airworld if score sur.reset board matches -5 run clone -104 -5 1 0 -5 -142 -103 -5 28
-execute in airworld if score sur.reset board matches -4 run clone -104 -4 1 0 -4 -142 -103 -4 28
-execute in airworld if score sur.reset board matches -3 run clone -104 -3 1 0 -3 -142 -103 -3 28
-execute in airworld if score sur.reset board matches -2 run clone -104 -2 1 0 -2 -142 -103 -2 28
-execute in airworld if score sur.reset board matches -1 run clone -104 -1 1 0 -1 -142 -103 -1 28
-execute in airworld if score sur.reset board matches 0 run clone -104 0 1 0 0 -142 -103 0 28
-execute in airworld if score sur.reset board matches 1 run clone -104 1 1 0 1 -142 -103 1 28
-execute in airworld if score sur.reset board matches 2 run clone -104 2 1 0 2 -142 -103 2 28
-execute in airworld if score sur.reset board matches 3 run clone -104 3 1 0 3 -142 -103 3 28
-execute in airworld if score sur.reset board matches 4 run clone -104 4 1 0 4 -142 -103 4 28
-execute in airworld if score sur.reset board matches 5 run clone -104 5 1 0 5 -142 -103 5 28
-execute in airworld if score sur.reset board matches 6 run clone -104 6 1 0 6 -142 -103 6 28
-execute in airworld if score sur.reset board matches 7 run clone -104 7 1 0 7 -142 -103 7 28
-execute in airworld if score sur.reset board matches 8 run clone -104 8 1 0 8 -142 -103 8 28
-execute in airworld if score sur.reset board matches 9 run clone -104 9 1 0 9 -142 -103 9 28
-execute in airworld if score sur.reset board matches 10 run clone -104 10 1 0 10 -142 -103 10 28
-execute in airworld if score sur.reset board matches 11 run clone -104 11 1 0 11 -142 -103 11 28
-execute in airworld if score sur.reset board matches 12 run clone -104 12 1 0 12 -142 -103 12 28
-execute in airworld if score sur.reset board matches 13 run clone -104 13 1 0 13 -142 -103 13 28
-execute in airworld if score sur.reset board matches 14 run clone -104 14 1 0 14 -142 -103 14 28
-execute in airworld if score sur.reset board matches 15 run clone -104 15 1 0 15 -142 -103 15 28
-execute in airworld if score sur.reset board matches 16 run clone -104 16 1 0 16 -142 -103 16 28
-execute in airworld if score sur.reset board matches 17 run clone -104 17 1 0 17 -142 -103 17 28
-execute in airworld if score sur.reset board matches 18 run clone -104 18 1 0 18 -142 -103 18 28
-execute in airworld if score sur.reset board matches 19 run clone -104 19 1 0 19 -142 -103 19 28
-execute in airworld if score sur.reset board matches 20 run clone -104 20 1 0 20 -142 -103 20 28
-execute in airworld if score sur.reset board matches 21 run clone -104 21 1 0 21 -142 -103 21 28
-execute in airworld if score sur.reset board matches 22 run clone -104 22 1 0 22 -142 -103 22 28
-execute in airworld if score sur.reset board matches 23 run clone -104 23 1 0 23 -142 -103 23 28
-execute in airworld if score sur.reset board matches 24 run clone -104 24 1 0 24 -142 -103 24 28
-execute in airworld if score sur.reset board matches 25 run clone -104 25 1 0 25 -142 -103 25 28
-execute in airworld if score sur.reset board matches 26 run clone -104 26 1 0 26 -142 -103 26 28
-execute in airworld if score sur.reset board matches 27 run clone -104 27 1 0 27 -142 -103 27 28
-execute in airworld if score sur.reset board matches 28 run clone -104 28 1 0 28 -142 -103 28 28
-execute in airworld if score sur.reset board matches 29 run clone -104 29 1 0 29 -142 -103 29 28
-execute in airworld if score sur.reset board matches 30 run clone -104 30 1 0 30 -142 -103 30 28
-execute in airworld if score sur.reset board matches 31 run clone -104 31 1 0 31 -142 -103 31 28
-execute in airworld if score sur.reset board matches 32 run clone -104 32 1 0 32 -142 -103 32 28
-execute in airworld if score sur.reset board matches 33 run clone -104 33 1 0 33 -142 -103 33 28
-execute in airworld if score sur.reset board matches 34 run clone -104 34 1 0 34 -142 -103 34 28
-execute in airworld if score sur.reset board matches 35 run clone -104 35 1 0 35 -142 -103 35 28
-execute in airworld if score sur.reset board matches 36 run clone -104 36 1 0 36 -142 -103 36 28
-execute in airworld if score sur.reset board matches 37 run clone -104 37 1 0 37 -142 -103 37 28
-execute in airworld if score sur.reset board matches 38 run clone -104 38 1 0 38 -142 -103 38 28
-execute in airworld if score sur.reset board matches 39 run clone -104 39 1 0 39 -142 -103 39 28
-execute in airworld if score sur.reset board matches 40 run clone -104 40 1 0 40 -142 -103 40 28
-execute in airworld if score sur.reset board matches 41 run clone -104 41 1 0 41 -142 -103 41 28
-execute in airworld if score sur.reset board matches 42 run clone -104 42 1 0 42 -142 -103 42 28
-execute in airworld if score sur.reset board matches 43 run clone -104 43 1 0 43 -142 -103 43 28
-execute in airworld if score sur.reset board matches 44 run clone -104 44 1 0 44 -142 -103 44 28
-execute in airworld if score sur.reset board matches 45 run clone -104 45 1 0 45 -142 -103 45 28
-execute in airworld if score sur.reset board matches 46 run clone -104 46 1 0 46 -142 -103 46 28
-execute in airworld if score sur.reset board matches 47 run clone -104 47 1 0 47 -142 -103 47 28
-execute in airworld if score sur.reset board matches 48 run clone -104 48 1 0 48 -142 -103 48 28
-execute in airworld if score sur.reset board matches 49 run clone -104 49 1 0 49 -142 -103 49 28
-execute in airworld if score sur.reset board matches 50 run clone -104 50 1 0 50 -142 -103 50 28
-execute in airworld if score sur.reset board matches 51 run clone -104 51 1 0 51 -142 -103 51 28
-execute in airworld if score sur.reset board matches 52 run clone -104 52 1 0 52 -142 -103 52 28
-execute in airworld if score sur.reset board matches 53 run clone -104 53 1 0 53 -142 -103 53 28
-execute in airworld if score sur.reset board matches 54 run clone -104 54 1 0 54 -142 -103 54 28
-execute in airworld if score sur.reset board matches 55 run clone -104 55 1 0 55 -142 -103 55 28
-execute in airworld if score sur.reset board matches 56 run clone -104 56 1 0 56 -142 -103 56 28
-execute in airworld if score sur.reset board matches 57 run clone -104 57 1 0 57 -142 -103 57 28
-execute in airworld if score sur.reset board matches 58 run clone -104 58 1 0 58 -142 -103 58 28
-execute in airworld if score sur.reset board matches 59 run clone -104 59 1 0 59 -142 -103 59 28
-execute in airworld if score sur.reset board matches 60 run clone -104 60 1 0 60 -142 -103 60 28
-execute in airworld if score sur.reset board matches 61 run clone -104 61 1 0 61 -142 -103 61 28
-execute in airworld if score sur.reset board matches 62 run clone -104 62 1 0 62 -142 -103 62 28
-execute in airworld if score sur.reset board matches 63 run clone -104 63 1 0 63 -142 -103 63 28
-execute in airworld if score sur.reset board matches 64 run clone -104 64 1 0 64 -142 -103 64 28
-execute in airworld if score sur.reset board matches 65 run clone -104 65 1 0 65 -142 -103 65 28
-execute in airworld if score sur.reset board matches 66 run clone -104 66 1 0 66 -142 -103 66 28
-execute in airworld if score sur.reset board matches 67 run clone -104 67 1 0 67 -142 -103 67 28
-execute in airworld if score sur.reset board matches 68 run clone -104 68 1 0 68 -142 -103 68 28
-execute in airworld if score sur.reset board matches 69 run clone -104 69 1 0 69 -142 -103 69 28
-execute in airworld if score sur.reset board matches 70 run clone -104 70 1 0 70 -142 -103 70 28
-execute in airworld if score sur.reset board matches 71 run clone -104 71 1 0 71 -142 -103 71 28
-execute in airworld if score sur.reset board matches 72 run clone -104 72 1 0 72 -142 -103 72 28
-execute in airworld if score sur.reset board matches 73 run clone -104 73 1 0 73 -142 -103 73 28
-execute in airworld if score sur.reset board matches 74 run clone -104 74 1 0 74 -142 -103 74 28
-execute in airworld if score sur.reset board matches 75 run clone -104 75 1 0 75 -142 -103 75 28
-execute in airworld if score sur.reset board matches 76 run clone -104 76 1 0 76 -142 -103 76 28
-execute in airworld if score sur.reset board matches 77 run clone -104 77 1 0 77 -142 -103 77 28
-execute in airworld if score sur.reset board matches 78 run clone -104 78 1 0 78 -142 -103 78 28
-execute in airworld if score sur.reset board matches 79 run clone -104 79 1 0 79 -142 -103 79 28
-execute in airworld if score sur.reset board matches 80 run clone -104 80 1 0 80 -142 -103 80 28
-execute in airworld if score sur.reset board matches 81 run clone -104 81 1 0 81 -142 -103 81 28
-execute in airworld if score sur.reset board matches 82 run clone -104 82 1 0 82 -142 -103 82 28
-execute in airworld if score sur.reset board matches 83 run clone -104 83 1 0 83 -142 -103 83 28
-execute in airworld if score sur.reset board matches 84 run clone -104 84 1 0 84 -142 -103 84 28
-execute in airworld if score sur.reset board matches 85 run clone -104 85 1 0 85 -142 -103 85 28
-execute in airworld if score sur.reset board matches 86 run clone -104 86 1 0 86 -142 -103 86 28
-execute in airworld if score sur.reset board matches 87 run clone -104 87 1 0 87 -142 -103 87 28
-execute in airworld if score sur.reset board matches 88 run clone -104 88 1 0 88 -142 -103 88 28
-execute in airworld if score sur.reset board matches 89 run clone -104 89 1 0 89 -142 -103 89 28
-execute in airworld if score sur.reset board matches 90 run clone -104 90 1 0 90 -142 -103 90 28
-execute in airworld if score sur.reset board matches 91 run clone -104 91 1 0 91 -142 -103 91 28
-execute in airworld if score sur.reset board matches 92 run clone -104 92 1 0 92 -142 -103 92 28
-execute in airworld if score sur.reset board matches 93 run clone -104 93 1 0 93 -142 -103 93 28
-execute in airworld if score sur.reset board matches 94 run clone -104 94 1 0 94 -142 -103 94 28
-execute in airworld if score sur.reset board matches 95 run clone -104 95 1 0 95 -142 -103 95 28
-execute in airworld if score sur.reset board matches 96 run clone -104 96 1 0 96 -142 -103 96 28
-execute in airworld if score sur.reset board matches 97 run clone -104 97 1 0 97 -142 -103 97 28
-execute in airworld if score sur.reset board matches 98 run clone -104 98 1 0 98 -142 -103 98 28
-execute in airworld if score sur.reset board matches 99 run clone -104 99 1 0 99 -142 -103 99 28
-execute in airworld if score sur.reset board matches 100 run clone -104 100 1 0 100 -142 -103 100 28
-execute in airworld if score sur.reset board matches 101 run clone -104 101 1 0 101 -142 -103 101 28
-execute in airworld if score sur.reset board matches 102 run clone -104 102 1 0 102 -142 -103 102 28
-execute in airworld if score sur.reset board matches 103 run clone -104 103 1 0 103 -142 -103 103 28
-execute in airworld if score sur.reset board matches 104 run clone -104 104 1 0 104 -142 -103 104 28
-execute in airworld if score sur.reset board matches 105 run clone -104 105 1 0 105 -142 -103 105 28
-execute in airworld if score sur.reset board matches 106 run clone -104 106 1 0 106 -142 -103 106 28
-execute in airworld if score sur.reset board matches 107 run clone -104 107 1 0 107 -142 -103 107 28
-execute in airworld if score sur.reset board matches 108 run clone -104 108 1 0 108 -142 -103 108 28
-execute in airworld if score sur.reset board matches 109 run clone -104 109 1 0 109 -142 -103 109 28
-execute in airworld if score sur.reset board matches 110 run clone -104 110 1 0 110 -142 -103 110 28
-execute in airworld if score sur.reset board matches 111 run clone -104 111 1 0 111 -142 -103 111 28
-execute in airworld if score sur.reset board matches 112 run clone -104 112 1 0 112 -142 -103 112 28
-execute in airworld if score sur.reset board matches 113 run clone -104 113 1 0 113 -142 -103 113 28
-execute in airworld if score sur.reset board matches 114 run clone -104 114 1 0 114 -142 -103 114 28
-execute in airworld if score sur.reset board matches 115 run clone -104 115 1 0 115 -142 -103 115 28
-execute in airworld if score sur.reset board matches 116 run clone -104 116 1 0 116 -142 -103 116 28
-execute in airworld if score sur.reset board matches 117 run clone -104 117 1 0 117 -142 -103 117 28
-execute in airworld if score sur.reset board matches 118 run clone -104 118 1 0 118 -142 -103 118 28
-execute in airworld if score sur.reset board matches 119 run clone -104 119 1 0 119 -142 -103 119 28
-execute in airworld if score sur.reset board matches 120 run clone -104 120 1 0 120 -142 -103 120 28
-execute in airworld if score sur.reset board matches 121 run clone -104 121 1 0 121 -142 -103 121 28
-execute in airworld if score sur.reset board matches 122 run clone -104 122 1 0 122 -142 -103 122 28
-execute in airworld if score sur.reset board matches 123 run clone -104 123 1 0 123 -142 -103 123 28
-execute in airworld if score sur.reset board matches 124 run clone -104 124 1 0 124 -142 -103 124 28
-execute in airworld if score sur.reset board matches 125 run clone -104 125 1 0 125 -142 -103 125 28
-execute in airworld if score sur.reset board matches 126 run clone -104 126 1 0 126 -142 -103 126 28
-execute in airworld if score sur.reset board matches 127 run clone -104 127 1 0 127 -142 -103 127 28
-execute in airworld if score sur.reset board matches 128 run clone -104 128 1 0 128 -142 -103 128 28
-execute in airworld if score sur.reset board matches 129 run clone -104 129 1 0 129 -142 -103 129 28
-execute in airworld if score sur.reset board matches 130 run clone -104 130 1 0 130 -142 -103 130 28
-execute in airworld if score sur.reset board matches 131 run clone -104 131 1 0 131 -142 -103 131 28
-execute in airworld if score sur.reset board matches 132 run clone -104 132 1 0 132 -142 -103 132 28
-execute in airworld if score sur.reset board matches 133 run clone -104 133 1 0 133 -142 -103 133 28
-execute in airworld if score sur.reset board matches 134 run clone -104 134 1 0 134 -142 -103 134 28
-execute in airworld if score sur.reset board matches 135 run clone -104 135 1 0 135 -142 -103 135 28
-execute in airworld if score sur.reset board matches 136 run clone -104 136 1 0 136 -142 -103 136 28
-execute in airworld if score sur.reset board matches 137 run clone -104 137 1 0 137 -142 -103 137 28
-execute in airworld if score sur.reset board matches 138 run clone -104 138 1 0 138 -142 -103 138 28
-execute in airworld if score sur.reset board matches 139 run clone -104 139 1 0 139 -142 -103 139 28
-execute in airworld if score sur.reset board matches 140 run clone -104 140 1 0 140 -142 -103 140 28
-execute in airworld if score sur.reset board matches 141 run clone -104 141 1 0 141 -142 -103 141 28
-execute in airworld if score sur.reset board matches 142 run clone -104 142 1 0 142 -142 -103 142 28
-execute in airworld if score sur.reset board matches 143 run clone -104 143 1 0 143 -142 -103 143 28
-execute in airworld if score sur.reset board matches 144 run clone -104 144 1 0 144 -142 -103 144 28
-execute in airworld if score sur.reset board matches 145 run clone -104 145 1 0 145 -142 -103 145 28
-execute in airworld if score sur.reset board matches 146 run clone -104 146 1 0 146 -142 -103 146 28
-execute in airworld if score sur.reset board matches 147 run clone -104 147 1 0 147 -142 -103 147 28
-execute in airworld if score sur.reset board matches 148 run clone -104 148 1 0 148 -142 -103 148 28
-execute in airworld if score sur.reset board matches 149 run clone -104 149 1 0 149 -142 -103 149 28
-execute in airworld if score sur.reset board matches 150 run clone -104 150 1 0 150 -142 -103 150 28
-execute in airworld if score sur.reset board matches 151 run clone -104 151 1 0 151 -142 -103 151 28
-execute in airworld if score sur.reset board matches 152 run clone -104 152 1 0 152 -142 -103 152 28
-execute in airworld if score sur.reset board matches 153 run clone -104 153 1 0 153 -142 -103 153 28
-execute in airworld if score sur.reset board matches 154 run clone -104 154 1 0 154 -142 -103 154 28
-execute in airworld if score sur.reset board matches 155 run clone -104 155 1 0 155 -142 -103 155 28
-execute in airworld if score sur.reset board matches 156 run clone -104 156 1 0 156 -142 -103 156 28
-execute in airworld if score sur.reset board matches 157 run clone -104 157 1 0 157 -142 -103 157 28
-execute in airworld if score sur.reset board matches 158 run clone -104 158 1 0 158 -142 -103 158 28
-execute in airworld if score sur.reset board matches 159 run clone -104 159 1 0 159 -142 -103 159 28
-execute in airworld if score sur.reset board matches 160 run clone -104 160 1 0 160 -142 -103 160 28
-execute in airworld if score sur.reset board matches 161 run clone -104 161 1 0 161 -142 -103 161 28
-execute in airworld if score sur.reset board matches 162 run clone -104 162 1 0 162 -142 -103 162 28
-execute in airworld if score sur.reset board matches 163 run clone -104 163 1 0 163 -142 -103 163 28
-execute in airworld if score sur.reset board matches 164 run clone -104 164 1 0 164 -142 -103 164 28
-execute in airworld if score sur.reset board matches 165 run clone -104 165 1 0 165 -142 -103 165 28
-execute in airworld if score sur.reset board matches 166 run clone -104 166 1 0 166 -142 -103 166 28
-execute in airworld if score sur.reset board matches 167 run clone -104 167 1 0 167 -142 -103 167 28
-execute in airworld if score sur.reset board matches 168 run clone -104 168 1 0 168 -142 -103 168 28
-execute in airworld if score sur.reset board matches 169 run clone -104 169 1 0 169 -142 -103 169 28
-execute in airworld if score sur.reset board matches 170 run clone -104 170 1 0 170 -142 -103 170 28
-execute in airworld if score sur.reset board matches 171 run clone -104 171 1 0 171 -142 -103 171 28
-execute in airworld if score sur.reset board matches 172 run clone -104 172 1 0 172 -142 -103 172 28
-execute in airworld if score sur.reset board matches 173 run clone -104 173 1 0 173 -142 -103 173 28
-execute in airworld if score sur.reset board matches 174 run clone -104 174 1 0 174 -142 -103 174 28
-execute in airworld if score sur.reset board matches 175 run clone -104 175 1 0 175 -142 -103 175 28
-execute in airworld if score sur.reset board matches 176 run clone -104 176 1 0 176 -142 -103 176 28
-execute in airworld if score sur.reset board matches 177 run clone -104 177 1 0 177 -142 -103 177 28
-execute in airworld if score sur.reset board matches 178 run clone -104 178 1 0 178 -142 -103 178 28
-execute in airworld if score sur.reset board matches 179 run clone -104 179 1 0 179 -142 -103 179 28
-execute in airworld if score sur.reset board matches 180 run clone -104 180 1 0 180 -142 -103 180 28
+execute in airworld if score sur.reset board matches -64 run clone -104 -64 1 0 -64 -142 -103 -64 28 strict
+execute in airworld if score sur.reset board matches -63 run clone -104 -63 1 0 -63 -142 -103 -63 28 strict
+execute in airworld if score sur.reset board matches -62 run clone -104 -62 1 0 -62 -142 -103 -62 28 strict
+execute in airworld if score sur.reset board matches -61 run clone -104 -61 1 0 -61 -142 -103 -61 28 strict
+execute in airworld if score sur.reset board matches -60 run clone -104 -60 1 0 -60 -142 -103 -60 28 strict
+execute in airworld if score sur.reset board matches -59 run clone -104 -59 1 0 -59 -142 -103 -59 28 strict
+execute in airworld if score sur.reset board matches -58 run clone -104 -58 1 0 -58 -142 -103 -58 28 strict
+execute in airworld if score sur.reset board matches -57 run clone -104 -57 1 0 -57 -142 -103 -57 28 strict
+execute in airworld if score sur.reset board matches -56 run clone -104 -56 1 0 -56 -142 -103 -56 28 strict
+execute in airworld if score sur.reset board matches -55 run clone -104 -55 1 0 -55 -142 -103 -55 28 strict
+execute in airworld if score sur.reset board matches -54 run clone -104 -54 1 0 -54 -142 -103 -54 28 strict
+execute in airworld if score sur.reset board matches -53 run clone -104 -53 1 0 -53 -142 -103 -53 28 strict
+execute in airworld if score sur.reset board matches -52 run clone -104 -52 1 0 -52 -142 -103 -52 28 strict
+execute in airworld if score sur.reset board matches -51 run clone -104 -51 1 0 -51 -142 -103 -51 28 strict
+execute in airworld if score sur.reset board matches -50 run clone -104 -50 1 0 -50 -142 -103 -50 28 strict
+execute in airworld if score sur.reset board matches -49 run clone -104 -49 1 0 -49 -142 -103 -49 28 strict
+execute in airworld if score sur.reset board matches -48 run clone -104 -48 1 0 -48 -142 -103 -48 28 strict
+execute in airworld if score sur.reset board matches -47 run clone -104 -47 1 0 -47 -142 -103 -47 28 strict
+execute in airworld if score sur.reset board matches -46 run clone -104 -46 1 0 -46 -142 -103 -46 28 strict
+execute in airworld if score sur.reset board matches -45 run clone -104 -45 1 0 -45 -142 -103 -45 28 strict
+execute in airworld if score sur.reset board matches -44 run clone -104 -44 1 0 -44 -142 -103 -44 28 strict
+execute in airworld if score sur.reset board matches -43 run clone -104 -43 1 0 -43 -142 -103 -43 28 strict
+execute in airworld if score sur.reset board matches -42 run clone -104 -42 1 0 -42 -142 -103 -42 28 strict
+execute in airworld if score sur.reset board matches -41 run clone -104 -41 1 0 -41 -142 -103 -41 28 strict
+execute in airworld if score sur.reset board matches -40 run clone -104 -40 1 0 -40 -142 -103 -40 28 strict
+execute in airworld if score sur.reset board matches -39 run clone -104 -39 1 0 -39 -142 -103 -39 28 strict
+execute in airworld if score sur.reset board matches -38 run clone -104 -38 1 0 -38 -142 -103 -38 28 strict
+execute in airworld if score sur.reset board matches -37 run clone -104 -37 1 0 -37 -142 -103 -37 28 strict
+execute in airworld if score sur.reset board matches -36 run clone -104 -36 1 0 -36 -142 -103 -36 28 strict
+execute in airworld if score sur.reset board matches -35 run clone -104 -35 1 0 -35 -142 -103 -35 28 strict
+execute in airworld if score sur.reset board matches -34 run clone -104 -34 1 0 -34 -142 -103 -34 28 strict
+execute in airworld if score sur.reset board matches -33 run clone -104 -33 1 0 -33 -142 -103 -33 28 strict
+execute in airworld if score sur.reset board matches -32 run clone -104 -32 1 0 -32 -142 -103 -32 28 strict
+execute in airworld if score sur.reset board matches -31 run clone -104 -31 1 0 -31 -142 -103 -31 28 strict
+execute in airworld if score sur.reset board matches -30 run clone -104 -30 1 0 -30 -142 -103 -30 28 strict
+execute in airworld if score sur.reset board matches -29 run clone -104 -29 1 0 -29 -142 -103 -29 28 strict
+execute in airworld if score sur.reset board matches -28 run clone -104 -28 1 0 -28 -142 -103 -28 28 strict
+execute in airworld if score sur.reset board matches -27 run clone -104 -27 1 0 -27 -142 -103 -27 28 strict
+execute in airworld if score sur.reset board matches -26 run clone -104 -26 1 0 -26 -142 -103 -26 28 strict
+execute in airworld if score sur.reset board matches -25 run clone -104 -25 1 0 -25 -142 -103 -25 28 strict
+execute in airworld if score sur.reset board matches -24 run clone -104 -24 1 0 -24 -142 -103 -24 28 strict
+execute in airworld if score sur.reset board matches -23 run clone -104 -23 1 0 -23 -142 -103 -23 28 strict
+execute in airworld if score sur.reset board matches -22 run clone -104 -22 1 0 -22 -142 -103 -22 28 strict
+execute in airworld if score sur.reset board matches -21 run clone -104 -21 1 0 -21 -142 -103 -21 28 strict
+execute in airworld if score sur.reset board matches -20 run clone -104 -20 1 0 -20 -142 -103 -20 28 strict
+execute in airworld if score sur.reset board matches -19 run clone -104 -19 1 0 -19 -142 -103 -19 28 strict
+execute in airworld if score sur.reset board matches -18 run clone -104 -18 1 0 -18 -142 -103 -18 28 strict
+execute in airworld if score sur.reset board matches -17 run clone -104 -17 1 0 -17 -142 -103 -17 28 strict
+execute in airworld if score sur.reset board matches -16 run clone -104 -16 1 0 -16 -142 -103 -16 28 strict
+execute in airworld if score sur.reset board matches -15 run clone -104 -15 1 0 -15 -142 -103 -15 28 strict
+execute in airworld if score sur.reset board matches -14 run clone -104 -14 1 0 -14 -142 -103 -14 28 strict
+execute in airworld if score sur.reset board matches -13 run clone -104 -13 1 0 -13 -142 -103 -13 28 strict
+execute in airworld if score sur.reset board matches -12 run clone -104 -12 1 0 -12 -142 -103 -12 28 strict
+execute in airworld if score sur.reset board matches -11 run clone -104 -11 1 0 -11 -142 -103 -11 28 strict
+execute in airworld if score sur.reset board matches -10 run clone -104 -10 1 0 -10 -142 -103 -10 28 strict
+execute in airworld if score sur.reset board matches -9 run clone -104 -9 1 0 -9 -142 -103 -9 28 strict
+execute in airworld if score sur.reset board matches -8 run clone -104 -8 1 0 -8 -142 -103 -8 28 strict
+execute in airworld if score sur.reset board matches -7 run clone -104 -7 1 0 -7 -142 -103 -7 28 strict
+execute in airworld if score sur.reset board matches -6 run clone -104 -6 1 0 -6 -142 -103 -6 28 strict
+execute in airworld if score sur.reset board matches -5 run clone -104 -5 1 0 -5 -142 -103 -5 28 strict
+execute in airworld if score sur.reset board matches -4 run clone -104 -4 1 0 -4 -142 -103 -4 28 strict
+execute in airworld if score sur.reset board matches -3 run clone -104 -3 1 0 -3 -142 -103 -3 28 strict
+execute in airworld if score sur.reset board matches -2 run clone -104 -2 1 0 -2 -142 -103 -2 28 strict
+execute in airworld if score sur.reset board matches -1 run clone -104 -1 1 0 -1 -142 -103 -1 28 strict
+execute in airworld if score sur.reset board matches 0 run clone -104 0 1 0 0 -142 -103 0 28 strict
+execute in airworld if score sur.reset board matches 1 run clone -104 1 1 0 1 -142 -103 1 28 strict
+execute in airworld if score sur.reset board matches 2 run clone -104 2 1 0 2 -142 -103 2 28 strict
+execute in airworld if score sur.reset board matches 3 run clone -104 3 1 0 3 -142 -103 3 28 strict
+execute in airworld if score sur.reset board matches 4 run clone -104 4 1 0 4 -142 -103 4 28 strict
+execute in airworld if score sur.reset board matches 5 run clone -104 5 1 0 5 -142 -103 5 28 strict
+execute in airworld if score sur.reset board matches 6 run clone -104 6 1 0 6 -142 -103 6 28 strict
+execute in airworld if score sur.reset board matches 7 run clone -104 7 1 0 7 -142 -103 7 28 strict
+execute in airworld if score sur.reset board matches 8 run clone -104 8 1 0 8 -142 -103 8 28 strict
+execute in airworld if score sur.reset board matches 9 run clone -104 9 1 0 9 -142 -103 9 28 strict
+execute in airworld if score sur.reset board matches 10 run clone -104 10 1 0 10 -142 -103 10 28 strict
+execute in airworld if score sur.reset board matches 11 run clone -104 11 1 0 11 -142 -103 11 28 strict
+execute in airworld if score sur.reset board matches 12 run clone -104 12 1 0 12 -142 -103 12 28 strict
+execute in airworld if score sur.reset board matches 13 run clone -104 13 1 0 13 -142 -103 13 28 strict
+execute in airworld if score sur.reset board matches 14 run clone -104 14 1 0 14 -142 -103 14 28 strict
+execute in airworld if score sur.reset board matches 15 run clone -104 15 1 0 15 -142 -103 15 28 strict
+execute in airworld if score sur.reset board matches 16 run clone -104 16 1 0 16 -142 -103 16 28 strict
+execute in airworld if score sur.reset board matches 17 run clone -104 17 1 0 17 -142 -103 17 28 strict
+execute in airworld if score sur.reset board matches 18 run clone -104 18 1 0 18 -142 -103 18 28 strict
+execute in airworld if score sur.reset board matches 19 run clone -104 19 1 0 19 -142 -103 19 28 strict
+execute in airworld if score sur.reset board matches 20 run clone -104 20 1 0 20 -142 -103 20 28 strict
+execute in airworld if score sur.reset board matches 21 run clone -104 21 1 0 21 -142 -103 21 28 strict
+execute in airworld if score sur.reset board matches 22 run clone -104 22 1 0 22 -142 -103 22 28 strict
+execute in airworld if score sur.reset board matches 23 run clone -104 23 1 0 23 -142 -103 23 28 strict
+execute in airworld if score sur.reset board matches 24 run clone -104 24 1 0 24 -142 -103 24 28 strict
+execute in airworld if score sur.reset board matches 25 run clone -104 25 1 0 25 -142 -103 25 28 strict
+execute in airworld if score sur.reset board matches 26 run clone -104 26 1 0 26 -142 -103 26 28 strict
+execute in airworld if score sur.reset board matches 27 run clone -104 27 1 0 27 -142 -103 27 28 strict
+execute in airworld if score sur.reset board matches 28 run clone -104 28 1 0 28 -142 -103 28 28 strict
+execute in airworld if score sur.reset board matches 29 run clone -104 29 1 0 29 -142 -103 29 28 strict
+execute in airworld if score sur.reset board matches 30 run clone -104 30 1 0 30 -142 -103 30 28 strict
+execute in airworld if score sur.reset board matches 31 run clone -104 31 1 0 31 -142 -103 31 28 strict
+execute in airworld if score sur.reset board matches 32 run clone -104 32 1 0 32 -142 -103 32 28 strict
+execute in airworld if score sur.reset board matches 33 run clone -104 33 1 0 33 -142 -103 33 28 strict
+execute in airworld if score sur.reset board matches 34 run clone -104 34 1 0 34 -142 -103 34 28 strict
+execute in airworld if score sur.reset board matches 35 run clone -104 35 1 0 35 -142 -103 35 28 strict
+execute in airworld if score sur.reset board matches 36 run clone -104 36 1 0 36 -142 -103 36 28 strict
+execute in airworld if score sur.reset board matches 37 run clone -104 37 1 0 37 -142 -103 37 28 strict
+execute in airworld if score sur.reset board matches 38 run clone -104 38 1 0 38 -142 -103 38 28 strict
+execute in airworld if score sur.reset board matches 39 run clone -104 39 1 0 39 -142 -103 39 28 strict
+execute in airworld if score sur.reset board matches 40 run clone -104 40 1 0 40 -142 -103 40 28 strict
+execute in airworld if score sur.reset board matches 41 run clone -104 41 1 0 41 -142 -103 41 28 strict
+execute in airworld if score sur.reset board matches 42 run clone -104 42 1 0 42 -142 -103 42 28 strict
+execute in airworld if score sur.reset board matches 43 run clone -104 43 1 0 43 -142 -103 43 28 strict
+execute in airworld if score sur.reset board matches 44 run clone -104 44 1 0 44 -142 -103 44 28 strict
+execute in airworld if score sur.reset board matches 45 run clone -104 45 1 0 45 -142 -103 45 28 strict
+execute in airworld if score sur.reset board matches 46 run clone -104 46 1 0 46 -142 -103 46 28 strict
+execute in airworld if score sur.reset board matches 47 run clone -104 47 1 0 47 -142 -103 47 28 strict
+execute in airworld if score sur.reset board matches 48 run clone -104 48 1 0 48 -142 -103 48 28 strict
+execute in airworld if score sur.reset board matches 49 run clone -104 49 1 0 49 -142 -103 49 28 strict
+execute in airworld if score sur.reset board matches 50 run clone -104 50 1 0 50 -142 -103 50 28 strict
+execute in airworld if score sur.reset board matches 51 run clone -104 51 1 0 51 -142 -103 51 28 strict
+execute in airworld if score sur.reset board matches 52 run clone -104 52 1 0 52 -142 -103 52 28 strict
+execute in airworld if score sur.reset board matches 53 run clone -104 53 1 0 53 -142 -103 53 28 strict
+execute in airworld if score sur.reset board matches 54 run clone -104 54 1 0 54 -142 -103 54 28 strict
+execute in airworld if score sur.reset board matches 55 run clone -104 55 1 0 55 -142 -103 55 28 strict
+execute in airworld if score sur.reset board matches 56 run clone -104 56 1 0 56 -142 -103 56 28 strict
+execute in airworld if score sur.reset board matches 57 run clone -104 57 1 0 57 -142 -103 57 28 strict
+execute in airworld if score sur.reset board matches 58 run clone -104 58 1 0 58 -142 -103 58 28 strict
+execute in airworld if score sur.reset board matches 59 run clone -104 59 1 0 59 -142 -103 59 28 strict
+execute in airworld if score sur.reset board matches 60 run clone -104 60 1 0 60 -142 -103 60 28 strict
+execute in airworld if score sur.reset board matches 61 run clone -104 61 1 0 61 -142 -103 61 28 strict
+execute in airworld if score sur.reset board matches 62 run clone -104 62 1 0 62 -142 -103 62 28 strict
+execute in airworld if score sur.reset board matches 63 run clone -104 63 1 0 63 -142 -103 63 28 strict
+execute in airworld if score sur.reset board matches 64 run clone -104 64 1 0 64 -142 -103 64 28 strict
+execute in airworld if score sur.reset board matches 65 run clone -104 65 1 0 65 -142 -103 65 28 strict
+execute in airworld if score sur.reset board matches 66 run clone -104 66 1 0 66 -142 -103 66 28 strict
+execute in airworld if score sur.reset board matches 67 run clone -104 67 1 0 67 -142 -103 67 28 strict
+execute in airworld if score sur.reset board matches 68 run clone -104 68 1 0 68 -142 -103 68 28 strict
+execute in airworld if score sur.reset board matches 69 run clone -104 69 1 0 69 -142 -103 69 28 strict
+execute in airworld if score sur.reset board matches 70 run clone -104 70 1 0 70 -142 -103 70 28 strict
+execute in airworld if score sur.reset board matches 71 run clone -104 71 1 0 71 -142 -103 71 28 strict
+execute in airworld if score sur.reset board matches 72 run clone -104 72 1 0 72 -142 -103 72 28 strict
+execute in airworld if score sur.reset board matches 73 run clone -104 73 1 0 73 -142 -103 73 28 strict
+execute in airworld if score sur.reset board matches 74 run clone -104 74 1 0 74 -142 -103 74 28 strict
+execute in airworld if score sur.reset board matches 75 run clone -104 75 1 0 75 -142 -103 75 28 strict
+execute in airworld if score sur.reset board matches 76 run clone -104 76 1 0 76 -142 -103 76 28 strict
+execute in airworld if score sur.reset board matches 77 run clone -104 77 1 0 77 -142 -103 77 28 strict
+execute in airworld if score sur.reset board matches 78 run clone -104 78 1 0 78 -142 -103 78 28 strict
+execute in airworld if score sur.reset board matches 79 run clone -104 79 1 0 79 -142 -103 79 28 strict
+execute in airworld if score sur.reset board matches 80 run clone -104 80 1 0 80 -142 -103 80 28 strict
+execute in airworld if score sur.reset board matches 81 run clone -104 81 1 0 81 -142 -103 81 28 strict
+execute in airworld if score sur.reset board matches 82 run clone -104 82 1 0 82 -142 -103 82 28 strict
+execute in airworld if score sur.reset board matches 83 run clone -104 83 1 0 83 -142 -103 83 28 strict
+execute in airworld if score sur.reset board matches 84 run clone -104 84 1 0 84 -142 -103 84 28 strict
+execute in airworld if score sur.reset board matches 85 run clone -104 85 1 0 85 -142 -103 85 28 strict
+execute in airworld if score sur.reset board matches 86 run clone -104 86 1 0 86 -142 -103 86 28 strict
+execute in airworld if score sur.reset board matches 87 run clone -104 87 1 0 87 -142 -103 87 28 strict
+execute in airworld if score sur.reset board matches 88 run clone -104 88 1 0 88 -142 -103 88 28 strict
+execute in airworld if score sur.reset board matches 89 run clone -104 89 1 0 89 -142 -103 89 28 strict
+execute in airworld if score sur.reset board matches 90 run clone -104 90 1 0 90 -142 -103 90 28 strict
+execute in airworld if score sur.reset board matches 91 run clone -104 91 1 0 91 -142 -103 91 28 strict
+execute in airworld if score sur.reset board matches 92 run clone -104 92 1 0 92 -142 -103 92 28 strict
+execute in airworld if score sur.reset board matches 93 run clone -104 93 1 0 93 -142 -103 93 28 strict
+execute in airworld if score sur.reset board matches 94 run clone -104 94 1 0 94 -142 -103 94 28 strict
+execute in airworld if score sur.reset board matches 95 run clone -104 95 1 0 95 -142 -103 95 28 strict
+execute in airworld if score sur.reset board matches 96 run clone -104 96 1 0 96 -142 -103 96 28 strict
+execute in airworld if score sur.reset board matches 97 run clone -104 97 1 0 97 -142 -103 97 28 strict
+execute in airworld if score sur.reset board matches 98 run clone -104 98 1 0 98 -142 -103 98 28 strict
+execute in airworld if score sur.reset board matches 99 run clone -104 99 1 0 99 -142 -103 99 28 strict
+execute in airworld if score sur.reset board matches 100 run clone -104 100 1 0 100 -142 -103 100 28 strict
+execute in airworld if score sur.reset board matches 101 run clone -104 101 1 0 101 -142 -103 101 28 strict
+execute in airworld if score sur.reset board matches 102 run clone -104 102 1 0 102 -142 -103 102 28 strict
+execute in airworld if score sur.reset board matches 103 run clone -104 103 1 0 103 -142 -103 103 28 strict
+execute in airworld if score sur.reset board matches 104 run clone -104 104 1 0 104 -142 -103 104 28 strict
+execute in airworld if score sur.reset board matches 105 run clone -104 105 1 0 105 -142 -103 105 28 strict
+execute in airworld if score sur.reset board matches 106 run clone -104 106 1 0 106 -142 -103 106 28 strict
+execute in airworld if score sur.reset board matches 107 run clone -104 107 1 0 107 -142 -103 107 28 strict
+execute in airworld if score sur.reset board matches 108 run clone -104 108 1 0 108 -142 -103 108 28 strict
+execute in airworld if score sur.reset board matches 109 run clone -104 109 1 0 109 -142 -103 109 28 strict
+execute in airworld if score sur.reset board matches 110 run clone -104 110 1 0 110 -142 -103 110 28 strict
+execute in airworld if score sur.reset board matches 111 run clone -104 111 1 0 111 -142 -103 111 28 strict
+execute in airworld if score sur.reset board matches 112 run clone -104 112 1 0 112 -142 -103 112 28 strict
+execute in airworld if score sur.reset board matches 113 run clone -104 113 1 0 113 -142 -103 113 28 strict
+execute in airworld if score sur.reset board matches 114 run clone -104 114 1 0 114 -142 -103 114 28 strict
+execute in airworld if score sur.reset board matches 115 run clone -104 115 1 0 115 -142 -103 115 28 strict
+execute in airworld if score sur.reset board matches 116 run clone -104 116 1 0 116 -142 -103 116 28 strict
+execute in airworld if score sur.reset board matches 117 run clone -104 117 1 0 117 -142 -103 117 28 strict
+execute in airworld if score sur.reset board matches 118 run clone -104 118 1 0 118 -142 -103 118 28 strict
+execute in airworld if score sur.reset board matches 119 run clone -104 119 1 0 119 -142 -103 119 28 strict
+execute in airworld if score sur.reset board matches 120 run clone -104 120 1 0 120 -142 -103 120 28 strict
+execute in airworld if score sur.reset board matches 121 run clone -104 121 1 0 121 -142 -103 121 28 strict
+execute in airworld if score sur.reset board matches 122 run clone -104 122 1 0 122 -142 -103 122 28 strict
+execute in airworld if score sur.reset board matches 123 run clone -104 123 1 0 123 -142 -103 123 28 strict
+execute in airworld if score sur.reset board matches 124 run clone -104 124 1 0 124 -142 -103 124 28 strict
+execute in airworld if score sur.reset board matches 125 run clone -104 125 1 0 125 -142 -103 125 28 strict
+execute in airworld if score sur.reset board matches 126 run clone -104 126 1 0 126 -142 -103 126 28 strict
+execute in airworld if score sur.reset board matches 127 run clone -104 127 1 0 127 -142 -103 127 28 strict
+execute in airworld if score sur.reset board matches 128 run clone -104 128 1 0 128 -142 -103 128 28 strict
+execute in airworld if score sur.reset board matches 129 run clone -104 129 1 0 129 -142 -103 129 28 strict
+execute in airworld if score sur.reset board matches 130 run clone -104 130 1 0 130 -142 -103 130 28 strict
+execute in airworld if score sur.reset board matches 131 run clone -104 131 1 0 131 -142 -103 131 28 strict
+execute in airworld if score sur.reset board matches 132 run clone -104 132 1 0 132 -142 -103 132 28 strict
+execute in airworld if score sur.reset board matches 133 run clone -104 133 1 0 133 -142 -103 133 28 strict
+execute in airworld if score sur.reset board matches 134 run clone -104 134 1 0 134 -142 -103 134 28 strict
+execute in airworld if score sur.reset board matches 135 run clone -104 135 1 0 135 -142 -103 135 28 strict
+execute in airworld if score sur.reset board matches 136 run clone -104 136 1 0 136 -142 -103 136 28 strict
+execute in airworld if score sur.reset board matches 137 run clone -104 137 1 0 137 -142 -103 137 28 strict
+execute in airworld if score sur.reset board matches 138 run clone -104 138 1 0 138 -142 -103 138 28 strict
+execute in airworld if score sur.reset board matches 139 run clone -104 139 1 0 139 -142 -103 139 28 strict
+execute in airworld if score sur.reset board matches 140 run clone -104 140 1 0 140 -142 -103 140 28 strict
+execute in airworld if score sur.reset board matches 141 run clone -104 141 1 0 141 -142 -103 141 28 strict
+execute in airworld if score sur.reset board matches 142 run clone -104 142 1 0 142 -142 -103 142 28 strict
+execute in airworld if score sur.reset board matches 143 run clone -104 143 1 0 143 -142 -103 143 28 strict
+execute in airworld if score sur.reset board matches 144 run clone -104 144 1 0 144 -142 -103 144 28 strict
+execute in airworld if score sur.reset board matches 145 run clone -104 145 1 0 145 -142 -103 145 28 strict
+execute in airworld if score sur.reset board matches 146 run clone -104 146 1 0 146 -142 -103 146 28 strict
+execute in airworld if score sur.reset board matches 147 run clone -104 147 1 0 147 -142 -103 147 28 strict
+execute in airworld if score sur.reset board matches 148 run clone -104 148 1 0 148 -142 -103 148 28 strict
+execute in airworld if score sur.reset board matches 149 run clone -104 149 1 0 149 -142 -103 149 28 strict
+execute in airworld if score sur.reset board matches 150 run clone -104 150 1 0 150 -142 -103 150 28 strict
+execute in airworld if score sur.reset board matches 151 run clone -104 151 1 0 151 -142 -103 151 28 strict
+execute in airworld if score sur.reset board matches 152 run clone -104 152 1 0 152 -142 -103 152 28 strict
+execute in airworld if score sur.reset board matches 153 run clone -104 153 1 0 153 -142 -103 153 28 strict
+execute in airworld if score sur.reset board matches 154 run clone -104 154 1 0 154 -142 -103 154 28 strict
+execute in airworld if score sur.reset board matches 155 run clone -104 155 1 0 155 -142 -103 155 28 strict
+execute in airworld if score sur.reset board matches 156 run clone -104 156 1 0 156 -142 -103 156 28 strict
+execute in airworld if score sur.reset board matches 157 run clone -104 157 1 0 157 -142 -103 157 28 strict
+execute in airworld if score sur.reset board matches 158 run clone -104 158 1 0 158 -142 -103 158 28 strict
+execute in airworld if score sur.reset board matches 159 run clone -104 159 1 0 159 -142 -103 159 28 strict
+execute in airworld if score sur.reset board matches 160 run clone -104 160 1 0 160 -142 -103 160 28 strict
+execute in airworld if score sur.reset board matches 161 run clone -104 161 1 0 161 -142 -103 161 28 strict
+execute in airworld if score sur.reset board matches 162 run clone -104 162 1 0 162 -142 -103 162 28 strict
+execute in airworld if score sur.reset board matches 163 run clone -104 163 1 0 163 -142 -103 163 28 strict
+execute in airworld if score sur.reset board matches 164 run clone -104 164 1 0 164 -142 -103 164 28 strict
+execute in airworld if score sur.reset board matches 165 run clone -104 165 1 0 165 -142 -103 165 28 strict
+execute in airworld if score sur.reset board matches 166 run clone -104 166 1 0 166 -142 -103 166 28 strict
+execute in airworld if score sur.reset board matches 167 run clone -104 167 1 0 167 -142 -103 167 28 strict
+execute in airworld if score sur.reset board matches 168 run clone -104 168 1 0 168 -142 -103 168 28 strict
+execute in airworld if score sur.reset board matches 169 run clone -104 169 1 0 169 -142 -103 169 28 strict
+execute in airworld if score sur.reset board matches 170 run clone -104 170 1 0 170 -142 -103 170 28 strict
+execute in airworld if score sur.reset board matches 171 run clone -104 171 1 0 171 -142 -103 171 28 strict
+execute in airworld if score sur.reset board matches 172 run clone -104 172 1 0 172 -142 -103 172 28 strict
+execute in airworld if score sur.reset board matches 173 run clone -104 173 1 0 173 -142 -103 173 28 strict
+execute in airworld if score sur.reset board matches 174 run clone -104 174 1 0 174 -142 -103 174 28 strict
+execute in airworld if score sur.reset board matches 175 run clone -104 175 1 0 175 -142 -103 175 28 strict
+execute in airworld if score sur.reset board matches 176 run clone -104 176 1 0 176 -142 -103 176 28 strict
+execute in airworld if score sur.reset board matches 177 run clone -104 177 1 0 177 -142 -103 177 28 strict
+execute in airworld if score sur.reset board matches 178 run clone -104 178 1 0 178 -142 -103 178 28 strict
+execute in airworld if score sur.reset board matches 179 run clone -104 179 1 0 179 -142 -103 179 28 strict
+execute in airworld if score sur.reset board matches 180 run clone -104 180 1 0 180 -142 -103 180 28 strict
 scoreboard players add sur.reset board 1
 title @a[team=wait.sur] title ["\u00a7e正在重置地图中..."]
 title @a[team=wait.sur] subtitle ["\u00a7b进度：",{"score":{"objective": "board","name": "sur.reset"},"color":"green"},"\u00a7b / \u00a7c180"]

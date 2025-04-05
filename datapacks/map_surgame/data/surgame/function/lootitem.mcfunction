@@ -8,7 +8,7 @@ advancement revoke @s only surgame:player_was_killed
 team leave @s
 tag @s add sur.sel
 forceload add -46 3 -46 3
-data modify block -46 -20 3 front_text.messages[0] set value '[{"selector":"@a[tag=sur.sel]","color":"aqua"},"\\u00a7a 的背包"]'
+data modify block -46 -20 3 front_text.messages[0] set value [{"selector":"@a[tag=sur.sel]","color":"aqua"},"\u00a7a 的背包"]
 forceload remove -46 3 -46 3
 team join play.sur @s
 summon item ~ ~ ~ {Item:{id:"minecraft:bundle",count:1,components:{"minecraft:custom_data":{surItem:1b}}},Tags:["sur.loot.new"],CustomNameVisible:1b}

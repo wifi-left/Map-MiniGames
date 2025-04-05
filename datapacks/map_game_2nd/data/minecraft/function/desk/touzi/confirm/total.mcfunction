@@ -8,8 +8,8 @@
 # scoreboard players set touzi.tmp.type board 0
 execute if score touzi.tmp.type board matches -1 run return 0
 scoreboard players set tmp.type board 0
-execute store result score tmp.type board run data get entity @e[type=armor_stand,tag=desk.touzi.place,limit=1,sort=nearest] HandItems[0].components."minecraft:custom_data".touzi
-execute store result score tmp.number board run data get entity @e[type=armor_stand,tag=desk.touzi.place,limit=1,sort=nearest] HandItems[0].components."minecraft:custom_data".number
+execute store result score tmp.type board run data get entity @e[type=armor_stand,tag=desk.touzi.place,limit=1,sort=nearest] equipment.mainhand.components."minecraft:custom_data".touzi
+execute store result score tmp.number board run data get entity @e[type=armor_stand,tag=desk.touzi.place,limit=1,sort=nearest] equipment.mainhand.components."minecraft:custom_data".number
 
 # 角色骰子
 ## attack

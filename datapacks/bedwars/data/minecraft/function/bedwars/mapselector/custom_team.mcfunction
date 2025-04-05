@@ -14,5 +14,5 @@ scoreboard players add bw.custom_team board 1
 
 execute if score bw.custom_team board matches 2.. run scoreboard players set bw.custom_team board 0
 
-execute if score bw.custom_team board matches 0 run data modify block -305 76 218 front_text.messages[2] set value '"\\u00a7a启用 Enabled"'
-execute if score bw.custom_team board matches 1 run data modify block -305 76 218 front_text.messages[2] set value '"\\u00a7c禁用 Disabled"'
+execute if score bw.custom_team board matches 0 run data modify block -305 76 218 front_text.messages[2] set value "\u00a7a启用 Enabled"
+execute if score bw.custom_team board matches 1 run data modify block -305 76 218 front_text.messages[2] set value "\u00a7c禁用 Disabled"

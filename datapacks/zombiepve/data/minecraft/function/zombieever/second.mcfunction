@@ -7,7 +7,7 @@ execute as @e[tag=zombie.villagers] at @s run function zombieever/villagers/disp
 execute as @e[tag=zombie.villager] at @s run kill @e[type=zombie_villager,distance=0..1]
 
 ## WARNING: The transformation may cause problem. You might need to modify it by yourself.
-execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{coin:1b}}}}] at @s run data merge entity @s {CustomName:'"\\u00a7e\\u00a7lZombie Coin"',CustomNameVisible:1b}
+execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{coin:1b}}}}] at @s run data merge entity @s {CustomName:"\u00a7e\u00a7lZombie Coin",CustomNameVisible:1b}
 
 tag @e[type=slime] add pve.zombie
 tag @e[type=magma_cube] add pve.zombie

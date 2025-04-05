@@ -5,7 +5,7 @@
 playsound minecraft:entity.sheep.ambient block @a ~ ~ ~ 5 0.5 1
 scoreboard players remove @s board 1
 scoreboard players operation tmp board = @s board
-data modify block -307 74 207 front_text.messages[2] set value '["\\u00a7C\\u00a7lTNT SHEEP \\u00a77- ",{"score":{"objective":"board","name":"tmp"},"color":"aqua"},"\\u00a7e 秒后爆炸"]'
+data modify block -307 74 207 front_text.messages[2] set value ["\u00a7c\u00a7lTNT SHEEP \u00a77- ",{"score":{"objective":"board","name":"tmp"},"color":"aqua"},"\u00a7e 秒后爆炸"]
 
 ## WARNING: The transformation may cause problem. You might need to modify it by yourself.
 data modify entity @s CustomName set from block -307 74 207 front_text.messages[2]

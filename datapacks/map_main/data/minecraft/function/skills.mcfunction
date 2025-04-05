@@ -43,7 +43,7 @@ execute as @s[tag=skill.tp] run function minecraft:job_pvp/random_tp
 # Creeper
 execute as @s[tag=skill.creeper] run execute as @s at @s positioned 0.0 0.0 0.0 run summon marker ^ ^ ^2 {Tags:["f.tmp"]}
 # execute if entity @s[team=job_pvp] anchored eyes run summon fireball ^ ^ ^1 {Tags:["f.new"],ExplosionPower:1}
-execute as @s[tag=skill.creeper] run execute anchored eyes run summon minecraft:spectral_arrow ^ ^ ^1 {Glowing:1b,damage:1d,pickup:0b,Passengers:[{id:"minecraft:creeper",CustomName:'["CREEPER"]',CustomNameVisible:1b,Invulnerable:1b,Silent:1b,PersistenceRequired:1b,Glowing:1b,powered:true,ignited:true,ExplosionRadius:2b,Fuse:30s}],Tags:["f.new"]}
+execute as @s[tag=skill.creeper] run execute anchored eyes run summon minecraft:spectral_arrow ^ ^ ^1 {Glowing:1b,damage:1d,pickup:0b,Passengers:[{id:"minecraft:creeper",CustomName:["CREEPER"],CustomNameVisible:1b,Invulnerable:1b,Silent:1b,PersistenceRequired:1b,Glowing:1b,powered:true,ignited:true,ExplosionRadius:2b,Fuse:30s}],Tags:["f.new"]}
 
 ## WARNING: The transformation may cause problem. You might need to modify it by yourself.
 execute as @s[tag=skill.creeper] run execute as @e[tag=f.new] run data modify entity @s Owner set from entity @p[tag=skill.creeper] UUID

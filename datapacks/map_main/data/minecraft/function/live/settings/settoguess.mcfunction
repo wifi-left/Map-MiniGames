@@ -11,7 +11,7 @@ execute if score tmp.canset board matches 0 run tellraw @s ["§c游戏仅管理�
 execute if score tmp.canset board matches 0 run playsound block.anvil.land player @s ~ ~ ~ 1 1 0
 execute if score tmp.canset board matches 0 run return 0
 
-data modify block 36 8 0 front_text.messages[1] set value [{"text":"Normal Mode","color":"aqua","clickEvent":{"action":"run_command","value":"/function minecraft:live/settings/settonormal"}}]
+data modify block 36 8 0 front_text.messages[1] set value [{"text":"Normal Mode","color":"aqua","click_event":{"action":"run_command","command":"/function minecraft:live/settings/settonormal"}}]
 data modify block 36 8 0 front_text.messages[2] set value [{"text":"\u00a7a[\u00a76Guess Killer\u00a7a]","color":"gold"}]
 
 scoreboard players set live.set.mode live.all 1

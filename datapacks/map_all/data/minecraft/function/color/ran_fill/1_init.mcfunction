@@ -2363,6 +2363,6 @@ execute positioned -5 17 112 if score color.ran.blockwidth board matches 1 run f
 
 summon marker ~ ~ ~ {Tags:["color.tmp"]}
 spreadplayers 13.00 95.00 0 20 under 20 false @e[tag=color.tmp]
-execute as @e[tag=color.tmp] at @s run clone ~ ~-1 ~ ~ ~-1 ~ -52 35 64
+execute as @e[tag=color.tmp] at @s run clone ~ ~-1 ~ ~ ~-1 ~ -52 35 64 strict
 kill @e[tag=color.tmp]
 

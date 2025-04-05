@@ -8,6 +8,6 @@ tellraw @a[team=play.zombie] ["§b幻术师：§f已经好多年没有冒险者�
 schedule function minecraft:zombieever/talks/stronghold_boss/2 4s append
 
 ## WARNING: The transformation may cause problem. You might need to modify it by yourself.
-data merge entity @e[tag=pve.title,limit=1] {CustomName:'"\\u00a7c地牢BOSS战"'}
+data merge entity @e[tag=pve.title,limit=1] {CustomName:"\u00a7c地牢BOSS战"}
 
 

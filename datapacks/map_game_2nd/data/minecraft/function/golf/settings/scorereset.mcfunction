@@ -12,5 +12,5 @@ execute if score tmp.canset board matches 0 run return 0
 playsound ui.button.click player @s ~ ~ ~ 1 1 1
 scoreboard players add golf.set.resetscore state 1
 execute if score golf.set.resetscore state matches 3 run scoreboard players set golf.set.resetscore state 1
-execute if score golf.set.resetscore state matches 1 run data modify block ~ ~ ~ front_text.messages[2] set value '"\\u00a7e当前状态：\\u00a7a启用"'
-execute if score golf.set.resetscore state matches 2 run data modify block ~ ~ ~ front_text.messages[2] set value '"\\u00a7e当前状态：\\u00a7c禁用"'
+execute if score golf.set.resetscore state matches 1 run data modify block ~ ~ ~ front_text.messages[2] set value "\u00a7e当前状态：\u00a7a启用"
+execute if score golf.set.resetscore state matches 2 run data modify block ~ ~ ~ front_text.messages[2] set value "\u00a7e当前状态：\u00a7c禁用"

@@ -10,7 +10,7 @@ execute if score desk.time board matches 1.. run title @a[team=deskgame,tag=touz
 
 
 ## WARNING: The transformation may cause problem. You might need to modify it by yourself.
-data merge block -19 4 71 {front_text:{messages:['["\\u00a79队伍A\\u00a78 | \\u00a77金币 ",{"score":{"objective":"board","name":"touzi.money.a"},"color":"yellow"},"\\u00a76℗"]','["\\u00a74队伍B \\u00a78| \\u00a77金币 ",{"score":{"objective":"board","name":"touzi.money.b"},"color":"yellow"},"\\u00a76℗"]','["\\u00a79队伍A \\u00a78| \\u00a77生命 ",{"score":{"objective":"board","name":"touzi.health.a"},"color":"red"},"\\u00a7c♥"]','["\\u00a74队伍B \\u00a78| \\u00a77生命 ",{"score":{"objective":"board","name":"touzi.health.b"},"color":"red"},"\\u00a7c♥"]']}}
+data merge block -19 4 71 {front_text:{messages:[["\u00a79队伍A\u00a78 | \u00a77金币 ",{"score":{"objective":"board","name":"touzi.money.a"},"color":"yellow"},"\u00a76℗"],["\u00a74队伍B \u00a78| \u00a77金币 ",{"score":{"objective":"board","name":"touzi.money.b"},"color":"yellow"},"\u00a76℗"],["\u00a79队伍A \u00a78| \u00a77生命 ",{"score":{"objective":"board","name":"touzi.health.a"},"color":"red"},"\u00a7c♥"],["\u00a74队伍B \u00a78| \u00a77生命 ",{"score":{"objective":"board","name":"touzi.health.b"},"color":"red"},"\u00a7c♥"]]}}
 
 
 ## WARNING: The transformation may cause problem. You might need to modify it by yourself.

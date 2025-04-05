@@ -14,7 +14,6 @@ tellraw @s[tag=GOABLE.SPEC] ["\n§7  你已开启§b全局旁观者模式§7。\
 execute as @s[tag=GOABLE.SPEC] at @s run gamemode spectator
 
 execute if score desk.state state matches 1.. run function minecraft:desk/spec
-# summon minecraft:text_display 39 8 43 {alignment:"center",billboard:"fixed",text:'[{"text":"桌游大厅","color":"#0099CC","bold": true},"\\n\\u00a77前方前往"]'}
 clear @s
 effect clear @s
 

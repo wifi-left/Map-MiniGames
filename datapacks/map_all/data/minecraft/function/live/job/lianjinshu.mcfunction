@@ -12,12 +12,12 @@ item replace entity @s armor.head with minecraft:leather_helmet[dyed_color=14857
 item replace entity @s armor.feet with minecraft:leather_boots[dyed_color=3737721,unbreakable={},enchantments={"minecraft:feather_falling":1}]
 item replace entity @s armor.legs with minecraft:leather_leggings[dyed_color=15520669,unbreakable={},enchantments={"minecraft:fire_protection":1}]
 
-# '"\\u00a7a累的时候来一瓶"',
-# '"\\u00a7b头脑清醒，身体健壮"',
-# '"\\u00a7c\\u00a7l哈尔克拉特制营养酒"',
-# '"\\u00a7d克服劳累的工作吧！"',
-# '"\\u00a7e（喝下后）"',
-# '"\\u00a7f啊！ 充满能量！"'
+# "\u00a7a累的时候来一瓶",
+# "\u00a7b头脑清醒，身体健壮",
+# "\u00a7c\u00a7l哈尔克拉特制营养酒",
+# "\u00a7d克服劳累的工作吧！",
+# "\u00a7e（喝下后）",
+# "\u00a7f啊！ 充满能量！"
 
 # item replace entity @s container.1 with potion{C}
 item replace entity @s container.0 with minecraft:iron_sword[tooltip_display={hidden_components:[unbreakable,attribute_modifiers]},unbreakable={},custom_name=["§f§l小刀"],lore=[["\u00a7b默认伤害：§c5 ♥"]],attribute_modifiers=[{type:"attack_damage",slot:mainhand,id:"uuid_4894794278636495",amount:5d,operation:"add_value"},{type:"attack_speed",slot:"mainhand",id:"uuid_1145514511455145",amount:-2.6,operation:"add_value"}]] 1

@@ -7,7 +7,7 @@
 advancement revoke @s only hunger/player_was_killed
 team leave @s
 tag @s add hunger.sel
-data modify block 133 -40 86 front_text.messages[0] set value '[{"selector":"@a[tag=hunger.sel]","color":"aqua"},"\\u00a7a 的背包"]'
+data modify block 133 -40 86 front_text.messages[0] set value [{"selector":"@a[tag=hunger.sel]","color":"aqua"},"\u00a7a 的背包"]
 team join hunger @s
 summon item ~ ~ ~ {Item:{id:"minecraft:bundle",count:1,components:{"minecraft:custom_data":{hungerItem:1b}}},Tags:["hunger.loot.new"],CustomNameVisible:1b}
 

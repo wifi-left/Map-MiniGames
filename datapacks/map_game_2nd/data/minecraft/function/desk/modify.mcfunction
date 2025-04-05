@@ -16,7 +16,7 @@ execute if score desk.state state matches 1.. run tellraw @s ["§c游戏开始�
 execute if score desk.type board matches 3.. run scoreboard players set desk.type board 1
 
 
-execute if score desk.type board matches ..1 run data modify block ~ ~ ~ front_text.messages[1] set value '"\\u00a7a\\u00a7l[骰子游戏]"'
+execute if score desk.type board matches ..1 run data modify block ~ ~ ~ front_text.messages[1] set value "\u00a7a\u00a7l[骰子游戏]"
 # 还没做呢
-execute if score desk.type board matches 2 run data modify block ~ ~ ~ front_text.messages[1] set value '"\\u00a7b\\u00a7l[商贾传奇]"'
+execute if score desk.type board matches 2 run data modify block ~ ~ ~ front_text.messages[1] set value "\u00a7b\u00a7l[商贾传奇]"
 

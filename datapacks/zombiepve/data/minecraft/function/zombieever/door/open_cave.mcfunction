@@ -14,7 +14,7 @@ playsound minecraft:block.chest.open player @a[team=play.zombie] ~ ~ ~ 1 0.5 1
 
 
 ## WARNING: The transformation may cause problem. You might need to modify it by yourself.
-data merge entity @e[tag=pve.title,limit=1] {CustomName:'"\\u00a7b进入地牢"'}
+data merge entity @e[tag=pve.title,limit=1] {CustomName:"\u00a7b进入地牢"}
 bossbar set zombie:zombiecount name ["\u00a7b任务：",{"selector":"@e[tag=pve.title,type=marker,limit=1]","color":"yellow"}]
 
 

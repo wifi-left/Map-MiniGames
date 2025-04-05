@@ -13,7 +13,7 @@ execute if score tmp.canset board matches 0 run return 0
 scoreboard players add sw.map state 1
 execute if score sw.map state matches 2.. run scoreboard players set sw.map state 1
 
-execute if score sw.map state matches 1 run data modify block ~ ~ ~ front_text.messages[2] set value '"\\u00a7e荒芜之地"'
+execute if score sw.map state matches 1 run data modify block ~ ~ ~ front_text.messages[2] set value "\u00a7e荒芜之地"
 
 playsound minecraft:ui.button.click player @s
 

@@ -15,9 +15,7 @@ execute unless score zombie.state state matches 1.. run scoreboard players add z
 execute if score zombie.state state matches 1.. run tellraw @s ["§c游戏已经开始，当前无法修改。"]
 execute if score zombie.map board matches 5.. run scoreboard players set zombie.map board 1
 execute if score zombie.map board matches 2.. run scoreboard players set zombie.map board 1
-execute if score zombie.map board matches ..1 run data modify block 347 76 22 front_text.messages[1] set value '"\\u00a7a[神的召唤]"'
-# execute if score chest.type board matches 2 run data modify block 347 76 22 front_text.messages[(2-1)] set value '"\\u00a7b\\u00a7l[逃离神庙]"'}
-execute if score zombie.map board matches 2 run data modify block 347 76 22 front_text.messages[1] set value '"\\u00a7e[小岛奇遇]"'
+execute if score zombie.map board matches ..1 run data modify block 347 76 22 front_text.messages[1] set value "\u00a7a[神的召唤]"
+execute if score zombie.map board matches 2 run data modify block 347 76 22 front_text.messages[1] set value "\u00a7e[小岛奇遇]"
 
-# execute if score chest.type board matches 4 run data modify block 347 76 22 front_text.messages[(2-1)] set value '"\\u00a7d\\u00a7l[五子棋]"'}
 

@@ -12,5 +12,5 @@ execute if score tmp.canset board matches 0 run return 0
 playsound ui.button.click player @s ~ ~ ~ 1 1 1
 scoreboard players add golf.map state 1
 execute if score golf.map state matches 3 run scoreboard players set golf.map state 1
-execute if score golf.map state matches 1 run data modify block ~ ~ ~ front_text.messages[2] set value '"\\u00a7a[#1 地图乱作]"'
-execute if score golf.map state matches 2 run data modify block ~ ~ ~ front_text.messages[2] set value '"\\u00a7e[#2 地狱风]"'
+execute if score golf.map state matches 1 run data modify block ~ ~ ~ front_text.messages[2] set value "\u00a7a[#1 地图乱作]"
+execute if score golf.map state matches 2 run data modify block ~ ~ ~ front_text.messages[2] set value "\u00a7e[#2 地狱风]"

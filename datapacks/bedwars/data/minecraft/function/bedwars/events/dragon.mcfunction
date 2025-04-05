@@ -20,10 +20,10 @@ scoreboard players display name event bw.info ["\u00a7r即将：游戏结束"]
 # tp @s[team=bw.blue] -303 30 288 -180 0
 # tp @s[team=bw.green] -225 30 208 90 0
 # tp @s[team=bw.red] -305 30 130 0 0
-execute if score bw.yellow state matches 1.. run summon wither -303 60 210 {Team:"bw.yellow",Tags:["bw.entity"],CustomName:'"凋灵"',PersistenceRequired:1b}
-execute if score bw.red state matches 1.. run summon wither -303 60 210 {Team:"bw.red",Tags:["bw.entity"],CustomName:'"凋灵"',PersistenceRequired:1b}
-execute if score bw.blue state matches 1.. run summon wither -303 60 210 {Team:"bw.blue",Tags:["bw.entity"],CustomName:'"凋灵"',PersistenceRequired:1b}
-execute if score bw.green state matches 1.. run summon wither -303 60 210 {Team:"bw.green",Tags:["bw.entity"],CustomName:'"凋灵"',PersistenceRequired:1b}
+execute if score bw.yellow state matches 1.. run summon wither -303 60 210 {Team:"bw.yellow",Tags:["bw.entity"],CustomName:"凋灵",PersistenceRequired:1b}
+execute if score bw.red state matches 1.. run summon wither -303 60 210 {Team:"bw.red",Tags:["bw.entity"],CustomName:"凋灵",PersistenceRequired:1b}
+execute if score bw.blue state matches 1.. run summon wither -303 60 210 {Team:"bw.blue",Tags:["bw.entity"],CustomName:"凋灵",PersistenceRequired:1b}
+execute if score bw.green state matches 1.. run summon wither -303 60 210 {Team:"bw.green",Tags:["bw.entity"],CustomName:"凋灵",PersistenceRequired:1b}
 execute store result score bw.event.time tick run bossbar get minigames:bedwars max
 scoreboard players operation bw.event.time tick -= bw.event.countdown board
 execute store result bossbar minigames:bedwars value run scoreboard players get bw.event.time tick

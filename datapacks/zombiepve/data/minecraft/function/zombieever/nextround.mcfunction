@@ -7,8 +7,8 @@ scoreboard players reset * zombie.villager.click
 tellraw @a[team=play.zombie] ["§7§o进度推进 [ID ",{"score":{"name":"zombie.round","objective":"board"},"color":"green","italic":true},"§7§o]"]
 # Total
 
-## WARNING: The transformation may cause problem. You might need to modify it by yourself.
-execute as @e[tag=pve.zombie] run data merge entity @s {PersistenceRequired:1b,ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],HandDropChances:[0.0f,0.0f]}
+execute as @e[tag=pve.zombie] run data merge entity @s {PersistenceRequired:1b,drop_chances:{feet:0.0f,legs:0.0f,chest:0.0f,head:0.0f,mainhand:0.0f,offhand:0.0f}}
+
 execute if score zombie.round board matches 12 if entity @e[tag=pve.zombie,tag=pve.root] run function zombieever/rounds/11
 execute if score zombie.round board matches 12 unless entity @e[tag=pve.zombie,tag=pve.root] run function zombieever/talks/crazyrabbit/win
 

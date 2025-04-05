@@ -5,7 +5,7 @@
 execute positioned 688 -1 352 run kill @e[type=item,distance=0..200]
 
 execute as @e[tag=sw.chests] at @s run setblock ~ ~ ~ chest
-execute as @e[tag=sw.chests] at @s run summon text_display ~ ~1 ~ {Tags:["sw.marker","sw.texts","sw.text.chest"],text:'"\\u00a7a箱子"',CustomNameVisible:0b,billboard:"vertical",see_through:false,view_range:0.3f}
+execute as @e[tag=sw.chests] at @s run summon text_display ~ ~1 ~ {Tags:["sw.marker","sw.texts","sw.text.chest"],text:"\u00a7a箱子",CustomNameVisible:0b,billboard:"vertical",see_through:false,view_range:0.3f}
 title @a[team=wait.sw] reset
 title @a[team=wait.sw] title ["\u00a7b地图准备完毕"]
 title @a[team=wait.sw] subtitle ["\u00a7a重置完毕"]

@@ -9,7 +9,7 @@ scoreboard players set zombie.state state 1
 # At least 16
 
 ## WARNING: The transformation may cause problem. You might need to modify it by yourself.
-data merge entity @e[tag=pve.title,limit=1] {CustomName:'"\\u00a7d拯救村庄"'}
+data merge entity @e[tag=pve.title,limit=1] {CustomName:"\u00a7d拯救村庄"}
 execute if score tmp board matches 18.. run playsound entity.player.levelup player @s ~ ~ ~ 2 0 1
 
 

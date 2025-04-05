@@ -12,8 +12,8 @@ scoreboard players remove bw.dm board 1
 
 execute if score bw.em board matches ..0 as @e[type=marker,tag=emerald] at @s run function minecraft:bedwars/summont/emerald
 
-data modify block -307 74 207 front_text.messages[0] set value '["\\u00a7e将在",{"score":{"objective":"board","name":"bw.em"},"color":"red"},"\\u00a7e秒后产生"]'
-data modify block -307 74 207 front_text.messages[1] set value '["\\u00a7e将在",{"score":{"objective":"board","name":"bw.dm"},"color":"red"},"\\u00a7e秒后产生"]'
+data modify block -307 74 207 front_text.messages[0] set value ["\u00a7e将在",{"score":{"objective":"board","name":"bw.em"},"color":"red"},"\u00a7e秒后产生"]
+data modify block -307 74 207 front_text.messages[1] set value ["\u00a7e将在",{"score":{"objective":"board","name":"bw.dm"},"color":"red"},"\u00a7e秒后产生"]
 ## WARNING: The transformation may cause problem. You might need to modify it by yourself.
 execute as @e[type=text_display,tag=emerald.subtitle] at @s run data modify entity @s text set from block -307 74 207 front_text.messages[0]
 ## WARNING: The transformation may cause problem. You might need to modify it by yourself.
