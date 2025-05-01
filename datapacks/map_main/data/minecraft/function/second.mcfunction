@@ -35,6 +35,7 @@ execute as @e[type=minecart,tag=lobby.car] at @s if block ~ ~ ~ lava run kill @s
 xp add @a[team=play.live.runner,level=1..] -1 levels
 xp add @a[team=play.live.killer,level=1..] -1 levels
 effect give @a[team=wait.sur] resistance 2 25 true
+effect give @a[team=boom] resistance 2 25 true
 execute if score golf.state state matches 1.. in golfworld run function golf/second
 execute if score boat.state state matches 1.. in boatworld2 run function boat/second
 execute if score sur.state state matches 1.. in airworld run function surgame:second

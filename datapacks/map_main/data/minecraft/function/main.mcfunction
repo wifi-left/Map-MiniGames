@@ -26,7 +26,7 @@ execute as @a[tag=NEWENTER] at @s run function lobby/cleartags
 title @a[tag=NEWENTER] title ["\u00a7a\u00a7lMini\u00a7e\u00a7lGames"]
 title @a[tag=NEWENTER] subtitle ["\u00a76You're in \u00a7dMain Lobby"]
 title @a[tag=NEWENTER] actionbar ["\u00a7aMade by wifi-left"]
-tellraw @a[tag=NEWENTER] ["\n§a  您可以随时使用 §6/trigger hub §a返回大厅。\n  §a全局音乐可以通过§6游戏设置 - 声音设置 - 玩家语音§a调节声音大小\n  §e部分游戏支持使用 §6/trigger rejoin§e 重新加入退出的游戏！\n\n§b  下载资源包：",{"text":"§d§n[GitLab](推荐)","underlined":true,"click_event":{"action":"open_url","url":"https://gitlab.com/wifi-left/Map-MiniGames/-/raw/master/resourcepack/MiniGameRes.zip"}}," ",{"underlined":true,"text":"§e§n[GitHub](备用)","click_event":{"action":"open_url","url":"https://github.com/wifi-left/Map-MiniGames/raw/master/resourcepack/MiniGameRes.zip"}},"\n"]
+tellraw @a[tag=NEWENTER] ["\n§a  您可以随时使用 §6/trigger hub §a返回大厅。\n  §a全局音乐可以通过§6游戏设置 - 声音设置 - 玩家语音§a调节声音大小\n  §e部分游戏支持使用 §6/trigger rejoin§e 重新加入退出的游戏！\n\n§b  下载资源包：",{"text":"§d§n[Gitea](推荐)","underlined":true,"click_event":{"action":"open_url","url":"https://gitea.com/wifi-left/Map-MiniGames/raw/branch/master/resourcepack/MiniGameRes.zip"}}," ",{"underlined":true,"text":"§e§n[GitHub](备用)","click_event":{"action":"open_url","url":"https://github.com/wifi-left/Map-MiniGames/raw/master/resourcepack/MiniGameRes.zip"}},"\n"]
 execute as @a[tag=NEWENTER] run attribute @s max_health base set 20
 
 gamemode adventure @a[tag=NEWENTER]
