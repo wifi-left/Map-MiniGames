@@ -24,9 +24,6 @@ Gitea 的 URL 为：[https://gitea.com/wifi-left/Map-MiniGames/raw/branch/master
 
 GitHub 的 URL 为：[https://github.com/wifi-left/Map-MiniGames/raw/master/resourcepack/MiniGameRes.zip](https://github.com/wifi-left/Map-MiniGames/raw/master/resourcepack/MiniGameRes.zip)
 
-# 目前待做列表
-[To-do List](./todo.md)
-
 # 服务端安装教程
 1. [教程 - 服务器建设 - Minecraft Wiki](https://zh.minecraft.wiki/w/%E6%95%99%E7%A8%8B#%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%AE%BE%E7%BD%AE)
 
