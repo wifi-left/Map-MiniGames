@@ -17,7 +17,7 @@ execute unless score @s bw.tmp.em matches 3.. run tellraw @s ["§c你的资源�
 execute unless score @s bw.tmp.em matches 3.. run playsound minecraft:entity.enderman.teleport player @s ~ ~ ~ 1 0 1
 execute if score @s bw.tmp.em matches 3.. run tellraw @s ["§a你购买了§6Diamond Sword ([W]) * 1"]
 execute if score @s bw.tmp.em matches 3.. if score bw.buy.sharpness.tmp board matches 0 run give @s diamond_sword[can_place_on=[{blocks:"#minecraft:bwplace"}],tooltip_display={hidden_components:[can_place_on,can_break]},can_break=[{blocks:"#minecraft:bedblocks"}]] 1
-execute if score @s bw.tmp.em matches 3.. if score bw.buy.sharpness.tmp board matches 1 run give @s diamond_sword[can_place_on=[{blocks:"#minecraft:bwplace"}],tooltip_display={hidden_components:[can_place_on,can_break]},can_break=[{blocks:"#minecraft:bedblocks"}]] 1
+execute if score @s bw.tmp.em matches 3.. if score bw.buy.sharpness.tmp board matches 1 run give @s diamond_sword[can_place_on=[{blocks:"#minecraft:bwplace"}],tooltip_display={hidden_components:[can_place_on,can_break]},can_break=[{blocks:"#minecraft:bedblocks"}],enchantments={sharpness:1}] 1
 clear @s wooden_sword
 
 
