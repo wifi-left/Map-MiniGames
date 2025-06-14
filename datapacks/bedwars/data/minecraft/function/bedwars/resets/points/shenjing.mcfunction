@@ -55,7 +55,7 @@ summon text_display -334 30.5 255 {Tags:["shop2","bedwars"],text:"\u00a7a\u00a7l
 summon text_display -338 24.5 162 {Tags:["shop2","bedwars"],text:"\u00a7a\u00a7lItem Shop \u00a762",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
 
 summon marker -308 31 216 {Tags:["diamond","bedwars"],CustomName:"\u00a7b\u00a7lDiamond Spawner",CustomNameVisible:0b}
-summon marker -317 46 244 {Tags:["diamond","bedwars"],CustomName:"\u00a7b\u00a7lDiamond Spawner",CustomNameVisible:0b}
+summon marker -295 46 173 {Tags:["diamond","bedwars"],CustomName:"\u00a7b\u00a7lDiamond Spawner",CustomNameVisible:0b}
 summon marker -299 30 159 {Tags:["diamond","bedwars"],CustomName:"\u00a7b\u00a7lDiamond Spawner",CustomNameVisible:0b}
 summon marker -335 44 211 {Tags:["diamond","bedwars"],CustomName:"\u00a7b\u00a7lDiamond Spawner",CustomNameVisible:0b}
 # # diamond
@@ -65,8 +65,9 @@ summon marker -335 44 211 {Tags:["diamond","bedwars"],CustomName:"\u00a7b\u00a7l
 # -335 36 239
 # -337 35 167
 # # emerald
+# -295 44 205/
 summon marker -324 36 212 {Tags:["emerald","bedwars"],CustomName:"\u00a7a\u00a7lEmerald Spawner",CustomNameVisible:0b}
-summon marker -335 49 243 {Tags:["emerald","bedwars"],CustomName:"\u00a7a\u00a7lEmerald Spawner",CustomNameVisible:0b}
+summon marker -295 44 205 {Tags:["emerald","bedwars"],CustomName:"\u00a7a\u00a7lEmerald Spawner",CustomNameVisible:0b}
 summon marker -306 30 184 {Tags:["emerald","bedwars"],CustomName:"\u00a7a\u00a7lEmerald Spawner",CustomNameVisible:0b}
 
 scoreboard players display name date bw.info ["\u00a7701/19/24§8 \u00a78m001B"]

@@ -31,8 +31,9 @@ execute if score @s quickplay matches 24 run function zombieever/join
 execute if score @s quickplay matches 25 run function surgame:join
 execute if score @s quickplay matches 26 run function bedwars/message/join
 execute if score @s quickplay matches 27 run function desk/join
+execute if score @s quickplay matches 28 run function bomb/join
 execute if score @s quickplay matches 1.. run playsound entity.experience_orb.pickup player @s ~ ~ ~ 1 1 1
-execute if score @s quickplay matches 28.. run tellraw @s ["§c很抱歉，未知游戏的ID！"]
+execute if score @s quickplay matches 29.. run tellraw @s ["§c很抱歉，未知游戏的ID！"]
 
 execute if score @s quickplay matches 1.. run scoreboard players reset @s quickplay
 

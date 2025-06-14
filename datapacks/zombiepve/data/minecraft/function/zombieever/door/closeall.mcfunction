@@ -24,7 +24,7 @@ execute as @e[tag=pve.event.block.fruit] at @s run setblock ~ ~ ~ minecraft:swee
 execute as @e[tag=pve.event.block.fruit,limit=8,sort=random] at @s run setblock ~ ~ ~ minecraft:sweet_berry_bush[age=0]
 kill @e[tag=pve.title]
 forceload add 595 -41 495 -150
-summon marker 630 9 -78 {Tags:["pve.title"],CustomName:'""'}
+summon marker 630 9 -78 {Tags:["pve.title"],CustomName:''}
 fill 594 3 -58 594 5 -60 minecraft:iron_bars
 fill 637 13 -46 637 11 -47 minecraft:air
 fill 637 13 -46 639 11 -46 minecraft:iron_bars

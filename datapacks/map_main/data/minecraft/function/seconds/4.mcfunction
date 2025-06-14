@@ -8,3 +8,5 @@
 function o_f_tick
 # execute positioned 122 120 59 as @e[tag=lobby.car,type=minecart,distance=..3] run function lobby/car/detectgo
 
+execute if score boom.state state matches 1.. run function minecraft:bomb/second
+bossbar set minecraft:boom players @a[team=boom]

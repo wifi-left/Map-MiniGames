@@ -8,7 +8,7 @@ scoreboard players set wait.player tick 0
 execute as @a[team=boom,gamemode=adventure] run scoreboard players add wait.player tick 1
 
 
-execute if score boom.state state matches 1.. run function minecraft:boom/spec
+execute if score boom.state state matches 1.. run function minecraft:bomb/spec
 
 ## 检测是否禁止启动
 scoreboard players set tmp.canplay board 0
@@ -19,5 +19,5 @@ execute if score tmp.canplay board matches 0 run return 0
 
 execute unless score boom.state state matches 1.. if score wait.player tick matches ..0 run tellraw @s ["§c人数不够！请等待至少1人！"]
 execute unless score boom.state state matches 1.. if score wait.player tick matches ..0 run playsound entity.enderman.teleport player @s ~ ~ ~ 1 0 1
-execute unless score boom.state state matches 1.. if score wait.player tick matches 1.. run function minecraft:boom/start
+execute unless score boom.state state matches 1.. if score wait.player tick matches 1.. run function minecraft:bomb/start
 

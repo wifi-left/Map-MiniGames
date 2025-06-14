@@ -6,6 +6,7 @@ function minecraft:lobby/elevent
 execute if block 123 121 59 oak_button[powered=true] run function lobby/car
 function foodparty:tick
 execute as @a[team=lobby] at @s run function lobby/quickplay
+execute as @a[team=!lobby,tag=GOABLE.SPEC] at @s run function lobby/quickplay
 execute as @a[team=!lobby,scores={quickplay=1..}] at @s run function lobby/quickplay_refused
 
 execute as @a unless score @s old matches 1.. run function minecraft:check_rename
@@ -177,3 +178,5 @@ function dev/tick
 function actions/main
 
 execute in overworld positioned -376 54 624 as @a[gamemode=adventure,distance=..3] at @s run function endless_wolf/died
+
+execute if score boom.state state matches 1.. run function minecraft:bomb/tick

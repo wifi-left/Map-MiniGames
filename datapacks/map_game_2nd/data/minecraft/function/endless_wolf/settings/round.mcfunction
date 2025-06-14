@@ -11,7 +11,7 @@ execute if score tmp.canset board matches 0 run return 0
 
 scoreboard players add endwolf.round state 1
 execute if score endwolf.round state matches 6.. run scoreboard players set endwolf.round state 1
-data modify block ~ ~ ~ front_text.messages[2] set value '{"score":{"name": "endwolf.round","objective": "state"},"color":"red"}'
+data modify block ~ ~ ~ front_text.messages[2] set value {"score":{"name": "endwolf.round","objective": "state"},"color":"red"}
 
 playsound ui.button.click player @s ~ ~ ~ 1 1 1
 

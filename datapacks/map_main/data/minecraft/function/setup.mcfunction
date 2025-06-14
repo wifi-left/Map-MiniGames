@@ -4,6 +4,12 @@
 ## 
 tellraw @a ["§b§l[Gamom Datapacks] §aReloaded successfully ! §e[Language: 简体中文]"]
 function minecraft:bedwars/setup
+bossbar remove boom
+bossbar add boom "拆弹达人"
+bossbar set boom name '\u00a7a拆弹达人 \u00a78| \u00a7b欢迎游玩'
+bossbar set boom color green
+bossbar set boom max 420
+bossbar set boom value 420
 scoreboard objectives remove car.speed
 scoreboard objectives add car.speed dummy "Speed of car"
 scoreboard objectives remove bw.tmp.ir

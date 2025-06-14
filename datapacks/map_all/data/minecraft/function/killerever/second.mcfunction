@@ -18,5 +18,5 @@ item replace entity @a[team=play.killer,nbt={Inventory:[{id:"minecraft:bow"}]}] 
 
 
 ## WARNING: The transformation may cause problem. You might need to modify it by yourself.
-execute as @e[tag=killer.bow,nbt={Glowing:1b}] at @s unless data entity @s {equipment:{mainhand:{id:"minecraft:bow"}}} at @s run data merge entity @s {Glowing:0b,CustomName:'""',CustomNameVisible:0b,Marker:1b}
+execute as @e[tag=killer.bow,nbt={Glowing:1b}] at @s unless data entity @s {equipment:{mainhand:{id:"minecraft:bow"}}} at @s run data merge entity @s {Glowing:0b,CustomName:' ',CustomNameVisible:0b,Marker:1b}
 

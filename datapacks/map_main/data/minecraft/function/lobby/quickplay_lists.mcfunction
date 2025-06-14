@@ -30,4 +30,5 @@ function minecraft:lobby/quickplay_info {id:24,name:"Zombie Days（PVE）",color
 function minecraft:lobby/quickplay_info {id:25,name:"生存游戏",color:b}
 function minecraft:lobby/quickplay_info {id:26,name:"起床战争",color:b}
 function minecraft:lobby/quickplay_info {id:27,name:"桌游",color:b}
+function minecraft:lobby/quickplay_info {id:28,name:"拆弹专家",color:b}
 tellraw @s "\n§e使用 §6/trigger quickplay set <游戏ID>§b ，或者点击上方文字快速进入"
