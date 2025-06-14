@@ -3,7 +3,7 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 effect give @e[team=boom] resistance 3 25 true
-effect give @e[team=boom] night_vision 3 25 true
+effect give @e[team=boom] night_vision 15 25 true
 execute if score boom.state state matches 2..4 run function minecraft:bomb/round/testfor
 execute if score boom.state state matches 1..4 run function minecraft:bomb/detect_unexpected
 

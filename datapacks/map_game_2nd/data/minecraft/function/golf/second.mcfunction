@@ -3,7 +3,7 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 effect give @e[team=golf] resistance 3 25 true
-effect give @e[team=golf] night_vision 3 25 true
+effect give @e[team=golf] night_vision 15 25 true
 effect give @e[team=golf] fire_resistance 3 25 true
 effect give @e[team=golf] water_breathing 3 25 true
 # effect give @e[tag=golf.ball] invisibility 3 25 true
