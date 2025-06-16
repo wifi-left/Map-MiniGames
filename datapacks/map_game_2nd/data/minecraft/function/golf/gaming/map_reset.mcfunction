@@ -7,6 +7,11 @@ execute in golfworld run forceload add -98 87 -20 32
 
 kill @e[tag=golf.start]
 kill @e[tag=golf.ballstart]
+fill -20 -63 32 -99 -37 33 air strict
+fill -98 -37 32 -99 -63 88 air strict
+fill -99 -63 88 -20 -37 87 air strict
+fill -21 -37 88 -20 -63 32 air strict
+
 fill -99 -48 88 -20 -37 32 air strict
 # -99 -37 32
 execute if score golf.map board matches 1 run function minecraft:golf/resets/1

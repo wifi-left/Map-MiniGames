@@ -20,3 +20,4 @@ tellraw @s[tag=GOABLE.SPEC] ["\n§7  你已开启§b全局旁观者模式§7。\
 execute as @s[tag=GOABLE.SPEC] at @s run gamemode spectator
 # tellraw @s ["\n\u00a7c仍在制作，敬请期待。\n"]
 
+bossbar set minecraft:golf players @a[team=golf]

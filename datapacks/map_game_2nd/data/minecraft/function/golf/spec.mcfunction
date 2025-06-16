@@ -4,3 +4,4 @@
 ## 
 gamemode spectator @s
 tellraw @s ["§c很抱歉，当前游戏已经开始。你将在下一轮进入游戏。"]
+bossbar set minecraft:golf players @a[team=golf]
