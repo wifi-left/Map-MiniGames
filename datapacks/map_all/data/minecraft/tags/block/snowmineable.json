@@ -5,6 +5,7 @@
     "minecraft:oak_log",
     "minecraft:snow_block",
     "minecraft:grass_block",
+    "minecraft:glass",
     "minecraft:dirt",
     "minecraft:snow",
     "minecraft:mycelium",
@@ -38,7 +39,8 @@
     "#minecraft:trapdoors",
     "minecraft:tnt",
     "minecraft:white_terracotta",
-    "#minecraft:walls"
+    "#minecraft:walls",
+    "#minecraft:stainglass"
   ]
 }
 

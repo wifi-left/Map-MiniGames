@@ -5,8 +5,8 @@
 function minecraft:lobby/elevent
 execute if block 123 121 59 oak_button[powered=true] run function lobby/car
 function foodparty:tick
-execute as @a[team=lobby] at @s run function lobby/quickplay
-execute as @a[team=!lobby,tag=GOABLE.SPEC] at @s run function lobby/quickplay
+execute as @a[team=lobby] at @s in overworld run function lobby/quickplay
+execute as @a[team=!lobby,tag=GOABLE.SPEC] at @s in overworld run function lobby/quickplay
 execute as @a[team=!lobby,scores={quickplay=1..}] at @s run function lobby/quickplay_refused
 
 execute as @a unless score @s old matches 1.. run function minecraft:check_rename
@@ -180,3 +180,30 @@ function actions/main
 execute in overworld positioned -376 54 624 as @a[gamemode=adventure,distance=..3] at @s run function endless_wolf/died
 
 execute if score boom.state state matches 1.. run function minecraft:bomb/tick
+
+execute if entity @a[tag=bw.player] run function minecraft:bedwars/tick
+execute if entity @a[tag=parkouring,team=lobby] run function minecraft:npark/tick
+execute if entity @a[team=parkour] run function minecraft:lpark/tick
+execute if entity @a[tag=mazing,team=lobby] run function minecraft:maze/tick
+execute if score beli.state state matches 1.. run function minecraft:believer/tick
+execute if score color.state state matches 1.. run function minecraft:color/tick
+execute if score beli.state state matches 1.. run function minecraft:believer/second
+execute if score hotpot.state state matches 1.. run function minecraft:hotpotever/tick
+execute if entity @a[team=job_pvp] run function minecraft:job_pvp/tick
+execute if score killer.state state matches 1.. run function minecraft:killerever/tick
+execute if score zombie.state state matches 1.. run function minecraft:zombieever/tick
+scoreboard players reset @a[scores={zombie.hurt=1..}] zombie.hurt
+execute if score duel.state state matches 1.. run function minecraft:duel/tick
+
+scoreboard players reset @a[scores={JOBPVP.die=1..}] JOBPVP.die
+
+
+scoreboard players reset @a[scores={hp.hurt=0..},team=!play.hotpot.k] hp.hurt
+scoreboard players reset @a[scores={hp.gethurt=0..}] hp.gethurt
+
+scoreboard players reset @a[scores={eat.goldapple=0..}] eat.goldapple
+scoreboard players reset @a[scores={eat.glow=0..}] eat.glow
+
+scoreboard players reset @a[scores={zombie.died=1..}] zombie.died
+
+scoreboard players reset @a[scores={parkour=1..}] parkour

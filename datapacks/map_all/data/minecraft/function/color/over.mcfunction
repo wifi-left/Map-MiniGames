@@ -2,6 +2,8 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
+fill -5 17 77 30 17 112 glass
+
 scoreboard players set color.state state 0
 
 tellraw @a ["§a[I] ",{"text":"色盲派对","color":"#a7d3ff","bold":true}," §a: §b游戏结束！"]

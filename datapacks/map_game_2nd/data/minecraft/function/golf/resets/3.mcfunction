@@ -4,6 +4,9 @@
 ## 
 execute in golfworld run forceload add -248 25 -173 77
 
-execute in golfworld run clone -248 -14 25 -173 5 77 -97 -63 34 strict
-execute in golfworld run forceload remove -248 25 -173 77
+execute in golfworld run clone -248 -14 25 -173 12 77 -97 -63 34 strict
 
+execute in golfworld run summon marker -91 -60 40 {Tags:["golf.ballstart"]}
+execute in golfworld run summon marker -91 -60 39 {Tags:["golf.start"]}
+
+execute in golfworld run forceload remove -248 25 -173 77

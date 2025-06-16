@@ -17,10 +17,12 @@ tellraw @a[team=play.tntwars] ["\n§a「队伍A」",{"selector":"@a[tag=tntwars.
 
 tellraw @a[tag=tntwars.a] ["§6你加入了 §cTNT Wars §a「队伍A」"]
 tellraw @a[tag=tntwars.b] ["§6你加入了 §cTNT Wars §b「队伍B」"]
-
-execute if score tntwars.map state matches ..0 run function tntwars/startmaps/boat1
-execute if score tntwars.map state matches 1 run function tntwars/startmaps/ballon1
-execute if score tntwars.map state matches 2 run function tntwars/startmaps/cloud1
+scoreboard players operation tntwars.map board = tntwars.map state
+execute if score tntwars.map state matches ..-1 store result score tntwars.map board run random value 0..3
+execute if score tntwars.map board matches 0 run function tntwars/startmaps/boat1
+execute if score tntwars.map board matches 1 run function tntwars/startmaps/ballon1
+execute if score tntwars.map board matches 2 run function tntwars/startmaps/cloud1
+execute if score tntwars.map board matches 3 run function tntwars/startmaps/planet1
 # execute if score tntwars.map state matches 2.. run data modify block 496 21 240 front_text.messages[(3-1)] set value "\u00a7cError"}
 
 

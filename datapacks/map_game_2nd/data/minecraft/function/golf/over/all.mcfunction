@@ -10,3 +10,5 @@ kill @e[type=marker,tag=golf.spawn]
 bossbar set minecraft:golf name ["\u00a7c游戏结束，5s后返回。"]
 kill @e[type=!player,tag=golf.ball]
 
+kill @e[tag=golf.start]
+kill @e[tag=golf.ballstart]

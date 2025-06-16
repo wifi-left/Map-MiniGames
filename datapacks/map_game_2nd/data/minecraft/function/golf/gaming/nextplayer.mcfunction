@@ -20,7 +20,7 @@ execute in golfworld as @a[tag=golf.sel] run function minecraft:golf/gaming/back
 gamemode adventure @a[tag=golf.sel]
 tellraw @a[team=golf] ["§6 > 现在轮到 ",{"selector":"@a[gamemode=adventure,team=golf]"},"§6 了。"]
 tp @a[gamemode=adventure,team=golf,limit=1] @e[limit=1,tag=golf.start]
-tag @a[gamemode=adventure,team=golf,limit=1] remove golf.waitshoot
+# tag @a[gamemode=adventure,team=golf,limit=1] remove golf.waitshoot
 execute as @a[tag=golf.sel] run title @s title ["\u00a76现在是你的回合"]
 execute as @a[tag=golf.sel] run title @s subtitle ["\u00a7a目标：让Ball进洞（粗金块+铜块）"]
 execute as @a[tag=golf.sel] run tellraw @s ["§a目标：让Ball进洞（粗金块+铜块）"]
@@ -29,7 +29,7 @@ clear @a[gamemode=adventure,team=golf,limit=1]
 tag @a[tag=golf.sel] remove golf.waittoplay
 tag @a[tag=golf.sel] remove golf.sel
 
-execute in golfworld positioned -91 -60 40 run function golf/gaming/ballspawn
+execute as @e[limit=1,tag=golf.ballstart] at @s run function golf/gaming/ballspawn
 scoreboard players set golf.state state 2
 
 scoreboard players set golf.time tick 421

@@ -36,8 +36,6 @@ tag @s remove raycast.ignore
 ```
 
 
-# 狼人杀
-BUG：骑士刀狼人但是丘比特链接了骑士和狼人。
 # 通用启动游戏检测
 ```mcfunction
 ## 检测是否能启动游戏
