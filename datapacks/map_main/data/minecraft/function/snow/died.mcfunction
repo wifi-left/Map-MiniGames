@@ -4,5 +4,5 @@
 ## 
 gamemode spectator @s
 tellraw @s ["§c对不起，你死了。\n§a请等待下一局游戏！"]
-tellraw @a[team=play.snow,gamemode=adventure] ["§f[SNOW] ",{"selector":"@s"},"§7淘汰了。"]
-tellraw @a[team=wait.snow,gamemode=adventure] ["§f[SNOW] ",{"selector":"@s"},"§7淘汰了。"]
+tellraw @a[team=play.snow] ["§f[SNOW] ",{"selector":"@s"},"§7淘汰了。"]
+tellraw @a[team=wait.snow] ["§f[SNOW] ",{"selector":"@s"},"§7淘汰了。"]
