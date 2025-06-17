@@ -15,6 +15,9 @@ execute at @e[limit=1,tag=bw.bed.green] if block ~ ~ ~ lime_bed run tag @s[team=
 execute at @e[limit=1,tag=bw.bed.blue] if block ~ ~ ~ blue_bed run tag @s[team=bw.blue] add bw.fhing
 execute at @e[limit=1,tag=bw.bed.red] if block ~ ~ ~ red_bed run tag @s[team=bw.red] add bw.fhing
 
+execute if score bw.mode state matches 3 as @s[tag=bw.fhing] at @s run function minecraft:bedwars/special/xp_died
+execute if score bw.mode state matches 7 as @s[tag=bw.fhing] at @s run function minecraft:bedwars/special/xp_died
+
 scoreboard players set @s[tag=bw.fhing] board 6
 
 execute as @s[tag=!bw.fhing] at @s run tag @s remove bw.play
@@ -23,3 +26,4 @@ execute as @s[tag=!bw.fhing] at @s run tellraw @s ["§c你已被淘汰！"]
 
 execute as @s[tag=!bw.play] run function minecraft:bedwars/during/updateinfo/update
 
+# execute as @s[]

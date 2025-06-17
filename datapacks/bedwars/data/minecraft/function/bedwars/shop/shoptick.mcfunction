@@ -320,4 +320,7 @@ execute as @s[tag=bw.buy.114514] at @s run playsound minecraft:block.note_block.
 execute as @s[tag=bw.buy.114514] at @s run function minecraft:bedwars/shop/buy114514
 tag @s remove bw.buy.114514
 
+execute if score bw.mode state matches 3 run function minecraft:bedwars/special/xp_purchase
+execute if score bw.mode state matches 7 run function minecraft:bedwars/special/xp_purchase
+
 function bedwars/shop/resetshop

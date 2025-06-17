@@ -15,6 +15,8 @@ execute in bedwars_backup run forceload remove -573 299 -397 121
 execute in bedwars_backup run forceload remove -753 121 -577 299
 schedule clear bedwars/resets/mogu
 schedule clear bedwars/resets/unnamed
+# schedule clear bedwars/resets
+# schedule clear bedwars/resets/unnamed
 team join bw.wait @a[tag=GOABLE.SPEC,team=bw.green]
 team join bw.wait @a[tag=GOABLE.SPEC,team=bw.blue]
 team join bw.wait @a[tag=GOABLE.SPEC,team=bw.red]
@@ -78,10 +80,15 @@ execute if score bw.mode state matches 5 run tellraw @a[tag=bw.player] ["\n   §
 execute if score bw.mode state matches 2 run tellraw @a[tag=bw.player] ["\n   §a§l全解锁模式§6已启用。\n"]
 execute if score bw.mode state matches 6 run tellraw @a[tag=bw.player] ["\n   §a§l全解锁模式§6已启用。\n"]
 
+execute if score bw.mode state matches 3 run tellraw @a[tag=bw.player] ["\n   §d§l经验模式§6已启用。\n"]
+execute if score bw.mode state matches 7 run tellraw @a[tag=bw.player] ["\n   §d§l经验模式§6已启用。\n"]
+
 execute if score bw.mode state matches 1 run scoreboard players display name info1 bw.info ["游戏模式：\u00a7c无床模式"]
 execute if score bw.mode state matches 5 run scoreboard players display name info1 bw.info ["游戏模式：\u00a7c无床模式"]
 execute if score bw.mode state matches 2 run scoreboard players display name info1 bw.info ["游戏模式：\u00a7a全解锁模式"]
 execute if score bw.mode state matches 6 run scoreboard players display name info1 bw.info ["游戏模式：\u00a7a全解锁模式"]
+execute if score bw.mode state matches 3 run scoreboard players display name info1 bw.info ["游戏模式：\u00a7d经验模式"]
+execute if score bw.mode state matches 7 run scoreboard players display name info1 bw.info ["游戏模式：\u00a7d经验模式"]
 
 
 execute if score bw.mode state matches 2 run function minecraft:bedwars/resets/unlock_all_buffs
@@ -110,3 +117,5 @@ scoreboard players set bw.set.dm board 60
 
 kill @e[type=item]
 
+xp set @a[tag=bw.player] 0 levels
+xp set @a[tag=bw.player] 0 points

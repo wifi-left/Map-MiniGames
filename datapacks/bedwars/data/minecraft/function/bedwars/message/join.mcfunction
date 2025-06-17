@@ -14,3 +14,5 @@ tellraw @s[tag=GOABLE.SPEC] ["\n§7  你已开启§b全局旁观者模式§7。\
 execute as @s[tag=GOABLE.SPEC] at @s run gamemode spectator
 scoreboard players reset @s bw.team
 
+clear @s
+effect clear @s

@@ -13,8 +13,8 @@ execute if score tmp.canset board matches 0 run return 0
 
 scoreboard players remove bw.mode state 1
 
-execute if score bw.mode state matches 3 run scoreboard players set bw.mode state 2
-execute if score bw.mode state matches ..-1 run scoreboard players set bw.mode state 6
+# execute if score bw.mode state matches 3 run scoreboard players set bw.mode state 2
+execute if score bw.mode state matches ..-1 run scoreboard players set bw.mode state 7
 
 
 function minecraft:bedwars/message/showmode
