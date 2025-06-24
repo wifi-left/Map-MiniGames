@@ -1,0 +1,22 @@
+{
+    "parent": "minecraft:end/root",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "player": {
+                    "team": "boom"
+                },
+                "item": {
+                    "items": "minecraft:potion",
+                    "components": {
+                        "minecraft:custom_data": "{boom:2}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "minecraft:bomb/advancement_handlers/giveup"
+    }
+}

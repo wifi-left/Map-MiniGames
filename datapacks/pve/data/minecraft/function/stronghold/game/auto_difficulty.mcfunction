@@ -1,0 +1,8 @@
+scoreboard players set stronghold.player tick 0
+execute as @a[team=stronghold,gamemode=adventure] run scoreboard players add stronghold.player tick 1
+
+execute if score stronghold.difficuly state matches ..0 if score stronghold.player tick matches ..2 run scoreboard players set stronghold.difficuly board 1
+execute if score stronghold.difficuly state matches ..0 if score stronghold.player tick matches 3..5 run scoreboard players set stronghold.difficuly board 2
+execute if score stronghold.difficuly state matches ..0 if score stronghold.player tick matches 6..13 run scoreboard players set stronghold.difficuly board 3
+execute if score stronghold.difficuly state matches ..0 if score stronghold.player tick matches 14..20 run scoreboard players set stronghold.difficuly board 4
+execute if score stronghold.difficuly state matches ..0 if score stronghold.player tick matches 21.. run scoreboard players set stronghold.difficuly board 5

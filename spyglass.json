@@ -1,0 +1,39 @@
+{
+    "lint": {
+        "undeclaredSymbol": [
+            {
+                "if": [
+                    {
+                        "category": [
+                            "block",
+                            "entity_type",
+                            "item"
+                        ],
+                        "namespace": "minecraft"
+                    }
+                ],
+                "then": {
+                    "report": "warning"
+                }
+            },
+            {
+                "if": [
+                    {
+                        "category": [
+                            "bossbar",
+                            "objective",
+                            "team"
+                        ]
+                    }
+                ],
+                "then": {
+                    "report": "hint"
+                }
+            }
+        ]
+    },
+    "env":{
+        "gameVersion": "1.21.5",
+        "dataSource": "jsDelivr"
+    }
+}

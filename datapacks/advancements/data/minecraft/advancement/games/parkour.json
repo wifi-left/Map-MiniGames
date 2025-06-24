@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": [
+            "跑酷大蛇"
+        ],
+        "description": [
+            "成功完成大厅的跑酷挑战！\n那么，你到底回了多少次记录点呢？"
+        ],
+        "icon": {
+            "id": "minecraft:light_weighted_pressure_plate"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:games",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}
+

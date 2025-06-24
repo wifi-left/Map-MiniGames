@@ -1,0 +1,204 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": {
+                "type": "minecraft:uniform",
+                "min": 3,
+                "max": 8
+            },
+            "bonus_rolls": {
+                "min": 1,
+                "max": 5
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "minecraft:cloud/blocks",
+                    "weight": 20
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:netherite_chestplate",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_boots",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "enchantments": [
+                                "minecraft:protection"
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.5
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_leggings",
+                    "weight": 15,
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "enchantments": [
+                                "minecraft:protection"
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_chestplate",
+                    "weight": 20,
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "enchantments": [
+                                "minecraft:protection"
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.15
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_helmet",
+                    "weight": 15,
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "enchantments": [
+                                "minecraft:protection"
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_sword",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "minecraft:knockback": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_apple",
+                    "weight": 20,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:splash_potion",
+                    "weight": 15,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_potion",
+                            "id": "minecraft:strong_healing"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:netherite_sword",
+                    "weight": 5,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "minecraft:fire_aspect": 2
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:netherite_boots",
+                    "weight": 2,
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "enchantments": [
+                                "minecraft:feather_falling",
+                                "minecraft:protection"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_sword",
+                    "weight": 15,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "minecraft:sharpness": 1
+                            },
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_golden_apple",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

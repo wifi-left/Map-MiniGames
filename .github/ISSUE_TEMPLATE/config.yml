@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: QQ群
+    url: https://mcminigames.netlify.app/
+    about: 遇到问题，请优先前往QQ群提出。QQ群：958572618
+  - name: 官网
+    url: https://mcminigames.netlify.app/
+    about: MiniGames 地图的官网
+  - name: 赞助通道 Buy me a Coffee
+    url: https://afdian.net/@wifi_left
+    about: Buy me a Coffee.
+  - name: 其他反馈 | Others
+    url: https://github.com/wifi-left/Map-MiniGames/issues/new
+    about: 通过 Discussions 反馈其他问题。
