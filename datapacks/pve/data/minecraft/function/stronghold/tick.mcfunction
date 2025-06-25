@@ -6,3 +6,5 @@ execute as @a[team=stronghold,gamemode=adventure] at @s if block ~ ~-0.5 ~ test_
 execute as @a[team=stronghold] at @s as @e[type=item,distance=..5] at @s run function minecraft:stronghold/deal_item
 execute as @a[team=stronghold,gamemode=adventure] at @s run function minecraft:stronghold/death/player_tick
 execute if score stronghold.state state matches 1..2 as @a[team=stronghold,gamemode=spectator,tag=stronghold.alive] at @s run function minecraft:stronghold/death/player_waiting_tick
+
+scoreboard players add stronghold.time tick 1

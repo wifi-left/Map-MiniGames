@@ -15,3 +15,4 @@ tag @a[team=stronghold,gamemode=adventure] add stronghold.alive
 execute as @a[tag=stronghold.alive] run function minecraft:stronghold/game/normal_equipment
 
 function minecraft:stronghold/game/next_level
+scoreboard players set stronghold.time tick 0
