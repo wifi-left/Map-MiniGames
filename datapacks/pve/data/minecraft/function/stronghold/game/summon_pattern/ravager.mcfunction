@@ -1,1 +1,1 @@
-summon minecraft:ravager ~ ~ ~ {Health:20,CustomName:{text:"野生生物",color:aqua},CustomNameVisible:true,DeathLootTable:"minecraft:stronghold/death/zombie/2",Tags:["stronghold.mobs"],attributes:[{id:"max_health",base:15},{base:0.4,id:"movement_speed"},{base:4,id:"attack_damage"}]}
+summon minecraft:ravager ~ ~ ~ {Health:20,CustomName:{text:"野生生物",color:aqua},CustomNameVisible:true,DeathLootTable:"minecraft:stronghold/death/zombie/2",Tags:["stronghold.mobs"],attributes:[{id:"max_health",base:20},{base:0.4,id:"movement_speed"},{base:8,id:"attack_damage"}]}

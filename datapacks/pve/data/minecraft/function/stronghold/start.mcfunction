@@ -1,5 +1,6 @@
 scoreboard players set pve.stronghold.level board 0
 scoreboard players set stronghold.state state 3
+scoreboard players set stronghold.debug state 0
 tag @a remove stronghold.alive
 
 scoreboard players operation stronghold.difficuly board = stronghold.difficuly state

@@ -1,0 +1,1 @@
+summon minecraft:creeper ~ ~ ~ {Health:30,CustomName:{text:"磁力棒",color:dark_purple,obfuscated:false},CustomNameVisible:true,DeathLootTable:"minecraft:stronghold/death/zombie/3",Tags:["stronghold.mobs"],attributes:[{id:"max_health",base:30},{base:0.5,id:"movement_speed"}]}

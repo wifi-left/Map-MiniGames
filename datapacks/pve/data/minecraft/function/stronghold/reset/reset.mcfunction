@@ -11,6 +11,10 @@ execute in lobby positioned 200 -64 200 run tp @e[tag=stronghold.mobs] ~ ~ ~
 kill @e[tag=stronghold.mobs,type=!player]
 bossbar set stronghold value 100
 bossbar set stronghold color green
+bossbar set stronghold.boss color red
+bossbar set stronghold.boss value 100
 bossbar set stronghold name [{"text":"蚀界行者","color":"#FE4382","bold": true}]
+bossbar set stronghold.boss name [{"text":"蚀界行者","color":"#FE4382","bold": true}]
 bossbar set stronghold visible false
+bossbar set stronghold.boss visible false
 forceload remove 110 300 299 105

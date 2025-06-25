@@ -46,3 +46,4 @@ bossbar set minecraft:golf players @a[team=golf]
 attribute @s safe_fall_distance modifier remove parkour_safe_fall
 # attribute @s  modifier remove parkour_safe_fall
 bossbar set stronghold players @a[team=stronghold]
+bossbar set stronghold.boss players @a[team=stronghold]

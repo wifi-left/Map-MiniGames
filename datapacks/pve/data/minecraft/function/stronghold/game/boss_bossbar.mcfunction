@@ -1,0 +1,2 @@
+bossbar set stronghold.boss name ["\u00a7b\u00a7lBOSS \u00a78| ",{selector:"@e[tag=stronghold.boss]",color:dark_red,bold:true}]
+execute store result bossbar stronghold.boss value run data get entity @s Health 10

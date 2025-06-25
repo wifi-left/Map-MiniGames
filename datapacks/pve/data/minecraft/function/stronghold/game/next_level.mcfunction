@@ -1,4 +1,6 @@
 gamemode spectator @a[team=stronghold,gamemode=!creative]
+execute as @a[team=stronghold] run function minecraft:stronghold/small_tips
+
 scoreboard players set stronghold.state state 4
 execute in lobby run tp @a[team=stronghold,gamemode=spectator] 176 -8 190 0 0
 effect give @a[team=stronghold,gamemode=spectator] blindness 4 25 true

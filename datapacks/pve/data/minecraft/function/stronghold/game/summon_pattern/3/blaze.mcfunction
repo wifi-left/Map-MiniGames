@@ -1,0 +1,1 @@
+summon minecraft:blaze ~ ~ ~ {Health:20,CustomName:{text:"BLAZE",color:red},CustomNameVisible:true,DeathLootTable:"minecraft:stronghold/death/zombie/3",Tags:["stronghold.mobs"],attributes:[{id:"max_health",base:20},{base:0.3,id:"movement_speed"}]}

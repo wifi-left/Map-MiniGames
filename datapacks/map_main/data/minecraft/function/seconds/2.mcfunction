@@ -39,5 +39,6 @@ effect give @a[team=wait.wolfpeople] resistance 2 25 true
 effect give @a[team=wolfpeople] resistance 2 25 true
 
 
+execute if score stronghold.state state matches 1.. in lobby run function stronghold/half_second
 execute if score stronghold.state state matches 1.. in lobby run function stronghold/second
 execute if score stronghold.state state matches 0 run effect give @a[team=stronghold] resistance 2 25 true

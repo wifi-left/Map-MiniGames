@@ -23,3 +23,8 @@ bossbar set stronghold name [{"text":"蚀界行者","color":"#FE4382","bold": tr
 # ~6 ~12 ~18 front_text.messages[0]
 bossbar set stronghold color yellow
 bossbar set stronghold visible true
+bossbar set stronghold.boss visible false
+
+execute as @e[tag=stronghold.boss] store result bossbar stronghold.boss max run data get entity @s Health 10
+execute as @e[tag=stronghold.boss] store result bossbar stronghold.boss value run data get entity @s Health 10
+execute if entity @e[tag=stronghold.boss] run bossbar set stronghold.boss visible true

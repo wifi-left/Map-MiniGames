@@ -34,3 +34,4 @@ execute if score killer.state state matches 1.. run function minecraft:killereve
 execute if score duel.state state matches 1.. run function minecraft:duel/second
 
 execute unless entity @a[team=job_pvp] run kill @e[tag=pvp.car]
+execute if score stronghold.state state matches 1.. in lobby run function stronghold/half_second

@@ -1,0 +1,505 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": {
+                "min": 2,
+                "max": 4
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "golden_apple",
+                    "weight": 10,
+                    "quality": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:max_stack_size": 99
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            },
+                            "add": true,
+                            "conditions": []
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "enchanted_golden_apple",
+                    "weight": 1,
+                    "quality": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:max_stack_size": 99
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 1
+                            },
+                            "add": true,
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 1,
+                "max": 4
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:tipped_arrow",
+                    "weight": 5,
+                    "quality": 5,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_potion",
+                            "id": "minecraft:poison",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.1
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_potion",
+                            "id": "minecraft:invisibility",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.1
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_potion",
+                            "id": "minecraft:slowness",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.1
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_potion",
+                            "id": "harming",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.1
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_potion",
+                            "id": "minecraft:regeneration",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.1
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_potion",
+                            "id": "minecraft:weakness",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.1
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_potion",
+                            "id": "minecraft:strength",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:spectral_arrow",
+                    "weight": 10,
+                    "quality": 2,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 10
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:arrow",
+                    "weight": 20,
+                    "quality": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 10
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 1,
+                "max": 4
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:splash_potion",
+                    "weight": 5,
+                    "quality": 5,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_potion",
+                            "id": "minecraft:poison",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.1
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_potion",
+                            "id": "minecraft:invisibility",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.3
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_potion",
+                            "id": "minecraft:slowness",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.1
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_potion",
+                            "id": "harming",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.1
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_potion",
+                            "id": "minecraft:regeneration",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.1
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_potion",
+                            "id": "minecraft:weakness",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.1
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_potion",
+                            "id": "minecraft:strength",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.1
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_potion",
+                            "id": "minecraft:awkward",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.1
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "weight": 5,
+                    "quality": 5,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_potion",
+                            "id": "minecraft:poison",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.5
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_potion",
+                            "id": "minecraft:invisibility",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.1
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_potion",
+                            "id": "minecraft:slowness",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.1
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_potion",
+                            "id": "harming",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.1
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_potion",
+                            "id": "minecraft:regeneration",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.1
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_potion",
+                            "id": "minecraft:weakness",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.1
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_potion",
+                            "id": "minecraft:strength",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.1
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_potion",
+                            "id": "minecraft:awkward",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 1,
+                "max": 3
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:netherite_sword",
+                    "weight": 1,
+                    "quality": 6,
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_sword",
+                    "weight": 5,
+                    "quality": 3,
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": 20
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_sword",
+                    "weight": 10,
+                    "quality": 3,
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": 30
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:stone_sword",
+                    "weight": 10,
+                    "quality": 3,
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": 30
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:crossbow",
+                    "weight": 3,
+                    "quality": 3,
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": 30
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "bow",
+                    "weight": 2,
+                    "quality": 2,
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": 30
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 1,
+                "max": 10
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "gold_ingot",
+                    "weight": 1,
+                    "quality": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:max_stack_size": 99
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 0,
+                                "max": 6
+                            },
+                            "add": true,
+                            "conditions": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 2,
+                "max": 6
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "stronghold/chest/armor_2",
+                    "weight": 2,
+                    "quality": 1
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "stronghold/chest/armor",
+                    "weight": 2,
+                    "quality": 1
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 2,
+                "max": 4
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "stronghold/chest/tools",
+                    "weight": 2,
+                    "quality": 1
+                }
+            ]
+        }
+    ],
+    "random_sequence": "minecraft:archaeology/desert_pyramid"
+}
