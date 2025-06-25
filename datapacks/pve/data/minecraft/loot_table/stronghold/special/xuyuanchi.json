@@ -6,14 +6,14 @@
                 "min": 0,
                 "max": {
                     "min": 0,
-                    "max": 2
+                    "max": 1
                 }
             },
             "entries": [
                 {
                     "type": "minecraft:loot_table",
                     "value": "minecraft:stronghold/chest/tools",
-                    "weight": 3
+                    "weight": 8
                 },
                 {
                     "type": "minecraft:loot_table",
@@ -23,7 +23,7 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:totem_of_undying",
-                    "weight": 3
+                    "weight": 1
                 }
             ]
         }
