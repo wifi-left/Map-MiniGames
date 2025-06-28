@@ -105,3 +105,4 @@ kill @e[type=fireball]
 
 gamerule commandModificationBlockLimit 114514
 # setblock 0 -40 0 shulker_box{lock:{components:{unbreakable:{show_in_tooltip:false}}}}
+scoreboard players reset * bw.board

@@ -1,4 +1,6 @@
-execute as @e[tag=shop2] at @s run item replace block ~ ~-1 ~ container.12 with iron_ingot[item_name='IRON INGOT \u00a76- \u00a7a4 \u00a7bExperience',custom_data={shop:iron_ingot,bwshopitem:1},lore=['\u00a77用于分享给团队成员、兑换物品']] 4
-execute as @e[tag=shop2] at @s run item replace block ~ ~-1 ~ container.13 with gold_ingot[item_name='GOLD INGOT \u00a76- \u00a7a20 \u00a7bExperience',custom_data={shop:gold_ingot,bwshopitem:1},lore=['\u00a77用于分享给团队成员、兑换物品']]
-execute as @e[tag=shop2] at @s run item replace block ~ ~-1 ~ container.14 with emerald[item_name='EMERALD \u00a76- \u00a7a300 \u00a7bExperience',custom_data={shop:emerald,bwshopitem:1},lore=['\u00a77用于分享给团队成员、兑换物品']]
+execute as @e[tag=shop] at @s run function minecraft:bedwars/reset_shop/xpshop1
+execute as @e[tag=shop2] at @s run function minecraft:bedwars/reset_shop/xpshop2
+execute as @e[tag=shop2] at @s run item replace block ~ ~-1 ~ container.12 with iron_ingot[item_name='IRON INGOT \u00a76- \u00a7a4 \u00a7bExperience',custom_data={shop:iron_ingot,bwshopitem:1},lore=['\u00a77用于分享给团队成员']] 4
+execute as @e[tag=shop2] at @s run item replace block ~ ~-1 ~ container.13 with gold_ingot[item_name='GOLD INGOT \u00a76- \u00a7a20 \u00a7bExperience',custom_data={shop:gold_ingot,bwshopitem:1},lore=['\u00a77用于分享给团队成员']]
+execute as @e[tag=shop2] at @s run item replace block ~ ~-1 ~ container.14 with emerald[item_name='EMERALD \u00a76- \u00a7a300 \u00a7bExperience',custom_data={shop:emerald,bwshopitem:1},lore=['\u00a77用于分享给团队成员']]
 # iron_ingot[can_place_on={blocks: "#minecraft:bwplace"},tooltip_display={hidden_components: ["minecraft:can_break", "minecraft:can_place_on"]},can_break={blocks: "#minecraft:bedblocks"}}]

@@ -22,14 +22,7 @@ execute as @e[tag=tntsheep.spawn] at @s run function bedwars/item/tntsheep
 ## Other
 spawnpoint @a[tag=bw.player] -225 9 111
 
-fill -309 33 127 -303 29 134 air replace #minecraft:bedblocks
-fill -386 33 214 -380 29 208 air replace #minecraft:bedblocks
-fill -300 30 292 -305 30 285 air replace #minecraft:bedblocks
-fill -221 33 205 -228 29 211 air replace #minecraft:bedblocks
 
-fill -302 30 128 -301 32 130 air replace #minecraft:bedblocks
-fill -385 30 207 -382 33 207 air replace #minecraft:bedblocks
-fill -306 33 291 -306 30 286 air replace #minecraft:bedblocks
 
 kill @e[type=item,nbt={Item:{id:"minecraft:red_bed"}}]
 kill @e[type=item,nbt={Item:{id:"minecraft:blue_bed"}}]

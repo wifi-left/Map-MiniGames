@@ -4,8 +4,9 @@
 ## 
 execute as @s at @s store result score @s bw.tmp.ir run clear @s iron_ingot 0
 execute as @s at @s store result score @s bw.tmp.gd run clear @s gold_ingot 0
-execute as @s at @s store result score @s bw.tmp.dm run clear @s diamond 0
 execute as @s at @s store result score @s bw.tmp.em run clear @s emerald 0
+
+execute as @s at @s store result score @s bw.tmp.dm run clear @s diamond 0
 ## Buy.-25
 
 scoreboard players set bw.buy.sharpness.tmp board 0

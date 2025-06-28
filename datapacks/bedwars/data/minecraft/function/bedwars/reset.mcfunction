@@ -50,7 +50,7 @@ title @a[tag=bw.player] times 0 200 0
 gamemode spectator @a[tag=bw.player,gamemode=adventure]
 execute if score bw.mode board matches ..0 store result score bw.mode board run random value 1..7
 
-
+fill -216 -2 299 -392 -1 121 air
 execute if score bw.mode board matches 1 run function bedwars/resets/mogu
 execute if score bw.mode board matches 2 run function bedwars/resets/unnamed
 execute if score bw.mode board matches 3 run function bedwars/resets/space
