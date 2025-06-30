@@ -2,8 +2,8 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
-clear @s carrot_on_a_stick[custom_data={boatItem:2b}]
-clear @s carrot_on_a_stick[custom_data={boatItem:1b}]
+clear @s carrot_on_a_stick[custom_data~{boatItem:2b}]
+clear @s carrot_on_a_stick[custom_data~{boatItem:1b}]
 tag @s remove boat.notspawn
 tag @s add boat.sel
 team leave @s

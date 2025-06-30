@@ -9,8 +9,8 @@ execute if score boat.start board matches 1.. run title @a[team=boat] subtitle [
 execute as @a[team=boat] at @s run playsound minecraft:block.note_block.pling player @s -62 160 -98 5 1 1
 
 execute if score boat.start board matches ..0 run function boat/startgo
-clear @a[team=boat] carrot_on_a_stick[custom_data={boatItem:2b}]
-clear @a[team=boat] carrot_on_a_stick[custom_data={boatItem:1b}]
+clear @a[team=boat] carrot_on_a_stick[custom_data~{boatItem:2b}]
+clear @a[team=boat] carrot_on_a_stick[custom_data~{boatItem:1b}]
 # clear @a[team=boat] carrot_on_a_stick{boatItem:2b}
 # clear @a[team=boat] carrot_on_a_stick{boatItem:1b}
 
