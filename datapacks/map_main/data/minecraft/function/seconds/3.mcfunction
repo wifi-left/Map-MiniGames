@@ -36,3 +36,6 @@ execute if score duel.state state matches 1.. run function minecraft:duel/hftick
 execute if score car.state state matches 1.. run function minecraft:car_race/second
 execute if score endwolf.state state matches 1.. run function endless_wolf/second
 
+
+effect give @a[team=blaze.wait] resistance 2 25 true
+execute if score blaze.state state matches 1.. run function minecraft:blaze/second
