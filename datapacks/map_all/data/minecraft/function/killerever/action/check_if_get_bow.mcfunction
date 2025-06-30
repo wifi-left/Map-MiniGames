@@ -3,8 +3,8 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 scoreboard players set @s temp 0
-execute store result score @s temp run clear @s bow[] 0
-execute if score @s temp matches 1.. run clear @s bow[] 1
+execute store result score @s temp run clear @s bow[custom_data={dtb:1b}] 0
+execute if score @s temp matches 1.. run clear @s bow[custom_data={dtb:1b}] 1
 execute if score @s temp matches 1.. run tellraw @s ["§c你不能捡起这把弓。"]
 
 ## WARNING: The transformation may cause problem. You might need to modify it by yourself.

@@ -6,7 +6,7 @@ execute if score endwolf.round board matches ..0 run function minecraft:endless_
 execute if score endwolf.state state matches 5.. run return 0
 scoreboard players operation endwolf.time board = endwolf.day state
 # function minecraft:endless_wolf/
-clear @a[team=play.endwolf] *[]
+clear @a[team=play.endwolf] *[custom_data={vampire:true}]
 function minecraft:endless_wolf/vampire_item
 time set day
 scoreboard players set endwolf.state state 1

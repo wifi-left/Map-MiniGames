@@ -9,6 +9,6 @@ execute if score endwolf.state state matches 1 as @a[team=play.endwolf,tag=endle
 execute if score endwolf.state state matches 1 as @a[team=play.endwolf,tag=endless.vampire,gamemode=adventure] at @s run effect give @s slowness 1 0 true
 spawnpoint @a[team=play.endwolf] -376 54 624
 
-clear @a[team=play.endwolf,tag=!endless.vampire,gamemode=adventure] *[]
+clear @a[team=play.endwolf,tag=!endless.vampire,gamemode=adventure] *[custom_data={vampire:true}]
 
 execute as @a[team=play.endwolf,tag=endless.vampire,gamemode=adventure] run function minecraft:endless_wolf/compass/vampire
