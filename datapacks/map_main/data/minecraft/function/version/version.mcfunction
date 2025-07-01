@@ -1,1 +1,1 @@
-tellraw @s ["\u00a7aMap Version: \u00a7b\u00a7l2025.06.30 (22:05:10)"]
+tellraw @s ["\u00a7aMap Version: \u00a7b\u00a7l2025.07.01 (13:48:46)"]
