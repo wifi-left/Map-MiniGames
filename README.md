@@ -23,7 +23,7 @@
 
 ## 插件兼容性
 如果您使用插件端，请一定阅读以下内容。
-### 不兼容的插件（包括代理端（Velocity、bungeecord中的插件）
+### 不兼容的插件（包括代理端（Velocity、bungeecord中的插件））
 > 感谢 [FallenCrystal](https://github.com/FallenCrystal/Minecraft-Minigames-Map/)
 - EssentialsX, CMI
 - CombatLogX
