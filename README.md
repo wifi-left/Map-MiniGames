@@ -16,6 +16,24 @@
 2. Folia：破坏了原版命令系统
 3. 任何破坏原版命令、修改原版行为的服务端：本地图基于原版命令系统以及原版行为。
 4. Forge：可能会出现各种BUG，原因未知。请尝试使用Neoforged代替Forge。
+## 模组兼容性
+如果您使用模组端，请一定阅读以下内容。
+### 不支持的模组
+暂未发现，欢迎补充。
+
+## 插件兼容性
+如果您使用插件端，请一定阅读以下内容。
+### 不兼容的插件（包括代理端（Velocity、bungeecord中的插件）
+> 感谢 [FallenCrystal](https://github.com/FallenCrystal/Minecraft-Minigames-Map/)
+- EssentialsX, CMI
+- CombatLogX
+- 任何修改计分板的插件, 除了TAB。关于TAB插件，请**一定阅读**[Tab 插件兼容性](https://github.com/FallenCrystal/Minecraft-Minigames-Map/blob/1-21-4-lts/docs/tab-compatibility.md)
+- Multiverse-Core, BKCommonLib
+- 任何隐身插件 (如SuperVanish)
+
+### 建议安装的插件:
+- LuckPerms : 如果您正在运行中大型服务器, 这是必不可缺的. 除了您的插件需要获取权限以外, 禁用原版OP权限也可以避免您的管理员拥有您不希望他们拥有的权限, 一定程度上也可以避免无下限的滥用.
+- AntiPopup : 在您的服务器上禁用烦人的聊天报告, 并阻止"不安全的聊天"弹窗弹出.
 
 ## 某些服务端的特殊设置
 1. 如果您使用Spigot，建议您打开在线模式。Spigot离线模式会导致部分玩家无法进入（Spigot会把玩家队伍前缀当成玩家名，而这些前缀包含了特殊符号“|”等不应该出现在路径中的文本）
