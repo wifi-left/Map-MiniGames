@@ -42,7 +42,17 @@
     "minecraft:moss_carpet",
     "#minecraft:wool",
     "minecraft:chest",
-    "minecraft:barrel"
+    "minecraft:barrel",
+    "lily_pad",
+    "hay_block",
+    "lantern",
+    "flower_pot",
+    "glowstone",
+    "#slabs",
+    "#stairs",
+    "#stainglass",
+    "end_rod",
+    "#fences"
   ]
 }
 
