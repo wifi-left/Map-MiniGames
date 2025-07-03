@@ -15,7 +15,7 @@ item replace block ~ ~-1 ~ container.12 with minecraft:iron_chestplate[minecraft
 item replace block ~ ~-1 ~ container.13 with minecraft:gray_stained_glass_pane[minecraft:item_name="",minecraft:custom_data={shop:1}] 1
 item replace block ~ ~-1 ~ container.14 with minecraft:iron_pickaxe[minecraft:lore=["§d急迫I §6- §a4 §b钻石","§d急迫II §6- §a6 §b钻石"],minecraft:item_name="§f急迫",minecraft:custom_data={shop:7,bwshopitem:1}] 1
 item replace block ~ ~-1 ~ container.15 with minecraft:gray_stained_glass_pane[minecraft:item_name="",minecraft:custom_data={shop:1}] 1
-item replace block ~ ~-1 ~ container.16 with minecraft:potion[minecraft:item_name="§f速度 I §6- §a6 §bDiamond",minecraft:custom_data={shop:114514,bwshopitem:1},minecraft:potion_contents={custom_color:65535,custom_effects:[{duration:20,show_icon:0b,amplifier:1b,id:"minecraft:speed",show_particles:0b}]}] 1
+item replace block ~ ~-1 ~ container.16 with minecraft:potion[minecraft:custom_name="§f速度 I §6- §a6 §bDiamond",minecraft:custom_data={shop:114514,bwshopitem:1},minecraft:potion_contents={custom_color:65535,custom_effects:[{duration:20,show_icon:0b,amplifier:1b,id:"minecraft:speed",show_particles:0b}]}] 1
 item replace block ~ ~-1 ~ container.17 with minecraft:gray_stained_glass_pane[minecraft:item_name="",minecraft:custom_data={shop:1}] 1
 item replace block ~ ~-1 ~ container.18 with minecraft:gray_stained_glass_pane[minecraft:item_name="",minecraft:custom_data={shop:1}] 1
 item replace block ~ ~-1 ~ container.19 with minecraft:gray_stained_glass_pane[minecraft:item_name="",minecraft:custom_data={shop:1}] 1

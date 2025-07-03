@@ -1,0 +1,1 @@
+summon minecraft:zombie ~ ~ ~ {Health:20,CustomName:{text:"僵尸",color:yellow},CustomNameVisible:true,DeathLootTable:"minecraft:stronghold/death/zombie/1",Tags:["stronghold.mobs"]}

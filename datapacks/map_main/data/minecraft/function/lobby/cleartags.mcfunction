@@ -47,3 +47,11 @@ attribute @s safe_fall_distance modifier remove parkour_safe_fall
 # attribute @s  modifier remove parkour_safe_fall
 bossbar set stronghold players @a[team=stronghold]
 bossbar set stronghold.boss players @a[team=stronghold]
+
+attribute @s gravity modifier remove pvp
+attribute @s armor modifier remove pvp
+attribute @s safe_fall_distance modifier remove pvp
+attribute @s armor_toughness modifier remove pvp
+attribute @s max_health modifier remove pvp
+attribute @s movement_efficiency modifier remove pvp
+attribute @s movement_speed modifier remove pvp

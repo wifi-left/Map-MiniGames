@@ -2,7 +2,7 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
-execute store result score tmp board run random value 1..28
+execute store result score tmp board run random value 1..38
 execute if score tmp board matches 1 run tp @s -657 -29 244
 execute if score tmp board matches 2 run tp @s -677 -29 254
 execute if score tmp board matches 3 run tp @s -689 -29 264
@@ -31,3 +31,13 @@ execute if score tmp board matches 25 run tp @s -698 -29 201
 execute if score tmp board matches 26 run tp @s -692 -29 223
 execute if score tmp board matches 27 run tp @s -663 -29 217
 execute if score tmp board matches 28 run tp @s -665 -29 201
+execute if score tmp board matches 29 run tp @s -748 3 282
+execute if score tmp board matches 30 run tp @s -761 6 307
+execute if score tmp board matches 31 run tp @s -777 6 264
+execute if score tmp board matches 32 run tp @s -798 15 289
+execute if score tmp board matches 33 run tp @s -826 16 275
+execute if score tmp board matches 34 run tp @s -859 17 257
+execute if score tmp board matches 35 run tp @s -837 46 310
+execute if score tmp board matches 36 run tp @s -831 41 305
+execute if score tmp board matches 37 run tp @s -826 41 310
+execute if score tmp board matches 38 run tp @s -822 41 316
