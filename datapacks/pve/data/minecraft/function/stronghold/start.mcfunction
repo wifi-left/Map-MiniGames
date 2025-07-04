@@ -3,7 +3,7 @@ scoreboard players set stronghold.state state 3
 scoreboard players set stronghold.debug state 0
 tag @a remove stronghold.alive
 
-scoreboard players operation stronghold.difficuly board = stronghold.difficuly state
+scoreboard players operation stronghold.difficulty board = stronghold.difficulty state
 
 scoreboard players set stronghold.player tick 0
 

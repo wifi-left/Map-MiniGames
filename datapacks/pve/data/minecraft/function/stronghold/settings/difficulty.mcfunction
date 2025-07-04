@@ -9,27 +9,27 @@ execute if score tmp.canset board matches 0 run tellraw @s ["§c游戏仅管理�
 execute if score tmp.canset board matches 0 run playsound block.anvil.land player @s ~ ~ ~ 1 1 0
 execute if score tmp.canset board matches 0 run return 0
 
-scoreboard players add stronghold.difficuly state 1
-execute if score stronghold.difficuly state matches 6.. run scoreboard players set stronghold.difficuly state 0
+scoreboard players add stronghold.difficulty state 1
+execute if score stronghold.difficulty state matches 6.. run scoreboard players set stronghold.difficulty state 0
 # snow.mode bo1ard
-# execute if score stronghold.difficuly state matches -1 run data modify block ~ ~ ~ front_text.messages[1] set value {"text":"> 随机选择 <","color":"gold"}
-execute if score stronghold.difficuly state matches 0 run data modify block ~ ~ ~ front_text.messages[1] set value [{"text":"自动选择","color":"light_purple",bold:true}]
-execute if score stronghold.difficuly state matches 0 run data modify block ~ ~ ~ front_text.messages[2] set value [{"text":"根据人数自动选择难度","color":"white",bold:false}]
+# execute if score stronghold.difficulty state matches -1 run data modify block ~ ~ ~ front_text.messages[1] set value {"text":"> 随机选择 <","color":"gold"}
+execute if score stronghold.difficulty state matches 0 run data modify block ~ ~ ~ front_text.messages[1] set value [{"text":"自动选择","color":"light_purple",bold:true}]
+execute if score stronghold.difficulty state matches 0 run data modify block ~ ~ ~ front_text.messages[2] set value [{"text":"根据人数自动选择难度","color":"white",bold:false}]
 
-execute if score stronghold.difficuly state matches 1 run data modify block ~ ~ ~ front_text.messages[1] set value [{"text":"简单","color":"green",bold:true}]
-execute if score stronghold.difficuly state matches 1 run data modify block ~ ~ ~ front_text.messages[2] set value [{"text":"适合1~2人游戏","color":"white",bold:false}]
+execute if score stronghold.difficulty state matches 1 run data modify block ~ ~ ~ front_text.messages[1] set value [{"text":"简单","color":"green",bold:true}]
+execute if score stronghold.difficulty state matches 1 run data modify block ~ ~ ~ front_text.messages[2] set value [{"text":"适合1~2人游戏","color":"white",bold:false}]
 
-execute if score stronghold.difficuly state matches 2 run data modify block ~ ~ ~ front_text.messages[1] set value [{"text":"普通","color":"aqua",bold:true}]
-execute if score stronghold.difficuly state matches 2 run data modify block ~ ~ ~ front_text.messages[2] set value [{"text":"适合2~4人游戏","color":"white",bold:false}]
+execute if score stronghold.difficulty state matches 2 run data modify block ~ ~ ~ front_text.messages[1] set value [{"text":"普通","color":"aqua",bold:true}]
+execute if score stronghold.difficulty state matches 2 run data modify block ~ ~ ~ front_text.messages[2] set value [{"text":"适合2~4人游戏","color":"white",bold:false}]
 
-execute if score stronghold.difficuly state matches 3 run data modify block ~ ~ ~ front_text.messages[1] set value [{"text":"困难","color":"yellow",bold:true}]
-execute if score stronghold.difficuly state matches 3 run data modify block ~ ~ ~ front_text.messages[2] set value [{"text":"适合5~8人游戏","color":"white",bold:false}]
+execute if score stronghold.difficulty state matches 3 run data modify block ~ ~ ~ front_text.messages[1] set value [{"text":"困难","color":"yellow",bold:true}]
+execute if score stronghold.difficulty state matches 3 run data modify block ~ ~ ~ front_text.messages[2] set value [{"text":"适合5~8人游戏","color":"white",bold:false}]
 
-execute if score stronghold.difficuly state matches 4 run data modify block ~ ~ ~ front_text.messages[1] set value [{"text":"逆天","color":"red",bold:true}]
-execute if score stronghold.difficuly state matches 4 run data modify block ~ ~ ~ front_text.messages[2] set value [{"text":"适合9~12人游戏","color":"white",bold:false}]
+execute if score stronghold.difficulty state matches 4 run data modify block ~ ~ ~ front_text.messages[1] set value [{"text":"逆天","color":"red",bold:true}]
+execute if score stronghold.difficulty state matches 4 run data modify block ~ ~ ~ front_text.messages[2] set value [{"text":"适合9~12人游戏","color":"white",bold:false}]
 
-execute if score stronghold.difficuly state matches 5 run data modify block ~ ~ ~ front_text.messages[1] set value [{"text":"变态","color":"dark_red",bold:true}]
-execute if score stronghold.difficuly state matches 5 run data modify block ~ ~ ~ front_text.messages[2] set value [{"text":"适合9~12人游戏","color":"white",bold:false}]
+execute if score stronghold.difficulty state matches 5 run data modify block ~ ~ ~ front_text.messages[1] set value [{"text":"变态","color":"dark_red",bold:true}]
+execute if score stronghold.difficulty state matches 5 run data modify block ~ ~ ~ front_text.messages[2] set value [{"text":"适合9~12人游戏","color":"white",bold:false}]
 
 
 playsound ui.button.click player @s ~ ~ ~ 1 1 1

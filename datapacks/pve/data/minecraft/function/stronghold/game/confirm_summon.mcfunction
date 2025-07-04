@@ -2,11 +2,11 @@ tag @s remove pve.stronghold.rooms.lock
 tag @s add pve.stronghold.rooms.fighting
 function minecraft:stronghold/reset/close_tunnel
 function minecraft:stronghold/game/summon
-execute if score stronghold.difficuly board matches 2.. run function minecraft:stronghold/game/summon_2
-execute if score stronghold.difficuly board matches 3.. run function minecraft:stronghold/game/summon_3
-# execute if score stronghold.difficuly state matches 3.. run function minecraft:stronghold/game/summon
-execute if score stronghold.difficuly board matches 4.. run function minecraft:stronghold/game/summon
-execute if score stronghold.difficuly board matches 5.. run function minecraft:stronghold/game/summon
+execute if score stronghold.difficulty board matches 2.. run function minecraft:stronghold/game/summon_2
+execute if score stronghold.difficulty board matches 3.. run function minecraft:stronghold/game/summon_3
+# execute if score stronghold.difficulty state matches 3.. run function minecraft:stronghold/game/summon
+execute if score stronghold.difficulty board matches 4.. run function minecraft:stronghold/game/summon
+execute if score stronghold.difficulty board matches 5.. run function minecraft:stronghold/game/summon
 
 scoreboard players set stronghold.mobs tick 0
 execute as @e[tag=stronghold.mobs] run scoreboard players add stronghold.mobs tick 1
@@ -25,6 +25,9 @@ bossbar set stronghold color yellow
 bossbar set stronghold visible true
 bossbar set stronghold.boss visible false
 
-execute as @e[tag=stronghold.boss] store result bossbar stronghold.boss max run data get entity @s Health 10
-execute as @e[tag=stronghold.boss] store result bossbar stronghold.boss value run data get entity @s Health 10
+scoreboard players set stronghold.healthTotal board 0
+execute as @e[tag=stronghold.boss] at @s run function minecraft:stronghold/game/boss_bossbar_per
+execute store result bossbar stronghold.boss value run scoreboard players get stronghold.healthTotal board
+execute store result bossbar stronghold.boss max run scoreboard players get stronghold.healthTotal board
+
 execute if entity @e[tag=stronghold.boss] run bossbar set stronghold.boss visible true
