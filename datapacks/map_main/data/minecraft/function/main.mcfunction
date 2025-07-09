@@ -188,7 +188,6 @@ execute if entity @a[tag=mazing,team=lobby] run function minecraft:maze/tick
 execute if score beli.state state matches 1.. run function minecraft:believer/tick
 execute if score color.state state matches 1.. run function minecraft:color/tick
 execute if score beli.state state matches 1.. run function minecraft:believer/second
-execute if score hotpot.state state matches 1.. run function minecraft:hotpotever/tick
 execute if entity @a[team=job_pvp] run function minecraft:job_pvp/tick
 execute if score killer.state state matches 1.. run function minecraft:killerever/tick
 execute if score zombie.state state matches 1.. run function minecraft:zombieever/tick
@@ -197,6 +196,7 @@ execute if score duel.state state matches 1.. run function minecraft:duel/tick
 
 scoreboard players reset @a[scores={JOBPVP.die=1..}] JOBPVP.die
 
+execute if score hotpot.state state matches 1.. run function minecraft:hotpotever/tick
 
 scoreboard players reset @a[scores={hp.hurt=0..},team=!play.hotpot.k] hp.hurt
 scoreboard players reset @a[scores={hp.gethurt=0..}] hp.gethurt
