@@ -21,4 +21,4 @@ execute unless score pw.state state matches 1.. if score wait.player tick matche
 execute unless score pw.state state matches 1.. if score wait.player tick matches ..1 run playsound entity.enderman.teleport player @s ~ ~ ~ 1 0 1
 execute unless score pw.state state matches 1.. if score wait.player tick matches 2.. run function minecraft:poolwar/start
 
-
+time set day

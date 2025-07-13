@@ -16,3 +16,4 @@ execute as @a[team=boom,tag=bomb.win] run title @a[team=boom,tag=!bomb.win] subt
 execute as @a[team=boom,tag=bomb.win] run tellraw @a[team=boom] ["§2§l[拆弹达人] §6游戏结束。获胜者：",{"selector":"@a[team=boom,tag=bomb.win]"}]
 execute as @a[team=boom] at @s run tellraw @s ["§a本次游戏你的总分数：",{"score":{"name":"@s","objective":"bomb.score"},"color":"gold"}]
 tag @a remove bomb.win
+

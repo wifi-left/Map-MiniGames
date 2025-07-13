@@ -5,5 +5,8 @@
 scoreboard players reset * score
 scoreboard players reset total.snow.tntrun state
 scoreboard players reset total.snow.pick state
-tag @e[tag=random_game] add random_game_able
+# data merge storage minecraft:temp {random_games:{games:[1,2,3,4,5,6,7,8,9],total:9}}
+# function minecraft:small_games/total/all_games
+function minecraft:small_games/total/games/games_reset
 
+# data modify storage minecraft:temp random_games.games append value {id:7,name:"躲猫猫"}

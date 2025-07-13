@@ -34,6 +34,7 @@ function minecraft:endless_wolf/time/day
 title @a[team=play.endwolf] title ["\u00a76游戏开始"]
 title @a[team=play.endwolf] subtitle ["\u00a7a在第一天晚上PVP就会开始啦~"]
 
-execute as @a[team=play.endwolf] at @s run tp @s @e[limit=1,sort=random,tag=endless.tppoint]
+# execute as @a[team=play.endwolf] at @s run tp @s @e[limit=1,sort=random,tag=endless.tppoint]
+execute as @a[team=play.endwolf] at @s run function minecraft:endless_wolf/random_tp
 execute as @a[team=play.endwolf,tag=endless.vampire] at @s run function minecraft:endless_wolf/vampire_item
 

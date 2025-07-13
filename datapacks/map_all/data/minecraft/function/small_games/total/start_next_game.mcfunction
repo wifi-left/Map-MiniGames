@@ -2,19 +2,20 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
-# Car 1
+# hideseek 1
 # Snow TNTRUN 2
 # Snow Pick 3
 # Repeling 4
 # Color 5
 # Block Believer 6
-# Muder Mystery 7
+# Hide tool 7
 # Duel 8
 # Hot Potato 9
-# Pool War 10
+# GOLF 10
+# TNTwars 11
 gamemode adventure @a[tag=play.total]
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 1..1 run execute as @a[tag=play.total] run function hideseek/join
-execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 1..1 run schedule function hideseek/trystart 1s
+execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 1..1 run function hideseek/trystart
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 2..2 run execute as @a[tag=play.total] run function snow/join
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 2..2 run scoreboard players set snow.tntrun state 1
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 2..2 run function snow/trystart
@@ -27,8 +28,8 @@ execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matc
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 4..4 run function repel/start
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 6..6 run execute as @a[tag=play.total] run function believer/join
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 6..6 run function believer/teststart
-execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 7..7 run execute as @a[tag=play.total] run function hideseek/join
-execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 7..7 run function hideseek/trystart
+execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 7..7 run execute as @a[tag=play.total] run function hide2/join
+execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 7..7 run function hide2/trystart
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 8..8 run execute as @a[tag=play.total] run function duel/join
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 8..8 as @r[tag=play.total] run function duel/teststart
 
@@ -41,4 +42,11 @@ execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matc
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 11..11 run execute as @a[tag=play.total] run function tntwars/join
 execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 11..11 run function tntwars/trystart
 
+execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 12 run execute as @a[tag=play.total] run function poolwar/join
+execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 12 run function poolwar/teststart
 
+execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 13 run execute as @a[tag=play.total] run function bomb/join
+execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 13 run function bomb/trystart
+
+execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 14 run execute as @a[tag=play.total] run function endless_wolf/join
+execute as @a[tag=play.total,limit=1,sort=random] if score total.game board matches 14 run function endless_wolf/trystart
