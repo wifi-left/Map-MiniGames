@@ -1,13 +1,7 @@
-##
-## Datapack Upgrader v1.0.2 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
-tag @s add park.sel
-execute at @s as @e[type=marker,tag=park] if score @s park.uuid = @a[tag=park.sel,limit=1] park.uuid run tag @s add flaged1
-tag @a[tag=park.sel] remove park.sel
-scoreboard players set park.tmp park.uuid 0
-execute if entity @e[tag=flaged1,distance=0..1.5] run title @s actionbar ["\u00a7c[你的记录点已经设置过了]"]
-execute unless entity @e[tag=flaged1,distance=0..1.5] align xyz positioned ~0.5 ~0 ~0.5 rotated ~ 0 run function minecraft:npark/plset
-tag @e[tag=flaged1] remove flaged1
-
-
+scoreboard players set park.tmp board 0
+execute store result score park.tmp.x board run data get entity @s Pos[0]
+execute store result score park.tmp.y board run data get entity @s Pos[1]
+execute store result score park.tmp.z board run data get entity @s Pos[2]
+execute if score @s park.x = park.tmp.x board if score @s park.y = park.tmp.y board if score @s park.z = park.tmp.z board run scoreboard players set park.tmp board 1
+execute if score park.tmp board matches 1 run title @s actionbar ["\u00a7c[你的记录点已经设置过了]"]
+execute if score park.tmp board matches 0 run function minecraft:npark/plset

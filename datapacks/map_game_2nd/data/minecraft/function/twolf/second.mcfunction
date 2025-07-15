@@ -15,6 +15,12 @@ execute unless score wolf.time board matches 1.. run bossbar set minecraft:wolfk
 execute if score twolf.state state matches 3 run bossbar set minecraft:wolfkiller name ["\u00a76狼人杀 \u00a78| \u00a7c游戏结束"]
 
 
+# tag @s add wolf.sell
+# execute if score @s LRS_JOB matches 9 run function minecraft:twolf/action/per/death/hunter/trigger
+# execute if score @s LRS_JOB matches 9 run return 0
+# execute as @e[tag=wolf.used] if score @s LRS_UUID = @a[tag=wolf.sell,limit=1] park.uuid run tag @s add wolf.tp.sell
+execute as @e[tag=wolf.used,tag=!wolf.died] at @s run function minecraft:twolf/detect_exit
+
 function minecraft:twolf/action/resethighlight
 execute as @a[team=wolfpeople,gamemode=adventure] unless score @s LRS_CS matches 1.. run function twolf/action/per/showjob
 execute as @a[team=wolfpeople,gamemode=adventure,scores={LRS_CS=1..}] run function twolf/action/per/showselector

@@ -16,5 +16,7 @@ scoreboard players set wolf.time board 60
 function twolf/action/special_day_choose
 function twolf/action/per/tpback_real
 execute as @a[tag=wolf.acting] at @s run function twolf/items/hunter
-schedule clear #wolffunctions
+schedule clear twolf/events/1/new_round
+schedule clear twolf/events/next_event
+schedule clear minecraft:twolf/events/1/new_round
 

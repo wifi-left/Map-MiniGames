@@ -10,6 +10,11 @@ scoreboard players reset * job_kill
 scoreboard players reset * leave
 scoreboard players reset * dropper.level
 scoreboard players reset * old
+scoreboard players reset * score
+scoreboard players reset * bw.board
+scoreboard players reset * park.x
+scoreboard players reset * park.y
+scoreboard players reset * park.z
 
 # function ttsecond
 

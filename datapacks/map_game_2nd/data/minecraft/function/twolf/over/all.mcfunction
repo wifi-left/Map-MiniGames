@@ -20,7 +20,11 @@ tag @a remove wolf.whitewolf
 tag @a remove wolf.white
 # 丘比特
 tag @a remove wolf.connected
-schedule clear #wolffunctions
+schedule clear twolf/events/1/new_round
+schedule clear twolf/events/next_event
+schedule clear minecraft:twolf/events/1/new_round
 execute unless score wolf.time board matches 1.. run bossbar set minecraft:wolfkiller name ["\u00a76狼人杀 \u00a78| \u00a7c游戏结束"]
 
 
+gamemode spectator @a[team=wolfpeople]
+clear @a[team=wolfpeople]

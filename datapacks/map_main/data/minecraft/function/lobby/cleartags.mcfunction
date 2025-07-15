@@ -41,7 +41,7 @@ recipe take @s *
 
 title @s reset
 bossbar set minecraft:golf players @a[team=golf]
-
+scoreboard players reset @s player.board
 
 attribute @s safe_fall_distance modifier remove parkour_safe_fall
 # attribute @s  modifier remove parkour_safe_fall

@@ -60,5 +60,7 @@ tag @e[tag=wolf.tppoint] remove wolf.used
 kill @e[tag=wolf.nametags]
 scoreboard players reset @e[tag=wolf.tp.sell,limit=1]
 
-schedule clear #wolffunctions
+schedule clear twolf/events/1/new_round
+schedule clear twolf/events/next_event
+schedule clear minecraft:twolf/events/1/new_round
 

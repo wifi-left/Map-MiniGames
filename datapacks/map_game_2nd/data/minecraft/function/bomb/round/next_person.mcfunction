@@ -23,7 +23,7 @@ clear @a[tag=boom.sel]
 tag @a[tag=boom.sel] remove boom.waittoplay
 tag @a[tag=boom.sel] remove boom.sel
 
-scoreboard players set boom.time board 421
+scoreboard players set boom.time board 301
 
 tellraw @a[team=boom] ["\u00a7d请等待\u00a7a2s\u00a7d，游戏将会继续。"]
 schedule function minecraft:bomb/round/cdover 2s replace
