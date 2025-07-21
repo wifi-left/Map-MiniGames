@@ -4,6 +4,7 @@
 ## 
 # execute run tellraw @a ["\u00a7b [SYS] 地图自检信息："]
 say §b [SYS] 地图自检信息：
+say §e [SYS] 温馨提示：本地图使用Paper服务端、Forge端很可能出现BUG，请避免使用。
 function version/version1
 function minecraft:version/gamev
 playsound entity.experience_orb.pickup player @s ~ ~ ~ 2 1 1

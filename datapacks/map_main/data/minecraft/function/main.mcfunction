@@ -25,9 +25,9 @@ clear @a[tag=NEWENTER]
 execute as @a[tag=NEWENTER] at @s run tag @s add map.old
 execute as @a[tag=NEWENTER] at @s run function lobby/cleartags
 title @a[tag=NEWENTER] title ["\u00a7a\u00a7lMini\u00a7e\u00a7lGames"]
-title @a[tag=NEWENTER] subtitle ["\u00a76You're in \u00a7dMain Lobby"]
-title @a[tag=NEWENTER] actionbar ["\u00a7aMade by wifi-left"]
-tellraw @a[tag=NEWENTER] ["\n§a  您可以随时使用 §6/trigger hub §a返回大厅。\n  §a全局音乐可以通过§6游戏设置 - ",{translate:"options.sounds",color:gold,fallback:"声音设置"}," - ",{translate:"soundCategory.voice",color:gold,fallback:"玩家语音"},"§a调节声音大小\n  §e部分游戏支持使用 §6/trigger rejoin§e 重新加入退出的游戏！\n\n§b  下载资源包：",{"text":"§d§n[Gitea](推荐)","underlined":true,"click_event":{"action":"open_url","url":"https://gitea.com/wifi-left/Map-MiniGames/raw/branch/master/resourcepack/MiniGameRes.zip"}}," ",{"underlined":true,"text":"§e§n[GitHub](备用)","click_event":{"action":"open_url","url":"https://github.com/wifi-left/Map-MiniGames/raw/master/resourcepack/MiniGameRes.zip"}},"\n"]
+title @a[tag=NEWENTER] subtitle ["\u00a76请查看聊天栏获取提示消息"]
+title @a[tag=NEWENTER] actionbar ["\u00a7a请查看聊天栏获取提示消息"]
+tellraw @a[tag=NEWENTER] ["\n§b  下载资源包：",{"text":"§d§n[Gitea](推荐)","underlined":true,"click_event":{"action":"open_url","url":"https://gitea.com/wifi-left/Map-MiniGames/raw/branch/master/resourcepack/MiniGameRes.zip"}}," ",{"underlined":true,"text":"§e§n[GitHub](备用)","click_event":{"action":"open_url","url":"https://github.com/wifi-left/Map-MiniGames/raw/master/resourcepack/MiniGameRes.zip"}},"\n\n§a  您可以随时使用 §6/trigger hub §a返回大厅。\n  §a全局音乐可以通过§6游戏设置 - ",{translate:"options.sounds",color:gold,fallback:"声音设置"}," - ",{translate:"soundCategory.voice",color:gold,fallback:"玩家语音"},"§a调节声音大小\n  §e部分游戏支持使用 §6/trigger rejoin§e 重新加入退出的游戏！\n"]
 execute as @a[tag=NEWENTER] run attribute @s max_health base set 20
 
 gamemode adventure @a[tag=NEWENTER]
