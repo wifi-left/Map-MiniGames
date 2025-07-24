@@ -16,5 +16,8 @@ function hideseek/starting/reset
 # forceload add 435 -266 328 -356
 kill @e[tag=hide.animals]
 forceload remove 390 -301 545 -428
-
+execute as @a[team=hide.wait] run function hideseek/join
+execute as @a[team=hide.play.hun] run function hideseek/join
+execute as @a[team=hide.play.ani] run function hideseek/join
+gamemode adventure @a[team=hide.wait]
 

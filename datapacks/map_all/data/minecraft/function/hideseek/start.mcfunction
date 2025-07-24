@@ -2,6 +2,8 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
+scoreboard players operation hideseek.settings.map board = hideseek.settings.map state
+execute if score hideseek.settings.map board matches 0 store result score hideseek.settings.map board run random value 1..2
 scoreboard players set start.player tick 0
 effect clear @a[team=hide.wait]
 execute as @a[team=hide.wait,gamemode=adventure] run scoreboard players add start.player tick 1

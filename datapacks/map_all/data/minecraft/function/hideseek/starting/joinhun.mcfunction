@@ -5,5 +5,5 @@
 # function hideseek/during/huntdied
 tellraw @s ["\n§6   你的身份是：猎人。\n"]
 clear @s
-tp @s 347 3 -448 0 0
 
+execute in overworld run tp @s 483 0 -445 90 0

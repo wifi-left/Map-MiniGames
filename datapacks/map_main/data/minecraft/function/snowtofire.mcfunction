@@ -11,13 +11,13 @@ execute if entity @s[team=job_pvp] anchored eyes run summon fireball ^ ^ ^1 {Tag
 execute unless entity @s[team=job_pvp] anchored eyes run summon fireball ^ ^ ^1 {Tags:["f.new"],ExplosionPower:1,acceleration_power:0.4d}
 
 ## WARNING: The transformation may cause problem. You might need to modify it by yourself.
-execute as @e[tag=f.new] run data modify entity @s Owner set from entity @e[limit=1,sort=nearest,type=snowball] Owner
+execute as @e[tag=f.new] run data modify entity @s Owner set from entity @e[limit=1,sort=nearest,type=snowball,distance=..5] Owner
 # execute as @e[tag=f.new] run data modify entity @s Motion set from entity @e[limit=1,sort=nearest,tag=f.tmp] Pos
 
 ## WARNING: The transformation may cause problem. You might need to modify it by yourself.
 execute as @e[tag=f.new] run data modify entity @s Motion set from entity @e[limit=1,tag=f.tmp] Pos
 tag @e[tag=f.new] remove f.new
-kill @e[type=snowball,distance=0..5,sort=nearest]
+kill @e[type=snowball,distance=..5,sort=nearest]
 scoreboard players reset @s fireball
 kill @e[tag=f.tmp]
 # say 1

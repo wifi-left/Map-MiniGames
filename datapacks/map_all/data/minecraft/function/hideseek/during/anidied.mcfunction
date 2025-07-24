@@ -8,7 +8,7 @@ tellraw @a[team=hide.play.ani] [{"selector":"@s"},"§c 变成了猎人。"]
 tellraw @s ["§e你死了。\n现在成为了一个猎人。"]
 clear @s
 team join hide.play.hun
-function hideseek/during/hunitem
+# function hideseek/during/hunitem
 xp set @s 0 levels
 xp set @s 0 points
 
@@ -22,3 +22,4 @@ kill @e[tag=shouldtp,limit=1]
 
 advancement grant @s only games/hide_animal_died
 
+function minecraft:hideseek/during/huntdied

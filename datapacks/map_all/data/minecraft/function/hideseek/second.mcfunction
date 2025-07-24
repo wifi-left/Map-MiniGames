@@ -4,6 +4,9 @@
 ## 
 # effect give @a[team=hide.play.ani] resistance 1 25 true
 # effect give @a[team=hide.play.hun] resistance 1 25 true
+
+execute if score hide.state state matches 1.. as @a[team=hide.play.ani] run function hideseek/during/aniitem
+
 effect give @a[team=hide.wait] resistance 1 25 true
 spawnpoint @a[team=hide.play.ani] 470 2 -362 -180
 spawnpoint @a[team=hide.play.hun] 470 2 -362 -180
@@ -35,6 +38,7 @@ tag @a remove hide.player
 effect give @a[team=hide.play.ani] invisibility 2 25 true
 effect give @a[team=hide.play.ani] minecraft:water_breathing 2 25 true
 execute if score hide.state state matches 2.. run function hideseek/prepare/step1
+execute unless score hide.state state matches 2.. as @a[team=hide.play.hun] run function hideseek/during/hunitem
 execute if score hide.state state matches 1.. if score hide.restanimals board matches ..0 run function hideseek/gameover/hunt
 execute if score hide.state state matches 1.. if score hide.resthunts board matches ..0 run function hideseek/gameover/ani
 execute if score hide.state state matches 1.. if score hide.resttime board matches ..0 run function hideseek/gameover/anitime
