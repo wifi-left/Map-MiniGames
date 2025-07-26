@@ -12,8 +12,9 @@ execute if score tmp.canset board matches 0 run return 0
 
 playsound ui.button.click player @s ~ ~ ~
 scoreboard players add hideseek.settings.map state 1
-execute if score hideseek.settings.map state matches 3.. run scoreboard players set hideseek.settings.map state 0
+execute if score hideseek.settings.map state matches 4.. run scoreboard players set hideseek.settings.map state 0
 
 execute if score hideseek.settings.map state matches 0 run data modify block ~ ~ ~ front_text.messages[1] set value [{text:"[随机地图]",color:"light_purple",bold:true}]
 execute if score hideseek.settings.map state matches 1 run data modify block ~ ~ ~ front_text.messages[1] set value [{text:"庄园之歌",color:"green",bold:true}]
 execute if score hideseek.settings.map state matches 2 run data modify block ~ ~ ~ front_text.messages[1] set value [{text:"天空之城",color:"aqua",bold:true}]
+execute if score hideseek.settings.map state matches 3 run data modify block ~ ~ ~ front_text.messages[1] set value [{text:"洞窟之家",color:"yellow",bold:true}]

@@ -11,6 +11,7 @@ scoreboard players set @s LRS_START_DJS 1
 # execute as @s run spreadplayers 468.0 -364.0 0 40 under 5 false @s
 execute if score hideseek.settings.map board matches 1 run spreadplayers 468.0 -364.0 0 40 under 5 false @s
 execute if score hideseek.settings.map board matches 2 run tp @s 528 -5 -566 0 0
+execute if score hideseek.settings.map board matches 3 run tp @s 348 -34 -563 -90 0
 
 function hideseek/defaultanimal
 

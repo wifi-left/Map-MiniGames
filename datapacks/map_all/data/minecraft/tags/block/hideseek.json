@@ -40,6 +40,7 @@
     "#minecraft:terracottas",
     "#minecraft:flowers",
     "minecraft:moss_carpet",
+    "minecraft:moss_block",
     "#minecraft:wool_carpets",
     "#minecraft:terracottas",
     "#minecraft:glazed_terracottas",
@@ -81,7 +82,24 @@
     "quartz_pillar",
     "nether_quartz_ore",
     "smooth_quartz",
-    "chiseled_quartz_block"
+    "chiseled_quartz_block",
+    "nether_wart",
+    "soul_torch",
+    "torch",
+    "#wooden_buttons",
+    "soul_sand",
+    "soul_soil",
+    "soul_lantern",
+    "#saplings",
+    "crafting_table",
+    "furnace",
+    "smithing_table",
+    "fletching_table",
+    "enchanting_table",
+    "cartography_table",
+    "loom",
+    "stonecutter",
+    "grindstone"
   ]
 }
 

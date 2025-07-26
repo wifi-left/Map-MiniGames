@@ -4,6 +4,7 @@
 ## 
 execute if score hideseek.settings.map board matches 1 as @a[team=hide.play.hun] run tp @s 470 2 -362 -180 0
 execute if score hideseek.settings.map board matches 2 as @a[team=hide.play.hun] run tp @s 513 -16 -597 180 0
+execute if score hideseek.settings.map board matches 3 as @a[team=hide.play.hun] run tp @s 343 -19 -567 -90 0
 
 tellraw @a[team=hide.play.ani] ["\n§c   猎人出动！请小心！\n"]
 title @a[team=hide.play.hun] title ["\u00a7b出发！"]
