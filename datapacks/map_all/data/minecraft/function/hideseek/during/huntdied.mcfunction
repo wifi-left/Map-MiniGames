@@ -7,11 +7,12 @@ tellraw @a[team=hide.play.hun] [{"selector":"@s"},"§c 死了。"]
 tellraw @a[team=hide.play.ani] [{"selector":"@s"},"§c 死了。"]
 clear @s
 scoreboard players reset @s die
+team join hide.play.hun @s
+
 execute if score hide.state state matches 2.. run function minecraft:hideseek/starting/joinhun
 execute if score hide.state state matches 2.. run return 0
 
 # function hideseek/during/hunitem
-team join hide.play.hun
 
 execute if score hideseek.settings.map board matches 1 as @s run tp @s 470 2 -362 -180 0
 execute if score hideseek.settings.map board matches 2 as @s run tp @s 513 -16 -597 180 0
