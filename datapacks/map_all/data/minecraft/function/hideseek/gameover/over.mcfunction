@@ -4,7 +4,6 @@
 ## 
 forceload add 390 -301 545 -428
 # execute if entity @a[team=play.snow,tag=play.total] run function small_games/total/next_game
-execute if entity @a[team=hide.wait,tag=play.total] run function small_games/total/next_game
 
 scoreboard players set hide.state state 0
 # title @a[team=hide.play.ani] title ["\u00a7cGAMEOVER!"]
@@ -21,3 +20,4 @@ execute as @a[team=hide.play.hun] run function hideseek/join
 execute as @a[team=hide.play.ani] run function hideseek/join
 gamemode adventure @a[team=hide.wait]
 
+execute if entity @a[team=hide.wait,tag=play.total] run function small_games/total/next_game
