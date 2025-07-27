@@ -8,8 +8,8 @@
 execute if score hide.state state matches 1.. as @a[team=hide.play.ani] run function hideseek/during/aniitem
 
 effect give @a[team=hide.wait] resistance 1 25 true
-spawnpoint @a[team=hide.play.ani] 470 2 -362 -180
-spawnpoint @a[team=hide.play.hun] 470 2 -362 -180
+spawnpoint @a[team=hide.play.ani] 368 -13 -477
+spawnpoint @a[team=hide.play.hun] 368 -13 -477
 function hideseek/during/testanimal
 xp add @a[level=1..,team=hide.play.hun] -1 levels
 xp add @a[level=1..,team=hide.play.ani] -1 levels
