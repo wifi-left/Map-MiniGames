@@ -17,6 +17,7 @@ scoreboard players set hide.maxtime board 0
 scoreboard players add hide.maxtime board 60
 scoreboard players operation hide.maxtime2 board *= hide2.timeperplayer board
 scoreboard players operation hide.maxtime board += hide.maxtime2 board
+scoreboard players add hide.maxtime board 30
 
 execute if score hide.maxtime board matches ..120 run scoreboard players set hide.maxtime board 120
 execute if score hide.maxtime board matches 600.. run scoreboard players set hide.maxtime board 600

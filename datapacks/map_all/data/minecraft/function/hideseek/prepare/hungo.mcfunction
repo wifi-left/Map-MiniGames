@@ -2,9 +2,7 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
-execute if score hideseek.settings.map board matches 1 as @a[team=hide.play.hun] run tp @s 470 2 -362 -180 0
-execute if score hideseek.settings.map board matches 2 as @a[team=hide.play.hun] run tp @s 513 -16 -597 180 0
-execute if score hideseek.settings.map board matches 3 as @a[team=hide.play.hun] run tp @s 343 -19 -567 -90 0
+execute as @a[team=hide.play.hun] run function minecraft:hideseek/during/hun_tp
 
 tellraw @a[team=hide.play.ani] ["\n§c   猎人出动！请小心！\n"]
 title @a[team=hide.play.hun] title ["\u00a7b出发！"]

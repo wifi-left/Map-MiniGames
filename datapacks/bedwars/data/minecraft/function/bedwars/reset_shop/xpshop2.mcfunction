@@ -14,7 +14,7 @@ item replace block ~ ~-1 ~ container.12 with minecraft:gray_stained_glass_pane[m
 item replace block ~ ~-1 ~ container.13 with minecraft:gray_stained_glass_pane[minecraft:item_name="",minecraft:custom_data={shop:1}] 1
 item replace block ~ ~-1 ~ container.14 with minecraft:gray_stained_glass_pane[minecraft:item_name="",minecraft:custom_data={shop:1}] 1
 item replace block ~ ~-1 ~ container.15 with minecraft:gray_stained_glass_pane[minecraft:item_name="",minecraft:custom_data={shop:1}] 1
-item replace block ~ ~-1 ~ container.16 with minecraft:water_bucket[minecraft:tooltip_display={hidden_components:["minecraft:attribute_modifiers","minecraft:enchantments"]},minecraft:item_name="Water §6- §a80 §bXP",minecraft:custom_data={shop:-21,bwshopitem:1}] 1
+item replace block ~ ~-1 ~ container.16 with minecraft:water_bucket[minecraft:tooltip_display={hidden_components:["minecraft:attribute_modifiers","minecraft:enchantments"]},minecraft:item_name="Water §6- §a160 §bXP",minecraft:custom_data={shop:-21,bwshopitem:1}] 1
 item replace block ~ ~-1 ~ container.17 with minecraft:gray_stained_glass_pane[minecraft:item_name="",minecraft:custom_data={shop:1}] 1
 item replace block ~ ~-1 ~ container.18 with minecraft:gray_stained_glass_pane[minecraft:item_name="",minecraft:custom_data={shop:1}] 1
 item replace block ~ ~-1 ~ container.19 with minecraft:shield[minecraft:lore=["§c购买需求：","§6 - §a600 §bXP"],minecraft:custom_data={shop:-39,bwshopitem:1}] 1

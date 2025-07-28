@@ -22,4 +22,7 @@ kill @e[tag=shouldtp,limit=1]
 
 advancement grant @s only games/hide_animal_died
 
-function minecraft:hideseek/during/huntdied
+
+function minecraft:hideseek/during/hun_tp
+xp set @s 0 levels
+xp set @s 0 points
