@@ -1,8 +1,6 @@
 {
     "pack": {
         "pack_format": 57,
-        "description": "Map's Datapacks - 不再为低版本 viaversion 提供支持",
-        "min_format": 57,
-        "max_format": 1140
+        "description": "Map's Datapacks - 不再为低版本 viaversion 提供支持"
     }
 }

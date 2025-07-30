@@ -1,8 +1,6 @@
 {
     "pack": {
         "pack_format": 57,
-        "description": "Map's Datapacks - PVE §a[Language: 简体中文]",
-        "min_format": 57,
-        "max_format": 1140
+        "description": "Map's Datapacks - PVE §a[Language: 简体中文]"
     }
 }

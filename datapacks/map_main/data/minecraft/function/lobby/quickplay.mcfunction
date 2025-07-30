@@ -4,6 +4,7 @@
 ## 
 scoreboard players enable @s quickplay
 execute if score @s quickplay matches 1 run function minecraft:lobby/quickplay_lists
+execute if score @s quickplay matches -1 run function minecraft:lobby/quickplay_lists_dialog
 
 execute if score @s quickplay matches 2 run function battle/join
 execute if score @s quickplay matches 3 run function believer/join

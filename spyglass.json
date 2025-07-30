@@ -27,7 +27,7 @@
                     }
                 ],
                 "then": {
-                    "report": "hint"
+                    "report": "information"
                 }
             }
         ]
