@@ -1,6 +1,8 @@
 {
     "pack": {
         "pack_format": 57,
-        "description": "Map's Datapacks - 其他维度修改"
+        "description": "Map's Datapacks - 其他维度修改",
+        "min_format": 57,
+        "max_format": 1140
     }
 }

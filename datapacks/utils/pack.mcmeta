@@ -1,6 +1,8 @@
 {
     "pack": {
         "pack_format": 57,
-        "description": "Map's Datapack - TNT爆炸模拟"
+        "description": "Map's Datapack - TNT爆炸模拟",
+        "min_format": 57,
+        "max_format": 1140
     }
 }

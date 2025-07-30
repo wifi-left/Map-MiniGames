@@ -33,7 +33,7 @@
         ]
     },
     "env":{
-        "gameVersion": "1.21.5",
+        "gameVersion": "1.21.8",
         "dataSource": "jsDelivr"
     }
 }

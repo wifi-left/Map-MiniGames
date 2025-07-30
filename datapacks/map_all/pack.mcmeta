@@ -1,6 +1,8 @@
 {
     "pack": {
         "pack_format": 57,
-        "description": "Map's Datapacks GAME #1"
+        "description": "Map's Datapacks GAME #1",
+        "min_format": 57,
+        "max_format": 1140
     }
 }

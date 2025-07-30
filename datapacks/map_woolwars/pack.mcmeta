@@ -1,6 +1,8 @@
 {
     "pack": {
         "pack_format": 57,
-        "description": "Map's Datapacks - WoolWars"
+        "description": "Map's Datapacks - WoolWars",
+        "min_format": 57,
+        "max_format": 1140
     }
 }
