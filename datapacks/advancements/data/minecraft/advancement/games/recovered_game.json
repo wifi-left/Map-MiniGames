@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": [
+            "重新回归！"
+        ],
+        "description": [
+            "\u00a7b什么？Car Race 重新回归了？！"
+        ],
+        "icon": {
+            "id": "minecraft:minecart"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:games",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}
+

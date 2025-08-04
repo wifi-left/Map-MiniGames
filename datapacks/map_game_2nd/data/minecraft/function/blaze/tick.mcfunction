@@ -1,0 +1,1 @@
+function minecraft:blaze/point_detect

@@ -1,0 +1,111 @@
+{
+    "type": "minecraft:multi_action",
+    "title": "MiniGames 小游戏菜单",
+    "actions": [
+        {
+            "label": "快捷开始游戏 (仅大厅)",
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "/trigger quickplay set -1"
+            }
+        },
+        {
+            "label": "重新加入游戏 (仅支持部分游戏)",
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "/trigger rejoin"
+            }
+        },
+        {
+            "label": "全局旁观操作菜单",
+            "action": {
+                "type": "show_dialog",
+                "dialog": {
+                    "type": "minecraft:multi_action",
+                    "title": "全局旁观操作菜单",
+                    "body": [
+                        {
+                            "type": "minecraft:plain_message",
+                            "contents": [
+                                {
+                                    "text": "全局旁观操作菜单，可以开启全局旁观者，可以更加方便录制视频等。"
+                                }
+                            ]
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "label": "启用全局旁观者",
+                            "action": {
+                                "type": "run_command",
+                                "command": "/trigger spec set 2"
+                            }
+                        },
+                        {
+                            "label": "关闭全局旁观者",
+                            "action": {
+                                "type": "run_command",
+                                "command": "/trigger spec set 3"
+                            }
+                        },
+                        {
+                            "label": "开启旁观模式（仅在旁观模式下）",
+                            "action": {
+                                "type": "run_command",
+                                "command": "/trigger spec set 4"
+                            }
+                        },
+                        {
+                            "label": "关闭"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "label": "返回大厅 (/trigger hub)",
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "/trigger hub"
+            }
+        },
+        {
+            "label": "关闭"
+        }
+    ],
+    "can_close_with_escape": true,
+    "external_title": {
+        "text":"小游戏快捷菜单",
+        "color": "aqua",
+        "bold":true
+    },
+    "pause": false,
+    "body": {
+        "type": "minecraft:plain_message",
+        "contents": [
+            {
+                "text": "欢迎游玩 ",
+                "color": "aqua"
+            },
+            {
+                "text": "Mini",
+                "color": "green"
+            },
+            {
+                "text": "Games",
+                "color": "yellow"
+            },
+            {
+                "text": "\n"
+            },
+            {
+                "text": "地图作者：",
+                "color": "gray"
+            },
+            {
+                "text": "wifi_left",
+                "color": "gold"
+            }
+        ]
+    }
+}

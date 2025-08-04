@@ -1,0 +1,1 @@
+execute as @a[tag=bw.play] if items entity @s container.* #coinitem[custom_data~{xp:1}] run function minecraft:bedwars/special/xp_change_per

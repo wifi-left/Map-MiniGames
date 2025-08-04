@@ -1,0 +1,36 @@
+{
+    "display": {
+        "title": [
+            "飞起来啦~"
+        ],
+        "description": [
+            "1.21新物品真好玩。"
+        ],
+        "icon": {
+            "id": "minecraft:wind_charge"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:games",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": "wind_charge"
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

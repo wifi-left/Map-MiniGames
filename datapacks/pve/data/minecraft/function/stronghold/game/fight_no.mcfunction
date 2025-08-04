@@ -1,0 +1,2 @@
+function minecraft:stronghold/reset/open_tunnel
+function minecraft:stronghold/game/fight_end_and_no

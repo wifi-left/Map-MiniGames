@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:main",
+        "minecraft:live/tick",
+        "minecraft:parkourrace/tick",
+        "minecraft:snow/tick"
+    ]
+}

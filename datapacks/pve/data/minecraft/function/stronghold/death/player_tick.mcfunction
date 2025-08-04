@@ -1,0 +1,3 @@
+execute unless predicate {"condition":"entity_properties","entity":"this","predicate":{type_specific:{type:player,input:{sneak:true}}}} run scoreboard players reset @s player.board
+execute if predicate {"condition":"entity_properties","entity":"this","predicate":{type_specific:{type:player,input:{sneak:true}}}} at @s if entity @a[distance=..2,gamemode=spectator,tag=stronghold.alive] run function minecraft:stronghold/death/player_rescuing
+execute if predicate {"condition":"entity_properties","entity":"this","predicate":{type_specific:{type:player,input:{sneak:true}}}} at @s unless entity @a[distance=..2,gamemode=spectator,tag=stronghold.alive] run scoreboard players reset @s player.board

@@ -1,0 +1,1 @@
+give @s wooden_pickaxe[can_break={blocks:["glass","red_stained_glass","blue_stained_glass"]},tooltip_display={hidden_components:["can_break"]},item_name='玻璃镐',lore=[{text:'仅用于挖掘玻璃',color:yellow,underlined:false,italic:false}],tool={rules:[{"blocks":["glass"],correct_for_drops:false,speed:0.08}]},unbreakable={}]

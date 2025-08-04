@@ -1,0 +1,2 @@
+summon minecraft:skeleton ~ ~ ~ {Health:20,CustomName:{text:"矿工",color:gray,obfuscated:false},CustomNameVisible:true,DeathLootTable:"minecraft:stronghold/death/zombie/3",Tags:["stronghold.mobs"],attributes:[{id:"max_health",base:20},{base:0.23,id:"movement_speed"},{base:7,id:"attack_damage"}],drop_chances:{mainhand:0,head:0,chest:0,legs:0,feet:0},equipment:{head:{id:"golden_helmet"},legs:{id:"leather_leggings"},feet:{id:"leather_boots"},mainhand:{id:"iron_pickaxe",components:{attribute_modifiers:[]}}}}
+

@@ -1,0 +1,1 @@
+scoreboard players set blaze.state state 2

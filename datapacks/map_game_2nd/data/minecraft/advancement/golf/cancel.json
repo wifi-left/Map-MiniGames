@@ -1,0 +1,22 @@
+{
+    "parent": "minecraft:end/root",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "player": {
+                    "team": "golf"
+                },
+                "item": {
+                    "items": "minecraft:potion",
+                    "components": {
+                        "minecraft:custom_data": "{golf:3}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "minecraft:golf/advancement_handlers/cancel"
+    }
+}
