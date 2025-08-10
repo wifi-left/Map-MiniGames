@@ -11,10 +11,12 @@ execute if score bw.state state matches 1.. run function minecraft:bedwars/testf
 # 不可购买
 execute as @a[tag=bw.player] if items entity @s player.cursor *[custom_data~{shop:1}] at @s run function bedwars/shop/resetshop2
 execute as @a[tag=bw.player] if items entity @s container.* *[custom_data~{shop:1}] at @s run function bedwars/shop/resetshop2
+execute as @a[tag=bw.player] if items entity @s weapon.offhand *[custom_data~{shop:1}] at @s run function bedwars/shop/resetshop2
 
 # 可购买
 execute as @a[tag=bw.player] if items entity @s player.cursor *[custom_data~{bwshopitem:1}] at @s run function bedwars/shop/shoptick
 execute as @a[tag=bw.player] if items entity @s container.* *[custom_data~{bwshopitem:1}] at @s run function bedwars/shop/shoptick
+execute as @a[tag=bw.player] if items entity @s weapon.offhand *[custom_data~{bwshopitem:1}] at @s run function bedwars/shop/shoptick
 
 execute as @e[tag=tntsheep.spawn] at @s run function bedwars/item/tntsheep
 

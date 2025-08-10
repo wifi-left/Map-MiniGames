@@ -55,7 +55,3 @@ execute if data entity @s {Item:{id:"minecraft:netherite_boots"}} run function m
 execute if data entity @s {Item:{id:"minecraft:potion"}} run function minecraft:stronghold/special/xuyuanchi_loot_special {gold:10}
 execute if data entity @s {Item:{id:"minecraft:splash_potion"}} run function minecraft:stronghold/special/xuyuanchi_loot_special {gold:10}
 execute if data entity @s {Item:{id:"minecraft:lingering_potion"}} run function minecraft:stronghold/special/xuyuanchi_loot_special {gold:15}
-execute if data entity @s {Item:{id:"minecraft:totem_of_undying"}} run function minecraft:stronghold/special/xuyuanchi_loot_special {gold:100}
-
-execute if data entity @s {Item:{id:"minecraft:gold_ingot",count:99}} run function minecraft:stronghold/special/xuyuanchi_loot_special_gold_block
-execute if data entity @s {Item:{id:"minecraft:gold_block",count:1}} run function minecraft:stronghold/special/xuyuanchi_loot_special {gold:99}

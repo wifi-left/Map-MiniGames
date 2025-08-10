@@ -13,9 +13,9 @@ execute unless score twolf.state state matches 3 if score wolf.r.all board match
 
 # ===== 通用胜利条件 =====
 # 无连接时的好人胜利
-execute unless score twolf.state state matches 3 unless entity @a[tag=wolf.connected] if score wolf.r.bad board matches ..0 unless score wolf.r.tnt board matches 1.. run function minecraft:twolf/over/good
+execute unless score twolf.state state matches 3 if score wolf.cupid.type board matches 0..1 if score wolf.r.bad board matches ..0 unless score wolf.r.tnt board matches 1.. run function minecraft:twolf/over/good
 # 无连接时的坏人胜利
-execute unless score twolf.state state matches 3 unless entity @a[tag=wolf.connected] if score wolf.r.good board matches ..0 unless score wolf.r.tnt board matches 1.. run function minecraft:twolf/over/bad
+execute unless score twolf.state state matches 3 if score wolf.cupid.type board matches 0..1 if score wolf.r.good board matches ..0 unless score wolf.r.tnt board matches 1.. run function minecraft:twolf/over/bad
 
 # ===== 屠城模式 =====
 # 基础胜利条件
