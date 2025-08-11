@@ -10,12 +10,12 @@
                 {
                     "type": "minecraft:loot_table",
                     "value": "minecraft:stronghold/chest/tools",
-                    "weight": 6
+                    "weight": 10
                 },
                 {
                     "type": "minecraft:loot_table",
                     "value": "minecraft:stronghold/chest/armor",
-                    "weight": 5
+                    "weight": 8
                 },
                 {
                     "type": "minecraft:item",
