@@ -9,7 +9,7 @@ scoreboard players set hunger.time board 61
 scoreboard players set hunger.state state 1
 scoreboard players set hunger.chests board 3
 # 会补给3次箱子，每次补给5分钟一次。
-execute in airworld run forceload add 313 -381 628 -90
+execute in airworld run forceload add 592 -165 340 -347
 execute in airworld run kill @e[type=item,distance=0..]
 execute in airworld run setblock 480 -35 -256 anvil replace
 execute in airworld run setblock 476 -37 -271 anvil replace

@@ -11,7 +11,7 @@ tellraw @a[team=hunger] ["§a你已加入游戏队列，将在 5 秒后进入游
 gamemode spectator @a[team=hunger]
 scoreboard players set hunger.state state 10
 execute in airworld run kill @e[distance=0..,type=experience_orb]
-execute in airworld run forceload remove all
+execute in airworld run forceload remove 592 -165 340 -347
 team modify hunger friendlyFire false
 
 

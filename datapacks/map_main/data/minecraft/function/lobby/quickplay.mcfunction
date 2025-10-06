@@ -35,11 +35,11 @@ execute if score @s quickplay matches 27 run function desk/join
 execute if score @s quickplay matches 28 run function bomb/join
 execute if score @s quickplay matches 29 run function stronghold/join
 execute if score @s quickplay matches 30 run function blaze/join
-
+execute if score @s quickplay matches 31 run function cloud/join
 
 
 execute if score @s quickplay matches 1.. run playsound entity.experience_orb.pickup player @s ~ ~ ~ 1 1 1
-execute if score @s quickplay matches 31.. run tellraw @s ["§c很抱歉，未知游戏的ID！"]
+execute if score @s quickplay matches 32.. run tellraw @s ["§c很抱歉，未知游戏的ID！"]
 
 execute if score @s quickplay matches 1.. run scoreboard players reset @s quickplay
 

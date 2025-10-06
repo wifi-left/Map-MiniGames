@@ -9,6 +9,6 @@ execute as @a[team=hunger] run function hunger/join
 execute in airworld run kill @e[type=item,distance=0..]
 execute in airworld run kill @e[distance=0..,type=experience_orb]
 team modify hunger friendlyFire false
-execute in airworld run forceload remove all
+execute in airworld run forceload remove 592 -165 340 -347
 
 
