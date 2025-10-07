@@ -46,7 +46,6 @@ execute as @a[x=-225,y=9,z=111,distance=0..2,gamemode=!creative] at @s run funct
 execute as @e[type=egg] at @s run function minecraft:bedwars/item/eggtick
 kill @e[type=chicken]
 execute as @e[type=egg] run scoreboard players add @s board 1
-execute as @a[gamemode=adventure] at @s run kill @s[y=-70,dy=-100]
 
 ## Kill Shop Items
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{bwshopitem:1}}}}]
@@ -62,3 +61,8 @@ execute as @a[tag=INV] at @s run particle minecraft:dust{color:[0.388d, 0.388d, 
 
 execute if score bw.mode state matches 3 run function minecraft:bedwars/special/xp_change
 execute if score bw.mode state matches 7 run function minecraft:bedwars/special/xp_change
+
+execute as @a[tag=bw.player] if items entity @s container.* bucket[!custom_data~{good_bucket:true}] run function minecraft:bedwars/item/bucket
+execute as @a[tag=bw.player] if items entity @s weapon.offhand bucket[!custom_data~{good_bucket:true}] run function minecraft:bedwars/item/bucket
+execute as @a[tag=bw.player] if items entity @s container.* water_bucket[!custom_data~{good_bucket:true}] run function minecraft:bedwars/item/water_bucket
+execute as @a[tag=bw.player] if items entity @s weapon.offhand water_bucket[!custom_data~{good_bucket:true}] run function minecraft:bedwars/item/water_bucket

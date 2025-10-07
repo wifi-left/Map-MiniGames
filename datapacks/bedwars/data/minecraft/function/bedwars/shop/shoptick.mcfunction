@@ -159,6 +159,11 @@ execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-38
 scoreboard players reset @s bw.board
 execute as @s store success score @s bw.board run clear @s shield[custom_data~{shop:-39}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-39
+# 虚空回城卷轴
+scoreboard players reset @s bw.board
+execute as @s store success score @s bw.board run clear @s paper[custom_data~{shop:void}]
+execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.void
+
 
 ## Diamond Shop
 
@@ -350,6 +355,11 @@ execute as @s[tag=bw.buy.-39] at @s run playsound minecraft:block.note_block.pli
 execute if score bw.shopmode board matches 0 as @s[tag=bw.buy.-39] at @s run function minecraft:bedwars/shop/buy39
 execute if score bw.shopmode board matches 1 as @s[tag=bw.buy.-39] at @s run function minecraft:bedwars/shop_xp/buy39
 tag @s remove bw.buy.-39
+
+execute as @s[tag=bw.buy.void] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute if score bw.shopmode board matches 0 as @s[tag=bw.buy.void] at @s run function minecraft:bedwars/shop/buyvoid
+execute if score bw.shopmode board matches 1 as @s[tag=bw.buy.void] at @s run function minecraft:bedwars/shop_xp/buyvoid
+tag @s remove bw.buy.void
 #
 
 execute as @s[tag=bw.buy.9] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1

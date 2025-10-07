@@ -9,6 +9,9 @@ execute as @a[team=lobby] at @s in overworld run function lobby/quickplay
 execute as @a[team=!lobby,tag=GOABLE.SPEC] at @s in overworld run function lobby/quickplay
 execute as @a[team=!lobby,scores={quickplay=1..}] at @s run function lobby/quickplay_refused
 
+execute as @a[gamemode=adventure] at @s as @s[y=-70,dy=-100] run function minecraft:out_of_world
+
+
 execute as @a unless score @s old matches 1.. run function minecraft:check_rename
 
 execute as @a[scores={leave=1..}] in overworld run tp @s 188 124 26
