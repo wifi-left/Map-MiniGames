@@ -21,8 +21,8 @@ bossbar set minecraft:hideseek2 players @a[tag=hide2.sel]
 
 # spawnpoint @a[team=hide.runner] 139 59 -135 180
 # spawnpoint @a[team=hide.killer] 139 59 -135 180
-spawnpoint @a[team=hide.runner] 138 90 -157 0
-spawnpoint @a[team=hide.killer] 138 90 -157 0
+spawnpoint @a[team=hide.runner] 138 90 -157 0 0
+spawnpoint @a[team=hide.killer] 138 90 -157 0 0
 
 execute if score hide2.state state matches 2..5 run function hide2/prepare/step1
 execute if score hide2.state state matches 1..5 if score hide2.restanimals board matches ..0 run function hide2/gameover/killer

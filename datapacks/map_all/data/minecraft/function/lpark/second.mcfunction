@@ -3,7 +3,7 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 # execute as @e[type=marker,tag=lpark] at @s run data merge entity @s {Duration:2147483647,Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,Radius:0f}
-execute in parkourworld run spawnpoint @a[team=parkour] 8 4 8 0
+execute in parkourworld run spawnpoint @a[team=parkour] 8 4 8 0 0
 effect give @a[team=parkour] resistance 5 25 true
 effect give @a[team=parkour] fire_resistance 5 25 true
 
