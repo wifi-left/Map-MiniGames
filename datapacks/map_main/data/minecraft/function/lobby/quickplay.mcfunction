@@ -2,7 +2,6 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
-scoreboard players enable @s quickplay
 execute if score @s quickplay matches 1 run function minecraft:lobby/quickplay_lists
 execute if score @s quickplay matches -1 run function minecraft:lobby/quickplay_lists_dialog
 

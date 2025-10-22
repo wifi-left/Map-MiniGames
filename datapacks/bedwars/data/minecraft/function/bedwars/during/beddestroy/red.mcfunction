@@ -13,6 +13,7 @@ execute as @a[scores={pickred=1..},team=bw.red] run scoreboard players set bd.re
 # execute unless entity @a[scores={pickred=1..}] run scoreboard players set bd.red state 1
 
 execute unless entity @a[scores={pickred=1..},team=bw.red] run tellraw @a[tag=bw.player] ["\n§f§l床被破坏了 > §c红队的床§7被",{"selector":"@a[scores={pickred=1..}]"},"§7破坏了！\n"]
+execute unless entity @a[scores={pickred=1..},team=bw.red] run execute as @a[scores={pickred=1..},tag=play.total] run function minecraft:small_games/total/win_score {score:1}
 execute unless entity @a[scores={pickred=1..},team=bw.red] as @a at @s run playsound entity.ender_dragon.growl player @s
 execute unless entity @a[scores={pickred=1..},team=bw.red] run title @a[team=bw.red] title ["\u00a7c床已被破坏"]
 execute unless entity @a[scores={pickred=1..},team=bw.red] run title @a[team=bw.red] subtitle ["\u00a7r你将无法重生！"]

@@ -4,6 +4,7 @@
 ## 
 scoreboard players set bw.state state 0
 gamemode adventure @a[tag=bw.player]
+execute if entity @a[tag=bw.player,tag=play.total] run function small_games/total/next_game
 
 execute as @a[tag=bw.player] run function minecraft:bedwars/message/join
 scoreboard players reset * bw.info

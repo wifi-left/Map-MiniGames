@@ -7,7 +7,7 @@ scoreboard players reset golf.best board
 execute as @a[team=golf] run scoreboard players operation golf.best board > @s golf.score
 execute as @a[team=golf] if score @s golf.score = golf.best board run tag @s add golf.win
 
-scoreboard players add @a[team=golf,tag=golf.win,tag=play.total] score 1
+execute as @a[team=golf,tag=golf.win,tag=play.total] run function minecraft:small_games/total/win_score {score:1}
 
 execute as @a[team=golf,tag=golf.win] run title @a[team=golf,tag=golf.win] title ["\u00a76You Win"]
 execute as @a[team=golf,tag=golf.win] run title @a[team=golf,tag=golf.win] subtitle ["\u00a7a你获得了这把比赛的胜利！"]

@@ -5,5 +5,7 @@
 tellraw @a[tag=sw.msg] ["§c游戏结束！§6获胜者：",{"selector":"@a[gamemode=survival,team=play.sw]"}]
 title @a[tag=sw.msg] title ["\u00a7c游戏结束"]
 title @a[tag=sw.msg] subtitle [{"selector":"@a[gamemode=survival,team=play.sw]"},"\u00a7e 获得了胜利"]
+execute as @a[gamemode=survival,team=play.sw,tag=play.total] run function minecraft:small_games/total/win_score {score:3}
+
 function minecraft:cloud/over/all
 

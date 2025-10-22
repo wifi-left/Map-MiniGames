@@ -6,7 +6,7 @@ title @a[team=hide.play.hun] title ["\u00a76Game Over!"]
 tellraw @a[team=hide.play.hun] ["\n§c   猎人获胜！\n"]
 tellraw @a[team=hide.play.ani] ["\n§c   猎人获胜！\n"]
 tellraw @a[team=hide.wait] ["\n§c   猎人获胜！\n"]
-scoreboard players add @a[team=hide.play.hun,gamemode=adventure,tag=play.total] score 1
+execute as @a[team=hide.play.hun,gamemode=adventure,tag=play.total] run function minecraft:small_games/total/win_score {score:1}
 
 function hideseek/gameover/over
 

@@ -5,6 +5,6 @@
 tellraw @a ["§e战桥黄队 §a获胜！"]
 title @a[team=play.duel.yellow] title ["\u00a76You won!"]
 title @a[team=play.duel.blue] title ["\u00a7cYou lost!"]
-scoreboard players add @a[team=play.duel.yellow,tag=play.total] score 1
+execute as @a[team=play.duel.yellow,tag=play.total] run function minecraft:small_games/total/win_score {score:3}
 function duel/over
 

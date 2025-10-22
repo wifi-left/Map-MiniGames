@@ -9,7 +9,7 @@ tellraw @a ["§a[I] ",{"text":"Block Believer","color":"#a7d3ff","bold":true}," 
 title @a[gamemode=adventure,team=play.beli] title ["\u00a76You won!"]
 title @a[gamemode=spectator,team=play.beli] title ["\u00a7c\u00a7lGAME OVER!"]
 
-scoreboard players add @a[gamemode=adventure,team=play.beli,tag=play.total] score 1
+execute as @a[gamemode=adventure,team=play.beli,tag=play.total] run function minecraft:small_games/total/win_score {score:3}
 execute if entity @a[team=play.beli,tag=play.total] run function small_games/total/next_game
 
 gamemode adventure @a[gamemode=spectator,team=play.beli]

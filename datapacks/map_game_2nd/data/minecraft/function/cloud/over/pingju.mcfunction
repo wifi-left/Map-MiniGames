@@ -5,5 +5,7 @@
 tellraw @a[tag=sw.msg] ["§c游戏结束！平局。"]
 title @a[tag=sw.msg] title ["\u00a7c游戏结束"]
 title @a[tag=sw.msg] subtitle ["\u00a7e平局，没有人获胜。"]
+execute as @a[gamemode=survival,team=play.sw,tag=play.total] run function minecraft:small_games/total/win_score {score:2}
+
 function minecraft:cloud/over/all
 

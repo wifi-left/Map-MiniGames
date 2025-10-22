@@ -11,6 +11,7 @@ title @a[tag=battle.sel] title ["\u00a7c\u00a7lGAME OVER"]
 title @a[team=play.battle.b] title ["\u00a76You won!"]
 title @a[tag=battle.sel] subtitle ["\u00a7b蓝队胜利"]
 tag @a remove battle.sel
+execute as @a[team=play.battle.b,tag=play.total] run function minecraft:small_games/total/win_score {score:2}
 
 function battle/over/globle
 

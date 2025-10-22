@@ -8,7 +8,7 @@ title @a[team=play.endwolf] title ["\u00a76获胜：\u00a7a幸存者"]
 title @a[team=wait.endwolf] title ["\u00a76获胜：\u00a7a幸存者"]
 title @a[team=play.endwolf,tag=endless.vampire] subtitle ["\u00a7c你输了"]
 
-scoreboard players add @a[team=play.endwolf,tag=!endless.vampire,tag=play.total] score 1
+execute as @a[team=play.endwolf,tag=!endless.vampire,tag=play.total] run function small_games/total/win_score {score:2}
 
 title @a[team=play.endwolf,tag=!endless.vampire] subtitle ["\u00a76你赢了"]
 title @a[team=wait.endwolf] subtitle ["\u00a77游戏结束"]

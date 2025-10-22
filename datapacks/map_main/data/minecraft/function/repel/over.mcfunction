@@ -9,7 +9,7 @@ tellraw @a ["§6§l[GAMEOVER] §eRepeling War§a 结束了。胜利者: ",{"sele
 execute as @a[team=play.repel] run tellraw @a[team=play.repel] ["§a ",{"score":{"objective":"number","name":"@s"},"color":"red"},"§e -> ",{"selector":"@s"}]
 title @a[team=play.repel,gamemode=adventure] title ["\u00a76You won!"]
 title @a[team=play.repel,gamemode=spectator] title ["\u00a7c\u00a7lGAME OVER!"]
-scoreboard players add @a[team=play.repel,gamemode=adventure,tag=play.total] score 1
+execute as @a[team=play.repel,gamemode=adventure,tag=play.total] run function minecraft:small_games/total/win_score {score:3}
 execute if entity @a[team=play.repel,tag=play.total] run function small_games/total/next_game
 tag @a[team=play.repel,gamemode=!creative] add join.hit
 schedule clear minecraft:repel/givethings

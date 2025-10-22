@@ -2,6 +2,19 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
+bossbar set surgame:time players
+bossbar set minecraft:battle players
+bossbar set minecraft:boom players
+bossbar set minigames:bedwars players
+bossbar set minecraft:golf players
+bossbar set minecraft:hideseek players
+bossbar set minecraft:hideseek2 players
+bossbar set minecraft:live players
+# bossbar set minecraft: players
+
+tag @a[tag=play.total] remove surback
+tag @a[tag=play.total] remove tmp
+tag @a[tag=play.total] remove bw.player
 gamemode spectator @a[tag=play.total]
 # title @a[tag=play.total] title ["\u00a7b\u00a7lGame Total"]
 # title @a[tag=play.total] title ["\u00a7a\u00a7lGame Total"]

@@ -5,7 +5,7 @@
 title @a[team=play.tntwars] title ["\u00a7cGAME OVER"]
 title @a[team=play.tntwars,tag=tntwars.a] title ["\u00a76YOU WON!"]
 title @a[team=wait.tntwars] title ["\u00a7cGAME OVER"]
-scoreboard players add @a[team=play.tntwars,tag=tntwars.a,tag=play.total] score 1
+execute as @a[team=play.tntwars,tag=tntwars.a,tag=play.total] run function minecraft:small_games/total/win_score {score:2}
 title @a[team=play.tntwars] subtitle ["\u00a7a「队伍A」\u00a7f获胜！"]
 title @a[team=wait.tntwars] subtitle ["\u00a7a「队伍A」\u00a7f获胜！"]
 tellraw @a[team=wait.tntwars] ["\n§e ※ §c§lTNT Wars\n§a「队伍A」§6获胜！\n"]

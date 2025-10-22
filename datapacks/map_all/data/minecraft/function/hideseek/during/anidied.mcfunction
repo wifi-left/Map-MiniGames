@@ -22,6 +22,13 @@ kill @e[tag=shouldtp,limit=1]
 
 advancement grant @s only games/hide_animal_died
 
+scoreboard players set play.tmp.player tick 0
+execute as @a[team=hide.play.ani,gamemode=adventure] run scoreboard players add play.tmp.player tick 1
+
+scoreboard players set play.tmp.player2 tick 0
+execute as @a[team=hide.play.ani,gamemode=adventure] run scoreboard players add play.tmp.player2 tick 1
+execute as @a[team=hide.play.hun,gamemode=adventure] run scoreboard players add play.tmp.player2 tick 1
+execute if score play.tmp.player tick matches 0 if score play.tmp.player2 tick matches 10.. run execute as @s run function minecraft:small_games/total/win_score {score:1}
 
 function minecraft:hideseek/during/hun_tp
 xp set @s 0 levels

@@ -6,6 +6,9 @@ scoreboard players set live.state state 0
 gamemode adventure @a[team=wait.live]
 gamemode adventure @a[team=play.live.killer]
 gamemode adventure @a[team=play.live.runner]
+team join wait.live @a[team=play.live.killer]
+team join wait.live @a[team=play.live.runner]
+execute if entity @a[team=wait.live,tag=play.total] run function small_games/total/next_game
 tag @a[team=wait.live] add join.livelongest
 tag @a[team=play.live.killer] add join.livelongest
 tag @a[team=play.live.runner] add join.livelongest

@@ -3,6 +3,7 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 tellraw @a ["\n\n\n\n§f§l胜利 > §a绿队 §6获得了胜利！\n"]
+execute as @a[team=bw.green,tag=play.total] run function minecraft:small_games/total/win_score {score:2}
 title @a[tag=bw.player] title ["\u00a7c\u00a7lGAME OVER"]
 title @a[tag=bw.player] subtitle ["\u00a7dBedwars \u00a7aTeam Green \u00a76Won"]
 title @a[team=bw.green] title ["\u00a76You won!"]

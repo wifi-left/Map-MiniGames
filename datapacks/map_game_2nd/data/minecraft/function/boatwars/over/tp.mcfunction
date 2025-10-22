@@ -5,6 +5,11 @@
 tag @a[team=btw.play.a] add tmp
 tag @a[team=btw.play.b] add tmp
 tag @a[team=btw.wait] add tmp
+team join btw.wait @a[team=btw.play.a]
+team join btw.wait @a[team=btw.play.b]
+
+execute if entity @a[team=btw.wait,tag=play.total] run function small_games/total/next_game
+
 execute as @a[tag=tmp] run function boatwars/join
 tag @a[tag=tmp] remove tmp
 scoreboard players set btw.state state 0

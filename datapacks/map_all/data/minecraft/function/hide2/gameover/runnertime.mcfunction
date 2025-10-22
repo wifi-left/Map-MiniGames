@@ -8,7 +8,7 @@ title @a[team=hide.killer] title ["\u00a7cYou lost!"]
 tellraw @a[team=hide.runner] ["\n§b   时间结束，逃跑者获胜！\n"]
 tellraw @a[team=hide.runner] ["\n§b   时间结束，逃跑者获胜！\n"]
 tellraw @a[team=hide.wait2] ["\n§b   时间结束，逃跑者获胜！\n"]
-scoreboard players add @a[team=hide.runner,gamemode=adventure,tag=play.total] score 1
+execute as @a[team=hide.runner,gamemode=adventure,tag=play.total] run function minecraft:small_games/total/win_score {score:2}
 
 function hide2/gameover/over
 

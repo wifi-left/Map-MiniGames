@@ -6,6 +6,8 @@ bossbar set minecraft:hungergame name "\u00a74饥饿游戏 \u00a78| \u00a7c游�
 bossbar set minecraft:hungergame max 1
 bossbar set minecraft:hungergame value 1
 schedule function hunger/over/tp 6s
+execute as @a[team=hunger,gamemode=adventure,tag=play.total] run function minecraft:small_games/total/win_score {score:3}
+
 tellraw @a ["\n§4§l饥饿游戏 ＞ §a游戏结束。获胜者：",{"selector":"@a[gamemode=adventure,team=hunger]","color":"yellow"},"\n"]
 tellraw @a[team=hunger] ["§a你已加入游戏队列，将在 5 秒后进入游戏等待大厅。"]
 gamemode spectator @a[team=hunger]

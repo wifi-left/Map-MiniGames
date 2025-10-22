@@ -7,7 +7,7 @@ title @a[team=hide.play.ani] title ["\u00a7cYou lost!"]
 tellraw @a[team=hide.play.hun] ["\n§b   时间结束，躲藏者获胜！\n"]
 tellraw @a[team=hide.play.ani] ["\n§b   时间结束，躲藏者获胜！\n"]
 tellraw @a[team=hide.wait] ["\n§b   时间结束，躲藏者获胜！\n"]
-scoreboard players add @a[team=hide.play.ani,gamemode=adventure,tag=play.total] score 1
+execute as @a[team=hide.play.ani,gamemode=adventure,tag=play.total] run function minecraft:small_games/total/win_score {score:1}
 # execute if entity @a[team=play.snow,tag=play.total] run function small_games/total/next_game
 
 function hideseek/gameover/over

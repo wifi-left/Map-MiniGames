@@ -11,5 +11,8 @@ title @a[team=btw.play.a] title ["\u00a7c你输了"]
 title @a[team=btw.wait] subtitle ["\u00a7a队伍B\u00a7r赢了"]
 title @a[team=btw.play.a] subtitle ["\u00a7a队伍B\u00a7r赢了"]
 title @a[team=btw.play.b] subtitle ["\u00a7a队伍B（你）\u00a7r赢了"]
+execute as @a[team=btw.play.b,tag=play.total] run function minecraft:small_games/total/win_score {score:1}
+
+
 function boatwars/over/all
 

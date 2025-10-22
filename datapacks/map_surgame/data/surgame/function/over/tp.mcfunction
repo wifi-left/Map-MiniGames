@@ -8,6 +8,9 @@ tag @a[team=play.sur.zom] add surback
 clear @a[tag=surback]
 scoreboard players set sur.state state 0
 gamemode adventure @a[tag=surback]
+
+execute if entity @a[tag=surback,tag=play.total] run function small_games/total/next_game
+
 execute as @a[tag=surback] run function surgame:join
 tag @a remove surback
 schedule clear surgame:enablepvp

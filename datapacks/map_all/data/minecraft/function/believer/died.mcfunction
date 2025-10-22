@@ -8,6 +8,11 @@ tellraw @a[team=wait.beli] [{"selector":"@s"},"§c 淘汰！"]
 gamemode spectator @s
 scoreboard players set play.beli.player tick 0
 execute as @a[team=play.beli,gamemode=adventure] run scoreboard players add play.beli.player tick 1
+
+execute if score play.beli.player tick matches 0 run execute as @s run function minecraft:small_games/total/win_score {score:3}
+execute if score play.beli.player tick matches 1 run execute as @s run function minecraft:small_games/total/win_score {score:2}
+execute if score play.beli.player tick matches 2 run execute as @s run function minecraft:small_games/total/win_score {score:1}
+
 title @a[team=play.beli] actionbar ["\u00a7c当前场上剩余选手： ",{"score":{"objective": "tick","name": "play.beli.player"},"color": "dark_purple"}]
 advancement grant @s only games/i_cant_believe_myself
 

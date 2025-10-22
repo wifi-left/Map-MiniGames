@@ -4,7 +4,7 @@
 ## 
 gamemode adventure @a[team=car.play,gamemode=!creative]
 gamemode adventure @a[team=car.wait,gamemode=!creative]
-scoreboard players add @a[tag=car.win,tag=play.total] score 1
+execute as @a[tag=car.win,tag=play.total] run function minecraft:small_games/total/win_score {score:1}
 # execute if entity @a[team=car.wait,tag=play.total] run function small_games/total/next_game
 execute if entity @a[team=car.play,tag=play.total] run function small_games/total/next_game
 execute as @a[team=car.wait,gamemode=!creative] run function car_race/join
