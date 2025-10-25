@@ -29,7 +29,7 @@ nowdir=$(basename "$PWD")
 echo Parent Folder: $nowdir;
 
 # 创建 zip 文件（排除脚本自身和 .git 目录）
-zip -r "./build/(MC${mcversion})_wifi_MiniGames_${version_}.zip" "..${nowdir}/" \
+zip -r "./build/(MC${mcversion})_wifi_MiniGames_${version_}.zip" "../${nowdir}/" \
     -x "*.git*" \
     -x "zip.sh" \
     -x "zip.ps1" \
