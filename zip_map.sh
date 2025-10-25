@@ -7,6 +7,8 @@ if [ -z "${GITHUB_ENV}" ]; then
     mkdir -p ./build
 fi
 # 设置版本变量
+export TZ=Asia/Shanghai
+
 version=$(date '+%Y.%m.%d (%H:%M:%S)')
 versionZ=$(date '+%Y.%m.%d')
 versionD=$(date '+%Y.%m.%d.%H.%M.%S')
