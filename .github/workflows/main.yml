@@ -10,6 +10,8 @@ jobs:
     name: Pack
     steps:
       - uses: actions/checkout@v3
+      - name: Make script executable  # 添加这一步来设置执行权限
+        run: chmod +x zip_map.sh
       - name: Archive the Map
         shell: bash
         run: ./zip_map.sh
