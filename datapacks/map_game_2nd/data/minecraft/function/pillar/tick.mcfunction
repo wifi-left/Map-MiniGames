@@ -1,0 +1,1 @@
+execute as @a[x=-55,y=-62,z=572,distance=..2,team=pillar,gamemode=!spectator,gamemode=!creative] at @s run function pillar/died

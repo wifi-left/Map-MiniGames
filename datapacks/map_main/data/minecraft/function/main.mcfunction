@@ -202,6 +202,7 @@ execute if score duel.state state matches 1.. run function minecraft:duel/tick
 scoreboard players reset @a[scores={JOBPVP.die=1..}] JOBPVP.die
 
 execute if score hotpot.state state matches 1.. run function minecraft:hotpotever/tick
+execute if score pillar.state state matches 1.. in airworld run function minecraft:pillar/tick
 
 scoreboard players reset @a[scores={hp.hurt=0..},team=!play.hotpot.k] hp.hurt
 scoreboard players reset @a[scores={hp.gethurt=0..}] hp.gethurt

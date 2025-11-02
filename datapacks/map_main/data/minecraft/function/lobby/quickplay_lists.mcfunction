@@ -36,4 +36,5 @@ function minecraft:lobby/quickplay_info {id:28,name:"拆弹专家",color:b}
 function minecraft:lobby/quickplay_info {id:29,name:"蚀界行者",color:b}
 function minecraft:lobby/quickplay_info {id:30,name:"燎原烽火",color:b}
 function minecraft:lobby/quickplay_info {id:31,name:"云端争霸",color:b}
+function minecraft:lobby/quickplay_info {id:32,name:"幸运之柱",color:b}
 tellraw @s "\n§e使用 §6/trigger quickplay set <游戏ID>§b ，或者点击上方文字快速进入"

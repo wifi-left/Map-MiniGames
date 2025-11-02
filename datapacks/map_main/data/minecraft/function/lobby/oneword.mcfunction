@@ -56,6 +56,11 @@ execute if score random board matches 25 run title @s title "谢谢你们! 比�
 execute if score random board matches 25 run title @s subtitle ["\u00a7e —— 真白《樱花庄的宠物女孩》"]
 execute if score random board matches 26 run title @s title "\u00a7f我们终会相知，在那悠远的苍穹。"
 execute if score random board matches 26 run title @s subtitle ["\u00a7e —— 《缘之空》"]
+execute if score random board matches 27 run title @s title "\u00a7f①，②，⑨！"
+execute if score random board matches 27 run title @s subtitle ["\u00a7e —— 《琪露诺的完美算数教室》"]
+execute if score random board matches 28 run title @s title "\u00a7f回到原本的地方吧，回到归处。"
+execute if score random board matches 28 run title @s subtitle ["\u00a7e —— 《8号小巷 (feat. macaroom)》"]
+
 
 function lobby/getrandom2
 tellraw @s [""]
@@ -123,4 +128,8 @@ execute if score random board matches 35 run tellraw @s ["   §b这是你若不�
 execute if score random board matches 35 run tellraw @s ["§7    —— 晓美焰《魔法少女小圆—叛逆的物语》"]
 execute if score random board matches 36 run tellraw @s ["   §b与其有闲琢磨如何漂亮死去，还不如漂亮的活到最后一刻。"]
 execute if score random board matches 36 run tellraw @s ["§7    —— 《银魂》"]
+execute if score random board matches 37 run tellraw @s ["   §b如果我能够，驱使自己的话，\n§b   就让这一切，被黑暗所吞没吧。\n§b   这样的我，还有未来可言吗？\n§b   这种世界，允许我的存在吗？\n§b   此刻感到窒息吗？此刻觉得悲伤吗？\n§b   就连自己的事，也根本搞不懂啊！"]
+execute if score random board matches 37 run tellraw @s ["§7    —— 《Bad Apple》"]
+execute if score random board matches 38 run tellraw @s ["   §b在超越常识的地方就有世界的真理，\n   §b以秘密的数字为目标①，②，⑨！\n   §b一边不出声的笑一边哈哈的大笑。"]
+execute if score random board matches 38 run tellraw @s ["§7    —— 《琪露诺的完美算数教室》"]
 tellraw @s [""]

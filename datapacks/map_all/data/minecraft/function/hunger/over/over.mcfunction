@@ -15,5 +15,4 @@ scoreboard players set hunger.state state 10
 execute in airworld run kill @e[distance=0..,type=experience_orb]
 execute in airworld run forceload remove 592 -165 340 -347
 team modify hunger friendlyFire false
-
-
+# execute in airworld run forceload remove 133 86

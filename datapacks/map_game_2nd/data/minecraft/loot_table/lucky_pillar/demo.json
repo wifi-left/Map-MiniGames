@@ -12,20 +12,51 @@
           "type": "minecraft:tag",
           "name": "lucky_pillar/demo",
           "expand": true,
-          "weight": 1,
-          "quality": 1,
-          "functions": [
-            {
-              "function": "minecraft:enchant_randomly",
-              "only_compatible": true,
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.2
-                }
-              ]
-            }
-          ]
+          "weight": 10,
+          "quality": 1
+        },
+        {
+          
+          "type": "minecraft:loot_table",
+          "value": "cloud/normal/side",
+          "weight": 50,
+          "quality": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "cloud/hunger/side",
+          "weight": 30,
+          "quality": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "cloud/normal/sidemi",
+          "weight": 20,
+          "quality": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "cloud/normal/middle",
+          "weight": 10,
+          "quality": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "cloud/potion/sidemi",
+          "weight": 20,
+          "quality": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "cloud/potion/side",
+          "weight": 30,
+          "quality": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "cloud/potion/middle",
+          "weight": 10,
+          "quality": 1
         }
       ]
     }

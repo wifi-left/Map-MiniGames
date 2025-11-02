@@ -13,6 +13,7 @@ execute in airworld run forceload add 592 -165 340 -347
 execute in airworld run kill @e[type=item,distance=0..]
 execute in airworld run setblock 480 -35 -256 anvil replace
 execute in airworld run setblock 476 -37 -271 anvil replace
+# execute in airworld run forceload add 
 function hunger/flushitem
 team modify hunger friendlyFire false
 execute in airworld run kill @e[distance=0..,type=experience_orb]

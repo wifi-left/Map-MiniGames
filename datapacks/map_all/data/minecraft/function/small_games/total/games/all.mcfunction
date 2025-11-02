@@ -23,6 +23,7 @@ data modify storage minecraft:temp random_games_all.games append value {id:8,nam
 data modify storage minecraft:temp random_games_all.games append value {id:9,name:"\u00a76烫手的山芋",state_var:"hotpot.state state",start_func:["execute as @a[tag=play.total] run function hotpotever/join","function hotpotever/teststart"]}
 data modify storage minecraft:temp random_games_all.games append value {id:11,name:"\u00a73TNTWARS",state_var:"golf.state state",start_func:["execute as @a[tag=play.total] run function tntwars/join","function tntwars/trystart"]}
 data modify storage minecraft:temp random_games_all.games append value {id:14,name:"\u00a72吸血鬼之夜",state_var:"endwolf.state state",start_func:["execute as @a[tag=play.total] run function endless_wolf/join","function endless_wolf/trystart"]}
+data modify storage minecraft:temp random_games_all.games append value {id:22,name:"\u00a76幸运之柱",state_var:"pillar.state state",start_func:["execute as @a[tag=play.total] run function pillar/join","function pillar/trystart"]}
 
 data modify storage minecraft:temp random_games_all.games append value {id:16,name:"\u00a7dBATTLE BOX",state_var:"battle.state state",start_func:["execute as @a[tag=play.total] run function battle/join","function battle/teststart_total"]}
 data modify storage minecraft:temp random_games_all.games append value {id:17,name:"\u00a7e云端争霸",state_var:"sw.state state",start_func:["execute as @a[tag=play.total] run function cloud/join","function cloud/trystart"]}
