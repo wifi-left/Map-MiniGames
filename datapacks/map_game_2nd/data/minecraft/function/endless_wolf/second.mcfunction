@@ -7,6 +7,7 @@ execute if score endwolf.state state matches 1..4 run function minecraft:endless
 
 execute if score endwolf.state state matches 1 as @a[team=play.endwolf,tag=endless.vampire,gamemode=adventure] at @s if predicate {condition:location_check,predicate:{can_see_sky:true}} run function minecraft:endless_wolf/vampire_sunburt
 execute as @a[team=play.endwolf,tag=endless.vampire,gamemode=adventure] at @s if items entity @s container.* *[custom_data~{vampire:shengwu}] run function minecraft:endless_wolf/vampire_shengwu
+execute as @a[team=play.endwolf,tag=endless.vampire,gamemode=adventure] at @s if items entity @s weapon.* *[custom_data~{vampire:shengwu}] run function minecraft:endless_wolf/vampire_shengwu
 execute if score endwolf.state state matches 1 as @a[team=play.endwolf,tag=endless.vampire,gamemode=adventure] at @s run effect give @s slowness 2 0 true
 # execute if score endwolf.state state matches 2 as @a[team=play.endwolf,tag=endless.vampire,gamemode=adventure] at @s run effect give @s minecraft:jump_boost 2 1 true
 # execute if score endwolf.state state matches 2 as @a[team=play.endwolf,tag=endless.vampire,gamemode=adventure] at @s run effect give @s minecraft:speed 2 0 true
