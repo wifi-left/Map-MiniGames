@@ -1,0 +1,1 @@
+fill 54 -22 402 48 -25 402 iron_bars replace air

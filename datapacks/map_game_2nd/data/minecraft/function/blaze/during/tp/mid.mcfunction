@@ -1,0 +1,1 @@
+execute in killerworld run tp @s 55 -17.5 364 -50 0

@@ -1,0 +1,1 @@
+fill 69 -26 336 75 -23 336 air replace iron_bars

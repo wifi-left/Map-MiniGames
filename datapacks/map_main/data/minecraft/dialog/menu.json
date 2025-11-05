@@ -10,13 +10,6 @@
             }
         },
         {
-            "label": "重新加入游戏 (仅支持部分游戏)",
-            "action": {
-                "type": "minecraft:run_command",
-                "command": "/trigger rejoin"
-            }
-        },
-        {
             "label": "全局旁观操作菜单",
             "action": {
                 "type": "show_dialog",
@@ -70,14 +63,54 @@
             }
         },
         {
+            "label": "地图介绍",
+            "action": {
+                "type": "show_dialog",
+                "dialog": {
+                    "type": "minecraft:notice",
+                    "title": "地图介绍",
+                    "body": [
+                        {
+                            "type": "minecraft:plain_message",
+                            "contents": [
+                                {
+                                    "text": "【主创作者】\n",
+                                    "color": "gold"
+                                },
+                                {
+                                    "text": "wifi_left (wifi_right)",
+                                    "color": "aqua"
+                                },"\n\n",{
+                                    "text":"【特别感谢】\n","color":"gold"
+                                },"",{
+                                    "text": "616789\nDomnick_JYH\nlawyer112 \u00a7e(服务器支持)\n\u00a7b00ɹɐəlϽ \u00a7e(战利品表)\u00a7b\nLateTea\nWemsur\n残月sama\n墨安",
+                                    "color": "aqua"
+                                },"\n\n",{
+                                    "text":"【建筑师团队】\n","color":"gold"
+                                },{
+                                    "text": "616789\nDomnick_JYH\nlawyer112 \u00a7e(协助烫手的山芋地图#1)\u00a7b\nBadt_i_m_e \u00a77(早期)\n\u00a7bmelon_444 \u00a77(早期)\u00a7b\nCreatorLizard \u00a77(早期)\u00a7b\nSR_AJ67 \u00a77(早期)\u00a7b\nthework \u00a77(早期)\u00a7b\n毒岛渡鸦丶 \u00a77(有偿)\u00a7b\n\u00a77... ...",
+                                    "color": "aqua"
+                                },"\n\n",{
+                                    "text":"【测试团队】\n","color":"gold"
+                                },{
+                                    "text": "wifi_left (wifi_right)\n616789\nlawyer112\nDomnick_JYH\n\u00a77...\n\u00a7a以及支持 MiniGames 的小伙伴们！~",
+                                    "color": "aqua"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        {
             "label": "关闭"
         }
     ],
     "can_close_with_escape": true,
     "external_title": {
-        "text":"小游戏快捷菜单",
+        "text": "小游戏快捷菜单",
         "color": "aqua",
-        "bold":true
+        "bold": true
     },
     "pause": false,
     "body": {

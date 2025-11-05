@@ -215,5 +215,5 @@ scoreboard players reset @a[scores={zombie.died=1..}] zombie.died
 scoreboard players reset @a[scores={parkour=1..}] parkour
 
 execute if score stronghold.state state matches 1.. in lobby run function stronghold/tick
-execute if score blaze.state state matches 1.. run function minecraft:blaze/tick
+execute if score blaze.state state matches 1.. in killerworld run function minecraft:blaze/tick
 

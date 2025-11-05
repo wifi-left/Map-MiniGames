@@ -1,4 +1,5 @@
 # execute in airworld run forceload add -57 574 -135 652
+execute in airworld run fill -57 -64 652 -135 -60 574 air
 execute in airworld run fill -57 -61 652 -135 -50 574 air
 execute in airworld run fill -57 -49 652 -135 -40 574 air
 execute in airworld run fill -57 -39 652 -135 -30 574 air

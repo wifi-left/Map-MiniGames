@@ -1,0 +1,7 @@
+function minecraft:blaze/point
+function minecraft:blaze/during/tag_blaze_players
+execute if score blaze.time board matches 1.. run scoreboard players remove blaze.time board 1
+execute if score blaze.state state matches 1.. if score blaze.time board matches 0 run function minecraft:blaze/during/timeout
+execute if score blaze.state state matches 2.. if score blaze.mode state matches 1..3 if score blaze.time board matches 1.. as @a[tag=blaze.player] run title @s actionbar [{selector:"@s"},{text:" | ",color:gold},{text:"[A] ",color:blue},{score:{name:"blaze.score.a",objective:"board"},color:yellow},{text:"分",color:yellow},{text:" (+",color:green},{score:{name:"blaze.score.add.a",objective:board},color:green},{text:")",color:green},{text:" | ",color:gold},{text:"[B] ",color:red},{score:{name:"blaze.score.b",objective:"board"},color:yellow},{text:"分",color:yellow},{text:" (+",color:green},{score:{name:"blaze.score.add.b",objective:board},color:green},{text:")",color:green},{text:" | ",color:gold},{text:" [时间剩余] ",color:aqua},{score:{name:"blaze.time",objective:board},color:yellow},{text:"s",color:yellow}]
+execute if score blaze.state state matches 2.. run function minecraft:blaze/during/timewarning
+execute if score blaze.state state matches 1 run function minecraft:blaze/during/timewarning_waiting
