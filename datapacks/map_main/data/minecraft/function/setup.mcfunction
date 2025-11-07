@@ -14,6 +14,8 @@ scoreboard objectives remove car.speed
 scoreboard objectives add car.speed dummy "Speed of car"
 scoreboard objectives remove bw.tmp.ir
 scoreboard objectives remove bw.tmp.gd
+scoreboard objectives remove blaze.trigger
+scoreboard objectives add blaze.trigger trigger
 scoreboard objectives remove bw.tmp.dm
 scoreboard objectives remove bw.tmp.em
 scoreboard objectives add bw.tmp.ir dummy

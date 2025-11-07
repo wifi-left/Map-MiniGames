@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:multi_action",
+    "title": "\u00a7e※ \u00a7e\u00a7l烽火燎原 职业选择 \u00a7e※",
+    "actions": [
+        {
+            "label": "测试"
+        }
+    ],
+    "exit_action": {
+        "label": "关闭"
+    },
+    "pause": false
+}

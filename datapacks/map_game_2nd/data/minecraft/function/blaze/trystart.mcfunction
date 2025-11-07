@@ -5,7 +5,7 @@
 playsound ui.button.click player @s ~ ~ ~ 1 1 1
 # playsound ui.button.click player @s
 scoreboard players set wait.player tick 0
-execute as @a[team=blaze,gamemode=adventure] run scoreboard players add wait.player tick 1
+execute as @a[team=blaze.wait,gamemode=adventure] run scoreboard players add wait.player tick 1
 
 execute if score blaze.state state matches 1.. run function minecraft:blaze/spec
 

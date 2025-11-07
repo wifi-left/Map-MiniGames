@@ -54,6 +54,7 @@ stopsound @a[tag=NEWENTER] voice
 tag @a[tag=NEWENTER] remove NEWENTER
 
 execute as @a[scores={job_kill=1..},team=job_pvp] run function job_pvp/getakill
+execute if score blaze.state state matches 1.. as @a[scores={job_kill=1..},tag=blaze.player] in killerworld run function blaze/getakill
 scoreboard players reset @a[scores={job_kill=1..}] job_kill
 
 execute as @a[scores={spec=1}] run function lobby/specintroduce

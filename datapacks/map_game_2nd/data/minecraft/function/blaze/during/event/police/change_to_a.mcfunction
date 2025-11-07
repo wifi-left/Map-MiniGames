@@ -4,6 +4,3 @@ function minecraft:blaze/during/tag_blaze_players
 tellraw @a[tag=blaze.player] ["\n\u00a76 警、匪队伍已经交换！请确认你的新身份。\n"]
 tellraw @a[team=blaze.team.a] ["\u00a76 你的新身份为：\u00a79警\n"]
 tellraw @a[team=blaze.team.b] ["\u00a76 你的新身份为：\u00a7c匪\n"]
-execute as @a[team=blaze.team.a] run function minecraft:blaze/during/tp/mid
-execute as @a[team=blaze.team.b] run function minecraft:blaze/during/tp/b
-function minecraft:blaze/during/time_reset

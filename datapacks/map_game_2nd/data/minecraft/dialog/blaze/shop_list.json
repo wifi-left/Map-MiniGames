@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:multi_action",
+    "title": "\u00a7e※ \u00a7b\u00a7l烽火燎原 商店 \u00a7e※",
+    "external_title": "括号内为售价，鼠标移上去可获得物品信息。",
+    "actions": [
+        {
+            "label": "玻璃 & 玻璃镐 (0)",
+            "tooltip": "玻璃：用于填充占领点。当挖掘点被挖取后可填充。\n玻璃镐：用于挖掘点位的玻璃，必须使用此镐子。开局默认携带，丢失此处可领取。",
+            "action": {
+                "type": "run_command",
+                "command": "trigger blaze.trigger set 1"
+            }
+        },
+        {
+            "label": "金苹果 (100)",
+            "action": {
+                "type": "run_command",
+                "command": "trigger blaze.trigger set 2"
+            }
+        }
+    ],
+    "exit_action": {
+        "label": "关闭",
+        "action": {
+            "type": "run_command",
+            "command": "trigger blaze.trigger set -1"
+        }
+    },
+    "pause": false,
+    "after_action": "none"
+}
