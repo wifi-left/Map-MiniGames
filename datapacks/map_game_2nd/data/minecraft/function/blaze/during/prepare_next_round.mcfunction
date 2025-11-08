@@ -12,3 +12,5 @@ clear @a[tag=blaze.player]
 effect give @a[tag=blaze.player] instant_health 1 25 true
 scoreboard players set @a[tag=blaze.player] blaze.coin 50
 execute as @a[tag=blaze.player] at @s run tellraw @s [{text:"",bold:false,color:gold},{text:"你已经打了 ",color:aqua,bold:true},{score:{name:"blaze.round",objective:"board"},color:yellow,bold:true},{text:" 局",bold:false,color:aqua},{text:"\n得分情况：",color:gold},{text:"[队伍A] ",color:blue},{score:{name:"blaze.score.a",objective:"board"},color:yellow},{text:"分",color:yellow},{text:" | ",color:gold},{text:"[队伍B] ",color:red},{score:{name:"blaze.score.b",objective:"board"},color:yellow},{text:"分",color:yellow}]
+function minecraft:blaze/reset_point
+function minecraft:blaze/before/sel_job

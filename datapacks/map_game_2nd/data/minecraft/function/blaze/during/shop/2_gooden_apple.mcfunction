@@ -10,5 +10,6 @@ execute if score blaze.buy.success board matches 1 run scoreboard players operat
 execute if score blaze.buy.success board matches 0 run tellraw @s ["\u00a7c购买失败！金币不足！"]
 execute if score blaze.buy.success board matches 0 at @s run playsound entity.enderman.teleport player @s ~ ~ ~ 1 0 1
 
+execute if score blaze.buy.success board matches 0 run return 0
 # 购买的物品
-execute if score blaze.buy.success board matches 1 run give @s golden_apple 1
+give @s golden_apple 1

@@ -14,3 +14,8 @@ execute if score blaze.state state matches 2..10 run function minecraft:blaze/du
 spawnpoint @a[team=blaze.wait] 61 76 369 0 0
 spawnpoint @a[team=blaze.team.a] 61 76 369 0 0
 spawnpoint @a[team=blaze.team.b] 61 76 369 0 0
+
+execute if score blaze.state state matches 2..10 run scoreboard players add @a[team=blaze.team.a,gamemode=adventure] blaze.coin 1
+execute if score blaze.state state matches 2..10 run scoreboard players add @a[team=blaze.team.b,gamemode=adventure] blaze.coin 1
+
+execute if score blaze.state state matches 2..10 as @a[tag=blaze.player,gamemode=adventure] at @s run function minecraft:blaze/check_stucked

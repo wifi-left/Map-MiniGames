@@ -1,10 +1,24 @@
 {
     "type": "minecraft:multi_action",
     "title": "\u00a7e※ \u00a7b\u00a7l烽火燎原 商店 \u00a7e※",
-    "external_title": "括号内为售价，鼠标移上去可获得物品信息。",
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "contents": [
+                {
+                    "text": "括号内为售价，部分物品鼠标移上去可获得物品信息。",
+                    "color": "gold"
+                }
+            ]
+        }
+    ],
     "actions": [
         {
-            "label": "玻璃 & 玻璃镐 (0)",
+            "label": {
+                "text": "玻璃 & 玻璃镐 (0)",
+                "color": "gold",
+                "bold": true
+            },
             "tooltip": "玻璃：用于填充占领点。当挖掘点被挖取后可填充。\n玻璃镐：用于挖掘点位的玻璃，必须使用此镐子。开局默认携带，丢失此处可领取。",
             "action": {
                 "type": "run_command",
@@ -16,6 +30,69 @@
             "action": {
                 "type": "run_command",
                 "command": "trigger blaze.trigger set 2"
+            }
+        },
+        {
+            "label": "箭 x16 (100)",
+            "action": {
+                "type": "run_command",
+                "command": "trigger blaze.trigger set 3"
+            }
+        },
+        {
+            "label": "光灵箭 x8 (100)",
+            "action": {
+                "type": "run_command",
+                "command": "trigger blaze.trigger set 8"
+            }
+        },
+        {
+            "label": "弓 (500)",
+            "action": {
+                "type": "run_command",
+                "command": "trigger blaze.trigger set 4"
+            }
+        },
+        {
+            "label": "铁剑 (500)",
+            "action": {
+                "type": "run_command",
+                "command": "trigger blaze.trigger set 5"
+            }
+        },
+        {
+            "label": "石斧 (500)",
+            "action": {
+                "type": "run_command",
+                "command": "trigger blaze.trigger set 6"
+            }
+        },
+        {
+            "label": "风弹 (100)",
+            "action": {
+                "type": "run_command",
+                "command": "trigger blaze.trigger set 7"
+            }
+        },
+        {
+            "label": "回城卷轴 (300)",
+            "action": {
+                "type": "run_command",
+                "command": "trigger blaze.trigger set 9"
+            }
+        },
+        {
+            "label": "飞行雪球 (200)",
+            "action": {
+                "type": "run_command",
+                "command": "trigger blaze.trigger set 10"
+            }
+        },
+        {
+            "label": "一瓶牛奶 (100)",
+            "action": {
+                "type": "run_command",
+                "command": "trigger blaze.trigger set 11"
             }
         }
     ],

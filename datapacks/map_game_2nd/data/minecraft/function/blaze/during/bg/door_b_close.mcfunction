@@ -1,1 +1,1 @@
-fill 69 -26 336 75 -23 336 iron_bars replace air
+fill 69 -26 336 75 -23 336 waxed_oxidized_copper_bars replace air

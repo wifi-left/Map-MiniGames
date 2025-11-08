@@ -1,1 +1,1 @@
-fill 54 -22 402 48 -25 402 air replace iron_bars
+fill 54 -22 402 48 -25 402 air replace waxed_oxidized_copper_bars

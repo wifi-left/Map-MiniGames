@@ -1,9 +1,86 @@
 {
     "type": "minecraft:multi_action",
     "title": "\u00a7e※ \u00a7e\u00a7l烽火燎原 职业选择 \u00a7e※",
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "温馨提示：每次切换职业都需要花费50金币。",
+                "bold": true,
+                "color": "gold"
+            }
+        }
+    ],
     "actions": [
         {
-            "label": "测试"
+            "label": "战士",
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger blaze.trigger set -2"
+            }
+        },
+        {
+            "label": "弓箭手",
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger blaze.trigger set -3"
+            }
+        },
+        {
+            "label": "主坦克",
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger blaze.trigger set -4"
+            }
+        },
+        {
+            "label": "刺客",
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger blaze.trigger set -5"
+            }
+        },
+        {
+            "label": "矿工",
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger blaze.trigger set -8"
+            }
+        },
+        {
+            "label": "铁匠",
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger blaze.trigger set -9"
+            }
+        },
+        {
+            "label": "狙击手",
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger blaze.trigger set -10"
+            }
+        },
+        {
+            "label": "渔夫",
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger blaze.trigger set -11"
+            }
+        },
+        {
+            "label": "小碎骨",
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger blaze.trigger set -6"
+            }
+        },
+        {
+            "label": "大BAKA",
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "trigger blaze.trigger set -7"
+            }
         }
     ],
     "exit_action": {
