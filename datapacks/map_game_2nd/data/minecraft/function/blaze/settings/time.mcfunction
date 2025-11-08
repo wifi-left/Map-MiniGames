@@ -7,7 +7,7 @@ execute if score tmp.canset board matches 0 run playsound block.anvil.land playe
 execute if score tmp.canset board matches 0 run return 0
 
 scoreboard players add blaze.time state 1
-execute if score blaze.time state matches 61.. run scoreboard players set blaze.time state 1
+execute if score blaze.time state matches 9.. run scoreboard players set blaze.time state 1
 
 execute if score blaze.time state matches 1 run data modify block ~ ~ ~ front_text.messages[1] set value {text:"[ 5min ]",color:green}
 execute if score blaze.time state matches 2 run data modify block ~ ~ ~ front_text.messages[1] set value {text:"[ 10min ]",color:green}
