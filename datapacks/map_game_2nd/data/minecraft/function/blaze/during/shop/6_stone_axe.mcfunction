@@ -2,7 +2,7 @@
 scoreboard players set blaze.buy.success board 0
 execute at @s run playsound block.note_block.pling player @s ~ ~ ~ 1 2 1
 # 需要的金币
-scoreboard players set blaze.need board 500
+scoreboard players set blaze.need board 600
 
 execute if score @s blaze.coin >= blaze.need board run scoreboard players set blaze.buy.success board 1
 execute if score blaze.buy.success board matches 1 run tellraw @s ["\u00a7a购买成功。\n\u00a7c金币 -",{score:{name:"blaze.need",objective:board},color:red}]

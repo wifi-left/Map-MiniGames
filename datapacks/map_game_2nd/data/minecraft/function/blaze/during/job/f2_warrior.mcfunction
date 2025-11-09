@@ -20,4 +20,4 @@ item replace entity @s armor.head with iron_helmet[unbreakable={},custom_data={b
 item replace entity @s armor.chest with iron_chestplate[unbreakable={},custom_data={blaze:"job"}] 1
 item replace entity @s armor.legs with iron_leggings[unbreakable={},custom_data={blaze:"job"}] 1
 item replace entity @s armor.feet with iron_boots[unbreakable={},custom_data={blaze:"job"}] 1
-give @s iron_sword[unbreakable={},enchantment_glint_override=true,custom_data={blaze:"job"}] 1
+give @s stone_sword[unbreakable={},enchantment_glint_override=true,custom_data={blaze:"job"}] 1

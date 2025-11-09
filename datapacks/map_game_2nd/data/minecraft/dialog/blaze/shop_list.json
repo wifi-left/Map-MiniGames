@@ -54,14 +54,14 @@
             }
         },
         {
-            "label": "铁剑 (500)",
+            "label": "石剑 (500)",
             "action": {
                 "type": "run_command",
                 "command": "trigger blaze.trigger set 5"
             }
         },
         {
-            "label": "石斧 (500)",
+            "label": "石斧 (600)",
             "action": {
                 "type": "run_command",
                 "command": "trigger blaze.trigger set 6"

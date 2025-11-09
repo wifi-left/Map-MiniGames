@@ -4,8 +4,9 @@
 ## 
 # tellraw @a[team=hunger] [{"selector":"@s"},"\u00a7c 淘汰了。"]
 tellraw @s ["§c你已被淘汰。"]
-gamemode spectator
 tp @s 449 -10 -238 0 0
+execute as @s[gamemode=spectator] run return 0
+gamemode spectator
 
 scoreboard players set hunger.player tick 0
 execute as @a[team=hunger,gamemode=adventure] run scoreboard players add hunger.player tick 1

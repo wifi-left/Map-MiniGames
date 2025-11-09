@@ -83,6 +83,40 @@
                             "type": "minecraft:plain_message",
                             "contents": [
                                 {
+                                    "text": ""
+                                },
+                                {
+                                    "text": "wifi's MiniGames",
+                                    "color": "yellow",
+                                    "bold": true
+                                },
+                                {
+                                    "text": "\n一个集合多种小游戏为一张地图的项目。\n该项目您可以在 GitHub 上找到。\n您可以在本地图许可证范围内对地图进行修改。\n许可证请查看地图目录中 ",
+                                    "color": "aqua"
+                                },
+                                {
+                                    "text": "LISENCE",
+                                    "color": "green",
+                                    "underlined": true,
+                                    "click_event": {
+                                        "action": "open_url",
+                                        "url": "https://github.com/wifi-left/Map-MiniGames/blob/master/LISENCE"
+                                    }
+                                },
+                                {
+                                    "text": " 找到。\n",
+                                    "color": "aqua"
+                                },
+                                {
+                                    "text": "\n祝您游玩本地图愉快！\n",
+                                    "color": "light_purple"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:plain_message",
+                            "contents": [
+                                {
                                     "text": "【主创作者】\n",
                                     "color": "gold"
                                 },
@@ -149,6 +183,10 @@
                 "color": "aqua"
             },
             {
+                "text": "wifi's ",
+                "color": "gold"
+            },
+            {
                 "text": "Mini",
                 "color": "green"
             },
@@ -158,14 +196,6 @@
             },
             {
                 "text": "\n"
-            },
-            {
-                "text": "地图作者：",
-                "color": "gray"
-            },
-            {
-                "text": "wifi_left",
-                "color": "gold"
             }
         ]
     },

@@ -22,7 +22,7 @@ execute if score @s blaze.trigger matches 1 run function minecraft:blaze/during/
 execute if score @s blaze.trigger matches 2 run function minecraft:blaze/during/shop/2_gooden_apple
 execute if score @s blaze.trigger matches 3 run function minecraft:blaze/during/shop/3_arrow
 execute if score @s blaze.trigger matches 4 run function minecraft:blaze/during/shop/4_bow
-execute if score @s blaze.trigger matches 5 run function minecraft:blaze/during/shop/5_iron_sword
+execute if score @s blaze.trigger matches 5 run function minecraft:blaze/during/shop/5_stone_sword
 execute if score @s blaze.trigger matches 6 run function minecraft:blaze/during/shop/6_stone_axe
 execute if score @s blaze.trigger matches 7 run function minecraft:blaze/during/shop/7_wind_charge
 execute if score @s blaze.trigger matches 8 run function minecraft:blaze/during/shop/8_spectral_arrow

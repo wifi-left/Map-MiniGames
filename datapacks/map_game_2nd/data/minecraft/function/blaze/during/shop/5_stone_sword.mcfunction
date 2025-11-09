@@ -12,4 +12,4 @@ execute if score blaze.buy.success board matches 0 at @s run playsound entity.en
 
 execute if score blaze.buy.success board matches 0 run return 0
 # 购买的物品
-give @s iron_sword[enchantments={mending:1}]
+give @s stone_sword[enchantments={mending:1}]
