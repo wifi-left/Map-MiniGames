@@ -7,8 +7,8 @@ execute if score @s quickplay matches -1 run function minecraft:lobby/quickplay_
 
 execute if score @s quickplay matches 2 run function battle/join
 execute if score @s quickplay matches 3 run function believer/join
-execute if score @s quickplay matches 4 run tellraw @s ["\u00a7c暂无此游戏"]
-execute if score @s quickplay matches 5 run function golf/join
+execute if score @s quickplay matches 4 run function car_race/join
+execute if score @s quickplay matches 5 run function endless_wolf/join
 execute if score @s quickplay matches 6 run function color/join
 execute if score @s quickplay matches 7 run function dropper/join
 execute if score @s quickplay matches 8 run function duel/join
@@ -36,9 +36,13 @@ execute if score @s quickplay matches 29 run function stronghold/join
 execute if score @s quickplay matches 30 run function blaze/join
 execute if score @s quickplay matches 31 run function cloud/join
 execute if score @s quickplay matches 32 run function pillar/join
+execute if score @s quickplay matches 33 run tag @s add join.hit
+execute if score @s quickplay matches 34 run function parkourrace/join
+execute if score @s quickplay matches 35 run function boatwars/join
+execute if score @s quickplay matches 36 run function sneak/join
 
 execute if score @s quickplay matches 1.. run playsound entity.experience_orb.pickup player @s ~ ~ ~ 1 1 1
-execute if score @s quickplay matches 33.. run tellraw @s ["§c很抱歉，未知游戏的ID！"]
+execute if score @s quickplay matches 37.. run tellraw @s ["§c很抱歉，未知游戏的ID！"]
 
 execute if score @s quickplay matches 1.. run scoreboard players reset @s quickplay
 

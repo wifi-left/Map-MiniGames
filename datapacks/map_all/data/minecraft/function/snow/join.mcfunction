@@ -2,7 +2,7 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
-execute in overworld run tp @s -22 31 -74 -90 0
+execute in overworld run tp @s -22 32 -74 -90 0
 clear @s
 effect clear @s
 gamemode adventure @s[gamemode=!creative]

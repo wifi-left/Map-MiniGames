@@ -11,6 +11,10 @@ fill -348 12 -78 -352 15 -74 yellow_stained_glass
 fill -351 12 -75 -349 14 -77 air
 fill -278 12 -78 -282 15 -74 blue_stained_glass
 fill -281 12 -75 -279 14 -77 air
+
+function minecraft:duel/testfor_over
+execute unless score duel.state state matches 1.. run return 0
+
 tp @a[team=play.duel.yellow] -350 12 -76 -90 0
 tp @a[team=play.duel.blue] -280 12 -76 90 0
 execute as @a[team=play.duel.blue] at @s run function duel/item

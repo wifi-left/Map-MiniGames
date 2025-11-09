@@ -1,6 +1,6 @@
-execute if score blaze.mode state matches 2 at @s run playsound entity.enderman.teleport player @s ~ ~ ~ 1 0 1
-execute if score blaze.mode state matches 2 run tellraw @s ["\u00a7c该模式不需要玻璃镐！"]
-execute if score blaze.mode state matches 2 run return 0
+execute if score blaze.mode board matches 2 at @s run playsound entity.enderman.teleport player @s ~ ~ ~ 1 0 1
+execute if score blaze.mode board matches 2 run tellraw @s ["\u00a7c该模式不需要玻璃镐！"]
+execute if score blaze.mode board matches 2 run return 0
 
 
 # 通用逻辑

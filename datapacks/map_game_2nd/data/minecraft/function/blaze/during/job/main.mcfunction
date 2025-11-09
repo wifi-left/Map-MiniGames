@@ -8,9 +8,9 @@ execute in killerworld positioned 63 -27 541 run tag @s[distance=..15,tag=blaze.
 execute in killerworld positioned 58 -27 209 run tag @s[distance=..15,tag=blaze.player] add blaze.shop.ok
 ## Mid for 警
 # A
-execute if score blaze.mode state matches 3 if score blaze.police.state board matches 1 in killerworld positioned 54 -15 364 run tag @s[distance=..8,tag=blaze.player,team=blaze.team.a] add blaze.shop.ok
+execute if score blaze.mode board matches 3 if score blaze.police.state board matches 1 in killerworld positioned 54 -15 364 run tag @s[distance=..8,tag=blaze.player,team=blaze.team.a] add blaze.shop.ok
 # B
-execute if score blaze.mode state matches 3 if score blaze.police.state board matches 2 in killerworld positioned 54 -15 364 run tag @s[distance=..8,tag=blaze.player,team=blaze.team.b] add blaze.shop.ok
+execute if score blaze.mode board matches 3 if score blaze.police.state board matches 2 in killerworld positioned 54 -15 364 run tag @s[distance=..8,tag=blaze.player,team=blaze.team.b] add blaze.shop.ok
 
 execute unless entity @s[tag=blaze.shop.ok] run tellraw @s ["\u00a7c职业选择只能在出生点附近使用！"]
 execute unless entity @s[tag=blaze.shop.ok] run dialog clear @s

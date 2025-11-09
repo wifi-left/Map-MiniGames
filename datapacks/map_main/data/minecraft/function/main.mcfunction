@@ -8,7 +8,8 @@ function foodparty:tick
 execute as @a[team=lobby] at @s in overworld run function lobby/quickplay
 execute as @a[team=!lobby,tag=GOABLE.SPEC] at @s in overworld run function lobby/quickplay
 execute as @a[team=!lobby,scores={quickplay=1..}] at @s run function lobby/quickplay_refused
-execute as @a[team=!lobby,scores={quickplay=-1}] at @s run function lobby/quickplay_refused
+execute as @a[team=!lobby,scores={quickplay=-1}] at @s run function lobby/quickplay_refused_list
+execute as @a[scores={quickplay=-2}] at @s run function lobby/quickplay_back_and_retry
 
 execute as @a[gamemode=adventure] at @s as @s[y=-70,dy=-100] run function minecraft:out_of_world
 
@@ -218,3 +219,4 @@ scoreboard players reset @a[scores={parkour=1..}] parkour
 execute if score stronghold.state state matches 1.. in lobby run function stronghold/tick
 execute if score blaze.state state matches 1.. in killerworld run function minecraft:blaze/tick
 
+execute if score sneak.state state matches 1.. run function sneak/tick

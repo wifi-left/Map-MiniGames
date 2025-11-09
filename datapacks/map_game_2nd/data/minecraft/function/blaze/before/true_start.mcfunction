@@ -5,4 +5,4 @@ scoreboard players set blaze.round board 0
 scoreboard players add @a[tag=blaze.player] blaze.coin 0
 function minecraft:blaze/during/round_start
 
-execute if score blaze.mode state matches 3 as @a[team=blaze.team.a] at @s run function minecraft:blaze/during/event/police/change_to_a
+execute if score blaze.mode board matches 3 as @a[team=blaze.team.a] at @s run function minecraft:blaze/during/event/police/change_to_a

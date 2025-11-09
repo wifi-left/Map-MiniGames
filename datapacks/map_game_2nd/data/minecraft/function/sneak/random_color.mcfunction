@@ -1,0 +1,1 @@
+execute store result score @s sneak.color run random value 1..16

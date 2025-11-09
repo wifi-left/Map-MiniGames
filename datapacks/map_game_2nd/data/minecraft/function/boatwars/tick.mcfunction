@@ -8,6 +8,8 @@ execute in airworld as @a[x=553,y=6,z=32,distance=..1,gamemode=adventure] at @s 
 execute if score btw.state state matches 1 as @a[team=btw.play.a,gamemode=adventure] run function boatwars/detectboat
 execute if score btw.state state matches 1 as @a[team=btw.play.b,gamemode=adventure] run function boatwars/detectboat
 
+execute as @a[team=btw.play.a,gamemode=adventure] if predicate [{"condition":"entity_properties","entity":"this","predicate":{type_specific:{type:player,input:{jump:true}}}}] run function minecraft:boatwars/action/jump
+execute as @a[team=btw.play.b,gamemode=adventure] if predicate [{"condition":"entity_properties","entity":"this","predicate":{type_specific:{type:player,input:{jump:true}}}}] run function minecraft:boatwars/action/jump
 
 execute as @a[team=btw.play.a,gamemode=adventure] at @s run kill @e[type=item,distance=..5]
 execute as @a[team=btw.play.b,gamemode=adventure] at @s run kill @e[type=item,distance=..5]

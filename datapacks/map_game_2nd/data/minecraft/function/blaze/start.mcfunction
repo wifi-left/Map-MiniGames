@@ -1,3 +1,4 @@
+execute unless score total.start_game_mode board matches 1.. run scoreboard players operation blaze.mode board = blaze.mode state
 scoreboard players set blaze.state state 1
 function minecraft:blaze/start_reset
 title @a[team=blaze.wait] title ["\u00a7c\u00a7l烽火燎原"]
