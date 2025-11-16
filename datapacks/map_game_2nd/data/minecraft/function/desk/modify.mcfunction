@@ -18,5 +18,6 @@ execute if score desk.type board matches 3.. run scoreboard players set desk.typ
 
 execute if score desk.type board matches ..1 run data modify block ~ ~ ~ front_text.messages[1] set value "\u00a7a\u00a7l[骰子游戏]"
 # 还没做呢
-execute if score desk.type board matches 2 run data modify block ~ ~ ~ front_text.messages[1] set value "\u00a7b\u00a7l[商贾传奇]"
+execute if score desk.type board matches 2 run data modify block ~ ~ ~ front_text.messages[1] set value "\u00a7c\u00a7l[俄罗斯转盘]"
+execute if score desk.type board matches 3 run data modify block ~ ~ ~ front_text.messages[1] set value "\u00a7b\u00a7l[商贾传奇]"
 

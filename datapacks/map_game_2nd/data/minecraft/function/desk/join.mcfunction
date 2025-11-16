@@ -16,4 +16,4 @@ execute as @s[tag=GOABLE.SPEC] at @s run gamemode spectator
 execute if score desk.state state matches 1.. run function minecraft:desk/spec
 clear @s
 effect clear @s
-
+effect give @s instant_health 1 25 true

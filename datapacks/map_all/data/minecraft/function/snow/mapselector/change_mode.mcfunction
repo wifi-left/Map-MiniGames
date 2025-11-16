@@ -10,14 +10,16 @@ execute if score tmp.canset board matches 0 run playsound block.anvil.land playe
 execute if score tmp.canset board matches 0 run return 0
 
 scoreboard players add snow.tntrun state 1
-execute if score snow.tntrun state matches 3.. run scoreboard players set snow.tntrun state 0
+execute if score snow.tntrun state matches 4.. run scoreboard players set snow.tntrun state 0
 # snow.mode bo1ard
 execute if score snow.tntrun state matches 0 run data modify block ~ ~ ~ front_text.messages[1] set value {"text":"掘一死战","color":"aqua",bold:true}
 execute if score snow.tntrun state matches 0 run data modify block ~ ~-1 ~ front_text.messages set value ["","\u00a76用工具让对手落下！","非常简单的模式",""]
 execute if score snow.tntrun state matches 1 run data modify block ~ ~ ~ front_text.messages[1] set value {"text":"TNTRUN","color":"red",bold:true}
 execute if score snow.tntrun state matches 1 run data modify block ~ ~-1 ~ front_text.messages set value ["","\u00a76不停奔跑，小心掉落！","走过的方块会掉落消失",""]
 execute if score snow.tntrun state matches 2 run data modify block ~ ~ ~ front_text.messages[1] set value {"text":"混合模式","color":"yellow",bold:true}
-execute if score snow.tntrun state matches 2 run data modify block ~ ~-1 ~ front_text.messages set value ["","\u00a76大杂烩!两种模式混合!","貌似...挺有趣的？",""]
+execute if score snow.tntrun state matches 2 run data modify block ~ ~-1 ~ front_text.messages set value ["","\u00a76大杂烩!两种模式混合!","(不包含爆炸弓模式)",""]
+execute if score snow.tntrun state matches 3 run data modify block ~ ~ ~ front_text.messages[1] set value {"text":"爆炸弓模式","color":"red",bold:true}
+execute if score snow.tntrun state matches 3 run data modify block ~ ~-1 ~ front_text.messages set value ["","\u00a76射向敌人脚下的方块！","SHOOOOOT",""]
 
 playsound ui.button.click player @s ~ ~ ~ 1 1 1
 

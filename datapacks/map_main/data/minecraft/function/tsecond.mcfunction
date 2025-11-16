@@ -3,7 +3,7 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 scoreboard players set tick2 tick 0
-effect give @a regeneration 2 1 true
+effect give @a[tag=!no_health] regeneration 2 1 true
 
 give @a[team=play.live.killer,gamemode=adventure] arrow 1
 

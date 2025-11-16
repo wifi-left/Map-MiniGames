@@ -25,6 +25,7 @@ tag @s remove touzi.team.a
 tag @s remove touzi.team.b
 tag @s remove endless.vampire
 
+tag @s remove no_health
 tag @s remove stronghold.alive
 # tag @s remove
 xp set @s 0 levels
@@ -55,3 +56,9 @@ attribute @s armor_toughness modifier remove pvp
 attribute @s max_health modifier remove pvp
 attribute @s movement_efficiency modifier remove pvp
 attribute @s movement_speed modifier remove pvp
+attribute @s max_health modifier remove desk
+
+tag @s remove desk.russia.lock
+tag @s remove desk.russia.hitted
+tag @s remove desk.russia.nowround
+scoreboard players reset @s order

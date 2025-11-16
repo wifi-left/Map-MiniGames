@@ -1,0 +1,2 @@
+tellraw @a[team=deskgame] [{selector:"@s"},"\u00a7a抽到了",{text:"[子弹免疫]",color:aqua}]
+give @s paper[item_model='shield',custom_name={text:"子弹免疫\u00a77 - 自动触发",italic:false,color:"#b3ff00"},custom_data={desk:"shield",desk_item:1}]

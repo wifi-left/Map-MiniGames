@@ -17,10 +17,9 @@ execute if score tmp.canplay board matches 0 run tellraw @s ["§c游戏仅管理
 execute if score tmp.canplay board matches 0 run playsound block.anvil.land player @s ~ ~ ~ 1 1 0
 execute if score tmp.canplay board matches 0 run return 0
 
-
-execute if score desk.type board matches 2 run advancement grant @s only minecraft:games/imcompleted_game
-execute if score desk.type board matches 2 run tellraw @s ["§c新游戏鸽了，等更新吧..."]
-execute if score desk.type board matches 2 run return 0
+execute if score desk.type board matches 3 run advancement grant @s only minecraft:games/imcompleted_game
+execute if score desk.type board matches 3 run tellraw @s ["§c新游戏鸽了，等更新吧..."]
+execute if score desk.type board matches 3 run return 0
 
 execute unless score desk.state state matches 1.. if score wait.player tick matches ..1 run tellraw @s ["§c人数不够！请等待至少2人！"]
 execute unless score desk.state state matches 1.. if score wait.player tick matches ..1 run playsound entity.enderman.teleport player @s ~ ~ ~ 1 0 1

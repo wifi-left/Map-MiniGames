@@ -4,74 +4,6 @@
     "columns": 1,
     "actions": [
         {
-            "label": "快捷开始游戏 (仅大厅)",
-            "action": {
-                "type": "minecraft:run_command",
-                "command": "/trigger quickplay set -1"
-            }
-        },
-        {
-            "label": "全局旁观操作菜单",
-            "action": {
-                "type": "show_dialog",
-                "dialog": {
-                    "columns": 1,
-                    "type": "minecraft:multi_action",
-                    "title": "全局旁观操作菜单",
-                    "body": [
-                        {
-                            "type": "minecraft:plain_message",
-                            "contents": [
-                                {
-                                    "text": "全局旁观操作菜单，可以开启全局旁观者，可以更加方便录制视频等。"
-                                }
-                            ]
-                        }
-                    ],
-                    "actions": [
-                        {
-                            "label": "启用全局旁观者",
-                            "action": {
-                                "type": "run_command",
-                                "command": "/trigger spec set 2"
-                            }
-                        },
-                        {
-                            "label": "关闭全局旁观者",
-                            "action": {
-                                "type": "run_command",
-                                "command": "/trigger spec set 3"
-                            }
-                        },
-                        {
-                            "label": "开启旁观模式（仅在旁观模式下）",
-                            "action": {
-                                "type": "run_command",
-                                "command": "/trigger spec set 4"
-                            }
-                        },
-                        {
-                            "label": "返回",
-                            "action": {
-                                "type": "show_dialog",
-                                "dialog": "minecraft:menu"
-                            }
-                        }
-                    ],
-                    "exit_action": {
-                        "label": "关闭"
-                    }
-                }
-            }
-        },
-        {
-            "label": "返回大厅 (/trigger hub)",
-            "action": {
-                "type": "minecraft:run_command",
-                "command": "/trigger hub"
-            }
-        },
-        {
             "label": "地图介绍",
             "action": {
                 "type": "show_dialog",
@@ -165,6 +97,74 @@
                         }
                     }
                 }
+            }
+        },
+        {
+            "label": "快捷开始游戏 (仅大厅)",
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "/trigger quickplay set -1"
+            }
+        },
+        {
+            "label": "全局旁观操作菜单",
+            "action": {
+                "type": "show_dialog",
+                "dialog": {
+                    "columns": 1,
+                    "type": "minecraft:multi_action",
+                    "title": "全局旁观操作菜单",
+                    "body": [
+                        {
+                            "type": "minecraft:plain_message",
+                            "contents": [
+                                {
+                                    "text": "全局旁观操作菜单，可以开启全局旁观者，可以更加方便录制视频等。"
+                                }
+                            ]
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "label": "启用全局旁观者",
+                            "action": {
+                                "type": "run_command",
+                                "command": "/trigger spec set 2"
+                            }
+                        },
+                        {
+                            "label": "关闭全局旁观者",
+                            "action": {
+                                "type": "run_command",
+                                "command": "/trigger spec set 3"
+                            }
+                        },
+                        {
+                            "label": "开启旁观模式（仅在旁观模式下）",
+                            "action": {
+                                "type": "run_command",
+                                "command": "/trigger spec set 4"
+                            }
+                        },
+                        {
+                            "label": "返回",
+                            "action": {
+                                "type": "show_dialog",
+                                "dialog": "minecraft:menu"
+                            }
+                        }
+                    ],
+                    "exit_action": {
+                        "label": "关闭"
+                    }
+                }
+            }
+        },
+        {
+            "label": "返回大厅 (/trigger hub)",
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "/trigger hub"
             }
         }
     ],

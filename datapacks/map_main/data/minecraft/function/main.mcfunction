@@ -125,8 +125,8 @@ effect give @a[team=play.repel] minecraft:resistance 1 25 true
 effect give @a[team=pw.wait] minecraft:resistance 1 25 true
 effect give @a[team=car.wait] minecraft:resistance 1 25 true
 effect give @a[team=wait.repel] minecraft:resistance 1 25 true
-kill @e[type=arrow,nbt={inGround:1b}]
-kill @e[type=spectral_arrow,nbt={inGround:1b}]
+execute as @e[type=arrow,nbt={inGround:1b}] at @s run function minecraft:arrow_inground
+execute as @e[type=spectral_arrow,nbt={inGround:1b}] at @s run function minecraft:arrow_inground
 # execute as @e[type=area_effect_cloud,tag=title] at @s run data modify
 execute if score gametotal state matches 1.. run function minecraft:small_games/total/tick
 # execute if score @a[team=wait.total] run function minecraft:small_games/total/tick
