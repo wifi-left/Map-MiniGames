@@ -1,0 +1,1 @@
+$data modify storage minecraft:temp string_tmp set value 'function minecraft:small_games/total/settings/modify_game_enable_state {keys:{$(string_tmp)nothing:right}}'
