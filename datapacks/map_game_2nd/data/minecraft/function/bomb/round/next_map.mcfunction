@@ -2,7 +2,7 @@ execute if score bomb.allmap state matches 1 run scoreboard players add boob.lev
 schedule clear minecraft:bomb/round/cdover
 schedule clear minecraft:bomb/round/next_person
 scoreboard players set boom.state state 1
-tag @a[team=boom,gamemode=!creative,tag=!GOABLE.SPEC] add boom.waittoplay
+tag @a[team=boom,gamemode=!creative,tag=!GLOBAL.SPEC] add boom.waittoplay
 function minecraft:bomb/round/reset
 tellraw @a[team=boom] ["§6地图已切换，将在5s后开始第一位玩家的操作。\n§a目标：拆除所有\u00a7e幽匿尖啸体\u00a7a、\u00a7e潜声传感器\n\u00a7b【地图\u00a7a#",{score:{name:"boob.level",objective:board}},"\u00a7b】"]
 title @a[team=boom] title ["§6即将开始游戏"]

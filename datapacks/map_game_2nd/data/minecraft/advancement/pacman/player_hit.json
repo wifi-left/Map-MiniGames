@@ -1,0 +1,24 @@
+{
+    "criteria": {
+        "player_died": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "player",
+                    "team": "pacman"
+                },
+                "player": {
+                    "team": "pacman.killer"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "player_died"
+        ]
+    ],
+    "rewards": {
+        "function": "pacman/adv/killer_hit"
+    }
+}

@@ -6,7 +6,7 @@ function minecraft:lobby/elevent
 execute if block 123 121 59 oak_button[powered=true] run function lobby/car
 function foodparty:tick
 execute as @a[team=lobby] at @s in overworld run function lobby/quickplay
-execute as @a[team=!lobby,tag=GOABLE.SPEC] at @s in overworld run function lobby/quickplay
+execute as @a[team=!lobby,tag=GLOBAL.SPEC] at @s in overworld run function lobby/quickplay
 execute as @a[team=!lobby,scores={quickplay=1..}] at @s run function lobby/quickplay_refused
 execute as @a[team=!lobby,scores={quickplay=-1}] at @s run function lobby/quickplay_refused_list
 execute as @a[scores={quickplay=-2}] at @s run function lobby/quickplay_back_and_retry
@@ -45,7 +45,7 @@ execute as @a[tag=NEWENTER] at @s run attribute @s minecraft:attack_speed base s
 execute as @a[tag=NEWENTER] run bossbar set surgame:time players @a[team=wait.sur]
 
 execute as @a[tag=NEWENTER] unless score @s park.uuid matches 0.. run function minecraft:npark/getuuid
-tellraw @a[tag=NEWENTER,tag=GOABLE.SPEC] ["\n§7  你已开启§b全局旁观者模式§7。\n  §7",{"text":"§a§l点击此处，或者使用 §6§l/trigger spec set 3 §a§l退出全局旁观者模式","bold":true,"click_event":{"action":"run_command","command":"/trigger spec set 3"},"hover_event":{"action":"show_text","value":"§c点击此处退出全局旁观者模式"}},"\n"]
+tellraw @a[tag=NEWENTER,tag=GLOBAL.SPEC] ["\n§7  你已开启§b全局旁观者模式§7。\n  §7",{"text":"§a§l点击此处，或者使用 §6§l/trigger spec set 3 §a§l退出全局旁观者模式","bold":true,"click_event":{"action":"run_command","command":"/trigger spec set 3"},"hover_event":{"action":"show_text","value":"§c点击此处退出全局旁观者模式"}},"\n"]
 effect clear @a[tag=NEWENTER]
 tag @a[tag=NEWENTER] remove zombie.nehelp
 tag @a[tag=NEWENTER] remove parkouring
@@ -67,11 +67,11 @@ scoreboard players enable @a spec
 scoreboard players enable @a quickplay
 
 scoreboard players reset @a[scores={spec=1..}] spec
-tag @a[tag=SPEC.JOIN] add GOABLE.SPEC
+tag @a[tag=SPEC.JOIN] add GLOBAL.SPEC
 tellraw @a[tag=SPEC.JOIN] ["\n§7  你已开启§b全局旁观者模式§7。\n  §7由于你进入游戏后会变为旁观模式，请使用 §6/trigger hub§7 返回大厅。\n  ",{"text":"§a§l点击此处，或者使用 §6§l/trigger spec set 3 §a§l退出全局旁观者模式","bold":true,"click_event":{"action":"run_command","command":"/trigger spec set 3"},"hover_event":{"action":"show_text","value":"§c点击此处退出全局旁观者模式"}},"\n"]
 tag @a[tag=SPEC.JOIN] remove SPEC.JOIN
 tellraw @a[tag=SPEC.REMOVE] ["\n§c  你已关闭§b全局旁观者模式§7。\n"]
-tag @a[tag=SPEC.REMOVE] remove GOABLE.SPEC
+tag @a[tag=SPEC.REMOVE] remove GLOBAL.SPEC
 tag @a[tag=SPEC.REMOVE] remove SPEC.REMOVE
 
 effect give @a[team=hide.wait] resistance 1 25 true
@@ -145,8 +145,8 @@ execute as @a[tag=join.livelongest] run tp @s 25 7 0 0 0
 execute as @a[tag=join.livelongest] run team leave @s
 execute as @a[tag=join.livelongest] run tellraw @a ["§a§l[MESSAGE] §a",{"selector":"@s","color":"gray"},"§e joined §6Live Longest §e."]
 
-tellraw @a[tag=GOABLE.SPEC,tag=join.livelongest] ["\n§7  你已开启§b全局旁观者模式§7。\n  §7由于你进入游戏后会变为旁观模式，请使用 §6/trigger hub§7 返回大厅。\n  ",{"text":"§a§l点击此处，或者使用 §6§l/trigger spec set 3 §a§l退出全局旁观者模式","bold":true,"click_event":{"action":"run_command","command":"/trigger spec set 3"},"hover_event":{"action":"show_text","value":"§c点击此处退出全局旁观者模式"}},"\n"]
-execute as @a[tag=GOABLE.SPEC,tag=join.livelongest] at @s run gamemode spectator
+tellraw @a[tag=GLOBAL.SPEC,tag=join.livelongest] ["\n§7  你已开启§b全局旁观者模式§7。\n  §7由于你进入游戏后会变为旁观模式，请使用 §6/trigger hub§7 返回大厅。\n  ",{"text":"§a§l点击此处，或者使用 §6§l/trigger spec set 3 §a§l退出全局旁观者模式","bold":true,"click_event":{"action":"run_command","command":"/trigger spec set 3"},"hover_event":{"action":"show_text","value":"§c点击此处退出全局旁观者模式"}},"\n"]
+execute as @a[tag=GLOBAL.SPEC,tag=join.livelongest] at @s run gamemode spectator
 execute as @a[tag=join.livelongest] run team join wait.live @s
 execute as @a[tag=join.livelongest] run tag @s remove join.livelongest
 
@@ -207,8 +207,6 @@ scoreboard players reset @a[scores={JOBPVP.die=1..}] JOBPVP.die
 execute if score hotpot.state state matches 1.. run function minecraft:hotpotever/tick
 execute if score pillar.state state matches 1.. in airworld run function minecraft:pillar/tick
 
-scoreboard players reset @a[scores={hp.hurt=0..},team=!play.hotpot.k] hp.hurt
-scoreboard players reset @a[scores={hp.gethurt=0..}] hp.gethurt
 
 scoreboard players reset @a[scores={eat.goldapple=0..}] eat.goldapple
 scoreboard players reset @a[scores={eat.glow=0..}] eat.glow
@@ -221,3 +219,4 @@ execute if score stronghold.state state matches 1.. in lobby run function strong
 execute if score blaze.state state matches 1.. in killerworld run function minecraft:blaze/tick
 
 execute if score sneak.state state matches 1.. run function sneak/tick
+execute if score pacman.state state matches 1.. run function pacman/tick

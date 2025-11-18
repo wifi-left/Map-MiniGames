@@ -9,5 +9,5 @@ team join play.zombie
 gamemode spectator @s
 tp @s 630 40 -78 90 0
 
-execute if score zombie.mode board matches 1 unless entity @s[tag=GOABLE.SPEC] run function zombieever/fuhuo
+execute if score zombie.mode board matches 1 unless entity @s[tag=GLOBAL.SPEC] run function zombieever/fuhuo
 

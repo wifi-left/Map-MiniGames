@@ -3,6 +3,8 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 tag @s remove wolf.acting
+tag @s remove hp.flag
+tag @s remove hot.hit
 tag @s remove wolf.protected
 tag @s remove wolf.killed
 tag @s remove wolf.fired
@@ -62,3 +64,6 @@ tag @s remove desk.russia.lock
 tag @s remove desk.russia.hitted
 tag @s remove desk.russia.nowround
 scoreboard players reset @s order
+tag @s remove pacman.nokiller
+tag @s remove pacman.tobecalc
+tag @s remove pacman.win

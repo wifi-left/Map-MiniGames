@@ -16,7 +16,7 @@ execute if score bw.team.random board matches -1 if score bw.team.least tick = b
 execute if score bw.team.random board matches -1 if score bw.team.least tick = bw.green tick run scoreboard players set bw.team.random board 0
 execute if score bw.team.random board matches -1 run scoreboard players set bw.team.random board 0
 
-tag @r[team=bw.wait,tag=!GOABLE.SPEC] add bw.rd.sel
+tag @r[team=bw.wait,tag=!GLOBAL.SPEC] add bw.rd.sel
 execute if score bw.team.random board matches 0..0 run team join bw.green @a[tag=bw.rd.sel]
 execute if score bw.team.random board matches 1..1 run team join bw.yellow @a[tag=bw.rd.sel]
 execute if score bw.team.random board matches 2..2 run team join bw.red @a[tag=bw.rd.sel]

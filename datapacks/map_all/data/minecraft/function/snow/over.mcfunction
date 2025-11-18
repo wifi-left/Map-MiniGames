@@ -14,5 +14,7 @@ gamemode adventure @a[team=wait.snow]
 execute as @a[team=wait.snow] run function snow/join
 kill @e[type=marker,tag=snow.disa]
 function minecraft:snow/reset
+schedule clear snow/final
+schedule clear minecraft:snow/smaller/remove1
 
 

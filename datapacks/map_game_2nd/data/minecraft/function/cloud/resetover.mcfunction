@@ -16,7 +16,7 @@ execute in airworld run forceload add 599 266 780 442
 
 
 tag @e[tag=sw.spawn] add cloud.place.tobetp
-execute in airworld as @a[team=wait.sw,tag=!GOABLE.SPEC] at @s run function minecraft:cloud/giveplace
+execute in airworld as @a[team=wait.sw,tag=!GLOBAL.SPEC] at @s run function minecraft:cloud/giveplace
 kill @e[tag=cloud.place.tobetp]
 
 scoreboard players set cloud.step board 1

@@ -25,8 +25,8 @@ function hide2/starting/ranteam
 tellraw @a[team=hide.runner] ["\n§c   追杀者将在30秒后出动。\n"]
 tellraw @a[team=hide.killer] ["\n§c   你将在30秒后出动。\n"]
 scoreboard players set hide2.state state 2
-gamemode spectator @a[team=hide.wait2,tag=GOABLE.SPEC]
-team join hide.wait2 @a[team=hide.wait2,tag=GOABLE.SPEC]
+gamemode spectator @a[team=hide.wait2,tag=GLOBAL.SPEC]
+team join hide.wait2 @a[team=hide.wait2,tag=GLOBAL.SPEC]
 
 tp @a[team=hide.runner] 137 59 -129 -180 0
 tp @a[team=hide.killer] 133 60 -118 90 0

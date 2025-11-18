@@ -23,9 +23,9 @@ spawnpoint @s 630 10 -78
 tp @s 351 75 21 90 0
 
 scoreboard players reset @s zombie.coin
-tellraw @s[tag=GOABLE.SPEC] ["\n§7  你已开启§b全局旁观者模式§7。\n  §7由于你进入游戏后会变为旁观模式，请使用 §6/trigger hub§7 返回大厅。\n  ",{"text":"§a§l点击此处，或者使用 §6§l/trigger spec set 3 §a§l退出全局旁观者模式","bold":true,"click_event":{"action":"run_command","command":"/trigger spec set 3"},"hover_event":{"action":"show_text","value":"§c点击此处退出全局旁观者模式"}},"\n"]
-execute as @s[tag=GOABLE.SPEC] at @s run gamemode spectator
-execute as @s[tag=GOABLE.SPEC] at @s run team join play.zombie @s
+tellraw @s[tag=GLOBAL.SPEC] ["\n§7  你已开启§b全局旁观者模式§7。\n  §7由于你进入游戏后会变为旁观模式，请使用 §6/trigger hub§7 返回大厅。\n  ",{"text":"§a§l点击此处，或者使用 §6§l/trigger spec set 3 §a§l退出全局旁观者模式","bold":true,"click_event":{"action":"run_command","command":"/trigger spec set 3"},"hover_event":{"action":"show_text","value":"§c点击此处退出全局旁观者模式"}},"\n"]
+execute as @s[tag=GLOBAL.SPEC] at @s run gamemode spectator
+execute as @s[tag=GLOBAL.SPEC] at @s run team join play.zombie @s
 
 tellraw @s ["\n§6 您可以在§b§l菜单 - 选项 - 声音 - 地图音乐\n §e（如果未加载材质包显示为“§b§l语音§e”）\n §6调整背景音乐声音大小。\n"]
 

@@ -70,14 +70,20 @@ summon minecraft:text_display 240 117.7 -31 {text:["\u00a77Beach"],Invulnerable:
 
 execute as @e[type=item_frame] run data merge entity @s {Fixed:1b}
 
-summon minecraft:text_display 188 117 50 {text:["\u00a7a\u00a7l小游戏"],Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],billboard:"vertical",see_through:false}
+summon minecraft:text_display 188 117 50 {text:["\u00a7a\u00a7l经典小游戏 #1"],Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],billboard:"vertical",see_through:false}
 summon minecraft:text_display 188 116.7 50 {text:["\u00a771st Floor"],Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],billboard:"vertical",see_through:false}
 
-summon minecraft:text_display 197.0 122 48 {text:["\u00a7b\u00a7l小游戏"],Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],billboard:"vertical",see_through:false}
+summon minecraft:text_display 197.0 122 48 {text:["\u00a7b\u00a7l经典小游戏 #2"],Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],billboard:"vertical",see_through:false}
 summon minecraft:text_display 197.0 121.7 48 {text:["\u00a772nd Floor"],Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],billboard:"vertical",see_through:false}
 
-summon minecraft:text_display 183 128.0 50 {text:["\u00a7c\u00a7l小游戏"],Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],billboard:"vertical",see_through:false}
-summon minecraft:text_display 183 127.70 50 {text:["\u00a773rd Floor"],Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],billboard:"vertical",see_through:false}
+summon minecraft:text_display 183 127.0 50 {text:["\u00a7c\u00a7l新颖小游戏"],Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],billboard:"vertical",see_through:false}
+summon minecraft:text_display 183 126.70 50 {text:["\u00a773rd Floor"],Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],billboard:"vertical",see_through:false}
+
+summon minecraft:text_display 188 132.0 50 {text:["\u00a7d\u00a7l街机小游戏"],Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],billboard:"vertical",see_through:false}
+summon minecraft:text_display 188 131.70 50 {text:["\u00a774th Floor"],Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],billboard:"vertical",see_through:false}
+
+summon minecraft:text_display 183 137.0 50 {text:["\u00a7e\u00a7l休闲小游戏"],Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],billboard:"vertical",see_through:false}
+summon minecraft:text_display 183 136.70 50 {text:["\u00a775th Floor"],Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],billboard:"vertical",see_through:false}
 
 summon minecraft:text_display 238 117 66 {text:["\u00a7a\u00a7l迷宫"],Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],billboard:"vertical",see_through:false}
 summon minecraft:text_display 238 116.7 66 {text:["\u00a77寻找出口吧！"],Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],billboard:"vertical",see_through:false}

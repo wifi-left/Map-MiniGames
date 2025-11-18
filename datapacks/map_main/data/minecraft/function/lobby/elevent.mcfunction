@@ -43,7 +43,7 @@ stopsound @a[tag=NEWENTER1] record
 stopsound @a[tag=NEWENTER1] voice
 tag @a[tag=NEWENTER1] remove mazing
 tellraw @a[tag=NEWENTER1] ["\n§a  您可以随时使用 §6/trigger hub §a返回大厅。\n  §a全局音乐可以通过§6游戏设置 - ",{translate:"options.sounds",color:gold,fallback:"声音设置"},{text:" - ",color:gold},{translate:"soundCategory.voice",color:gold,fallback:"玩家语音"},"§a调节声音大小\n"]
-tellraw @a[tag=NEWENTER1,tag=GOABLE.SPEC] ["\n§7  你已开启§b全局旁观者模式§7。\n  §7",{"text":"§a§l点击此处，或者使用 §6§l/trigger spec set 3 §a§l退出全局旁观者模式","bold":true,"click_event":{"action":"run_command","command":"/trigger spec set 3"},"hover_event":{"action":"show_text","value":"§c点击此处退出全局旁观者模式"}},"\n"]
+tellraw @a[tag=NEWENTER1,tag=GLOBAL.SPEC] ["\n§7  你已开启§b全局旁观者模式§7。\n  §7",{"text":"§a§l点击此处，或者使用 §6§l/trigger spec set 3 §a§l退出全局旁观者模式","bold":true,"click_event":{"action":"run_command","command":"/trigger spec set 3"},"hover_event":{"action":"show_text","value":"§c点击此处退出全局旁观者模式"}},"\n"]
 execute as @a[tag=NEWENTER1] run attribute @s max_health base set 20
 execute as @a[tag=NEWENTER1] at @s run effect clear @s
 execute in overworld run tp @a[tag=NEWENTER1] 188 124 26 0 0
@@ -65,8 +65,8 @@ clear @a[tag=join.hit]
 gamemode adventure @a[tag=join.hit]
 team leave @a[tag=join.hit]
 execute as @a[tag=join.hit] run tellraw @a ["§a§l[MESSAGE] §7",{"selector":"@s","color":"yellow"},"§7 加入了 §eRepeling War§7。"]
-tellraw @a[tag=join.hit,tag=GOABLE.SPEC] ["\n§7  你已开启§b全局旁观者模式§7。\n  §7由于你进入游戏后会变为旁观模式，请使用 §6/trigger hub§7 返回大厅。\n  ",{"text":"§a§l点击此处，或者使用 §6§l/trigger spec set 3 §a§l退出全局旁观者模式","bold":true,"click_event":{"action":"run_command","command":"/trigger spec set 3"},"hover_event":{"action":"show_text","value":"§c点击此处退出全局旁观者模式"}},"\n"]
-execute as @a[tag=join.hit,tag=GOABLE.SPEC] at @s run gamemode spectator
+tellraw @a[tag=join.hit,tag=GLOBAL.SPEC] ["\n§7  你已开启§b全局旁观者模式§7。\n  §7由于你进入游戏后会变为旁观模式，请使用 §6/trigger hub§7 返回大厅。\n  ",{"text":"§a§l点击此处，或者使用 §6§l/trigger spec set 3 §a§l退出全局旁观者模式","bold":true,"click_event":{"action":"run_command","command":"/trigger spec set 3"},"hover_event":{"action":"show_text","value":"§c点击此处退出全局旁观者模式"}},"\n"]
+execute as @a[tag=join.hit,tag=GLOBAL.SPEC] at @s run gamemode spectator
 team join wait.repel @a[tag=join.hit]
 execute as @a[tag=join.hit] at @s run attribute @s minecraft:max_health base set 20
 execute as @a[tag=join.hit] at @s run effect clear @s

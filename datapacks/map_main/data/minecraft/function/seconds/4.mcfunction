@@ -37,3 +37,4 @@ execute if score duel.state state matches 1.. run function minecraft:duel/second
 execute if score pillar.state state matches 1.. in airworld run function minecraft:pillar/second
 
 execute if score sneak.state state matches 1.. run function sneak/second
+execute if score pacman.state state matches 1.. run function pacman/second

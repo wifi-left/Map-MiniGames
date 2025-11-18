@@ -19,6 +19,6 @@ execute if score stronghold.difficulty board matches 4 run title @a[team=strongh
 execute if score stronghold.difficulty board matches 5 run title @a[team=stronghold] subtitle [{text:"难度：",color:white},{"text":"变态","color":"#460101"}]
 title @a[team=stronghold] title ["\u00a76即将进入下一层..."]
 function minecraft:stronghold/reset/reset_and_build
-tag @a[team=stronghold,gamemode=!creative,tag=!GOABLE.SPEC] add stronghold.alive
-clear @a[team=stronghold,gamemode=!creative,tag=!GOABLE.SPEC] *[custom_data~{stronghold:"xuyuanbi"}]
-title @a[team=stronghold,gamemode=!creative,tag=!GOABLE.SPEC] actionbar ["\u00a7c许愿币已经掉落... 许愿币无法带入下一层。"]
+tag @a[team=stronghold,gamemode=!creative,tag=!GLOBAL.SPEC] add stronghold.alive
+clear @a[team=stronghold,gamemode=!creative,tag=!GLOBAL.SPEC] *[custom_data~{stronghold:"xuyuanbi"}]
+title @a[team=stronghold,gamemode=!creative,tag=!GLOBAL.SPEC] actionbar ["\u00a7c许愿币已经掉落... 许愿币无法带入下一层。"]

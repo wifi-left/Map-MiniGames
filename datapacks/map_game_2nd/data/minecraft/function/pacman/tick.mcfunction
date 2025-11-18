@@ -1,0 +1,2 @@
+kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{"douzi":1}}}}]
+execute if score pacman.state state matches 1 as @a[team=pacman,gamemode=adventure] at @s run function minecraft:pacman/player_gain_coin

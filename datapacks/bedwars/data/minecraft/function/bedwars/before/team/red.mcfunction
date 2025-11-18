@@ -5,8 +5,8 @@
 playsound ui.button.click player @s ~ ~ ~ 1 1 1
 execute if score bw.custom_team board matches 1 run tellraw @s ["§c目前设置已禁用自定义队伍"]
 execute if score bw.custom_team board matches 1 run return 0
-execute as @s[tag=GOABLE.SPEC] run tellraw @s ["§c您处于旁观者模式，无法选择队伍！"]
-execute as @s[tag=GOABLE.SPEC] run return 0
+execute as @s[tag=GLOBAL.SPEC] run tellraw @s ["§c您处于旁观者模式，无法选择队伍！"]
+execute as @s[tag=GLOBAL.SPEC] run return 0
 
 execute if score @s bw.team matches 1 run tellraw @s ["§b您已经加入过这个队伍了。"]
 execute if score @s bw.team matches 1 run return 0

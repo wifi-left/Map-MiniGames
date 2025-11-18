@@ -17,20 +17,20 @@ schedule clear bedwars/resets/mogu
 schedule clear bedwars/resets/unnamed
 # schedule clear bedwars/resets
 # schedule clear bedwars/resets/unnamed
-team join bw.wait @a[tag=GOABLE.SPEC,team=bw.green]
-team join bw.wait @a[tag=GOABLE.SPEC,team=bw.blue]
-team join bw.wait @a[tag=GOABLE.SPEC,team=bw.red]
-team join bw.wait @a[tag=GOABLE.SPEC,team=bw.yellow]
-gamemode spectator @a[tag=GOABLE.SPEC,team=bw.wait]
-tag @a[team=bw.wait,tag=!GOABLE.SPEC] add bw.play
+team join bw.wait @a[tag=GLOBAL.SPEC,team=bw.green]
+team join bw.wait @a[tag=GLOBAL.SPEC,team=bw.blue]
+team join bw.wait @a[tag=GLOBAL.SPEC,team=bw.red]
+team join bw.wait @a[tag=GLOBAL.SPEC,team=bw.yellow]
+gamemode spectator @a[tag=GLOBAL.SPEC,team=bw.wait]
+tag @a[team=bw.wait,tag=!GLOBAL.SPEC] add bw.play
 title @a[tag=bw.player] reset
 title @a[tag=bw.player] title ["\u00a7eBedwars"]
 title @a[tag=bw.player] subtitle ["\u00a7a游戏开始！"]
 
 execute if score bw.custom_team board matches 0 run function bedwars/before/selected_team
 
-execute if score bw.mode state matches 0..3 run execute as @a[team=bw.wait,tag=!GOABLE.SPEC] at @s run function minecraft:bedwars/before/random_team
-execute if score bw.mode state matches 4..7 run execute as @a[team=bw.wait,tag=!GOABLE.SPEC] at @s run function minecraft:bedwars/before/random_team_2teams
+execute if score bw.mode state matches 0..3 run execute as @a[team=bw.wait,tag=!GLOBAL.SPEC] at @s run function minecraft:bedwars/before/random_team
+execute if score bw.mode state matches 4..7 run execute as @a[team=bw.wait,tag=!GLOBAL.SPEC] at @s run function minecraft:bedwars/before/random_team_2teams
 scoreboard players reset * bw.team
 tag @a[team=bw.wait] remove bw.play
 tellraw @a ["§a§l[MESSAGE] §6起床战争§b游戏已经开始！"]

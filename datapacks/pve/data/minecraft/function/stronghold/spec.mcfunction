@@ -7,4 +7,4 @@ tellraw @s ["§c很抱歉，游戏已经开始！请等待下一局。"]
 
 execute in lobby run tp @s 290 -55 291 90 0
 
-execute as @s[tag=!GOABLE.SPEC] run function minecraft:stronghold/game/normal_equipment
+execute as @s[tag=!GLOBAL.SPEC] run function minecraft:stronghold/game/normal_equipment

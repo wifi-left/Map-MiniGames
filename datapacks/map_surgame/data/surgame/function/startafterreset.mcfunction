@@ -9,8 +9,8 @@ team join play.sur @a[team=wait.sur]
 tellraw @a[team=play.sur] ["\n§e   目前 PVP 已被禁止。请留意特殊事件。\n"]
 schedule function surgame:enablepvp 180s
 team modify play.sur friendlyFire false
-gamemode survival @a[team=play.sur,tag=!GOABLE.SPEC]
-gamemode spectator @a[team=play.sur,tag=GOABLE.SPEC]
+gamemode survival @a[team=play.sur,tag=!GLOBAL.SPEC]
+gamemode spectator @a[team=play.sur,tag=GLOBAL.SPEC]
 scoreboard players set wait.player tick 0
 execute as @a[team=play.sur,gamemode=survival] run scoreboard players add wait.player tick 1
 scoreboard players operation sur.maxtime board = wait.player tick
