@@ -3,6 +3,7 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 tag @s remove pillar.sel
+tag @s remove pillar.random_team
 
 gamemode spectator @s
 title @s title ["\u00a7e\u00a7l幸运之柱"]

@@ -38,3 +38,4 @@ execute if score btw.state state matches 1.. in overworld run function boatwars/
 
 execute if score duel.state state matches 1.. run function minecraft:duel/hftick
 
+execute if score miner.state state matches 1.. in airworld run function miner/second

@@ -2,6 +2,7 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
+tag @s remove miner.win
 tag @s remove wolf.acting
 tag @s remove hp.flag
 tag @s remove hot.hit

@@ -41,9 +41,10 @@ execute if score @s quickplay matches 34 run function parkourrace/join
 execute if score @s quickplay matches 35 run function boatwars/join
 execute if score @s quickplay matches 36 run function sneak/join
 execute if score @s quickplay matches 37 run function pacman/join
+execute if score @s quickplay matches 38 run function miner/join
 
 execute if score @s quickplay matches 1.. run playsound entity.experience_orb.pickup player @s ~ ~ ~ 1 1 1
-execute if score @s quickplay matches 38.. run tellraw @s ["§c很抱歉，未知游戏的ID！"]
+execute if score @s quickplay matches 39.. run tellraw @s ["§c很抱歉，未知游戏的ID！"]
 
 execute if score @s quickplay matches 1.. run scoreboard players reset @s quickplay
 

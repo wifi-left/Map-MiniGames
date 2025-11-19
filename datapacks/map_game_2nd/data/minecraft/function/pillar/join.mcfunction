@@ -4,6 +4,8 @@
 ## 
 team join pillar @s
 gamemode adventure @s[gamemode=spectator]
+gamemode adventure @s[gamemode=survival]
+
 tellraw @a [{"selector":"@s"}," \u00a7a加入了 \u00a7e幸运之柱"]
 title @s title ["\u00a7e幸运之柱"]
 title @s subtitle ["运气和实力的比拼"]

@@ -19,3 +19,4 @@ schedule clear minecraft:duel/summon
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{duel:1}}}}]
 
 
+forceload remove -251 -83 -379 -69

@@ -2,6 +2,11 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
+tellraw @s ["\u00a7c该游戏返厂更新中..."]
+execute if entity @a[team=wait.killer,tag=play.total] run function small_games/total/next_game
+
+return fail
+
 playsound ui.button.click player @s
 scoreboard players set wait.player tick 0
 execute as @a[team=wait.killer,gamemode=adventure] run scoreboard players add wait.player tick 1
