@@ -221,3 +221,4 @@ execute if score blaze.state state matches 1.. in killerworld run function minec
 execute if score sneak.state state matches 1.. run function sneak/tick
 execute if score pacman.state state matches 1.. run function pacman/tick
 execute if score miner.state state matches 1.. in airworld run function miner/tick
+execute if score mining.state state matches 1.. in airworld run function mining/tick

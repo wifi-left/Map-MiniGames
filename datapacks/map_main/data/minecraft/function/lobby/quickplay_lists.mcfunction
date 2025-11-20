@@ -15,6 +15,7 @@ function minecraft:lobby/quickplay_info {id:19,name:"棋类游戏",color:b}
 function minecraft:lobby/quickplay_info {id:36,name:"贪吃蛇",color:b}
 function minecraft:lobby/quickplay_info {id:37,name:"吃豆人",color:b}
 function minecraft:lobby/quickplay_info {id:38,name:"一掘到底",color:b}
+function minecraft:lobby/quickplay_info {id:39,name:"挖矿达人",color:b}
 function minecraft:lobby/quickplay_info {id:22,name:"雪崩类游戏",color:b}
 function minecraft:lobby/quickplay_info {id:23,name:"TNT Wars",color:b}
 function minecraft:lobby/quickplay_info {id:20,name:"狼人杀",color:b}
