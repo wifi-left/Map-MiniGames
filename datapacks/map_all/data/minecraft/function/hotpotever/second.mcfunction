@@ -20,6 +20,7 @@ effect give @a[team=play.hotpot] glowing 2 25 true
 effect give @a[team=play.hotpot] speed 4 0 true
 effect give @a[team=play.hotpot.k] speed 4 1 true
 
+execute as @a[team=play.hotpot.k,gamemode=adventure] run function minecraft:hotpotever/item
 execute if score hotpot.state state matches 2.. as @a[team=play.hotpot.k] run title @s actionbar ["\u00a7c你持有 \u00a7aHot Potato，快传给他人！  \u00a7e剩余时间： ",{"score":{"objective": "tick","name": "hp.time"},"color": "green"},"\u00a7as"]
 execute if score hotpot.state state matches 2.. as @a[team=play.hotpot] run title @s actionbar ["\u00a7b小心土豆持有者！  \u00a7e剩余时间： ",{"score":{"objective": "tick","name": "hp.time"},"color": "green"},"\u00a7as"]
 execute if score hotpot.state state matches 2.. if score hp.time tick matches ..0 run function hotpotever/onceover

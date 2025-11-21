@@ -7,8 +7,7 @@ function minecraft:lobby/quickplay_info {id:21,name:"小游戏合集",color:"f§
 function minecraft:lobby/quickplay_info {id:33,name:"击退游戏",color:b}
 function minecraft:lobby/quickplay_info {id:3,name:"信仰方块",color:b}
 function minecraft:lobby/quickplay_info {id:6,name:"色盲大战",color:b}
-function minecraft:lobby/quickplay_info {id:10,name:"躲猫猫（道具）",color:b}
-function minecraft:lobby/quickplay_info {id:11,name:"躲猫猫（方块）",color:b}
+function minecraft:lobby/quickplay_info {id:11,name:"方块躲猫猫",color:b}
 function minecraft:lobby/quickplay_info {id:12,name:"烫手的山芋",color:b}
 function minecraft:lobby/quickplay_info {id:18,name:"冬泳怪鸽",color:b}
 function minecraft:lobby/quickplay_info {id:19,name:"棋类游戏",color:b}
@@ -47,5 +46,6 @@ function minecraft:lobby/quickplay_info {id:15,name:"密室杀手 (废案)",colo
 function minecraft:lobby/quickplay_info {id:16,name:"Live Longest (废案)",color:7}
 function minecraft:lobby/quickplay_info {id:35,name:"船战 (废案)",color:7}
 function minecraft:lobby/quickplay_info {id:4,name:"赛猪游戏 (废案)",color:7}
+function minecraft:lobby/quickplay_info {id:10,name:"道具躲猫猫 (废案)",color:7}
 
 tellraw @s "\n§e使用 §6/trigger quickplay set <游戏ID>§b ，或者点击上方文字快速进入"

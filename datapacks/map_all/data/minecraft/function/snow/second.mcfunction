@@ -5,9 +5,9 @@
 effect give @a[team=wait.snow] resistance 2 25 true
 effect give @a[team=play.snow] resistance 2 25 true
 
-execute if score snow.state state matches 2.. if score snow.tntrun.start tick matches ..0 run function minecraft:snow/tntrun/startfall
-execute if score snow.state state matches 2.. run scoreboard players remove snow.tntrun.start tick 1
-execute if score snow.state state matches 2.. run title @a[team=play.snow] actionbar ["\u00a7b方块即将在 ",{"score":{"objective": "tick","name":"snow.tntrun.start"},"color":"green"},"\u00a7a seconds 后开始掉落 \u00a7b !"]
+execute if score snow.state state matches 2 if score snow.tntrun.start tick matches 0 run function minecraft:snow/tntrun/startfall
+execute if score snow.state state matches 2 run scoreboard players remove snow.tntrun.start tick 1
+execute if score snow.state state matches 2 run title @a[team=play.snow] actionbar ["\u00a7b方块即将在 ",{"score":{"objective": "tick","name":"snow.tntrun.start"},"color":"green"},"\u00a7as \u00a7b后开始掉落 !"]
 
 
-execute if score snow.state state matches 1.. run function minecraft:snow/second_xd
+execute if score snow.state state matches 1..2 run function minecraft:snow/second_xd

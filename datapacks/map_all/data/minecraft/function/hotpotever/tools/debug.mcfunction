@@ -1,0 +1,1 @@
+give @s paper[custom_data={hotpot:1,"hotpot.item":"clear_potato"},item_model="furnace",item_name=[{text:"消除自身 ",color:yellow},{"text":"Hot Potato","color":"#aed3ff","bold": true},{text:" - 长按右键",color:gray}],consumable={animation:"block",consume_seconds:1,sound:"block.furnace.fire_crackle",has_consume_particles:false}]

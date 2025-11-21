@@ -19,10 +19,6 @@ execute positioned -21.5 11 -73.5 run kill @e[type=item,distance=0..40]
 
 scoreboard players set snow.sq board 0
 
-
-scoreboard players operation snow.mode board = snow.map state
-execute if score snow.map state matches -1 store result score snow.mode board run random value 0..4
-
 ## scoreboard players set snow.mode board 0
 scoreboard players add snow.mode board 0
 execute if score snow.mode board matches 0 run function minecraft:snow/map/demo

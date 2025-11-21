@@ -11,5 +11,5 @@ execute if score snow.state state matches 1.. run clear @a[team=play.snow] snowb
 execute if score snow.state state matches 1.. run clear @a[team=play.snow] #minecraft:snowmineable
 execute if score snow.state state matches 1.. run execute as @a[team=play.snow,gamemode=adventure] at @s run kill @e[type=item,distance=..5]
 execute as @e[type=item] at @s if block ~ ~-1 ~ magma_block run kill @s
-execute if score snow.state state matches 1 if score snow.tntrun state matches 1..2 run function minecraft:snow/tntrun/tick
+execute if score snow.state state matches 1 if score snow.tntrun board matches 1..2 run function minecraft:snow/tntrun/tick
 

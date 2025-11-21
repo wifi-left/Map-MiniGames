@@ -10,9 +10,14 @@ tellraw @a[tag=hp.flag] ["\n§c    你被 ",{"selector":"@a[tag=hot.hit]"}," §c
 tellraw @s ["§a    你不在是 §cHot Potato§a 的拥有者！快跑！"]
 team join play.hotpot @a[tag=hot.hit]
 team join play.hotpot.k @a[tag=hp.flag]
+
 clear @a[team=play.hotpot] potato
 clear @a[team=play.hotpot.k] potato
-give @a[team=play.hotpot.k] potato[custom_data={hotpot:1},custom_name={"text":"Hot Potato","color":"#aed3ff","bold": true}]
+execute if score hotpot.mode board matches 3 run clear @a[team=play.hotpot] trident
+execute if score hotpot.mode board matches 2 run clear @a[team=play.hotpot] bow
+execute if score hotpot.mode board matches 4 run clear @a[team=play.hotpot] crossbow
+
+give @a[team=play.hotpot.k] potato[custom_data={hotpot:1},item_name={"text":"Hot Potato","color":"#aed3ff","bold": true}]
 execute as @a[tag=hot.hit] at @s run playsound entity.firework_rocket.launch player @s
 execute as @a[team=play.hotpot.k] at @s run playsound entity.firework_rocket.launch player @s
 tag @a[tag=hp.flag] remove hp.flag

@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:hotpotever/root",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:paper",
+                    "predicates": {
+                        "custom_data": {
+                            "hotpot.item":"clear_potato"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "minecraft:hotpotever/adv/tool/clear_hot"
+    }
+}

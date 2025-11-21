@@ -6,6 +6,8 @@ execute as @s[team=deskgame] at @s run function minecraft:desk/skill_handle
 execute as @s[team=btw.play.a] at @s run function minecraft:boatwars/usegun
 execute as @s[team=btw.play.b] at @s run function minecraft:boatwars/usegun
 execute as @s[level=..0,team=job_pvp] at @s run function minecraft:skills
+execute as @s[team=play.hotpot] at @s run function minecraft:hotpotever/tools/tool_main
+execute as @s[team=play.hotpot.k] at @s run function minecraft:hotpotever/tools/tool_main
 execute as @s[team=play.sw] at @s run function minecraft:tntwars/tnttool
 execute as @s[team=play.tntwars] at @s run function minecraft:tntwars/tnttool
 execute as @s[level=..0,team=play.live.runner] at @s run function minecraft:skills

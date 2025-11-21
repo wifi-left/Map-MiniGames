@@ -11,6 +11,6 @@ execute if score tmp.canset board matches 0 run tellraw @s ["§c游戏仅管理�
 execute if score tmp.canset board matches 0 run playsound block.anvil.land player @s ~ ~ ~ 1 1 0
 execute if score tmp.canset board matches 0 run return 0
 
-execute if score hotpot.map board matches ..1 run scoreboard players add hotpot.map board 1
+execute if score hotpot.map state matches ..2 run scoreboard players add hotpot.map state 1
 function minecraft:hotpotever/maps/show
 
