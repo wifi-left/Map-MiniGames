@@ -3,3 +3,4 @@ gamemode survival @s
 title @s title ["\u00a7a游戏开始！"]
 title @s subtitle ["请开始挖掘！"]
 function minecraft:mining/g_item
+execute as @s[tag=GOABLE.SPEC] run gamemode spectator @s

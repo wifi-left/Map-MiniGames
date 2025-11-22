@@ -6,3 +6,4 @@ title @s subtitle ["请小心不要摔下去了！"]
 # effect give @s slowness 5 127 true
 gamemode survival @s
 spawnpoint @s -55 -62 572 0 0
+execute as @s[tag=GOABLE.SPEC] run gamemode spectator @s
