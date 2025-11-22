@@ -8,3 +8,5 @@ kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{sneak:1}}}}]
 
 execute if score sneak.state state matches 1.. run execute as @a[team=sneak,gamemode=adventure] at @s run kill @e[type=item,distance=..5]
 execute if score sneak.state state matches 1 run function minecraft:sneak/color/tick
+
+execute if score sneak.state state matches 1 as @a[team=sneak,gamemode=adventure] at @s run function minecraft:sneak/tick_detect

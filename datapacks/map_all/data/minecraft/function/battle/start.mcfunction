@@ -20,7 +20,6 @@ execute if score tmp1 board matches 1.. run scoreboard players add tmp board 1
 
 scoreboard players operation battle.toolcount board = tmp board
 kill @e[type=armor_stand,tag=battle.ranpotion]
+scoreboard players set battle.state state 3
 
 function battle/nextround
-
-

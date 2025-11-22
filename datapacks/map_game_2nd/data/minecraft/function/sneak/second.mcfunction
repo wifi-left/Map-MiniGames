@@ -8,3 +8,4 @@ execute if score sneak.state state matches 2.. if score sneak.time tick matches 
 execute if score sneak.state state matches 2.. run scoreboard players remove sneak.time tick 1
 execute if score sneak.state state matches 2.. run title @a[team=sneak] actionbar ["\u00a7b方块即将在 ",{"score":{"objective": "tick","name":"sneak.time"},"color":"green"},"\u00a7a seconds 后开始变色 \u00a7b !"]
 execute as @a[team=sneak,gamemode=adventure] run function minecraft:sneak/item
+

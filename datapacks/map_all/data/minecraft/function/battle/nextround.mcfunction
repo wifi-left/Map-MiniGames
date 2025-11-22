@@ -2,6 +2,8 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
+execute if score battle.state state matches 0 run return 0
+execute if score battle.state state matches 5 run return 0
 tag @a[team=wait.battle] add battle.sel
 tag @a[team=play.battle.r] add battle.sel
 tag @a[team=play.battle.b] add battle.sel

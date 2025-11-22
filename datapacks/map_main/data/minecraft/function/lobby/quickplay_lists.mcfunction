@@ -5,6 +5,7 @@ data modify storage minecraft:temp dialog_tmp.actions set value []
 function minecraft:lobby/quickplay_info {id:21,name:"小游戏合集",color:"f§l"}
 
 function minecraft:lobby/quickplay_info {id:33,name:"击退游戏",color:b}
+function minecraft:lobby/quickplay_info {id:40,name:"抢板凳",color:b}
 function minecraft:lobby/quickplay_info {id:3,name:"信仰方块",color:b}
 function minecraft:lobby/quickplay_info {id:6,name:"色盲大战",color:b}
 function minecraft:lobby/quickplay_info {id:11,name:"方块躲猫猫",color:b}
