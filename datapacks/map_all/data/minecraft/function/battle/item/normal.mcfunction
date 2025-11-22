@@ -12,6 +12,5 @@ give @s[team=play.battle.r] red_wool[can_break=[{blocks:["white_wool","blue_wool
 give @s[team=play.battle.b] blue_wool[can_break=[{blocks:["white_wool","blue_wool","red_wool"]}],tooltip_display={hidden_components:[can_break,can_place_on,unbreakable]},can_place_on=[{blocks:["sea_lantern","white_wool","blue_wool","red_wool"]}],unbreakable={}] 64
 give @s bow[can_break=[{blocks:["white_wool","blue_wool","red_wool"]}],tooltip_display={hidden_components:[can_break,unbreakable]},unbreakable={}]
 
-item replace entity @s armor.feet with leather_boots[can_break=[{blocks:["white_wool","blue_wool","red_wool"]}],tooltip_display={hidden_components:[can_break,unbreakable]},unbreakable={}]
-
-
+item replace entity @s[team=play.battle.b] armor.chest with leather_chestplate[tooltip_display={hidden_components:[can_break,unbreakable]},unbreakable={},dyed_color=255]
+item replace entity @s[team=play.battle.r] armor.chest with leather_chestplate[tooltip_display={hidden_components:[can_break,unbreakable]},unbreakable={},dyed_color=16711680]

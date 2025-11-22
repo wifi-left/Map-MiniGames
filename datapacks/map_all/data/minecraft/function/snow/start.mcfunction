@@ -20,3 +20,4 @@ tellraw @a[team=play.snow,tag=GLOBAL.SPEC] ["\n§7  你已开启§b全局旁观�
 execute as @a[team=play.snow,tag=GLOBAL.SPEC] at @s run gamemode spectator
 forceload add 3 -49 -47 -99
 schedule function minecraft:snow/start_reset 10t
+effect give @a[team=play.snow] invisibility 2 25 true

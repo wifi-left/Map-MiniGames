@@ -8,7 +8,8 @@ bossbar add minecraft:battle "BATTLE GAME"
 bossbar set minecraft:battle color green
 bossbar set minecraft:battle max 60
 bossbar set minecraft:battle value 0
-
+fill 146 39 -324 142 35 -324 minecraft:light_blue_stained_glass keep
+fill 142 39 -356 146 35 -356 minecraft:red_stained_glass keep
 team join wait.battle @a[team=play.battle.r]
 team join wait.battle @a[team=play.battle.b]
 execute if entity @a[team=wait.battle,tag=play.total] run function small_games/total/next_game

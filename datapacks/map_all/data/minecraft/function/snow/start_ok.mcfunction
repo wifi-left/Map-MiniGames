@@ -1,3 +1,4 @@
+execute as @a[team=play.snow,gamemode=adventure] run tp @s -22 25 -74
 execute as @a[team=play.snow,gamemode=adventure] run spreadplayers -22 -74 0 20 under 26 false @s
 execute unless score snow.tntrun board matches 1..1 run schedule function minecraft:snow/final 80s replace
 execute unless score snow.tntrun board matches 1 run tellraw @a[team=play.snow] ["§a死亡决赛将在 §680s §a后开始!"]

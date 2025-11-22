@@ -49,4 +49,3 @@ execute as @a[tag=battle.sel] run tag @s add battle.notready
 tag @a remove battle.sel
 
 scoreboard players set battle.time board 61
-

@@ -4,10 +4,10 @@
 ## 
 team join play.hotpot @s
 
-execute if items entity @s container.* totem_of_undying run title @s title ["\u00a7a你存活下去了"]
-execute if items entity @s container.* totem_of_undying run title @s subtitle ["\u00a7e已自动使用不死图腾"]
-execute if items entity @s container.* totem_of_undying run tellraw @a[team=play.hotpot] [{selector:"@s"},"\u00a7a 使用了不死图腾，免除本次爆炸。"]
-execute if items entity @s container.* totem_of_undying run return run clear @s totem_of_undying 1
+execute if items entity @s weapon.* totem_of_undying run title @s title ["\u00a7a你存活下去了"]
+execute if items entity @s weapon.* totem_of_undying run title @s subtitle ["\u00a7e已自动使用不死图腾"]
+execute if items entity @s weapon.* totem_of_undying run tellraw @a[team=play.hotpot] [{selector:"@s"},"\u00a7a 使用了不死图腾，免除本次爆炸。"]
+execute if items entity @s weapon.* totem_of_undying run return run clear @s totem_of_undying 1
 tellraw @s ["§c对不起，你淘汰了！"]
 tellraw @a[team=play.hotpot] [{"selector":"@s"},"§c 淘汰！"]
 tellraw @a[team=wait.hotpot] [{"selector":"@s"},"§c 淘汰！"]

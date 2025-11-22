@@ -10,4 +10,5 @@ schedule function battle/over/tp 5s
 schedule clear battle/nextround
 gamemode spectator @a[tag=battle.sel]
 tag @a remove battle.sel
-
+fill 146 39 -324 142 35 -324 minecraft:light_blue_stained_glass keep
+fill 142 39 -356 146 35 -356 minecraft:red_stained_glass keep
