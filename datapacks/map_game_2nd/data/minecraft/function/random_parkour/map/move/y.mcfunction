@@ -1,6 +1,6 @@
 scoreboard players set random_parkour.move_way temp 0
 #不要y+
-execute if score random_parkour.y board matches -30.. run return 0
+execute if score random_parkour.y board matches -10.. run return run scoreboard players set random_parkour.tempy temp 0
 #不要y-
 execute if score random_parkour.y board matches ..-61 run scoreboard players set random_parkour.move_way temp 2
 
