@@ -13,20 +13,20 @@ function minecraft:pacman/calc/highest
 tellraw @a ["§a[I] ",{"text":"吃豆人","color":"#aed3ff","bold":true}," §a: §b游戏结束！"]
 execute if entity @a[tag=pacman.win] run tellraw @a ["§e获胜者：",{"selector":"@a[team=pacman,tag=pacman.win]"}]
 tag @a[tag=pacman.win] remove pacman.tobecalc
-execute if entity @a[tag=pacman.win] run tellraw @a[team=pacman] ["\u00a76 - 第一名：",{"selector":"@a[team=pacman,tag=pacman.win]"}]
+execute if entity @a[tag=pacman.win] run tellraw @a[team=pacman] ["\u00a76 - 第一名：",{"selector":"@a[team=pacman,tag=pacman.win]"},{text:" (",color:green,extra:["",{score:{name:"pacman.max",objective:board},color:"light_purple"},"分)"]}]
 execute as @a[tag=pacman.win] run title @s title ["\u00a7a你获得了第一名！"]
 execute as @a[tag=pacman.win] run function minecraft:small_games/total/win_score {score:3}
 tag @a[tag=pacman.win] remove pacman.win
 # 第二
 function minecraft:pacman/calc/highest
-execute if entity @a[tag=pacman.win] run tellraw @a[team=pacman] ["\u00a76 - 第二名：",{"selector":"@a[team=pacman,tag=pacman.win]"}]
+execute if entity @a[tag=pacman.win] run tellraw @a[team=pacman] ["\u00a76 - 第二名：",{"selector":"@a[team=pacman,tag=pacman.win]"},{text:" (",color:green,extra:["",{score:{name:"pacman.max",objective:board},color:"light_purple"},"分)"]}]
 tag @a[tag=pacman.win] remove pacman.tobecalc
 execute as @a[tag=pacman.win] run function minecraft:small_games/total/win_score {score:2}
 execute as @a[tag=pacman.win] run title @s title ["\u00a7b你获得了第二名！"]
 tag @a[tag=pacman.win] remove pacman.win
 # 第三
 function minecraft:pacman/calc/highest
-execute if entity @a[tag=pacman.win] run tellraw @a[team=pacman] ["\u00a76 - 第三名：",{"selector":"@a[team=pacman,tag=pacman.win]"}]
+execute if entity @a[tag=pacman.win] run tellraw @a[team=pacman] ["\u00a76 - 第三名：",{"selector":"@a[team=pacman,tag=pacman.win]"},{text:" (",color:green,extra:["",{score:{name:"pacman.max",objective:board},color:"light_purple"},"分)"]}]
 tag @a[tag=pacman.win] remove pacman.tobecalc
 execute as @a[tag=pacman.win] run function minecraft:small_games/total/win_score {score:1}
 execute as @a[tag=pacman.win] run title @s title ["\u00a7d你获得了第三名！"]

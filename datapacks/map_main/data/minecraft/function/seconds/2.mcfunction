@@ -42,3 +42,5 @@ effect give @a[team=wolfpeople] resistance 2 25 true
 
 execute if score stronghold.state state matches 1.. in lobby run function stronghold/second
 execute if score stronghold.state state matches 0 run effect give @a[team=stronghold] resistance 2 25 true
+
+execute if score random_parkour.state state matches 1.. in parkourworld run function random_parkour/second

@@ -224,3 +224,4 @@ execute if score pacman.state state matches 1.. run function pacman/tick
 execute if score miner.state state matches 1.. in airworld run function miner/tick
 execute if score mining.state state matches 1.. in airworld run function mining/tick
 execute if score chair.state state matches 1.. in overworld run function chair/tick
+execute if score random_parkour.state state matches 1.. in parkourworld run function random_parkour/tick

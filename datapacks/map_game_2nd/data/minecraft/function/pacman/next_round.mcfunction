@@ -4,6 +4,6 @@ execute as @a[team=pacman,gamemode=!creative,tag=!GLOBAL.SPEC] in overworld run 
 tellraw @a[team=pacman] ["\n\u00a7e下一轮将在\u00a7c5秒\u00a7e后开始！\n"]
 execute as @a[team=pacman] at @s run playsound entity.player.levelup player @s ~ ~ ~ 1 1 1
 # schedule function pacman/summon 5s replace
-
+function minecraft:pacman/show_rank
 scoreboard players set pacman.time board 6
 scoreboard players set pacman.state state 2

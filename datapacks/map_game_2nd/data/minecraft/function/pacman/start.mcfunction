@@ -15,3 +15,5 @@ fill -115 -60 -289 -183 -60 -221 white_concrete replace gold_block
 tellraw @a[team=pacman] ["\n\u00a7a\u00a7l PAC-MAN 吃豆人\n\u00a76\u00a7l 游戏规则\n\u00a7b 游戏开始后，请收集“豆子”（地面为金块的位置），小心被吃豆人抓到！\n"]
 scoreboard players set pacman.state state 2
 function minecraft:pacman/next_round
+xp set @a[team=pacman] 0 levels
+xp set @a[team=pacman] 0 points

@@ -10,7 +10,8 @@ title @s title ["\u00a74挖矿达人"]
 title @s subtitle ["挖矿！寻找宝藏！"]
 tellraw @s ["\n \u00a74\u00a7l挖矿达人\u00a76：使用工具，挖矿，收集资源！\n"]
 execute in airworld run tp @s -112 -62 480 0 0
-
+xp set @s 0 levels
+xp set @s 0 points
 execute at @s run playsound entity.player.levelup player @s ~ ~ ~ 10 1 1
 clear @s
 effect clear @s

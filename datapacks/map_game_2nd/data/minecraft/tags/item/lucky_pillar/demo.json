@@ -52,7 +52,6 @@
         "#drowned_preferred_weapons",
         "#duplicates_allays",
         "#dyeable",
-        "snowball",
         "#emerald_ores",
         "#enchantable/armor",
         "#enchantable/bow",
@@ -109,6 +108,8 @@
         "torch",
         "lantern",
         "lever",
-        "scaffolding"
+        "scaffolding",
+        "totem_of_undying",
+        "firework_rocket"
     ]
 }

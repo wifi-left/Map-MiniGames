@@ -4,6 +4,7 @@
 ## 
 tag @s remove miner.win
 tag @s remove wolf.acting
+tag @s remove random_parkour.win
 tag @s remove hp.flag
 tag @s remove hot.hit
 tag @s remove wolf.protected

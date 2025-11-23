@@ -12,20 +12,20 @@ function minecraft:mining/calc/highest
 tellraw @a ["§a[I] ",{"text":"挖矿达人","color":"dark_red","bold":true}," §a: §b游戏结束！"]
 execute if entity @a[tag=mining.win] run tellraw @a ["§e获胜者：",{"selector":"@a[team=mining,tag=mining.win]"}]
 tag @a[tag=mining.win] remove mining.tobecalc
-execute if entity @a[tag=mining.win] run tellraw @a[team=mining] ["\u00a76 - 第一名：",{"selector":"@a[team=mining,tag=mining.win]"}]
+execute if entity @a[tag=mining.win] run tellraw @a[team=mining] ["\u00a76 - 第一名：",{"selector":"@a[team=mining,tag=mining.win]"},{text:" (",color:green,extra:["",{score:{name:"mining.max",objective:board},color:"light_purple"},"分)"]}]
 execute as @a[tag=mining.win] run title @s title ["\u00a7a你获得了第一名！"]
 execute as @a[tag=mining.win] run function minecraft:small_games/total/win_score {score:3}
 tag @a[tag=mining.win] remove mining.win
 # 第二
 function minecraft:mining/calc/highest
-execute if entity @a[tag=mining.win] run tellraw @a[team=mining] ["\u00a76 - 第二名：",{"selector":"@a[team=mining,tag=mining.win]"}]
+execute if entity @a[tag=mining.win] run tellraw @a[team=mining] ["\u00a76 - 第二名：",{"selector":"@a[team=mining,tag=mining.win]"},{text:" (",color:green,extra:["",{score:{name:"mining.max",objective:board},color:"light_purple"},"分)"]}]
 tag @a[tag=mining.win] remove mining.tobecalc
 execute as @a[tag=mining.win] run function minecraft:small_games/total/win_score {score:2}
 execute as @a[tag=mining.win] run title @s title ["\u00a7b你获得了第二名！"]
 tag @a[tag=mining.win] remove mining.win
 # 第三
 function minecraft:mining/calc/highest
-execute if entity @a[tag=mining.win] run tellraw @a[team=mining] ["\u00a76 - 第三名：",{"selector":"@a[team=mining,tag=mining.win]"}]
+execute if entity @a[tag=mining.win] run tellraw @a[team=mining] ["\u00a76 - 第三名：",{"selector":"@a[team=mining,tag=mining.win]"},{text:" (",color:green,extra:["",{score:{name:"mining.max",objective:board},color:"light_purple"},"分)"]}]
 tag @a[tag=mining.win] remove mining.tobecalc
 execute as @a[tag=mining.win] run function minecraft:small_games/total/win_score {score:1}
 execute as @a[tag=mining.win] run title @s title ["\u00a7d你获得了第三名！"]
