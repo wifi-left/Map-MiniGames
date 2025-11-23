@@ -1,0 +1,68 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+        {
+            "rolls": 1,
+            "bonus_rolls": {
+                "min": 0,
+                "max": 2
+            },
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "ender_pearl",
+                    "weight": 1,
+                    "quality": 1,
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "use_cooldown": {
+                                    "seconds": 5,
+                                    "cooldown_group": "random_parkour"
+                                }
+                            }
+                        }
+                    ]
+                },{
+                    "type": "item",
+                    "name": "fishing_rod",
+                    "weight": 3,
+                    "quality": 1,
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "max_damage":1,
+                                "item_name": "干扰鱼竿",
+                                "use_cooldown": {
+                                    "seconds": 1,
+                                    "cooldown_group": "random_parkour"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "name": "snowball",
+                    "weight": 20,
+                    "quality": 1,
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "item_model": "fire_charge",
+                                "item_name": "火球 - 右键发射",
+                                "use_cooldown": {
+                                    "seconds": 5,
+                                    "cooldown_group": "random_parkour"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
