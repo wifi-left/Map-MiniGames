@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "player_died": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity":{
+                    "type": "player",
+                    "team": "job_pvp"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "player_died"
+        ]
+    ],
+    "rewards": {
+        "function": "job_pvp/adv/player_killed"
+    }
+}
+

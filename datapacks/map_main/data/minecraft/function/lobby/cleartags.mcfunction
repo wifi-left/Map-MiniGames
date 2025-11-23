@@ -69,3 +69,4 @@ scoreboard players reset @s order
 tag @s remove pacman.nokiller
 tag @s remove pacman.tobecalc
 tag @s remove pacman.win
+tag @s remove job_pvp.died

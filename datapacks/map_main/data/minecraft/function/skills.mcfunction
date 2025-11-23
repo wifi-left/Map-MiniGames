@@ -6,6 +6,8 @@ title @s actionbar ["\u00a7b\u00a7lSkills Actived"]
 playsound ui.button.click player @s ~ ~ ~ 1 2 1
 
 execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{job:1}}}}] run tag @s add skill.old
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{job:"fly_arrow"}}}}] run function minecraft:job_pvp/jobs/fly_arrow
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{job:"fireball"}}}}] run function minecraft:job_pvp/jobs/fireball
 execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{job:2}}}}] run tag @s add skill.scientist
 execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{job:3}}}}] run tag @s add skill.tp
 execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{job:4}}}}] run tag @s add skill.creeper
@@ -38,21 +40,9 @@ execute as @s[tag=skill.old] run title @a[distance=0.5..7,team=job_pvp,gamemode=
 execute as @s[tag=skill.old] run title @a[distance=0.5..7,team=job_pvp,gamemode=!creative] subtitle ["\u00a7e来自 ",{"selector":"@s"}," \u00a7e的范围技能"]
 execute as @s[tag=skill.old] run particle minecraft:angry_villager ~ ~1 ~ 8 5 8 1 1000 force @a
 execute as @s[tag=skill.tp] run particle minecraft:glow ~ ~ ~ 0 1 0 1 50
-execute as @s[tag=skill.tp] run particle minecraft:glow ~ ~ ~ 0 1 0 1 50
 execute as @s[tag=skill.tp] run function minecraft:job_pvp/random_tp
 # Creeper
-execute as @s[tag=skill.creeper] run execute as @s at @s positioned 0.0 0.0 0.0 run summon marker ^ ^ ^2 {Tags:["f.tmp"]}
-# execute if entity @s[team=job_pvp] anchored eyes run summon fireball ^ ^ ^1 {Tags:["f.new"],ExplosionPower:1}
-execute as @s[tag=skill.creeper] run execute anchored eyes run summon minecraft:spectral_arrow ^ ^ ^1 {Glowing:1b,damage:1d,pickup:0b,Passengers:[{id:"minecraft:creeper",CustomName:["CREEPER"],CustomNameVisible:1b,Invulnerable:1b,Silent:1b,PersistenceRequired:1b,Glowing:1b,powered:true,ignited:true,ExplosionRadius:2b,Fuse:30s}],Tags:["f.new"]}
-
-execute as @s[tag=skill.creeper] run execute as @e[tag=f.new] run data modify entity @s Owner set from entity @p[tag=skill.creeper] UUID
-# execute as @e[tag=f.new] run data modify entity @s Motion set from entity @e[limit=1,sort=nearest,tag=f.tmp] Pos
-
-execute as @s[tag=skill.creeper] run execute as @e[tag=f.new] run data modify entity @s Motion set from entity @e[limit=1,tag=f.tmp] Pos
-tag @e[tag=f.new] remove f.new
-# kill @e[type=snowball,distance=0..5,sort=nearest]
-# scoreboard players reset @s fireball
-kill @e[tag=f.tmp]
+execute as @s[tag=skill.creeper] run function minecraft:job_pvp/jobs/creeper
 scoreboard players reset @s use.skill
 
 execute as @s[tag=skill.tp] at @s run playsound minecraft:entity.enderman.hurt player @s ~ ~ ~ 10 1 0.5
