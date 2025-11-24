@@ -27,7 +27,7 @@
                 },{
                     "type": "item",
                     "name": "fishing_rod",
-                    "weight": 3,
+                    "weight": 10,
                     "quality": 1,
                     "functions": [
                         {
@@ -36,7 +36,7 @@
                                 "max_damage":1,
                                 "item_name": "干扰鱼竿",
                                 "use_cooldown": {
-                                    "seconds": 1,
+                                    "seconds": 0.5,
                                     "cooldown_group": "random_parkour"
                                 }
                             }

@@ -4,4 +4,5 @@
 ## 
 gamemode spectator @s
 tellraw @s ["§c很抱歉，游戏已经开始了！"]
-
+tp @s @r[team=play.killer,gamemode=adventure]
+team join play.killer @s

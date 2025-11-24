@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick[custom_data={killer:1,killer.job:saver},enchantments={power:5},unbreakable={},use_cooldown={seconds:10,cooldown_group:killer},item_model=iron_sword,item_name=[{text:"铁剑"},{text:" - 右键释放剑气",color:gray}],attribute_modifiers=[{id:"attack",type:"attack_damage",amount:20,operation:"add_value",display:{type:"override",value:{text:"一击必杀",color:"dark_red"}}}]]

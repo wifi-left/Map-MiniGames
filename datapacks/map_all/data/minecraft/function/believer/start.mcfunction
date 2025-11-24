@@ -16,5 +16,5 @@ schedule clear minecraft:believer/summon
 kill @e[tag=beliran,type=marker]
 schedule function minecraft:believer/summon 3s
 forceload remove 6 -49 38 -81
-
+team modify play.beli friendlyFire true
 

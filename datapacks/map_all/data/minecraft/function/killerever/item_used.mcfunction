@@ -1,0 +1,2 @@
+execute as @s[level=1..] run return run title @s actionbar ["\u00a7c道具冷却中..."]
+execute if items entity @s weapon.mainhand carrot_on_a_stick[custom_data~{killer.job:saver}] run function minecraft:killerever/skill/sword

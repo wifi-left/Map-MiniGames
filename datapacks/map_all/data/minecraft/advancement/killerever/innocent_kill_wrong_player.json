@@ -1,0 +1,26 @@
+{
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "player": {
+                    "team": "play.killer",
+                    "nbt": "{Tags:[\"killer.runner\"]}"
+                },
+                "entity": {
+                    "type": "player",
+                    "team": "play.killer",
+                    "nbt": "{Tags:[\"killer.runner\"]}"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {
+        "function": "killerever/adv/killed_wrong"
+    }
+}

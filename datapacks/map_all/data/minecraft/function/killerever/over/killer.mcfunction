@@ -8,6 +8,6 @@ title @a[team=play.killer] subtitle ["\u00a7c杀手胜利"]
 title @a[team=wait.killer] title ["\u00a7c\u00a7lGAME OVER"]
 title @a[team=wait.killer] subtitle ["\u00a7c杀手胜利"]
 title @a[team=play.killer,tag=killer.killer] title ["\u00a76You won!"]
-execute as @a[team=play.killer,tag=killer.killer,tag=play.total] run function minecraft:small_games/total/win_score {score:1}
+execute as @a[team=play.killer,tag=killer.killer,tag=play.total] run function minecraft:small_games/total/win_score {score:2}
 function killerever/over
 

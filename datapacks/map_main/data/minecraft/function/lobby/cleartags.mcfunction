@@ -28,7 +28,9 @@ tag @s remove tntwars.b
 tag @s remove touzi.team.a
 tag @s remove touzi.team.b
 tag @s remove endless.vampire
-
+tag @s remove killer.killer
+tag @s remove killer.runner
+tag @s remove killer.saver
 tag @s remove no_health
 tag @s remove stronghold.alive
 # tag @s remove
