@@ -17,7 +17,7 @@ execute as @a[team=play.parkour] at @s if block ~ ~-1 ~ minecraft:black_concrete
 execute as @a[team=play.parkour] at @s if block ~ ~-1 ~ minecraft:brown_concrete run effect give @s minecraft:slowness 2 2 true
 execute as @a[team=play.parkour] at @s if block ~ ~-1 ~ minecraft:yellow_concrete run effect give @s minecraft:blindness 2 20 true
 execute as @a[team=play.parkour] at @s if block ~ ~-1 ~ minecraft:glass run effect clear @s
+execute as @a[team=play.parkour] at @s if block ~ ~-1 ~ minecraft:gold_block run function minecraft:parkourrace/setpoint
 
 effect give @a[team=play.parkour] saturation 2 25 true
 effect give @a[team=play.parkour] minecraft:resistance 2 25 true
-

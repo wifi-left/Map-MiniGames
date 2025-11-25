@@ -17,9 +17,6 @@ bossbar set zombie:zombiecount players @a[team=play.zombie]
 
 execute if entity @a[team=dropper] in dropperworld run function dropper/second
 
-scoreboard players set play.park.player tick 0
-execute as @a[team=play.parkour,gamemode=adventure] run scoreboard players add play.park.player tick 1
-
 execute if score chess.state state matches 1.. run function small_games/chess/second
 
 execute if score hide.state state matches 1.. run function hideseek/second

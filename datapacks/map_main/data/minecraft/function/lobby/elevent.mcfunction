@@ -22,7 +22,7 @@ scoreboard players reset @a[tag=REJOINGAME] rejoin
 tag @a[tag=REJOINGAME] remove REJOINGAME
 
 tag @a[scores={hub=1..}] add NEWENTER1
-execute as @a[tag=NEWENTER1] unless score @s park.uuid matches 0.. run function minecraft:npark/getuuid
+execute as @a[tag=NEWENTER1] unless score @s park.uuid matches 0.. run function minecraft:actions/getuuid
 
 title @a[tag=NEWENTER1] reset
 execute as @a[scores={hub=1..}] run tellraw @a ["§a§l[MESSAGE] §7",{"selector":"@s","color":"yellow"},"§b 返回了大厅。"]

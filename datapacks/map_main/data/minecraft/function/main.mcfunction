@@ -44,7 +44,7 @@ execute if entity @a[team=dropper] in dropperworld run function dropper/tick
 execute as @a[tag=NEWENTER] at @s run attribute @s minecraft:attack_speed base set 4
 execute as @a[tag=NEWENTER] run bossbar set surgame:time players @a[team=wait.sur]
 
-execute as @a[tag=NEWENTER] unless score @s park.uuid matches 0.. run function minecraft:npark/getuuid
+execute as @a[tag=NEWENTER] unless score @s park.uuid matches 0.. run function minecraft:actions/getuuid
 tellraw @a[tag=NEWENTER,tag=GLOBAL.SPEC] ["\n§7  你已开启§b全局旁观者模式§7。\n  §7",{"text":"§a§l点击此处，或者使用 §6§l/trigger spec set 3 §a§l退出全局旁观者模式","bold":true,"click_event":{"action":"run_command","command":"/trigger spec set 3"},"hover_event":{"action":"show_text","value":"§c点击此处退出全局旁观者模式"}},"\n"]
 effect clear @a[tag=NEWENTER]
 tag @a[tag=NEWENTER] remove zombie.nehelp
@@ -225,3 +225,6 @@ execute if score miner.state state matches 1.. in airworld run function miner/ti
 execute if score mining.state state matches 1.. in airworld run function mining/tick
 execute if score chair.state state matches 1.. in overworld run function chair/tick
 execute if score random_parkour.state state matches 1.. in parkourworld run function random_parkour/tick
+execute if score park.state state matches 1.. in parkourworld run function minecraft:parkourrace/tick
+execute if score live.state state matches 1.. in overworld run function minecraft:live/tick
+execute if score snow.state state matches 1.. in overworld run function minecraft:snow/tick

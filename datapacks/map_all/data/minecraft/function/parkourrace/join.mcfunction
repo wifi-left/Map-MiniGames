@@ -2,7 +2,7 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
-execute in overworld run tp @s -5 41 67 180 0
+execute in parkourworld run tp @s 12 -41 299 0 0
 team join wait.parkour
-tellraw @a[team=wait.parkour] [{"selector":"@s"},"§d 加入了游戏。"]
-
+tellraw @a [{"selector":"@s"},"§d 加入了坑爹跑酷游戏。"]
+clear @s

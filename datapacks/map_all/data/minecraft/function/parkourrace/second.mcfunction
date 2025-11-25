@@ -1,0 +1,1 @@
+execute if score park.state state matches 1.. run function minecraft:parkourrace/testfor

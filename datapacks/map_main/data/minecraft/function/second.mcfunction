@@ -20,7 +20,7 @@ effect give @a[team=wait.endwolf] resistance 1 25 true
 execute store result bossbar minecraft:live value run scoreboard players get live.time live.all
 execute if score live.state state matches 1..1 run scoreboard players add live.time live.all 1
 
-execute if score park.state state matches 1.. run function minecraft:parkourrace/testfor
+execute if score park.state state matches 1.. in parkourworld run function minecraft:parkourrace/second
 execute if score pw.state state matches 1.. run function minecraft:poolwar/second
 
 execute as @e[tag=block_entity] run data merge entity @s {Time:100}
