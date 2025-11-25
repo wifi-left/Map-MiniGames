@@ -29,3 +29,5 @@ scoreboard players add killer.2second tick 1
 execute if score killer.2second tick matches 2 run function minecraft:killerever/2second
 
 execute if score killer.state state matches 3..4 as @a[team=play.killer,tag=killer.saver,gamemode=adventure] unless items entity @s container.* arrow run give @s arrow[custom_data={killer:1}] 1
+
+execute as @a[team=play.killer,gamemode=!spectator] at @s if block ~ ~-2 ~ loom run effect give @s levitation 1 15 true

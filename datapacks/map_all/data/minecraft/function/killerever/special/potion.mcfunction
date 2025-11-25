@@ -19,3 +19,5 @@ execute if score killer.random temp matches 12 run give @s potion[custom_data={k
 
 execute if score killer.random temp matches 13 run give @s potion[custom_data={killer:1},potion_contents={custom_color:0,custom_effects:[{id:"jump_boost",amplifier:2,duration:600}]},custom_name="神秘药水",tooltip_display={hidden_components:["potion_contents"]}]
 execute if score killer.random temp matches 14 run give @s potion[custom_data={killer:1},potion_contents={custom_effects:[{id:"jump_boost",amplifier:2,duration:600}]},custom_name="跳跃药水",tooltip_display={hidden_components:["potion_contents"]}]
+particle dust{color:2534655,scale:4} ~ ~ ~ 0 0 0 1 10 normal
+playsound item.bottle.fill player @s ~ ~ ~ 1 2 1

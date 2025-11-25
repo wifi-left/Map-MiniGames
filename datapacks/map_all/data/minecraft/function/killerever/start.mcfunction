@@ -26,6 +26,6 @@ tellraw @a[team=play.killer,tag=killer.killer] ["\n\u00a7c你的杀手队伍队�
 scoreboard players set killer.time tick 6
 
 execute as @a[team=play.killer,gamemode=adventure] in overworld run function minecraft:killerever/random_pos_player
-
+kill @e[type=arrow,tag=killer.arrow]
 kill @e[type=armor_stand,tag=killer.bow]
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{killer:1}}}}]

@@ -3,6 +3,7 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 scoreboard players set killer.state state 100
+kill @e[type=arrow,tag=killer.arrow]
 kill @e[type=armor_stand,tag=killer.bow]
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{killer:1}}}}]
 tellraw @a ["§a[I] ",{"text":"密室杀手","color":"red","bold":true}," §a: §b游戏结束！"]
