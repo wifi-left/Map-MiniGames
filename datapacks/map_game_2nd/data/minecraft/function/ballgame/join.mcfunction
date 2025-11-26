@@ -11,6 +11,8 @@ execute in overworld run tp @s 783 -31 -173 0 0
 tag @s remove ball.teama
 tag @s remove ball.teamb
 execute at @s run playsound entity.player.levelup player @s ~ ~ ~ 10 1 1
+xp set @s 0 levels
+xp set @s 0 points
 clear @s
 effect clear @s
 execute if score ballgame.state state matches 1.. run function minecraft:ballgame/spec

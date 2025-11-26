@@ -4,6 +4,7 @@
 ## 
 execute as @s[team=play.killer] at @s run function minecraft:killerever/item_used
 execute as @s[team=deskgame] at @s run function minecraft:desk/skill_handle
+execute as @s[team=ballgame] at @s run function minecraft:ballgame/skill_handle
 execute as @s[team=btw.play.a] at @s run function minecraft:boatwars/usegun
 execute as @s[team=btw.play.b] at @s run function minecraft:boatwars/usegun
 execute as @s[level=..0,team=job_pvp] at @s run function minecraft:skills
