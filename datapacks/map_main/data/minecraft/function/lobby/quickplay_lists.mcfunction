@@ -21,6 +21,7 @@ function minecraft:lobby/quickplay_info {id:23,name:"TNT Wars",color:b}
 function minecraft:lobby/quickplay_info {id:15,name:"密室杀手",color:b}
 function minecraft:lobby/quickplay_info {id:20,name:"狼人杀",color:b}
 function minecraft:lobby/quickplay_info {id:41,name:"随机跑酷",color:b}
+function minecraft:lobby/quickplay_info {id:42,name:"球类游戏",color:b}
 
 function minecraft:lobby/quickplay_info {id:8,name:"战桥",color:d}
 function minecraft:lobby/quickplay_info {id:2,name:"Battle Box",color:d}

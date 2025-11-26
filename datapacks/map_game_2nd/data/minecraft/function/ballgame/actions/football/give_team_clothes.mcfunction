@@ -1,0 +1,2 @@
+item replace entity @s[tag=ball.teama] armor.chest with leather_chestplate[enchantments={binding_curse:1},attribute_modifiers=[{id:"fall",type:"safe_fall_distance",amount:100,operation:"add_value"}],tooltip_display={hide_tooltip:true},dyed_color=255,unbreakable={}]
+item replace entity @s[tag=ball.teamb] armor.chest with leather_chestplate[enchantments={binding_curse:1},attribute_modifiers=[{id:"fall",type:"safe_fall_distance",amount:100,operation:"add_value"}],tooltip_display={hide_tooltip:true},dyed_color=16711680,unbreakable={}]

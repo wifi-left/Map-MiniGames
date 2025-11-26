@@ -228,3 +228,4 @@ execute if score random_parkour.state state matches 1.. in parkourworld run func
 execute if score park.state state matches 1.. in parkourworld run function minecraft:parkourrace/tick
 execute if score live.state state matches 1.. in overworld run function minecraft:live/tick
 execute if score snow.state state matches 1.. in overworld run function minecraft:snow/tick
+execute if score ballgame.state state matches 1.. in overworld run function minecraft:ballgame/tick

@@ -41,3 +41,4 @@ execute if score stronghold.state state matches 1.. in lobby run function strong
 execute if score stronghold.state state matches 0 run effect give @a[team=stronghold] resistance 2 25 true
 
 execute if score random_parkour.state state matches 1.. in parkourworld run function random_parkour/second
+execute if score ballgame.state state matches 1.. in overworld run function minecraft:ballgame/second
