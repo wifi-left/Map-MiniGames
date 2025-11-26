@@ -1,3 +1,7 @@
-xp set @s 5 levels
+execute store result score temp temp run random value 4..6
+execute if score temp temp matches 4 run xp set @s 4 levels
+execute if score temp temp matches 5 run xp set @s 5 levels
+execute if score temp temp matches 6 run xp set @s 6 levels
+
 effect give @s jump_boost 2 2 true
-tellraw @s ["\u00a7b你高跳了。（持续2s，冷却5s）"]
+tellraw @s ["\u00a7b你高跳了。（持续2s）"]
