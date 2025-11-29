@@ -6,3 +6,5 @@ scoreboard players add ball.time board 1
 
 execute as @a[team=ballgame,gamemode=adventure] run item replace entity @s armor.feet with leather_boots[unbreakable={},enchantments={binding_curse:1},dyed_color=65331]
 clear @a[team=ballgame] leather_boots[custom_data~{ball_boots:true}]
+execute as @a[team=ballgame] run function minecraft:ballgame/actions/football/give_rush
+execute as @a[team=ballgame] run function minecraft:ballgame/actions/football/give_jump

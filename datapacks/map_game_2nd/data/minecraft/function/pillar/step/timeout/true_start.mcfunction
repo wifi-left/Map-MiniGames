@@ -29,3 +29,6 @@ execute as @a[team=pillar,gamemode=survival] at @s run function minecraft:pillar
 scoreboard players set pillar.state state 3
 execute as @a[team=pillar] at @s run playsound entity.player.levelup player @s ~ ~ ~ 1 2 1
 return 0
+
+scoreboard players set pillar.remove.time tick 121
+scoreboard players set pillar.remove.now board -1

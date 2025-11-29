@@ -19,6 +19,8 @@ scoreboard players set temp temp 0
 execute if score ball.lastwin board matches -1 store result score temp temp run random value 1..2
 execute unless score ball.lastwin board matches -1 run scoreboard players operation temp temp = ball.lastwin board
 
+clear @a[team=ballgame,gamemode=adventure]
+
 execute if score temp temp matches 2 run rotate @e[tag=ballgame.ball,limit=1,type=armor_stand] -180 0
 execute if score temp temp matches 2 as @e[tag=ballgame.ball,limit=1,type=armor_stand] run function minecraft:ballgame/actions/football/start_ball/a
 execute if score temp temp matches 1 run rotate @e[tag=ballgame.ball,limit=1,type=armor_stand] 0 0

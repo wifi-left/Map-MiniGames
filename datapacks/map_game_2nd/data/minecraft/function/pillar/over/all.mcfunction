@@ -11,3 +11,4 @@ execute as @a[team=pillar,gamemode=survival] run gamemode spectator @s
 execute as @a[team=pillar,gamemode=adventure] run gamemode spectator @s
 schedule clear minecraft:pillar/map/reset_m
 function minecraft:pillar/map/reset_map
+schedule clear minecraft:pillar/resetover

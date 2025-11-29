@@ -1,0 +1,1 @@
+tellraw @a[team=pillar] ["\u00a7c缩圈已结束！"]
