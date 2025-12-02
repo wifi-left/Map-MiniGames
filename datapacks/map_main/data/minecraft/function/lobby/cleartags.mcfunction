@@ -2,6 +2,14 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
+tag @s remove chess.a
+tag @s remove chess.b
+tag @s remove chess.c
+tag @s remove chess.d
+tag @s remove chess.white
+tag @s remove chest.white
+tag @s remove chess.black
+tag @s remove chest.black
 tag @s remove miner.win
 tag @s remove wolf.acting
 tag @s remove random_parkour.win

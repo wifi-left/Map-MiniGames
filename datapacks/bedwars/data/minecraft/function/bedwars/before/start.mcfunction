@@ -6,3 +6,7 @@ scoreboard players set bw.state state -3
 execute if score bw.custom_team board matches 1 run scoreboard players set bw.startcountdown board 1
 execute unless score bw.custom_team board matches 1 run scoreboard players set bw.startcountdown board 10
 execute if score bw.startcountdown board matches 5.. run tellraw @a[tag=bw.player] ["§e游戏即将在§c10§e秒后开始"]
+scoreboard players reset * pickblue
+scoreboard players reset * pickgreen
+scoreboard players reset * pickred
+scoreboard players reset * pickyellow

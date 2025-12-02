@@ -1,0 +1,1 @@
+fill 81 120 62 67 120 48 minecraft:black_stained_glass replace glass
