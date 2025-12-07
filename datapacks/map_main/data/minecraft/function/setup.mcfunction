@@ -92,8 +92,8 @@ scoreboard players set bw.yellow BAMBOO_MOD_SAYING 2
 scoreboard players set bw.red BAMBOO_MOD_SAYING 2
 bossbar set minigames:bedwars players @a[tag=bw.player]
 
-gamerule maxCommandChainLength 114514
 gamerule disableElytraMovementCheck true
+gamerule disablePlayerMovementCheck true
 
 forceload add 0 0 0 0
 
@@ -105,6 +105,8 @@ kill @e[type=firework_rocket]
 kill @e[type=fireball]
 # kill @e[type=item]
 
-gamerule commandModificationBlockLimit 114514
-# setblock 0 -40 0 shulker_box{lock:{components:{unbreakable:{show_in_tooltip:false}}}}
+gamerule commandModificationBlockLimit 1145141
+gamerule maxCommandChainLength 1145141
+gamerule maxCommandForkCount 1145141
+
 scoreboard players reset * bw.board

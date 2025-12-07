@@ -38,6 +38,7 @@ tag @s remove killer.killer
 tag @s remove killer.runner
 tag @s remove killer.saver
 tag @s remove no_health
+tag @s remove parkouring
 tag @s remove stronghold.alive
 tag @s remove bw.attack
 tag @s remove bw.armor
@@ -51,7 +52,8 @@ tag @s remove bw.show.target
 xp set @s 0 levels
 xp set @s 0 points
 
-execute in overworld run spawnpoint @s 209 84 27
+execute in overworld run spawnpoint @s 188 120 26 0 0
+attribute @s minecraft:attack_speed base reset
 
 advancement grant @s only minigames
 advancement grant @s only egg
@@ -69,6 +71,7 @@ attribute @s safe_fall_distance modifier remove parkour_safe_fall
 bossbar set stronghold players @a[team=stronghold]
 bossbar set stronghold.boss players @a[team=stronghold]
 
+attribute @s minecraft:max_health base reset
 attribute @s gravity modifier remove pvp
 attribute @s armor modifier remove pvp
 attribute @s safe_fall_distance modifier remove pvp

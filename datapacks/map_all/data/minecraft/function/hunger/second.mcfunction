@@ -10,6 +10,7 @@ execute as @a[team=hunger,gamemode=adventure] run scoreboard players add hunger.
 # 倒计时
 execute if score hunger.state state matches 1..9 run scoreboard players remove hunger.time board 1
 execute if score hunger.state state matches 1..9 run execute store result bossbar hungergame value run scoreboard players get hunger.time board
+execute if score hunger.state state matches 6 run function hunger/step/waitstart
 execute if score hunger.state state matches 1 run function hunger/step/waitallowpvp
 execute if score hunger.state state matches 2 run function hunger/step/waitrechest
 execute if score hunger.state state matches 3 run function hunger/step/waitfinal
