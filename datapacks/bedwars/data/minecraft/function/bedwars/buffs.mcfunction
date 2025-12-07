@@ -3,6 +3,7 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 effect give @a[tag=bw.speed] speed 2 0 true
+effect give @a[tag=bw.jump] jump_boost 2 1 true
 execute if score bw.haste.green board matches 1 run effect give @a[team=bw.green] haste 2 0 true
 execute if score bw.haste.green board matches 2 run effect give @a[team=bw.green] haste 2 1 true
 

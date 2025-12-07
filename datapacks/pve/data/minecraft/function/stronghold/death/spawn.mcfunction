@@ -1,4 +1,4 @@
-summon armor_stand ~ ~ ~ {Tags:["stronghold.diedpoint","stronghold.diedpoint.new"],CustomName:{selector:"@s"},CustomNameVisible:1b,NoAI:1b,Glowing:true,Invulnerable:true,NoBasePlate:true,NoGravity:true,ShowArms:false,DisabledSlots:4144896}
+summon armor_stand ~ ~ ~ {Tags:["stronghold.diedpoint","stronghold.diedpoint.new"],CustomName:{selector:"@s"},CustomNameVisible:1b,Glowing:true,Invulnerable:true,NoBasePlate:true,NoGravity:true,ShowArms:false,DisabledSlots:4144896}
 summon text_display ~ ~2.6 ~ {Tags:["stronghold.texts","stronghold.diedpoint.texts","stronghold.diedpoint.newtext"],text:[{text:"即将死于",color:gray,bold:false},{color:"green",text:"45"},{text:"秒后",color:gray,bold:false}],alignment:"center",billboard:"vertical"}
 # gamemode spectator @s
 tag @s add stronghold.e

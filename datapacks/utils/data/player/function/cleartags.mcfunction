@@ -42,9 +42,11 @@ tag @s remove stronghold.alive
 tag @s remove bw.attack
 tag @s remove bw.armor
 tag @s remove bw.speed
+tag @s remove bw.jump
 tag @s remove bw.fasti
 tag @s remove bw.fastii
 tag @s remove bw.shears
+tag @s remove bw.show.target
 # tag @s remove
 xp set @s 0 levels
 xp set @s 0 points

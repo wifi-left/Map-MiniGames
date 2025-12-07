@@ -1,5 +1,5 @@
 {
-    "parent": "minecraft:end/root",
+    "parent": "minecraft:bomb/root",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:consume_item",

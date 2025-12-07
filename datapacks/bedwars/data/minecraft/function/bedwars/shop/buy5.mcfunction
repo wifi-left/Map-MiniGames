@@ -24,15 +24,19 @@ execute as @s[tag=bw.buy.success] run clear @s diamond 8
 
 execute as @s[tag=bw.buy.success,team=bw.green] run tellraw @a[team=bw.green] [{"selector":"@s"},"§a购买了§6团队锋利 I (新购买物品生效)"]
 execute as @s[tag=bw.buy.success,team=bw.green] run scoreboard players add bw.sharpness.green board 1
+execute as @s[tag=bw.buy.success,team=bw.green] as @a[team=bw.green] run function minecraft:bedwars/during/player/sharp_sword_item
 
 execute as @s[tag=bw.buy.success,team=bw.yellow] run tellraw @a[team=bw.yellow] [{"selector":"@s"},"§a购买了§6团队锋利 I (新购买物品生效)"]
 execute as @s[tag=bw.buy.success,team=bw.yellow] run scoreboard players add bw.sharpness.yellow board 1
+execute as @s[tag=bw.buy.success,team=bw.yellow] as @a[team=bw.yellow] run function minecraft:bedwars/during/player/sharp_sword_item
 
 execute as @s[tag=bw.buy.success,team=bw.red] run tellraw @a[team=bw.red] [{"selector":"@s"},"§a购买了§6团队锋利 I (新购买物品生效)"]
 execute as @s[tag=bw.buy.success,team=bw.red] run scoreboard players add bw.sharpness.red board 1
+execute as @s[tag=bw.buy.success,team=bw.red] as @a[team=bw.red] run function minecraft:bedwars/during/player/sharp_sword_item
 
 execute as @s[tag=bw.buy.success,team=bw.blue] run tellraw @a[team=bw.blue] [{"selector":"@s"},"§a购买了§6团队锋利 I (新购买物品生效)"]
 execute as @s[tag=bw.buy.success,team=bw.blue] run scoreboard players add bw.sharpness.blue board 1
+execute as @s[tag=bw.buy.success,team=bw.blue] as @a[team=bw.blue] run function minecraft:bedwars/during/player/sharp_sword_item
 
 tellraw @s[tag=!bw.buy.success] ["§c你的资源不够买这个东西！"]
 playsound minecraft:entity.enderman.teleport player @s[tag=!bw.buy.success] ~ ~ ~ 1 0 1

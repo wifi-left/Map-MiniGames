@@ -20,6 +20,11 @@ execute if score play.hotpot.player tick matches 28.. run team join play.hotpot.
 execute if score play.hotpot.player tick matches 32.. run team join play.hotpot.k @r[team=play.hotpot,gamemode=adventure]
 execute if score play.hotpot.player tick matches 36.. run team join play.hotpot.k @r[team=play.hotpot,gamemode=adventure]
 execute if score play.hotpot.player tick matches 40.. run team join play.hotpot.k @r[team=play.hotpot,gamemode=adventure]
+execute if score play.hotpot.player tick matches 44.. run team join play.hotpot.k @r[team=play.hotpot,gamemode=adventure]
+execute if score play.hotpot.player tick matches 48.. run team join play.hotpot.k @r[team=play.hotpot,gamemode=adventure]
+execute if score play.hotpot.player tick matches 52.. run team join play.hotpot.k @r[team=play.hotpot,gamemode=adventure]
+execute if score play.hotpot.player tick matches 56.. run team join play.hotpot.k @r[team=play.hotpot,gamemode=adventure]
+execute if score play.hotpot.player tick matches 60.. run team join play.hotpot.k @r[team=play.hotpot,gamemode=adventure]
 execute as @a[team=play.hotpot] at @s run playsound entity.ender_dragon.growl player @s
 execute as @a[team=play.hotpot.k] at @s run playsound entity.ender_dragon.growl player @s
 

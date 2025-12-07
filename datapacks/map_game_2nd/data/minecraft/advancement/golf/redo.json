@@ -1,5 +1,5 @@
 {
-    "parent": "minecraft:end/root",
+    "parent": "minecraft:golf/root",
     "criteria": {
         "requirement": {
             "trigger": "minecraft:consume_item",

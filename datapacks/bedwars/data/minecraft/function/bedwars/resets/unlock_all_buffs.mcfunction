@@ -3,6 +3,7 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 tag @a[tag=bw.player] add bw.speed
+tag @a[tag=bw.player] add bw.jump
 scoreboard players set bw.armor.green board 1
 scoreboard players set bw.armor.red board 1
 scoreboard players set bw.armor.blue board 1

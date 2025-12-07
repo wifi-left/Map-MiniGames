@@ -119,6 +119,7 @@ scoreboard players add @a bw.pickaxe 0
 
 tag @a remove bw.shears
 tag @a remove bw.speed
+tag @a remove bw.jump
 tag @a remove bw.attack
 tag @a remove bw.armor
 tag @a remove bw.fasti
@@ -158,3 +159,15 @@ kill @e[type=egg]
 kill @e[type=creeper]
 kill @e[type=item]
 
+scoreboard players set bw.red.trap.1 board -1
+scoreboard players set bw.red.trap.2 board -1
+scoreboard players set bw.red.trap.3 board -1
+scoreboard players set bw.blue.trap.1 board -1
+scoreboard players set bw.blue.trap.2 board -1
+scoreboard players set bw.blue.trap.3 board -1
+scoreboard players set bw.green.trap.1 board -1
+scoreboard players set bw.green.trap.2 board -1
+scoreboard players set bw.green.trap.3 board -1
+scoreboard players set bw.yellow.trap.1 board -1
+scoreboard players set bw.yellow.trap.2 board -1
+scoreboard players set bw.yellow.trap.3 board -1

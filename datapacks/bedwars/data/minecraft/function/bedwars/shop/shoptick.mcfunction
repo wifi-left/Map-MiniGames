@@ -7,165 +7,175 @@ execute if score bw.mode state matches 3 run scoreboard players set bw.shopmode 
 execute if score bw.mode state matches 7 run scoreboard players set bw.shopmode board 1
 ## Diamond Shop
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s stone_sword[custom_data~{shop:5}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.5
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s iron_chestplate[custom_data~{shop:6}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.6
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s iron_pickaxe[custom_data~{shop:7}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.7
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s diamond_pickaxe[custom_data~{shop:8}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.8
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s potion[custom_data~{shop:114514}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.114514
 
+execute as @s store success score @s bw.board run clear @s potion[custom_data~{shop:114513}]
+execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.114513
+
+
+
+
+
 ## Item Shop
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s golden_apple[custom_data~{shop:9}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.9
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s white_wool[custom_data~{shop:-2}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-2
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s end_stone[custom_data~{shop:-3}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-3
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s shears[custom_data~{shop:-4}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-4
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s ladder[custom_data~{shop:-5}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-5
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s oak_planks[custom_data~{shop:-6}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-6
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s obsidian[custom_data~{shop:-7}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-7
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s chainmail_boots[custom_data~{shop:-10}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-10
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s iron_boots[custom_data~{shop:-11}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-11
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s diamond_boots[custom_data~{shop:-12}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-12
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s wooden_pickaxe[custom_data~{shop:-15}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-15
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s wooden_axe[custom_data~{shop:-16}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-16
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s iron_pickaxe[custom_data~{shop:-17}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-17
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s iron_axe[custom_data~{shop:-18}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-18
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s diamond_pickaxe[custom_data~{shop:-19}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-19
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s diamond_axe[custom_data~{shop:-20}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-20
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s water_bucket[custom_data~{shop:-21}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-21
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s stick[custom_data~{shop:-22}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-22
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s egg[custom_data~{shop:-23}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-23
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s arrow[custom_data~{shop:-24}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-24
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s stone_sword[custom_data~{shop:-25}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-25
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s iron_sword[custom_data~{shop:-26}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-26
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s diamond_sword[custom_data~{shop:-27}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-27
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s bow[custom_data~{shop:-30}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-30
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s bow[custom_data~{shop:-31}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-31
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s potion[custom_data~{shop:-32}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-32
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s potion[custom_data~{shop:-33}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-33
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s ender_pearl[custom_data~{shop:-34}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-34
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s tnt[custom_data~{shop:-35}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-35
 
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s wind_charge[custom_data~{shop:-36}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-36
 
 #MACE 重锤
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s mace[custom_data~{shop:-37}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-37
 
 # 海绵
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s sponge[custom_data~{shop:-38}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-38
 
 # 盾
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s shield[custom_data~{shop:-39}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-39
 # 虚空回城卷轴
-scoreboard players reset @s bw.board
+
 execute as @s store success score @s bw.board run clear @s paper[custom_data~{shop:void}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.void
 
-
 ## Diamond Shop
+
+execute as @s[tag=bw.buy.114513] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute as @s[tag=bw.buy.114513] at @s run function minecraft:bedwars/shop/buy114513
+tag @s remove bw.buy.114513
 
 execute as @s[tag=bw.buy.114514] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
 execute as @s[tag=bw.buy.114514] at @s run function minecraft:bedwars/shop/buy114514
@@ -367,7 +377,23 @@ execute if score bw.shopmode board matches 0 as @s[tag=bw.buy.9] at @s run funct
 execute if score bw.shopmode board matches 1 as @s[tag=bw.buy.9] at @s run function minecraft:bedwars/shop_xp/buy9
 tag @s remove bw.buy.9
 
+execute as @s store success score @s bw.board run clear @s *[custom_data~{shop:trap_1}]
+execute as @s if score @s bw.board matches 1.. run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute as @s if score @s bw.board matches 1.. run function minecraft:bedwars/shop/buy_trap_1
+
+execute as @s store success score @s bw.board run clear @s *[custom_data~{shop:trap_2}]
+execute as @s if score @s bw.board matches 1.. run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute as @s if score @s bw.board matches 1.. run function minecraft:bedwars/shop/buy_trap_2
+
+execute as @s store success score @s bw.board run clear @s *[custom_data~{shop:trap_3}]
+execute as @s if score @s bw.board matches 1.. run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute as @s if score @s bw.board matches 1.. run function minecraft:bedwars/shop/buy_trap_3
+
 
 execute if score bw.shopmode board matches 1 run function minecraft:bedwars/special/xp_purchase
 
+clear @s *[custom_data~{bwshopitem:1}]
+
 function bedwars/shop/resetshop
+
+scoreboard players reset @s bw.board

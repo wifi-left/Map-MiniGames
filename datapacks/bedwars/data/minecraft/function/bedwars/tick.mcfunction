@@ -24,6 +24,7 @@ kill @e[type=item,nbt={Item:{id:"minecraft:blue_bed"}}]
 kill @e[type=item,nbt={Item:{id:"minecraft:yellow_bed"}}]
 kill @e[type=item,nbt={Item:{id:"minecraft:lime_bed"}}]
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{bw:1}}}}]
+kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{shop:1}}}}]
 
 
 execute as @e[tag=bedwars,type=area_effect_cloud] at @s run data merge entity @s {Duration:-1,Age:-2147483648,WaitTime:-2147483648}

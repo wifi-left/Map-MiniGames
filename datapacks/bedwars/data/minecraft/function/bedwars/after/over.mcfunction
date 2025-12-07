@@ -1,20 +1,15 @@
-##
-## Datapack Upgrader v1.0.2 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
-# say @a[tag=bw.play]
-scoreboard players set bw.red.trap.1 bw.board -1
-scoreboard players set bw.red.trap.2 bw.board -1
-scoreboard players set bw.red.trap.3 bw.board -1
-scoreboard players set bw.blue.trap.1 bw.board -1
-scoreboard players set bw.blue.trap.2 bw.board -1
-scoreboard players set bw.blue.trap.3 bw.board -1
-scoreboard players set bw.green.trap.1 bw.board -1
-scoreboard players set bw.green.trap.2 bw.board -1
-scoreboard players set bw.green.trap.3 bw.board -1
-scoreboard players set bw.yellow.trap.1 bw.board -1
-scoreboard players set bw.yellow.trap.2 bw.board -1
-scoreboard players set bw.yellow.trap.3 bw.board -1
+scoreboard players set bw.red.trap.1 board -1
+scoreboard players set bw.red.trap.2 board -1
+scoreboard players set bw.red.trap.3 board -1
+scoreboard players set bw.blue.trap.1 board -1
+scoreboard players set bw.blue.trap.2 board -1
+scoreboard players set bw.blue.trap.3 board -1
+scoreboard players set bw.green.trap.1 board -1
+scoreboard players set bw.green.trap.2 board -1
+scoreboard players set bw.green.trap.3 board -1
+scoreboard players set bw.yellow.trap.1 board -1
+scoreboard players set bw.yellow.trap.2 board -1
+scoreboard players set bw.yellow.trap.3 board -1
 scoreboard players reset * bw.tmp.ir
 scoreboard players reset * bw.tmp.gd
 scoreboard players reset * bw.tmp.dm
@@ -29,6 +24,7 @@ scoreboard players reset * pickyellow
 tag @a remove bw.attack
 tag @a remove bw.armor
 tag @a remove bw.speed
+tag @a remove bw.jump
 tag @a remove bw.fasti
 tag @a remove bw.fastii
 tag @a remove bw.shears

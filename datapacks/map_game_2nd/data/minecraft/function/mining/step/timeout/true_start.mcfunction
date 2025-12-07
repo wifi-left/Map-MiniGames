@@ -1,4 +1,4 @@
-scoreboard players set mining.time tick 91
+scoreboard players set mining.time tick 61
 
 scoreboard players set mining.player tick 0
 execute as @a[team=mining,gamemode=survival] run scoreboard players add mining.player tick 1

@@ -20,6 +20,7 @@ tag @a remove bw.attack
 tellraw @a ["\n§f§l 起床战争 ＞ §c发生了一些问题，正在尝试修复。\n"]
 tag @a remove bw.armor
 tag @a remove bw.speed
+tag @a remove bw.jump
 tag @a remove bw.fasti
 tag @a remove bw.fastii
 tag @a remove bw.shears
