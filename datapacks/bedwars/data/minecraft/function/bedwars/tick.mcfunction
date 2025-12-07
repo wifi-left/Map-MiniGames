@@ -1,10 +1,3 @@
-##
-## Datapack Upgrader v1.0.2 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
-# /say @e[nbt={Inventory:[{id:"minecraft:white_wool"}]}]
-#data modify block -183 11 126 Items set from storage minecraft:shop Item
-#tag @a[nbt={Inventory:[{id:"minecraft:gray_stained_glass_pane",tag:{shop:1}}]}] add bw.buy.1
 execute as @a[tag=bw.play,scores={die=1..}] at @s run function minecraft:bedwars/during/player/loot
 execute if score bw.state state matches 1.. run function minecraft:bedwars/testfor
 ## Shop
@@ -43,9 +36,9 @@ scoreboard players reset @a bw.board
 
 execute as @a[x=-225,y=9,z=111,distance=0..2,gamemode=!creative] at @s run function minecraft:bedwars/during/player/died
 
-execute as @e[type=egg] at @s run function minecraft:bedwars/item/eggtick
+execute as @e[type=egg,nbt={Item:{id:"minecraft:egg"}}] at @s run function minecraft:bedwars/item/eggtick
 kill @e[type=chicken]
-execute as @e[type=egg] run scoreboard players add @s board 1
+execute as @e[type=egg,nbt={Item:{id:"minecraft:egg"}}] run scoreboard players add @s board 1
 
 ## Kill Shop Items
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{bwshopitem:1}}}}]
@@ -66,3 +59,5 @@ execute as @a[tag=bw.player] if items entity @s container.* bucket[!custom_data~
 execute as @a[tag=bw.player] if items entity @s weapon.offhand bucket[!custom_data~{good_bucket:true}] run function minecraft:bedwars/item/bucket
 execute as @a[tag=bw.player] if items entity @s container.* water_bucket[!custom_data~{good_bucket:true}] run function minecraft:bedwars/item/water_bucket
 execute as @a[tag=bw.player] if items entity @s weapon.offhand water_bucket[!custom_data~{good_bucket:true}] run function minecraft:bedwars/item/water_bucket
+
+function minecraft:bedwars/armor

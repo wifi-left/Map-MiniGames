@@ -1,2 +1,0 @@
-function minecraft:small_games/chess/blokus/flag_available/init
-execute as @e[tag=chess.point,type=marker] at @s positioned ~ ~-1 ~ if block ~ ~ ~ blue_stained_glass run function minecraft:small_games/chess/blokus/flag_available/flag {block:"blue_stained_glass"}

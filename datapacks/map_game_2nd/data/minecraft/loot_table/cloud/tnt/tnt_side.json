@@ -42,7 +42,6 @@
                         {
                             "function": "minecraft:enchant_with_levels",
                             "levels": 15,
-                            "treasure": true,
                             "conditions": [
                                 {
                                     "condition": "minecraft:random_chance",
@@ -106,7 +105,8 @@
                                 "minecraft:custom_name": "§c§lFireball§7 - 右键使用",
                                 "minecraft:custom_data": {
                                     "tnt": 4
-                                }
+                                },
+                                "item_model":"fire_charge"
                             }
                         }
                     ]
@@ -122,7 +122,8 @@
                                 "minecraft:custom_name": "§2§lCreeper§7 - 右键使用",
                                 "minecraft:custom_data": {
                                     "tnt": 3
-                                }
+                                },
+                                "item_model":"creeper_head"
                             }
                         }
                     ]
@@ -138,7 +139,8 @@
                                 "minecraft:custom_name": "§4§lTNT§7 - 右键使用",
                                 "minecraft:custom_data": {
                                     "tnt": 2
-                                }
+                                },
+                                "item_model":"tnt"
                             }
                         }
                     ]
@@ -154,7 +156,8 @@
                                 "minecraft:custom_name": "§4§lLong-Way TNT§7 - 右键使用",
                                 "minecraft:custom_data": {
                                     "tnt": 8
-                                }
+                                },
+                                "item_model":"tnt"
                             }
                         }
                     ]
@@ -170,7 +173,8 @@
                                 "minecraft:custom_name": "§c§lTNT - Minecart§7 - 右键使用",
                                 "minecraft:custom_data": {
                                     "tnt": 1
-                                }
+                                },
+                                "item_model":"tnt_minecart"
                             }
                         }
                     ]

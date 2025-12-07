@@ -17,26 +17,26 @@ summon marker -296 28 276 {Tags:["bw.bed.beds","bw.bed.blue"]}
 summon marker -295 28 276 {Tags:["bw.bed.beds","bw.bed.blue"]}
 
 # SHOP
-summon text_display -310 20.5 129 {Tags:["shop","bedwars"],text:"\u00a7a\u00a7lItem Shop \u00a761",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
-summon text_display -310 20.5 127 {Tags:["shop2","bedwars"],text:"\u00a7a\u00a7lItem Shop \u00a762",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
-summon text_display -224 20.5 203 {Tags:["shop","bedwars"],text:"\u00a7a\u00a7lItem Shop \u00a761",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
-summon text_display -222 20.5 203 {Tags:["shop2","bedwars"],text:"\u00a7a\u00a7lItem Shop \u00a762",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
-summon text_display -298 20.5 291 {Tags:["shop","bedwars"],text:"\u00a7a\u00a7lItem Shop \u00a761",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
-summon text_display -298 20.5 293 {Tags:["shop2","bedwars"],text:"\u00a7a\u00a7lItem Shop \u00a762",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
-summon text_display -384 20.5 215 {Tags:["shop","bedwars"],text:"\u00a7a\u00a7lItem Shop \u00a761",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
-summon text_display -386 20.5 215 {Tags:["shop2","bedwars"],text:"\u00a7a\u00a7lItem Shop \u00a762",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -310 20.5 129 {Tags:["shop","bedwars"],text:"\u00a7a\u00a7l物品商店 \u00a761",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -310 20.5 127 {Tags:["shop2","bedwars"],text:"\u00a7a\u00a7l物品商店 \u00a762",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -224 20.5 203 {Tags:["shop","bedwars"],text:"\u00a7a\u00a7l物品商店 \u00a761",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -222 20.5 203 {Tags:["shop2","bedwars"],text:"\u00a7a\u00a7l物品商店 \u00a762",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -298 20.5 291 {Tags:["shop","bedwars"],text:"\u00a7a\u00a7l物品商店 \u00a761",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -298 20.5 293 {Tags:["shop2","bedwars"],text:"\u00a7a\u00a7l物品商店 \u00a762",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -384 20.5 215 {Tags:["shop","bedwars"],text:"\u00a7a\u00a7l物品商店 \u00a761",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -386 20.5 215 {Tags:["shop2","bedwars"],text:"\u00a7a\u00a7l物品商店 \u00a762",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
 # EFFECT
-summon text_display -300 20.5 127 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7lEffect Shop",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
-summon text_display -300 20.5 129 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7lEffect Shop",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -300 20.5 127 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7l钻石商店",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -300 20.5 129 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7l钻石商店",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
 
-summon text_display -222 20.5 213 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7lEffect Shop",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
-summon text_display -224 20.5 213 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7lEffect Shop",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -222 20.5 213 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7l钻石商店",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -224 20.5 213 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7l钻石商店",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
 
-summon text_display -308 20.5 293 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7lEffect Shop",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
-summon text_display -308 20.5 291 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7lEffect Shop",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -308 20.5 293 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7l钻石商店",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -308 20.5 291 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7l钻石商店",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
 
-summon text_display -386 20.5 205 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7lEffect Shop",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
-summon text_display -384 20.5 205 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7lEffect Shop",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -386 20.5 205 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7l钻石商店",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -384 20.5 205 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7l钻石商店",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
 
 # iron gold
 
@@ -63,6 +63,6 @@ summon marker -329 32.5 185 {Tags:["diamond","bedwars"],CustomName:"\u00a7b\u00a
 summon marker -305 33.5 210 {Tags:["emerald","bedwars"],CustomName:"\u00a7a\u00a7lEmerald Spawner",CustomNameVisible:0b}
 summon marker -305 17.5 210 {Tags:["emerald","bedwars"],CustomName:"\u00a7a\u00a7lEmerald Spawner",CustomNameVisible:0b}
 
-scoreboard players display name date bw.info ["\u00a7701/19/24§8 \u00a78m004A"]
+scoreboard players display name date bw.info ["\u00a7701/19/24§8 \u00a78m004D"]
 
 

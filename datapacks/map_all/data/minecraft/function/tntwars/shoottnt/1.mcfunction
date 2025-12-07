@@ -3,10 +3,10 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 # execute at @s positioned 0.0 0.0 0.0 rotated as @s anchored eyes run summon marker ^ ^ ^3 {Tags:["tmp"]}
-execute as @s at @s in overworld positioned 0.0 0.0 0.0 run summon marker ^ ^ ^1 {Tags:["t.tmp"]}
-execute anchored eyes run summon tnt_minecart ^ ^ ^1 {Tags:["t.new","tntwars.tnt"]}
-execute anchored eyes run summon tnt_minecart ^ ^ ^3 {Tags:["t.new","tntwars.tnt"]}
-execute anchored eyes run summon tnt_minecart ^ ^ ^5 {Tags:["t.new","tntwars.tnt"]}
+execute as @s at @s in overworld positioned 0.0 0.0 0.0 run summon marker ^ ^ ^2 {Tags:["t.tmp"]}
+execute anchored eyes run summon tnt_minecart ^ ^ ^2 {Tags:["t.new","tntwars.tnt"]}
+execute anchored eyes run summon tnt_minecart ^ ^ ^4 {Tags:["t.new","tntwars.tnt"]}
+execute anchored eyes run summon tnt_minecart ^ ^ ^6 {Tags:["t.new","tntwars.tnt"]}
 tag @s add t.t.tmp
 
 execute as @e[tag=t.new] run data modify entity @s Owner set from entity @a[limit=1,tag=t.t.tmp] UUID

@@ -7,4 +7,3 @@ execute if score chest.type board matches 2 run function small_games/chess/boom/
 execute if score chest.type board matches 3 run function minecraft:small_games/chess/fail_start
 # execute if score chest.type board matches 3 run function small_games/chess/go/start
 execute if score chest.type board matches 4 run function small_games/chess/gojp/start
-execute if score chest.type board matches 5 run function small_games/chess/blokus/start

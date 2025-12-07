@@ -35,24 +35,24 @@ summon marker -305 29.5 131 {Tags:["gold"]}
 # -305 31 122
 # # effect
 
-summon text_display -230 31.5 206 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7lEffect Shop",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
-summon text_display -229 31.5 206 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7lEffect Shop",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
-summon text_display -301 31.5 284 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7lEffect Shop",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
-summon text_display -301 31.5 285 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7lEffect Shop",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
-summon text_display -378 31.5 212 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7lEffect Shop",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
-summon text_display -379 31.5 212 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7lEffect Shop",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
-summon text_display -307 31.5 135 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7lEffect Shop",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
-summon text_display -307 31.5 134 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7lEffect Shop",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -230 31.5 206 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7l钻石商店",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -229 31.5 206 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7l钻石商店",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -301 31.5 284 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7l钻石商店",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -301 31.5 285 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7l钻石商店",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -378 31.5 212 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7l钻石商店",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -379 31.5 212 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7l钻石商店",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -307 31.5 135 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7l钻石商店",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -307 31.5 134 {Tags:["bedwars","dmshop"],text:"\u00a7b\u00a7l钻石商店",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
 # # shop
-summon text_display -229 31.5 210 {Tags:["shop","bedwars"],text:"\u00a7a\u00a7lItem Shop \u00a761",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
-summon text_display -305 31.5 285 {Tags:["shop","bedwars"],text:"\u00a7a\u00a7lItem Shop \u00a761",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
-summon text_display -379 31.5 208 {Tags:["shop","bedwars"],text:"\u00a7a\u00a7lItem Shop \u00a761",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
-summon text_display -303 31.5 134 {Tags:["shop","bedwars"],text:"\u00a7a\u00a7lItem Shop \u00a761",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -229 31.5 210 {Tags:["shop","bedwars"],text:"\u00a7a\u00a7l物品商店 \u00a761",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -305 31.5 285 {Tags:["shop","bedwars"],text:"\u00a7a\u00a7l物品商店 \u00a761",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -379 31.5 208 {Tags:["shop","bedwars"],text:"\u00a7a\u00a7l物品商店 \u00a761",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -303 31.5 134 {Tags:["shop","bedwars"],text:"\u00a7a\u00a7l物品商店 \u00a761",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
 
-summon text_display -230 31.5 210 {Tags:["shop2","bedwars"],text:"\u00a7a\u00a7lItem Shop \u00a762",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
-summon text_display -305 31.5 284 {Tags:["shop2","bedwars"],text:"\u00a7a\u00a7lItem Shop \u00a762",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
-summon text_display -378 31.5 208 {Tags:["shop2","bedwars"],text:"\u00a7a\u00a7lItem Shop \u00a762",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
-summon text_display -303 31.5 135 {Tags:["shop2","bedwars"],text:"\u00a7a\u00a7lItem Shop \u00a762",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -230 31.5 210 {Tags:["shop2","bedwars"],text:"\u00a7a\u00a7l物品商店 \u00a762",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -305 31.5 284 {Tags:["shop2","bedwars"],text:"\u00a7a\u00a7l物品商店 \u00a762",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -378 31.5 208 {Tags:["shop2","bedwars"],text:"\u00a7a\u00a7l物品商店 \u00a762",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
+summon text_display -303 31.5 135 {Tags:["shop2","bedwars"],text:"\u00a7a\u00a7l物品商店 \u00a762",CustomNameVisible:0b,billboard:"vertical",see_through:true,view_range:0.15f}
 
 summon marker -305 27 175 {Tags:["diamond","bedwars"],CustomName:"\u00a7b\u00a7lDiamond Spawner",CustomNameVisible:0b}
 summon marker -341 27 210 {Tags:["diamond","bedwars"],CustomName:"\u00a7b\u00a7lDiamond Spawner",CustomNameVisible:0b}

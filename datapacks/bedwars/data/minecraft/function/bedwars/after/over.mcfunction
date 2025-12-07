@@ -3,6 +3,18 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 # say @a[tag=bw.play]
+scoreboard players set bw.red.trap.1 bw.board -1
+scoreboard players set bw.red.trap.2 bw.board -1
+scoreboard players set bw.red.trap.3 bw.board -1
+scoreboard players set bw.blue.trap.1 bw.board -1
+scoreboard players set bw.blue.trap.2 bw.board -1
+scoreboard players set bw.blue.trap.3 bw.board -1
+scoreboard players set bw.green.trap.1 bw.board -1
+scoreboard players set bw.green.trap.2 bw.board -1
+scoreboard players set bw.green.trap.3 bw.board -1
+scoreboard players set bw.yellow.trap.1 bw.board -1
+scoreboard players set bw.yellow.trap.2 bw.board -1
+scoreboard players set bw.yellow.trap.3 bw.board -1
 scoreboard players reset * bw.tmp.ir
 scoreboard players reset * bw.tmp.gd
 scoreboard players reset * bw.tmp.dm
@@ -10,6 +22,10 @@ scoreboard players reset * bw.tmp.em
 scoreboard players reset * bw.axe
 scoreboard players reset * bw.pickaxe
 scoreboard players reset * bw.armor
+scoreboard players reset * pickblue
+scoreboard players reset * pickgreen
+scoreboard players reset * pickred
+scoreboard players reset * pickyellow
 tag @a remove bw.attack
 tag @a remove bw.armor
 tag @a remove bw.speed

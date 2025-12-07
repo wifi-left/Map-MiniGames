@@ -74,6 +74,13 @@
                             "function": "minecraft:set_count",
                             "count": 8,
                             "add": false
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "item_name":"火球(右键发射)",
+                                "item_model": "fire_charge"
+                            }
                         }
                     ]
                 },

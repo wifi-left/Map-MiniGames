@@ -6,6 +6,7 @@
 tp @s -302 68 210
 gamemode spectator @s
 clear @s
+tag @s remove bw.triggeredtrap
 
 execute if score @s bw.pickaxe matches 2.. run scoreboard players remove @s bw.pickaxe 1
 execute if score @s bw.axe matches 2.. run scoreboard players remove @s bw.axe 1

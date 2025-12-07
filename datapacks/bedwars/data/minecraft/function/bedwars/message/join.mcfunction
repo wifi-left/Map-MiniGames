@@ -16,3 +16,5 @@ scoreboard players reset @s bw.team
 
 clear @s
 effect clear @s
+
+execute as @s run function player:empty_enderchest
