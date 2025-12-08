@@ -15,12 +15,12 @@ function minecraft:lobby/quickplay_info {id:19,name:"棋类游戏",color:b}
 function minecraft:lobby/quickplay_info {id:36,name:"贪吃蛇",color:b}
 function minecraft:lobby/quickplay_info {id:37,name:"吃豆人",color:b}
 function minecraft:lobby/quickplay_info {id:38,name:"一掘到底",color:b}
+function minecraft:lobby/quickplay_info {id:43,name:"钓鱼达人",color:b}
 function minecraft:lobby/quickplay_info {id:39,name:"挖矿达人",color:b}
 function minecraft:lobby/quickplay_info {id:22,name:"雪崩类游戏",color:b}
 function minecraft:lobby/quickplay_info {id:23,name:"TNT Wars",color:b}
 function minecraft:lobby/quickplay_info {id:15,name:"密室杀手",color:b}
 function minecraft:lobby/quickplay_info {id:20,name:"狼人杀",color:b}
-function minecraft:lobby/quickplay_info {id:41,name:"随机跑酷",color:b}
 function minecraft:lobby/quickplay_info {id:42,name:"球类游戏",color:b}
 
 function minecraft:lobby/quickplay_info {id:8,name:"战桥",color:d}
@@ -43,6 +43,7 @@ function minecraft:lobby/quickplay_info {id:7,name:"星跳水立方",color:3}
 function minecraft:lobby/quickplay_info {id:24,name:"Zombie Days (PVE)",color:2}
 function minecraft:lobby/quickplay_info {id:29,name:"蚀界行者 (PVE)",color:2}
 
+function minecraft:lobby/quickplay_info {id:41,name:"随机跑酷",color:6}
 function minecraft:lobby/quickplay_info {id:34,name:"坑爹跑酷比赛",color:6}
 function minecraft:lobby/quickplay_info {id:17,name:"关卡跑酷",color:6}
 

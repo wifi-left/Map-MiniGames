@@ -229,3 +229,4 @@ execute if score park.state state matches 1.. in parkourworld run function minec
 execute if score live.state state matches 1.. in overworld run function minecraft:live/tick
 execute if score snow.state state matches 1.. in overworld run function minecraft:snow/tick
 execute if score ballgame.state state matches 1.. in overworld run function minecraft:ballgame/tick
+execute if score fishing.state state matches 1.. in overworld run function minecraft:fishing/tick
