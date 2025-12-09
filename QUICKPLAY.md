@@ -10,7 +10,7 @@
 ```
 例如：
 
-小游戏合集：`/function small_games/total/join`
+小游戏派对：`/function small_games/total/join`
 
 #### 游戏ID
 删除线为正在制作或者已被删除。
@@ -34,7 +34,7 @@
 |关卡跑酷|lpark|
 |冬泳怪鸽|poolwar|
 |五子棋|small_games/chess|
-|小游戏合集|small_games/total|
+|小游戏派对|small_games/total|
 |桌游类|desk|
 |Snow|snow|
 |TNT Wars|tntwars|
@@ -76,7 +76,7 @@
 
 例如：
 
-小游戏合集
+小游戏派对
 
 ```
 /execute as @a run function small_games/total/join

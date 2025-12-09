@@ -13,16 +13,18 @@ execute as @a[scores={parkour=4},team=parkour] at @s run function minecraft:lpar
 
 scoreboard players reset @a[scores={parkour=1..},team=parkour] parkour
 # execute as @a[team=parkour,gamemode=!creative] at @s as @s[y=-1,dy=-30] run function minecraft:lpark/backpoint
-execute as @a[team=parkour] at @s if block ~ ~ ~ heavy_weighted_pressure_plate run function minecraft:lpark/setpoint
-execute as @a[team=parkour] at @s if block ~ ~ ~ polished_blackstone_pressure_plate run function minecraft:lpark/end
-execute as @a[team=parkour] at @s if block ~ ~ ~ light_weighted_pressure_plate run function minecraft:lpark/resettime
+execute as @a[team=parkour,gamemode=!spectator] at @s if block ~ ~ ~ heavy_weighted_pressure_plate run function minecraft:lpark/setpoint
+execute as @a[team=parkour,gamemode=!spectator] at @s if block ~ ~ ~ polished_blackstone_pressure_plate run function minecraft:lpark/end
+execute as @a[team=parkour,gamemode=!spectator] at @s if block ~ ~ ~ light_weighted_pressure_plate run function minecraft:lpark/resettime
 
-
+execute as @a[team=parkour,gamemode=!spectator] at @s unless items entity @s container.* trident if block ~ ~ ~ dark_prismarine_slab[waterlogged=true] run function minecraft:lpark/give_trident_ii
+execute as @a[team=parkour,gamemode=!spectator] at @s unless items entity @s container.* trident if block ~ ~ ~ prismarine_slab[waterlogged=true] run function minecraft:lpark/give_trident_i
+execute as @a[team=parkour,gamemode=!spectator] at @s if items entity @s container.* trident unless block ~ ~ ~ dark_prismarine_slab[waterlogged=true] unless block ~ ~ ~ prismarine_slab[waterlogged=true] run clear @s trident
 
 scoreboard players add @a[team=parkour] parkour.tick 5
 # 100 'tick' -> 's'
 
-execute as @a[team=parkour] at @s as @s[y=-64,dy=-128] run function lpark/backpoint
+execute as @a[team=parkour,gamemode=!creative] at @s as @s[y=-64,dy=-128] run function lpark/backpoint
 execute as @a[team=parkour,gamemode=adventure] at @s if block ~ ~ ~ lava run function lpark/backpoint
 # execute as @a[team=parkour,gamemode=adventure] at @s if block ~ ~-0.2 ~ lava run function lpark/backpoint
 execute as @a[team=parkour,gamemode=survival] at @s run gamemode adventure @s

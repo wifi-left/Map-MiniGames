@@ -11,4 +11,4 @@ function minecraft:chair/calc_chair_count
 
 
 function minecraft:chair/car_summon
-scoreboard players set chair.time board 15
+scoreboard players set chair.time board 9

@@ -2,7 +2,7 @@ tellraw @s ["\n§6 ※ 快速加入游戏 ※ §b游戏ID列表：\n"]
 
 data modify storage minecraft:temp dialog_tmp.actions set value []
 
-function minecraft:lobby/quickplay_info {id:21,name:"小游戏合集",color:"f§l"}
+function minecraft:lobby/quickplay_info {id:21,name:"小游戏派对",color:"f§l"}
 
 function minecraft:lobby/quickplay_info {id:33,name:"击退游戏",color:b}
 function minecraft:lobby/quickplay_info {id:40,name:"抢板凳",color:b}

@@ -48,7 +48,8 @@ tag @s remove bw.fasti
 tag @s remove bw.fastii
 tag @s remove bw.shears
 tag @s remove bw.show.target
-# tag @s remove
+tag @s remove merchant.alive
+#
 xp set @s 0 levels
 xp set @s 0 points
 
@@ -80,13 +81,16 @@ attribute @s max_health modifier remove pvp
 attribute @s movement_efficiency modifier remove pvp
 attribute @s movement_speed modifier remove pvp
 attribute @s max_health modifier remove desk
-
+tag @s remove merchant.player
 tag @s remove desk.russia.lock
 tag @s remove desk.russia.hitted
 tag @s remove desk.russia.nowround
 scoreboard players reset @s order
 tag @s remove pacman.nokiller
 tag @s remove pacman.tobecalc
+tag @s remove merchant.win
+
 tag @s remove pacman.win
 tag @s remove job_pvp.died
 tag @s remove bw.triggeredtrap
+tag @s remove merchant.turn.now

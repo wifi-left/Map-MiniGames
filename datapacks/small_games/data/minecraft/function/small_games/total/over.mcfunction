@@ -2,8 +2,12 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
+
 schedule clear minecraft:small_games/total/next_game
 schedule clear minecraft:small_games/total/get_random_game
+
+execute if entity @a[tag=merchant.player] run return run function minecraft:merchant/during/no_small_games
+
 tellraw @a ["§b§l小游戏派对 §2游戏结束！"]
 tag @a remove total.win
 scoreboard players reset total.best board

@@ -6,8 +6,7 @@
 execute store result score count.1 board run data get storage minecraft:temp random_games.total
 execute store result score count.2 board run data get storage minecraft:temp random_games.games
 
-execute unless score count.2 board matches 1.. run function small_games/total/over
-execute unless score count.2 board matches 1.. run return 0
+execute unless score count.2 board matches 1.. run return run function small_games/total/over
 
 data modify storage minecraft:temp random.min set value 0
 scoreboard players operation count.2.-1 board = count.2 board
@@ -27,7 +26,12 @@ execute store result score total.game board run data get storage minecraft:temp 
 
 tellraw @a[team=play.total] ["\n    §a§l下一局游戏 §e(",{"score":{"name":"count.3","objective":"board"},"color":"aqua"},"§e/",{"score":{"name":"count.1","objective":"board"},"color":"aqua"},"§e)§a§l：",{"nbt":"total_game.name",storage:"minecraft:temp","color":"light_purple","bold":true,interpret:true},"\n\n    §e游戏将会在 §c5 §e秒后开始。\n",{text:"\n游戏介绍：\n",color:gold,bold:true},{nbt:"total_game.prefix",color:green,storage:"minecraft:temp",interpret:true}," ",{nbt:"total_game.desc",color:gray,storage:"minecraft:temp",interpret:true},"\n"]
 title @a[team=play.total] title ["\u00a7b下一轮游戏"]
-title @a[team=play.total] subtitle [{"nbt":"total_game.name",storage:"minecraft:temp","color":"light_purple","bold":true,interpret:true}]
+title @a[tag=play.total] subtitle [{"nbt":"total_game.name",storage:"minecraft:temp","color":"light_purple","bold":true,interpret:true}]
+
+tellraw @a[team=deskgame,tag=play.total] ["\n    §a§l随机游戏§a§l：",{"nbt":"total_game.name",storage:"minecraft:temp","color":"light_purple","bold":true,interpret:true},"\n\n    §e游戏将会在 §c5 §e秒后开始。\n",{text:"\n游戏介绍：\n",color:gold,bold:true},{nbt:"total_game.prefix",color:green,storage:"minecraft:temp",interpret:true}," ",{nbt:"total_game.desc",color:gray,storage:"minecraft:temp",interpret:true},"\n"]
+title @a[team=deskgame,tag=play.total] title ["\u00a7b随机游戏"]
+
+
 
 execute as @a[tag=play.total] at @s run playsound entity.generic.explode player @s ~ ~ ~ 1 2 1
 ## Testfor if the game has been on

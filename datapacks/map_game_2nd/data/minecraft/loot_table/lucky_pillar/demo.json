@@ -12,7 +12,7 @@
                     "type": "minecraft:tag",
                     "name": "lucky_pillar/demo",
                     "expand": true,
-                    "weight": 10,
+                    "weight": 6,
                     "quality": 1
                 },
                 {
@@ -30,6 +30,12 @@
                 {
                     "type": "minecraft:loot_table",
                     "value": "lucky_pillar/random_armor",
+                    "weight": 10,
+                    "quality": 1
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lucky_pillar/random_arrow",
                     "weight": 10,
                     "quality": 1
                 }

@@ -1,0 +1,3 @@
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{action:touzi}}}}] run function minecraft:merchant/player/action/sel_touzi
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{action:big_touzi}}}}] run function minecraft:merchant/player/action/sel_big_touzi
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data":{action:small_touzi}}}}] run function minecraft:merchant/player/action/sel_small_touzi

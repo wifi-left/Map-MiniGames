@@ -3,7 +3,10 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 tag @a remove total.win
-tellraw @a ["§b§l小游戏合集 §2游戏结束！"]
+
+execute if entity @a[tag=merchant.alive] run return run function minecraft:merchant/during/small_game_over
+
+tellraw @a ["§b§l小游戏派对 §2游戏结束！"]
 title @a[team=play.total] title ["\u00a7cGAME OVER"]
 title @a[team=play.total] subtitle ["\u00a7b意外结束了游戏"]
 schedule clear minecraft:small_games/total/next_game
