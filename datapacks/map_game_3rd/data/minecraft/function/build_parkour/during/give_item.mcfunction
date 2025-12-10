@@ -1,0 +1,1 @@
+execute as @a[gamemode=adventure,team=build_parkour] run function minecraft:build_parkour/during/player/items

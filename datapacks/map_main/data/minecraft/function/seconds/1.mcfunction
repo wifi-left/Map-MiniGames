@@ -41,3 +41,4 @@ execute if score duel.state state matches 1.. run function minecraft:duel/hftick
 execute if score miner.state state matches 1.. in airworld run function miner/second
 execute if score mining.state state matches 1.. in airworld run function mining/second
 execute if score chair.state state matches 1.. in overworld run function chair/second
+execute if score build_parkour.state state matches 1.. in parkourworld run function minecraft:build_parkour/second

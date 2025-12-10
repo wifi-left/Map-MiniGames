@@ -3,7 +3,7 @@ scoreboard players set pillar.time tick 300
 scoreboard players set pillar.player tick 0
 execute as @a[team=pillar,gamemode=survival] run scoreboard players add pillar.player tick 1
 
-execute if score pillar.player tick matches 5.. run scoreboard players set pillar.time tick 600
+execute if score pillar.player tick matches 3.. run scoreboard players set pillar.time tick 600
 execute if score pillar.player tick matches 10.. run scoreboard players set pillar.time tick 900
 execute if score pillar.player tick matches 15.. run scoreboard players set pillar.time tick 1200
 

@@ -1,6 +1,5 @@
 tag @a[tag=fishing.win] remove fishing.win
-tag @a[tag=fishing.random_team] remove fishing.random_team
-tag @a[team=fishing,gamemode=adventure] add fishing.random_team
+
 # /setblock -96 153 610
 tp @a[gamemode=!creative,team=fishing] -212 -45 351 -90 0
 scoreboard players set fishing.state state 1

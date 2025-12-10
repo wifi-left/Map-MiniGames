@@ -1,0 +1,24 @@
+{
+    "replace": false,
+    "values": [
+        "magma_block",
+        "black_concrete",
+        "pink_concrete",
+        "light_blue_concrete",
+        "lime_concrete",
+        "yellow_concrete",
+        "brown_concrete",
+        "prismarine_slab",
+        "quartz_block",
+        "quartz_slab",
+        "quartz_slab",
+        "iron_bars",
+        "oak_trapdoor",
+        "oak_door",
+        "zombie_head",
+        "ladder",
+        "scaffolding",
+        "slime_block",
+        "honey_block"
+    ]
+}

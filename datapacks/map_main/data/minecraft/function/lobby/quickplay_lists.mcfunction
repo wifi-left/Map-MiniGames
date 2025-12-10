@@ -3,7 +3,6 @@ tellraw @s ["\n§6 ※ 快速加入游戏 ※ §b游戏ID列表：\n"]
 data modify storage minecraft:temp dialog_tmp.actions set value []
 
 function minecraft:lobby/quickplay_info {id:21,name:"小游戏派对",color:"f§l"}
-
 function minecraft:lobby/quickplay_info {id:33,name:"击退游戏",color:b}
 function minecraft:lobby/quickplay_info {id:40,name:"抢板凳",color:b}
 function minecraft:lobby/quickplay_info {id:3,name:"信仰方块",color:b}
@@ -22,6 +21,7 @@ function minecraft:lobby/quickplay_info {id:23,name:"TNT Wars",color:b}
 function minecraft:lobby/quickplay_info {id:15,name:"密室杀手",color:b}
 function minecraft:lobby/quickplay_info {id:20,name:"狼人杀",color:b}
 function minecraft:lobby/quickplay_info {id:42,name:"球类游戏",color:b}
+function minecraft:lobby/quickplay_info {id:44,name:"你建我跑",color:b}
 
 function minecraft:lobby/quickplay_info {id:8,name:"战桥",color:d}
 function minecraft:lobby/quickplay_info {id:2,name:"Battle Box",color:d}

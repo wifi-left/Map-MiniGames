@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        "#concrete",
+        "#build_parkour/building_blocks_destroy"
+    ]
+}

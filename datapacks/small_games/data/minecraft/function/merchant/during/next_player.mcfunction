@@ -14,4 +14,4 @@ title @a[team=deskgame] title ["\u00a7b轮到第 ",{score:{name:"desk.merchant.n
 title @a[team=deskgame,gamemode=adventure] title ["\u00a76你的回合"]
 title @a[team=deskgame,gamemode=adventure] subtitle ["请开始操作"]
 execute as @a[team=deskgame,gamemode=adventure] at @s run function merchant/player/turn
-scoreboard players set desk.time board 121
+scoreboard players set desk.time board 31

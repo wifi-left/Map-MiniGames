@@ -7,4 +7,4 @@ title @s subtitle ["\u00a7f你可以走[",{score:{objective:"board",name:"mercha
 title @a[team=deskgame] actionbar [{bold:true,color:gold,translate:"[%s]",fallback:"[%s]",with:[{score:{name:"merchant.jump.step",objective:"board"},color:green}]}]
 tellraw @s ["\u00a7e提示：\u00a7a使用空格键进行移动。"]
 scoreboard players set desk.state state 4
-scoreboard players set desk.time board 61
+scoreboard players set desk.time board 31

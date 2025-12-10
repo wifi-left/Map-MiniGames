@@ -14,7 +14,6 @@ execute as @a[scores={quickplay=-2}] at @s run function lobby/quickplay_back_and
 execute as @a[gamemode=spectator] at @s as @s[y=-70,dy=-100] run tp @s ~ -64 ~
 execute as @a[gamemode=adventure] at @s as @s[y=-70,dy=-100] run function minecraft:out_of_world
 
-
 execute as @a unless score @s old matches 1.. run function minecraft:check_rename
 
 execute as @a[scores={leave=1..}] in overworld run tp @s 188 124 26
@@ -230,3 +229,4 @@ execute if score live.state state matches 1.. in overworld run function minecraf
 execute if score snow.state state matches 1.. in overworld run function minecraft:snow/tick
 execute if score ballgame.state state matches 1.. in overworld run function minecraft:ballgame/tick
 execute if score fishing.state state matches 1.. in overworld run function minecraft:fishing/tick
+execute if score build_parkour.state state matches 1.. in parkourworld run function minecraft:build_parkour/tick
