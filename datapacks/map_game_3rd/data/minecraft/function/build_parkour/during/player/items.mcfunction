@@ -50,6 +50,9 @@ execute unless items entity @s container.* zombie_head unless items entity @s pl
 execute unless items entity @s container.* ladder unless items entity @s player.cursor ladder unless items entity @s weapon.offhand ladder run clear @s ladder
 execute unless items entity @s container.* ladder unless items entity @s player.cursor ladder unless items entity @s weapon.offhand ladder run give @s ladder[custom_data={"build_parkour":1},can_break={blocks:"#build_parkour/building_blocks_destroy"},can_place_on={blocks:"#build_parkour/building_blocks"},tooltip_display={hidden_components:["can_break","can_place_on"]}]
 
+execute unless items entity @s container.* packed_ice unless items entity @s player.cursor packed_ice unless items entity @s weapon.offhand packed_ice run clear @s packed_ice
+execute unless items entity @s container.* packed_ice unless items entity @s player.cursor packed_ice unless items entity @s weapon.offhand packed_ice run give @s packed_ice[custom_data={"build_parkour":1},can_break={blocks:"#build_parkour/building_blocks_destroy"},can_place_on={blocks:"#build_parkour/building_blocks"},tooltip_display={hidden_components:["can_break","can_place_on"]}]
+
 execute unless items entity @s container.* slime_block unless items entity @s player.cursor slime_block unless items entity @s weapon.offhand slime_block run clear @s slime_block
 execute unless items entity @s container.* slime_block unless items entity @s player.cursor slime_block unless items entity @s weapon.offhand slime_block run give @s slime_block[custom_data={"build_parkour":1},can_break={blocks:"#build_parkour/building_blocks_destroy"},can_place_on={blocks:"#build_parkour/building_blocks"},tooltip_display={hidden_components:["can_break","can_place_on"]}]
 execute unless items entity @s container.* honey_block unless items entity @s player.cursor honey_block unless items entity @s weapon.offhand honey_block run clear @s honey_block
