@@ -28,6 +28,7 @@ execute if score desk.player tick matches 5.. run scoreboard players set merchan
 
 execute as @a[team=deskgame] run function minecraft:merchant/tips
 
+execute as @e[tag=merchant.npc,type=armor_stand] run function minecraft:merchant/player/action/npc/die
 
 scoreboard players reset @a[team=deskgame] park.x
 scoreboard players reset @a[team=deskgame] park.y

@@ -5,3 +5,4 @@
 execute store result score @s park.x run data get entity @s Pos[0]
 execute store result score @s park.y run data get entity @s Pos[1]
 execute store result score @s park.z run data get entity @s Pos[2]
+execute at @s run function minecraft:merchant/player/action/npc/spawn
