@@ -12,8 +12,10 @@ tag @s remove seel
 
 # execute if score @s LRS_START_DJS matches 1 run summon minecraft:cat 335 65 -332 {DeathLootTable:"",Invulnerable:1b,PersistenceRequired:1b,Team:"hide.play.ani",Tags:["hianimal","hide.animals","neww"],NoAI:1b}
 item replace block 0 2 0 container.0 with air
-summon minecraft:block_display ~ ~ ~ {Invulnerable:1b,Team:"hide.play.ani",Tags:["hianimal","hide.animals","neww"],block_state:{Name:"minecraft:dirt"}}
+summon minecraft:block_display ~ ~ ~ {Invulnerable:1b,Tags:["hianimal","hide.animals","neww"],block_state:{Name:"minecraft:dirt"}}
 execute at @s align xyz if block ~ ~-0.5 ~ #hideseek run tellraw @s ["\n§a   §l你的新身份为： 泥土","\n"]
+team join hide.play.ani @e[tag=neww]
+
 tag @e[tag=neww] add hide.cosplay
 scoreboard players operation @e[tag=neww] LRS_START_DJS = @s park.uuid
 
