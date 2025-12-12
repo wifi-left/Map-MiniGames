@@ -3,7 +3,6 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 # tag @e[tag=color.test] add color.Nadd
-function minecraft:color/setcolor
 
 execute if score color.rantype board matches 1 run function minecraft:color/ran_fill/1_init
 execute if score color.rantype board matches 2 run function minecraft:color/ran_fill/1_init
@@ -15,6 +14,7 @@ execute if score color.rantype board matches 5 run function minecraft:color/ran_
 # 3: Line 星射线
 # 4: Fixed
 # -5 17 77 30 17 112
+function minecraft:color/setcolor
 
 # 色卡 -52 35 61
 execute as @a[team=play.color] at @s run playsound minecraft:ui.button.click player @s
