@@ -7,6 +7,9 @@ execute if score build_parkour.state state matches 1..99 if score build_parkour.
 # Players Parkouring
 execute if score build_parkour.state state matches 3..5 unless entity @a[gamemode=adventure,team=build_parkour] run function minecraft:build_parkour/round_over
 
+execute if score build_parkour.state state matches 5 run effect give @a[team=build_parkour] invisibility 2 25 true
+
+
 execute if score build_parkour.state state matches 1..99 if score build_parkour.time board matches 1.. run scoreboard players remove build_parkour.time board 1
 execute if score build_parkour.state state matches 1..99 if score build_parkour.time board matches 0 run function minecraft:build_parkour/timeout
 execute if score build_parkour.state state matches 1..99 if score build_parkour.time board matches 1.. run title @a[team=build_parkour] actionbar ["\u00a7b倒计时：",{score:{objective:board,name:"build_parkour.time"},color:gold},"\u00a76s"]
