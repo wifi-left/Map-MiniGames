@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        "quartz_block",
+        "#minecraft:build_parkour/building_blocks"
+    ]
+}
