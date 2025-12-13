@@ -10,33 +10,39 @@
             "entries": [
                 {
                     "type": "minecraft:tag",
-                    "name": "lucky_pillar/demo",
+                    "name": "lucky_pillar/all_items",
                     "expand": true,
-                    "weight": 6,
+                    "weight": 12,
+                    "quality": 1
+                },{
+                    "type": "minecraft:tag",
+                    "name": "lucky_pillar/spawn_eggs",
+                    "expand": true,
+                    "weight": 1,
                     "quality": 1
                 },
                 {
                     "type": "minecraft:loot_table",
                     "value": "lucky_pillar/random_potion",
-                    "weight": 10,
+                    "weight": 3,
                     "quality": 1
                 },
                 {
                     "type": "minecraft:loot_table",
                     "value": "lucky_pillar/random_weapon",
-                    "weight": 10,
+                    "weight": 2,
                     "quality": 1
                 },
                 {
                     "type": "minecraft:loot_table",
                     "value": "lucky_pillar/random_armor",
-                    "weight": 10,
+                    "weight": 3,
                     "quality": 1
                 },
                 {
                     "type": "minecraft:loot_table",
                     "value": "lucky_pillar/random_arrow",
-                    "weight": 10,
+                    "weight": 3,
                     "quality": 1
                 }
             ]
