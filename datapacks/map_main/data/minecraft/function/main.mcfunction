@@ -230,3 +230,5 @@ execute if score snow.state state matches 1.. in overworld run function minecraf
 execute if score ballgame.state state matches 1.. in overworld run function minecraft:ballgame/tick
 execute if score fishing.state state matches 1.. in overworld run function minecraft:fishing/tick
 execute if score build_parkour.state state matches 1.. in parkourworld run function minecraft:build_parkour/tick
+
+execute as @e[type=ender_dragon,tag=!dragon.flagged] run function minecraft:lock_dragon
