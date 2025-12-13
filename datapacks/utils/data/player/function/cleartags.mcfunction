@@ -1,3 +1,4 @@
+title @s reset
 tag @s remove chess.a
 tag @s remove chess.b
 tag @s remove chess.c
@@ -10,6 +11,8 @@ tag @s remove miner.win
 tag @s remove wolf.acting
 tag @s remove random_parkour.win
 tag @s remove hp.flag
+tag @s remove bw.was_killed
+tag @s remove bw.killed_player
 tag @s remove hot.hit
 tag @s remove wolf.protected
 tag @s remove wolf.killed
@@ -25,7 +28,6 @@ tag @s remove bw.play
 tag @s remove bw.player
 tag @s remove boat.notinboats
 tag @s remove play.total
-tag @s remove bw.shears
 tag @s remove boat.notinboat
 tag @s remove tntwars.a
 tag @s remove tntwars.b
@@ -40,13 +42,6 @@ tag @s remove killer.saver
 tag @s remove no_health
 tag @s remove parkouring
 tag @s remove stronghold.alive
-tag @s remove bw.attack
-tag @s remove bw.armor
-tag @s remove bw.speed
-tag @s remove bw.jump
-tag @s remove bw.fasti
-tag @s remove bw.fastii
-tag @s remove bw.shears
 tag @s remove bw.show.target
 tag @s remove merchant.alive
 #
@@ -95,3 +90,24 @@ tag @s remove job_pvp.died
 tag @s remove bw.triggeredtrap
 tag @s remove merchant.turn.now
 tag @s remove build_parkour.builder
+
+scoreboard players reset @s bw.tmp.ir
+scoreboard players reset @s bw.tmp.gd
+scoreboard players reset @s bw.tmp.dm
+scoreboard players reset @s bw.tmp.em
+scoreboard players reset @s bw.axe
+scoreboard players reset @s bw.pickaxe
+scoreboard players reset @s bw.armor
+scoreboard players reset @s pickblue
+scoreboard players reset @s pickgreen
+scoreboard players reset @s pickred
+scoreboard players reset @s pickyellow
+tag @s remove bw.attack
+tag @s remove bw.armor
+tag @s remove bw.speed
+tag @s remove bw.jump
+tag @s remove bw.fasti
+tag @s remove bw.fastii
+tag @s remove bw.shears
+
+execute as @s run function player:empty_enderchest

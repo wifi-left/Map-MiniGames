@@ -1,0 +1,33 @@
+{
+    "display": {
+        "title": [
+            "公寓屋顶的风景真不辍"
+        ],
+        "description": [
+            "昔者庄周梦为胡蝶，栩栩然胡蝶也，自喻适志与！不知周也。\n俄然觉，则蘧蘧然周也。\n不知周之梦为胡蝶与，胡蝶之梦为周与？\n周与胡蝶，则必有分矣。此之谓物化。\n",
+            {
+                "text": "提示：到达公寓顶楼",
+                "color": "gray"
+            }
+        ],
+        "icon": {
+            "id": "minecraft:gray_concrete"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:lobby/good_view_ontop",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

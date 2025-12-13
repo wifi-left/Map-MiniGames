@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": [
+            "真聪明"
+        ],
+        "description": [
+            "你是怎么知道怎么打开箱子的？"
+        ],
+        "icon": {
+            "id": "minecraft:chest"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:lobby/wtf_command_block",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

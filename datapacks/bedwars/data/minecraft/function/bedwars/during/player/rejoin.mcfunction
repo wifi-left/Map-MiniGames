@@ -13,3 +13,4 @@ execute as @s[tag=!bw.play] run tellraw @s ["\n§c   本次游戏仍有效，但
 # execute as @s[team=] run tellraw @s ["\n\u00a77   本次游戏仍然有效，您已加入游戏！\n   \u00a77您可以使用 \u00a76/trigger hub\u00a77返回大厅\n"]
 execute as @s[tag=bw.play] at @s run function bedwars/during/player/died
 
+execute as @s[tag=bw.play] at @s run scoreboard players set @s[tag=bw.fhing] player.board 11

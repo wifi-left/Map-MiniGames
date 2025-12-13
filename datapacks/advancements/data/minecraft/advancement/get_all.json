@@ -32,6 +32,9 @@
                             "minecraft:others/haekara": true,
                             "minecraft:intro/author": true,
                             "minecraft:intro/other": true,
+                            "minecraft:lobby/good_view_ontop_building": true,
+                            "minecraft:lobby/how_to_open_chest": true,
+                            "minecraft:lobby/wtf_command_block": true,
                             "minecraft:lobby/cue_feet": true,
                             "minecraft:lobby/curious_boy_1": true,
                             "minecraft:lobby/curious_boy_2": true,
@@ -51,7 +54,6 @@
                             "minecraft:games/parkour": true,
                             "minecraft:games/pool_cold_underwater": true,
                             "minecraft:games/potato_boom": true,
-                            "minecraft:games/remaking_game": true,
                             "minecraft:games/twolfstart": true,
                             "minecraft:games/wind_charge_bw": true,
                             "minecraft:games/endless_wolf_sign": true

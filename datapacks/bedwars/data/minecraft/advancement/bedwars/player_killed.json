@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "bw": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "player",
+                    "nbt":"{Tags:[\"bw.player\"]}"
+                },
+                "player": {
+                    "type": "player",
+                    "nbt":"{Tags:[\"bw.player\"]}"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "bw"
+        ]
+    ],
+    "rewards": {
+        "function": "bedwars/during/player/killed_player"
+    }
+}

@@ -1,5 +1,5 @@
 effect give @s minecraft:slowness 5 2 true
-effect give @s minecraft:blindness 5 2 true
+effect give @s minecraft:blindness 8 2 true
 tellraw @a[tag=bw.show.target] ["\u00a7c你的缓慢失明陷阱已被触发"]
 title @a[tag=bw.show.target] title ["\u00a7c陷阱被触发"]
 title @a[tag=bw.show.target] subtitle ["\u00a7f你的缓慢失明陷阱已被触发"]

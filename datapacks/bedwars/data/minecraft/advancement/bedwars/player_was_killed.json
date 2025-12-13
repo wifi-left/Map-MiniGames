@@ -1,0 +1,52 @@
+{
+    "criteria": {
+        "red": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "type": "player",
+                    "nbt":"{Tags:[\"bw.player\"]}"
+                },
+                "player": {
+                    "type": "player",
+                    "nbt":"{Tags:[\"bw.player\"]}"
+                }
+            }
+        },
+        "yellow": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "player": {
+                    "team": "bw.yellow"
+                }
+            }
+        },
+        "blue": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "player": {
+                    "team": "bw.blue"
+                }
+            }
+        },
+        "green": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "player": {
+                    "team": "bw.green"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "red",
+            "green",
+            "blue",
+            "yellow"
+        ]
+    ],
+    "rewards": {
+        "function": "bedwars/during/player/was_killed"
+    }
+}

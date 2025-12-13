@@ -3,13 +3,12 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 function minecraft:bedwars/totalpeople
-
 # Team Over
 
-execute if score bw.green state matches 1.. unless score bw.green tick matches 1.. run function minecraft:bedwars/during/teamover/greendied
-execute if score bw.blue state matches 1.. unless score bw.blue tick matches 1.. run function minecraft:bedwars/during/teamover/bluedied
-execute if score bw.yellow state matches 1.. unless score bw.yellow tick matches 1.. run function minecraft:bedwars/during/teamover/yellowdied
-execute if score bw.red state matches 1.. unless score bw.red tick matches 1.. run function minecraft:bedwars/during/teamover/reddied
+execute if score bw.state state matches 1..5 if score bw.green state matches 1.. unless score bw.green tick matches 1.. run function minecraft:bedwars/during/teamover/greendied
+execute if score bw.state state matches 1..5 if score bw.blue state matches 1.. unless score bw.blue tick matches 1.. run function minecraft:bedwars/during/teamover/bluedied
+execute if score bw.state state matches 1..5 if score bw.yellow state matches 1.. unless score bw.yellow tick matches 1.. run function minecraft:bedwars/during/teamover/yellowdied
+execute if score bw.state state matches 1..5 if score bw.red state matches 1.. unless score bw.red tick matches 1.. run function minecraft:bedwars/during/teamover/reddied
 
 # Win
 

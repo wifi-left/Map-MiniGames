@@ -51,7 +51,7 @@ execute if entity @e[scores={attack.1=1..},tag=bw.player] run effect clear @a[ta
 execute if entity @e[scores={attack.1=1..},tag=bw.player] run tellraw @a[tag=INV,scores={hurt.1=1..}] ["§c你的隐身状态因为受到伤害被取消！"]
 scoreboard players reset @a[scores={hurt.1=1..}] hurt.1
 scoreboard players reset @a[scores={attack.1=1..}] attack.1
-execute as @a[tag=INV] at @s run particle minecraft:dust{color:[0.388d, 0.388d, 0.388d],scale:1} ~ ~ ~ 0 0 0 1 1 force
+execute as @a[tag=INV] at @s run particle minecraft:dust{color:[0.388d, 0.388d, 0.388d],scale:0.5} ~ ~ ~ 0 0 0 1 1 force
 
 execute if score bw.mode state matches 3 run function minecraft:bedwars/special/xp_change
 execute if score bw.mode state matches 7 run function minecraft:bedwars/special/xp_change
