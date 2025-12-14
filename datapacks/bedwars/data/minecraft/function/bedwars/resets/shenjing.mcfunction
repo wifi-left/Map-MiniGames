@@ -81,7 +81,7 @@ execute if score bw.reset board matches 67..67 run fill -216 72 299 -392 72 121 
 execute if score bw.reset board matches 68..68 run function bedwars/resets/points/shenjing
 
 title @a[tag=bw.player] title ["\u00a7eReseting..."]
-title @a[tag=bw.player] subtitle ["\u00a7bMap: \u00a70神经地洞\u00a77 ; ",{"score":{"objective": "board","name": "bw.reset"},"color":"green"},"\u00a7b / \u00a7c70"]
+title @a[tag=bw.player] subtitle ["\u00a7bMap: \u00a7d樱花木船\u00a77 ; ",{"score":{"objective": "board","name": "bw.reset"},"color":"green"},"\u00a7b / \u00a7c70"]
 execute if score bw.reset board matches ..69 run schedule function minecraft:bedwars/resets/shenjing 1t
 execute if score bw.reset board matches 70.. run function bedwars/resets/resetover
 

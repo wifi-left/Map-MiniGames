@@ -3,7 +3,7 @@
   "values": [
     "minecraft:copper_block",
     "minecraft:copper_ore",
-    "minecraft:iron_chain",
+    "#minecraft:chains",
     "minecraft:snow_block",
     "minecraft:grass_block",
     "minecraft:dirt",

@@ -5,6 +5,7 @@ execute in lobby run tp @s 195 -8 190 -90 0
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
+
 title @s title [{"text":"蚀界行者","color":"#FE4382","bold": true}]
 title @s subtitle ["RealmCrawler"]
 team join stronghold @s

@@ -21,5 +21,5 @@ execute if score bw.mode board matches 4 run setblock -327 35 268 blue_bed[facin
 execute if score bw.mode board matches 6 run setblock -296 28 276 blue_bed[occupied=true,facing=east]
 execute if score bw.mode board matches 6 run setblock -295 28 276 blue_bed[occupied=true,facing=east,part=head]
 
-execute if score bw.mode board matches 7 run setblock -345 28 259 blue_bed[occupied=true,facing=south]
-execute if score bw.mode board matches 7 run setblock -345 28 260 blue_bed[occupied=true,facing=south,part=head]
+execute if score bw.mode board matches 7 run setblock -370 17 268 blue_bed[occupied=true,facing=east]
+execute if score bw.mode board matches 7 run setblock -369 17 268 blue_bed[occupied=true,facing=east,part=head]
