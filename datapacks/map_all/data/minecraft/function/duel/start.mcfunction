@@ -11,7 +11,7 @@ tellraw @a[team=wait.duel] ["\n§6    游戏开始！\n"]
 execute as @a[team=wait.duel] at @s run playsound entity.player.levelup player @s ~ ~ ~ 1 1 1
 #team join play.duel @a[team=wait.duel]
 scoreboard players set duel.ranteam board 1
-execute as @a[team=wait.duel] at @s run function duel/spr
+execute as @a[team=wait.duel,gamemode=adventure] at @s run function duel/spr
 scoreboard players set duel.state state 1
 scoreboard players set score.yellow tick 0
 scoreboard players set score.blue tick 0

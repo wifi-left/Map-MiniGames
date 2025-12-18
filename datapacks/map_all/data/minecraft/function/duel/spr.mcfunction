@@ -3,7 +3,7 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 tag @a remove duel.out
-tag @r[team=wait.duel] add duel.out
+tag @r[team=wait.duel,gamemode=adventure] add duel.out
 scoreboard players add duel.ranteam board 1
 execute if score duel.ranteam board matches 1..1 run team join play.duel.blue @a[tag=duel.out]
 execute if score duel.ranteam board matches 2..2 run team join play.duel.yellow @a[tag=duel.out]
