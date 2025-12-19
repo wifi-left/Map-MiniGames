@@ -5,7 +5,7 @@ execute if score fishing.state state matches 3 run function minecraft:fishing/st
 execute if score fishing.state state matches 3 run function minecraft:fishing/testfor
 execute if score fishing.state state matches 3 as @a[gamemode=adventure,team=fishing] run function minecraft:fishing/g_item
 scoreboard players operation fishing.temp temp = fishing.time tick
-scoreboard players set 15 board 15
-scoreboard players operation fishing.temp temp %= 15 board
+scoreboard players set 10 board 10
+scoreboard players operation fishing.temp temp %= 10 board
 execute if score fishing.state state matches 3 if score fishing.temp temp matches 0 run function minecraft:fishing/show_rank
 # execute in airworld run fill -57 -63 652 -135 -62 574 air

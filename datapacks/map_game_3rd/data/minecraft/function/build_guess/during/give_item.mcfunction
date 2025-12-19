@@ -1,0 +1,2 @@
+execute as @a[gamemode=adventure,team=build_guess,tag=build_guess.builder] run function minecraft:build_guess/during/player/items_builder
+execute as @a[gamemode=adventure,team=build_guess,tag=build_guess.guesser] run function minecraft:build_guess/during/player/items_guesser

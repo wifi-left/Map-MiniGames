@@ -1,0 +1,2 @@
+summon interaction ~ ~ ~ {width:1,height:1,Tags:["finder.eggs.interaction"],response:true,Glowing:true}
+summon item_display ~ ~0.5 ~ {item:{id:"egg"},item_display:"fixed",Tags:["finder.eggs.display"],billboard:"vertical",Glowing:true}

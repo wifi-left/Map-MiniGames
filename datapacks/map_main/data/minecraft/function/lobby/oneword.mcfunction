@@ -2,7 +2,7 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
-execute unless data storage minecraft:settings {hub_msg:{oneword:{allow:true}}} run return run function minecraft:lobby/show_title
+execute unless data storage statics:settings {hub_msg:{oneword:{allow:true}}} run return run function minecraft:lobby/show_title
 function lobby/getrandom1
 execute if score random board matches 1 run title @s title ["\u00a7a世间万物皆有裂痕，那是光照进来的地方。"]
 execute if score random board matches 1 run title @s subtitle ["\u00a7e —— 莱昂纳德·科恩《颂歌》"]

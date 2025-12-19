@@ -1,0 +1,10 @@
+{
+    "replace": false,
+    "values": [
+        "#concrete",
+        "oak_stairs",
+        "oak_planks",
+        "oak_slab",
+        "ladder"
+    ]
+}

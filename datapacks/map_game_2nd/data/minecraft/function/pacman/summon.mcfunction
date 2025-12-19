@@ -5,7 +5,7 @@ scoreboard players set pacman.player tick 0
 execute as @a[team=pacman,gamemode=adventure] run scoreboard players add pacman.player tick 1
 scoreboard players add pacman.player tick 2
 
-tellraw @a [{text:""}]
+
 
 execute as @a[team=pacman,tag=pacman.nokiller,limit=1,sort=random,gamemode=adventure] at @s run function minecraft:pacman/become_killer
 execute if score pacman.player tick matches 6.. as @a[team=pacman,tag=pacman.nokiller,limit=1,sort=random,gamemode=adventure] at @s run function minecraft:pacman/become_killer
@@ -31,6 +31,6 @@ execute if score pacman.player tick matches 60.. as @a[team=pacman,tag=pacman.no
 scoreboard players remove pacman.player tick 2
 
 execute unless entity @a[team=pacman.killer,gamemode=adventure] run function minecraft:pacman/over
-tellraw @a [{text:""}]
+
 
 scoreboard players set pacman.time board 61

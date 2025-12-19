@@ -90,6 +90,10 @@ tag @s remove job_pvp.died
 tag @s remove bw.triggeredtrap
 tag @s remove merchant.turn.now
 tag @s remove build_parkour.builder
+tag @s remove build_guess.guesser
+tag @s remove build_guess.builder
+tag @s remove build_guess.guesser.win
+
 
 scoreboard players reset @s bw.tmp.ir
 scoreboard players reset @s bw.tmp.gd

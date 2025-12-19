@@ -1,0 +1,6 @@
+clear @s *[custom_data~{build_guess:1}]
+execute unless items entity @s container.* minecraft:writable_book unless items entity @s player.cursor minecraft:writable_book unless items entity @s weapon.* minecraft:writable_book run clear @s minecraft:writable_book
+execute unless items entity @s container.* minecraft:writable_book unless items entity @s player.cursor minecraft:writable_book unless items entity @s weapon.* minecraft:writable_book unless items entity @s weapon.mainhand written_book run item replace entity @s weapon.mainhand with minecraft:writable_book[custom_data={"build_guess":2},item_name='请使用书与笔进行猜测(丢弃物品可重新获得)']
+execute if data entity @s SelectedItem.components."minecraft:writable_book_content".pages[0].raw run function minecraft:build_guess/during/player/guess_sth
+execute if data entity @s SelectedItem.components."minecraft:written_book_content".pages[0].raw run function minecraft:build_guess/during/player/guess_sth_written_book
+execute if items entity @s weapon.* written_book run clear @s written_book

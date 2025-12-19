@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+        "glass",
+        "#build_guess/building_blocks_destroy"
+    ]
+}

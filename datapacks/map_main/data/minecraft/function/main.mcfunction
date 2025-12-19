@@ -29,10 +29,10 @@ team join lobby @a[tag=NEWENTER]
 clear @a[tag=NEWENTER]
 execute as @a[tag=NEWENTER] at @s run tag @s add map.old
 execute as @a[tag=NEWENTER] at @s run function lobby/cleartags
-execute as @a[tag=NEWENTER] run title @s title [{nbt:"entry_msg.title",storage:"minecraft:settings",interpret:true,color:gold}]
-execute as @a[tag=NEWENTER] run title @s subtitle [{nbt:"entry_msg.subtitle",storage:"minecraft:settings",interpret:true,color:white}]
-execute as @a[tag=NEWENTER] run title @s actionbar [{nbt:"entry_msg.actionbar",storage:"minecraft:settings",interpret:true,color:white}]
-tellraw @a[tag=NEWENTER] ["\n§b  下载资源包：",{"text":"§d§n[Gitea](推荐)","underlined":true,"click_event":{"action":"open_url","url":"https://gitea.com/wifi-left/Map-MiniGames/raw/branch/master/resourcepack/MiniGameRes.zip"}}," ",{"underlined":true,"text":"§e§n[GitHub](备用)","click_event":{"action":"open_url","url":"https://github.com/wifi-left/Map-MiniGames/raw/master/resourcepack/MiniGameRes.zip"}},"\n\n§a  您可以随时使用 §6/trigger hub §a返回大厅。\n  §a全局音乐可以通过§6游戏设置 - ",{translate:"options.sounds",color:gold,fallback:"声音设置"}," - ",{translate:"soundCategory.voice",color:gold,fallback:"玩家语音"},"§a调节声音大小\n  §e部分游戏支持使用 §6/trigger rejoin§e 重新加入退出的游戏！\n",{nbt:"entry_msg.tellraw",storage:"minecraft:settings",color:aqua}]
+execute as @a[tag=NEWENTER] run title @s title [{nbt:"entry_msg.title",storage:"statics:settings",interpret:true,color:gold}]
+execute as @a[tag=NEWENTER] run title @s subtitle [{nbt:"entry_msg.subtitle",storage:"statics:settings",interpret:true,color:white}]
+execute as @a[tag=NEWENTER] run title @s actionbar [{nbt:"entry_msg.actionbar",storage:"statics:settings",interpret:true,color:white}]
+tellraw @a[tag=NEWENTER] ["\n§b  下载资源包：",{"text":"§d§n[Gitea](推荐)","underlined":true,"click_event":{"action":"open_url","url":"https://gitea.com/wifi-left/Map-MiniGames/raw/branch/master/resourcepack/MiniGameRes.zip"}}," ",{"underlined":true,"text":"§e§n[GitHub](备用)","click_event":{"action":"open_url","url":"https://github.com/wifi-left/Map-MiniGames/raw/master/resourcepack/MiniGameRes.zip"}},"\n\n§a  您可以随时使用 §6/trigger hub §a返回大厅。\n  §a全局音乐可以通过§6游戏设置 - ",{translate:"options.sounds",color:gold,fallback:"声音设置"}," - ",{translate:"soundCategory.voice",color:gold,fallback:"玩家语音"},"§a调节声音大小\n  §e部分游戏支持使用 §6/trigger rejoin§e 重新加入退出的游戏！\n",{nbt:"entry_msg.tellraw",storage:"statics:settings",color:aqua}]
 execute as @a[tag=NEWENTER] run attribute @s max_health base set 20
 
 gamemode adventure @a[tag=NEWENTER]
@@ -229,6 +229,8 @@ execute if score live.state state matches 1.. in overworld run function minecraf
 execute if score snow.state state matches 1.. in overworld run function minecraft:snow/tick
 execute if score ballgame.state state matches 1.. in overworld run function minecraft:ballgame/tick
 execute if score fishing.state state matches 1.. in overworld run function minecraft:fishing/tick
-execute if score build_parkour.state state matches 1.. in parkourworld run function minecraft:build_parkour/tick
+execute if score build_parkour.state state matches 1.. in parkourworld run function minecraft:build_guess/tick
+execute if score build_guess.state state matches 1.. in parkourworld run function minecraft:build_guess/tick
+execute if score finder.state state matches 1.. in overworld run function minecraft:finder/tick
 
 execute as @e[type=ender_dragon,tag=!dragon.flagged] run function minecraft:lock_dragon
