@@ -3,7 +3,8 @@ function minecraft:build_guess/reset
 execute as @a[team=build_guess,gamemode=!creative,tag=!GLOBAL.SPEC] in overworld run function minecraft:build_guess/p_next_round
 data modify storage minecraft:temp build_guess.tip set value "下一轮即将开始"
 scoreboard players set build_guess.any_success board 0
-
+title @a[team=build_guess] title ["\u00a76下一轮即将开始"]
+title @a[team=build_guess] subtitle ["\u00a7e下一轮将在\u00a7c3秒\u00a7e后开始！"]
 tellraw @a[team=build_guess] ["\n\u00a7e下一轮将在\u00a7c3秒\u00a7e后开始！\n"]
 execute as @a[team=build_guess] at @s run playsound entity.player.levelup player @s ~ ~ ~ 1 1 1
 # schedule function build_guess/summon 5s replace

@@ -5,6 +5,17 @@
         "oak_stairs",
         "oak_planks",
         "oak_slab",
-        "ladder"
+        "ladder",
+        "oak_door",
+        "sand",
+        "oak_fence",
+        "sandstone",
+        "stone",
+        "grass_block",
+        "dirt",
+        "oak_button",
+        "oak_trapdoor",
+        "oak_fence_gate",
+        "cobweb"
     ]
 }

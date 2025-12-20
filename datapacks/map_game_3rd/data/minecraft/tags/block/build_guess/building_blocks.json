@@ -2,6 +2,7 @@
     "replace": false,
     "values": [
         "glass",
+        "barrier",
         "#build_guess/building_blocks_destroy"
     ]
 }
