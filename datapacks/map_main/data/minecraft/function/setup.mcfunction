@@ -2,6 +2,7 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
+
 tellraw @a ["§b§l[Gamom Datapacks] §aReloaded successfully ! §e[Language: 简体中文]"]
 function minecraft:bedwars/setup
 bossbar remove boom
@@ -112,3 +113,8 @@ gamerule maxCommandChainLength 1145141
 gamerule maxCommandForkCount 1145141
 
 scoreboard players reset * bw.board
+
+
+scoreboard players set GENERAL.dev_mode board 0
+function #minecraft:dev_on
+execute unless score GENERAL.dev_mode board matches 1 run function minecraft:dev_off

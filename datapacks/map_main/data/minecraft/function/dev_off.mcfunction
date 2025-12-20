@@ -1,0 +1,2 @@
+gamerule sendCommandFeedback false
+gamerule reducedDebugInfo true
