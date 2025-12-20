@@ -229,7 +229,7 @@ execute if score live.state state matches 1.. in overworld run function minecraf
 execute if score snow.state state matches 1.. in overworld run function minecraft:snow/tick
 execute if score ballgame.state state matches 1.. in overworld run function minecraft:ballgame/tick
 execute if score fishing.state state matches 1.. in overworld run function minecraft:fishing/tick
-execute if score build_parkour.state state matches 1.. in parkourworld run function minecraft:build_guess/tick
+execute if score build_parkour.state state matches 1.. in parkourworld run function minecraft:build_parkour/tick
 execute if score build_guess.state state matches 1.. in parkourworld run function minecraft:build_guess/tick
 execute if score finder.state state matches 1.. in overworld run function minecraft:finder/tick
 
