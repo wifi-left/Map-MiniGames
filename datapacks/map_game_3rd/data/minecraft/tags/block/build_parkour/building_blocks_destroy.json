@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
+        "lever",
         "magma_block",
         "black_concrete",
         "pink_concrete",
@@ -25,6 +26,10 @@
         "scaffolding",
         "slime_block",
         "honey_block",
-        "packed_ice"
+        "packed_ice",
+        "oak_button",
+        "iron_trapdoor",
+        "iron_door",
+        "redstone_block"
     ]
 }
