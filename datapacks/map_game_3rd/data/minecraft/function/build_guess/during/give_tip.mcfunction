@@ -1,9 +1,13 @@
-execute if data storage minecraft:temp {build_guess:{length:1}} run scoreboard players set random temp 1
+execute if data storage minecraft:temp {build_guess:{length:1}} run return fail
 execute store result score random temp if data storage minecraft:temp {build_guess:{length:2}} run random value 1..2
 execute store result score random temp if data storage minecraft:temp {build_guess:{length:3}} run random value 1..3
 execute store result score random temp if data storage minecraft:temp {build_guess:{length:4}} run random value 1..4
 execute store result score random temp if data storage minecraft:temp {build_guess:{length:5}} run random value 1..5
 execute store result score random temp if data storage minecraft:temp {build_guess:{length:6}} run random value 1..6
+execute store result score random temp if data storage minecraft:temp {build_guess:{length:7}} run random value 1..7
+execute store result score random temp if data storage minecraft:temp {build_guess:{length:8}} run random value 1..8
+execute store result score random temp if data storage minecraft:temp {build_guess:{length:9}} run random value 1..9
+execute store result score random temp if data storage minecraft:temp {build_guess:{length:10}} run random value 1..10
 
 data modify storage minecraft:temp build_guess_temp.mid set value ""
 data modify storage minecraft:temp build_guess_temp.before set value ""

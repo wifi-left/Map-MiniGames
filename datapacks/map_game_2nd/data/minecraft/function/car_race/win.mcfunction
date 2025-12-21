@@ -5,7 +5,7 @@
 execute on vehicle run kill @s[tag=GCAR]
 tellraw @a[team=car.play] [{"selector":"@s"},"§a赢得了比赛！"]
 tellraw @a[team=car.wait] [{"selector":"@s"},"§a赢得了比赛！"]
-title @s title ["\u00a76You won!"]
+title @s title ["\u00a76你赢了！"]
 title @s subtitle ["\u00a7a你完成了 3 圈！"]
 gamemode spectator @s
 tag @s add car.win

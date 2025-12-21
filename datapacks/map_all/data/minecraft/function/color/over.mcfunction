@@ -8,8 +8,8 @@ scoreboard players set color.state state 0
 
 tellraw @a ["§a[I] ",{"text":"色盲派对","color":"#a7d3ff","bold":true}," §a: §b游戏结束！"]
 execute if entity @a[gamemode=adventure,team=play.color] run tellraw @a ["§e获胜者：",{"selector":"@a[gamemode=adventure,team=play.color]"}]
-title @a[gamemode=adventure,team=play.color] title ["\u00a76You won!"]
-title @a[gamemode=spectator,team=play.color] title ["\u00a7c\u00a7lGAME OVER"]
+title @a[gamemode=adventure,team=play.color] title ["\u00a76你赢了！"]
+title @a[gamemode=spectator,team=play.color] title ["\u00a7c\u00a7l游戏结束"]
 execute as @a[gamemode=adventure,team=play.color,tag=play.total] run function minecraft:small_games/total/win_score {score:3}
 gamemode adventure @a[gamemode=spectator,team=play.color]
 gamemode adventure @a[gamemode=spectator,team=wait.color]

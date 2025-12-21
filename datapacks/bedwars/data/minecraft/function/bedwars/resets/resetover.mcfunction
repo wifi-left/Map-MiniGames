@@ -4,10 +4,12 @@
 ## 
 title @a[tag=bw.player] title ["\u00a7aBedwars"]
 title @a[tag=bw.player] subtitle ["\u00a7fEnjoy the game!"]
-execute as @e[tag=diamond,type=marker] at @s run summon minecraft:text_display ~ ~2.8 ~ {Tags:["bedwars","diamond.title"],text:"\u00a7b\u00a7l钻石",CustomNameVisible:0b,billboard:"vertical",see_through:false,view_range:0.4f}
+execute as @e[tag=diamond,type=marker] at @s run summon minecraft:text_display ~ ~2.8 ~ {Tags:["bedwars","diamond.title"],text:"\u00a7b\u00a7l钻石生成点",CustomNameVisible:0b,billboard:"vertical",see_through:false,view_range:0.4f}
 execute as @e[tag=diamond,type=marker] at @s run summon minecraft:text_display ~ ~2.5 ~ {Tags:["bedwars","diamond.subtitle"],text:"To be edited",CustomNameVisible:0b,billboard:"vertical",see_through:false,view_range:0.4f}
-execute as @e[tag=emerald,type=marker] at @s run summon minecraft:text_display ~ ~2.8 ~ {Tags:["bedwars","emerald.title"],text:"\u00a72绿宝石",CustomNameVisible:0b,billboard:"vertical",see_through:false,view_range:0.4f}
+execute as @e[tag=emerald,type=marker] at @s run summon minecraft:text_display ~ ~2.8 ~ {Tags:["bedwars","emerald.title"],text:"\u00a72\u00a7l绿宝石生成点",CustomNameVisible:0b,billboard:"vertical",see_through:false,view_range:0.4f}
 execute as @e[tag=emerald,type=marker] at @s run summon minecraft:text_display ~ ~2.5 ~ {Tags:["bedwars","emerald.subtitle"],text:"To be edited",CustomNameVisible:0b,billboard:"vertical",see_through:false,view_range:0.4f}
+execute as @e[tag=diamond,type=marker] at @s run summon minecraft:armor_stand ~ ~2.5 ~ {Tags:["bedwars","diamond.icon","bedwars.icon"],CustomNameVisible:0b,NoBasePlate:true,NoGravity:true,Invisible:true,Invulnerable:true,equipment:{head:{id:"diamond_block"}},DisabledSlots:4144896,Small:true}
+execute as @e[tag=emerald,type=marker] at @s run summon minecraft:armor_stand ~ ~2.5 ~ {Tags:["bedwars","emerald.icon","bedwars.icon"],CustomNameVisible:0b,NoBasePlate:true,NoGravity:true,Invisible:true,Invulnerable:true,equipment:{head:{id:"emerald_block"}},DisabledSlots:4144896,Small:true}
 
 tellraw @a[tag=bw.player] ["§a重置完毕！"]
 scoreboard players set bw.reset board 0
@@ -108,8 +110,8 @@ execute store result score bw.event.time tick run bossbar get minigames:bedwars 
 scoreboard players operation bw.event.time tick -= bw.event.countdown board
 execute store result bossbar minigames:bedwars value run scoreboard players get bw.event.time tick
 
-scoreboard players set bw.set.em board 90
-scoreboard players set bw.set.dm board 60
+scoreboard players set bw.set.em board 1200
+scoreboard players set bw.set.dm board 960
 
 kill @e[type=item]
 

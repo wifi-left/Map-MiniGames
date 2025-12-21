@@ -6,7 +6,7 @@ title @s reset
 tag @s remove bw.play
 
 tellraw @a ["§a§l[MESSAGE] ",{"selector":"@s"},"§7 加入了 §9§l起床战争 Bedwars§7 ."]
-tp @s -302 76 210 0 0
+execute in overworld run tp @s -302 76 210 0 0
 execute if score bw.state state matches 1.. run function bedwars/message/spec
 execute if score bw.state state matches ..-1 run tellraw @s ["\n§e您已加入队列。\n"]
 execute if score bw.state state matches -1 run gamemode spectator @s

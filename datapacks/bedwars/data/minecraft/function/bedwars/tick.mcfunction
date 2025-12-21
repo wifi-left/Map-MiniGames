@@ -1,3 +1,5 @@
+execute if score bw.state state matches 1.. run function minecraft:bedwars/summon
+
 execute as @a[tag=bw.play,scores={die=1..}] at @s run function minecraft:bedwars/during/player/loot
 execute if score bw.state state matches 1.. run function minecraft:bedwars/testfor
 ## Shop
@@ -26,6 +28,7 @@ kill @e[type=item,nbt={Item:{id:"minecraft:lime_bed"}}]
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{bw:1}}}}]
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{shop:1}}}}]
 
+execute as @e[tag=bedwars.icon] at @s run rotate @s ~5 ~
 
 execute as @e[tag=bedwars,type=area_effect_cloud] at @s run data merge entity @s {Duration:-1,Age:-2147483648,WaitTime:-2147483648}
 # [!]
@@ -37,9 +40,10 @@ scoreboard players reset @a bw.board
 
 execute as @a[x=-225,y=9,z=111,distance=0..2,gamemode=!creative] at @s run function minecraft:bedwars/during/player/died
 
-execute as @e[type=egg,nbt={Item:{id:"minecraft:egg"}}] at @s run function minecraft:bedwars/item/eggtick
-kill @e[type=chicken]
-execute as @e[type=egg,nbt={Item:{id:"minecraft:egg"}}] run scoreboard players add @s board 1
+# 
+
+execute as @e[x=-392,y=-64,z=299,dx=176,dy=140,dz=-178,type=egg] at @s run function minecraft:bedwars/item/eggtick
+kill @e[type=chicken,x=-392,y=-64,z=299,dx=176,dy=140,dz=-178]
 
 ## Kill Shop Items
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{bwshopitem:1}}}}]
@@ -51,7 +55,7 @@ execute if entity @e[scores={attack.1=1..},tag=bw.player] run effect clear @a[ta
 execute if entity @e[scores={attack.1=1..},tag=bw.player] run tellraw @a[tag=INV,scores={hurt.1=1..}] ["§c你的隐身状态因为受到伤害被取消！"]
 scoreboard players reset @a[scores={hurt.1=1..}] hurt.1
 scoreboard players reset @a[scores={attack.1=1..}] attack.1
-execute as @a[tag=INV] at @s run particle minecraft:dust{color:[0.388d, 0.388d, 0.388d],scale:0.5} ~ ~ ~ 0 0 0 1 1 force
+execute as @a[tag=INV] at @s run particle minecraft:dust{color:16449791,scale:0.5} ~ ~ ~ 0.05 0.05 0.05 1 1 force
 
 execute if score bw.mode state matches 3 run function minecraft:bedwars/special/xp_change
 execute if score bw.mode state matches 7 run function minecraft:bedwars/special/xp_change

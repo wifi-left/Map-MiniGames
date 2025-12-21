@@ -16,3 +16,6 @@ execute if score bw.custom_team board matches 2.. run scoreboard players set bw.
 
 execute if score bw.custom_team board matches 0 run data modify block -305 76 218 front_text.messages[2] set value "\u00a7a启用 Enabled"
 execute if score bw.custom_team board matches 1 run data modify block -305 76 218 front_text.messages[2] set value "\u00a7c禁用 Disabled"
+
+execute if score bw.custom_team board matches 0 run title @a[team=bw.wait] actionbar ["\u00a7b\u00a7l已启用自定义组队功能"]
+execute if score bw.custom_team board matches 1 run title @a[team=bw.wait] actionbar ["\u00a7c\u00a7l已禁用自定义组队功能"]

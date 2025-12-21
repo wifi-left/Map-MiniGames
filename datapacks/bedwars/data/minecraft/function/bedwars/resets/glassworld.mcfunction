@@ -4,6 +4,10 @@
 ## 
 execute unless score bw.state state matches -1 run return 0
 execute if score bw.reset board matches -10 in airworld run forceload add -753 121 -577 299
+
+execute if score bw.reset board matches -5 in overworld run fill -216 -64 299 -392 -32 121 air strict
+execute if score bw.reset board matches -4 in overworld run fill -216 -31 299 -392 -1 121 air strict
+
 execute if score bw.reset board matches 1..1 run fill -216 0 299 -392 0 121 air strict
 execute if score bw.reset board matches 2..2 run fill -216 1 299 -392 1 121 air strict
 execute if score bw.reset board matches 3..3 run fill -216 2 299 -392 2 121 air strict

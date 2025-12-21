@@ -20,6 +20,8 @@ kill @e[tag=emerald.title]
 kill @e[tag=diamond.title]
 kill @e[tag=emerald.subtitle]
 kill @e[tag=diamond.subtitle]
+kill @e[tag=bedwars.icon]
+
 kill @e[tag=dmshop]
 kill @e[tag=shop]
 kill @e[tag=shop2]

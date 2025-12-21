@@ -8,7 +8,13 @@ execute if score build.success temp matches 1 run tag @s add build_guess.guesser
 execute if score build.success temp matches 1 run gamemode spectator @s
 execute if score build.success temp matches 1 run return 1
 
-tellraw @a[team=build_guess] [{text:"",color:white},{"selector":"@s"},"\u00a7b 的猜测是 ",{nbt:"SelectedItem.components.\"minecraft:writable_book_content\".pages[0].raw",entity:"@s"}]
+data modify storage minecraft:temp build_guess_text.text set from entity @s SelectedItem.components."minecraft:writable_book_content".pages[0].raw
+
+execute store result score length temp run data get storage minecraft:temp build_guess_text.text
+
+execute if score length temp matches 11.. run data modify storage minecraft:temp build_guess_text.text set string storage minecraft:temp build_guess_text.text 0 10
+
+tellraw @a[team=build_guess] [{text:"",color:white},{"selector":"@s"},"\u00a7b 的猜测是 ",{nbt:"build_guess_text.text",storage:"minecraft:temp",interpret:false}]
 tellraw @s ["\u00a7c你猜的不对。"]
 execute at @s run playsound entity.player.teleport player @s ~ ~ ~ 1 0 1
 clear @s writable_book

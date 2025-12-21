@@ -5,9 +5,9 @@
 tellraw @a ["§9生存游戏 ＞ §c游戏结束。\n§6获胜者：幸存者队 (",{"selector":"@a[gamemode=survival,team=play.sur]"},")"]
 execute as @a[gamemode=survival,team=play.sur,tag=play.total] run function minecraft:small_games/total/win_score {score:2}
 
-title @a[team=play.sur] title ["\u00a7cGame Over"]
-title @a[team=play.sur.zom] title ["\u00a7cGame Over"]
-title @a[team=wait.sur] title ["\u00a7cGame Over"]
-title @a[gamemode=survival,team=play.sur] title ["\u00a76You won!"]
+title @a[team=play.sur] title ["\u00a7c游戏结束"]
+title @a[team=play.sur.zom] title ["\u00a7c游戏结束"]
+title @a[team=wait.sur] title ["\u00a7c游戏结束"]
+title @a[gamemode=survival,team=play.sur] title ["\u00a76你赢了！"]
 function surgame:over/over
 

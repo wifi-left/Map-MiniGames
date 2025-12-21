@@ -377,6 +377,26 @@ execute if score bw.shopmode board matches 0 as @s[tag=bw.buy.9] at @s run funct
 execute if score bw.shopmode board matches 1 as @s[tag=bw.buy.9] at @s run function minecraft:bedwars/shop_xp/buy9
 tag @s remove bw.buy.9
 
+execute as @s store success score @s bw.board run clear @s *[custom_data~{shop:-36}]
+execute as @s if score @s bw.board matches 1.. run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute if score @s bw.board matches 1.. if score bw.shopmode board matches 1 at @s run function minecraft:bedwars/shop_xp/buyf36
+execute if score @s bw.board matches 1.. unless score bw.shopmode board matches 1 at @s run function minecraft:bedwars/shop/buyf36
+
+execute as @s store success score @s bw.board run clear @s *[custom_data~{shop:-37}]
+execute as @s if score @s bw.board matches 1.. run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute if score @s bw.board matches 1.. if score bw.shopmode board matches 1 at @s run function minecraft:bedwars/shop_xp/buyf37
+execute if score @s bw.board matches 1.. unless score bw.shopmode board matches 1 at @s run function minecraft:bedwars/shop/buyf37
+
+execute as @s store success score @s bw.board run clear @s *[custom_data~{shop:-38}]
+execute as @s if score @s bw.board matches 1.. run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute if score @s bw.board matches 1.. if score bw.shopmode board matches 1 at @s run function minecraft:bedwars/shop_xp/buyf38
+execute if score @s bw.board matches 1.. unless score bw.shopmode board matches 1 at @s run function minecraft:bedwars/shop/buyf38
+
+execute as @s store success score @s bw.board run clear @s *[custom_data~{shop:-39}]
+execute as @s if score @s bw.board matches 1.. run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute if score @s bw.board matches 1.. if score bw.shopmode board matches 1 at @s run function minecraft:bedwars/shop_xp/buyf39
+execute if score @s bw.board matches 1.. unless score bw.shopmode board matches 1 at @s run function minecraft:bedwars/shop/buyf39
+
 execute as @s store success score @s bw.board run clear @s *[custom_data~{shop:trap_1}]
 execute as @s if score @s bw.board matches 1.. run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
 execute as @s if score @s bw.board matches 1.. run function minecraft:bedwars/shop/buy_trap_1

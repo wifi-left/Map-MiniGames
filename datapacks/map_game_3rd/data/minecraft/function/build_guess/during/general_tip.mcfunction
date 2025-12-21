@@ -4,3 +4,7 @@ execute if data storage minecraft:temp {build_guess:{length:3}} run data modify 
 execute if data storage minecraft:temp {build_guess:{length:4}} run data modify storage minecraft:temp build_guess.tip set value "_ _ _ _"
 execute if data storage minecraft:temp {build_guess:{length:5}} run data modify storage minecraft:temp build_guess.tip set value "_ _ _ _ _"
 execute if data storage minecraft:temp {build_guess:{length:6}} run data modify storage minecraft:temp build_guess.tip set value "_ _ _ _ _ _"
+execute if data storage minecraft:temp {build_guess:{length:7}} run data modify storage minecraft:temp build_guess.tip set value "_ _ _ _ _ _ _"
+execute if data storage minecraft:temp {build_guess:{length:8}} run data modify storage minecraft:temp build_guess.tip set value "_ _ _ _ _ _ _ _"
+execute if data storage minecraft:temp {build_guess:{length:9}} run data modify storage minecraft:temp build_guess.tip set value "_ _ _ _ _ _ _ _ _"
+execute if data storage minecraft:temp {build_guess:{length:10}} run data modify storage minecraft:temp build_guess.tip set value "_ _ _ _ _ _ _ _ _ _"

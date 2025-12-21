@@ -2,7 +2,8 @@
     "replace": false,
     "values":[
         "dark_oak_planks",
-        "ladder"
+        "ladder",
+        "cut_sandstone"
     ]
 }
 

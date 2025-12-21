@@ -11,7 +11,7 @@ execute as @a[team=boom,tag=bomb.win,tag=play.total] run function minecraft:smal
 
 execute as @a[team=boom,tag=bomb.win] run title @a[team=boom,tag=bomb.win] title ["\u00a76You Win"]
 execute as @a[team=boom,tag=bomb.win] run title @a[team=boom,tag=bomb.win] subtitle ["\u00a7a你获得了这把比赛的胜利！"]
-execute as @a[team=boom,tag=bomb.win] run title @a[team=boom,tag=!bomb.win] title ["\u00a7cGame Over"]
+execute as @a[team=boom,tag=bomb.win] run title @a[team=boom,tag=!bomb.win] title ["\u00a7c游戏结束"]
 execute as @a[team=boom,tag=bomb.win] run title @a[team=boom,tag=!bomb.win] subtitle ["\u00a76获胜者：",{"selector": "@a[team=boom,tag=bomb.win]"}]
 execute as @a[team=boom,tag=bomb.win] run tellraw @a[team=boom] ["§2§l[拆弹达人] §6游戏结束。获胜者：",{"selector":"@a[team=boom,tag=bomb.win]"}]
 execute as @a[team=boom] at @s run tellraw @s ["§a本次游戏你的总分数：",{"score":{"name":"@s","objective":"bomb.score"},"color":"gold"}]

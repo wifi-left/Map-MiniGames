@@ -3,7 +3,7 @@ data modify storage minecraft:temp build_guess.tip set value "本轮结束，等
 gamemode spectator @a[gamemode=adventure,team=build_guess]
 tellraw @a[team=build_guess] ["\n\u00a76本轮结束。\n"]
 title @a[team=build_guess] title ["\u00a76本轮结束"]
-title @a[team=build_guess] subtitle ["\u00a7b请稍作等待"]
+title @a[team=build_guess] subtitle ["\u00a7b本轮词汇：",{nbt:"build_guess.word",storage:"minecraft:temp",color:yellow}]
 execute if score build_guess.any_success board matches 1.. run give @a[tag=build_guess.builder] sunflower[max_stack_size=99,rarity=epic,item_name="金币",custom_data={"build_guess":3}] 3
 execute if score build_guess.any_success board matches 1.. run tellraw @a[tag=build_guess.builder] ["\u00a7e金币 +3（有人猜出来了）"]
 execute unless score build_guess.any_success board matches 1.. run tellraw @a[tag=build_guess.builder] ["\u00a7c没有人猜出建筑。"]

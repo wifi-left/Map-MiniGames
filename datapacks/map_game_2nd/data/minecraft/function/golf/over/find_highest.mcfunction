@@ -11,7 +11,7 @@ execute as @a[team=golf,tag=golf.win,tag=play.total] run function minecraft:smal
 
 execute as @a[team=golf,tag=golf.win] run title @a[team=golf,tag=golf.win] title ["\u00a76You Win"]
 execute as @a[team=golf,tag=golf.win] run title @a[team=golf,tag=golf.win] subtitle ["\u00a7a你获得了这把比赛的胜利！"]
-execute as @a[team=golf,tag=golf.win] run title @a[team=golf,tag=!golf.win] title ["\u00a7cGame Over"]
+execute as @a[team=golf,tag=golf.win] run title @a[team=golf,tag=!golf.win] title ["\u00a7c游戏结束"]
 execute as @a[team=golf,tag=golf.win] run title @a[team=golf,tag=!golf.win] subtitle ["\u00a76获胜者：",{"selector": "@a[team=golf,tag=golf.win]"}]
 execute as @a[team=golf,tag=golf.win] run tellraw @a[team=golf] ["§2§l[GOLF] §6游戏结束。获胜者：",{"selector":"@a[team=golf,tag=golf.win]"}]
 execute as @a[team=golf] at @s run tellraw @s ["§a本次游戏你的总分数：",{"score":{"name":"@s","objective":"golf.score"},"color":"gold"}]

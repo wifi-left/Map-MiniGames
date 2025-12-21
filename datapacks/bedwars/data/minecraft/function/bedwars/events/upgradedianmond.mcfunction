@@ -9,7 +9,7 @@ scoreboard players set bw.event.countdown board 360
 # 1: Emerlad Up
 # 2: Bed Gone
 # 3: Dragon
-scoreboard players set bw.set.dm board 32
+scoreboard players set bw.set.dm board 640
 
 bossbar set minigames:bedwars max 720
 # execute store result bossbar minigames:bedwars value run scoreboard players get bw.reset board

@@ -39,3 +39,5 @@ clear @a[scores={bw.axe=..0},gamemode=!spectator,tag=bw.play,nbt=!{Inventory:[{i
 
 clear @a[tag=!bw.shears,gamemode=!spectator,tag=bw.play,nbt={Inventory:[{id:"minecraft:shears"}]}] shears
 
+execute as @a[tag=bw.play] if items entity @s hotbar.* glass_bottle run clear @s glass_bottle
+execute as @a[tag=bw.play] if items entity @s weapon.* glass_bottle run clear @s glass_bottle

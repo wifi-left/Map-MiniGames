@@ -4,9 +4,9 @@
 ## 
 tellraw @a ["\n\n\n\n§f§l胜利 > §e黄队 §6获得了胜利！\n"]
 execute as @a[team=bw.yellow,tag=play.total] run function minecraft:small_games/total/win_score {score:2}
-title @a[tag=bw.player] title ["\u00a7c\u00a7lGAME OVER"]
-title @a[tag=bw.player] subtitle ["\u00a7dBedwars \u00a7eTeam Yellow \u00a76Won"]
-title @a[team=bw.yellow] title ["\u00a76You won!"]
-title @a[team=bw.yellow] subtitle ["\u00a7dBedwars: \u00a7eTeam Yellow"]
+title @a[tag=bw.player] title ["\u00a7c\u00a7l游戏结束"]
+title @a[tag=bw.player] subtitle ["\u00a7e黄队 \u00a76获胜"]
+title @a[team=bw.yellow] title ["\u00a76你赢了！"]
+title @a[team=bw.yellow] subtitle ["\u00a7e黄队 \u00a76获胜"]
 function minecraft:bedwars/after/over
 

@@ -8,7 +8,7 @@ kill @e[tag=GCAR]
 kill @e[type=item,nbt={Item:{id:"minecraft:saddle"}}]
 tellraw @a[team=car.play] ["§a胜利者：",{"selector":"@a[gamemode=spectator,tag=car.win]"}]
 tellraw @a[team=car.wait] ["§a胜利者：",{"selector":"@a[gamemode=spectator,tag=car.win]"}]
-title @a[team=car.play] title ["\u00a7c\u00a7lGAME OVER"]
+title @a[team=car.play] title ["\u00a7c\u00a7l游戏结束"]
 title @a[team=car.wait] subtitle ["\u00a7c5\u00a7e秒后返回等待大厅"]
 gamemode spectator @a[team=car.play]
 

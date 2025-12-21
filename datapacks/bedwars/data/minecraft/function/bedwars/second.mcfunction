@@ -1,13 +1,13 @@
-execute if score bw.state state matches 1.. run function minecraft:bedwars/summon
 execute if score bw.state state matches 1.. run function minecraft:bedwars/testforover
+
 
 ## 防止重置的时候出现问题
 execute if score bw.state state matches -1 run function bedwars/testforreset
 execute if score bw.state state matches -3..-2 run function bedwars/wait_start
-execute if score bw.state state matches -3..0 run title @a[team=bw.wait,scores={bw.team=1}] actionbar ["\u00a7b\u00a7l您选择的队伍：\u00a7c红队"]
-execute if score bw.state state matches -3..0 run title @a[team=bw.wait,scores={bw.team=2}] actionbar ["\u00a7b\u00a7l您选择的队伍：\u00a79蓝队"]
-execute if score bw.state state matches -3..0 run title @a[team=bw.wait,scores={bw.team=3}] actionbar ["\u00a7b\u00a7l您选择的队伍：\u00a7e黄队"]
-execute if score bw.state state matches -3..0 run title @a[team=bw.wait,scores={bw.team=4}] actionbar ["\u00a7b\u00a7l您选择的队伍：\u00a7a绿队"]
+execute unless score bw.custom_team board matches 1 if score bw.state state matches -3..0 run title @a[team=bw.wait,scores={bw.team=1}] actionbar ["\u00a7b\u00a7l您选择的队伍：\u00a7c红队"]
+execute unless score bw.custom_team board matches 1 if score bw.state state matches -3..0 run title @a[team=bw.wait,scores={bw.team=2}] actionbar ["\u00a7b\u00a7l您选择的队伍：\u00a79蓝队"]
+execute unless score bw.custom_team board matches 1 if score bw.state state matches -3..0 run title @a[team=bw.wait,scores={bw.team=3}] actionbar ["\u00a7b\u00a7l您选择的队伍：\u00a7e黄队"]
+execute unless score bw.custom_team board matches 1 if score bw.state state matches -3..0 run title @a[team=bw.wait,scores={bw.team=4}] actionbar ["\u00a7b\u00a7l您选择的队伍：\u00a7a绿队"]
 #
 
 execute as @e[tag=bw.tntsheep] at @s run function bedwars/item/sheepsecond

@@ -12,6 +12,6 @@ execute if score @s bw.tmp.em matches 1.. run clear @s emerald 1
 execute unless score @s bw.tmp.em matches 1.. run tellraw @s ["§c你的资源不够买这个东西!"]
 execute unless score @s bw.tmp.em matches 1.. run playsound minecraft:entity.enderman.teleport player @s ~ ~ ~ 1 0 1
 execute if score @s bw.tmp.em matches 1.. run tellraw @s ["§a你购买了§6Bridge Egg * 1"]
-execute if score @s bw.tmp.em matches 1.. run give @s egg[can_place_on=[{blocks:"#minecraft:bwplace"}],tooltip_display={hidden_components:[can_place_on,can_break]},can_break=[{blocks:"#minecraft:bedblocks"}]] 1
+execute if score @s bw.tmp.em matches 1.. run give @s egg[can_place_on=[{blocks:"#minecraft:bwplace"}],tooltip_display={hidden_components:[can_place_on,can_break]},can_break=[{blocks:"#minecraft:bedblocks"}],item_name='搭桥蛋'] 1
 
 

@@ -9,6 +9,7 @@ execute if score build_guess.state state matches 3..5 unless entity @a[gamemode=
 execute if score build_guess.state state matches 3..5 unless entity @a[gamemode=adventure,team=build_guess,tag=build_guess.guesser] run function minecraft:build_guess/round_over
 execute if score build_guess.state state matches 3..5 unless entity @a[gamemode=adventure,team=build_guess,tag=build_guess.builder] run function minecraft:build_guess/round_over
 execute if score build_guess.state state matches 3..5 if score build_guess.time board matches 60 run function minecraft:build_guess/during/give_tip
+execute if score build_guess.state state matches 3..5 if score build_guess.time board matches 90 run function minecraft:build_guess/during/give_tip
 
 execute if score build_guess.state state matches 5 run effect give @a[team=build_guess] invisibility 2 25 true
 
