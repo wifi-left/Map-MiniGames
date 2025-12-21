@@ -24,25 +24,25 @@
                 {
                     "type": "minecraft:loot_table",
                     "value": "lucky_pillar/random_potion",
-                    "weight": 3,
-                    "quality": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "lucky_pillar/random_weapon",
-                    "weight": 2,
-                    "quality": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "lucky_pillar/random_armor",
                     "weight": 5,
                     "quality": 1
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "value": "lucky_pillar/random_arrow",
+                    "value": "lucky_pillar/random_weapon",
                     "weight": 4,
+                    "quality": 1
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lucky_pillar/random_armor",
+                    "weight": 6,
+                    "quality": 1
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lucky_pillar/random_arrow",
+                    "weight": 6,
                     "quality": 1
                 }
             ]

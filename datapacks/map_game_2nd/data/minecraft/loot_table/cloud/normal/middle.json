@@ -156,11 +156,7 @@
                     "weight": 2,
                     "functions": [
                         {
-                            "function": "minecraft:enchant_randomly",
-                            "enchantments": [
-                                "minecraft:feather_falling",
-                                "minecraft:protection"
-                            ]
+                            "function": "minecraft:enchant_randomly"
                         }
                     ]
                 },
@@ -186,7 +182,7 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:enchanted_golden_apple",
-                    "weight": 10,
+                    "weight": 1,
                     "functions": [
                         {
                             "function": "minecraft:set_count",
