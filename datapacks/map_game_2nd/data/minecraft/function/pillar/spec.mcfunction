@@ -4,4 +4,4 @@
 ## 
 gamemode spectator @s
 tellraw @s ["§c很抱歉，当前游戏已经开始。你将在下一轮进入游戏。"]
-tp @s -96 37 613 0 90
+execute in airworld run tp @s -96 37 613 0 90
