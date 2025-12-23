@@ -82,6 +82,8 @@
         "zombie_horse_spawn_egg",
         "zombie_spawn_egg",
         "zombie_villager_spawn_egg",
-        "zombified_piglin_spawn_egg"
+        "zombified_piglin_spawn_egg",
+        "nautilus_spawn_egg",
+        "minecraft:zombie_nautilus_spawn_egg"
     ]
 }

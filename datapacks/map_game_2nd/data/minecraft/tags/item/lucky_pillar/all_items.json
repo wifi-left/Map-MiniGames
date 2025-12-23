@@ -441,7 +441,6 @@
         "leaf_litter",
         "lectern",
         "lever",
-        "light",
         "light_blue_banner",
         "light_blue_bed",
         "light_blue_candle",
@@ -1342,6 +1341,7 @@
         "written_book",
         "yellow_bundle",
         "yellow_dye",
-        "yellow_harness"
+        "yellow_harness",
+        "#minecraft:spears"
     ]
 }

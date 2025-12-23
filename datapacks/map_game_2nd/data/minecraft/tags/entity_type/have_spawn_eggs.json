@@ -1,7 +1,6 @@
 {
     "replace": false,
     "values": [
-        
         "allay",
         "armadillo",
         "axolotl",
@@ -84,6 +83,8 @@
         "zombie",
         "zombie_villager",
         "zombified_piglin",
-        "ender_dragon"
+        "ender_dragon",
+        "nautilus",
+        "zombie_nautilus"
     ]
 }

@@ -29,7 +29,7 @@
                 "minecraft:max_stack_size": 10,
                 "minecraft:unbreakable": {},
                 "minecraft:use_cooldown": {
-                  "seconds": 0.5,
+                  "seconds": 0.2,
                   "cooldown_group": "gun:3"
                 },
                 "minecraft:item_name": "冲锋枪",
@@ -65,7 +65,7 @@
                       "color": "gray"
                     },
                     {
-                      "text": "0.5s",
+                      "text": "0.2s",
                       "italic": false,
                       "color": "aqua"
                     }
@@ -104,7 +104,7 @@
                   "consume_seconds": 0.1,
                   "on_consume_effects": []
                 },
-                "minecraft:custom_data": "{gun_data:{status:\"no_bullet\",is_gun:1b,cooldown:100,cooldown_shoot:0.1,bullet_type:4,max_stack_size:1,damage:4,speed:4,distance:16}}",
+                "minecraft:custom_data": "{gun_data:{status:\"no_bullet\",is_gun:1b,cooldown:100,cooldown_shoot:0.1,bullet_type:4,max_stack_size:2,damage:4,speed:4,distance:16}}",
                 "!minecraft:damage": {},
                 "!minecraft:max_damage": {},
                 "minecraft:max_stack_size": 10,
@@ -134,7 +134,7 @@
                       "color": "gray"
                     },
                     {
-                      "text": "1",
+                      "text": "2",
                       "italic": false,
                       "color": "green"
                     }
@@ -266,7 +266,7 @@
                   "consume_seconds": 0.1,
                   "on_consume_effects": []
                 },
-                "minecraft:custom_data": "{gun_data:{status:\"no_bullet\",is_gun:1b,cooldown:20,cooldown_shoot:0.5,bullet_type:2,max_stack_size:5,damage:10,speed:12,distance:64}}",
+                "minecraft:custom_data": "{gun_data:{status:\"no_bullet\",is_gun:1b,cooldown:20,cooldown_shoot:0.1,bullet_type:2,max_stack_size:5,damage:10,speed:12,distance:64}}",
                 "!minecraft:damage": {},
                 "!minecraft:max_damage": {},
                 "minecraft:max_stack_size": 10,

@@ -11,5 +11,5 @@ scoreboard players operation temp.z1 temp -= temp.z temp
 
 # tellraw @a [{score:{name:"temp.x1",objective:temp}}," ",{score:{name:"temp.y1",objective:temp}}," ",{score:{name:"temp.z1",objective:temp}}," "]
 
-execute if score temp.x1 temp matches -4..4 if score temp.y1 temp matches -20..0 if score temp.z1 temp matches -4..4 run return 1
+execute if score temp.x1 temp matches -5..5 if score temp.y1 temp matches -20..0 if score temp.z1 temp matches -5..5 run return 1
 return fail
