@@ -8,6 +8,11 @@
       },
       "entries": [
         {
+          "type": "loot_table",
+          "value": "blaze/bullet",
+          "weight": 3
+        },
+        {
           "type": "minecraft:item",
           "name": "minecraft:tipped_arrow",
           "weight": 5,

@@ -3,6 +3,30 @@
     "pools": [
         {
             "rolls": {
+                "min": 1,
+                "max": 5
+            },
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "blaze/gun_stick"
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 1,
+                "max": 5
+            },
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "blaze/bullet"
+                }
+            ]
+        },
+        {
+            "rolls": {
                 "min": 2,
                 "max": 4
             },
