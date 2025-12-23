@@ -1,0 +1,1 @@
+execute unless items entity @s armor.chest elytra run item replace entity @s armor.chest with elytra[unbreakable={},enchantments={binding_curse:1},custom_data={elytra:tool},attribute_modifiers=[{id:a,type:"burning_time",operation:"add_value",amount:-100}]]

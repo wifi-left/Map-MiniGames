@@ -39,6 +39,7 @@ function minecraft:lobby/quickplay_info {id:32,name:"幸运之柱",color:c}
 function minecraft:lobby/quickplay_info {id:25,name:"生存游戏",color:c}
 function minecraft:lobby/quickplay_info {id:26,name:"起床战争",color:c}
 
+function minecraft:lobby/quickplay_info {id:48,name:"飞行大赛",color:3}
 function minecraft:lobby/quickplay_info {id:27,name:"桌游",color:3}
 function minecraft:lobby/quickplay_info {id:28,name:"拆弹专家",color:3}
 function minecraft:lobby/quickplay_info {id:9,name:"高尔夫",color:3}

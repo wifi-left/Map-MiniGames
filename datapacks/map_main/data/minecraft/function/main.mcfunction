@@ -85,7 +85,9 @@ execute if score btw.state state matches 1.. in overworld run function boatwars/
 execute as @a[team=lobby,tag=!parkouring] at @s if block ~ ~ ~ light_weighted_pressure_plate run function npark/join
 execute as @a[team=lobby,tag=!mazing] at @s if block ~ ~ ~ warped_pressure_plate run function maze/join
 
-spawnpoint @a[team=lobby] 188 124 26
+spawnpoint @a[team=lobby] 188 156 26 0 0
+
+execute positioned 188 156 26 as @a[distance=..2,gamemode=adventure] run function minecraft:sth_wrong
 
 effect give @a[team=chestgame] resistance 1 25 true
 
@@ -233,6 +235,7 @@ execute if score build_parkour.state state matches 1.. in parkourworld run funct
 execute if score build_guess.state state matches 1.. in parkourworld run function minecraft:build_guess/tick
 execute if score finder.state state matches 1.. in overworld run function minecraft:finder/tick
 execute if score one_arrow.state state matches 1.. in overworld run function minecraft:one_arrow/tick
+execute if score elytra.state state matches 1.. in parkourworld run function minecraft:elytra/tick
 
 execute as @e[type=ender_dragon,tag=!dragon.flagged] run function minecraft:lock_dragon
 

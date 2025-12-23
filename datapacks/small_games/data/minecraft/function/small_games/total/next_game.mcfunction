@@ -27,7 +27,7 @@ execute if entity @a[tag=merchant.player] run return run function merchant/durin
 # title @a[tag=play.total] title ["\u00a7a\u00a7lGame Total"]
 
 tellraw @a[tag=play.total] ["\n\u00a7e\u00a7l即将选择下一个小游戏\n"]
-
+execute as @a[tag=play.total] run scoreboard players operation @s globle.game = game.total globle.game
 tp @a[tag=play.total] 286 90 139 -90 0
 team join play.total @a[tag=play.total]
 execute as @a[tag=play.total] at @s run playsound entity.experience_orb.pickup player @s
