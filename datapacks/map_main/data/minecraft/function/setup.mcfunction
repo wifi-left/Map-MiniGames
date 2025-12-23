@@ -95,8 +95,8 @@ scoreboard players set bw.yellow BAMBOO_MOD_SAYING 2
 scoreboard players set bw.red BAMBOO_MOD_SAYING 2
 bossbar set minigames:bedwars players @a[tag=bw.player]
 
-gamerule disableElytraMovementCheck true
-gamerule disablePlayerMovementCheck true
+gamerule elytra_movement_check false
+gamerule player_movement_check false
 
 forceload add 0 0 0 0
 
@@ -108,9 +108,9 @@ kill @e[type=firework_rocket]
 kill @e[type=fireball]
 # kill @e[type=item]
 
-gamerule commandModificationBlockLimit 1145141
-gamerule maxCommandChainLength 1145141
-gamerule maxCommandForkCount 1145141
+gamerule max_block_modifications 1145141
+gamerule max_command_forks 1145141
+gamerule max_command_sequence_length 1145141
 
 scoreboard players reset * bw.board
 
