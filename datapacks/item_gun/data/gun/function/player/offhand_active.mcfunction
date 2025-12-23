@@ -1,4 +1,3 @@
-execute if items entity @s weapon.mainhand * run return run function gun:player/offhand_item_back
 function gun:player/offhand_item_back
 item replace block 0 -64 0 container.0 from entity @s weapon.mainhand
 execute store result score gun.bullet.now temp run data get block 0 -64 0 Items[{Slot:0b}].count
