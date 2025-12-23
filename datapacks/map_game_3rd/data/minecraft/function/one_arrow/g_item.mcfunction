@@ -1,0 +1,2 @@
+execute unless items entity @s hotbar.0 bow run item replace entity @s hotbar.0 with bow[unbreakable={},custom_data={one_arrow:arrow}]
+execute unless items entity @s hotbar.8 arrow run item replace entity @s hotbar.8 with arrow[custom_data={one_arrow:arrow}]

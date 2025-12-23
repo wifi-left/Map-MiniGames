@@ -1,0 +1,1 @@
+give @s minecraft:birch_button[custom_data={gun_data:{is_bullet:true,type:3}},max_stack_size=99,item_name='冲锋枪子弹'] 99

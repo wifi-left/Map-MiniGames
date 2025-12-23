@@ -7,8 +7,8 @@ execute if score tmp.canset board matches 0 run playsound block.anvil.land playe
 execute if score tmp.canset board matches 0 run return 0
 
 scoreboard players add blaze.special state 1
-execute if score blaze.special state matches 2.. run scoreboard players set blaze.special state 1
+execute if score blaze.special state matches 3.. run scoreboard players set blaze.special state 1
 
 execute if score blaze.special state matches 1 run data modify block ~ ~ ~ front_text.messages[1] set value {text:"[ 禁用 ]",color:gray}
-execute if score blaze.special state matches 2 run data modify block ~ ~ ~ front_text.messages[1] set value {text:"[ 魔法 ]",color:light_purple}
+execute if score blaze.special state matches 2 run data modify block ~ ~ ~ front_text.messages[1] set value {text:"[ 饥饿游戏模式 ]",color:light_purple}
 # execute if score blaze.special state matches 3 run data modify block ~ ~ ~ front_text.messages[1] set value {text:"[ 枪械 ]",color:"#65cbed"}

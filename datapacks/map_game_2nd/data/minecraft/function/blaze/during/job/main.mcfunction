@@ -1,4 +1,10 @@
 tag @s[tag=blaze.shop.ok] remove blaze.shop.ok
+
+execute if score blaze.special state matches 2 run tellraw @s ["\n\u00a7b 目前特殊模式：饥饿游戏模式。在该模式下，您无法选择职业，但您可以在地图的木桶中获取装备！\n"]
+execute if score blaze.special state matches 2 run dialog clear @s
+execute if score blaze.special state matches 2 run scoreboard players reset @s blaze.trigger
+execute if score blaze.special state matches 2 run return 0
+
 # 准备阶段
 execute if score blaze.state state matches 1 run tag @s add blaze.shop.ok
 execute if score blaze.state state matches 11 run tag @s add blaze.shop.ok

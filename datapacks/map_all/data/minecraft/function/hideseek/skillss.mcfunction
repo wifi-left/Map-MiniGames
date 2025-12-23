@@ -18,7 +18,8 @@ execute as @s[tag=skill.fly,team=hide.play.hun] at @s run function hideseek/fly_
 execute as @s[tag=skill.flybow,team=hide.play.hun] at @s run function hideseek/fly_bow
 xp add @s[tag=skill.boom] 15 levels
 xp add @s[tag=skill.change] 2 levels
-xp add @s[tag=skill.fly] 15 levels
+xp add @s[tag=skill.fly,team=hide.play.hun] 10 levels
+xp add @s[tag=skill.fly,team=hide.play.ani] 15 levels
 xp add @s[tag=skill.flybow] 10 levels
 xp add @s[tag=skill.ani.2] 10 levels
 # execute as @s[tag=gun.1] run function gun/1/shoot

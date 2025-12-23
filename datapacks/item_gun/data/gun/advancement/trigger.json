@@ -1,0 +1,22 @@
+{
+    "requirements": [
+        [
+            "trigger"
+        ]
+    ],
+    "criteria": {
+        "trigger": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": "{gun_data:{is_gun:true}}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "gun:adv/trigger"
+    }
+}

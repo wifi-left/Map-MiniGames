@@ -1,0 +1,1 @@
+give @s minecraft:oak_button[custom_data={gun_data:{is_bullet:true,type:1}},max_stack_size=99,item_name='手枪子弹'] 99

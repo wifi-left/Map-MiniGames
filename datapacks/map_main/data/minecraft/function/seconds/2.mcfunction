@@ -43,3 +43,4 @@ execute if score stronghold.state state matches 0 run effect give @a[team=strong
 execute if score random_parkour.state state matches 1.. in parkourworld run function random_parkour/second
 execute if score ballgame.state state matches 1.. in overworld run function minecraft:ballgame/second
 execute if score fishing.state state matches 1.. in overworld run function minecraft:fishing/second
+execute if score one_arrow.state state matches 1.. in overworld run function minecraft:one_arrow/second

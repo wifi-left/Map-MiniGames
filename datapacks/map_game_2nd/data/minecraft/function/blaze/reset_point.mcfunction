@@ -29,3 +29,5 @@ execute in killerworld positioned 196 -37 501 run kill @e[type=item,distance=..2
 execute in killerworld positioned -80 -38 507 run kill @e[type=item,distance=..200]
 execute in killerworld positioned -73 -38 236 run kill @e[type=item,distance=..200]
 execute in killerworld positioned 69 -38 277 run kill @e[type=item,distance=..200]
+
+function blaze/reset_chests

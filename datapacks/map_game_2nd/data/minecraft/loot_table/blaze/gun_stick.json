@@ -1,0 +1,336 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_hoe",
+          "weight": 8,
+          "quality": 8,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:attribute_modifiers": {},
+                "minecraft:consumable": {
+                  "sound": "minecraft:item.brush.brushing.gravel",
+                  "has_consume_particles": false,
+                  "animation": "spear",
+                  "consume_seconds": 0.1,
+                  "on_consume_effects": []
+                },
+                "minecraft:custom_data": "{gun_data:{status:\"no_bullet\",is_gun:1b,cooldown:20,cooldown_shoot:0.1,bullet_type:3,max_stack_size:10,damage:4,speed:8,distance:32}}",
+                "!minecraft:damage": {},
+                "!minecraft:max_damage": {},
+                "minecraft:max_stack_size": 10,
+                "minecraft:unbreakable": {},
+                "minecraft:use_cooldown": {
+                  "seconds": 0.5,
+                  "cooldown_group": "gun:3"
+                },
+                "minecraft:item_name": "冲锋枪",
+                "minecraft:lore": [
+                  [
+                    {
+                      "text": "伤害：",
+                      "italic": false,
+                      "color": "gray"
+                    },
+                    {
+                      "text": "4",
+                      "italic": false,
+                      "color": "red"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "弹夹大小：",
+                      "italic": false,
+                      "color": "gray"
+                    },
+                    {
+                      "text": "10",
+                      "italic": false,
+                      "color": "green"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "冷却：",
+                      "italic": false,
+                      "color": "gray"
+                    },
+                    {
+                      "text": "0.5s",
+                      "italic": false,
+                      "color": "aqua"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "上弹时长：",
+                      "italic": false,
+                      "color": "gray"
+                    },
+                    {
+                      "text": "1s",
+                      "italic": false,
+                      "color": "yellow"
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_hoe",
+          "weight": 12,
+          "quality": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:attribute_modifiers": {},
+                "minecraft:consumable": {
+                  "sound": "minecraft:item.brush.brushing.gravel",
+                  "has_consume_particles": false,
+                  "animation": "spear",
+                  "consume_seconds": 0.1,
+                  "on_consume_effects": []
+                },
+                "minecraft:custom_data": "{gun_data:{status:\"no_bullet\",is_gun:1b,cooldown:100,cooldown_shoot:0.1,bullet_type:4,max_stack_size:1,damage:4,speed:4,distance:16}}",
+                "!minecraft:damage": {},
+                "!minecraft:max_damage": {},
+                "minecraft:max_stack_size": 10,
+                "minecraft:unbreakable": {},
+                "minecraft:use_cooldown": {
+                  "seconds": 1,
+                  "cooldown_group": "gun:4"
+                },
+                "minecraft:item_name": "麻醉枪",
+                "minecraft:lore": [
+                  [
+                    {
+                      "text": "伤害：",
+                      "italic": false,
+                      "color": "gray"
+                    },
+                    {
+                      "text": "4",
+                      "italic": false,
+                      "color": "red"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "弹夹大小：",
+                      "italic": false,
+                      "color": "gray"
+                    },
+                    {
+                      "text": "1",
+                      "italic": false,
+                      "color": "green"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "冷却：",
+                      "italic": false,
+                      "color": "gray"
+                    },
+                    {
+                      "text": "1s",
+                      "italic": false,
+                      "color": "aqua"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "上弹时长：",
+                      "italic": false,
+                      "color": "gray"
+                    },
+                    {
+                      "text": "5s",
+                      "italic": false,
+                      "color": "yellow"
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:wooden_hoe",
+          "weight": 16,
+          "quality": 2,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:attribute_modifiers": {},
+                "minecraft:consumable": {
+                  "sound": "minecraft:item.brush.brushing.gravel",
+                  "has_consume_particles": false,
+                  "animation": "spear",
+                  "consume_seconds": 0.1,
+                  "on_consume_effects": []
+                },
+                "minecraft:custom_data": "{gun_data:{status:\"no_bullet\",is_gun:1b,cooldown:30,cooldown_shoot:0.1,bullet_type:1,max_stack_size:10,damage:4,speed:4,distance:16}}",
+                "!minecraft:damage": {},
+                "!minecraft:max_damage": {},
+                "minecraft:max_stack_size": 10,
+                "minecraft:unbreakable": {},
+                "minecraft:use_cooldown": {
+                  "seconds": 1,
+                  "cooldown_group": "gun:1"
+                },
+                "minecraft:item_name": "手枪",
+                "minecraft:lore": [
+                  [
+                    {
+                      "text": "伤害：",
+                      "italic": false,
+                      "color": "gray"
+                    },
+                    {
+                      "text": "4",
+                      "italic": false,
+                      "color": "red"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "弹夹大小：",
+                      "italic": false,
+                      "color": "gray"
+                    },
+                    {
+                      "text": "10",
+                      "italic": false,
+                      "color": "green"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "冷却：",
+                      "italic": false,
+                      "color": "gray"
+                    },
+                    {
+                      "text": "1s",
+                      "italic": false,
+                      "color": "aqua"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "上弹时长：",
+                      "italic": false,
+                      "color": "gray"
+                    },
+                    {
+                      "text": "1.5s",
+                      "italic": false,
+                      "color": "yellow"
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_hoe",
+          "weight": 4,
+          "quality": 32,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:attribute_modifiers": {},
+                "minecraft:consumable": {
+                  "sound": "minecraft:item.brush.brushing.gravel",
+                  "has_consume_particles": false,
+                  "animation": "spear",
+                  "consume_seconds": 0.1,
+                  "on_consume_effects": []
+                },
+                "minecraft:custom_data": "{gun_data:{status:\"no_bullet\",is_gun:1b,cooldown:20,cooldown_shoot:0.5,bullet_type:2,max_stack_size:5,damage:10,speed:12,distance:64}}",
+                "!minecraft:damage": {},
+                "!minecraft:max_damage": {},
+                "minecraft:max_stack_size": 10,
+                "minecraft:unbreakable": {},
+                "minecraft:use_cooldown": {
+                  "seconds": 4,
+                  "cooldown_group": "gun:2"
+                },
+                "minecraft:item_name": "狙击枪",
+                "minecraft:lore": [
+                  [
+                    {
+                      "text": "伤害：",
+                      "italic": false,
+                      "color": "gray"
+                    },
+                    {
+                      "text": "10",
+                      "italic": false,
+                      "color": "red"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "弹夹大小：",
+                      "italic": false,
+                      "color": "gray"
+                    },
+                    {
+                      "text": "5",
+                      "italic": false,
+                      "color": "green"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "冷却：",
+                      "italic": false,
+                      "color": "gray"
+                    },
+                    {
+                      "text": "4s",
+                      "italic": false,
+                      "color": "aqua"
+                    }
+                  ],
+                  [
+                    {
+                      "text": "上弹时长：",
+                      "italic": false,
+                      "color": "gray"
+                    },
+                    {
+                      "text": "1s",
+                      "italic": false,
+                      "color": "yellow"
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -232,5 +232,8 @@ execute if score fishing.state state matches 1.. in overworld run function minec
 execute if score build_parkour.state state matches 1.. in parkourworld run function minecraft:build_parkour/tick
 execute if score build_guess.state state matches 1.. in parkourworld run function minecraft:build_guess/tick
 execute if score finder.state state matches 1.. in overworld run function minecraft:finder/tick
+execute if score one_arrow.state state matches 1.. in overworld run function minecraft:one_arrow/tick
 
 execute as @e[type=ender_dragon,tag=!dragon.flagged] run function minecraft:lock_dragon
+
+function gun:main

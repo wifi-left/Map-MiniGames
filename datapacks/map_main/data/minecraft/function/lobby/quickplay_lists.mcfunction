@@ -19,6 +19,7 @@ function minecraft:lobby/quickplay_info {id:39,name:"挖矿达人",color:b}
 function minecraft:lobby/quickplay_info {id:22,name:"雪崩类游戏",color:b}
 function minecraft:lobby/quickplay_info {id:23,name:"TNT Wars",color:b}
 function minecraft:lobby/quickplay_info {id:15,name:"密室杀手",color:b}
+function minecraft:lobby/quickplay_info {id:47,name:"一箭毙命",color:b}
 function minecraft:lobby/quickplay_info {id:20,name:"狼人杀",color:b}
 function minecraft:lobby/quickplay_info {id:42,name:"球类游戏",color:b}
 function minecraft:lobby/quickplay_info {id:45,name:"彩蛋猎人",color:b}

@@ -6,7 +6,7 @@ tag @s add sel
 execute as @a[team=play.zombie] if score @s park.uuid = @e[tag=sel,limit=1] park.uuid run tag @s add hit.player
 execute as @e[tag=hitted,limit=1] unless data entity @s {Invulnerable:1b} run damage @s 0.1 minecraft:player_gun by @a[tag=hit.player,limit=1]
 
-execute store result score tmp.health board as @e[tag=hitted] run data get entity @s Health
+execute store result score tmp.health board as @e[tag=hitted] run data get entity @s Health 10
 # tellraw @a[tag=hit.player] ["\u00a7c 剩余",{"score":{"objective": "board","name": "@s"},"color":"yellow"},"\u00a7c♥"]
 # scoreboard players set tmp.health board 0
 execute store result score damage.tmp board run data get entity @s data.damage

@@ -1,0 +1,30 @@
+{
+    "criteria": {
+        "player_died_a": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "player": {
+                    "team": "blaze.team.a"
+                }
+            }
+        },
+        "player_died_b": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "player": {
+                    "team": "blaze.team.b"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "player_died_a",
+            "player_died_b"
+        ]
+    ],
+    "rewards": {
+        "function": "blaze/adv/loot_item"
+    }
+}
+
