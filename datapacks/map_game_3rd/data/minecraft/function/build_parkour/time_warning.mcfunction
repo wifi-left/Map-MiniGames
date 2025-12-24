@@ -1,0 +1,4 @@
+execute unless score build_parkour.state state matches 2 run tellraw @a[team=build_parkour] ["\u00a7e\u00a7l请注意！\u00a7b时间还剩下：",{score:{objective:board,name:"build_parkour.time"},color:gold},"\u00a76s"]
+execute unless score build_parkour.state state matches 2 run title @a[team=build_parkour] title ["\u00a7e时间提醒"]
+execute unless score build_parkour.state state matches 2 run title @a[team=build_parkour] subtitle ["\u00a7b时间还剩下：",{score:{objective:board,name:"build_parkour.time"},color:gold},"\u00a76s"]
+execute unless score build_parkour.state state matches 2 as @a[team=build_parkour] at @s run playsound entity.experience_orb.pickup player @s ~ ~ ~ 0.4 1 0.4

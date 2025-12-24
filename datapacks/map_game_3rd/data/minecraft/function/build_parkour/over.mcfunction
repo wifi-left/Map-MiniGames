@@ -37,5 +37,6 @@ tag @a remove build_parkour.builder
 tag @a remove build_parkour.tobecalc
 tag @a remove build_parkour.win
 
+function minecraft:build_parkour/reset
 tellraw @a[team=build_parkour] ["\u00a7e你将在\u00a7c5s\u00a7e后传送"]
 schedule function minecraft:build_parkour/tp 5s replace
