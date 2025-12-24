@@ -1,7 +1,9 @@
 effect give @a[team=elytra] resistance 2 25 true
+effect give @a[team=elytra] night_vision 12 25 true
 execute if score elytra.state state matches 2 run function minecraft:elytra/step/wait_start
 execute if score elytra.state state matches 3 run function minecraft:elytra/step/wait_time
 execute if score elytra.state state matches 3 run function minecraft:elytra/testfor
+
 execute if score elytra.state state matches 3 as @a[gamemode=adventure,team=elytra] run function minecraft:elytra/g_item
 scoreboard players operation elytra.temp temp = elytra.time tick
 scoreboard players set 5 board 5

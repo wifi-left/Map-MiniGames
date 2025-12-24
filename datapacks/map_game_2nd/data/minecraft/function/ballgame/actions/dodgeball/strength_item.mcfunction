@@ -1,0 +1,8 @@
+execute unless items entity @s hotbar.0 stick run item replace entity @s hotbar.0 with stick[custom_data={ball.force:2,ball_boots:true,ball:true},item_name={text:'力度: 2',color:green},enchantments={binding_curse:1},unbreakable={},dyed_color=327424]
+execute unless items entity @s hotbar.1 stick run item replace entity @s hotbar.1 with stick[custom_data={ball.force:4,ball_boots:true,ball:true},item_name={text:'力度: 4',color:green},enchantments={binding_curse:1},unbreakable={},dyed_color=1885465]
+execute unless items entity @s hotbar.2 stick run item replace entity @s hotbar.2 with stick[custom_data={ball.force:6,ball_boots:true,ball:true},item_name={text:'力度: 6',color:aqua},enchantments={binding_curse:1},unbreakable={},dyed_color=257791]
+execute unless items entity @s hotbar.3 stick run item replace entity @s hotbar.3 with stick[custom_data={ball.force:8,ball_boots:true,ball:true},item_name={text:'力度: 8',color:aqua},enchantments={binding_curse:1},unbreakable={},dyed_color=2599089]
+
+execute as @a[team=ballgame,gamemode=adventure] if score ballgame.state state matches 1..99 unless items entity @s container.* carrot_on_a_stick[custom_data~{ball:true,ball.skill:rush}] run function minecraft:ballgame/actions/football/give_rush
+execute as @a[team=ballgame,gamemode=adventure] if score ballgame.state state matches 1..99 unless items entity @s container.* carrot_on_a_stick[custom_data~{ball:true,ball.skill:jump}] run function minecraft:ballgame/actions/football/give_jump
+execute unless items entity @s armor.feet leather_boots run item replace entity @s armor.feet with leather_boots[unbreakable={},enchantments={binding_curse:1},dyed_color=65331]

@@ -8,9 +8,9 @@ execute if score ball.score.b board >= ballgame.score state run return run funct
 scoreboard players add ball.rounds board 1
 tellraw @a[team=ballgame] ["\u00a76\u00a7l游戏轮数：",{score:{name:"ball.rounds",objective:board},color:aqua},"\u00a7b轮\u00a7a/",{score:{name:"temp2",objective:temp},color:aqua},"\u00a7b轮"]
 execute as @a[team=ballgame,gamemode=adventure,tag=ball.teama] run spreadplayers 783 -160 0 4 under -56 false @s
-execute as @a[team=ballgame,gamemode=adventure,tag=ball.teama] run rotate @s 180 0
+execute as @a[team=ballgame,gamemode=adventure,tag=ball.teama] run rotate @s facing 783 -58 -173
 execute as @a[team=ballgame,gamemode=adventure,tag=ball.teamb] run spreadplayers 783 -191 0 4 under -56 false @s
-execute as @a[team=ballgame,gamemode=adventure,tag=ball.teamb] run rotate @s 0 0
+execute as @a[team=ballgame,gamemode=adventure,tag=ball.teamb] run rotate @s facing 783 -58 -173
 
 execute positioned 783 -58 -173 run function minecraft:ballgame/ball/summon_ball
 

@@ -1,5 +1,1 @@
-##
-## Datapack Upgrader v1.0.2 by wifi_left
-## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
-## 
 summon minecraft:zombie ~ ~1 ~ {CustomName:["\u00a7eBall"],CustomNameVisible:1b,Silent:1b,PersistenceRequired:1b,Glowing:1b,Team:"golf",Tags:["golf.ball"],DeathLootTable:"minecraft:empty",attributes:[{base:10d,id:"max_health"},{base:0d,id:"knockback_resistance"},{base:0d,id:"movement_speed"},{base:0d,id:"follow_range"},{base:0d,id:"attack_damage"},{base:0d,id:"attack_speed"},{base:10d,id:"armor"},{base:0d,id:"jump_strength"},{base:10d,id:"armor_toughness"}],equipment:{feet:{id:"minecraft:leather_boots"},legs:{id:"minecraft:leather_leggings"},chest:{id:"minecraft:leather_chestplate"},head:{id:"minecraft:player_head"}},drop_chances:{feet:0f,legs:0f,chest:0f,head:0f}}

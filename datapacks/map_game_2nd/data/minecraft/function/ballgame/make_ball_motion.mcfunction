@@ -1,4 +1,4 @@
-execute unless items entity @s armor.feet leather_boots run return fail
+execute unless items entity @s armor.feet leather_boots unless items entity @s weapon.mainhand leather_boots run return fail
 # execute store result score ball.motion0 temp run data get entity @e[distance=..10,tag=ballgame.ball,type=armor_stand,limit=1,sort=nearest] Motion[0] 10
 # execute store result score ball.motion1 temp run data get entity @e[distance=..10,tag=ballgame.ball,type=armor_stand,limit=1,sort=nearest] Motion[1] 10
 # execute store result score ball.motion2 temp run data get entity @e[distance=..10,tag=ballgame.ball,type=armor_stand,limit=1,sort=nearest] Motion[2] 10
@@ -11,6 +11,16 @@ execute if items entity @s armor.feet leather_boots[custom_data~{ball.force:5}] 
 execute if items entity @s armor.feet leather_boots[custom_data~{ball.force:6}] run scoreboard players set ball.force temp 6
 execute if items entity @s armor.feet leather_boots[custom_data~{ball.force:7}] run scoreboard players set ball.force temp 7
 execute if items entity @s armor.feet leather_boots[custom_data~{ball.force:8}] run scoreboard players set ball.force temp 8
+
+
+execute if items entity @s weapon.mainhand *[custom_data~{ball.force:1}] run scoreboard players set ball.force temp 1
+execute if items entity @s weapon.mainhand *[custom_data~{ball.force:2}] run scoreboard players set ball.force temp 2
+execute if items entity @s weapon.mainhand *[custom_data~{ball.force:3}] run scoreboard players set ball.force temp 3
+execute if items entity @s weapon.mainhand *[custom_data~{ball.force:4}] run scoreboard players set ball.force temp 4
+execute if items entity @s weapon.mainhand *[custom_data~{ball.force:5}] run scoreboard players set ball.force temp 5
+execute if items entity @s weapon.mainhand *[custom_data~{ball.force:6}] run scoreboard players set ball.force temp 6
+execute if items entity @s weapon.mainhand *[custom_data~{ball.force:7}] run scoreboard players set ball.force temp 7
+execute if items entity @s weapon.mainhand *[custom_data~{ball.force:8}] run scoreboard players set ball.force temp 8
 
 execute if score ball.force temp matches 1 at @s rotated ~ 0 run summon marker ^ ^ ^0.25 {Tags:["ballgame.ball.motion"]}
 execute if score ball.force temp matches 2 at @s rotated ~ 0 run summon marker ^ ^ ^0.5 {Tags:["ballgame.ball.motion"]}

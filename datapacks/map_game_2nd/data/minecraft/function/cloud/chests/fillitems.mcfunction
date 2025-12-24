@@ -10,9 +10,9 @@ execute if score sw.mode state matches 4 as @e[tag=sw.chest.sidemiddle] at @s ru
 execute if score sw.mode state matches 4 as @e[tag=sw.chest.middle] at @s run data merge block ~ ~ ~ {Items:[],LootTable:"minecraft:cloud/normal/middle"}
 
 # TNT MODE
-execute if score sw.mode state matches ..1 as @e[tag=sw.chest.side] at @s run loot insert ~ ~ ~ loot cloud/tnt/tnt_side
-execute if score sw.mode state matches ..1 as @e[tag=sw.chest.sidemiddle] at @s run loot insert ~ ~ ~ loot cloud/tnt/tnt_sidemi
-execute if score sw.mode state matches ..1 as @e[tag=sw.chest.middle] at @s run loot insert ~ ~ ~ loot cloud/tnt/tnt_middle
+execute if score sw.mode state matches ..1 as @e[tag=sw.chest.side] at @s run data merge block ~ ~ ~ {Items:[],LootTable:"minecraft:cloud/tnt/tnt_side"}
+execute if score sw.mode state matches ..1 as @e[tag=sw.chest.sidemiddle] at @s run data merge block ~ ~ ~ {Items:[],LootTable:"minecraft:cloud/tnt/tnt_sidemi"}
+execute if score sw.mode state matches ..1 as @e[tag=sw.chest.middle] at @s run data merge block ~ ~ ~ {Items:[],LootTable:"minecraft:cloud/tnt/tnt_middle"}
 
 # HUNGER MODE
 execute if score sw.mode state matches 2 as @e[tag=sw.chest.side] at @s run data merge block ~ ~ ~ {Items:[],LootTable:"minecraft:cloud/hunger/side"}

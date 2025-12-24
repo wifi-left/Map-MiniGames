@@ -7,6 +7,8 @@ execute if score tmp.canset board matches 0 run playsound block.anvil.land playe
 execute if score tmp.canset board matches 0 run return 0
 
 scoreboard players add ballgame.type state 1
-execute if score ballgame.type state matches 1.. run scoreboard players set ballgame.type state 0
+execute if score ballgame.type state matches 2.. run scoreboard players set ballgame.type state 0
 
 execute if score ballgame.type state matches 0 run data modify block ~ ~ ~ front_text.messages[1] set value {text:"[ 足球 ]",color:white}
+execute if score ballgame.type state matches 1 run data modify block ~ ~ ~ front_text.messages[1] set value {text:"[ 躲避球 ]",color:white}
+execute if score ballgame.type state matches 2 run data modify block ~ ~ ~ front_text.messages[1] set value {text:"[ 台球 ]",color:white}
