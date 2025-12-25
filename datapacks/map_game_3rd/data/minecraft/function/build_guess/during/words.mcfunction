@@ -328,7 +328,6 @@ data modify storage minecraft:temp build_guess_tmp set value {words:[\
 "墨镜",\
 "书包",\
 "钱包",\
-"提篮",\
 "水杯",\
 "饭盒",\
 "勺子",\

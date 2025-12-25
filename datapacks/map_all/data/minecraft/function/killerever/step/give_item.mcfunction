@@ -6,6 +6,6 @@ execute as @a[team=play.killer,tag=killer.saver] run function minecraft:killerev
 scoreboard players set play.killer tick 0
 execute as @a[team=play.killer,gamemode=adventure] run scoreboard players add play.killer tick 1
 scoreboard players set killer.time tick 301
-execute if score play.killer tick matches 11..20 run scoreboard players set killer.time tick 601
-execute if score play.killer tick matches 21.. run scoreboard players set killer.time tick 901
+execute if score play.killer tick matches 11.. run scoreboard players set killer.time tick 301
+execute if score play.killer tick matches 21.. run scoreboard players set killer.time tick 361
 scoreboard players set killer.state state 3
