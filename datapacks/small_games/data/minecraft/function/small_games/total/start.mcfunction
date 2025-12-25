@@ -16,7 +16,13 @@ team join play.total @a[team=wait.total]
 tag @a[team=play.total] add play.total
 function small_games/total/reset
 function small_games/total/next_game
+execute store result score count.1 board run data get storage minecraft:temp random_games.total
+scoreboard players operation total.gamecount board = total.gamecount state
+execute if score total.gamecount board matches 0 run scoreboard players operation total.gamecount board = count.1 board
+
+execute if score total.gamecount board > count.1 board run scoreboard players operation total.gamecount board = count.1 board
+execute if score total.gamecount state > count.1 board run scoreboard players operation total.gamecount state = count.1 board
+function minecraft:small_games/total/settings/play_game_count/show
 
 title @a title [{text:"\u00a76游戏开始",color:"#009966"}]
-execute store result score count.1 board run data get storage minecraft:temp random_games.total
-title @a subtitle ["此次游戏总数：",{"score":{"name":"count.1","objective":"board"},"color":"aqua"}]
+title @a subtitle ["此次游戏总数：",{"score":{"name":"total.gamecount","objective":"board"},"color":"aqua"}]

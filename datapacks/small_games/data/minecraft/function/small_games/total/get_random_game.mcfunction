@@ -6,6 +6,8 @@
 execute store result score count.1 board run data get storage minecraft:temp random_games.total
 execute store result score count.2 board run data get storage minecraft:temp random_games.games
 
+# total.gamecount state
+
 execute unless score count.2 board matches 1.. run return run function small_games/total/over
 
 data modify storage minecraft:temp random.min set value 0
@@ -15,16 +17,21 @@ execute store result storage minecraft:temp random.max int 1 run scoreboard play
 execute store result score total.random board run function utils:random with storage minecraft:temp random
 data merge storage minecraft:temp {arr_idx:{target:"storage minecraft:temp total_game",from:"storage minecraft:temp random_games.games",idx:0}}
 execute store result storage minecraft:temp arr_idx.idx int 1 run scoreboard players get total.random board
+
+scoreboard players operation count.3 board = count.1 board
+scoreboard players operation count.3 board -= count.2 board
+scoreboard players add count.3 board 1
+
+execute unless entity @a[tag=merchant.player] if score count.3 board > total.gamecount board run return run function small_games/total/over
+
 function utils:get_arr_idx_and_del with storage minecraft:temp arr_idx
 # count.3 当前已经玩游戏数量
 # count.2 还剩游戏数量
 # count.1 总游戏数量
-scoreboard players operation count.3 board = count.1 board
-scoreboard players operation count.3 board -= count.2 board
-scoreboard players add count.3 board 1
+
 execute store result score total.game board run data get storage minecraft:temp total_game.id
 
-tellraw @a[team=play.total] ["\n    §a§l下一局游戏 §e(",{"score":{"name":"count.3","objective":"board"},"color":"aqua"},"§e/",{"score":{"name":"count.1","objective":"board"},"color":"aqua"},"§e)§a§l：",{"nbt":"total_game.name",storage:"minecraft:temp","color":"light_purple","bold":true,interpret:true},"\n\n    §e游戏将会在 §c5 §e秒后开始。\n",{text:"\n游戏介绍：\n",color:gold,bold:true},{nbt:"total_game.prefix",color:green,storage:"minecraft:temp",interpret:true}," ",{nbt:"total_game.desc",color:gray,storage:"minecraft:temp",interpret:true},"\n"]
+tellraw @a[team=play.total] ["\n    §a§l下一局游戏 §e(",{"score":{"name":"count.3","objective":"board"},"color":"aqua"},"§e/",{"score":{"name":"total.gamecount","objective":"board"},"color":"aqua"},"§e)§a§l：",{"nbt":"total_game.name",storage:"minecraft:temp","color":"light_purple","bold":true,interpret:true},"\n\n    §e游戏将会在 §c5 §e秒后开始。\n",{text:"\n游戏介绍：\n",color:gold,bold:true},{nbt:"total_game.prefix",color:green,storage:"minecraft:temp",interpret:true}," ",{nbt:"total_game.desc",color:gray,storage:"minecraft:temp",interpret:true},"\n"]
 title @a[team=play.total] title ["\u00a7b下一轮游戏"]
 title @a[tag=play.total] subtitle [{"nbt":"total_game.name",storage:"minecraft:temp","color":"light_purple","bold":true,interpret:true}]
 
