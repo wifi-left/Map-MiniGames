@@ -32,7 +32,7 @@ scoreboard players set total.b.hastarted board 0
 scoreboard players set gametotal state 1
 
 tellraw @a[tag=play.total] ["\n\u00a7e\u00a7l即将选择下一轮小游戏\n"]
-title @a[tag=play.total] subtitle ["\n\u00a7e\u00a7l即将选择下一轮小游戏\n"]
+title @a[tag=play.total] subtitle ["\u00a7e\u00a7l即将选择下一轮小游戏"]
 execute as @a[tag=play.total] run scoreboard players operation @s globle.game = game.total globle.game
 execute in overworld run tp @a[tag=play.total] 322 89 159 180 0
 team join play.total @a[tag=play.total]
