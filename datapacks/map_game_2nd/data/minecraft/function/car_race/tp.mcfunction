@@ -5,7 +5,7 @@
 gamemode adventure @a[team=car.play,gamemode=!creative]
 gamemode adventure @a[team=car.wait,gamemode=!creative]
 
-execute if entity @a[team=car.play,tag=play.total] run function small_games/total/next_game
+execute if entity @a[team=car.play,tag=play.total] run function minecraft:small_games/total/next_game_trigger
 
 execute as @a[team=car.wait,gamemode=!creative] run function car_race/join
 execute as @a[team=car.play,gamemode=!creative] run function car_race/join

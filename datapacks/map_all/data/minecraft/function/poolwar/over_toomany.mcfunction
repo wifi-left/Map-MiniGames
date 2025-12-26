@@ -4,7 +4,7 @@
 ## 
 tellraw @a [{"text":"冬泳怪鸽","color":"#1E90FF","bold":true},"§a 游戏结束！ 原因：人数过多，已跳过此小游戏。"]
 scoreboard players set pw.state state 0
-execute if entity @a[team=pw.play,tag=play.total] run function small_games/total/next_game
+execute if entity @a[team=pw.play,tag=play.total] run function minecraft:small_games/total/next_game_trigger
 gamemode adventure @a[team=pw.play]
 gamemode adventure @a[team=pw.wait]
 

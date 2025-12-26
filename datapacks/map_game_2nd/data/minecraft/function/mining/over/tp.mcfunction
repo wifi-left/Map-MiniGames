@@ -1,5 +1,5 @@
 scoreboard players set mining.state state 0
-execute if entity @a[team=mining,tag=play.total] run function small_games/total/next_game
+execute if entity @a[team=mining,tag=play.total] run function minecraft:small_games/total/next_game_trigger
 execute as @a[team=mining,gamemode=survival] run gamemode spectator @s
 execute as @a[team=mining,gamemode=adventure] run gamemode spectator @s
 execute as @a[team=mining,gamemode=!creative] run function minecraft:mining/join

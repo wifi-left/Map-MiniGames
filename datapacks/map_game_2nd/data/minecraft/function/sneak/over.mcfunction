@@ -7,7 +7,7 @@ tellraw @a ["§f[SNEAK] §c游戏结束 ! §a获胜者: ",{"selector":"@a[team=s
 title @a[team=sneak,gamemode=adventure] title ["\u00a76你赢了！"]
 title @a[team=sneak,gamemode=spectator] title ["\u00a7c\u00a7l游戏结束"]
 execute as @a[team=sneak,gamemode=adventure,tag=play.total] run function minecraft:small_games/total/win_score {score:3}
-execute if entity @a[team=sneak,tag=play.total] run function small_games/total/next_game
+execute if entity @a[team=sneak,tag=play.total] run function minecraft:small_games/total/next_game_trigger
 kill @e[tag=sneak.mount]
 gamemode adventure @a[team=sneak]
 execute as @a[team=sneak] run function sneak/join

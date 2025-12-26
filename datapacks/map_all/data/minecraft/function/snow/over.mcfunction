@@ -7,7 +7,7 @@ tellraw @a ["§f[SNOW] §c游戏结束 ! §a获胜者: ",{"selector":"@a[team=pl
 title @a[team=play.snow,gamemode=adventure] title ["\u00a76你赢了！"]
 title @a[team=play.snow,gamemode=spectator] title ["\u00a7c\u00a7l游戏结束"]
 execute as @a[team=play.snow,gamemode=adventure,tag=play.total] run function minecraft:small_games/total/win_score {score:3}
-execute if entity @a[team=play.snow,tag=play.total] run function small_games/total/next_game
+execute if entity @a[team=play.snow,tag=play.total] run function minecraft:small_games/total/next_game_trigger
 gamemode adventure @a[team=play.snow]
 execute as @a[team=play.snow] run function snow/join
 gamemode adventure @a[team=wait.snow]

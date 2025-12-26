@@ -8,12 +8,12 @@ gamemode adventure @a[gamemode=spectator,team=play.duel.blue]
 gamemode adventure @a[gamemode=spectator,team=wait.duel]
 gamemode adventure @a[gamemode=spectator,team=wait.duel.yellow]
 
-# execute if entity @a[team=car.wait,tag=play.total] run function small_games/total/next_game
+# execute if entity @a[team=car.wait,tag=play.total] run function minecraft:small_games/total/next_game_trigger
 execute as @a[gamemode=adventure,team=wait.duel] run function duel/join
 execute as @a[gamemode=adventure,team=play.duel.yellow] run function duel/join
 execute as @a[gamemode=adventure,team=play.duel.blue] run function duel/join
 
-execute if entity @a[team=wait.duel,tag=play.total] run function small_games/total/next_game
+execute if entity @a[team=wait.duel,tag=play.total] run function minecraft:small_games/total/next_game_trigger
 
 schedule clear minecraft:duel/summon
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{duel:1}}}}]

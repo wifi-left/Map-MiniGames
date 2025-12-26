@@ -1,5 +1,7 @@
 function minecraft:lobby/eggs/tick
 
+function minecraft:lobby/festival/new_year
+
 execute if score speed lobby.effect matches 1 run effect give @a[team=lobby,tag=!parkouring,tag=!mazing] speed 1 0 true
 execute if score speed lobby.effect matches 2 run effect give @a[team=lobby,tag=!parkouring,tag=!mazing] speed 1 1 true
 execute if score jump lobby.effect matches 1 run effect give @a[team=lobby,tag=!parkouring,tag=!mazing] jump_boost 1 1 true

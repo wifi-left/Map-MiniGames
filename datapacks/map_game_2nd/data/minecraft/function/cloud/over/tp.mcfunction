@@ -4,8 +4,8 @@
 ## 
 scoreboard players set sw.state state 0
 team join wait.sw @a[team=play.sw]
-# execute if entity @a[team=wait.sw,tag=play.total] run function small_games/total/next_game
-execute if entity @a[team=wait.sw,tag=play.total] run function small_games/total/next_game
+# execute if entity @a[team=wait.sw,tag=play.total] run function minecraft:small_games/total/next_game_trigger
+execute if entity @a[team=wait.sw,tag=play.total] run function minecraft:small_games/total/next_game_trigger
 
 
 execute as @a[team=wait.sw] at @s run function minecraft:cloud/join

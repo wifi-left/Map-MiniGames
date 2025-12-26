@@ -13,8 +13,8 @@ title @a[gamemode=spectator,team=play.color] title ["\u00a7c\u00a7l游戏结束"
 execute as @a[gamemode=adventure,team=play.color,tag=play.total] run function minecraft:small_games/total/win_score {score:3}
 gamemode adventure @a[gamemode=spectator,team=play.color]
 gamemode adventure @a[gamemode=spectator,team=wait.color]
-# execute if entity @a[team=car.wait,tag=play.total] run function small_games/total/next_game
-execute if entity @a[team=play.color,tag=play.total] run function small_games/total/next_game
+# execute if entity @a[team=car.wait,tag=play.total] run function minecraft:small_games/total/next_game_trigger
+execute if entity @a[team=play.color,tag=play.total] run function minecraft:small_games/total/next_game_trigger
 execute as @a[gamemode=adventure,team=wait.color] run function color/join
 execute as @a[gamemode=adventure,team=play.color] run function color/join
 kill @e[tag=colorran,type=marker]

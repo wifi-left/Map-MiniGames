@@ -7,7 +7,7 @@ gamemode adventure @a[gamemode=spectator,team=wait.killer]
 # execute as @a[gamemode=adventure,team=play.beli,tag=play.total] run function minecraft:small_games/total/win_score {score:1}
 scoreboard players set killer.state state 0
 
-execute if entity @a[team=play.killer,tag=play.total] run function small_games/total/next_game
+execute if entity @a[team=play.killer,tag=play.total] run function minecraft:small_games/total/next_game_trigger
 execute as @a[gamemode=adventure,team=wait.killer] run function killerever/join
 execute as @a[gamemode=adventure,team=play.killer] run function killerever/join
 

@@ -7,6 +7,4 @@ title @a[team=play.total] title ["\u00a7c抱歉！"]
 title @a[team=play.total] subtitle ["\u00a7b我们将在 \u00a7e5 \u00a7b秒后重试"]
 # tag @s add random_game_able
 data modify storage minecraft:temp random_games.games append from storage minecraft:temp total_game
-schedule function small_games/total/get_random_game 5s
-
-
+schedule function small_games/total/ready_next_game 5s

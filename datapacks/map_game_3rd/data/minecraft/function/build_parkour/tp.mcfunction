@@ -5,7 +5,7 @@
 scoreboard players set build_parkour.state state 0
 gamemode adventure @a[gamemode=spectator,team=build_parkour]
 execute as @a[gamemode=adventure,team=build_parkour] run function build_parkour/join
-execute if entity @a[team=build_parkour,tag=play.total] run function small_games/total/next_game
+execute if entity @a[team=build_parkour,tag=play.total] run function minecraft:small_games/total/next_game_trigger
 # Reset
 
 schedule clear minecraft:build_parkour/summon

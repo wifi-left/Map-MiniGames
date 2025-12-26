@@ -2,6 +2,9 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
+gamemode spectator @a[team=play.total]
+
+scoreboard players set gametotal state 1
 
 execute store result score count.1 board run data get storage minecraft:temp random_games.total
 execute store result score count.2 board run data get storage minecraft:temp random_games.games
@@ -46,7 +49,7 @@ scoreboard players set error state 0
 function minecraft:small_games/total/check_game_not_running with storage minecraft:temp total_game
 
 ## Failure: Retry
-execute if score error state matches 1.. run function small_games/total/next_game_fail
+execute if score error state matches 1.. run function minecraft:small_games/total/next_game_trigger_fail
 ## Success: Start the game
 
 execute unless score error state matches 1.. run schedule function small_games/total/start_next_game 5s

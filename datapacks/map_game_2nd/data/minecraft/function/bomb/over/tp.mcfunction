@@ -1,6 +1,6 @@
 scoreboard players set boom.state state 0
 
-execute if entity @a[team=boom,tag=play.total] run function small_games/total/next_game
+execute if entity @a[team=boom,tag=play.total] run function minecraft:small_games/total/next_game_trigger
 
 
 execute as @a[team=boom,gamemode=spectator] at @s run gamemode adventure @s

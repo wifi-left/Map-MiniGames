@@ -4,7 +4,7 @@
 ## 
 scoreboard players set endwolf.state state 0
 
-execute if entity @a[team=play.endwolf,tag=play.total] run function small_games/total/next_game
+execute if entity @a[team=play.endwolf,tag=play.total] run function minecraft:small_games/total/next_game_trigger
 time set day
 
 execute as @a[team=wait.endwolf] in overworld run function minecraft:endless_wolf/join

@@ -24,3 +24,8 @@ team join play.total @a[tag=total.win]
 tag @a remove total.win
 schedule function small_games/total/tp 5s
 scoreboard players set gametotal state 2000
+schedule clear small_games/total/wur/startgame/a
+schedule clear small_games/total/wur/startgame/b
+
+
+return fail

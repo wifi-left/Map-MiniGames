@@ -1,0 +1,2 @@
+execute unless items entity @s hotbar.3 *[custom_data~{"game_total":1,total.sel:a}] unless items entity @s weapon.offhand *[custom_data~{"game_total":1,total.sel:a}] run function minecraft:small_games/total/wur/get_choice_item/a
+execute unless items entity @s hotbar.5 *[custom_data~{"game_total":1,total.sel:b}] unless items entity @s weapon.offhand *[custom_data~{"game_total":1,total.sel:b}] run function minecraft:small_games/total/wur/get_choice_item/b

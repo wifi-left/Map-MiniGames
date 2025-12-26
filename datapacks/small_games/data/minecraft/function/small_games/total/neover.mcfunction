@@ -5,7 +5,8 @@
 tag @a remove total.win
 
 execute if entity @a[tag=merchant.alive] run return run function minecraft:merchant/during/small_game_over
-
+schedule clear small_games/total/wur/startgame/a
+schedule clear small_games/total/wur/startgame/b
 tellraw @a ["§b§l小游戏派对 §2游戏结束！"]
 title @a[team=play.total] title ["\u00a7c游戏结束"]
 title @a[team=play.total] subtitle ["\u00a7b意外结束了游戏"]

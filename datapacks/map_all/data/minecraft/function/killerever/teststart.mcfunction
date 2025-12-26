@@ -1,5 +1,5 @@
 # tellraw @s ["\u00a7c该游戏返厂更新中..."]
-# execute if entity @a[team=wait.killer,tag=play.total] run function small_games/total/next_game
+# execute if entity @a[team=wait.killer,tag=play.total] run function minecraft:small_games/total/next_game_trigger
 
 # return fail
 

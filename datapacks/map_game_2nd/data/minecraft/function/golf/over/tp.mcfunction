@@ -4,7 +4,7 @@
 ## 
 # execute as @a[gamemode=adventure,team=pw.play,tag=play.total] run function minecraft:small_games/total/win_score {score:1}
 scoreboard players set golf.state state 0
-execute if entity @a[team=golf,tag=play.total] run function small_games/total/next_game
+execute if entity @a[team=golf,tag=play.total] run function minecraft:small_games/total/next_game_trigger
 
 execute as @a[team=golf,gamemode=spectator] at @s run function minecraft:golf/join
 execute as @a[team=golf,gamemode=adventure] at @s run function minecraft:golf/join

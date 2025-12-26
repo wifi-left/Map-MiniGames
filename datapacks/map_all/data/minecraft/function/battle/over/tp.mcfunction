@@ -12,7 +12,7 @@ fill 146 39 -324 142 35 -324 minecraft:light_blue_stained_glass keep
 fill 142 39 -356 146 35 -356 minecraft:red_stained_glass keep
 team join wait.battle @a[team=play.battle.r]
 team join wait.battle @a[team=play.battle.b]
-execute if entity @a[team=wait.battle,tag=play.total] run function small_games/total/next_game
+execute if entity @a[team=wait.battle,tag=play.total] run function minecraft:small_games/total/next_game_trigger
 
 execute as @a[team=wait.battle,gamemode=!creative] run function battle/join
 execute as @a[team=play.battle.r,gamemode=!creative] run function battle/join

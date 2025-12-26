@@ -16,7 +16,7 @@ gamemode adventure @a[gamemode=spectator,team=wait.hotpot.k]
 execute as @a[gamemode=adventure,team=wait.hotpot] run function hotpotever/join
 execute as @a[gamemode=adventure,team=play.hotpot] run function hotpotever/join
 execute as @a[gamemode=adventure,team=play.hotpot.k] run function hotpotever/join
-execute if entity @a[team=wait.hotpot,tag=play.total] run function small_games/total/next_game
+execute if entity @a[team=wait.hotpot,tag=play.total] run function minecraft:small_games/total/next_game_trigger
 # Reset
 
 schedule clear minecraft:hotpotever/summon

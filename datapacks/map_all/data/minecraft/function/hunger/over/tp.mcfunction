@@ -5,7 +5,7 @@
 bossbar set minecraft:hungergame name "\u00a74饥饿游戏 \u00a78| \u00a7a等待玩家加入"
 scoreboard players set hunger.state state 0
 gamemode adventure @a[team=hunger]
-execute if entity @a[team=hunger,tag=play.total] run function small_games/total/next_game
+execute if entity @a[team=hunger,tag=play.total] run function minecraft:small_games/total/next_game_trigger
 
 execute as @a[team=hunger] run function hunger/join
 execute in airworld run kill @e[type=item,distance=0..]

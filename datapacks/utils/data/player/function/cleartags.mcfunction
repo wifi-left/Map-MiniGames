@@ -1,4 +1,6 @@
 title @s reset
+tag @s remove total.sel.a
+tag @s remove total.sel.b
 tag @s remove elytra.win
 tag @s remove elytra.win_true
 tag @s remove boom.waittoplay
