@@ -33,11 +33,11 @@ cd ..
 # 创建 zip 文件（排除脚本自身和 .git 目录）
 zip_filename="./${nowdir}/build/(MC${mcversion})_wifi_MiniGames_${version_}.zip"
 zip -r "${zip_filename}" "${nowdir}/" \
-    -x "*.git*" \
-    -x "*zip.sh" \
-    -x "*zip.ps1" \
-    -x "*build*" \
-    -x "*.github*"
+    -x "${nowdir}/.git/*" \
+    -x "${nowdir}/zip.sh" \
+    -x "${nowdir}/zip.ps1" \
+    -x "${nowdir}/build/*" \
+    -x "${nowdir}/.github/*"\
 
 cp "${zip_filename}" "./${nowdir}/build/map.zip"
 echo "Compression completed!"
