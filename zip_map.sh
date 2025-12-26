@@ -31,7 +31,7 @@ nowdir=$(basename "$PWD")
 echo Parent Folder: $nowdir;
 cd ..
 # 创建 zip 文件（排除脚本自身和 .git 目录）
-zip_filename="./${nowdir}/build/(MC${mcversion})_wifi_MiniGames_${version_}.zip"
+zip_filename="./${nowdir}/build/map.zip"
 zip -r "${zip_filename}" "${nowdir}/" \
     -x "${nowdir}/.git/*" \
     -x "${nowdir}/zip.sh" \
@@ -39,5 +39,4 @@ zip -r "${zip_filename}" "${nowdir}/" \
     -x "${nowdir}/build/*" \
     -x "${nowdir}/.github/*"\
 
-cp "${zip_filename}" "./${nowdir}/build/map.zip"
 echo "Compression completed!"
