@@ -6,5 +6,5 @@ tp @s 217 -61 234 45 0
 execute at @s run playsound entity.generic.explode player @s ~ ~ ~ 1 1 1
 clear @s *[custom_data~{live.equipment:1}]
 function minecraft:live/items/killer
-give @s potion[custom_name='\u00a7f速度II (20s)',potion_contents={custom_color:56831,custom_effects:[{id:"speed",amplifier:1,duration:400}]},unbreakable={},custom_data={live.equipment:1}]
-give @s potion[custom_name='\u00a7f跳跃III (20s)',potion_contents={custom_color:130843,custom_effects:[{id:"jump_boost",amplifier:2,duration:400}]},unbreakable={},custom_data={live.equipment:1}]
+give @s potion[custom_name='\u00a7f速度I (10s)',potion_contents={custom_color:56831,custom_effects:[{id:"speed",amplifier:0,duration:200}]},unbreakable={},custom_data={live.equipment:1}]
+give @s potion[custom_name='\u00a7f跳跃III (10s)',potion_contents={custom_color:130843,custom_effects:[{id:"jump_boost",amplifier:2,duration:200}]},unbreakable={},custom_data={live.equipment:1}]

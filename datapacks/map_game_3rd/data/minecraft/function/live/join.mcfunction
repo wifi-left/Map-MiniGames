@@ -12,7 +12,7 @@ xp set @s 0 levels
 xp set @s 0 points
 execute in overworld run tp @s 183 -62 373 0 0
 execute if score live.state state matches 1.. run function minecraft:live/spec
-
+effect clear @s
 execute at @s run playsound entity.player.levelup player @s ~ ~ ~ 1 1 1
 execute as @s[tag=GLOBAL.SPEC] run function player:spec_mode/tip
 
