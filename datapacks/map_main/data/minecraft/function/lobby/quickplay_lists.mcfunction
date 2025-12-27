@@ -13,6 +13,7 @@ function minecraft:lobby/quickplay_info {id:18,name:"冬泳怪鸽",color:b}
 function minecraft:lobby/quickplay_info {id:19,name:"棋类游戏",color:b}
 function minecraft:lobby/quickplay_info {id:36,name:"贪吃蛇",color:b}
 function minecraft:lobby/quickplay_info {id:37,name:"吃豆人",color:b}
+function minecraft:lobby/quickplay_info {id:16,name:"追杀游戏",color:b}
 function minecraft:lobby/quickplay_info {id:38,name:"一掘到底",color:b}
 function minecraft:lobby/quickplay_info {id:43,name:"钓鱼达人",color:b}
 function minecraft:lobby/quickplay_info {id:39,name:"挖矿达人",color:b}
@@ -52,7 +53,6 @@ function minecraft:lobby/quickplay_info {id:41,name:"随机跑酷",color:6}
 function minecraft:lobby/quickplay_info {id:34,name:"坑爹跑酷比赛",color:6}
 function minecraft:lobby/quickplay_info {id:17,name:"关卡跑酷",color:6}
 
-function minecraft:lobby/quickplay_info {id:16,name:"Live Longest (废案)",color:7}
 function minecraft:lobby/quickplay_info {id:35,name:"船战 (废案)",color:7}
 function minecraft:lobby/quickplay_info {id:4,name:"赛猪游戏 (废案)",color:7}
 function minecraft:lobby/quickplay_info {id:10,name:"道具躲猫猫 (废案)",color:7}

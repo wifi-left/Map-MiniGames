@@ -17,6 +17,10 @@ execute as @a[team=build_parkour,gamemode=adventure] run scoreboard players add 
 tag @a remove build_parkour.builder
 
 execute if score total.start_game_mode board matches 1 if score wait.player tick matches 6.. run tellraw @a[team=build_parkour] ["\n\u00a7c由于人数过多，故只有部分玩家能够建造跑酷。"]
+
+item replace entity @a[team=build_parkour] inventory.26 with sunflower[max_stack_size=99,rarity=epic,item_name="金币",custom_data={"build_parkour":2}] 1
+
+
 execute if score total.start_game_mode board matches 1 run tag @a[team=build_parkour,gamemode=adventure,limit=5,sort=random] add build_parkour.nokiller
 execute if score total.start_game_mode board matches 1 if score wait.player tick matches 6.. run tellraw @a[team=build_parkour] ["\u00a7c他们是：",{selector:"@a[tag=build_parkour.nokiller]"},"\n"]
 

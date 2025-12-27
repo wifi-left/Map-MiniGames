@@ -4,8 +4,10 @@ tag @s remove total.sel.b
 tag @s remove elytra.win
 tag @s remove elytra.win_true
 tag @s remove boom.waittoplay
+tag @s remove one_arrow.inv
 tag @s remove golf.waittoplay
 tag @s remove sw.msg
+tag @s remove live.nokiller
 tag @s remove chess.a
 tag @s remove chess.b
 tag @s remove chess.c

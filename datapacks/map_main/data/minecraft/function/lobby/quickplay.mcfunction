@@ -19,7 +19,7 @@ execute if score @s quickplay matches 12 run function hotpotever/join
 execute if score @s quickplay matches 13 run function hunger/join
 execute if score @s quickplay matches 14 run function job_pvp/join
 execute if score @s quickplay matches 15 run function killerever/join
-execute if score @s quickplay matches 16 run tag @s add join.livelongest
+execute if score @s quickplay matches 16 run function live/join
 execute if score @s quickplay matches 17 run function lpark/join
 execute if score @s quickplay matches 18 run function poolwar/join
 execute if score @s quickplay matches 19 run function small_games/chess/join

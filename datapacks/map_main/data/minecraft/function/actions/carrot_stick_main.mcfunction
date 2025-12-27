@@ -12,8 +12,7 @@ execute as @s[team=play.hotpot] at @s run function minecraft:hotpotever/tools/to
 execute as @s[team=play.hotpot.k] at @s run function minecraft:hotpotever/tools/tool_main
 execute as @s[team=play.sw] at @s run function minecraft:tntwars/tnttool
 execute as @s[team=play.tntwars] at @s run function minecraft:tntwars/tnttool
-execute as @s[level=..0,team=play.live.runner] at @s run function minecraft:skills
-execute as @s[level=..0,team=play.live.killer] at @s run function minecraft:skills
+
 execute in killerworld as @s[team=wolfpeople] at @s run function minecraft:twolf/controls
 execute as @s[level=..0,team=hide.play.hun] at @s run function minecraft:hideseek/skillss
 execute as @s[level=..0,team=hide.play.ani] at @s run function minecraft:hideseek/skillss
@@ -25,14 +24,6 @@ execute as @s[level=1..,team=hide.play.ani] at @s run title @s actionbar ["\u00a
 execute as @s[scores={use.skill=1..},level=1..,team=hide.play.hun] at @s run playsound entity.enderman.teleport player @s
 execute as @s[level=1..,team=hide.play.ani] at @s run playsound entity.enderman.teleport player @s
 
-execute as @s[level=1..,team=play.live.runner] at @s run playsound entity.enderman.teleport player @s
-execute as @s[level=1..,team=play.live.runner] at @s run title @s actionbar ["\u00a7c\u00a7l技能还在冷却。"]
-execute as @s[level=1..,team=play.live.runner] at @s run scoreboard players reset @s use.skill
-# scoreboard players reset @a[scores={use.skill=1..}] use.skill
-
-execute as @s[level=1..,team=play.live.killer] at @s run playsound entity.enderman.teleport player @s
-execute as @s[level=1..,team=play.live.killer] at @s run title @s actionbar ["\u00a7c\u00a7l技能还在冷却。"]
-execute as @s[level=1..,team=play.live.killer] at @s run scoreboard players reset @s use.skill
 # scoreboard players reset @a[scores={use.skill=1..}] use.skill
 
 

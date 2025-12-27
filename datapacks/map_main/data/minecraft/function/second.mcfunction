@@ -31,8 +31,6 @@ execute as @e[type=minecart,tag=lobby.car] at @s if block ~ ~ ~ lava run kill @s
 ## Car
 # execute as @e[tag=lobby.car.start] at @s unless entity @e[tag=lobby.car,type=!player,distance=0..1] run function lobby/spawncar
 # execute as @e[tag=lobby.car.end] at @s run kill @e[tag=lobby.car,type=!player,distance=0..3]
-xp add @a[team=play.live.runner,level=1..] -1 levels
-xp add @a[team=play.live.killer,level=1..] -1 levels
 effect give @a[team=wait.sur] resistance 2 25 true
 effect give @a[team=boom] resistance 2 25 true
 execute if score golf.state state matches 1.. in golfworld run function golf/second

@@ -13,6 +13,6 @@ xp set @s 0 points
 execute in overworld run tp @s -149 -42 -255 -90 0
 execute if score pacman.state state matches 1.. run function minecraft:pacman/spec
 
-playsound entity.player.levelup player @s 14 3 -44 1 1 1
+execute at @s run playsound entity.player.levelup player @s ~ ~ ~ 1 1 1
 execute as @s[tag=GLOBAL.SPEC] run function player:spec_mode/tip
 
