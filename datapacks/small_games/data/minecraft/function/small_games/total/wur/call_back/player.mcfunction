@@ -5,11 +5,13 @@ team join play.total
 tag @s remove surback
 tag @s remove tmp
 tag @s remove bw.player
-tag @s remove total.sel.a
-tag @s remove total.sel.b
+
 clear @s
 effect clear @s
 effect give @s instant_health 2 25 true
 gamemode spectator @s
 
 execute in overworld run tp @s 322 89 159 180 0
+effect give @s resistance 2 25 true
+effect give @s instant_health 2 25 true
+effect give @s slow_falling 2 25 true

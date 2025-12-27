@@ -1,5 +1,7 @@
 execute store result score count.1 board run data get storage minecraft:temp random_games.total
 execute store result score count.2 board run data get storage minecraft:temp random_games.games
+# 
+data modify storage minecraft:temp total_game set value {id:none,name:"暂无",prefix:"",desc:"无更多游戏可供选择。"}
 
 data modify storage minecraft:temp random.min set value 0
 scoreboard players operation count.2.-1 board = count.2 board

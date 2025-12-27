@@ -497,7 +497,7 @@ data modify storage minecraft:temp build_guess_tmp set value {words:[\
 "踢毽子",\
 "荡秋千",\
 "放风筝",\
-"打手机",\
+"玩手机",\
 "洗澡",\
 "刷牙",\
 "洗脸",\

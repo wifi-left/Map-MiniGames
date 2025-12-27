@@ -25,12 +25,11 @@ execute if score tntwars.map board matches 2 run function tntwars/startmaps/clou
 execute if score tntwars.map board matches 3 run function tntwars/startmaps/planet1
 # execute if score tntwars.map state matches 2.. run data modify block 496 21 240 front_text.messages[(3-1)] set value "\u00a7cError"}
 
-
-title @a[team=play.tntwars,tag=tntwars.b] title ["\u00a7cTNT Wars"]
-title @a[team=play.tntwars,tag=tntwars.b] subtitle ["\u00a7f游戏开始"]
-title @a[team=play.tntwars,tag=tntwars.a] title ["\u00a7cTNT Wars"]
-title @a[team=play.tntwars,tag=tntwars.a] subtitle ["\u00a7f游戏开始"]
 kill @e[type=tnt_minecart,tag=tntwars.tnt]
+title @a[tag=tntwars.a] title ["\u00a76你在 §a「队伍A」\u00a78| \u00a76游戏开始"]
+title @a[tag=tntwars.a] subtitle ["你的同侧为你的队友"]
+title @a[tag=tntwars.b] title ["\u00a76你在 §b「队伍B」\u00a78| \u00a76游戏开始"]
+title @a[tag=tntwars.b] subtitle ["你的同侧为你的队友"]
 
 scoreboard players set tnt.tntrain board 0
 scoreboard players set tnt.creeperrain board 0

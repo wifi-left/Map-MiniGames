@@ -29,3 +29,4 @@ function minecraft:small_games/total/settings/play_game_count/show
 
 title @a[team=play.total] title [{text:"\u00a76游戏开始",color:"#009966"}]
 title @a[team=play.total] subtitle ["此次游戏总数：",{"score":{"name":"total.gamecount","objective":"board"},"color":"aqua"}]
+data modify block 322 91 152 front_text.messages[2] set value ["§e(",{"text":"0","color":"aqua"},"§e/",{"score":{"name":"total.gamecount","objective":"board"},"color":"aqua"},"§e)"]

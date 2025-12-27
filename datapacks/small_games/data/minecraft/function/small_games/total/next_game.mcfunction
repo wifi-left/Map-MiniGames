@@ -10,7 +10,8 @@ bossbar set minecraft:hideseek players
 bossbar set minecraft:hideseek2 players
 bossbar set minecraft:live players
 # bossbar set minecraft: players
-
+tag @a[tag=play.total] remove total.sel.a
+tag @a[tag=play.total] remove total.sel.b
 tag @a[tag=play.total] remove surback
 tag @a[tag=play.total] remove tmp
 tag @a[tag=play.total] remove bw.player
@@ -38,5 +39,7 @@ execute in overworld run tp @a[tag=play.total] 322 89 159 180 0
 team join play.total @a[tag=play.total]
 execute as @a[tag=play.total] at @s run playsound entity.experience_orb.pickup player @s
 gamemode adventure @a[tag=play.total]
-
+effect give @a[tag=play.total] resistance 2 25 true
+effect give @a[tag=play.total] instant_health 2 25 true
+effect give @a[tag=play.total] slow_falling 1 25 true
 schedule function small_games/total/ready_next_game 3s replace

@@ -12,3 +12,4 @@ scoreboard players set total.unsel.count tick 0
 execute as @a[team=play.total] unless items entity @s weapon.offhand *[custom_data~{"game_total":1}] run scoreboard players add total.unsel.count tick 1
 
 execute if score total.unsel.count tick matches 0 if score gametotal.time tick matches 2.. run scoreboard players set gametotal.time tick 1
+effect give @a[team=play.total] invisibility 2 25 true
