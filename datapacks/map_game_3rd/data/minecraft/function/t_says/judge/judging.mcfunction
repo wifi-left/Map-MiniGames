@@ -3,3 +3,6 @@ execute if score t_says.scene board matches 8 run function minecraft:t_says/scen
 execute if score t_says.scene board matches 9 run function minecraft:t_says/scene/judging/parkour_to_the_end
 execute if score t_says.scene board matches 10..19 run function minecraft:t_says/scene/judging/make_item
 execute if score t_says.scene board matches 20 run function minecraft:t_says/scene/judging/hide_arrow
+
+execute if score t_says.scene board matches -10..-4 run function minecraft:t_says/scene/judging/wear_item
+execute if score t_says.scene board matches -20..-11 run function minecraft:t_says/scene/judging/stand_on_block

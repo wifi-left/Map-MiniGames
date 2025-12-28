@@ -8,3 +8,7 @@ execute as @a[team=play.tntwars,gamemode=adventure] at @s as @s[y=-70,dy=10] run
 
 execute as @a[team=play.tntwars,gamemode=adventure] at @s as @e[type=arrow,tag=!tnt.arrowold,distance=..20] at @s if data entity @s {item:{components:{"minecraft:custom_data":{tnt:10}}}} run function minecraft:tntwars/shoottnt/arrow
 
+function tntwars/calcpeople
+
+execute if score tnt.state state matches 1..2 if score TNT.a.player tick matches ..0 run function tntwars/over/teamb
+execute if score tnt.state state matches 1..2 if score TNT.b.player tick matches ..0 run function tntwars/over/teama

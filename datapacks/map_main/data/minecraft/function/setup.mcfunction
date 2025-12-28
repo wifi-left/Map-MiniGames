@@ -38,8 +38,10 @@ scoreboard objectives remove action.jump
 scoreboard objectives add action.jump minecraft.custom:minecraft.jump "动作|Jump"
 scoreboard objectives remove action.sneak
 scoreboard objectives add action.sneak minecraft.custom:minecraft.sneak_time "动作|Sneak"
-scoreboard objectives remove action.move
-scoreboard objectives add action.move minecraft.custom:minecraft.walk_one_cm "动作|Move"
+scoreboard objectives remove action.walk
+scoreboard objectives add action.walk minecraft.custom:minecraft.walk_one_cm "动作|Walk"
+scoreboard objectives remove action.sprint
+scoreboard objectives add action.sprint minecraft.custom:minecraft.sprint_one_cm "动作|Sprint"
 
 scoreboard objectives remove level
 scoreboard objectives remove sneaking

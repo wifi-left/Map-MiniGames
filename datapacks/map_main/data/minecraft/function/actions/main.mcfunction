@@ -7,5 +7,7 @@ execute as @a[scores={use.skill.2=1..}] at @s run function actions/carrot_stick_
 execute as @a[scores={action.jump=1..}] at @s run function minecraft:actions/jump
 # 蹲下
 execute as @a[scores={action.sneak=1..}] at @s run function minecraft:actions/sneak
-# 行走
-execute as @a[scores={action.move=1..}] at @s run function minecraft:actions/move
+# 走路
+execute as @a[scores={action.walk=1..}] at @s run function minecraft:actions/walk
+# 跑步
+execute as @a[scores={action.sprint=1..}] at @s run function minecraft:actions/sprint

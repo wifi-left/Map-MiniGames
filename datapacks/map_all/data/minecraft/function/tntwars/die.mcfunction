@@ -18,7 +18,3 @@ execute as @s[tag=tntwars.b] run tellraw @a[team=play.tntwars,tag=tntwars.a] ["Â
 
 execute as @a[team=wait.tntwars] at @s run playsound entity.player.death player @s ~ ~ ~ 1 1 0
 execute as @a[team=play.tntwars] at @s run playsound entity.player.death player @s ~ ~ ~ 1 1 0
-
-
-
-

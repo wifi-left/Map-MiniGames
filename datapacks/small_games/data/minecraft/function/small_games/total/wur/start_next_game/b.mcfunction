@@ -3,6 +3,7 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 
 execute if data storage minecraft:temp total_game_wur.b{id:none} run return fail
+execute as @a[team=play.total] at @s run playsound entity.generic.explode player @s ~ ~ ~ 1 2 1
 
 gamemode adventure @a[team=play.total]
 

@@ -1,1 +1,1 @@
-scoreboard players set t_says.time board 15
+scoreboard players set t_says.time board 12

@@ -15,3 +15,5 @@ execute in overworld run tp @s 322 89 159 180 0
 effect give @s resistance 2 25 true
 effect give @s instant_health 2 25 true
 effect give @s slow_falling 2 25 true
+
+recipe take @s *

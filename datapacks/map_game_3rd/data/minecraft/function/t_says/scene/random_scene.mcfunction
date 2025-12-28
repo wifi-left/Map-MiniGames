@@ -2,16 +2,34 @@
 # 1 for T (不能); 2 for not T (需要)
 execute store result score t_says.type board run random value 1..2
 ## scene
-execute store result score t_says.scene board run random value 1..20
+execute store result score t_says.scene temp run random value 1..14
+
+scoreboard players operation t_says.scene board = t_says.scene temp
+# 11->20
+execute if score t_says.scene temp matches 11.. run scoreboard players add t_says.scene board 9
+execute if score t_says.scene board matches 10 store result score t_says.scene board run random value 10..19
+execute if score t_says.scene board matches 21 store result score t_says.scene board run random value -10..-4
+execute if score t_says.scene board matches 22 store result score t_says.scene board run random value -20..-11
+
+
+
 execute if score t_says.scene board matches 1 run data modify storage minecraft:temp t_says.msg set value ["跳下平台"]
 execute if score t_says.scene board matches 2 run data modify storage minecraft:temp t_says.msg set value ["跳一跳"]
 execute if score t_says.scene board matches 3 run data modify storage minecraft:temp t_says.msg set value ["别跳"]
-execute if score t_says.scene board matches 4 run data modify storage minecraft:temp t_says.msg set value ["跑一跑"]
+execute if score t_says.scene board matches 4 run data modify storage minecraft:temp t_says.msg set value ["走一走"]
 execute if score t_says.scene board matches 5 run data modify storage minecraft:temp t_says.msg set value ["不要动"]
 execute if score t_says.scene board matches 6 run data modify storage minecraft:temp t_says.msg set value ["蹲下"]
 execute if score t_says.scene board matches 7 run data modify storage minecraft:temp t_says.msg set value ["不要蹲下"]
 execute if score t_says.scene board matches 8 run data modify storage minecraft:temp t_says.msg set value ["和玩家拥抱"]
 execute if score t_says.scene board matches 9 run data modify storage minecraft:temp t_says.msg set value ["跑酷到终点（钻石块）"]
+
+execute if score t_says.scene board matches 20 run data modify storage minecraft:temp t_says.msg set value ["躲避箭雨"]
+execute if score t_says.scene board matches 21 run data modify storage minecraft:temp t_says.msg set value ["穿衣服"]
+execute if score t_says.scene board matches 22 run data modify storage minecraft:temp t_says.msg set value ["站在方块上"]
+execute if score t_says.scene board matches 23 run data modify storage minecraft:temp t_says.msg set value ["跑一跑"]
+
+# Make items
+
 execute if score t_says.scene board matches 10 run data modify storage minecraft:temp t_says.msg set value ["合成：钻石剑"]
 execute if score t_says.scene board matches 11 run data modify storage minecraft:temp t_says.msg set value ["合成：金剑"]
 execute if score t_says.scene board matches 12 run data modify storage minecraft:temp t_says.msg set value ["合成：铁剑"]
@@ -22,4 +40,26 @@ execute if score t_says.scene board matches 16 run data modify storage minecraft
 execute if score t_says.scene board matches 17 run data modify storage minecraft:temp t_says.msg set value ["合成：铁活版门"]
 execute if score t_says.scene board matches 18 run data modify storage minecraft:temp t_says.msg set value ["合成：木活版门"]
 execute if score t_says.scene board matches 19 run data modify storage minecraft:temp t_says.msg set value ["合成：箱子"]
-execute if score t_says.scene board matches 20 run data modify storage minecraft:temp t_says.msg set value ["躲避箭雨"]
+
+# Wear items
+
+execute if score t_says.scene board matches -10 run data modify storage minecraft:temp t_says.msg set value ["穿上金胸甲"]
+execute if score t_says.scene board matches -9 run data modify storage minecraft:temp t_says.msg set value ["穿上铁胸甲"]
+execute if score t_says.scene board matches -8 run data modify storage minecraft:temp t_says.msg set value ["穿上皮革胸甲"]
+execute if score t_says.scene board matches -7 run data modify storage minecraft:temp t_says.msg set value ["穿上锁链胸甲"]
+execute if score t_says.scene board matches -6 run data modify storage minecraft:temp t_says.msg set value ["穿上铜胸甲"]
+execute if score t_says.scene board matches -5 run data modify storage minecraft:temp t_says.msg set value ["穿上钻石胸甲"]
+execute if score t_says.scene board matches -4 run data modify storage minecraft:temp t_says.msg set value ["穿上下界合金胸甲"]
+
+# Stand on the Block
+
+execute if score t_says.scene board matches -20 run data modify storage minecraft:temp t_says.msg set value ["站在黄色混凝土上"]
+execute if score t_says.scene board matches -19 run data modify storage minecraft:temp t_says.msg set value ["站在红色混凝土上"]
+execute if score t_says.scene board matches -18 run data modify storage minecraft:temp t_says.msg set value ["站在白色混凝土上"]
+execute if score t_says.scene board matches -17 run data modify storage minecraft:temp t_says.msg set value ["站在浅蓝色混凝土上"]
+execute if score t_says.scene board matches -16 run data modify storage minecraft:temp t_says.msg set value ["站在深蓝色混凝土上"]
+execute if score t_says.scene board matches -15 run data modify storage minecraft:temp t_says.msg set value ["站在黄绿色混凝土上"]
+execute if score t_says.scene board matches -14 run data modify storage minecraft:temp t_says.msg set value ["站在深绿色混凝土上"]
+execute if score t_says.scene board matches -13 run data modify storage minecraft:temp t_says.msg set value ["站在黑色混凝土上"]
+execute if score t_says.scene board matches -12 run data modify storage minecraft:temp t_says.msg set value ["站在粉色混凝土上"]
+execute if score t_says.scene board matches -11 run data modify storage minecraft:temp t_says.msg set value ["站在棕色混凝土上"]

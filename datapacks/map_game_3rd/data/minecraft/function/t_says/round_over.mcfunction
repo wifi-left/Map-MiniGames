@@ -3,6 +3,6 @@ execute as @a[team=t_says,gamemode=adventure,tag=!t_says.finished,tag=!t_says.fa
 recipe take @a[team=t_says] *
 
 title @a[team=t_says] actionbar ["\u00a76本轮结束。"]
-scoreboard players set t_says.time board 3
+scoreboard players set t_says.time board 2
 scoreboard players set t_says.state state 4
 scoreboard players set t_says.has_finished board 0
