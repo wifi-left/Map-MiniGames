@@ -12,6 +12,10 @@ tag @s remove chess.a
 tag @s remove chess.b
 tag @s remove chess.c
 tag @s remove chess.d
+
+tag @s remove t_says.finished
+tag @s remove t_says.failed
+
 tag @s remove chess.white
 tag @s remove chest.white
 tag @s remove chess.black
@@ -124,3 +128,5 @@ tag @s remove bw.fastii
 tag @s remove bw.shears
 
 execute as @s run function player:empty_enderchest
+
+recipe take @s *

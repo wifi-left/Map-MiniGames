@@ -1,0 +1,31 @@
+{
+    "criteria": {
+        "player_died": {
+            "trigger": "minecraft:entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "is_projectile"
+                            }
+                        ]
+                    }
+                },
+                "player": {
+                    "team": "t_says"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "player_died"
+        ]
+    ],
+    "rewards": {
+        "function": "t_says/action/adv/player_was_hit_by_arrow"
+    }
+}
+

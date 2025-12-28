@@ -35,6 +35,7 @@ execute in killerworld if score twolf.state state matches 1.. run function minec
 effect give @a[team=wait.wolfpeople] resistance 2 25 true
 effect give @a[team=wolfpeople] resistance 2 25 true
 
+execute if score t_says.state state matches 1.. run function minecraft:t_says/second
 
 
 execute if score stronghold.state state matches 1.. in lobby run function stronghold/second

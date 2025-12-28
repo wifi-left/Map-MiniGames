@@ -145,6 +145,7 @@ tag @a[tag=join.snow] remove join.snow
 effect give @a[team=wait.total] resistance 2 25 true
 execute if score pw.state state matches 1.. run function minecraft:poolwar/tick
 execute if score car.state state matches 1.. run function minecraft:car_race/tick
+execute if score t_says.state state matches 1.. run function minecraft:t_says/tick
 # execute if score pw.state state matches 1.. run function minecraft:poolwar/tick
 execute as @a[tag=parkouring,team=!lobby] run function npark/cancel
 execute as @a[tag=mazing,team=!lobby] run function maze/cancelnottp
