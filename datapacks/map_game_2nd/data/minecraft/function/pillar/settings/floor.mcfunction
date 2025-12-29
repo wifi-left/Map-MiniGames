@@ -7,7 +7,7 @@ execute if score tmp.canset board matches 0 run playsound block.anvil.land playe
 execute if score tmp.canset board matches 0 run return 0
 
 scoreboard players add pillar.floor state 1
-execute if score pillar.floor state matches 14.. run scoreboard players set pillar.floor state 0
+execute if score pillar.floor state matches 15.. run scoreboard players set pillar.floor state 0
 
 execute if score pillar.floor state matches 0 run data modify block ~ ~ ~ front_text.messages[2] set value {text:"[ 随机 ]",color:white}
 execute if score pillar.floor state matches 1 run data modify block ~ ~ ~ front_text.messages[2] set value {text:"[ 无 ]",color:red}
@@ -23,3 +23,4 @@ execute if score pillar.floor state matches 10 run data modify block ~ ~ ~ front
 execute if score pillar.floor state matches 11 run data modify block ~ ~ ~ front_text.messages[2] set value {text:"[ 玻璃板 ]",color:light_purple}
 execute if score pillar.floor state matches 12 run data modify block ~ ~ ~ front_text.messages[2] set value {text:"[ 铁栅栏 ]",color:light_purple}
 execute if score pillar.floor state matches 13 run data modify block ~ ~ ~ front_text.messages[2] set value {text:"[ 锁链 ]",color:light_purple}
+execute if score pillar.floor state matches 14 run data modify block ~ ~ ~ front_text.messages[2] set value {text:"[ 蜘蛛网 ]",color:light_purple}

@@ -12,3 +12,4 @@ execute if score pillar.floor board matches 10 in airworld run fill ~-5 -63 ~-5 
 execute if score pillar.floor board matches 11 in airworld run fill ~-5 -63 ~-5 ~5 -62 ~5 glass_pane strict
 execute if score pillar.floor board matches 12 in airworld run fill ~-5 -63 ~-5 ~5 -62 ~5 iron_bars strict
 execute if score pillar.floor board matches 13 in airworld run fill ~-5 -63 ~-5 ~5 -62 ~5 iron_chain[axis=y] strict
+execute if score pillar.floor board matches 14 in airworld run fill ~-5 -63 ~-5 ~5 -62 ~5 cobweb strict
