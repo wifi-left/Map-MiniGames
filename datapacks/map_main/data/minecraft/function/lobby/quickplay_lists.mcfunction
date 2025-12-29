@@ -50,6 +50,7 @@ function minecraft:lobby/quickplay_info {id:7,name:"星跳水立方",color:3}
 function minecraft:lobby/quickplay_info {id:24,name:"Zombie Days (PVE)",color:2}
 function minecraft:lobby/quickplay_info {id:29,name:"蚀界行者 (PVE)",color:2}
 
+function minecraft:lobby/quickplay_info {id:50,name:"1、2、3，木头人",color:6}
 function minecraft:lobby/quickplay_info {id:41,name:"随机跑酷",color:6}
 function minecraft:lobby/quickplay_info {id:34,name:"坑爹跑酷比赛",color:6}
 function minecraft:lobby/quickplay_info {id:17,name:"关卡跑酷",color:6}

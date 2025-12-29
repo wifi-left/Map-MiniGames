@@ -46,3 +46,4 @@ execute if score ballgame.state state matches 1.. in overworld run function mine
 execute if score fishing.state state matches 1.. in overworld run function minecraft:fishing/second
 execute if score one_arrow.state state matches 1.. in overworld run function minecraft:one_arrow/second
 execute if score elytra.state state matches 1.. in parkourworld run function minecraft:elytra/second
+execute if score mutouren.state state matches 1.. in parkourworld run function minecraft:mutouren/second

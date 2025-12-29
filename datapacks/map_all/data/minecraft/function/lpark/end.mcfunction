@@ -16,4 +16,4 @@ execute if score @s parkour.second matches 10.. if score @s parkour.stick matche
 execute if score @s parkour.second matches 10.. if score @s parkour.stick matches ..9 run tellraw @s [{"selector":"@s"},"§b§l 的用时：§e[",{"score":{"name":"@s","objective":"parkour.minute"},"color":"yellow"},"§e:",{"score":{"name":"@s","objective":"parkour.second"},"color":"yellow"},"§e.0",{"score":{"name":"@s","objective":"parkour.stick"},"color":"yellow"},"§e]"]
 tellraw @s [""]
 execute in minecraft:parkourworld run tp @s 8 4 8 0 0
-execute at @s run playsound ui.toast.challenge_complete player @s ~ ~ ~ 1 2 1
+execute at @s run playsound ui.toast.challenge_complete player @s ~ ~ ~ 1 1 1

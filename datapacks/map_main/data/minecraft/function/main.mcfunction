@@ -228,6 +228,7 @@ execute if score build_guess.state state matches 1.. in parkourworld run functio
 execute if score finder.state state matches 1.. in overworld run function minecraft:finder/tick
 execute if score one_arrow.state state matches 1.. in overworld run function minecraft:one_arrow/tick
 execute if score elytra.state state matches 1.. in parkourworld run function minecraft:elytra/tick
+execute if score mutouren.state state matches 1.. in parkourworld run function minecraft:mutouren/tick
 
 execute as @e[type=ender_dragon,tag=!dragon.flagged] run function minecraft:lock_dragon
 
