@@ -28,6 +28,7 @@ scoreboard objectives remove bw.team
 scoreboard objectives remove snow.tick
 scoreboard objectives add snow.tick dummy "Snow: TNTRUN block Time"
 scoreboard objectives add bw.team dummy "起床|队伍选择"
+scoreboard objectives remove music_trigger
 
 scoreboard objectives add ingameid dummy "游戏内ID"
 scoreboard objectives add merchant.coin dummy "\u00a7b\u00a7l商贾传奇 \u00a7e金钱"
@@ -59,6 +60,7 @@ scoreboard objectives remove spec
 scoreboard objectives add spec trigger ["\u00a77全局旁观者操作"]
 scoreboard objectives remove quickplay
 scoreboard objectives add quickplay trigger "快速加入"
+scoreboard objectives add music_trigger trigger "音乐操作"
 
 scoreboard objectives remove globle.game
 scoreboard players set globle globle.game 1

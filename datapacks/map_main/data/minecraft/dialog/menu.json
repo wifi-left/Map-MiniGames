@@ -111,6 +111,7 @@
             "action": {
                 "type": "show_dialog",
                 "dialog": {
+                    "pause": false,
                     "columns": 1,
                     "type": "minecraft:multi_action",
                     "title": "全局旁观操作菜单",
@@ -144,6 +145,66 @@
                             "action": {
                                 "type": "run_command",
                                 "command": "/trigger spec set 4"
+                            }
+                        },
+                        {
+                            "label": "返回",
+                            "action": {
+                                "type": "show_dialog",
+                                "dialog": "minecraft:menu"
+                            }
+                        }
+                    ],
+                    "exit_action": {
+                        "label": "关闭"
+                    }
+                }
+            }
+        },
+        {
+            "label": "地图背景音乐设置",
+            "action": {
+                "type": "show_dialog",
+                "dialog": {
+                    "columns": 1,
+                    "pause": false,
+                    "type": "minecraft:multi_action",
+                    "title": "地图背景音乐设置",
+                    "body": [
+                        {
+                            "type": "minecraft:plain_message",
+                            "contents": [
+                                {
+                                    "text": "启用或者禁用地图音乐。\n您也可以关闭声音选项中的"
+                                },
+                                {
+                                    "translate": "soundCategory.voice"
+                                },
+                                {
+                                    "text": "来调整音乐声音大小。"
+                                }
+                            ]
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "label": {
+                                "text": "启用地图背景音乐",
+                                "color": "green"
+                            },
+                            "action": {
+                                "type": "run_command",
+                                "command": "/trigger music_trigger set 1"
+                            }
+                        },
+                        {
+                            "label": {
+                                "text": "禁用地图背景音乐",
+                                "color": "red"
+                            },
+                            "action": {
+                                "type": "run_command",
+                                "command": "/trigger music_trigger set 2"
                             }
                         },
                         {

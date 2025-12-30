@@ -20,7 +20,9 @@ execute if score tnt.state state matches 1.. run function minecraft:tntwars/tick
 
 execute if entity @a[team=dropper] in dropperworld run function dropper/tick
 
-
+scoreboard players enable @a music_trigger
+execute as @a[scores={music_trigger=1}] run function minecraft:music_settings/play
+execute as @a[scores={music_trigger=2}] run function minecraft:music_settings/stop
 
 execute as @a[scores={job_kill=1..},team=job_pvp] run function job_pvp/getakill
 execute if score blaze.state state matches 1.. as @a[scores={job_kill=1..},tag=blaze.player] in killerworld run function blaze/getakill
