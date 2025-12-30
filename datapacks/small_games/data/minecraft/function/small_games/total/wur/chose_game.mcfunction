@@ -26,13 +26,18 @@ scoreboard players operation total.display.all temp /= 2 board
 scoreboard players operation total.display.all temp += total.display.all.mod temp
 
 data modify block 322 91 152 front_text.messages[2] set value ["§e(",{"score":{"name":"total.display.now","objective":"temp"},"color":"aqua"},"§e/",{"score":{"name":"total.display.all","objective":"temp"},"color":"aqua"},"§e)"]
-tellraw @a[team=play.total] [{text:"\n"},{text:"小游戏派对",color:"#009966",bold:true}," §e(",{"score":{"name":"total.display.now","objective":"temp"},"color":"aqua"},"§e/",{"score":{"name":"total.display.all","objective":"temp"},"color":"aqua"},"§e)\n\n -  \u00a7a\u00a7l请在下面两个游戏中选择一个你想要参与的游戏：\n\n\u00a7e[A] ",{"nbt":"total_game_wur.a.name",storage:"minecraft:temp","color":"yellow","bold":true,interpret:true},{text:"\n",color:gold,bold:true},{nbt:"total_game_wur.a.prefix",color:green,storage:"minecraft:temp",interpret:true}," ",{nbt:"total_game_wur.a.desc",color:gray,storage:"minecraft:temp",interpret:true},"\n\n\u00a79[B] ",{"nbt":"total_game_wur.b.name",storage:"minecraft:temp","color":"blue","bold":true,interpret:true},{text:"\n",color:gold,bold:true},{nbt:"total_game_wur.b.prefix",color:green,storage:"minecraft:temp",interpret:true}," ",{nbt:"total_game_wur.b.desc",color:gray,storage:"minecraft:temp",interpret:true},"\n"]
+tellraw @a[team=play.total] [{text:"\n"},{text:"小游戏派对",color:"#009966",bold:true}," §e(",{"score":{"name":"total.display.now","objective":"temp"},"color":"aqua"},"§e/",{"score":{"name":"total.display.all","objective":"temp"},"color":"aqua"},"§e)\n\n\u00a7e⛏ \u00a7a\u00a7l请在下面的游戏中选择一个你想要参与的游戏："]
+tellraw @a[team=play.total] ["\n\u00a7e[A] ",{"nbt":"total_game_wur.a.name",storage:"minecraft:temp","color":"yellow","bold":true,interpret:true},{text:"\n",color:gold,bold:true},{nbt:"total_game_wur.a.prefix",color:green,storage:"minecraft:temp",interpret:true}," ",{nbt:"total_game_wur.a.desc",color:gray,storage:"minecraft:temp",interpret:true},"\n"]
+
+execute unless data storage minecraft:temp total_game_wur.b{id:none} run tellraw @a[team=play.total] ["\n\u00a79[B] ",{"nbt":"total_game_wur.b.name",storage:"minecraft:temp","color":"blue","bold":true,interpret:true},{text:"\n",color:gold,bold:true},{nbt:"total_game_wur.b.prefix",color:green,storage:"minecraft:temp",interpret:true}," ",{nbt:"total_game_wur.b.desc",color:gray,storage:"minecraft:temp",interpret:true},"\n"]
 
 title @a[team=play.total] title ["\u00a7b下一轮游戏"]
 title @a[team=play.total] subtitle ["请选择你想参与的游戏！"]
 
 scoreboard players set gametotal state 2
 scoreboard players set gametotal.time tick 31
+
+execute if data storage minecraft:temp total_game_wur.b{id:none} run scoreboard players set gametotal.time tick 11
 
 execute as @a[team=play.total] at @s run playsound entity.experience_orb.pickup player @s ~ ~ ~ 1 1 1
 

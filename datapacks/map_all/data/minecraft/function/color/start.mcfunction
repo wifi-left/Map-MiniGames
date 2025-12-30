@@ -2,10 +2,11 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
-forceload add 29 111 -7 75
+forceload add 76 115 -57 52
+
 fill -5 17 77 30 17 112 glass
 
-title @a[team=wait.color] title [{"text":"Color Blindness Game","color":"#009966","bold": true}]
+title @a[team=wait.color] title [{"text":"色盲派对","color":"#009966","bold": true}]
 title @a[team=wait.color] subtitle ["\u00a7rShine your eyes !"]
 tellraw @a[team=wait.color] ["\n§6    游戏开始！方块将在§e3§6秒后开始变化！ ","\n"]
 tp @a[team=wait.color] 13 18 95

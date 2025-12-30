@@ -2361,8 +2361,7 @@ execute positioned -5 17 111 if score color.ran.blockwidth board matches 1 run f
 execute positioned -5 17 112 if score color.ran.blockwidth board matches 1 run function minecraft:color/ran_fill/2_place
 execute positioned -5 17 112 if score color.ran.blockwidth board matches 1 run function minecraft:color/ran_fill/2_place
 
-summon marker ~ ~ ~ {Tags:["color.tmp"]}
+summon marker 13.00 18 95.00 {Tags:["color.tmp"]}
 spreadplayers 13.00 95.00 0 20 under 20 false @e[tag=color.tmp]
 execute as @e[tag=color.tmp] at @s run clone ~ ~-1 ~ ~ ~-1 ~ -52 35 64 strict
 kill @e[tag=color.tmp]
-

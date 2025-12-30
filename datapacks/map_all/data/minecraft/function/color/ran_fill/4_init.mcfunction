@@ -5,9 +5,11 @@
 fill -7 17 75 32 17 114 air
 # start from 30 17 77
 kill @e[tag=color.test]
+
+function color/rancolor
+clone -52 35 61 -52 35 61 -52 35 64 strict
 # start from -5 17 112 30 17 77
 # to 13 18 94 12 18 95
-# function color/rancolor
 execute store result score color.ran.targetcount board run random value 1..19
 function color/rancolor
 execute if score color.ran.targetcount board matches 1 run clone -52 35 64 -52 35 64 -52 35 61 strict

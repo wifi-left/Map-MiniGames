@@ -17,9 +17,7 @@ execute as @e[tag=tntsheep.spawn] at @s run function bedwars/item/tntsheep
 
 
 ## Other
-spawnpoint @a[tag=bw.player] -225 9 111
-
-
+spawnpoint @a[tag=bw.player] -225 9 111 0 0
 
 kill @e[type=item,nbt={Item:{id:"minecraft:red_bed"}}]
 kill @e[type=item,nbt={Item:{id:"minecraft:blue_bed"}}]

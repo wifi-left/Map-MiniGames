@@ -7,7 +7,6 @@ fill -7 17 75 32 17 114 air
 
 # 2-18
 
-## WARNING: 'storage' will not be transformed because we don't know what to do with it.
 execute store result storage minecraft:temp random_value int 1 run random value 2..18
 function color/ran_fill/5_place with storage minecraft:temp
 
