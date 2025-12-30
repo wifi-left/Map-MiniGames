@@ -51,18 +51,4 @@ clear @a[tag=NEWENTER1]
 execute as @a[tag=NEWENTER1] run function lobby/oneword
 tag @a[tag=NEWENTER1] remove NEWENTER1
 
-## Repeling War
-tp @a[tag=join.hit] -33 4 -11 0 0
-clear @a[tag=join.hit]
-gamemode adventure @a[tag=join.hit]
-team leave @a[tag=join.hit]
-execute as @a[tag=join.hit] run tellraw @a ["§a§l[MESSAGE] §7",{"selector":"@s","color":"yellow"},"§7 加入了 §eRepeling War§7。"]
-tellraw @a[tag=join.hit,tag=GLOBAL.SPEC] ["\n§7  你已开启§b全局旁观者模式§7。\n  §7由于你进入游戏后会变为旁观模式，请使用 §6/trigger hub§7 返回大厅。\n  ",{"text":"§a§l点击此处，或者使用 §6§l/trigger spec set 3 §a§l退出全局旁观者模式","bold":true,"click_event":{"action":"run_command","command":"/trigger spec set 3"},"hover_event":{"action":"show_text","value":"§c点击此处退出全局旁观者模式"}},"\n"]
-execute as @a[tag=join.hit,tag=GLOBAL.SPEC] at @s run gamemode spectator
-team join wait.repel @a[tag=join.hit]
-execute as @a[tag=join.hit] at @s run attribute @s minecraft:max_health base set 20
-execute as @a[tag=join.hit] at @s run effect clear @s
-tag @a[tag=join.hit] remove join.hit
-
-
 

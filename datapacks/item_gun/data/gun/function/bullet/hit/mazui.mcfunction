@@ -36,6 +36,7 @@ tellraw @a[tag=hit.player] ["§8 - 剩余血量：",{"score":{"objective":"board
 execute as @e[tag=hitted] at @s run particle minecraft:block{block_state:{Name:redstone_block,Properties:{}}} ~ ~1.5 ~ 0 0 0 1 10
 
 execute as @a[tag=hit.player] at @s run playsound entity.arrow.hit_player player @s ~ ~ ~ 1 1 0.5
+execute as @a[distance=..10] run playsound minecraft:block.wood.hit player @s ~ ~ ~ 0.5 2 0
 
 tag @a remove hit.player
 tag @s remove sel

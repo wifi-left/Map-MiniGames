@@ -63,6 +63,8 @@ xp set @s 0 points
 
 execute in overworld run spawnpoint @s 188 120 26 0 0
 attribute @s minecraft:attack_speed base reset
+attribute @s minecraft:max_health base reset
+attribute @s minecraft:movement_speed base reset
 
 advancement grant @s only minigames
 advancement grant @s only egg
@@ -130,3 +132,8 @@ tag @s remove bw.shears
 execute as @s run function player:empty_enderchest
 
 recipe take @s *
+
+tag @s remove zombie.nehelp
+tag @s remove parkouring
+tag @s remove mazing
+tag @s remove play.total

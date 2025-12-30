@@ -36,7 +36,7 @@ execute if score @s quickplay matches 29 run function stronghold/join
 execute if score @s quickplay matches 30 run function blaze/join
 execute if score @s quickplay matches 31 run function cloud/join
 execute if score @s quickplay matches 32 run function pillar/join
-execute if score @s quickplay matches 33 run tag @s add join.hit
+execute if score @s quickplay matches 33 run function repel/join
 execute if score @s quickplay matches 34 run function parkourrace/join
 execute if score @s quickplay matches 35 run function boatwars/join
 execute if score @s quickplay matches 36 run function sneak/join

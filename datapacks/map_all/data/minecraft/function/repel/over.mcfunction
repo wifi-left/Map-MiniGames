@@ -11,7 +11,7 @@ title @a[team=play.repel,gamemode=adventure] title ["\u00a76你赢了！"]
 title @a[team=play.repel,gamemode=spectator] title ["\u00a7c\u00a7l游戏结束!"]
 execute as @a[team=play.repel,gamemode=adventure,tag=play.total] run function minecraft:small_games/total/win_score {score:3}
 execute if entity @a[team=play.repel,tag=play.total] run function minecraft:small_games/total/next_game_trigger
-tag @a[team=play.repel,gamemode=!creative] add join.hit
+execute as @a[team=play.repel,gamemode=!creative] run function repel/join
 schedule clear minecraft:repel/givethings
 #/summon armor_stand ~ ~-1.98 ~ {NoGravity:1b,Invisible:1b,Passengers:[{Tags:["block_entity"],Invulnerable:1b,NoAI:1b,NoGravity:1b,PersistenceRequired:1b,id:"minecraft:falling_block",Time:-1000000,DropItem:true,BlockState:{Name:"orange_wool"}}]}
 #minecraft:orange_stained_glass
