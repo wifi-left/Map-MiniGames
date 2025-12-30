@@ -8,8 +8,8 @@ scoreboard players set total.b.hastarted board 0
 
 scoreboard players set total.sel.a.count tick 0
 scoreboard players set total.sel.b.count tick 0
-execute as @a[tag=total.sel.a] run scoreboard players add total.sel.a.count tick 1
-execute as @a[tag=total.sel.b] run scoreboard players add total.sel.b.count tick 1
+execute as @a[tag=total.sel.a,tag=!GLOBAL.SPEC] run scoreboard players add total.sel.a.count tick 1
+execute as @a[tag=total.sel.b,tag=!GLOBAL.SPEC] run scoreboard players add total.sel.b.count tick 1
 
 execute if score total.sel.b.count tick matches ..1 run function minecraft:small_games/total/wur/not_enough_player/b
 execute if score total.sel.a.count tick matches ..1 run function minecraft:small_games/total/wur/not_enough_player/a
