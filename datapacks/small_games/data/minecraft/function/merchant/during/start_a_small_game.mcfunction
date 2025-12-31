@@ -14,5 +14,5 @@ execute unless score count.2 board matches 1.. run function minecraft:small_game
 execute store result score count.2 board run data get storage minecraft:temp random_games.games
 
 execute unless score count.2 board matches 1.. run return run function minecraft:merchant/during/no_small_games
-
+# scoreboard players operation total.game_mode.tmp state = total.game_mode state
 schedule function small_games/total/get_random_game 3s

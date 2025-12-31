@@ -1,5 +1,5 @@
 
-kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{is_eggs:true,egg_type:1}}}}]
+kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{is_eggs:true}}}}]
 
 execute in overworld run data modify block 195 212 -84 Items set value [{components: {"minecraft:lore": ["(+NBT)"], "minecraft:custom_name": "从天上拿过来的命令方块[别踢我]awa","minecraft:custom_data":{is_eggs:true,egg_type:1}}, count: 1, Slot: 0b, id: "minecraft:chain_command_block"}]
 execute in overworld run data modify block 196 212 -84 Items set value []

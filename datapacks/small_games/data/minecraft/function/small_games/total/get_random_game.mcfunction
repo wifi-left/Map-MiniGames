@@ -41,7 +41,7 @@ title @a[tag=play.total] subtitle [{"nbt":"total_game.name",storage:"minecraft:t
 tellraw @a[team=deskgame,tag=play.total] ["\n    §a§l随机游戏§a§l：",{"nbt":"total_game.name",storage:"minecraft:temp","color":"light_purple","bold":true,interpret:true},"\n\n    §e游戏将会在 §c5 §e秒后开始。\n",{text:"\n游戏介绍：\n",color:gold,bold:true},{nbt:"total_game.prefix",color:green,storage:"minecraft:temp",interpret:true}," ",{nbt:"total_game.desc",color:gray,storage:"minecraft:temp",interpret:true},"\n"]
 title @a[team=deskgame,tag=play.total] title ["\u00a7b随机游戏"]
 
-
+team join play.total @a[tag=play.total]
 
 execute as @a[tag=play.total] at @s run playsound entity.generic.explode player @s ~ ~ ~ 1 2 1
 ## Testfor if the game has been on
@@ -54,5 +54,3 @@ execute if score error state matches 1.. run function minecraft:small_games/tota
 
 execute unless score error state matches 1.. run schedule function small_games/total/start_next_game 5s
 scoreboard players reset error state
-
-

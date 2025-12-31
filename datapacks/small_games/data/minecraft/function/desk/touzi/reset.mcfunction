@@ -33,13 +33,12 @@ execute as @e[tag=touzi.text.health.a,type=marker] at @s as @e[distance=0..2,typ
 execute as @e[tag=touzi.text.health.b,type=marker] at @s as @e[distance=0..2,type=text_display] run data modify entity @s text set from block -19 4 71 front_text.messages[3]
 
 
-execute as @e[tag=touzi.a,type=marker] at @s run summon minecraft:armor_stand ~ ~-1 ~ {Invulnerable:1b,NoAI:1b,Silent:1b,NoGravity:1b,Invisible:true,DisabledSlots:1973790,Tags:["touzi.a","desk.touzi.place"],CustomNameVisible:1b,CustomName:"\u00a78(空)",ShowArms:true}
-execute as @e[tag=touzi.a,type=marker] at @s run summon minecraft:item_frame ~ ~0.5 ~ {Invulnerable:1b,Silent:1b,NoGravity:1b,Invisible:true,Fixed:1b,Tags:["touzi.a","desk.touzi.show"]}
-execute as @e[tag=touzi.a,type=item_frame] at @s run tp @s ~ ~ ~ -180 90
-execute as @e[tag=touzi.a,type=armor_stand] at @s run tp @s ~ ~ ~ -180 0
-execute as @e[tag=touzi.b,type=marker] at @s run summon minecraft:armor_stand ~ ~-1 ~ {Invulnerable:1b,NoAI:1b,Silent:1b,NoGravity:1b,Invisible:true,DisabledSlots:1973790,Tags:["touzi.b","desk.touzi.place"],CustomNameVisible:1b,CustomName:"\u00a78(空)",ShowArms:true}
-execute as @e[tag=touzi.b,type=marker] at @s run summon minecraft:item_frame ~ ~0.5 ~ {Invulnerable:1b,Silent:1b,NoGravity:1b,Invisible:true,Fixed:1b,Tags:["touzi.b","desk.touzi.show"]}
-execute as @e[tag=touzi.b,type=item_frame] at @s run tp @s ~ ~ ~ 0 -90
+execute as @e[tag=touzi.a,type=marker] at @s run summon minecraft:armor_stand ~ ~-0.5 ~ {Invulnerable:1b,Silent:1b,NoGravity:1b,Invisible:true,DisabledSlots:1973790,Tags:["touzi.a","desk.touzi.place"],CustomNameVisible:1b,CustomName:"\u00a78(空)",ShowArms:true}
+execute as @e[tag=touzi.a,type=marker] at @s run summon minecraft:item_frame ~ ~0.5 ~ {Invulnerable:1b,Silent:1b,NoGravity:1b,Invisible:true,Fixed:1b,Tags:["touzi.a","desk.touzi.show"],Facing:1,ItemRotation:4}
+execute as @e[tag=touzi.a,type=armor_stand] at @s run rotate @s -180 0
+execute as @e[tag=touzi.b,type=marker] at @s run summon minecraft:armor_stand ~ ~-0.5 ~ {Invulnerable:1b,Silent:1b,NoGravity:1b,Invisible:true,DisabledSlots:1973790,Tags:["touzi.b","desk.touzi.place"],CustomNameVisible:1b,CustomName:"\u00a78(空)",ShowArms:true}
+execute as @e[tag=touzi.b,type=marker] at @s run summon minecraft:item_frame ~ ~0.5 ~ {Invulnerable:1b,Silent:1b,NoGravity:1b,Invisible:true,Fixed:1b,Tags:["touzi.b","desk.touzi.show"],Facing:1}
+execute as @e[tag=touzi.b,type=armor_stand] at @s run rotate @s 0 0
 
 # /execute as @e[tag=desk.touzi.desktop] at @s run setblock ~ ~ ~ stone_bricks
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{desk_item:1}}}}]

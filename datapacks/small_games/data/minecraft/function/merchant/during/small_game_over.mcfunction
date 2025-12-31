@@ -1,4 +1,7 @@
 tag @a[tag=merchant.player] remove play.total
+
+# scoreboard players operation total.game_mode state = total.game_mode.tmp state
+
 scoreboard players set gametotal state 0
 team join deskgame @a[tag=merchant.player]
 tellraw @a[tag=merchant.player] ["\n\u00a7e\u00a7l本轮金币奖励情况\n"]
