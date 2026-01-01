@@ -28,14 +28,14 @@ give @a[scores={bw.axe=2..2},gamemode=!spectator,tag=bw.play,nbt=!{Inventory:[{i
 give @a[scores={bw.pickaxe=3..3},gamemode=!spectator,tag=bw.play,nbt=!{Inventory:[{id:"minecraft:diamond_pickaxe"}]}] diamond_pickaxe[enchantments={"minecraft:efficiency":1s},tooltip_display={hidden_components:[enchantments,unbreakable,can_place_on,can_break]},unbreakable={},custom_data={bw:1},can_place_on=[{blocks:"#minecraft:bwplace"}],can_break=[{blocks:"#minecraft:bedblocks"}]]
 give @a[scores={bw.axe=3..3},gamemode=!spectator,tag=bw.play,nbt=!{Inventory:[{id:"minecraft:diamond_axe"}]}] diamond_axe[attribute_modifiers=[{type:"attack_damage",slot:"any",id:"uuid_7777842599633879",amount:3d,operation:"add_value"}],tooltip_display={hidden_components:[attribute_modifiers,enchantments,unbreakable,can_place_on,can_break]},enchantments={"minecraft:efficiency":1s},unbreakable={},custom_data={bw:1},can_place_on=[{blocks:"#minecraft:bwplace"}],can_break=[{blocks:"#minecraft:bedblocks"}]]
 
-clear @a[scores={bw.pickaxe=..2},gamemode=!spectator,tag=bw.play,nbt=!{Inventory:[{id:"minecraft:diamond_pickaxe"}]}] diamond_pickaxe
-clear @a[scores={bw.axe=..2},gamemode=!spectator,tag=bw.play,nbt=!{Inventory:[{id:"minecraft:diamond_pickaxe"}]}] diamond_axe
+clear @a[scores={bw.pickaxe=..2},gamemode=!spectator,tag=bw.play,nbt={Inventory:[{id:"minecraft:diamond_pickaxe"}]}] diamond_pickaxe
+clear @a[scores={bw.axe=..2},gamemode=!spectator,tag=bw.play,nbt={Inventory:[{id:"minecraft:diamond_axe"}]}] diamond_axe
 
-clear @a[scores={bw.pickaxe=..1},gamemode=!spectator,tag=bw.play,nbt=!{Inventory:[{id:"minecraft:iron_pickaxe"}]}] iron_pickaxe
-clear @a[scores={bw.axe=..1},gamemode=!spectator,tag=bw.play,nbt=!{Inventory:[{id:"minecraft:iron_pickaxe"}]}] iron_axe
+clear @a[scores={bw.pickaxe=..1},gamemode=!spectator,tag=bw.play,nbt={Inventory:[{id:"minecraft:iron_pickaxe"}]}] iron_pickaxe
+clear @a[scores={bw.axe=..1},gamemode=!spectator,tag=bw.play,nbt={Inventory:[{id:"minecraft:iron_axe"}]}] iron_axe
 
-clear @a[scores={bw.pickaxe=..0},gamemode=!spectator,tag=bw.play,nbt=!{Inventory:[{id:"minecraft:wooden_pickaxe"}]}] wooden_pickaxe
-clear @a[scores={bw.axe=..0},gamemode=!spectator,tag=bw.play,nbt=!{Inventory:[{id:"minecraft:wooden_pickaxe"}]}] wooden_axe
+clear @a[scores={bw.pickaxe=..0},gamemode=!spectator,tag=bw.play,nbt={Inventory:[{id:"minecraft:wooden_pickaxe"}]}] wooden_pickaxe
+clear @a[scores={bw.axe=..0},gamemode=!spectator,tag=bw.play,nbt={Inventory:[{id:"minecraft:wooden_axe"}]}] wooden_axe
 
 clear @a[tag=!bw.shears,gamemode=!spectator,tag=bw.play,nbt={Inventory:[{id:"minecraft:shears"}]}] shears
 

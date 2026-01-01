@@ -1,6 +1,9 @@
 execute as @s[team=stronghold] run return fail
 execute as @s[team=play.zombie] run return fail
 
+execute as @s[type=player] as @s[gamemode=creative] run return fail
+execute as @s[type=player] as @s[gamemode=spectator] run return fail
+
 execute store result score temp.x1 temp run data get entity @s Pos[0] 10
 execute store result score temp.y1 temp run data get entity @s Pos[1] 10
 execute store result score temp.z1 temp run data get entity @s Pos[2] 10
