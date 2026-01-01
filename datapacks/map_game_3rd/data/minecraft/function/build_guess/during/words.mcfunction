@@ -408,8 +408,8 @@ data modify storage minecraft:temp build_guess_tmp set value {words:[\
 "救生圈",\
 "救生衣",\
 "鱼钩",\
-"鱼网",\
-"鱼筐",\
+"渔网",\
+"鱼",\
 "鱼缸",\
 "鸟笼",\
 "蜂箱",\
