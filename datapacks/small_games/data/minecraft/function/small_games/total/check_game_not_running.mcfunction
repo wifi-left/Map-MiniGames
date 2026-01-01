@@ -1,1 +1,1 @@
-$execute if score $(state_var) matches 1.. run scoreboard players set error state 1
+$execute unless score $(state_var) matches 0 run scoreboard players set error state 1
