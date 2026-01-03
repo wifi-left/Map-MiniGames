@@ -1,6 +1,6 @@
 scoreboard players set hunger.time board 61
 scoreboard players set hunger.state state 1
-scoreboard players set hunger.chests board 3
+scoreboard players set hunger.chests board 2
 function minecraft:hunger/flushitem
 bossbar set minecraft:hungergame max 60
 bossbar set minecraft:hungergame value 60

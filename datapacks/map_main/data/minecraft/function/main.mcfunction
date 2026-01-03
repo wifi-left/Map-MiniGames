@@ -170,6 +170,7 @@ scoreboard players reset @a[scores={JOBPVP.die=1..}] JOBPVP.die
 
 execute if score hotpot.state state matches 1.. run function minecraft:hotpotever/tick
 execute if score pillar.state state matches 1.. in airworld run function minecraft:pillar/tick
+execute if score sheepwars.state state matches 1.. in airworld run function minecraft:sheepwars/tick
 
 
 scoreboard players reset @a[scores={eat.goldapple=0..}] eat.goldapple

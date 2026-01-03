@@ -43,6 +43,9 @@ data modify storage minecraft:temp random_games_all.games append value {id:35,na
 data modify storage minecraft:temp random_games_all.games append value {id:43,name:"\u00a7b躲避球游戏",prefix:"[球类游戏]",desc:"简易版本的躲避球比赛！小心球！",state_var:"ballgame.state state",start_func:["execute as @a[team=play.total] run function ballgame/join","scoreboard players set ballgame.type board 1","function ballgame/trystart"]}
 data modify storage minecraft:temp random_games_all.games append value {id:36,name:"\u00a7e足球游戏",prefix:"[球类游戏]",desc:"简易版本的足球比赛！",state_var:"ballgame.state state",start_func:["execute as @a[team=play.total] run function ballgame/join","scoreboard players set ballgame.type board 0","function ballgame/trystart"]}
 
+data modify storage minecraft:temp random_games_all.games append value {id:47,name:"\u00a7d绵羊突击队",prefix:"[策略游戏]",desc:"发射各种各样的绵羊进行攻击",state_var:"sheepwars.state state",start_func:["execute as @a[team=play.total] run function sheepwars/join","function sheepwars/trystart"]}
+
+
 data modify storage minecraft:temp random_games_all.games append value {id:8,name:"\u00a75战桥",prefix:"[PVP游戏]",desc:"进入对方守护的得分区，夺得胜利！",state_var:"duel.state state",start_func:["execute as @a[team=play.total] run function duel/join","function duel/teststart"]}
 data modify storage minecraft:temp random_games_all.games append value {id:22,name:"\u00a76幸运之柱",prefix:"[PVP游戏]",desc:"你的运气怎么样呢？",state_var:"pillar.state state",start_func:["execute as @a[team=play.total] run function pillar/join","function pillar/trystart"]}
 

@@ -2,7 +2,6 @@ execute as @a[x=-55,y=-62,z=572,distance=..2,team=pillar,gamemode=!spectator,gam
 execute as @a[team=pillar,gamemode=!spectator,gamemode=!creative] at @s run kill @s[y=-67,dy=-250]
 execute if score pillar.state state matches 3 as @a[team=pillar,gamemode=!spectator,gamemode=!creative] at @s run kill @s[y=41,dy=2]
 execute in airworld as @e[type=!player] at @s run kill @s[y=-65,dy=-20]
-execute in airworld as @e[type=!player] at @s run kill @s[y=-65,dy=-20]
 
 execute if score pillar.remove.now board matches -1 run fill -135 38 652 -57 36 574 air destroy
 execute if score pillar.remove.now board matches 0 run fill -134 38 651 -58 36 575 air destroy

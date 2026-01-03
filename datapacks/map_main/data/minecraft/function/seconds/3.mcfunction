@@ -29,3 +29,6 @@ execute if score endwolf.state state matches 1.. run function endless_wolf/secon
 
 effect give @a[team=blaze.wait] resistance 2 25 true
 execute if score blaze.state state matches 1.. in killerworld run function minecraft:blaze/second
+
+
+execute if score sheepwars.state state matches 1.. in airworld run function minecraft:sheepwars/second

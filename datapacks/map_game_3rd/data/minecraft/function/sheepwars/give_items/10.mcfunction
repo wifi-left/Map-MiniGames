@@ -1,0 +1,2 @@
+execute as @a[team=play.sheepwars.a,gamemode=survival] run function minecraft:sheepwars/give_items/player/10
+execute as @a[team=play.sheepwars.b,gamemode=survival] run function minecraft:sheepwars/give_items/player/10

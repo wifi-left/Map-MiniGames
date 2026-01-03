@@ -29,6 +29,8 @@ function minecraft:lobby/quickplay_info {id:49,name:"不要相信T氏的话",col
 
 function minecraft:lobby/quickplay_info {id:44,name:"你建我跑",color:b}
 
+function minecraft:lobby/quickplay_info {id:51,name:"绵羊突击队",color:b}
+
 function minecraft:lobby/quickplay_info {id:8,name:"战桥",color:d}
 function minecraft:lobby/quickplay_info {id:2,name:"Battle Box",color:d}
 function minecraft:lobby/quickplay_info {id:5,name:"吸血鬼之夜",color:d}

@@ -20,5 +20,5 @@ execute if score @s board matches 4 run data merge entity @s {Color:0b}
 execute if score @s board matches 2 run data merge entity @s {Color:0b}
 
 execute if score @s board matches 0 run data merge entity @s {Color:0b}
-execute if score @s board matches ..0 run function bedwars/item/sheepboom
+execute if score @s board matches ..0 at @s run function bedwars/item/sheepboom
 

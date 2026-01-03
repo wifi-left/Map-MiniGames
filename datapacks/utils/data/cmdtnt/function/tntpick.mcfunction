@@ -23,4 +23,4 @@ particle minecraft:explosion ~ ~ ~ 1 1 1 1 10 normal
 execute as @e[tag=cmd.tnt.boom] at @s run kill @e[type=item,distance=0..1.2]
 execute as @e[tag=cmd.tnt.boom] at @s run function cmdtnt:tnt/lootblock
 kill @e[tag=cmd.tnt]
-
+summon creeper ~ ~ ~ {DeathLootTable:"",Tags:["cmd.tnt.boom"],Fuse:0,CustomName:["\u00a7c\u00a7lTNT SHEEP"],CustomNameVisible:0b,Invulnerable:1b,Silent:1b,PersistenceRequired:1b,ignited:true,ExplosionRadius:3b,attributes:[{base:1d,id:"max_health"},{base:1d,id:"knockback_resistance"},{base:0d,id:"movement_speed"},{base:1d,id:"follow_range"},{base:0d,id:"attack_damage"},{base:1d,id:"attack_speed"},{base:1d,id:"armor"},{base:1d,id:"armor_toughness"}]}
