@@ -6,8 +6,8 @@ item replace entity @s[team=play.sheepwars.a] hotbar.2 with blue_wool 3
 item replace entity @s[team=play.sheepwars.b] hotbar.2 with red_wool 3
 item replace entity @s inventory.26 with arrow
 
-item replace entity @s[team=play.sheepwars.a] armor.chest with leather_chestplate[unbreakable={},dyed_color=255,enchantments={binding_curse:1,blast_protection:25},attribute_modifiers=[{type:"explosion_knockback_resistance",amount:-10,id:"knockback",operation:"add_value"},{type:"armor",amount:3,id:"knockback",operation:"add_value"}]]
-item replace entity @s[team=play.sheepwars.b] armor.chest with leather_chestplate[unbreakable={},dyed_color=16711680,enchantments={binding_curse:1,blast_protection:25},attribute_modifiers=[{type:"explosion_knockback_resistance",amount:-4.5,id:"knockback",operation:"add_value"},{type:"armor",amount:3,id:"knockback",operation:"add_value"}]]
+item replace entity @s[team=play.sheepwars.a] armor.chest with leather_chestplate[unbreakable={},dyed_color=255,enchantments={binding_curse:1,blast_protection:15},attribute_modifiers=[{type:"explosion_knockback_resistance",amount:-10,id:"knockback",operation:"add_value"},{type:"armor",amount:3,id:"knockback",operation:"add_value"}]]
+item replace entity @s[team=play.sheepwars.b] armor.chest with leather_chestplate[unbreakable={},dyed_color=16711680,enchantments={binding_curse:1,blast_protection:15},attribute_modifiers=[{type:"explosion_knockback_resistance",amount:-4.5,id:"knockback",operation:"add_value"},{type:"armor",amount:3,id:"knockback",operation:"add_value"}]]
 
 item replace entity @s armor.feet with leather_boots[unbreakable={},attribute_modifiers=[{id:"s",operation:"add_value",amount:100,type:"safe_fall_distance"}],enchantments={binding_curse:1}]
 
