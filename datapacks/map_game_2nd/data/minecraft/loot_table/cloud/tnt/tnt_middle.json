@@ -8,6 +8,23 @@
             },
             "entries": [
                 {
+                    "type": "item",
+                    "name": "golden_chestplate",
+                    "functions": [
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "blast_protection": {
+                                    "min": 1,
+                                    "max": 30
+                                }
+                            },
+                            "add": true
+                        }
+                    ],
+                    "weight": 16
+                },
+                {
                     "type": "minecraft:loot_table",
                     "value": "minecraft:cloud/normal/middle",
                     "weight": 8,
@@ -37,7 +54,7 @@
                         {
                             "function": "set_components",
                             "components": {
-                                "item_name":"烈焰弹（右键方块点燃火焰）"
+                                "item_name": "烈焰弹（右键方块点燃火焰）"
                             }
                         }
                     ]
@@ -150,7 +167,7 @@
                                 "minecraft:custom_data": {
                                     "tnt": 4
                                 },
-                                "item_model":"fire_charge"
+                                "item_model": "fire_charge"
                             }
                         }
                     ]
@@ -167,7 +184,7 @@
                                 "minecraft:custom_data": {
                                     "tnt": 3
                                 },
-                                "item_model":"creeper_head"
+                                "item_model": "creeper_head"
                             }
                         }
                     ]
@@ -184,7 +201,7 @@
                                 "minecraft:custom_data": {
                                     "tnt": 2
                                 },
-                                "item_model":"tnt"
+                                "item_model": "tnt"
                             }
                         }
                     ]
@@ -201,7 +218,7 @@
                                 "minecraft:custom_data": {
                                     "tnt": 8
                                 },
-                                "item_model":"tnt"
+                                "item_model": "tnt"
                             }
                         }
                     ]
@@ -218,7 +235,7 @@
                                 "minecraft:custom_data": {
                                     "tnt": 1
                                 },
-                                "item_model":"tnt_minecart"
+                                "item_model": "tnt_minecart"
                             }
                         }
                     ]

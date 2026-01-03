@@ -2,6 +2,7 @@ data merge entity @s {NoGravity:false,Invulnerable:false,NoAI:false,attributes:[
 tag @s add sheepwars.sheep.normal
 
 # execute unless block ^ ^ ^1 #can_glide_through unless block ^ ^ ^1 #air run return fail
+rotate @s ~ ~
 
 execute in overworld positioned 0.0 0.0 0.0 run summon marker ^ ^ ^5 {Tags:["t.tmp"]}
 
