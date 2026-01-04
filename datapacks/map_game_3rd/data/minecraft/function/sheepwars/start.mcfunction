@@ -16,3 +16,5 @@ spawnpoint @a[team=play.sheepwars.a] 411 -63 823 0 0
 spawnpoint @a[team=play.sheepwars.b] 411 -63 823 0 0
 
 function minecraft:sheepwars/reset/start
+team modify play.sheepwars.a friendlyFire false
+team modify play.sheepwars.b friendlyFire false

@@ -1,6 +1,7 @@
-execute store result score random temp run random value 0..20
+execute store result score random temp run random value 0..22
 execute if score random temp matches 0..8 run give @s paper[item_model=tnt,max_stack_size=1,item_name='爆炸绵羊',custom_data={sheepwars:{type:small_tnt}},consumable={consume_seconds:0.1,animation:"bow",has_consume_particles:false,sound:"entity.sheep.ambient"}]
 execute if score random temp matches 9..12 run give @s paper[item_model=tnt_minecart,max_stack_size=1,item_name='高爆绵羊',custom_data={sheepwars:{type:big_tnt}},consumable={consume_seconds:0.1,animation:"bow",has_consume_particles:false,sound:"entity.sheep.ambient"}]
 execute if score random temp matches 13 run give @s paper[item_model=carrot_on_a_stick,max_stack_size=1,item_name='云霄绵羊',custom_data={sheepwars:{type:rider}},consumable={consume_seconds:0.1,animation:"bow",has_consume_particles:false,sound:"entity.sheep.ambient"}]
 execute if score random temp matches 14..17 run give @s paper[item_model=pink_dye,max_stack_size=1,item_name='治疗绵羊',custom_data={sheepwars:{type:health}},consumable={consume_seconds:0.1,animation:"bow",has_consume_particles:false,sound:"entity.sheep.ambient"}]
 execute if score random temp matches 18..20 run give @s paper[item_model=fire_coral_fan,max_stack_size=1,item_name='地震绵羊',custom_data={sheepwars:{type:earthquake}},consumable={consume_seconds:0.1,animation:"bow",has_consume_particles:false,sound:"entity.sheep.ambient"}]
+execute if score random temp matches 21..22 run give @s paper[item_model=end_portal_frame,max_stack_size=1,item_name='黑洞绵羊',custom_data={sheepwars:{type:track}},consumable={consume_seconds:0.1,animation:"bow",has_consume_particles:false,sound:"entity.sheep.ambient"}]
