@@ -10,7 +10,7 @@ scoreboard players operation temp temp %= 2 board
 execute if score temp temp matches 0 as @s[tag=sheepwars.blackhole] at @s as @a[distance=..8] run rotate @s facing ~ ~-0.5 ~
 execute as @s[tag=sheepwars.blackhole] at @s run particle dust{color:0,scale:1} ~ ~ ~ 8 8 8 1 10 normal
 
-
+scoreboard players operation temp temp = @s board
 scoreboard players set 40 board 40
 scoreboard players operation temp temp %= 40 board
 execute if score temp temp matches 0 as @s[tag=sheepwars.health] at @s run effect give @a[distance=..5] regeneration 2 3 true
