@@ -5,10 +5,10 @@ scoreboard players operation temp temp %= 10 board
 execute if score temp temp matches 0 run playsound entity.sheep.ambient block @a[distance=..30] ~ ~ ~ 1 1 0
 
 scoreboard players operation temp temp = @s board
-scoreboard players set 20 board 20
-scoreboard players operation temp temp %= 20 board
-execute if score temp temp matches 0 as @s[tag=sheepwars.blachole] at @s as @a[distance=..5] run rotate @s facing ~ ~ ~
-execute as @s[tag=sheepwars.blachole] at @s run particle dust{color:0,scale:1} ~ ~ ~ 5 5 5 1 10 normal
+scoreboard players set 2 board 2
+scoreboard players operation temp temp %= 2 board
+execute if score temp temp matches 0 as @s[tag=sheepwars.blackhole] at @s as @a[distance=..8] run rotate @s facing ~ ~-0.5 ~
+execute as @s[tag=sheepwars.blackhole] at @s run particle dust{color:0,scale:1} ~ ~ ~ 8 8 8 1 10 normal
 
 
 scoreboard players set 40 board 40

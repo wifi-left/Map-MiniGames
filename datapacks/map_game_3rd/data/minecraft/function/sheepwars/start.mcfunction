@@ -14,7 +14,10 @@ execute if score sheepwars.map board matches -1 store result score sheepwars.map
 
 spawnpoint @a[team=play.sheepwars.a] 411 -63 823 0 0
 spawnpoint @a[team=play.sheepwars.b] 411 -63 823 0 0
+effect give @a[team=play.sheepwars.a] slowness 5 25 true
+effect give @a[team=play.sheepwars.b] slowness 5 25 true
 
 function minecraft:sheepwars/reset/start
+
 team modify play.sheepwars.a friendlyFire false
 team modify play.sheepwars.b friendlyFire false
