@@ -1,5 +1,6 @@
 execute unless dimension airworld in airworld run return run function minecraft:sheepwars/reset/doit
 fill 408 -64 824 334 -64 898 air
+fill 408 -8 824 334 -32 898 air
 
 execute if score sheepwars.map board matches 0 run function sheepwars/reset/maps/sand
 execute if score sheepwars.map board matches 1 run function sheepwars/reset/maps/stone
