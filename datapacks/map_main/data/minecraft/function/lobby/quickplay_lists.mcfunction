@@ -1,5 +1,4 @@
-tellraw @s ["\n§6 ※ 快速加入游戏 ※ §b游戏ID列表：\n"]
-
+execute if score quickplay.showmode temp matches 1 run tellraw @s ["\n§6 ※ 快速加入游戏 ※ §b游戏ID列表：\n"]
 data modify storage minecraft:temp dialog_tmp.actions set value []
 
 function minecraft:lobby/quickplay_info {id:21,name:"小游戏派对",color:"f§l"}
@@ -61,4 +60,4 @@ function minecraft:lobby/quickplay_info {id:35,name:"船战 (废案)",color:7}
 function minecraft:lobby/quickplay_info {id:4,name:"赛猪游戏 (废案)",color:7}
 function minecraft:lobby/quickplay_info {id:10,name:"道具躲猫猫 (废案)",color:7}
 
-tellraw @s "\n§e使用 §6/trigger quickplay set <游戏ID>§b ，或者点击上方文字快速进入"
+execute if score quickplay.showmode temp matches 1 run tellraw @s "\n§e使用 §6/trigger quickplay set <游戏ID>§b ，或者点击上方文字快速进入"
