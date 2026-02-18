@@ -12,7 +12,7 @@ item replace block ~ ~-1 ~ container.9 with minecraft:gray_stained_glass_pane[mi
 item replace block ~ ~-1 ~ container.10 with minecraft:mace[minecraft:lore=["§c购买需求：","§6 - §a4 §bDiamond","§6 - §a4 §bEmerald"],minecraft:custom_data={shop:-37,bwshopitem:1}] 1
 item replace block ~ ~-1 ~ container.11 with minecraft:gray_stained_glass_pane[minecraft:item_name="",minecraft:custom_data={shop:1}] 1
 item replace block ~ ~-1 ~ container.12 with minecraft:gray_stained_glass_pane[minecraft:item_name="",minecraft:custom_data={shop:1}] 1
-item replace block ~ ~-1 ~ container.13 with minecraft:paper[minecraft:custom_data={shop:void,bwshopitem:1},item_name='卷轴',custom_name={text:"虚空回城卷轴(一次性) §6- §a8 §bGold",color:green,italic:false},lore=[{text:"放入背包即可在落入虚空时返回出生点",color:aqua,italic:true}]] 1
+item replace block ~ ~-1 ~ container.13 with minecraft:paper[minecraft:custom_data={shop:void,bwshopitem:1},item_name='卷轴',custom_name={text:"虚空回城卷轴(一次性) §6- §a32 §bGold",color:green,italic:false},lore=[{text:"放入背包即可在落入虚空时返回出生点",color:aqua,italic:true}]] 1
 item replace block ~ ~-1 ~ container.14 with minecraft:gray_stained_glass_pane[minecraft:item_name="",minecraft:custom_data={shop:1}] 1
 item replace block ~ ~-1 ~ container.15 with minecraft:gray_stained_glass_pane[minecraft:item_name="",minecraft:custom_data={shop:1}] 1
 item replace block ~ ~-1 ~ container.16 with minecraft:water_bucket[minecraft:tooltip_display={hidden_components:["minecraft:attribute_modifiers","minecraft:enchantments"]},minecraft:item_name="水桶 §6- §a4 §bGold",minecraft:custom_data={shop:-21,bwshopitem:1}] 1

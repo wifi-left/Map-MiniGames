@@ -3,6 +3,10 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 # 木剑
+# summon text_display ~ ~ ~ {text:'"\\u00a76\\u00a7l欢迎来到\\u00a7e\\u00a7l开拓星穹谋杀案\\n\\u00a73开拓星穹谋杀案交流群：\\u00a7d652776926\\n\\n\\u00a7b大厅地图：\\u00a7eMiniGames"',billboard:"fixed",alignment:"center",transformation:{translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],scale:[2f,2f,2f],right_rotation:[0f,0f,0f,1f]},Rotation:[180f,0f]}
+# summon text_display ~ ~ ~ {text:'"\\u00a7b获取大厅地图完整小游戏体验\\n\\u00a7b请下载\\u00a7eMiniGames地图\\u00a7a最新版\\u00a7b！\\n\\u00a7aMiniGames 地图交流II群：\\u00a7d1075114603"',billboard:"vertical",alignment:"center",transformation:{translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],scale:[2f,2f,2f],right_rotation:[0f,0f,0f,1f]},Rotation:[180f,0f]}
+# 
+
 execute if score bw.sharpness.green board matches 0 run give @a[tag=bwneeds,gamemode=!spectator,tag=bw.play,team=bw.green] minecraft:wooden_sword[custom_data={bw:1},tooltip_display={hidden_components:[unbreakable,can_break,can_place_on]},unbreakable={},can_break=[{blocks:"#minecraft:bedblocks"}],can_place_on=[{blocks:"#minecraft:bwplace"}]] 1
 execute if score bw.sharpness.red board matches 0 run give @a[tag=bwneeds,gamemode=!spectator,tag=bw.play,team=bw.red] minecraft:wooden_sword[custom_data={bw:1},tooltip_display={hidden_components:[unbreakable,can_break,can_place_on]},unbreakable={},can_break=[{blocks:"#minecraft:bedblocks"}],can_place_on=[{blocks:"#minecraft:bwplace"}]] 1
 execute if score bw.sharpness.blue board matches 0 run give @a[tag=bwneeds,gamemode=!spectator,tag=bw.play,team=bw.blue] minecraft:wooden_sword[custom_data={bw:1},tooltip_display={hidden_components:[unbreakable,can_break,can_place_on]},unbreakable={},can_break=[{blocks:"#minecraft:bedblocks"}],can_place_on=[{blocks:"#minecraft:bwplace"}]] 1

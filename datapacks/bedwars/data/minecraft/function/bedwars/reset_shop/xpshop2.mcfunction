@@ -21,7 +21,7 @@ item replace block ~ ~-1 ~ container.18 with minecraft:gray_stained_glass_pane[m
 item replace block ~ ~-1 ~ container.19 with minecraft:shield[minecraft:lore=["§c购买需求：","§6 - §a600 §bXP"],minecraft:custom_data={shop:-39,bwshopitem:1}] 1
 item replace block ~ ~-1 ~ container.20 with minecraft:gray_stained_glass_pane[minecraft:item_name="",minecraft:custom_data={shop:1}] 1
 item replace block ~ ~-1 ~ container.21 with minecraft:wind_charge[minecraft:item_name="风弹 §6- §a40 §bXP",minecraft:custom_data={shop:-36,bwshopitem:1}] 1
-item replace block ~ ~-1 ~ container.22 with minecraft:paper[minecraft:custom_data={shop:void,bwshopitem:1},item_name='卷轴',custom_name={text:"虚空回城卷轴(一次性) §6- §a160 §bXP",color:green,italic:false},lore=[{text:"放入背包即可在落入虚空时返回出生点",color:aqua,italic:true}]]
+item replace block ~ ~-1 ~ container.22 with minecraft:paper[minecraft:custom_data={shop:void,bwshopitem:1},item_name='卷轴',custom_name={text:"虚空回城卷轴(一次性) §6- §a640 §bXP",color:green,italic:false},lore=[{text:"放入背包即可在落入虚空时返回出生点",color:aqua,italic:true}]]
 item replace block ~ ~-1 ~ container.23 with minecraft:egg[minecraft:tooltip_display={hidden_components:["minecraft:attribute_modifiers","minecraft:enchantments"]},minecraft:item_name="Bridge Egg §6- §a300 §bXP",minecraft:custom_data={shop:-23,bwshopitem:1}] 1
 item replace block ~ ~-1 ~ container.24 with minecraft:gray_stained_glass_pane[minecraft:item_name="",minecraft:custom_data={shop:1}] 1
 item replace block ~ ~-1 ~ container.25 with minecraft:tnt[minecraft:item_name="TNT Sheep",minecraft:lore=["§7使用此道具可以让附近“爆炸”，破坏方块。","§7道具有爆炸CD，不会产生击退。","§c购买需求：","§6 - §a160 §bXP"],minecraft:custom_data={shop:-35,bwshopitem:1}] 1
