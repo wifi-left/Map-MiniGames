@@ -1,0 +1,39 @@
+{
+  "minecraft:intro/other": {
+    "criteria": {
+      "a": "2025-11-22 19:42:52 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games": {
+    "criteria": {
+      "a": "2025-11-22 19:42:52 +0800"
+    },
+    "done": true
+  },
+  "minecraft:egg": {
+    "criteria": {
+      "a": "2025-11-22 19:42:52 +0800"
+    },
+    "done": true
+  },
+  "minecraft:unbelievable": {
+    "criteria": {
+      "a": "2025-11-22 19:42:52 +0800"
+    },
+    "done": true
+  },
+  "minecraft:minigames": {
+    "criteria": {
+      "a": "2025-11-22 19:42:52 +0800"
+    },
+    "done": true
+  },
+  "minecraft:intro/author": {
+    "criteria": {
+      "a": "2025-11-22 19:42:52 +0800"
+    },
+    "done": true
+  },
+  "DataVersion": 4556
+}

@@ -1,0 +1,105 @@
+{
+  "minecraft:intro/other": {
+    "criteria": {
+      "a": "2025-07-02 15:16:59 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games": {
+    "criteria": {
+      "a": "2025-07-02 15:16:59 +0800"
+    },
+    "done": true
+  },
+  "minecraft:egg": {
+    "criteria": {
+      "a": "2025-07-02 15:16:59 +0800"
+    },
+    "done": true
+  },
+  "minecraft:unbelievable": {
+    "criteria": {
+      "a": "2025-07-02 15:16:59 +0800"
+    },
+    "done": true
+  },
+  "minecraft:minigames": {
+    "criteria": {
+      "a": "2025-07-02 15:16:59 +0800"
+    },
+    "done": true
+  },
+  "minecraft:intro/author": {
+    "criteria": {
+      "a": "2025-07-02 15:16:59 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/i_cant_believe_myself": {
+    "criteria": {
+      "a": "2025-07-13 16:08:40 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/i_am_colorblindness": {
+    "criteria": {
+      "a": "2025-07-13 17:12:22 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/twolfstart": {
+    "criteria": {
+      "a": "2025-07-15 11:04:03 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/hide_hunter_died": {
+    "criteria": {
+      "a": "2025-07-24 15:17:36 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/hide_block_animal": {
+    "criteria": {
+      "a": "2025-10-22 19:19:28 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/hide_animal_died": {
+    "criteria": {
+      "a": "2025-10-22 19:20:24 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/potato_boom": {
+    "criteria": {
+      "a": "2025-10-22 20:17:04 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/pool_cold_underwater": {
+    "criteria": {
+      "a": "2025-10-22 20:19:26 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/mace_bw": {
+    "criteria": {
+      "a": "2025-11-02 16:31:39 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/recovered_game": {
+    "criteria": {
+      "a": "2025-11-09 11:58:44 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/chess_in_mc": {
+    "criteria": {
+      "a": "2025-12-02 13:51:16 +0800"
+    },
+    "done": true
+  },
+  "DataVersion": 4671
+}

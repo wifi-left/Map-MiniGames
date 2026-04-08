@@ -1,0 +1,63 @@
+{
+  "minecraft:intro/other": {
+    "criteria": {
+      "a": "2025-07-03 14:50:09 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games": {
+    "criteria": {
+      "a": "2025-07-03 14:50:09 +0800"
+    },
+    "done": true
+  },
+  "minecraft:egg": {
+    "criteria": {
+      "a": "2025-07-03 14:50:09 +0800"
+    },
+    "done": true
+  },
+  "minecraft:unbelievable": {
+    "criteria": {
+      "a": "2025-07-03 14:50:09 +0800"
+    },
+    "done": true
+  },
+  "minecraft:minigames": {
+    "criteria": {
+      "a": "2025-07-03 14:50:09 +0800"
+    },
+    "done": true
+  },
+  "minecraft:intro/author": {
+    "criteria": {
+      "a": "2025-07-03 14:50:09 +0800"
+    },
+    "done": true
+  },
+  "minecraft:others/haekara": {
+    "criteria": {
+      "a": "2025-07-03 15:01:08 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/mace_bw": {
+    "criteria": {
+      "a": "2025-07-31 13:54:00 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/wind_charge_bw": {
+    "criteria": {
+      "a": "2025-07-31 14:05:54 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/hide_block_animal": {
+    "criteria": {
+      "a": "2025-07-31 14:23:52 +0800"
+    },
+    "done": true
+  },
+  "DataVersion": 4556
+}

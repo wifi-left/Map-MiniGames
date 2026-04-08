@@ -1,0 +1,225 @@
+{
+  "minecraft:intro/other": {
+    "criteria": {
+      "a": "2025-12-07 14:39:30 +0800"
+    },
+    "done": true
+  },
+  "minecraft:intro/author": {
+    "criteria": {
+      "a": "2025-12-07 14:39:30 +0800"
+    },
+    "done": true
+  },
+  "minecraft:minigames": {
+    "criteria": {
+      "a": "2025-12-07 14:39:30 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/mace_bw": {
+    "criteria": {
+      "a": "2025-12-07 15:05:55 +0800"
+    },
+    "done": true
+  },
+  "minecraft:egg": {
+    "criteria": {
+      "a": "2025-12-07 15:29:01 +0800"
+    },
+    "done": true
+  },
+  "minecraft:unbelievable": {
+    "criteria": {
+      "a": "2025-12-07 15:29:01 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games": {
+    "criteria": {
+      "a": "2025-12-07 15:29:01 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/parkour": {
+    "criteria": {
+      "a": "2025-12-08 19:41:01 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/imcompleted_game": {
+    "criteria": {
+      "a": "2025-12-09 11:56:52 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/hide_animal_died": {
+    "criteria": {
+      "a": "2025-12-09 16:19:14 +0800"
+    },
+    "done": true
+  },
+  "minecraft:lobby/good_view_ontop": {
+    "criteria": {
+      "a": "2025-12-13 20:38:27 +0800"
+    },
+    "done": true
+  },
+  "minecraft:lobby/other_builder": {
+    "criteria": {
+      "a": "2025-12-13 20:38:41 +0800"
+    },
+    "done": true
+  },
+  "minecraft:lobby/good_view_ontop_building": {
+    "criteria": {
+      "a": "2025-12-13 20:39:23 +0800"
+    },
+    "done": true
+  },
+  "minecraft:lobby/wtf_command_block": {
+    "criteria": {
+      "a": "2025-12-13 20:57:37 +0800"
+    },
+    "done": true
+  },
+  "minecraft:lobby/how_to_open_chest": {
+    "criteria": {
+      "a": "2025-12-13 20:59:13 +0800"
+    },
+    "done": true
+  },
+  "minecraft:zombieever/wtf": {
+    "criteria": {
+      "a": "2025-12-13 21:01:29 +0800"
+    },
+    "done": true
+  },
+  "minecraft:zombieever/caidan": {
+    "criteria": {
+      "a": "2025-12-13 21:01:29 +0800"
+    },
+    "done": true
+  },
+  "minecraft:lobby/curious_boy_3": {
+    "criteria": {
+      "a": "2025-12-13 21:01:40 +0800"
+    },
+    "done": true
+  },
+  "minecraft:others/haekara": {
+    "criteria": {
+      "a": "2025-12-13 21:01:40 +0800"
+    },
+    "done": true
+  },
+  "minecraft:lobby/curious_boy_1": {
+    "criteria": {
+      "a": "2025-12-13 21:01:40 +0800"
+    },
+    "done": true
+  },
+  "minecraft:lobby/cue_feet": {
+    "criteria": {
+      "a": "2025-12-13 21:01:40 +0800"
+    },
+    "done": true
+  },
+  "minecraft:lobby/curious_boy_2": {
+    "criteria": {
+      "a": "2025-12-13 21:01:40 +0800"
+    },
+    "done": true
+  },
+  "minecraft:lobby/wtf_building": {
+    "criteria": {
+      "a": "2025-12-13 21:01:40 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/hide_hunter_died": {
+    "criteria": {
+      "a": "2025-12-13 21:02:03 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/endless_wolf_sign": {
+    "criteria": {
+      "a": "2025-12-13 21:02:03 +0800"
+    },
+    "done": true
+  },
+  "minecraft:get_all": {
+    "criteria": {
+      "a": "2025-12-13 21:02:03 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/potato_boom": {
+    "criteria": {
+      "a": "2025-12-13 21:02:03 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/recovered_game": {
+    "criteria": {
+      "a": "2025-12-13 21:02:03 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/chess_in_mc": {
+    "criteria": {
+      "a": "2025-12-13 21:02:03 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/dropper": {
+    "criteria": {
+      "a": "2025-12-13 21:02:03 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/i_cant_believe_myself": {
+    "criteria": {
+      "a": "2025-12-13 21:02:03 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/i_am_colorblindness": {
+    "criteria": {
+      "a": "2025-12-13 21:02:03 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/pool_cold_underwater": {
+    "criteria": {
+      "a": "2025-12-13 21:02:03 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/migong": {
+    "criteria": {
+      "a": "2025-12-13 21:02:03 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/twolfstart": {
+    "criteria": {
+      "a": "2025-12-13 21:02:03 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/hide_block_animal": {
+    "criteria": {
+      "a": "2025-12-13 21:02:03 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games/wind_charge_bw": {
+    "criteria": {
+      "a": "2025-12-13 21:02:03 +0800"
+    },
+    "done": true
+  },
+  "DataVersion": 4788
+}

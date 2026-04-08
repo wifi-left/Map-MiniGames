@@ -1,0 +1,45 @@
+{
+  "minecraft:intro/other": {
+    "criteria": {
+      "a": "2025-11-09 10:54:20 +0800"
+    },
+    "done": true
+  },
+  "minecraft:games": {
+    "criteria": {
+      "a": "2025-11-09 10:54:20 +0800"
+    },
+    "done": true
+  },
+  "minecraft:egg": {
+    "criteria": {
+      "a": "2025-11-09 10:54:20 +0800"
+    },
+    "done": true
+  },
+  "minecraft:unbelievable": {
+    "criteria": {
+      "a": "2025-11-09 10:54:20 +0800"
+    },
+    "done": true
+  },
+  "minecraft:minigames": {
+    "criteria": {
+      "a": "2025-11-09 10:54:20 +0800"
+    },
+    "done": true
+  },
+  "minecraft:intro/author": {
+    "criteria": {
+      "a": "2025-11-09 10:54:20 +0800"
+    },
+    "done": true
+  },
+  "minecraft:job_pvp/player_kill": {
+    "criteria": {
+      "player_died": "2025-11-23 18:01:30 +0800"
+    },
+    "done": true
+  },
+  "DataVersion": 4556
+}

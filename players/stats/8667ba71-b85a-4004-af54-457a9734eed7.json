@@ -1,0 +1,31 @@
+{
+  "stats": {
+    "minecraft:killed_by": {
+      "minecraft:player": 2
+    },
+    "minecraft:custom": {
+      "minecraft:damage_resisted": 2556,
+      "minecraft:time_since_rest": 59346,
+      "minecraft:total_world_time": 470541,
+      "minecraft:leave_game": 23,
+      "minecraft:damage_taken": 1859,
+      "minecraft:play_time": 302844,
+      "minecraft:damage_dealt": 1301,
+      "minecraft:deaths": 3,
+      "minecraft:player_kills": 3,
+      "minecraft:time_since_death": 59346
+    },
+    "minecraft:picked_up": {
+      "minecraft:gold_ingot": 11,
+      "minecraft:iron_ingot": 173
+    },
+    "minecraft:killed": {
+      "minecraft:player": 3
+    },
+    "minecraft:used": {
+      "minecraft:potion": 5,
+      "minecraft:carrot_on_a_stick": 10
+    }
+  },
+  "DataVersion": 4671
+}
