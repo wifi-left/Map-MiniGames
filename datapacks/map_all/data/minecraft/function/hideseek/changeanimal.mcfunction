@@ -21,7 +21,7 @@ execute at @s align xyz if block ~ ~-0.3 ~ #hideseek run kill @e[tag=shouldtp,li
 tag @e[tag=neww] add hide.cosplay
 team join hide.play.ani @e[tag=neww]
 scoreboard players operation @e[tag=neww] LRS_START_DJS = @s park.uuid
-execute at @s align xyz if block ~ ~-0.3 ~ #hideseek run tellraw @s ["\n§a   §l你的新身份为： ",{"nbt":"Items[0].id","block":"0 2 0","color":"gold"},"\n"]
+execute at @s align xyz if block ~ ~-0.3 ~ #hideseek run tellraw @s ["\n§a   §l你的新身份为： ",{"nbt":"Items[0].id","block":"0 2 0","color":"gold",interpret:true},"\n"]
 execute at @s align xyz unless block ~ ~-0.3 ~ #hideseek run tellraw @s ["\n§a   §l无法切换：方块不支持\n"]
 
 tag @e[tag=neww] remove neww
