@@ -8,14 +8,15 @@
 
 # 重要提示
 ## 前言
-由于地图是由比较纯净的**Fabric 客户端**制作，理论上**原版**、**Fabric**、**Spigot**均能正常工作
+由于地图是由比较纯净的**Fabric 客户端**制作，理论上**原版**、**Fabric**均能正常工作
 
 ## 不支持的服务端
 **但是**，以下服务端很可能出现问题，所以我们**不支持**以下服务端：
 1. Paper：由于Paper各种“优化”导致原版功能被砍许多，而地图用了这些特性（无意中使用，而且很多都不算是BUG）。如果您想在Paper上使用这张地图，您可以看看本地图的第三方分支项目：[Minecraft-Minigames-Map by FallenCrystal](https://github.com/FallenCrystal/Minecraft-Minigames-Map)。这位作者尝试进行了对Spigot等插件端的支持。**但请注意**，这些第三方分支并不一定是最新的地图的修改版。
 2. Folia：破坏了原版命令系统
 3. 任何破坏原版命令、修改原版行为的服务端：本地图基于原版命令系统以及原版行为。
-4. Forge：可能会出现各种BUG，原因未知。请尝试使用Neoforged代替Forge。
+4. Forge & Neoforged：可能会出现各种BUG，原因未知。
+5. Spigot：依旧神秘bug（貌似是gamerule不会复制到所有地图去？）
 ## 模组兼容性
 如果您使用模组端，请一定阅读以下内容。
 ### 不支持的模组
