@@ -1,20 +1,32 @@
 {
   "stats": {
+    "minecraft:killed_by": {
+      "minecraft:player": 13
+    },
     "minecraft:custom": {
       "minecraft:pig_one_cm": 53346,
       "minecraft:damage_resisted": 7071,
-      "minecraft:time_since_rest": 276679,
-      "minecraft:leave_game": 144,
+      "minecraft:time_since_rest": 279108,
+      "minecraft:leave_game": 146,
       "minecraft:damage_taken": 11220,
       "minecraft:damage_dealt": 1351,
       "minecraft:boat_one_cm": 46,
-      "minecraft:play_time": 1940515,
+      "minecraft:play_time": 1942944,
       "minecraft:jump": 1481,
-      "minecraft:time_since_death": 276679,
-      "minecraft:total_world_time": 3353427,
+      "minecraft:time_since_death": 279108,
+      "minecraft:total_world_time": 3358913,
       "minecraft:sneak_time": 61,
       "minecraft:deaths": 14,
       "minecraft:player_kills": 50
+    },
+    "minecraft:killed": {
+      "minecraft:player": 49
+    },
+    "minecraft:used": {
+      "minecraft:bat_spawn_egg": 1,
+      "minecraft:chicken_spawn_egg": 1,
+      "minecraft:potion": 1,
+      "minecraft:carrot_on_a_stick": 14
     },
     "minecraft:picked_up": {
       "minecraft:wooden_pickaxe": 1,
@@ -32,19 +44,7 @@
       "minecraft:crossbow": 1,
       "minecraft:gold_ingot": 131,
       "minecraft:sandstone": 16
-    },
-    "minecraft:killed_by": {
-      "minecraft:player": 13
-    },
-    "minecraft:killed": {
-      "minecraft:player": 49
-    },
-    "minecraft:used": {
-      "minecraft:bat_spawn_egg": 1,
-      "minecraft:chicken_spawn_egg": 1,
-      "minecraft:potion": 1,
-      "minecraft:carrot_on_a_stick": 14
     }
   },
-  "DataVersion": 4671
+  "DataVersion": 4790
 }

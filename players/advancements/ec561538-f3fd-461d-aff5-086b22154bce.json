@@ -1,5 +1,5 @@
 {
-  "minecraft:intro/other": {
+  "minecraft:intro/author": {
     "criteria": {
       "a": "2025-07-02 15:16:59 +0800"
     },
@@ -11,13 +11,13 @@
     },
     "done": true
   },
-  "minecraft:egg": {
+  "minecraft:unbelievable": {
     "criteria": {
       "a": "2025-07-02 15:16:59 +0800"
     },
     "done": true
   },
-  "minecraft:unbelievable": {
+  "minecraft:intro/other": {
     "criteria": {
       "a": "2025-07-02 15:16:59 +0800"
     },
@@ -29,7 +29,7 @@
     },
     "done": true
   },
-  "minecraft:intro/author": {
+  "minecraft:egg": {
     "criteria": {
       "a": "2025-07-02 15:16:59 +0800"
     },
@@ -101,5 +101,5 @@
     },
     "done": true
   },
-  "DataVersion": 4671
+  "DataVersion": 4790
 }

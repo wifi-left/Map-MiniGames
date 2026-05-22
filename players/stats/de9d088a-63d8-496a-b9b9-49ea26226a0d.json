@@ -1,5 +1,36 @@
 {
   "stats": {
+    "minecraft:killed_by": {
+      "minecraft:player": 39,
+      "minecraft:creeper": 1,
+      "minecraft:vex": 1,
+      "minecraft:zombie": 1
+    },
+    "minecraft:broken": {
+      "minecraft:bow": 5
+    },
+    "minecraft:crafted": {
+      "minecraft:oak_planks": 8,
+      "minecraft:warped_planks": 4,
+      "minecraft:acacia_planks": 4
+    },
+    "minecraft:mined": {
+      "minecraft:sandstone": 2,
+      "minecraft:deepslate_emerald_ore": 1,
+      "minecraft:red_bed": 4,
+      "minecraft:lime_bed": 1,
+      "minecraft:grass_block": 6,
+      "minecraft:hay_block": 2,
+      "minecraft:blue_wool": 5,
+      "minecraft:nether_brick_wall": 2,
+      "minecraft:light_blue_bed": 1,
+      "minecraft:yellow_bed": 1,
+      "minecraft:dirt_path": 6,
+      "minecraft:blue_terracotta": 1,
+      "minecraft:slime_block": 4,
+      "minecraft:red_wool": 1,
+      "minecraft:blue_bed": 8
+    },
     "minecraft:picked_up": {
       "minecraft:tropical_fish": 1,
       "minecraft:diamond_axe": 2,
@@ -22,7 +53,7 @@
       "minecraft:cod": 5,
       "minecraft:gray_stained_glass_pane": 69,
       "minecraft:melon_slice": 320,
-      "minecraft:gold_ingot": 250,
+      "minecraft:gold_ingot": 253,
       "minecraft:iron_sword": 3,
       "minecraft:chorus_fruit": 192,
       "minecraft:diamond": 136,
@@ -36,7 +67,7 @@
       "minecraft:charcoal": 128,
       "minecraft:diamond_boots": 1,
       "minecraft:bow": 1,
-      "minecraft:iron_ingot": 3462,
+      "minecraft:iron_ingot": 3474,
       "minecraft:raw_iron": 256,
       "minecraft:spruce_slab": 2,
       "minecraft:golden_hoe": 3,
@@ -170,41 +201,41 @@
     "minecraft:custom": {
       "minecraft:eat_cake_slice": 3,
       "minecraft:trigger_trapped_chest": 76,
-      "minecraft:time_since_rest": 91895,
-      "minecraft:leave_game": 43,
-      "minecraft:damage_taken": 71108,
+      "minecraft:time_since_rest": 2536,
+      "minecraft:leave_game": 47,
+      "minecraft:damage_taken": 71218,
       "minecraft:mob_kills": 40,
       "minecraft:boat_one_cm": 6712,
       "minecraft:open_shulker_box": 14,
       "minecraft:interact_with_beacon": 3,
-      "minecraft:time_since_death": 91894,
+      "minecraft:time_since_death": 2535,
       "minecraft:open_enderchest": 4,
       "minecraft:interact_with_furnace": 4,
       "minecraft:interact_with_smithing_table": 2,
       "minecraft:swim_one_cm": 3439,
-      "minecraft:total_world_time": 1620230,
+      "minecraft:total_world_time": 1627072,
       "minecraft:pot_flower": 1,
-      "minecraft:crouch_one_cm": 32641,
-      "minecraft:climb_one_cm": 26658,
-      "minecraft:deaths": 132,
+      "minecraft:crouch_one_cm": 33153,
+      "minecraft:climb_one_cm": 26722,
+      "minecraft:deaths": 133,
       "minecraft:fish_caught": 8,
       "minecraft:player_kills": 2,
-      "minecraft:damage_resisted": 3747,
-      "minecraft:walk_one_cm": 590064,
+      "minecraft:damage_resisted": 3977,
+      "minecraft:walk_one_cm": 593056,
       "minecraft:walk_under_water_one_cm": 43736,
       "minecraft:damage_dealt": 2710,
-      "minecraft:play_time": 888945,
-      "minecraft:jump": 6981,
+      "minecraft:play_time": 892573,
+      "minecraft:jump": 7058,
       "minecraft:drop": 133,
-      "minecraft:open_barrel": 53,
-      "minecraft:sprint_one_cm": 998933,
+      "minecraft:open_barrel": 55,
+      "minecraft:sprint_one_cm": 1010328,
       "minecraft:open_chest": 80,
       "minecraft:interact_with_smoker": 4,
-      "minecraft:fall_one_cm": 732223,
-      "minecraft:fly_one_cm": 8257876,
+      "minecraft:fall_one_cm": 739665,
+      "minecraft:fly_one_cm": 8283477,
       "minecraft:interact_with_anvil": 1,
       "minecraft:walk_on_water_one_cm": 41534,
-      "minecraft:sneak_time": 39952
+      "minecraft:sneak_time": 40228
     },
     "minecraft:used": {
       "minecraft:polished_tuff": 1,
@@ -227,7 +258,7 @@
       "minecraft:emerald_ore": 1,
       "minecraft:mushroom_stem": 2,
       "minecraft:black_terracotta": 1,
-      "minecraft:quartz_block": 119,
+      "minecraft:quartz_block": 121,
       "minecraft:hay_block": 3,
       "minecraft:light_gray_stained_glass_pane": 2,
       "minecraft:yellow_carpet": 1,
@@ -304,7 +335,7 @@
       "minecraft:rooted_dirt": 1,
       "minecraft:stone_bricks": 53,
       "minecraft:carrot_on_a_stick": 136,
-      "minecraft:blue_wool": 260,
+      "minecraft:blue_wool": 276,
       "minecraft:packed_ice": 1,
       "minecraft:smooth_stone": 35,
       "minecraft:quartz_slab": 3,
@@ -348,7 +379,7 @@
       "minecraft:gray_concrete": 37,
       "minecraft:blackstone_stairs": 2,
       "minecraft:pale_moss_block": 1,
-      "minecraft:red_wool": 164,
+      "minecraft:red_wool": 196,
       "minecraft:cobblestone_stairs": 17,
       "minecraft:dead_bubble_coral_block": 1,
       "minecraft:iron_chain": 9,
@@ -363,6 +394,7 @@
       "minecraft:turtle_helmet": 2,
       "minecraft:sandstone": 114,
       "minecraft:brown_concrete": 2,
+      "minecraft:big_dripleaf": 3,
       "minecraft:acacia_boat": 1,
       "minecraft:prismarine": 84,
       "minecraft:crying_obsidian": 11,
@@ -491,38 +523,7 @@
       "minecraft:light_blue_bed": 1,
       "minecraft:vex_spawn_egg": 1,
       "minecraft:heavy_weighted_pressure_plate": 12
-    },
-    "minecraft:crafted": {
-      "minecraft:oak_planks": 8,
-      "minecraft:warped_planks": 4,
-      "minecraft:acacia_planks": 4
-    },
-    "minecraft:broken": {
-      "minecraft:bow": 5
-    },
-    "minecraft:killed_by": {
-      "minecraft:player": 39,
-      "minecraft:creeper": 1,
-      "minecraft:vex": 1,
-      "minecraft:zombie": 1
-    },
-    "minecraft:mined": {
-      "minecraft:sandstone": 2,
-      "minecraft:deepslate_emerald_ore": 1,
-      "minecraft:red_bed": 4,
-      "minecraft:lime_bed": 1,
-      "minecraft:grass_block": 6,
-      "minecraft:hay_block": 2,
-      "minecraft:blue_wool": 5,
-      "minecraft:nether_brick_wall": 2,
-      "minecraft:light_blue_bed": 1,
-      "minecraft:yellow_bed": 1,
-      "minecraft:dirt_path": 6,
-      "minecraft:blue_terracotta": 1,
-      "minecraft:slime_block": 4,
-      "minecraft:red_wool": 1,
-      "minecraft:blue_bed": 8
     }
   },
-  "DataVersion": 4788
+  "DataVersion": 4790
 }
