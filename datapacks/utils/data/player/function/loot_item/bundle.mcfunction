@@ -1,6 +1,6 @@
 tag @s add loot.sel
 execute in overworld run data modify block 0 -1 0 back_text.messages[0] set value [{"selector":"@a[tag=loot.sel]","color":"aqua"},"\u00a7a 的背包"]
-summon item ~ ~ ~ {Item:{id:"minecraft:bundle",count:1,components:{"minecraft:custom_data":{player_loot:1b}}},Tags:["loot.new"],CustomNameVisible:1b}
+summon item ~ ~ ~ {Item:{id:"minecraft:bundle",count:1,components:{"minecraft:custom_data":{player_loot:1b}}},Tags:["loot.new"],CustomNameVisible:1b,PickupDelay:10}
 data modify entity @e[limit=1,type=item,tag=loot.new] Item.components."minecraft:bundle_contents" set from entity @s Inventory
 data modify entity @e[limit=1,type=item,tag=loot.new] Item.components."minecraft:bundle_contents" append from entity @s equipment.head
 data modify entity @e[limit=1,type=item,tag=loot.new] Item.components."minecraft:bundle_contents" append from entity @s equipment.chest
