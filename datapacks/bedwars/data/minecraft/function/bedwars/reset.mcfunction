@@ -33,7 +33,7 @@ bossbar set minigames:bedwars players
 bossbar set minigames:bedwars players @a[team=bw.wait]
 bossbar set minigames:bedwars visible true
 
-
+# -216 -31 299 -392 -1 121
 forceload add -216 300 -393 121
 
 scoreboard players reset @e[type=sheep,tag=bw.tntsheep]
@@ -52,14 +52,8 @@ title @a[tag=bw.player] times 0 200 0
 gamemode spectator @a[tag=bw.player,gamemode=adventure]
 execute if score bw.mode board matches ..0 store result score bw.mode board run random value 1..7
 
-fill -216 -2 299 -392 -1 121 air
-execute if score bw.mode board matches 1 run function bedwars/resets/mogu
-execute if score bw.mode board matches 2 run function bedwars/resets/unnamed
-execute if score bw.mode board matches 3 run function bedwars/resets/space
-execute if score bw.mode board matches 4 run function bedwars/resets/special1
-execute if score bw.mode board matches 5 run function bedwars/resets/glassworld
-execute if score bw.mode board matches 6 run function bedwars/resets/siheyuan
-execute if score bw.mode board matches 7.. run function bedwars/resets/shenjing
+function minecraft:bedwars/check_loaded_and_start_reset
+
 scoreboard objectives modify bw.info displayname ["\u00a7e\u00a7l起床战争"]
 scoreboard players reset * bw.info
 scoreboard players set date bw.info 14
@@ -77,7 +71,7 @@ scoreboard players set info3 bw.info 3
 scoreboard players set air4 bw.info 2
 scoreboard players set BottomTitle bw.info 1
 
-scoreboard players display name date bw.info ["\u00a7701/19/24§8 \u00a78m001A"]
+scoreboard players display name date bw.info ["\u00a7705/30/26§8 \u00a78m001A"]
 
 scoreboard players display name red bw.info "§c红§8 §r红队: §a§l✓"
 scoreboard players display name blue bw.info "§9蓝§8 §r蓝队: §a§l✓"

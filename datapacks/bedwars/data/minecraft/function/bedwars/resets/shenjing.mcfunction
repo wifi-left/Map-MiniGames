@@ -6,6 +6,10 @@
 execute unless score bw.state state matches -1 run return 0
 execute if score bw.reset board matches -10 in airworld run forceload add -753 121 -577 299
 
+
+execute if score bw.reset board matches -6..-6 in airworld unless loaded -577 154 299 run return run schedule function bedwars/resets/shenjing 10t
+execute if score bw.reset board matches -6..-6 in airworld unless loaded -577 154 299 run return run function minecraft:bedwars/resets/wait_for_loading_chunk
+
 execute if score bw.reset board matches -5 in overworld run fill -216 -64 299 -392 -32 121 air strict
 execute if score bw.reset board matches -4 in overworld run fill -216 -31 299 -392 -1 121 air strict
 execute if score bw.reset board matches 1 run clone from airworld -753 153 121 -577 153 299 -392 1 121 strict
