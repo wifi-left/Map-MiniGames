@@ -32,3 +32,4 @@ execute if score blaze.state state matches 1.. in killerworld run function minec
 
 
 execute if score sheepwars.state state matches 1.. in airworld run function minecraft:sheepwars/second
+execute if score disaster.snow.state state matches 1.. in airworld run function minecraft:disaster/snow/second

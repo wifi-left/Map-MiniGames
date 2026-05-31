@@ -129,3 +129,6 @@ scoreboard players reset * bw.board
 scoreboard players set GENERAL.dev_mode board 0
 function #minecraft:dev_on
 execute unless score GENERAL.dev_mode board matches 1 run function minecraft:dev_off
+
+execute in overworld run forceload remove -1 -1 0 0 
+execute in overworld run forceload add -1 -1 0 0 

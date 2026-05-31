@@ -1,0 +1,1 @@
+scoreboard players set disaster.snow.state state 1

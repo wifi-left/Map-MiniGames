@@ -36,3 +36,4 @@ tag @s remove bw.fasti
 tag @s remove bw.fastii
 tag @s remove bw.shears
 execute as @s run function player:empty_enderchest
+execute as @s run function player:full_health
