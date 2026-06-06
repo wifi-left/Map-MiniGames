@@ -3,6 +3,7 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 # say 1
+execute if score disaster.snow.state state matches 1.. in airworld run function minecraft:disaster/snow/1_4_tick
 
 function o_f_tick
 execute if score zombie.state state matches 1.. run function zombieever/o_f_tick

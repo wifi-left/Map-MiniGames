@@ -1,0 +1,1 @@
+summon falling_block ~ ~ ~ {BlockState:{Name:"snow_block"},Tags:["disaster.snow.falling_block"],FallHurtAmount:1,FallHurtMax:2}

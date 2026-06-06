@@ -1,0 +1,1 @@
+execute if score disaster.snow.state state matches 3..99 run function minecraft:disaster/snow/summon/main

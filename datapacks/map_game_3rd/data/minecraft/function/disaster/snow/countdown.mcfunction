@@ -1,0 +1,7 @@
+scoreboard players remove disaster.snow.time board 1
+execute if score disaster.snow.time board matches 0 run return run function minecraft:disaster/snow/countdown_timeout
+execute if score disaster.snow.state state matches 2 run title @a[team=disaster.snow] actionbar [{"translate":"游戏即将在 %s 后开始",color:yellow,with:[[{score:{name:"disaster.snow.time",objective:"board"},color:red},{text:"s",color:red}]]}]
+execute if score disaster.snow.state state matches 2 as @a[team=disaster.snow] at @s run playsound ui.button.click player @s ~ ~ ~ 1 2 0
+execute if score disaster.snow.state state matches 3..18 run title @a[team=disaster.snow] actionbar [{"translate":"将在 %s 后加速",color:green,with:[[{score:{name:"disaster.snow.time",objective:"board"},color:yellow},{text:"s",color:yellow}]]}]
+execute if score disaster.snow.state state matches 25 run title @a[team=disaster.snow] actionbar [{"translate":"将在 %s 后加速",color:green,with:[[{score:{name:"disaster.snow.time",objective:"board"},color:yellow},{text:"s",color:yellow}]]}]
+execute if score disaster.snow.state state matches 19 run title @a[team=disaster.snow] actionbar [{"translate":"PVP将在 %s 后启用",color:aqua,with:[[{score:{name:"disaster.snow.time",objective:"board"},color:yellow},{text:"s",color:yellow}]]}]

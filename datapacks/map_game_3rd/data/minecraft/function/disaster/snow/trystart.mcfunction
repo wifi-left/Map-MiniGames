@@ -17,7 +17,7 @@ execute if score tmp.canplay board matches 0 run tellraw @s ["§c游戏仅管理
 execute if score tmp.canplay board matches 0 run playsound block.anvil.land player @s ~ ~ ~ 1 1 0
 execute if score tmp.canplay board matches 0 run return 0
 
-execute if score wait.player tick matches ..0 run tellraw @s ["§c人数不够！请等待至少1人！"]
-execute if score wait.player tick matches ..0 run playsound entity.enderman.teleport player @s ~ ~ ~ 1 0 1
-execute if score wait.player tick matches 1.. run function minecraft:disaster/snow/start
+execute if score wait.player tick matches ..1 run tellraw @s ["§c人数不够！请等待至少2人！"]
+execute if score wait.player tick matches ..1 run playsound entity.enderman.teleport player @s ~ ~ ~ 1 0 1
+execute if score wait.player tick matches 2.. run function minecraft:disaster/snow/start
 

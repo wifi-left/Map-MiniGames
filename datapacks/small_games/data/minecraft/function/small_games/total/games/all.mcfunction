@@ -32,10 +32,12 @@ data modify storage minecraft:temp random_games_all.games append value {id:11,na
 data modify storage minecraft:temp random_games_all.games append value {id:21,name:"\u00a7c密室杀手",prefix:"[策略游戏]",desc:"全新版！找到杀手，活下去！",state_var:"killer.state state",start_func:["execute as @a[team=play.total] run function killerever/join","function killerever/teststart"]}
 data modify storage minecraft:temp random_games_all.games append value {id:41,name:"\u00a7d一箭毙命",prefix:"[策略游戏]",desc:"活下去！小心老六！",state_var:"one_arrow.state state",start_func:["execute as @a[team=play.total] run function one_arrow/join","function one_arrow/trystart"]}
 data modify storage minecraft:temp random_games_all.games append value {id:44,name:"\u00a7b追杀游戏",prefix:"[策略游戏]",desc:"逃跑！躲避追杀者！",state_var:"live.state state",start_func:["execute as @a[team=play.total] run function live/join","function live/trystart"]}
+data modify storage minecraft:temp random_games_all.games append value {id:48,name:"\u00a7f灾难 · 雪灾",prefix:"[策略游戏]",desc:"在大灾难中活到最后！",state_var:"disaster.snow.state state",start_func:["execute as @a[team=play.total] run function minecraft:disaster/snow/join","function minecraft:disaster/snow/trystart"]}
 
 data modify storage minecraft:temp random_games_all.games append value {id:14,name:"\u00a72吸血鬼之夜",prefix:"[策略游戏]",desc:"存活下去，就是胜利。",state_var:"endwolf.state state",start_func:["execute as @a[team=play.total] run function endless_wolf/join","function endless_wolf/trystart"]}
 data modify storage minecraft:temp random_games_all.games append value {id:40,name:"\u00a7b彩蛋猎人",prefix:"[休闲游戏]",desc:"寻找地图中发光的彩蛋！获得更多的彩蛋的人将会获胜！",state_var:"finder.state state",start_func:["execute as @a[team=play.total] run function finder/join","function finder/trystart"]}
 data modify storage minecraft:temp random_games_all.games append value {id:42,name:"\u00a7d飞行大赛",prefix:"[休闲游戏]",desc:"更快飞到终点！~",state_var:"elytra.state state",start_func:["execute as @a[team=play.total] run function elytra/join","function elytra/trystart"]}
+
 data modify storage minecraft:temp random_games_all.games append value {id:39,name:"\u00a7a建筑猜猜乐",prefix:"[建筑游戏]",desc:"通过建筑，让别人知道你的词汇是什么。",state_var:"build_guess.state state",start_func:["execute as @a[team=play.total] run function build_guess/join","function build_guess/trystart"]}
 data modify storage minecraft:temp random_games_all.games append value {id:46,name:"\u00a7d1、2、3，木头人",prefix:"[跑酷游戏]",desc:"跑到终点。但在鬼说“不许动”的时候停下。",state_var:"mutouren.state state",start_func:["execute as @a[team=play.total] run function mutouren/join","function mutouren/trystart"]}
 data modify storage minecraft:temp random_games_all.games append value {id:38,name:"\u00a7f你建我跑",prefix:"[跑酷游戏]",desc:"建造一个你能过去但其他人过不去的跑酷！",state_var:"build_parkour.state state",start_func:["execute as @a[team=play.total] run function build_parkour/join","function build_parkour/trystart"]}
@@ -71,3 +73,4 @@ data modify storage minecraft:temp random_games_all.games append value {id:25,na
 
 data modify storage minecraft:temp random_games_all.games append value {id:7,name:"\u00a7b道具躲猫猫",prefix:"[废案]",desc:"此游戏为废案，游玩体验可能不好，不建议游玩。",state_var:"hide2.state state",start_func:["execute as @a[team=play.total] run function hide2/join","function hide2/trystart"]}
 data modify storage minecraft:temp random_games_all.games append value {id:24,name:"\u00a76船战",prefix:"[废案]",desc:"此游戏为废案，游玩体验可能不好，不建议游玩。",state_var:"btw.state state",start_func:["execute as @a[team=play.total] run function minecraft:boatwars/join","function boatwars/trystart"]}
+
