@@ -4,6 +4,7 @@ execute store result score gun.cooldown.total temp run data get block 0 -64 0 It
 data remove block 0 -64 0 Items[{Slot:0b}].components."!minecraft:damage"
 data remove block 0 -64 0 Items[{Slot:0b}].components."!minecraft:unbreakable"
 data remove block 0 -64 0 Items[{Slot:0b}].components."!minecraft:max_damage"
+data remove block 0 -64 0 Items[{Slot:0b}].components."minecraft:max_stack_size"
 data modify block 0 -64 0 Items[{Slot:0b}].components."!minecraft:max_stack_size" set value {}
 data modify block 0 -64 0 Items[{Slot:0b}].count set value 1
 execute store result block 0 -64 0 Items[{Slot:0b}].components."minecraft:custom_data".gun_data.cooldown_left int 1 run scoreboard players get gun.cooldown.left temp

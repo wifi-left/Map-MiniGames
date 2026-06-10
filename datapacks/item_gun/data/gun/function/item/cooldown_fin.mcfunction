@@ -3,6 +3,8 @@ data modify block 0 -64 0 Items[{Slot:0b}].components."minecraft:consumable".con
 
 data modify block 0 -64 0 Items[{Slot:0b}].components."!minecraft:max_damage" set value {}
 data modify block 0 -64 0 Items[{Slot:0b}].components."!minecraft:damage" set value {}
+data remove block 0 -64 0 Items[{Slot:0b}].components."minecraft:max_damage"
+data remove block 0 -64 0 Items[{Slot:0b}].components."minecraft:damage"
 data remove block 0 -64 0 Items[{Slot:0b}].components."!minecraft:max_stack_size"
 data modify block 0 -64 0 Items[{Slot:0b}].components."minecraft:max_stack_size" set from block 0 -64 0 Items[{Slot:0b}].components."minecraft:custom_data".gun_data.max_stack_size
 data modify block 0 -64 0 Items[{Slot:0b}].count set from block 0 -64 0 Items[{Slot:0b}].components."minecraft:custom_data".gun_data.count
