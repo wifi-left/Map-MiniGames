@@ -1,4 +1,5 @@
 tellraw @s ["\n\u00a7c\u00a7l你没能在灾难中活下去...\n\u00a7f你被淘汰了。\n"]
+tellraw @a[team=disaster.snow] [{selector:"@s"},{text:" 淘汰了。",color:red}]
 playsound entity.enderman.teleport player @s ~ ~ ~ 1 0 1
 tp @s 221 -5 20 0 90
 gamemode spectator @s

@@ -32,8 +32,7 @@
             }
         ]
     },
-    "env":{
-        "gameVersion": "26.1.1",
-        "dataSource": "jsDelivr"
+    "env": {
+        "gameVersion": "26.1.1"
     }
 }
