@@ -9,6 +9,8 @@ execute if score bw.reset board matches -6..-6 in airworld unless loaded -573 26
 execute if score bw.reset board matches -6..-6 in airworld unless loaded -573 26 299 run return run function minecraft:bedwars/resets/wait_for_loading_chunk
 
 
+execute if score bw.reset board matches -5 in overworld run fill -216 -64 299 -392 -32 121 air strict
+execute if score bw.reset board matches -4 in overworld run fill -216 -31 299 -392 -1 121 air strict
 execute if score bw.reset board matches 1..1 run clone from airworld -573 0 299 -397 0 121 -392 0 121 strict
 execute if score bw.reset board matches 2..2 run clone from airworld -573 1 299 -397 1 121 -392 1 121 strict
 execute if score bw.reset board matches 3..3 run clone from airworld -573 2 299 -397 2 121 -392 2 121 strict
