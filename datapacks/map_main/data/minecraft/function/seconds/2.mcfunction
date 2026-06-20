@@ -22,11 +22,6 @@ execute if score chess.state state matches 1.. run function small_games/chess/se
 
 execute if score hide.state state matches 1.. run function hideseek/second
 
-execute unless score wait.hit.player tick matches 2.. run scoreboard players set start.repel.second tick 30
-execute if score wait.hit.player tick matches 2.. run scoreboard players remove start.repel.second tick 1
-execute unless score wait.hit.player tick matches 2.. run title @a[team=wait.repel] actionbar ["\u00a7bEvent : \u00a7a游戏开始 \u00a7e- \u00a76请等待更多玩家加入！"]
-execute if score wait.hit.player tick matches 2.. run title @a[team=wait.repel] actionbar ["\u00a7bEvent : \u00a7a游戏开始 \u00a7e- ",{"score":{"objective":"tick","name":"start.repel.second"},"color":"gold"},"\u00a76s"]
-execute if score start.repel.second tick matches ..1 run function minecraft:repel/start
 effect give @a[team=lobby,scores={health=..19}] minecraft:instant_health 1 5 true
 effect give @a minecraft:saturation 1 25 true
 function o_f_tick

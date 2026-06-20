@@ -5,8 +5,8 @@
 scoreboard players set repel state 0
 execute as @a[team=play.repel,gamemode=adventure] run scoreboard players operation @s number = cnt.repel number
 execute as @a[team=play.repel,gamemode=adventure] run scoreboard players add cnt.repel number 1
-tellraw @a ["§6§l[GAMEOVER] §eRepeling War§a 结束了。胜利者: ",{"selector":"@a[team=play.repel,gamemode=adventure]"},"\n §b死亡顺序:"]
-execute as @a[team=play.repel] run tellraw @a[team=play.repel] ["§a ",{"score":{"objective":"number","name":"@s"},"color":"red"},"§e -> ",{"selector":"@s"}]
+tellraw @a ["§6§l[GAMEOVER] §eRepeling War§a 结束了。胜利者: ",{"selector":"@a[team=play.repel,gamemode=adventure]"},"\n §b排名："]
+function repel/list_death_sort
 title @a[team=play.repel,gamemode=adventure] title ["\u00a76你赢了！"]
 title @a[team=play.repel,gamemode=spectator] title ["\u00a7c\u00a7l游戏结束!"]
 execute as @a[team=play.repel,gamemode=adventure,tag=play.total] run function minecraft:small_games/total/win_score {score:3}

@@ -10,15 +10,6 @@ execute if score zombie.state state matches 1.. run function zombieever/o_f_tick
 
 spawnpoint @a[team=wait.zombie] -202 17 353
 
-scoreboard players set wait.hit.player tick 0
-execute as @a[team=wait.repel] run scoreboard players add wait.hit.player tick 1
-
-scoreboard players set wait.live.player tick 0
-execute as @a[team=wait.live] run scoreboard players add wait.live.player tick 1
-
-scoreboard players set wait.park.player tick 0
-execute as @a[team=wait.parkour] run scoreboard players add wait.park.player tick 1
-
 execute if score zombie.debug state matches 1 run function zombieever/test/display
 execute if score battle.state state matches 1.. in overworld run function battle/second
 
