@@ -1,0 +1,45 @@
+{
+    "criteria": {
+        "player_used": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "custom_data": {
+                            "sheepwars": {
+                                "type":"big_tnt"
+                            }
+                        }
+                    }
+                },
+                "player": [{
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "team": "play.sheepwars.a"
+                            }
+                        },
+                        {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "team": "play.sheepwars.b"
+                            }
+                        }
+                    ]
+                }]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "player_used"
+        ]
+    ],
+    "rewards": {
+        "function": "sheepwars/use_item/adv/big_tnt"
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "criteria": {
+        "player_died": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "player": {
+                    "team": "pillar"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "player_died"
+        ]
+    ],
+    "rewards": {
+        "function": "pillar/loot_item"
+    }
+}
+

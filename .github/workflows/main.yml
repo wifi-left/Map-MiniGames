@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [ "master", "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Pack
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 1
+      - name: Make script executable  # 添加这一步来设置执行权限
+        run: chmod +x zip_map.sh
+      - name: Archive the Map
+        shell: bash
+        run: ./zip_map.sh
+      - name: Create GitHub release
+        uses: marvinpinto/action-automatic-releases@latest
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "v${{ env.versionD }}"
+          title: "${{ env.versionDetail }}"
+          prerelease: false
+          files: |
+            ./build/*.zip

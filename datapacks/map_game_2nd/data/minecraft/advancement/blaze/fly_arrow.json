@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:blaze/root",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:paper",
+                    "predicates": {
+                        "custom_data": {
+                            "blaze_skill":"fly_bow"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "minecraft:blaze/item_effect/fly_bow"
+    }
+}

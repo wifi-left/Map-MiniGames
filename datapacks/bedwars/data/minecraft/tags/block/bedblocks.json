@@ -1,0 +1,16 @@
+{
+  "replace": true,
+  "values": [
+    "#minecraft:wool",
+	  "minecraft:end_stone",
+	  "minecraft:dark_oak_planks",
+	  "minecraft:obsidian",
+	  "#minecraft:stainglass",
+    "minecraft:water",
+    "minecraft:ladder",
+    "minecraft:wet_sponge",
+    "minecraft:sponge",
+    "#minecraft:beds",
+    "minecraft:cut_sandstone"
+  ]
+}

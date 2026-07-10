@@ -1,0 +1,2 @@
+execute as @e[type=item] if data entity @s {Item:{components:{"minecraft:custom_data":{"game_total":1}}}} run kill @s
+execute if score gametotal state matches 2 as @a[team=play.total] run function minecraft:small_games/total/wur/get_choice_items

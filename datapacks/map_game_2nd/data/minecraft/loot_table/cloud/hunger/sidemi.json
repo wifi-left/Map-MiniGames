@@ -1,0 +1,46 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": {
+                "min": 0,
+                "max": 4
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "minecraft:cloud/normal/sidemi",
+                    "weight": 8
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 1,
+                "max": 4
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "minecraft:hunger/armor",
+                    "weight": 2
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "minecraft:hunger/potion",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "minecraft:hunger/other",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "minecraft:hunger/sword",
+                    "weight": 3
+                }
+            ]
+        }
+    ]
+}

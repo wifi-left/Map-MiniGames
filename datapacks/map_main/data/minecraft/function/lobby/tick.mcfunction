@@ -1,0 +1,54 @@
+function minecraft:lobby/eggs/tick
+
+function minecraft:lobby/festival/new_year
+
+execute if score speed lobby.effect matches 1 run effect give @a[team=lobby,tag=!parkouring,tag=!mazing] speed 1 0 true
+execute if score speed lobby.effect matches 2 run effect give @a[team=lobby,tag=!parkouring,tag=!mazing] speed 1 1 true
+execute if score jump lobby.effect matches 1 run effect give @a[team=lobby,tag=!parkouring,tag=!mazing] jump_boost 1 1 true
+execute if score jump lobby.effect matches 2 run effect give @a[team=lobby,tag=!parkouring,tag=!mazing] jump_boost 1 3 true
+execute run effect give @a[team=lobby,tag=mazing] speed 1 0 true
+
+
+## Back to the Lobby
+effect give @a[team=lobby] resistance 1 127 true
+execute as @e[type=tnt,nbt={fuse:80s}] at @s run function minecraft:lobby/tntremove
+scoreboard players enable @a hub
+scoreboard players enable @a rejoin
+
+tag @a[scores={rejoin=1..}] add REJOINGAME
+execute as @a[tag=REJOINGAME] run function lobby/rejoin
+scoreboard players reset @a[tag=REJOINGAME] rejoin
+tag @a[tag=REJOINGAME] remove REJOINGAME
+
+tag @a[scores={hub=1..}] add NEWENTER1
+execute as @a[tag=NEWENTER1] unless score @s park.uuid matches 0.. run function minecraft:actions/getuuid
+
+execute as @a[tag=NEWENTER1] at @s run function lobby/cleartags
+execute as @a[tag=NEWENTER1] run tellraw @a ["§a§l[MESSAGE] §7",{"selector":"@s","color":"yellow"},"§b 返回了大厅。"]
+
+execute as @a[tag=NEWENTER1] run bossbar set surgame:time players
+scoreboard players reset @a[tag=NEWENTER1] hub
+scoreboard players reset @a[tag=NEWENTER1] globle.game
+tag @a[tag=NEWENTER1] remove sur.killedbyzom
+team join lobby @a[tag=NEWENTER1]
+tag @a[tag=NEWENTER1] remove parkouring
+effect clear @a[tag=NEWENTER1]
+stopsound @a[tag=NEWENTER1] record
+stopsound @a[tag=NEWENTER1] voice
+tag @a[tag=NEWENTER1] remove mazing
+tellraw @a[tag=NEWENTER1] ["\n§a  您可以随时使用 §6/trigger hub §a返回大厅。\n  §a全局音乐可以通过§6游戏设置 - ",{translate:"options.sounds",color:gold,fallback:"声音设置"},{text:" - ",color:gold},{translate:"soundCategory.voice",color:gold,fallback:"玩家语音"},"§a调节声音大小\n",{nbt:"hub_msg.tellraw",storage:"statics:settings",interpret:true}]
+
+tellraw @a[tag=NEWENTER1,tag=GLOBAL.SPEC] ["\n§7  你已开启§b全局旁观者模式§7。\n  §7",{"text":"§a§l点击此处，或者使用 §6§l/trigger spec set 3 §a§l退出全局旁观者模式","bold":true,"click_event":{"action":"run_command","command":"/trigger spec set 3"},"hover_event":{"action":"show_text","value":"§c点击此处退出全局旁观者模式"}},"\n"]
+execute as @a[tag=NEWENTER1] run attribute @s max_health base set 20
+execute as @a[tag=NEWENTER1] at @s run effect clear @s
+execute in overworld run tp @a[tag=NEWENTER1] 188 124 26 0 0
+effect clear @a[tag=NEWENTER1]
+
+title @a[tag=NEWENTER1] actionbar [{nbt:"hub_msg.actionbar",storage:"statics:settings",interpret:true}]
+gamemode adventure @a[tag=NEWENTER1]
+
+clear @a[tag=NEWENTER1]
+execute as @a[tag=NEWENTER1] run function lobby/oneword
+tag @a[tag=NEWENTER1] remove NEWENTER1
+
+

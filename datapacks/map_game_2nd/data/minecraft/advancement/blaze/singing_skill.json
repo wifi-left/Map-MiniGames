@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:blaze/root",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:paper",
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "blaze_skill":"singing_skill"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "minecraft:blaze/item_effect/singing_skill"
+    }
+}

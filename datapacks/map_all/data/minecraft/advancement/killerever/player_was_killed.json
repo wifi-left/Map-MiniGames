@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "player_died": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "player": {
+                    "team": "play.killer",
+                    "nbt": "{Tags:[\"killer.saver\"]}"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "player_died"
+        ]
+    ],
+    "rewards": {
+        "function": "killerever/adv/saver_died"
+    }
+}
+

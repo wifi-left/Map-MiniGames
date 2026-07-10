@@ -1,0 +1,2 @@
+execute if score total.gamecount state matches 0 run data modify block 286 89 154 front_text.messages[2] set value [{text:"全部",color:yellow}]
+execute if score total.gamecount state matches 1.. run data modify block 286 89 154 front_text.messages[2] set value [{score:{name:"total.gamecount",objective:state},color:aqua}]

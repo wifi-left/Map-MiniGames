@@ -1,0 +1,52 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 1,
+                "max": 3
+            },
+            "bonus_rolls": {
+                "min": 0,
+                "max": 2
+            },
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "hunger/sword",
+                    "weight": 4,
+                    "quality": 2
+                },
+                {
+                    "type": "loot_table",
+                    "value": "hunger/skills",
+                    "weight": 1,
+                    "quality": 3
+                },
+                {
+                    "type": "loot_table",
+                    "value": "hunger/potion",
+                    "weight": 5,
+                    "quality": 2
+                },
+                {
+                    "type": "loot_table",
+                    "value": "hunger/other",
+                    "weight": 1,
+                    "quality": 3
+                },
+                {
+                    "type": "loot_table",
+                    "value": "hunger/armor",
+                    "weight": 5,
+                    "quality": 2
+                },
+                {
+                    "type": "loot_table",
+                    "value": "blaze/guns",
+                    "weight": 4,
+                    "quality": 14
+                }
+            ]
+        }
+    ]
+}

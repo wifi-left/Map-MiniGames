@@ -1,0 +1,51 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+        {
+            "rolls": 1,
+            "bonus_rolls": {
+                "min": 0,
+                "max": 2
+            },
+            "entries": [
+                {
+                    "type": "minecraft:tag",
+                    "name": "lucky_pillar/all_items",
+                    "expand": true,
+                    "weight": 12,
+                    "quality": 1
+                },{
+                    "type": "minecraft:tag",
+                    "name": "lucky_pillar/spawn_eggs",
+                    "expand": true,
+                    "weight": 3,
+                    "quality": 1
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lucky_pillar/random_potion",
+                    "weight": 5,
+                    "quality": 1
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lucky_pillar/random_weapon",
+                    "weight": 4,
+                    "quality": 1
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lucky_pillar/random_armor",
+                    "weight": 6,
+                    "quality": 1
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "lucky_pillar/random_arrow",
+                    "weight": 6,
+                    "quality": 1
+                }
+            ]
+        }
+    ]
+}

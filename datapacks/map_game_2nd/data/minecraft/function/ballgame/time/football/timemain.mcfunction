@@ -1,0 +1,9 @@
+scoreboard players remove ball.time board 1
+execute if score ball.time board matches 0 run function minecraft:ballgame/time/football/timeout
+
+scoreboard players set temp2 temp 2
+scoreboard players operation temp2 temp *= ballgame.score state
+
+title @a[team=ballgame,tag=ball.teama] actionbar ["\u00a76你在\u00a79\u00a7l队伍A \u00a78 | \u00a79[A]",{score:{name:"ball.score.a",objective:board},color:yellow},"\u00a7e分 \u00a7c[B]",{score:{name:"ball.score.b",objective:board},color:yellow},"\u00a7e分 \u00a78| \u00a7e倒计时：",{score:{name:"ball.time",objective:board},color:aqua},"\u00a7bs \u00a78| ",{score:{name:"ball.rounds",objective:board},color:aqua},"\u00a7b轮\u00a7a/",{score:{name:"temp2",objective:temp},color:aqua},"\u00a7b轮"]
+title @a[team=ballgame,tag=ball.teamb] actionbar ["\u00a76你在\u00a7c\u00a7l队伍B \u00a78 | \u00a79[A]",{score:{name:"ball.score.a",objective:board},color:yellow},"\u00a7e分 \u00a7c[B]",{score:{name:"ball.score.b",objective:board},color:yellow},"\u00a7e分 \u00a78| \u00a7e倒计时：",{score:{name:"ball.time",objective:board},color:aqua},"\u00a7bs \u00a78| ",{score:{name:"ball.rounds",objective:board},color:aqua},"\u00a7b轮\u00a7a/",{score:{name:"temp2",objective:temp},color:aqua},"\u00a7b轮"]
+title @a[team=ballgame,tag=!ball.teama,tag=!ball.teamb] actionbar ["\u00a79[A]",{score:{name:"ball.score.a",objective:board},color:yellow},"\u00a7e分 \u00a7c[B]",{score:{name:"ball.score.b",objective:board},color:yellow},"\u00a7e分 \u00a78| \u00a7e倒计时：",{score:{name:"ball.time",objective:board},color:aqua},"\u00a7bs \u00a78| ",{score:{name:"ball.rounds",objective:board},color:aqua},"\u00a7b轮\u00a7a/",{score:{name:"temp2",objective:temp},color:aqua},"\u00a7b轮"]

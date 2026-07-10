@@ -1,0 +1,3 @@
+execute unless entity @e[tag=stronghold.boss] run bossbar set stronghold.boss visible false
+execute if score stronghold.state state matches 1..2 as @e[tag=pve.stronghold.rooms.fighting] at @s run function minecraft:stronghold/game/detect_if_end
+execute if score stronghold.state state matches 1..2 unless entity @e[tag=pve.stronghold.rooms.fighting] run execute as @e[tag=pve.stronghold.rooms.lock] at @s run function minecraft:stronghold/game/detect_if_summon

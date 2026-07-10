@@ -1,0 +1,1 @@
+summon minecraft:elder_guardian ~ ~ ~ {CustomName:{text:"远古守卫者",color:dark_aqua},CustomNameVisible:true,DeathLootTable:"minecraft:stronghold/death/zombie/3",Tags:["stronghold.mobs","stronghold.boss"],attributes:[{id:"max_health",base:30}],Health:30}

@@ -1,0 +1,1 @@
+summon minecraft:guardian ~ ~ ~ {CustomName:{text:"守卫者",color:yellow},CustomNameVisible:true,DeathLootTable:"minecraft:stronghold/death/zombie/1",Tags:["stronghold.mobs"],attributes:[{id:"max_health",base:6}],Health:6}

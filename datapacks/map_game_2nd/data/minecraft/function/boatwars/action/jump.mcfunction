@@ -1,0 +1,1 @@
+execute at @s run function minecraft:boatwars/usegun

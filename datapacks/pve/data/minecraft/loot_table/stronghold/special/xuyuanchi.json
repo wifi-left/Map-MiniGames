@@ -1,0 +1,31 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+        {
+            "rolls": {
+                "min": 0,
+                "max": {
+                    "min": 0,
+                    "max": 1
+                }
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "minecraft:stronghold/chest/tools",
+                    "weight": 8
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "minecraft:stronghold/chest/armor",
+                    "weight": 3
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:totem_of_undying",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

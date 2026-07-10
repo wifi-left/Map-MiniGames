@@ -1,0 +1,1 @@
+give @s minecraft:end_rod[custom_data={gun_data:{is_bullet:true,type:4}},max_stack_size=99,item_name='麻醉剂'] 99

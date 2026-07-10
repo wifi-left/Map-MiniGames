@@ -1,0 +1,1 @@
+summon minecraft:witch ~ ~ ~ {Health:20,CustomName:{text:"怪物",color:dark_red},CustomNameVisible:true,DeathLootTable:"minecraft:stronghold/death/zombie/3",Tags:["stronghold.mobs"],attributes:[{id:"max_health",base:20},{base:0.3,id:"movement_speed"},{base:4,id:"attack_damage"}],active_effects:[{id:"fire_resistance",amplifier:1,duration:-1,show_particles:false}]}

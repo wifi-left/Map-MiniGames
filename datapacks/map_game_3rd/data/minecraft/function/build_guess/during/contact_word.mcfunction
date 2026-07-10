@@ -1,0 +1,1 @@
+$data modify storage minecraft:temp build_guess.tip set value "$(before)$(mid)$(after)"

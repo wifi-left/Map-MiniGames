@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "player_died": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                
+                "player": {
+                    "team": "play.sw"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "player_died"
+        ]
+    ],
+    "rewards": {
+        "function": "cloud/player_was_killed"
+    }
+}
+

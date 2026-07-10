@@ -1,0 +1,9 @@
+schedule function minecraft:mining/map/random_block/1 80t replace
+schedule function minecraft:mining/map/random_block/2 70t replace
+schedule function minecraft:mining/map/random_block/3 60t replace
+schedule function minecraft:mining/map/random_block/4 50t replace
+schedule function minecraft:mining/map/random_block/5 40t replace
+schedule function minecraft:mining/map/random_block/6 30t replace
+schedule function minecraft:mining/map/random_block/7 20t replace
+schedule function minecraft:mining/map/random_block/8 10t replace
+schedule function minecraft:mining/map/random_block/9 1t replace

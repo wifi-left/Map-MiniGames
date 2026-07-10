@@ -1,0 +1,1 @@
+execute if score blaze.time board matches 1.. run title @a[tag=blaze.player] actionbar ["\u00a7e下一局游戏将在",{score:{name:"blaze.time",objective:board},color:red},"\u00a7cs\u00a7e后开始！"]

@@ -1,0 +1,8 @@
+
+execute unless items entity @s container.* scaffolding unless items entity @s player.cursor scaffolding unless items entity @s weapon.offhand scaffolding run clear @s scaffolding
+execute unless items entity @s container.* scaffolding unless items entity @s player.cursor scaffolding unless items entity @s weapon.offhand scaffolding run give @s scaffolding[custom_data={"build_parkour":1},can_break={blocks:"#build_parkour/building_blocks_destroy"},can_place_on={blocks:"#build_parkour/building_blocks"},tooltip_display={hidden_components:["can_break","can_place_on"]},item_name='脚手架 (仅供建造，跑酷时会移除)']
+
+execute unless items entity @s container.* chicken_spawn_egg unless items entity @s player.cursor chicken_spawn_egg unless items entity @s weapon.offhand chicken_spawn_egg run clear @s chicken_spawn_egg
+execute unless items entity @s container.* chicken_spawn_egg unless items entity @s player.cursor chicken_spawn_egg unless items entity @s weapon.offhand chicken_spawn_egg run give @s chicken_spawn_egg[custom_data={"build_parkour":1},can_break={blocks:"#build_parkour/building_blocks_destroy"},can_place_on={blocks:"#build_parkour/building_blocks"},tooltip_display={hidden_components:["can_break","can_place_on"]},item_name='放置：终点',entity_data={id:"minecraft:marker",Tags:["build_parkour.place.end"]},item_model='carrot_on_a_stick',custom_model_data={floats:[5]}]
+
+effect give @s haste 2 255 true

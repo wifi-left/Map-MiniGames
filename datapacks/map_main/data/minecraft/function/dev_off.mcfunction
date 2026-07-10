@@ -1,0 +1,2 @@
+gamerule send_command_feedback false
+gamerule reduced_debug_info true

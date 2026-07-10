@@ -1,0 +1,24 @@
+execute store result score killer.temp temp run random value 1..23
+execute if score killer.temp temp matches 1 run tp @s -215 -31 -385 0 0
+execute if score killer.temp temp matches 2 run tp @s -262 -31 -385 0 0
+execute if score killer.temp temp matches 3 run tp @s -262 -36 -386 0 0
+execute if score killer.temp temp matches 4 run tp @s -262 -48 -385 0 0
+execute if score killer.temp temp matches 5 run tp @s -236 -53 -385 0 0
+execute if score killer.temp temp matches 6 run tp @s -262 -43 -338 0 0
+execute if score killer.temp temp matches 7 run tp @s -262 -41 -366 0 0
+execute if score killer.temp temp matches 8 run tp @s -228 -48 -395 0 0
+execute if score killer.temp temp matches 9 run tp @s -238 -41 -369 0 0
+execute if score killer.temp temp matches 10 run tp @s -262 -48 -336 0 0
+execute if score killer.temp temp matches 11 run tp @s -236 -53 -397 0 0
+execute if score killer.temp temp matches 12 run tp @s -246 -56 -379 0 0
+execute if score killer.temp temp matches 13 run tp @s -262 -48 -361 0 0
+execute if score killer.temp temp matches 14 run tp @s -267 -46 -366 0 0
+execute if score killer.temp temp matches 15 run tp @s -257 -46 -367 0 0
+execute if score killer.temp temp matches 16 run tp @s -262 -48 -378 0 0
+execute if score killer.temp temp matches 17 run tp @s -262 -48 -391 0 0
+execute if score killer.temp temp matches 18 run tp @s -267 -48 -385 0 0
+execute if score killer.temp temp matches 19 run tp @s -256 -48 -385 0 0
+execute if score killer.temp temp matches 20 run tp @s -236 -48 -380 0 0
+execute if score killer.temp temp matches 21 run tp @s -236 -48 -371 0 0
+execute if score killer.temp temp matches 22 run tp @s -246 -48 -380 0 0
+execute if score killer.temp temp matches 23 run tp @s -223 -48 -385 0 0

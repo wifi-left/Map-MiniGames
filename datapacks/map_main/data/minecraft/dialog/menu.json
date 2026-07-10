@@ -1,0 +1,266 @@
+{
+    "type": "minecraft:multi_action",
+    "title": "MiniGames 小游戏菜单",
+    "columns": 1,
+    "actions": [
+        {
+            "label": "地图介绍",
+            "action": {
+                "type": "show_dialog",
+                "dialog": {
+                    "type": "minecraft:notice",
+                    "title": "地图介绍",
+                    "body": [
+                        {
+                            "type": "minecraft:plain_message",
+                            "contents": [
+                                {
+                                    "text": ""
+                                },
+                                {
+                                    "text": "wifi's MiniGames",
+                                    "color": "yellow",
+                                    "bold": true
+                                },
+                                {
+                                    "text": "\n一个集合多种小游戏为一张地图的项目。\n该项目您可以在 GitHub 上找到。\n您可以在本地图许可证范围内对地图进行修改。\n许可证请查看地图目录中 ",
+                                    "color": "aqua"
+                                },
+                                {
+                                    "text": "LISENCE",
+                                    "color": "green",
+                                    "underlined": true,
+                                    "click_event": {
+                                        "action": "open_url",
+                                        "url": "https://github.com/wifi-left/Map-MiniGames/blob/master/LISENCE"
+                                    }
+                                },
+                                {
+                                    "text": " 找到。\n",
+                                    "color": "aqua"
+                                },
+                                {
+                                    "text": "\n祝您游玩本地图愉快！\n",
+                                    "color": "light_purple"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:plain_message",
+                            "contents": [
+                                {
+                                    "text": "【主创作者】\n",
+                                    "color": "gold"
+                                },
+                                {
+                                    "text": "wifi_left (wifi_right)",
+                                    "color": "aqua"
+                                },
+                                "\n\n",
+                                {
+                                    "text": "【特别感谢】\n",
+                                    "color": "gold"
+                                },
+                                "",
+                                {
+                                    "text": "616789\nDomnick_JYH\nlawyer112 \u00a7e(服务器支持)\n\u00a7b00ɹɐəlϽ \u00a7e(战利品表)\u00a7b\nLateTea\nWemsur\n残月sama\n墨安",
+                                    "color": "aqua"
+                                },
+                                "\n\n",
+                                {
+                                    "text": "【建筑师团队】\n",
+                                    "color": "gold"
+                                },
+                                {
+                                    "text": "616789\nDomnick_JYH\nlawyer112 \u00a7e(协助烫手的山芋地图#1)\u00a7b\nBadt_i_m_e \u00a77(早期)\n\u00a7bmelon_444 \u00a77(早期)\u00a7b\nCreatorLizard \u00a77(早期)\u00a7b\nSR_AJ67 \u00a77(早期)\u00a7b\nthework \u00a77(早期)\u00a7b\n毒岛渡鸦丶 \u00a77(有偿)\u00a7b\n\u00a77... ...",
+                                    "color": "aqua"
+                                },
+                                "\n\n",
+                                {
+                                    "text": "【测试团队】\n",
+                                    "color": "gold"
+                                },
+                                {
+                                    "text": "wifi_left (wifi_right)\n616789\nlawyer112\nDomnick_JYH\n\u00a77...\n\u00a7a以及支持 MiniGames 的小伙伴们！~",
+                                    "color": "aqua"
+                                }
+                            ]
+                        }
+                    ],
+                    "pause": false,
+                    "after_action": "close",
+                    "action": {
+                        "label": "返回",
+                        "action": {
+                            "type": "show_dialog",
+                            "dialog": "minecraft:menu"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "label": "快捷开始游戏 (仅大厅)",
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "/trigger quickplay set -1"
+            }
+        },
+        {
+            "label": "全局旁观操作菜单",
+            "action": {
+                "type": "show_dialog",
+                "dialog": {
+                    "pause": false,
+                    "columns": 1,
+                    "type": "minecraft:multi_action",
+                    "title": "全局旁观操作菜单",
+                    "body": [
+                        {
+                            "type": "minecraft:plain_message",
+                            "contents": [
+                                {
+                                    "text": "全局旁观操作菜单，可以开启全局旁观者，可以更加方便录制视频等。"
+                                }
+                            ]
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "label": "启用全局旁观者",
+                            "action": {
+                                "type": "run_command",
+                                "command": "/trigger spec set 2"
+                            }
+                        },
+                        {
+                            "label": "关闭全局旁观者",
+                            "action": {
+                                "type": "run_command",
+                                "command": "/trigger spec set 3"
+                            }
+                        },
+                        {
+                            "label": "开启旁观模式（仅在旁观模式下）",
+                            "action": {
+                                "type": "run_command",
+                                "command": "/trigger spec set 4"
+                            }
+                        },
+                        {
+                            "label": "返回",
+                            "action": {
+                                "type": "show_dialog",
+                                "dialog": "minecraft:menu"
+                            }
+                        }
+                    ],
+                    "exit_action": {
+                        "label": "关闭"
+                    }
+                }
+            }
+        },
+        {
+            "label": "地图背景音乐设置",
+            "action": {
+                "type": "show_dialog",
+                "dialog": {
+                    "columns": 1,
+                    "pause": false,
+                    "type": "minecraft:multi_action",
+                    "title": "地图背景音乐设置",
+                    "body": [
+                        {
+                            "type": "minecraft:plain_message",
+                            "contents": [
+                                {
+                                    "text": "启用或者禁用地图音乐。\n您也可以关闭声音选项中的"
+                                },
+                                {
+                                    "translate": "soundCategory.voice"
+                                },
+                                {
+                                    "text": "来调整音乐声音大小。"
+                                }
+                            ]
+                        }
+                    ],
+                    "actions": [
+                        {
+                            "label": {
+                                "text": "启用地图背景音乐",
+                                "color": "green"
+                            },
+                            "action": {
+                                "type": "run_command",
+                                "command": "/trigger music_trigger set 1"
+                            }
+                        },
+                        {
+                            "label": {
+                                "text": "禁用地图背景音乐",
+                                "color": "red"
+                            },
+                            "action": {
+                                "type": "run_command",
+                                "command": "/trigger music_trigger set 2"
+                            }
+                        },
+                        {
+                            "label": "返回",
+                            "action": {
+                                "type": "show_dialog",
+                                "dialog": "minecraft:menu"
+                            }
+                        }
+                    ],
+                    "exit_action": {
+                        "label": "关闭"
+                    }
+                }
+            }
+        },
+        {
+            "label": "返回大厅 (/trigger hub)",
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "/trigger hub"
+            }
+        }
+    ],
+    "can_close_with_escape": true,
+    "external_title": {
+        "text": "小游戏快捷菜单",
+        "color": "aqua",
+        "bold": true
+    },
+    "pause": false,
+    "body": {
+        "type": "minecraft:plain_message",
+        "contents": [
+            {
+                "text": "欢迎游玩 ",
+                "color": "aqua"
+            },
+            {
+                "text": "wifi's ",
+                "color": "gold"
+            },
+            {
+                "text": "Mini",
+                "color": "green"
+            },
+            {
+                "text": "Games",
+                "color": "yellow"
+            },
+            {
+                "text": "\n"
+            }
+        ]
+    },
+    "exit_action": {
+        "label": "关闭"
+    }
+}

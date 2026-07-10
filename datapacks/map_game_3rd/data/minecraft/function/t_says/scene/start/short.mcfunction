@@ -1,0 +1,1 @@
+scoreboard players set t_says.time board 6

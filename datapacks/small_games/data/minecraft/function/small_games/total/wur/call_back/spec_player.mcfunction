@@ -1,0 +1,1 @@
+tp @s @r[gamemode=!spectator,tag=play.total]

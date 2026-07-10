@@ -1,0 +1,1 @@
+summon minecraft:creeper ~ ~ ~ {Health:20,CustomName:{text:"CREEPER",color:dark_green,obfuscated:true},CustomNameVisible:true,DeathLootTable:"minecraft:stronghold/death/zombie/3",Tags:["stronghold.mobs"],attributes:[{id:"max_health",base:20},{base:0.23,id:"movement_speed"}]}

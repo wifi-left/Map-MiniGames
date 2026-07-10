@@ -1,0 +1,1 @@
+summon minecraft:skeleton ~ ~ ~ {Health:20,CustomName:{text:"骷髅",color:yellow},CustomNameVisible:true,DeathLootTable:"minecraft:stronghold/death/zombie/1",Tags:["stronghold.mobs"],equipment:{mainhand:{id:bow}},drop_chances:{mainhand:0.6}}

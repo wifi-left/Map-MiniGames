@@ -1,0 +1,1 @@
+summon minecraft:fireball ~ ~ ~ {CustomName:{text:"FIREBALL",color:red},CustomNameVisible:true,Tags:["stronghold.mobs"],ExplosionPower:3,acceleration_power:0.4d,Motion:[0.0,-0.5,0.0]}

@@ -1,0 +1,28 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "player": {
+                    "team": "stronghold"
+                },
+                "item": {
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "stronghold": "strong_freeze"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "requirement"
+        ]
+    ],
+    "rewards": {
+        "function": "minecraft:stronghold/tools/freeze_strong"
+    },
+    "sends_telemetry_event": false
+}

@@ -1,0 +1,55 @@
+execute if score @s quickplay matches 1.. run playsound entity.experience_orb.pickup player @s ~ ~ ~ 1 1 1
+
+execute if score @s quickplay matches 2 run return run function battle/join
+execute if score @s quickplay matches 3 run return run function believer/join
+execute if score @s quickplay matches 4 run return run function car_race/join
+execute if score @s quickplay matches 5 run return run function endless_wolf/join
+execute if score @s quickplay matches 6 run return run function color/join
+execute if score @s quickplay matches 7 run return run function dropper/join
+execute if score @s quickplay matches 8 run return run function duel/join
+execute if score @s quickplay matches 9 run return run function golf/join
+execute if score @s quickplay matches 10 run return run function hide2/join
+execute if score @s quickplay matches 11 run return run function hideseek/join
+execute if score @s quickplay matches 12 run return run function hotpotever/join
+execute if score @s quickplay matches 13 run return run function hunger/join
+execute if score @s quickplay matches 14 run return run function job_pvp/join
+execute if score @s quickplay matches 15 run return run function killerever/join
+execute if score @s quickplay matches 16 run return run function live/join
+execute if score @s quickplay matches 17 run return run function lpark/join
+execute if score @s quickplay matches 18 run return run function poolwar/join
+execute if score @s quickplay matches 19 run return run function small_games/chess/join
+execute if score @s quickplay matches 20 run return run function twolf/join
+execute if score @s quickplay matches 21 run return run function small_games/total/join
+execute if score @s quickplay matches 22 run return run function snow/join
+execute if score @s quickplay matches 23 run return run function tntwars/join
+execute if score @s quickplay matches 24 run return run function zombieever/join
+execute if score @s quickplay matches 25 run return run function surgame:join
+execute if score @s quickplay matches 26 run return run function bedwars/message/join
+execute if score @s quickplay matches 27 run return run function desk/join
+execute if score @s quickplay matches 28 run return run function bomb/join
+execute if score @s quickplay matches 29 run return run function stronghold/join
+execute if score @s quickplay matches 30 run return run function blaze/join
+execute if score @s quickplay matches 31 run return run function cloud/join
+execute if score @s quickplay matches 32 run return run function pillar/join
+execute if score @s quickplay matches 33 run return run function repel/join
+execute if score @s quickplay matches 34 run return run function parkourrace/join
+execute if score @s quickplay matches 35 run return run function boatwars/join
+execute if score @s quickplay matches 36 run return run function sneak/join
+execute if score @s quickplay matches 37 run return run function pacman/join
+execute if score @s quickplay matches 38 run return run function miner/join
+execute if score @s quickplay matches 39 run return run function mining/join
+execute if score @s quickplay matches 40 run return run function chair/join
+execute if score @s quickplay matches 41 run return run function random_parkour/join
+execute if score @s quickplay matches 42 run return run function ballgame/join
+execute if score @s quickplay matches 43 run return run function fishing/join
+execute if score @s quickplay matches 44 run return run function build_parkour/join
+execute if score @s quickplay matches 45 run return run function finder/join
+execute if score @s quickplay matches 46 run return run function build_guess/join
+execute if score @s quickplay matches 47 run return run function one_arrow/join
+execute if score @s quickplay matches 48 run return run function elytra/join
+execute if score @s quickplay matches 49 run return run function t_says/join
+execute if score @s quickplay matches 50 run return run function mutouren/join
+execute if score @s quickplay matches 51 run return run function sheepwars/join
+execute if score @s quickplay matches 52 run return run function disaster/snow/join
+
+tellraw @s ["§c很抱歉，未知游戏的ID！"]

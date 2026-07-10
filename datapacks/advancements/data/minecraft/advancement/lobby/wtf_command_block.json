@@ -1,0 +1,46 @@
+{
+    "display": {
+        "title": [
+            {
+                "text": "从天上拿过来的命令方块[别踢我]awa",
+                "color": "light_purple",
+                "italic": true
+            }
+        ],
+        "description": [
+            {
+                "text": "(+NBT)\n\n",
+                "color": "dark_purple",
+                "italic": true
+            },{
+                "text": "这是...生存建筑的痕迹？\n",
+                "color": "aqua",
+                "italic": false
+            },
+            {
+                "text": "\u00a78\u00a7o\u00a7m\u00a7n放心，不会踢你的",
+                "color": "red",
+                "italic": false
+            }
+        ],
+        "icon": {
+            "id": "minecraft:chain_command_block"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:lobby/good_view_ontop_building",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}

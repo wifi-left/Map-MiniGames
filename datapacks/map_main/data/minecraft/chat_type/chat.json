@@ -1,0 +1,17 @@
+{
+  "chat": {
+    "parameters": [
+      "sender",
+      "content"
+    ],
+    "translation_key": "\u00a7f[公共聊天] \u00a77%s\u00a77: %s"
+  },
+  "narration": {
+    "parameters": [
+      "sender",
+      "content"
+    ],
+    "translation_key": "chat.type.text.narrate"
+  }
+}
+

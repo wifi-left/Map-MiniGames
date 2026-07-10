@@ -1,0 +1,97 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:oak_button",
+          "weight": 32,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": "{gun_data:{is_bullet:1b,type:1}}",
+                "minecraft:max_stack_size": 99,
+                "minecraft:item_name": "手枪子弹"
+              }
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "max": 99,
+                "min": 1
+              }
+            }
+          ]
+        },{
+          "type": "minecraft:item",
+          "name": "minecraft:stone_button",
+          "weight": 16,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": "{gun_data:{is_bullet:1b,type:2}}",
+                "minecraft:max_stack_size": 99,
+                "minecraft:item_name": "狙击枪子弹"
+              }
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "max": 12,
+                "min": 1
+              }
+            }
+          ]
+        },{
+          "type": "minecraft:item",
+          "name": "minecraft:birch_button",
+          "weight": 16,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": "{gun_data:{is_bullet:1b,type:3}}",
+                "minecraft:max_stack_size": 99,
+                "minecraft:item_name": "冲锋枪子弹"
+              }
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "max": 59,
+                "min": 1
+              }
+            }
+          ]
+        },{
+          "type": "minecraft:item",
+          "name": "minecraft:end_rod",
+          "weight": 16,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": "{gun_data:{is_bullet:1b,type:4}}",
+                "minecraft:max_stack_size": 99,
+                "minecraft:item_name": "麻醉剂"
+              }
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "max": 40,
+                "min": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

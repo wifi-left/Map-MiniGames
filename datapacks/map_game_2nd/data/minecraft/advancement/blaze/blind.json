@@ -1,0 +1,21 @@
+{
+    "parent": "minecraft:blaze/root",
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:paper",
+                    "components": {
+                        "minecraft:custom_data": {
+                            "blaze":"blind"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "minecraft:blaze/item_effect/blind"
+    }
+}

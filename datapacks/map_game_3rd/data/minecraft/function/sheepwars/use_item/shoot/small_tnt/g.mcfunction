@@ -1,0 +1,4 @@
+execute anchored eyes run summon sheep ^ ^ ^ {Tags:["sheepwars.new","sheepwars.sheep.normal","sheepwars.small_tnt"],NoAI:true,Silent:true,Motion:[0d,0d,0d],NoGravity:false,DeathLootTable:"empty",Invulnerable:false,attributes:[{base:-1,id:"movement_speed"},{base:-1,id:"jump_strength"},{base:10000,id:"safe_fall_distance"},{base:0,id:"fall_damage_multiplier"},{base:1000,id:"knockback_resistance"}],Color:14,CustomNameVisible:true,CustomName:{text:"爆炸绵羊",color:red}}
+
+execute at @s anchored eyes as @e[tag=sheepwars.new,type=sheep] run function minecraft:sheepwars/use_item/give_motion/normal
+tag @e[tag=sheepwars.new,type=sheep] remove sheepwars.new

@@ -1,0 +1,1 @@
+execute if items entity @s weapon.mainhand wooden_sword run clear @s wooden_sword

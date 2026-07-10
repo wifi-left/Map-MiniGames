@@ -1,0 +1,10 @@
+{
+    "replace": false,
+    "values": [
+        "#minecraft:terracottas",
+        "#minecraft:concrete",
+        "#minecraft:wool",
+        "minecraft:clay"
+    ]
+}
+

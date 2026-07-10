@@ -1,0 +1,27 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:cod",
+        "minecraft:salmon",
+        "minecraft:pufferfish",
+        "minecraft:tropical_fish",
+        "bamboo",
+        "rotten_flesh",
+        "tripwire_hook",
+        "ink_sac",
+        "stick",
+        "bowl",
+        "string",
+        "potion",
+        "bone",
+        "leather",
+        "leather_boots",
+        "lily_pad",
+        "name_tag",
+        "saddle",
+        "bow",
+        "book",
+        "nautilus_shell",
+        "enchanted_book"
+    ]
+}

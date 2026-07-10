@@ -1,0 +1,16 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
+title @a[team=hide.play.hun] title ["\u00a76你赢了！"]
+title @a[team=hide.play.ani] title ["\u00a7c你输了！"]
+tellraw @a[team=hide.play.hun] ["\n§b   时间结束，躲藏者获胜！\n"]
+tellraw @a[team=hide.play.ani] ["\n§b   时间结束，躲藏者获胜！\n"]
+tellraw @a[team=hide.wait] ["\n§b   时间结束，躲藏者获胜！\n"]
+execute as @a[team=hide.play.ani,gamemode=adventure,tag=play.total] run function minecraft:small_games/total/win_score {score:1}
+# execute if entity @a[team=play.snow,tag=play.total] run function minecraft:small_games/total/next_game_trigger
+
+function hideseek/gameover/over
+
+# function hideseek/gameover/over
+

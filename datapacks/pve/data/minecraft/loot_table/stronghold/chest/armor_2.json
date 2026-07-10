@@ -1,0 +1,481 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 1,
+                "max": 2
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "minecraft:diamond_helmet",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "options": [
+                                "minecraft:blast_protection",
+                                "minecraft:fire_protection",
+                                "minecraft:projectile_protection",
+                                "minecraft:protection",
+                                "minecraft:thorns"
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "minecraft:diamond_chestplate",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "options": [
+                                "minecraft:blast_protection",
+                                "minecraft:fire_protection",
+                                "minecraft:projectile_protection",
+                                "minecraft:protection",
+                                "minecraft:thorns"
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "minecraft:diamond_leggings",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "options": [
+                                "minecraft:blast_protection",
+                                "minecraft:fire_protection",
+                                "minecraft:projectile_protection",
+                                "minecraft:protection",
+                                "minecraft:thorns"
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "minecraft:diamond_boots",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "options": [
+                                "minecraft:blast_protection",
+                                "minecraft:fire_protection",
+                                "minecraft:projectile_protection",
+                                "minecraft:protection",
+                                "minecraft:thorns"
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "minecraft:shield",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "options": [
+                                "minecraft:unbreaking"
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.5
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "minecraft:iron_helmet",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "options": [
+                                "minecraft:blast_protection",
+                                "minecraft:fire_protection",
+                                "minecraft:projectile_protection",
+                                "minecraft:protection",
+                                "minecraft:thorns"
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "minecraft:iron_chestplate",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "options": [
+                                "minecraft:blast_protection",
+                                "minecraft:fire_protection",
+                                "minecraft:projectile_protection",
+                                "minecraft:protection",
+                                "minecraft:thorns"
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "minecraft:iron_leggings",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "options": [
+                                "minecraft:blast_protection",
+                                "minecraft:fire_protection",
+                                "minecraft:projectile_protection",
+                                "minecraft:protection",
+                                "minecraft:thorns"
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "minecraft:iron_boots",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "options": [
+                                "minecraft:blast_protection",
+                                "minecraft:fire_protection",
+                                "minecraft:projectile_protection",
+                                "minecraft:protection",
+                                "minecraft:thorns"
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "minecraft:chainmail_helmet",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "options": [
+                                "minecraft:blast_protection",
+                                "minecraft:fire_protection",
+                                "minecraft:projectile_protection",
+                                "minecraft:protection",
+                                "minecraft:thorns"
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "minecraft:chainmail_chestplate",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "options": [
+                                "minecraft:blast_protection",
+                                "minecraft:fire_protection",
+                                "minecraft:projectile_protection",
+                                "minecraft:protection",
+                                "minecraft:thorns"
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "minecraft:chainmail_leggings",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "options": [
+                                "minecraft:blast_protection",
+                                "minecraft:fire_protection",
+                                "minecraft:projectile_protection",
+                                "minecraft:protection",
+                                "minecraft:thorns"
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 6,
+                    "name": "minecraft:chainmail_boots",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "options": [
+                                "minecraft:blast_protection",
+                                "minecraft:fire_protection",
+                                "minecraft:projectile_protection",
+                                "minecraft:protection",
+                                "minecraft:thorns"
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 7,
+                    "name": "minecraft:golden_helmet",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "options": [
+                                "minecraft:blast_protection",
+                                "minecraft:fire_protection",
+                                "minecraft:projectile_protection",
+                                "minecraft:protection",
+                                "minecraft:thorns"
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 7,
+                    "name": "minecraft:golden_chestplate",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "options": [
+                                "minecraft:blast_protection",
+                                "minecraft:fire_protection",
+                                "minecraft:projectile_protection",
+                                "minecraft:protection",
+                                "minecraft:thorns"
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 7,
+                    "name": "minecraft:golden_leggings",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "options": [
+                                "minecraft:blast_protection",
+                                "minecraft:fire_protection",
+                                "minecraft:projectile_protection",
+                                "minecraft:protection",
+                                "minecraft:thorns"
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 7,
+                    "name": "minecraft:golden_boots",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly",
+                            "options": [
+                                "minecraft:blast_protection",
+                                "minecraft:fire_protection",
+                                "minecraft:projectile_protection",
+                                "minecraft:protection",
+                                "minecraft:thorns"
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "minecraft:netherite_helmet",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": 10,
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "minecraft:netherite_chestplate",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": 10,
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "minecraft:netherite_leggings",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": 10,
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.3
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "minecraft:netherite_boots",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_with_levels",
+                            "levels": 10,
+                            "options": [],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.3
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "max": 1,
+                "min": 0
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 10,
+                    "name": "minecraft:totem_of_undying"
+                }
+            ]
+        }
+    ]
+}

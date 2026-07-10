@@ -1,0 +1,1 @@
+tellraw @s ["\n\u00a7b\u00a7l商贾传奇\n\n\u00a76\u00a7l目标：\u00a7a获得",{score:{name:"merchant.target",objective:board},color:yellow},"\u00a7a金币，或者淘汰其他玩家！\n\n\u00a72\u00a7l特殊方块事件：\n\u00a7a绿色羊毛 \u00a7d: \u00a7a+100金币\n\u00a7c红色羊毛 \u00a7d: \u00a7c-100金币\n\u00a7d粉色羊毛 \u00a7d: \u00a76随机事件\n\u00a7b蓝色羊毛 \u00a7d: \u00a7b你将随机进入两条支路其中一条\n\u00a7e黄色羊毛 \u00a7d: \u00a7e随机小游戏\n"]

@@ -1,0 +1,17 @@
+##
+## Datapack Upgrader v1.0.2 by wifi_left
+## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
+## 
+tag @a[team=wait.battle] add battle.sel
+tag @a[team=play.battle.r] add battle.sel
+tag @a[team=play.battle.b] add battle.sel
+scoreboard players set battle.state state 5
+schedule function battle/over/tp 5s
+schedule clear battle/nextround
+gamemode spectator @a[tag=battle.sel]
+tag @a remove battle.sel
+
+fill 141 44 -312 150 44 -312 minecraft:light_blue_concrete replace minecraft:redstone_block
+fill 147 44 -368 138 44 -368 minecraft:light_blue_concrete replace minecraft:redstone_block
+fill 146 39 -324 142 35 -324 minecraft:light_blue_stained_glass keep
+fill 142 39 -356 146 35 -356 minecraft:red_stained_glass keep
