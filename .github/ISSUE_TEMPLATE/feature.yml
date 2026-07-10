@@ -5,11 +5,20 @@ labels: [enhancement]
 body:
 - type: markdown
   attributes:
-    value: 请确认 Issues 列表无重复的项目。
+    value: 请确认 Issues 列表无重复的项目。请注意：不是所有的建议都会被采纳。
 - type: textarea
   id: description
   attributes:
     label: 描述 | Description
-    description: 请详细描述你想加入的新功能。
+    description: 请清晰简略地描述你想加入的新功能。以及它有什么好处。
+    placeholder: 我想要... 它可以...
+  validations:
+    required: true
+- type: textarea
+  id: client-platform
+  attributes:
+    label: 详细描述 | Full Description
+    description: 请详细描述你想要的功能。
+    placeholder: 我想要...
   validations:
     required: true
