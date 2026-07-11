@@ -88,7 +88,7 @@ say 建议您安装 https://modrinth.com/mod/speech-manager-by-command-scoreboar
 function minecraft:version/version1
 function minecraft:version/gamev
 # say §b§l若您是第一次使用此地图，请管理员（或者控制台）先运行 §6/function selfcheck/check §b§l查看兼容情况。
-
+defaultgamemode survival
 # function inits/reset_random
 # function inits/resetuuid
 kill @e[tag=lobby.car,type=minecart]
