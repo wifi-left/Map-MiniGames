@@ -8,4 +8,4 @@ execute as @a[team=ballgame] run function minecraft:ballgame/actions/football/ki
 execute as @a[tag=UUID.sel] at @s run function minecraft:ballgame/make_ball_motion_stop
 tag @a[tag=UUID.sel] remove UUID.sel
 
-data remove entity @s interaction.player
+data remove entity @s interaction
