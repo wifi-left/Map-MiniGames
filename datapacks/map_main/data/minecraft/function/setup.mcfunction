@@ -94,7 +94,7 @@ defaultgamemode survival
 kill @e[tag=lobby.car,type=minecart]
 
 execute in overworld run forceload add 0 0
-scoreboard objectives remove leave
+# scoreboard objectives remove leave
 scoreboard objectives add leave minecraft.custom:minecraft.leave_game "退出游戏"
 # MOD：
 ## 0 for nothing; 1 ban other team; 2 ban own team; 4 ban /shout
