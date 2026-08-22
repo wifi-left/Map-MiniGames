@@ -29,4 +29,4 @@ function bedwars/shop/resetshop
 ## Events
 execute if score bw.state state matches 1..3 run function bedwars/events/eventsecond
 
-fill -216 -3 299 -392 -1 121 air
+fill -216 67 299 -392 72 121 air destroy

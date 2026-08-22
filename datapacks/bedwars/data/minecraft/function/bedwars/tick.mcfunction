@@ -64,3 +64,5 @@ execute as @a[tag=bw.player] if items entity @s container.* water_bucket[!custom
 execute as @a[tag=bw.player] if items entity @s weapon.offhand water_bucket[!custom_data~{good_bucket:true}] run function minecraft:bedwars/item/water_bucket
 
 function minecraft:bedwars/armor
+
+execute as @e[type=#bw_entities, x=-216, y=67, z=299, dx=-176, dy=5, dz=-178] run kill @s

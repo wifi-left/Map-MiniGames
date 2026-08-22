@@ -31,7 +31,8 @@ scoreboard players reset * die
 tellraw @a[team=hide.play.ani] ["\n§c   猎人将在30秒后出动。\n"]
 tellraw @a[team=hide.play.hun] ["\n§c   你将在30秒后出动。\n"]
 scoreboard players set hide.state state 2
-gamemode spectator @a[tag=GLOBAL.SPEC]
-team join hide.wait @a[tag=GLOBAL.SPEC]
+team join hide.wait @a[tag=GLOBAL.SPEC,team=hide.play.ani]
+team join hide.wait @a[tag=GLOBAL.SPEC,team=hide.play.hun]
+gamemode spectator @a[tag=GLOBAL.SPEC,team=hide.wait]
 
 
