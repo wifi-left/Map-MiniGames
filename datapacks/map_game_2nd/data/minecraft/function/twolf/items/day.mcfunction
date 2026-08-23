@@ -5,7 +5,7 @@
 clear @s
 execute positioned 29 16 31 run kill @e[type=item,distance=..50]
 execute as @s[tag=!wolf.toupaoed] run function minecraft:twolf/items/selector
-item replace entity @s hotbar.8 with warped_fungus_on_a_stick[custom_name="\u00a7e放弃投票 - \u00a77右键点击",custom_data={wolfItem:0},custom_model_data={floats:[3f]}]
+item replace entity @s[tag=!wolf.toupaoed] hotbar.8 with warped_fungus_on_a_stick[custom_name="\u00a7e放弃投票 - \u00a77右键点击",custom_data={wolfItem:0},custom_model_data={floats:[3f]}]
 
 # 特殊工具
 
