@@ -23,14 +23,15 @@ tag @a[tag=REJOINGAME] remove REJOINGAME
 tag @a[scores={hub=1..}] add NEWENTER1
 execute as @a[tag=NEWENTER1] unless score @s park.uuid matches 0.. run function minecraft:actions/getuuid
 
+team join lobby @a[tag=NEWENTER1]
 execute as @a[tag=NEWENTER1] at @s run function lobby/cleartags
+execute if entity @a[tag=NEWENTER1] run function lobby/bossbar_refresh
 execute as @a[tag=NEWENTER1] run tellraw @a ["§a§l[MESSAGE] §7",{"selector":"@s","color":"yellow"},"§b 返回了大厅。"]
 
 execute as @a[tag=NEWENTER1] run bossbar set surgame:time players
 scoreboard players reset @a[tag=NEWENTER1] hub
 scoreboard players reset @a[tag=NEWENTER1] globle.game
 tag @a[tag=NEWENTER1] remove sur.killedbyzom
-team join lobby @a[tag=NEWENTER1]
 tag @a[tag=NEWENTER1] remove parkouring
 effect clear @a[tag=NEWENTER1]
 stopsound @a[tag=NEWENTER1] record
