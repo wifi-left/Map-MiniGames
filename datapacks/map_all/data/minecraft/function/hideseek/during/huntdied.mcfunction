@@ -5,7 +5,7 @@
 tellraw @s ["§e你复活了。"]
 tellraw @a[team=hide.play.hun] [{"selector":"@s"},"§c 死了。"]
 tellraw @a[team=hide.play.ani] [{"selector":"@s"},"§c 死了。"]
-advancement grant @s[team=hide.play.hun] only games/hide_hunter_died
+advancement grant @s[scores={die=1..}] only games/hide_hunter_died
 
 clear @s
 scoreboard players reset @s die
