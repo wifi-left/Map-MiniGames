@@ -5,6 +5,8 @@
 tellraw @s ["§e你复活了。"]
 tellraw @a[team=hide.play.hun] [{"selector":"@s"},"§c 死了。"]
 tellraw @a[team=hide.play.ani] [{"selector":"@s"},"§c 死了。"]
+advancement grant @s[team=hide.play.hun] only games/hide_hunter_died
+
 clear @s
 scoreboard players reset @s die
 team join hide.play.hun @s
@@ -17,5 +19,3 @@ execute if score hide.state state matches 2.. run return 0
 function minecraft:hideseek/during/hun_tp
 xp set @s 0 levels
 xp set @s 0 points
-
-advancement grant @s only games/hide_hunter_died
