@@ -7,6 +7,10 @@
 title @a[team=live] title [{"text":"追杀游戏","color":"#5ed3ff","bold": true}]
 title @a[team=live] subtitle ["\u00a7e游戏将在§c5§e秒后开始 !"]
 tellraw @a[team=live] ["\n§6    游戏将在§e5§6秒后开始！ ","\n"]
+
+scoreboard players operation live.map board = live.map state
+execute if score live.map board matches -1 store result score live.map board run random value 0..1
+
 schedule clear minecraft:live/summon
 # schedule function minecraft:live/summon 5s replace
 tag @a remove live.nokiller
@@ -19,4 +23,3 @@ function minecraft:live/next_round
 xp set @a[team=live] 0 levels
 xp set @a[team=live] 0 points
 
-fill 222 -61 229 191 -37 260 air replace minecraft:heavy_weighted_pressure_plate

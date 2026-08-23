@@ -1,6 +1,11 @@
 execute unless score live.state state matches 1..99 run return fail
 
+execute as @a[team=live,gamemode=adventure] run effect give @s resistance infinite 25 true
+
 execute as @a[team=live,gamemode=!creative,tag=!GLOBAL.SPEC] in overworld run function minecraft:live/p_next_round
+
+execute if score live.map board matches 0 run function minecraft:live/map/rainbow
+execute if score live.map board matches 1 run function minecraft:live/map/nether
 
 tellraw @a[team=live] ["\n\u00a7e下一轮将在\u00a7c5秒\u00a7e后开始！\n"]
 execute as @a[team=live] at @s run playsound entity.player.levelup player @s ~ ~ ~ 1 1 1

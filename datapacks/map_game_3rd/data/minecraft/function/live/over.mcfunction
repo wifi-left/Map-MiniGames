@@ -3,6 +3,7 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 fill 222 -61 229 191 -37 260 air replace minecraft:heavy_weighted_pressure_plate
+fill 160 -62 256 188 -36 228 air replace minecraft:heavy_weighted_pressure_plate
 
 scoreboard players set live.state state 100
 team join live @a[team=live.killer]

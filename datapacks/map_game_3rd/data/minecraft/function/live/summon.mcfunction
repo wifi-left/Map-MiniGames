@@ -3,9 +3,8 @@ scoreboard players set live.state state 1
 execute as @a[team=live] at @s run playsound entity.player.levelup player @s ~ ~ ~ 1 1 1
 scoreboard players set live.player tick 0
 execute as @a[team=live,gamemode=adventure] run scoreboard players add live.player tick 1
+execute as @a[team=live,gamemode=adventure] run effect clear @s resistance
 scoreboard players add live.player tick 2
-
-fill 222 -61 229 191 -37 260 air replace minecraft:heavy_weighted_pressure_plate
 
 execute as @a[team=live,tag=live.nokiller,limit=1,sort=random,gamemode=adventure] at @s run function minecraft:live/become_killer
 execute if score live.player tick matches 6.. as @a[team=live,tag=live.nokiller,limit=1,sort=random,gamemode=adventure] at @s run function minecraft:live/become_killer

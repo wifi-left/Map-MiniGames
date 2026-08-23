@@ -14,5 +14,7 @@ execute if score live.state state matches 1..99 if score live.time board matches
 spawnpoint @a[team=live] 189 -63 262 0 0
 spawnpoint @a[team=live.killer] 189 -63 262 0 0
 
-execute as @a[team=live] at @s run function minecraft:live/items/runner
-execute as @a[team=live.killer] at @s run function minecraft:live/items/killer
+
+
+execute as @a[team=live] at @s run function minecraft:live/items/handler
+execute as @a[team=live.killer] at @s run function minecraft:live/items/handler
