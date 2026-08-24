@@ -3,7 +3,7 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 
-scoreboard players display name blue bw.info "§9蓝§8 §r蓝队: §c§l✗"
+scoreboard players display name bw.blue bw.info "§9蓝§8 §r蓝队: §c§l✗"
 # scoreboard players set §9蓝§8　§r蓝队:§c§l✗ bw.info 9
 ##execute as @a[tag=bw.player] at @s run playsound entity.ender_dragon.growl player @s ~ ~ ~ 1 1 1
 tellraw @a[tag=bw.player] ["\n§r§l团灭 > §9蓝队§c已被淘汰！\n"]

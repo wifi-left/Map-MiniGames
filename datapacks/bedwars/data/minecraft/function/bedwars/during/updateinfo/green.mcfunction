@@ -11,7 +11,7 @@ execute if score bd.green state matches 1 run return 0
 execute store result storage minecraft:temp info_count int 1 run scoreboard players get bw.green tick
 
 ## WARNING: 'storage' will not be transformed because we don't know what to do with it.
-data merge storage minecraft:temp {info_message:"§a绿§8 §r绿队: §a",info_from:green}
+data merge storage minecraft:temp {info_message:"§a绿§8 §r绿队: §a",info_from:bw.green}
 function minecraft:bedwars/during/updateinfo/connect_info with storage minecraft:temp
 # scoreboard players display name green bw.info "§9蓝§8 §r蓝队:§a§l✓"
 

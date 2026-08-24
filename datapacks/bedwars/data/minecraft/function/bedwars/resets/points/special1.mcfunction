@@ -68,6 +68,6 @@ summon marker -294 41 194 {Tags:["emerald","bedwars"],CustomName:"\u00a7a\u00a7l
 summon marker -294 45 220 {Tags:["emerald","bedwars"],CustomName:"\u00a7a\u00a7lEmerald Spawner",CustomNameVisible:0b}
 
 
-scoreboard players display name date bw.info ["\u00a7701/19/24§8 \u00a78m005F"]
+scoreboard players display name bw.date bw.info ["\u00a7701/19/24§8 \u00a78m005F"]
 
 

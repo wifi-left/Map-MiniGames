@@ -13,7 +13,7 @@ scoreboard players set bw.event.countdown board 120
 bossbar set minigames:bedwars max 120
 # execute store result bossbar minigames:bedwars value run scoreboard players get bw.reset board
 bossbar set minigames:bedwars name ["\u00a7f\u00a7lBEDWARS 起床战争 \u00a77| \u00a7c死亡决斗: ",{"score":{"name": "bw.event.countdown","objective": "board"},"color":"light_purple"},"\u00a7es"]
-scoreboard players display name event bw.info ["\u00a7r即将：死亡决斗"]
+scoreboard players display name bw.event bw.info ["\u00a7r即将：死亡决斗"]
 
 function minecraft:bedwars/beds/destory
 
