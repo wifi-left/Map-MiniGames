@@ -9,6 +9,8 @@ title @s subtitle ["\u00a7a猜猜我是谁？"]
 playsound entity.player.levelup player @s ~ ~ ~ 1 1 1
 clear @s
 effect clear @s
+xp set @s 0 levels
+xp set @s 0 points
 effect give @s instant_health 2 25 true
 execute if score hide.state state matches 1.. run function minecraft:hideseek/spec
 

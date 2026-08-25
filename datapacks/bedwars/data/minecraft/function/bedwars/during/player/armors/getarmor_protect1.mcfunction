@@ -2,6 +2,7 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
+
 execute unless items entity @s armor.head minecraft:leather_helmet run item replace entity @s[team=bw.green] armor.head with leather_helmet[unbreakable={},enchantments={"minecraft:binding_curse":1s,protection:1},dyed_color=65280]
 execute unless items entity @s armor.chest minecraft:leather_chestplate run item replace entity @s[team=bw.green] armor.chest with leather_chestplate[unbreakable={},enchantments={"minecraft:binding_curse":1s,protection:1,blast_protection:30},dyed_color=65280,attribute_modifiers=[{type:"explosion_knockback_resistance",amount:-4.5,id:"knockback",operation:"add_value"},{type:"armor",amount:3,id:"knockback",operation:"add_value"}]]
 

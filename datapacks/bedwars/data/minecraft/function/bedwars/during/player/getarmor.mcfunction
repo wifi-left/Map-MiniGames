@@ -8,6 +8,9 @@ execute as @s[team=bw.green] run scoreboard players operation bw.armor.tmp board
 execute as @s[team=bw.yellow] run scoreboard players operation bw.armor.tmp board = bw.armor.yellow board
 execute as @s[team=bw.blue] run scoreboard players operation bw.armor.tmp board = bw.armor.blue board
 
+execute unless entity @s[scores={bw.armor=0..}] run scoreboard players set @s bw.armor 0
+execute unless score @s bw.armor matches 0.. run scoreboard players set @s bw.armor 0
+
 execute if score bw.armor.tmp board matches 0 run function minecraft:bedwars/during/player/armors/getarmor_noprotect
 execute if score bw.armor.tmp board matches 1 run function minecraft:bedwars/during/player/armors/getarmor_protect1
 execute if score bw.armor.tmp board matches 2 run function minecraft:bedwars/during/player/armors/getarmor_protect2
