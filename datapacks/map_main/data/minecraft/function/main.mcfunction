@@ -6,6 +6,8 @@
 function minecraft:lobby/tick
 execute if block 123 121 59 oak_button[powered=true] run function lobby/car
 function foodparty:tick
+execute if entity @a[team=bw.bridge] run function bridge_practice/tick
+execute as @a[scores={bw.bridge.place.wool=1..}] run scoreboard players reset @s bw.bridge.place.wool
 execute as @a[team=lobby] at @s in overworld run function lobby/quickplay
 execute as @a[team=!lobby,tag=GLOBAL.SPEC] at @s in overworld run function lobby/quickplay
 execute as @a[team=!lobby,scores={quickplay=1..}] at @s run function lobby/quickplay_refused

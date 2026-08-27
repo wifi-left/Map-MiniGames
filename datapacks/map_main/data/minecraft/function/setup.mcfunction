@@ -11,6 +11,12 @@ bossbar set boom name '\u00a7a拆弹达人 \u00a78| \u00a7b欢迎游玩'
 bossbar set boom color green
 bossbar set boom max 420
 bossbar set boom value 420
+
+scoreboard objectives remove bw.bridge.place.wool
+scoreboard objectives remove bw.bridge.count.wool
+scoreboard objectives add bw.bridge.place.wool minecraft.used:minecraft.white_wool
+scoreboard objectives add bw.bridge.count.wool dummy
+
 scoreboard objectives remove car.speed
 scoreboard objectives add car.speed dummy "Speed of car"
 scoreboard objectives remove bw.tmp.ir
@@ -33,7 +39,6 @@ scoreboard objectives remove music_trigger
 scoreboard objectives add ingameid dummy "游戏内ID"
 scoreboard objectives add merchant.coin dummy "\u00a7b\u00a7l商贾传奇 \u00a7e金钱"
 scoreboard objectives add use.egg used:minecraft.egg
-
 # 动作
 scoreboard objectives remove action.jump
 scoreboard objectives add action.jump minecraft.custom:minecraft.jump "动作|Jump"

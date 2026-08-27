@@ -51,5 +51,6 @@ execute if score @s quickplay matches 49 run return run function t_says/join
 execute if score @s quickplay matches 50 run return run function mutouren/join
 execute if score @s quickplay matches 51 run return run function sheepwars/join
 execute if score @s quickplay matches 52 run return run function disaster/snow/join
+execute if score @s quickplay matches 53 run return run function bridge_practice/join
 
 tellraw @s ["§c很抱歉，未知游戏的ID！"]

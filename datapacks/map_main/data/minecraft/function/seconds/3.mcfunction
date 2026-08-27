@@ -6,6 +6,8 @@
 # execute if score zombie.state state matches 1 run function zombieever/o_f_tick
 execute if score zombie.state state matches 1.. run function zombieever/o_f_tick
 
+execute if entity @a[team=bw.bridge] run function bridge_practice/second
+
 
 execute if score hunger.state state matches 1.. in airworld run function hunger/second
 execute if score hunger.state state matches 0 in airworld run effect give @a[team=hunger] resistance 2 25 true
