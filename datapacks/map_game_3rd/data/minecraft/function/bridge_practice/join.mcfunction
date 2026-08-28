@@ -5,7 +5,7 @@
 clear @s
 title @s title [{"text":"搭路练习","color":"#5ed3ff","bold": true}]
 title @s subtitle ["\u00a7rBridge Practice"]
-execute unless entity @a[team=bw.bridge] run schedule function minecraft:bridge_practice/clear_all_bridge 2s
+execute unless entity @a[team=bw.bridge] run schedule function minecraft:bridge_practice/clear_all_bridge 2s replace
 team join bw.bridge @s
 tellraw @a ["§a§l[MESSAGE] ",{"selector":"@s"},"§7 已加入 ",{"text":"搭路练习","color":"#5ed3ff","bold":true}," §7!"]
 
