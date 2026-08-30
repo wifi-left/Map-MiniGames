@@ -4,6 +4,7 @@
 ## 
 tellraw @a[team=hunger] ["\n§b死亡对决§a即将开始。\n"]
 execute as @a[team=hunger,gamemode=adventure] in airworld run spreadplayers 441 -308 0 8 under -26 false @s
+execute in airworld positioned 464 -30 -200 run kill @e[type=ender_pearl,distance=..250]
 scoreboard players set hunger.state state 4
 # State 4 准备死亡对决
 # State 5 死亡对决

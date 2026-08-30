@@ -25,6 +25,10 @@ execute as @a[tag=NEWENTER] unless score @s park.uuid matches 0.. run function m
 
 execute if score game.partymode board matches 1 as @a[tag=NEWENTER] run function small_games/total/join_from_lobby
 
+execute if entity @a[tag=NEWENTER] run scoreboard players set all_people temp 0
+execute if entity @a[tag=NEWENTER] as @a run scoreboard players add all_people temp 1
+execute as @a[tag=NEWENTER] if score all_people temp matches 12.. run tellraw @s ["\u00a7c\u00a7l温馨提示：\u00a7e本地图\u00a76\u00a7l不建议\u00a7e人多时同时游玩多个游戏。\n\u00a7b受限于原版命令性能，作者建议腐竹在人多时（大于12人）禁用普通玩家可以开游戏的选项，或是号召玩家游玩同一个小游戏，避免造成服务器卡顿。"]
+
 tellraw @a[tag=NEWENTER,tag=GLOBAL.SPEC] ["\n§7  你已开启§b全局旁观者模式§7。\n  §7",{"text":"§a§l点击此处，或者使用 §6§l/trigger spec set 3 §a§l退出全局旁观者模式","bold":true,"click_event":{"action":"run_command","command":"/trigger spec set 3"},"hover_event":{"action":"show_text","value":"§c点击此处退出全局旁观者模式"}},"\n"]
 effect clear @a[tag=NEWENTER]
 stopsound @a[tag=NEWENTER] record
