@@ -58,6 +58,13 @@ tag @s remove parkouring
 tag @s remove stronghold.alive
 tag @s remove bw.show.target
 tag @s remove merchant.alive
+
+execute store result score temp.ender.p.0 temp run data get entity @s UUID[0]
+execute store result score temp.ender.p.1 temp run data get entity @s UUID[1]
+execute store result score temp.ender.p.2 temp run data get entity @s UUID[2]
+execute store result score temp.ender.p.3 temp run data get entity @s UUID[3]
+
+execute as @e[type=ender_pearl] if function player:checkenderpearl run kill @s
 #
 xp set @s 0 levels
 xp set @s 0 points
