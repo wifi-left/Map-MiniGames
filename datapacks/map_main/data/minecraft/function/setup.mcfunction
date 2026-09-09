@@ -138,3 +138,7 @@ execute unless score GENERAL.dev_mode board matches 1 run function minecraft:dev
 
 execute in overworld run forceload remove -1 -1 0 0 
 execute in overworld run forceload add -1 -1 0 0 
+
+# 注册快捷开始游戏的自动ID与加入命令（供 /trigger quickplay set <id> 使用）
+scoreboard players set quickplay.showmode temp 0
+function minecraft:lobby/quickplay/quickplay_lists

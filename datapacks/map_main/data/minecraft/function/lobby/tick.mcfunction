@@ -1,5 +1,5 @@
 function minecraft:lobby/eggs/tick
-
+function minecraft:lobby/menu_opener/tick
 function minecraft:lobby/festival/new_year
 
 execute if score speed lobby.effect matches 1 run effect give @a[team=lobby,tag=!parkouring,tag=!mazing] speed 1 0 true
@@ -42,7 +42,7 @@ tellraw @a[tag=NEWENTER1] ["\n§a  您可以随时使用 §6/trigger hub §a返�
 tellraw @a[tag=NEWENTER1,tag=GLOBAL.SPEC] ["\n§7  你已开启§b全局旁观者模式§7。\n  §7",{"text":"§a§l点击此处，或者使用 §6§l/trigger spec set 3 §a§l退出全局旁观者模式","bold":true,"click_event":{"action":"run_command","command":"/trigger spec set 3"},"hover_event":{"action":"show_text","value":"§c点击此处退出全局旁观者模式"}},"\n"]
 execute as @a[tag=NEWENTER1] run attribute @s max_health base set 20
 execute as @a[tag=NEWENTER1] at @s run effect clear @s
-execute in overworld run tp @a[tag=NEWENTER1] 188 124 26 0 0
+execute in overworld run tp @a[tag=NEWENTER1] 188 124 32 0 0
 effect clear @a[tag=NEWENTER1]
 
 title @a[tag=NEWENTER1] actionbar [{nbt:"hub_msg.actionbar",storage:"statics:settings",interpret:true}]

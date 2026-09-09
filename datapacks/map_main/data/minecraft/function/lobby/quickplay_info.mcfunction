@@ -1,10 +1,20 @@
-$scoreboard players set temp.id temp $(id)
+##
+## 快捷开始游戏的单条目处理（宏），由 minecraft:lobby/quickplay/quickplay_lists 调用
+## 参数：category / name / color / join
+##
 
-$execute if score temp.id temp matches ..9 if score quickplay.showmode temp matches 1 run tellraw @s [{"text":"[§a00$(id)§7§r]: §$(color)$(name)","color":"yellow","click_event":{"action":"run_command","command":"/trigger quickplay set $(id)"},"hover_event":{"action":"show_text","value":{"text":"点击快速加入 §$(color)$(name)","color":"gold"}},insertion:"/trigger quickplay set $(id)"}]
-$execute if score temp.id temp matches 10..99 if score quickplay.showmode temp matches 1 run tellraw @s [{"text":"[§a0$(id)§7§r]: §$(color)$(name)","color":"yellow","click_event":{"action":"run_command","command":"/trigger quickplay set $(id)"},"hover_event":{"action":"show_text","value":{"text":"点击快速加入 §$(color)$(name)","color":"gold"}},insertion:"/trigger quickplay set $(id)"}]
-$execute if score temp.id temp matches 100.. if score quickplay.showmode temp matches 1 run tellraw @s [{"text":"[§a$(id)§7§r]: §$(color)$(name)","color":"yellow","click_event":{"action":"run_command","command":"/trigger quickplay set $(id)"},"hover_event":{"action":"show_text","value":{"text":"点击快速加入 §$(color)$(name)","color":"gold"}},insertion:"/trigger quickplay set $(id)"}]
+# 自动分配游戏ID（从 2 开始，1 保留给聊天栏列表）
+scoreboard players add quickplay.id temp 1
 
-$data modify storage minecraft:temp dialog_tmp.actions append value {label:"§$(color)$(name)",action:{type:"run_command",command:"/trigger quickplay set $(id)"},insertion:"/trigger quickplay set $(id)",tooltip:[{text:""},{text:"§$(color)$(name)",color:gray},"\n",{text:"游戏ID：",color:gray},{text:"$(id)",color:gold},"\n",{text:"点击快速加入",color:green}]}
+# 组装渲染参数后交给 quickplay_entry
+$data modify storage minecraft:temp quickplay.entry set value {category:"$(category)",name:"$(name)",color:"$(color)",join:"$(join)"}
+execute store result storage minecraft:temp quickplay.entry.id int 1 run scoreboard players get quickplay.id temp
 
+# 分类切换检测
+scoreboard players reset quickplay.newcat temp
+scoreboard players reset quickplay.ismain temp
+$execute unless data storage minecraft:temp {quickplay:{cat_last:"$(category)"}} run scoreboard players set quickplay.newcat temp 1
+$data modify storage minecraft:temp quickplay.cat_last set value "$(category)"
+execute if data storage minecraft:temp {quickplay:{cat_last:"main"}} run scoreboard players set quickplay.ismain temp 1
 
-# {label:"或者使用 \u00a7a/trigger quickplay \u00a7r在聊天栏内显示",width:300,action:{type:"run_command",command:"/trigger quickplay set 1"}}
+function minecraft:lobby/quickplay/quickplay_entry with storage minecraft:temp quickplay.entry

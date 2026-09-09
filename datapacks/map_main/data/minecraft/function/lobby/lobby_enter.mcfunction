@@ -1,6 +1,6 @@
 execute as @a unless score @s old matches 1.. run function minecraft:check_rename
 
-execute as @a[scores={leave=1..}] in overworld run tp @s 188 124 26
+execute as @a[scores={leave=1..}] in overworld run tp @s 188 124 32
 execute as @a[scores={leave=1..}] run function lobby/rejoin
 gamemode survival @a[scores={leave=1..}]
 scoreboard players reset @a[scores={leave=1..}] leave
@@ -8,7 +8,7 @@ scoreboard players reset @a[scores={leave=1..}] leave
 # execute as @a[tag=music.playing] at @s run function main_loop
 
 tag @a[gamemode=survival,nbt={Dimension:"minecraft:overworld"}] add NEWENTER
-tp @a[tag=NEWENTER] 188 124 26 0 0
+tp @a[tag=NEWENTER] 188 124 32 0 0
 team join lobby @a[tag=NEWENTER]
 clear @a[tag=NEWENTER]
 execute as @a[tag=NEWENTER] at @s run tag @s add map.old

@@ -1,0 +1,1 @@
+execute if entity @a[team=lobby,gamemode=!spectator] as @e[type=interaction,tag=lobby] at @s run function minecraft:lobby/menu_opener/detect
