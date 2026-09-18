@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": [
+            "这里有灵梦吗？"
+        ],
+        "description": [
+            "似乎是一座神社......"
+        ],
+        "icon": {
+            "id": "minecraft:red_wool"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:egg",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}
+

@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": [
+            "两家咖啡厅？"
+        ],
+        "description": [
+            "讷，你知道吗？如果在其中一家咖啡厅停留超过10s......\n\u00a78\u00a7n\u00a7m\u00a7o其实什么也不会发生......"
+        ],
+        "icon": {
+            "id": "minecraft:glass_bottle"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:egg",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}
+

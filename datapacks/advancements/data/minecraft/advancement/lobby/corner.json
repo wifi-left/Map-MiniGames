@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": [
+            "没有人在意的角落..."
+        ],
+        "description": [
+            "似乎没人会来这里？"
+        ],
+        "icon": {
+            "id": "minecraft:dark_oak_leaves"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:egg",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}
+

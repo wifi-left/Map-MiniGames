@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": [
+            "爬山达人"
+        ],
+        "description": [
+            "居然在这里也能被你找到！"
+        ],
+        "icon": {
+            "id": "minecraft:bamboo"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:egg",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}
+

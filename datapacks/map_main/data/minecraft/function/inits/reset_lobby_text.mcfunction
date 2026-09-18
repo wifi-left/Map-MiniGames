@@ -62,7 +62,7 @@ summon minecraft:text_display 86 117.7 5 {text:["\u00a77Coffe Shop"],Invulnerabl
 summon minecraft:text_display 161 120 32 {text:["","\u00a7e※ \u00a76\u00a7l地图主创\u00a7e ※","\n\n",{"player":"wifi_left"}," \u00a7fwifi_left","\n",{"player":"wifi_right"}," \u00a7fwifi_right","\n\n\u00a7fAll By Datapacks!\n\u00a7f地图功能均由数据包实现！"],line_width:200,Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],billboard:"vertical",see_through:false}
 
 
-summon minecraft:text_display 157 120 32 {text:["","\u00a7e※ \u00a76特别感谢\u00a7e ※","\n\n",{"sprite":"block/quartz_bricks"},{text:" 合工大MC社 \u00a7e(新大厅建筑)",color:aqua},"\n",{player:"616789"},{text:" 616789",color:white},"、",{player:"Domnick_JYH"},{text:" Domnick_JYH",color:white},"\n",{player:"lawyer112"},{text:" lawyer112 \u00a7e(服务器支持)",color:white},"\n",{"sprite":"block/crafting_table_top"},{text:" 00ɹɐəlϽ \u00a7e(战利品表)",color:white},"\n",{"sprite":"block/iron_block"},{text:" LateTea、Wemsur",color:white},"\n",{"player":"canyuesama"},{text:" 残月sama",color:white},"、",{"sprite":"item/painting",atlas:"items"},{text:" 墨安",color:white}],line_width:200,Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],billboard:"vertical",see_through:false}
+summon minecraft:text_display 157 120 32 {text:["","\u00a7e※ \u00a76特别感谢\u00a7e ※","\n\n",{"sprite":"item/golden_apple",atlas:items},{text:" 合工大MC社 \u00a7e(新大厅建筑)",color:aqua},"\n",{"sprite":"item/golden_apple",atlas:items},{text:" 西电MC社",color:aqua}," 、",{"sprite":"item/golden_apple",atlas:items},{text:" 北航MC社",color:aqua},"\n",{"text":"以及帮助过本地图的小伙伴们：",color:"green"},"\n",{player:"616789"},{text:" 616789",color:white},"、",{player:"Domnick_JYH"},{text:" Domnick_JYH",color:white},"\n",{player:"lawyer112"},{text:" lawyer112 \u00a7e(服务器支持)",color:white},"\n",{player:"Ginreny"},{text:" Ginreny \u00a7e(Battle Box)",color:white},"\n",{"sprite":"block/crafting_table_top"},{text:" 00ɹɐəlϽ \u00a7e(战利品表)",color:white},"\n",{"sprite":"block/iron_block"},{text:" LateTea、Wemsur",color:white},"\n",{"player":"canyuesama"},{text:" 残月sama",color:white},"、",{"sprite":"item/painting",atlas:"items"},{text:" 墨安",color:white}],line_width:200,Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],billboard:"vertical",see_through:false}
 
 
 summon minecraft:text_display 153 120 32 {text:["","\u00a7e※ \u00a76\u00a7l红石音乐来源\u00a7e ※","\n\n",{"sprite":"block/note_block"},{text:" MIDI文件转换",color:light_purple},"\n\u00a7f地图音乐使用 \u00a7bNote Block Studio \u00a7f从MIDI文件转换为数据包！"],line_width:200,Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],billboard:"vertical",see_through:false}
@@ -78,11 +78,19 @@ summon interaction 188 116 79 {width:1.2,height:2,Tags:["lobby","lobby.menu.mini
 
 
 
-summon minecraft:text_display 182 118 79 {text:["\u00a7e\u00a7l旁观菜单","\n\u00a77右键点击此处打开"],Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],billboard:"vertical",see_through:false}
+summon minecraft:text_display 176 118 79 {text:["\u00a7e\u00a7l旁观菜单","\n\u00a77右键点击此处打开"],Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],billboard:"vertical",see_through:false}
 
-summon interaction 182 116 79 {width:1.2,height:2,Tags:["lobby","lobby.menu.spectator"],response:true}
+summon interaction 176 116 79 {width:1.2,height:2,Tags:["lobby","lobby.menu.spectator"],response:true}
 
 
+summon minecraft:text_display 182 118 79 {text:["\u00a7d\u00a7l小游戏派对","\n\u00a77右键点击此处加入游戏"],Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],billboard:"vertical",see_through:false}
+
+summon interaction 182 116 79 {width:1.2,height:2,Tags:["lobby","lobby.menu.total_party"],response:true}
+
+
+summon minecraft:text_display 200 118 79 {text:["\u00a7f\u00a7l合影处","\n\u00a77右键点击此处传送"],Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],billboard:"vertical",see_through:false}
+
+summon interaction 200 116 79 {width:1.2,height:2,Tags:["lobby","lobby.menu.photo_area"],response:true}
 
 summon minecraft:text_display 194 118 79 {text:["\u00a7b\u00a7l主菜单","\n\u00a77右键点击此处打开"],Invulnerable:1b,Silent:1b,NoGravity:1b,Tags:["lobby"],billboard:"vertical",see_through:false}
 

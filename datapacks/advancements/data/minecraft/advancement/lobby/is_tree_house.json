@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": [
+            "这是树屋吗？"
+        ],
+        "description": [
+            "为什么屋里面有树叶啊！"
+        ],
+        "icon": {
+            "id": "minecraft:oak_leaves"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:lobby/wtf_building",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}
+

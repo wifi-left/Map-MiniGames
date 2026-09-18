@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": [
+            "未完工的旅馆"
+        ],
+        "description": [
+            "旅馆尚未完工......"
+        ],
+        "icon": {
+            "id": "minecraft:red_wool"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:lobby/other_builder",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}
+

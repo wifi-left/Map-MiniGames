@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": [
+            "好多房子..."
+        ],
+        "description": [
+            "好多房子呀！(●'◡'●)"
+        ],
+        "icon": {
+            "id": "minecraft:spruce_log"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "minecraft:egg",
+    "criteria": {
+        "a": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "requirements": [
+        [
+            "a"
+        ]
+    ],
+    "rewards": {}
+}
+

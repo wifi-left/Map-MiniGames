@@ -21,7 +21,7 @@
             "conditions": {
                 "player": {
                     "type_specific/player": {
-                        "advancements":{
+                        "advancements": {
                             "minecraft:minigames": true,
                             "minecraft:games": true,
                             "minecraft:egg": true,
@@ -31,6 +31,10 @@
                             "minecraft:others/haekara": true,
                             "minecraft:intro/author": true,
                             "minecraft:intro/other": true,
+                            "minecraft:lobby/is_tree_house": true,
+                            "minecraft:lobby/coffee": true,
+                            "minecraft:lobby/peak": true,
+                            "minecraft:lobby/bridge_hole": true,
                             "minecraft:lobby/good_view_ontop_building": true,
                             "minecraft:lobby/how_to_open_chest": true,
                             "minecraft:lobby/wtf_command_block": true,
@@ -38,6 +42,11 @@
                             "minecraft:lobby/curious_boy_1": true,
                             "minecraft:lobby/curious_boy_2": true,
                             "minecraft:lobby/curious_boy_3": true,
+                            "minecraft:lobby/curious_boy_4": true,
+                            "minecraft:lobby/corner": true,
+                            "minecraft:lobby/so_many_houses": true,
+                            "minecraft:lobby/uncomplete_hotel": true,
+                            "minecraft:lobby/is_there_reimu": true,
                             "minecraft:lobby/good_view_ontop": true,
                             "minecraft:lobby/other_builder": true,
                             "minecraft:lobby/wtf_building": true,
