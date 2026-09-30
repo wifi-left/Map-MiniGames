@@ -4,13 +4,21 @@
             "trigger": "minecraft:player_killed_entity",
             "conditions": {
                 "player": {
-                    "team": "play.killer",
-                    "nbt": "{Tags:[\"killer.runner\"]}"
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "team": "play.killer",
+                        "nbt": "{Tags:[\"killer.runner\"]}"
+                    }
                 },
                 "entity": {
-                    "entity_type": "player",
-                    "team": "play.killer",
-                    "nbt": "{Tags:[\"killer.runner\"]}"
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "entity_type": "player",
+                        "team": "play.killer",
+                        "nbt": "{Tags:[\"killer.runner\"]}"
+                    }
                 }
             }
         }

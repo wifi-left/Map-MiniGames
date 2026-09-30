@@ -3,9 +3,12 @@
         "player_died": {
             "trigger": "minecraft:entity_killed_player",
             "conditions": {
-                
                 "player": {
-                    "team": "play.sw"
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "team": "play.sw"
+                    }
                 }
             }
         }
@@ -19,4 +22,3 @@
         "function": "cloud/player_was_killed"
     }
 }
-

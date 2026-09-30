@@ -8,13 +8,17 @@
                         "tags": [
                             {
                                 "expected": true,
-                                "id": "is_projectile"
+                                "id": "#minecraft:is_projectile"
                             }
                         ]
                     }
                 },
                 "player": {
-                    "team": "t_says"
+                    "type": "entity_properties",
+                    "predicate": {
+                        "team": "t_says"
+                    },
+                    "entity": "this"
                 }
             }
         }
@@ -28,4 +32,3 @@
         "function": "t_says/action/adv/player_was_hit_by_arrow"
     }
 }
-

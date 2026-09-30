@@ -20,7 +20,7 @@ tellraw @a[tag=hit.player] ["§6+100§6 Coins"]
 tellraw @a[tag=hit.player] ["§8 - 剩余血量：",{"score":{"objective":"board","name":"tmp.health.calc1"},"color":"yellow"},".",{"score":{"objective":"board","name":"tmp.health.calc2"},"color":"yellow"},"§c♥"]
 
 
-execute as @s at @s run particle minecraft:block{block_state:{Name:redstone_block,Properties:{}}} ~ ~1.5 ~ 0 0 0 1 10
+execute as @s at @s run particle minecraft:block{block_state:{id:redstone_block,properties:{}}} ~ ~1.5 ~ 0 0 0 1 10
 execute as @a[tag=hit.player] at @s run playsound entity.arrow.hit_player player @s ~ ~ ~ 1 1 0.5
 execute as @a[tag=hit.player] at @s run scoreboard players add @s zombie.coin 100
 tag @s remove sel

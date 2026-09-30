@@ -5,7 +5,11 @@
             "trigger": "minecraft:consume_item",
             "conditions": {
                 "player": {
-                    "team": "boom"
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "team": "boom"
+                    }
                 },
                 "item": {
                     "items": "minecraft:potion",

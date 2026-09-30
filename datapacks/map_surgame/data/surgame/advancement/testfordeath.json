@@ -4,8 +4,12 @@
             "trigger": "minecraft:entity_killed_player",
             "conditions": {
                 "entity": {
-                    "team": "play.sur.zom",
-                    "entity_type": "player"
+                    "type": "entity_properties",
+                    "predicate": {
+                        "team": "play.sur.zom",
+                        "entity_type": "player"
+                    },
+                    "entity": "this"
                 }
             }
         }
@@ -19,4 +23,3 @@
         "function": "surgame:ismedied"
     }
 }
-

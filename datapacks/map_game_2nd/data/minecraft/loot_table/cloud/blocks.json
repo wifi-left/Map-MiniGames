@@ -1,88 +1,84 @@
 {
-    "type": "minecraft:chest",
-    "pools": [
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "type": "uniform",
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
         {
-            "rolls": {
-                "min": 1,
-                "max": 2
+          "type": "minecraft:item",
+          "name": "minecraft:stone",
+          "weight": 8,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "uniform",
+              "min": 0,
+              "max": 32
             },
-            "entries": [
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:stone",
-                    "weight": 8,
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 0,
-                                "max": 32
-                            },
-                            "add": false
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:oak_planks",
-                    "weight": 6,
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 0,
-                                "max": 32
-                            },
-                            "add": false
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:cobblestone",
-                    "weight": 6,
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 0,
-                                "max": 32
-                            },
-                            "add": false
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:sandstone",
-                    "weight": 3,
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 0,
-                                "max": 32
-                            },
-                            "add": false
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:oak_wood",
-                    "weight": 3,
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 0,
-                                "max": 32
-                            },
-                            "add": false
-                        }
-                    ]
-                }
-            ]
+            "add": false
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:oak_planks",
+          "weight": 6,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "uniform",
+              "min": 0,
+              "max": 32
+            },
+            "add": false
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cobblestone",
+          "weight": 6,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "uniform",
+              "min": 0,
+              "max": 32
+            },
+            "add": false
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sandstone",
+          "weight": 3,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "uniform",
+              "min": 0,
+              "max": 32
+            },
+            "add": false
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:oak_wood",
+          "weight": 3,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "uniform",
+              "min": 0,
+              "max": 32
+            },
+            "add": false
+          }
         }
-    ]
+      ]
+    }
+  ]
 }

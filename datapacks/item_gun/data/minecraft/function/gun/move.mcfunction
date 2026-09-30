@@ -13,7 +13,7 @@ execute if data entity @s {data:{guntype:11}} run particle minecraft:dust{color:
 execute if data entity @s {data:{guntype:12}} run particle minecraft:dust{color:[0d, 1d, 0.835d],scale:1} ~ ~ ~ 0 0 0 1 1
 execute if data entity @s {data:{guntype:11}} run particle minecraft:campfire_signal_smoke ~ ~ ~ 0.5 0.5 0.5 0 6 normal
 execute if data entity @s {data:{guntype:hideseek_mace}} run particle minecraft:dust{color:[0.5d, 1d, 0.835d],scale:1} ~ ~ ~ 0 0 0 1 1
-execute if data entity @s {data:{guntype:hideseek_mace}} run particle minecraft:block{block_state:{Name:"diamond_block"}} ~ ~ ~ 0 0 0 1 1
+execute if data entity @s {data:{guntype:hideseek_mace}} run particle minecraft:block{block_state:{id:"diamond_block"}} ~ ~ ~ 0 0 0 1 1
 execute if score @s PSTJ matches ..-1 run function gun/die
 execute unless entity @s[tag=gun.ignorewalls] if score @s PSTJ matches 0.. if block ^ ^ ^1 #gunblock run function gun/die
 execute unless entity @s[tag=gun.ignorewalls] if score @s PSTJ matches 0.. if block ^ ^ ^0.5 #gunblock run function gun/die

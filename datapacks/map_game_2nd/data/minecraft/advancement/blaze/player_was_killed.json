@@ -4,7 +4,11 @@
             "trigger": "minecraft:entity_killed_player",
             "conditions": {
                 "player": {
-                    "team": "blaze.team.a"
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "team": "blaze.team.a"
+                    }
                 }
             }
         },
@@ -12,7 +16,11 @@
             "trigger": "minecraft:entity_killed_player",
             "conditions": {
                 "player": {
-                    "team": "blaze.team.b"
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "team": "blaze.team.b"
+                    }
                 }
             }
         }
@@ -27,4 +35,3 @@
         "function": "blaze/adv/loot_item"
     }
 }
-

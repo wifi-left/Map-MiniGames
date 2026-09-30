@@ -9,22 +9,26 @@
           "name": "minecraft:gold_ingot",
           "weight": 1,
           "quality": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:max_stack_size": 99
-              }
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 4,
-                "max": 15
+          "modifier": {
+            "type": "sequence",
+            "functions": [
+              {
+                "type": "minecraft:set_components",
+                "components": {
+                  "minecraft:max_stack_size": 99
+                }
               },
-              "add": false
-            }
-          ]
+              {
+                "type": "minecraft:set_count",
+                "count": {
+                  "type": "uniform",
+                  "min": 4,
+                  "max": 15
+                },
+                "add": false
+              }
+            ]
+          }
         }
       ]
     }

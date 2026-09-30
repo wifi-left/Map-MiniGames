@@ -10,7 +10,11 @@
                     }
                 },
                 "player": {
-                    "team": "play.hotpot"
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "team": "play.hotpot"
+                    }
                 }
             }
         }
@@ -24,4 +28,3 @@
         "function": "hotpotever/adv/player_was_hit"
     }
 }
-

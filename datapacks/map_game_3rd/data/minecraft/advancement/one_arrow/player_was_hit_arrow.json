@@ -12,13 +12,17 @@
                         "tags": [
                             {
                                 "expected": true,
-                                "id": "is_projectile"
+                                "id": "#minecraft:is_projectile"
                             }
                         ]
                     }
                 },
                 "player": {
-                    "team": "one_arrow"
+                    "type": "entity_properties",
+                    "predicate": {
+                        "team": "one_arrow"
+                    },
+                    "entity": "this"
                 }
             }
         }
@@ -32,4 +36,3 @@
         "function": "one_arrow/adv/player_was_hit_by_arrow"
     }
 }
-

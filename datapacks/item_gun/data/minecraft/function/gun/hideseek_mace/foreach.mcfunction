@@ -18,7 +18,7 @@ scoreboard players add tmp.health.calc1 board 0
 scoreboard players add tmp.health.calc2 board 0
 tellraw @a[tag=hit.player] ["§c击中 ",{selector:"@s"},"\n§8 - 剩余血量：",{"score":{"objective":"board","name":"tmp.health.calc1"},"color":"yellow"},".",{"score":{"objective":"board","name":"tmp.health.calc2"},"color":"yellow"},"§c♥"]
 
-execute as @e[tag=hitted,limit=1,sort=nearest] at @s run particle minecraft:block{block_state:{Name:redstone_block,Properties:{}}} ~ ~1.5 ~ 0 0 0 1 10
+execute as @e[tag=hitted,limit=1,sort=nearest] at @s run particle minecraft:block{block_state:{id:redstone_block,properties:{}}} ~ ~1.5 ~ 0 0 0 1 10
 execute as @a[tag=hit.player] at @s run playsound entity.arrow.hit_player player @s ~ ~ ~ 1 1 0.5
 
 tag @a remove hit.player

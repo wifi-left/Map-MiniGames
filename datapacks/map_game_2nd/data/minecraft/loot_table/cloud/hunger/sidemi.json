@@ -2,10 +2,7 @@
     "type": "minecraft:chest",
     "pools": [
         {
-            "rolls": {
-                "min": 0,
-                "max": 4
-            },
+            "rolls": {"type": "uniform", "min": 0, "max": 4},
             "entries": [
                 {
                     "type": "minecraft:loot_table",
@@ -15,10 +12,7 @@
             ]
         },
         {
-            "rolls": {
-                "min": 1,
-                "max": 4
-            },
+            "rolls": {"type": "uniform", "min": 1, "max": 4},
             "entries": [
                 {
                     "type": "minecraft:loot_table",

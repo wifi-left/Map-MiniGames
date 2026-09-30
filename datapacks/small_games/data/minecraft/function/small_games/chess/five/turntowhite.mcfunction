@@ -4,7 +4,7 @@
 ## 
 fill ~ ~-1 ~ ~ ~-1 ~ white_stained_glass replace glass
 fill ~ 115 ~ ~ 115 ~ white_wool replace orange_wool
-summon block_display ~ ~-1 ~ {block_state:{Name:"white_wool"},transformation:{translation:[-0.25f,0.75f,-0.25f],left_rotation:[0f,0f,0f,1f],scale:[0.5f,0.5f,0.5f],right_rotation:[0f,0f,0f,1f]},Tags:["chess.display"]}
+summon block_display ~ ~-1 ~ {block_state:{id:"white_wool"},transformation:{translation:[-0.25f,0.75f,-0.25f],left_rotation:[0f,0f,0f,1f],scale:[0.5f,0.5f,0.5f],right_rotation:[0f,0f,0f,1f]},Tags:["chess.display"]}
 
 playsound ui.button.click player @a[team=chestgame] ~ ~ ~
 # function small_games/chess/five/check/pj

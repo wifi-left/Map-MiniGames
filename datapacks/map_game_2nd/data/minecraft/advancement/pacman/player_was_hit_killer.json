@@ -10,7 +10,11 @@
                     }
                 },
                 "player": {
-                    "team": "pacman.killer"
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "team": "pacman.killer"
+                    }
                 }
             }
         }
@@ -24,4 +28,3 @@
         "function": "pacman/adv/player_was_hit_killer"
     }
 }
-

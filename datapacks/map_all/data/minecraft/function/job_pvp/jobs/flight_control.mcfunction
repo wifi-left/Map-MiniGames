@@ -1,8 +1,8 @@
 scoreboard players set tmp.control board 0
-execute if predicate [{"condition":"entity_properties","entity":"this","predicate":{"type_specific/player":{input:{jump:true}}}}] run scoreboard players set tmp.control board 1
-execute if predicate [{"condition":"entity_properties","entity":"this","predicate":{"type_specific/player":{input:{sneak:true}}}}] run scoreboard players set tmp.control board 2
+execute if predicate {"type":"entity_properties","entity":"this","predicate":{"type_specific/player":{input:{jump:true}}}} run scoreboard players set tmp.control board 1
+execute if predicate {"type":"entity_properties","entity":"this","predicate":{"type_specific/player":{input:{sneak:true}}}} run scoreboard players set tmp.control board 2
 
-execute if predicate [{"condition":"entity_properties","entity":"this","predicate":{"type_specific/player":{input:{jump:true,sneak:true}}}}] run scoreboard players set tmp.control board 0
+execute if predicate {"type":"entity_properties","entity":"this","predicate":{"type_specific/player":{input:{jump:true,sneak:true}}}} run scoreboard players set tmp.control board 0
 execute at @s as @s[y=10,dy=100] run scoreboard players set tmp.control board 2
 execute if items entity @s weapon.offhand *[custom_data~{job:uma_stop}] run scoreboard players set tmp.control board 3
 attribute @s gravity modifier remove pvp

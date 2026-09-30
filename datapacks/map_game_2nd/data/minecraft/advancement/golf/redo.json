@@ -5,7 +5,11 @@
             "trigger": "minecraft:consume_item",
             "conditions": {
                 "player": {
-                    "team": "golf"
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "team": "golf"
+                    }
                 },
                 "item": {
                     "items": "minecraft:potion",

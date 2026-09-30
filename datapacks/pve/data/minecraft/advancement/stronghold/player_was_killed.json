@@ -4,7 +4,11 @@
             "trigger": "minecraft:entity_killed_player",
             "conditions": {
                 "player": {
-                    "team": "stronghold"
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "team": "stronghold"
+                    }
                 }
             }
         }
@@ -18,4 +22,3 @@
         "function": "stronghold/died_instance"
     }
 }
-

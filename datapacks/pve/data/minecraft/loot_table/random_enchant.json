@@ -1,19 +1,17 @@
 {
-    "pools": [
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 1,
+      "entries": [
         {
-            "rolls": 1,
-            "bonus_rolls": 1,
-            "entries": [
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:book",
-                    "functions": [
-                        {
-                            "function": "minecraft:enchant_randomly"
-                        }
-                    ]
-                }
-            ]
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "modifier": {
+            "type": "minecraft:enchant_randomly"
+          }
         }
-    ]
+      ]
+    }
+  ]
 }

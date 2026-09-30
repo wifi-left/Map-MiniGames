@@ -12,20 +12,18 @@
         },
         {
           "type": "minecraft:loot_table",
-          "conditions": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type_specific/fishing_hook": {
-                  "in_open_water": true
-                }
-              }
-            }
-          ],
           "quality": 2,
           "value": "minecraft:gameplay/fishing/treasure",
-          "weight": 5
+          "weight": 5,
+          "condition": {
+            "type": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type_specific/fishing_hook": {
+                "in_open_water": true
+              }
+            }
+          }
         },
         {
           "type": "minecraft:loot_table",

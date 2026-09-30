@@ -24,7 +24,7 @@ tellraw @a[tag=hit.player] ["§6+",{"score":{"name":"damage.tmp","objective":"bo
 tellraw @a[tag=hit.player] ["§8 - 剩余血量：",{"score":{"objective":"board","name":"tmp.health.calc1"},"color":"yellow"},".",{"score":{"objective":"board","name":"tmp.health.calc2"},"color":"yellow"},"§c♥"]
 
 execute as @e[tag=hitted] store result entity @s Health float 0.1 run scoreboard players get tmp.health board
-execute as @e[tag=hitted] at @s run particle minecraft:block{block_state:{Name:redstone_block,Properties:{}}} ~ ~1.5 ~ 0 0 0 1 10
+execute as @e[tag=hitted] at @s run particle minecraft:block{block_state:{id:redstone_block,properties:{}}} ~ ~1.5 ~ 0 0 0 1 10
 execute as @a[tag=hit.player] at @s run playsound entity.arrow.hit_player player @s ~ ~ ~ 1 1 0.5
 execute as @a[tag=hit.player] at @s run scoreboard players operation @s zombie.coin += damage.tmp board
 

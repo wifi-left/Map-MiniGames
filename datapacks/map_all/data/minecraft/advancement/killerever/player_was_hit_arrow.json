@@ -12,13 +12,17 @@
                         "tags": [
                             {
                                 "expected": true,
-                                "id": "is_projectile"
+                                "id": "#minecraft:is_projectile"
                             }
                         ]
                     }
                 },
                 "player": {
-                    "team": "play.killer"
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "team": "play.killer"
+                    }
                 }
             }
         }
@@ -32,4 +36,3 @@
         "function": "killerever/adv/player_was_hit_by_arrow"
     }
 }
-

@@ -12,25 +12,25 @@
                         }
                     }
                 },
-                "player": [{
-                    "condition": "any_of",
+                "player": {
+                    "type": "any_of",
                     "terms": [
                         {
-                            "condition": "entity_properties",
+                            "type": "entity_properties",
                             "entity": "this",
                             "predicate": {
                                 "team": "play.sheepwars.a"
                             }
                         },
                         {
-                            "condition": "entity_properties",
+                            "type": "entity_properties",
                             "entity": "this",
                             "predicate": {
                                 "team": "play.sheepwars.b"
                             }
                         }
                     ]
-                }]
+                }
             }
         }
     },

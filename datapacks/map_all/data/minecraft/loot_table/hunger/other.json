@@ -1,160 +1,148 @@
 {
-    "pools": [
+  "pools": [
+    {
+      "rolls": {
+        "type": "uniform",
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
         {
-            "rolls": {
-                "min": 1,
-                "max": 2
-            },
-            "entries": [
-                {
-                    "type": "minecraft:item",
-                    "weight": 7,
-                    "name": "minecraft:experience_bottle",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 0,
-                                "max": 64
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 4,
-                    "name": "minecraft:ender_pearl",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 0,
-                                "max": 3
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 7,
-                    "name": "minecraft:lapis_lazuli",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 0,
-                                "max": 16
-                            }
-                        }
-                    ]
-                }
-            ]
+          "type": "minecraft:item",
+          "weight": 7,
+          "name": "minecraft:experience_bottle",
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "uniform",
+              "min": 0,
+              "max": 64
+            }
+          }
         },
         {
-            "rolls": {
-                "min": 0,
-                "max": 4
-            },
-            "entries": [
-                {
-                    "type": "minecraft:item",
-                    "weight": 6,
-                    "name": "minecraft:arrow",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 16
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 3,
-                    "name": "minecraft:tipped_arrow",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 0,
-                                "max": 8
-                            }
-                        },
-                        {
-                            "function": "minecraft:set_potion",
-                            "id": "minecraft:strength",
-                            "conditions": [
-                                {
-                                    "condition": "minecraft:random_chance",
-                                    "chance": 0.2
-                                }
-                            ]
-                        },
-                        {
-                            "function": "minecraft:set_potion",
-                            "id": "minecraft:healing",
-                            "conditions": [
-                                {
-                                    "condition": "minecraft:random_chance",
-                                    "chance": 0.2
-                                }
-                            ]
-                        },
-                        {
-                            "function": "minecraft:set_potion",
-                            "id": "minecraft:swiftness",
-                            "conditions": [
-                                {
-                                    "condition": "minecraft:random_chance",
-                                    "chance": 0.2
-                                }
-                            ]
-                        },
-                        {
-                            "function": "minecraft:set_potion",
-                            "id": "minecraft:leaping",
-                            "conditions": [
-                                {
-                                    "condition": "minecraft:random_chance",
-                                    "chance": 0.2
-                                }
-                            ]
-                        },
-                        {
-                            "function": "minecraft:set_potion",
-                            "id": "minecraft:slowness",
-                            "conditions": [
-                                {
-                                    "condition": "minecraft:random_chance",
-                                    "chance": 0.2
-                                }
-                            ]
-                        },
-                        {
-                            "function": "minecraft:set_potion",
-                            "id": "minecraft:poison",
-                            "conditions": [
-                                {
-                                    "condition": "minecraft:random_chance",
-                                    "chance": 0.2
-                                }
-                            ]
-                        },
-                        {
-                            "function": "minecraft:set_potion",
-                            "id": "minecraft:harming",
-                            "conditions": [
-                                {
-                                    "condition": "minecraft:random_chance",
-                                    "chance": 0.2
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
+          "type": "minecraft:item",
+          "weight": 4,
+          "name": "minecraft:ender_pearl",
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "uniform",
+              "min": 0,
+              "max": 3
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 7,
+          "name": "minecraft:lapis_lazuli",
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "uniform",
+              "min": 0,
+              "max": 16
+            }
+          }
         }
-    ]
+      ]
+    },
+    {
+      "rolls": {
+        "type": "uniform",
+        "min": 0,
+        "max": 4
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 6,
+          "name": "minecraft:arrow",
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "uniform",
+              "min": 1,
+              "max": 16
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "minecraft:tipped_arrow",
+          "modifier": {
+            "type": "sequence",
+            "functions": [
+              {
+                "type": "minecraft:set_count",
+                "count": {
+                  "type": "uniform",
+                  "min": 0,
+                  "max": 8
+                }
+              },
+              {
+                "type": "minecraft:set_potion",
+                "id": "minecraft:strength",
+                "condition": {
+                  "type": "random_chance",
+                  "chance": 0.2
+                }
+              },
+              {
+                "type": "minecraft:set_potion",
+                "id": "minecraft:healing",
+                "condition": {
+                  "type": "random_chance",
+                  "chance": 0.2
+                }
+              },
+              {
+                "type": "minecraft:set_potion",
+                "id": "minecraft:swiftness",
+                "condition": {
+                  "type": "random_chance",
+                  "chance": 0.2
+                }
+              },
+              {
+                "type": "minecraft:set_potion",
+                "id": "minecraft:leaping",
+                "condition": {
+                  "type": "random_chance",
+                  "chance": 0.2
+                }
+              },
+              {
+                "type": "minecraft:set_potion",
+                "id": "minecraft:slowness",
+                "condition": {
+                  "type": "random_chance",
+                  "chance": 0.2
+                }
+              },
+              {
+                "type": "minecraft:set_potion",
+                "id": "minecraft:poison",
+                "condition": {
+                  "type": "random_chance",
+                  "chance": 0.2
+                }
+              },
+              {
+                "type": "minecraft:set_potion",
+                "id": "minecraft:harming",
+                "condition": {
+                  "type": "random_chance",
+                  "chance": 0.2
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
 }

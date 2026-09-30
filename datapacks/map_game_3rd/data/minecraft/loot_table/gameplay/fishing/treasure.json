@@ -14,34 +14,35 @@
         },
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "damage": {
-                "type": "minecraft:uniform",
-                "max": 0.25,
-                "min": 0.0
+          "name": "minecraft:bow",
+          "modifier": {
+            "type": "sequence",
+            "functions": [
+              {
+                "type": "minecraft:set_damage",
+                "add": false,
+                "damage": {
+                  "type": "minecraft:uniform",
+                  "max": 0.25,
+                  "min": 0.0
+                }
               },
-              "function": "minecraft:set_damage"
-            },
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 30.0,
-              "options": "#minecraft:on_random_loot"
-            }
-          ],
-          "name": "minecraft:bow"
+              {
+                "type": "minecraft:enchant_with_levels",
+                "levels": 30.0,
+                "options": "#minecraft:on_random_loot"
+              }
+            ]
+          }
         },
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 30.0,
-              "options": "#minecraft:on_random_loot"
-            }
-          ],
-          "name": "minecraft:book"
+          "name": "minecraft:book",
+          "modifier": {
+            "type": "minecraft:enchant_with_levels",
+            "levels": 30.0,
+            "options": "#minecraft:on_random_loot"
+          }
         },
         {
           "type": "minecraft:item",

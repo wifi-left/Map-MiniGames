@@ -2,10 +2,7 @@
     "type": "minecraft:command",
     "pools": [
         {
-            "rolls": {
-                "min": 1,
-                "max": 2
-            },
+            "rolls": {"type": "uniform", "min": 1, "max": 2},
             "entries": [
                 {
                     "type": "minecraft:loot_table",

@@ -4,11 +4,19 @@
             "trigger": "minecraft:player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "entity_type": "player",
-                    "team": "play.hotpot"
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "entity_type": "player",
+                        "team": "play.hotpot"
+                    }
                 },
                 "player": {
-                    "team": "play.hotpot.k"
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "team": "play.hotpot.k"
+                    }
                 }
             }
         }

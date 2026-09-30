@@ -4,11 +4,19 @@
             "trigger": "minecraft:player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "entity_type": "player",
-                    "team": "pacman"
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "entity_type": "player",
+                        "team": "pacman"
+                    }
                 },
                 "player": {
-                    "team": "pacman.killer"
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "team": "pacman.killer"
+                    }
                 }
             }
         }

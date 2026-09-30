@@ -1,6 +1,4 @@
-[
-    {
-        "function": "set_custom_data",
-        "tag": "{bwshopitem:2}"
-    }
-]
+{
+    "type": "set_custom_data",
+    "tag": "{bwshopitem:2}"
+}

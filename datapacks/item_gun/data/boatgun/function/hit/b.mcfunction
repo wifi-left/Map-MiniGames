@@ -12,7 +12,7 @@ execute if score tmp board matches ..0 run scoreboard players set tmp board 1
 
 
 execute as @e[tag=damage.boat] at @s run scoreboard players operation @s btw.score -= tmp board
-execute as @a[tag=seled] at @s run particle minecraft:block{block_state:{Name:redstone_block,Properties:{}}} ~ ~1.5 ~ 0 0 0 1 10
+execute as @a[tag=seled] at @s run particle minecraft:block{block_state:{id:redstone_block,properties:{}}} ~ ~1.5 ~ 0 0 0 1 10
 execute as @a[tag=seled] at @s run playsound entity.player.hurt player @s ~ ~ ~ 1 1 0.5
 execute as @a[tag=hit.player] at @s run playsound entity.arrow.hit_player player @s ~ ~ ~ 1 1 0.5
 scoreboard players add @a[tag=hit.player] btw.coin 10

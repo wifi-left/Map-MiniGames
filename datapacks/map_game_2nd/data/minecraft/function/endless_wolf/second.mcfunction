@@ -5,7 +5,7 @@
 # 白天
 execute if score endwolf.state state matches 1..4 run function minecraft:endless_wolf/overdetect
 
-execute if score endwolf.state state matches 1 as @a[team=play.endwolf,tag=endless.vampire,gamemode=adventure] at @s if predicate {condition:location_check,predicate:{can_see_sky:true}} run function minecraft:endless_wolf/vampire_sunburt
+execute if score endwolf.state state matches 1 as @a[team=play.endwolf,tag=endless.vampire,gamemode=adventure] at @s if predicate {type:location_check,predicate:{can_see_sky:true}} run function minecraft:endless_wolf/vampire_sunburt
 execute as @a[team=play.endwolf,tag=endless.vampire,gamemode=adventure] at @s if items entity @s container.* *[custom_data~{vampire:shengwu}] run function minecraft:endless_wolf/vampire_shengwu
 execute as @a[team=play.endwolf,tag=endless.vampire,gamemode=adventure] at @s if items entity @s weapon.* *[custom_data~{vampire:shengwu}] run function minecraft:endless_wolf/vampire_shengwu
 execute if score endwolf.state state matches 1 as @a[team=play.endwolf,tag=endless.vampire,gamemode=adventure] at @s run effect give @s slowness 2 0 true

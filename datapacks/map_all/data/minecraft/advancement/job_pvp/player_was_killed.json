@@ -3,11 +3,19 @@
         "player_died": {
             "trigger": "minecraft:entity_killed_player",
             "conditions": {
-                "entity":{
-                    "entity_type": "player"
+                "entity": {
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "entity_type": "player"
+                    }
                 },
                 "player": {
-                    "team": "job_pvp"
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "team": "job_pvp"
+                    }
                 }
             }
         }
@@ -21,4 +29,3 @@
         "function": "job_pvp/adv/player_died"
     }
 }
-

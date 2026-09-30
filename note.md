@@ -34,7 +34,17 @@ tag @s add raycast.ignore
 execute anchored eyes positioned ^ ^ ^ run function raycast
 tag @s remove raycast.ignore
 ```
-
+# todo
+目前打算国庆搞（还在考虑）
+1. 烽火燎原自选队伍
+2. 自动编队功能。加入游戏自动召唤编队玩家（新增通用含命令宏调用的function用于自动召集编队）
+3. 新游戏：死亡速度比拼
+4. 新游戏：穿越森林（第一个到达某处）允许破坏方块
+5. 追杀游戏地图#2的无敌点位修复
+6. 木头人去掉最难的跑酷
+7. 跑酷记录点
+8. 飞行大赛地图改为竖直方向（避免找不到方向）
+有更多想法欢迎提出
 
 # 通用启动游戏检测
 ```mcfunction

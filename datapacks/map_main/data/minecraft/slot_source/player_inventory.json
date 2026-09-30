@@ -1,0 +1,21 @@
+{
+    "type": "group",
+    "terms": [
+        {
+            "type": "slot_range",
+            "slots": "armor.*"
+        },
+        {
+            "type": "slot_range",
+            "slots": "inventory.*"
+        },
+        {
+            "type": "slot_range",
+            "slots": "weapon.offhand"
+        },
+        {
+            "type": "slot_range",
+            "slots": "player.cursor"
+        }
+    ]
+}

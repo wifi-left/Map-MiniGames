@@ -4,7 +4,11 @@
             "trigger": "minecraft:entity_killed_player",
             "conditions": {
                 "player": {
-                    "team": "hunger"
+                    "type": "entity_properties",
+                    "predicate": {
+                        "team": "hunger"
+                    },
+                    "entity": "this"
                 }
             }
         }

@@ -4,8 +4,12 @@
             "trigger": "minecraft:entity_killed_player",
             "conditions": {
                 "player": {
-                    "team": "play.killer",
-                    "nbt": "{Tags:[\"killer.saver\"]}"
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "team": "play.killer",
+                        "nbt": "{Tags:[\"killer.saver\"]}"
+                    }
                 }
             }
         }
@@ -19,4 +23,3 @@
         "function": "killerever/adv/saver_died"
     }
 }
-

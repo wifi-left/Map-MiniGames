@@ -11,7 +11,11 @@
                     }
                 },
                 "player": {
-                    "team": "one_arrow"
+                    "type": "entity_properties",
+                    "predicate": {
+                        "team": "one_arrow"
+                    },
+                    "entity": "this"
                 }
             }
         }

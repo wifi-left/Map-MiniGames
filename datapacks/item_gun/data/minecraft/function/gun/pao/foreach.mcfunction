@@ -24,10 +24,9 @@ tellraw @a[tag=hit.player] ["§8 - 剩余血量：",{"score":{"objective":"board
 
 execute as @e[tag=hitted,limit=1,sort=nearest] store result entity @s Health float 0.1 run scoreboard players get tmp.health board
 
-data modify entity @e[tag=hitted,limit=1,sort=nearest] AngryAt set from entity @s UUID
+data modify entity @e[tag=hitted,limit=1,sort=nearest] angry_at set from entity @s UUID
 
-data merge entity @e[tag=hitted,limit=1,sort=nearest] {AngerTime:540}
-execute as @e[tag=hitted,limit=1,sort=nearest] at @s run particle minecraft:block{block_state:{Name:redstone_block,Properties:{}}} ~ ~1.5 ~ 0 0 0 1 10
+execute as @e[tag=hitted,limit=1,sort=nearest] at @s run particle minecraft:block{block_state:{id:redstone_block,properties:{}}} ~ ~1.5 ~ 0 0 0 1 10
 execute as @a[tag=hit.player] at @s run playsound entity.arrow.hit_player player @s ~ ~ ~ 1 1 0.5
 execute as @a[tag=hit.player] at @s run scoreboard players operation @s zombie.coin += damage.tmp board
 

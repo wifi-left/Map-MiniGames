@@ -4,8 +4,12 @@
             "trigger": "minecraft:player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "team": "golf",
-                    "entity_type": "zombie"
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "team": "golf",
+                        "entity_type": "zombie"
+                    }
                 }
             }
         }
@@ -19,4 +23,3 @@
         "function": "minecraft:golf/player_hit_ball"
     }
 }
-
