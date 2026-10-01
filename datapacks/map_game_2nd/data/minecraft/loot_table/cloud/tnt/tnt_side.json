@@ -3,9 +3,9 @@
   "pools": [
     {
       "rolls": {
-        "type": "uniform",
-        "min": 0,
-        "max": 8
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 2
       },
       "entries": [
         {
@@ -17,66 +17,15 @@
     },
     {
       "rolls": {
-        "type": "uniform",
-        "min": 4,
-        "max": 10
+        "type": "minecraft:uniform",
+        "min": 2,
+        "max": 4
       },
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:arrow",
-          "weight": 5,
-          "modifier": {
-            "type": "minecraft:set_count",
-            "count": {
-              "type": "uniform",
-              "min": 1,
-              "max": 8
-            }
-          }
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:bow",
-          "weight": 3,
-          "modifier": {
-            "type": "sequence",
-            "functions": [
-              {
-                "type": "minecraft:enchant_with_levels",
-                "levels": 15,
-                "condition": {
-                  "type": "random_chance",
-                  "chance": 0.2
-                }
-              },
-              {
-                "type": "minecraft:set_enchantments",
-                "enchantments": {
-                  "flame": 1
-                },
-                "add": true,
-                "condition": {
-                  "type": "random_chance",
-                  "chance": 0.8
-                }
-              }
-            ]
-          }
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:stone",
-          "weight": 6,
-          "modifier": {
-            "type": "minecraft:set_count",
-            "count": {
-              "type": "uniform",
-              "min": 16,
-              "max": 64
-            },
-            "add": false
-          }
+          "type": "minecraft:loot_table",
+          "value": "minecraft:cloud/common/tnt_tools",
+          "weight": 14
         },
         {
           "type": "minecraft:item",
@@ -87,82 +36,54 @@
             "count": {
               "type": "minecraft:binomial",
               "n": 6,
-              "p": 2
+              "p": 0.5
             }
           }
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:carrot_on_a_stick",
+          "name": "minecraft:fire_charge",
+          "weight": 5,
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 8
+              }
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "烈焰弹（右键方块点燃火焰）"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:arrow",
           "weight": 5,
           "modifier": {
-            "type": "minecraft:set_components",
-            "components": {
-              "minecraft:custom_name": "§c§lFireball§7 - 右键使用",
-              "minecraft:custom_data": {
-                "tnt": 4
-              },
-              "item_model": "fire_charge"
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 4,
+              "max": 12
             }
           }
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:carrot_on_a_stick",
-          "weight": 3,
+          "name": "minecraft:golden_apple",
+          "weight": 4,
           "modifier": {
-            "type": "minecraft:set_components",
-            "components": {
-              "minecraft:custom_name": "§2§lCreeper§7 - 右键使用",
-              "minecraft:custom_data": {
-                "tnt": 3
-              },
-              "item_model": "creeper_head"
-            }
-          }
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:carrot_on_a_stick",
-          "weight": 2,
-          "modifier": {
-            "type": "minecraft:set_components",
-            "components": {
-              "minecraft:custom_name": "§4§lTNT§7 - 右键使用",
-              "minecraft:custom_data": {
-                "tnt": 2
-              },
-              "item_model": "tnt"
-            }
-          }
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:carrot_on_a_stick",
-          "weight": 2,
-          "modifier": {
-            "type": "minecraft:set_components",
-            "components": {
-              "minecraft:custom_name": "§4§lLong-Way TNT§7 - 右键使用",
-              "minecraft:custom_data": {
-                "tnt": 8
-              },
-              "item_model": "tnt"
-            }
-          }
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:carrot_on_a_stick",
-          "weight": 3,
-          "modifier": {
-            "type": "minecraft:set_components",
-            "components": {
-              "minecraft:custom_name": "§c§lTNT - Minecart§7 - 右键使用",
-              "minecraft:custom_data": {
-                "tnt": 1
-              },
-              "item_model": "tnt_minecart"
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 1,
+              "max": 2
             }
           }
         }

@@ -1,148 +1,92 @@
 {
-  "pools": [
-    {
-      "rolls": {
-        "type": "uniform",
-        "min": 1,
-        "max": 2
-      },
-      "entries": [
+    "pools": [
         {
-          "type": "minecraft:item",
-          "weight": 7,
-          "name": "minecraft:experience_bottle",
-          "modifier": {
-            "type": "minecraft:set_count",
-            "count": {
-              "type": "uniform",
-              "min": 0,
-              "max": 64
-            }
-          }
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 4,
-          "name": "minecraft:ender_pearl",
-          "modifier": {
-            "type": "minecraft:set_count",
-            "count": {
-              "type": "uniform",
-              "min": 0,
-              "max": 3
-            }
-          }
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 7,
-          "name": "minecraft:lapis_lazuli",
-          "modifier": {
-            "type": "minecraft:set_count",
-            "count": {
-              "type": "uniform",
-              "min": 0,
-              "max": 16
-            }
-          }
-        }
-      ]
-    },
-    {
-      "rolls": {
-        "type": "uniform",
-        "min": 0,
-        "max": 4
-      },
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "weight": 6,
-          "name": "minecraft:arrow",
-          "modifier": {
-            "type": "minecraft:set_count",
-            "count": {
-              "type": "uniform",
-              "min": 1,
-              "max": 16
-            }
-          }
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 3,
-          "name": "minecraft:tipped_arrow",
-          "modifier": {
-            "type": "sequence",
-            "functions": [
-              {
-                "type": "minecraft:set_count",
-                "count": {
-                  "type": "uniform",
-                  "min": 0,
-                  "max": 8
+            "rolls": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+            },
+            "bonus_rolls": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 1
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 7,
+                    "name": "minecraft:lapis_lazuli",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 8,
+                            "max": 24
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 7,
+                    "name": "minecraft:experience_bottle",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 6,
+                            "max": 16
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "minecraft:ender_pearl",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 2
+                        }
+                    }
                 }
-              },
-              {
-                "type": "minecraft:set_potion",
-                "id": "minecraft:strength",
-                "condition": {
-                  "type": "random_chance",
-                  "chance": 0.2
-                }
-              },
-              {
-                "type": "minecraft:set_potion",
-                "id": "minecraft:healing",
-                "condition": {
-                  "type": "random_chance",
-                  "chance": 0.2
-                }
-              },
-              {
-                "type": "minecraft:set_potion",
-                "id": "minecraft:swiftness",
-                "condition": {
-                  "type": "random_chance",
-                  "chance": 0.2
-                }
-              },
-              {
-                "type": "minecraft:set_potion",
-                "id": "minecraft:leaping",
-                "condition": {
-                  "type": "random_chance",
-                  "chance": 0.2
-                }
-              },
-              {
-                "type": "minecraft:set_potion",
-                "id": "minecraft:slowness",
-                "condition": {
-                  "type": "random_chance",
-                  "chance": 0.2
-                }
-              },
-              {
-                "type": "minecraft:set_potion",
-                "id": "minecraft:poison",
-                "condition": {
-                  "type": "random_chance",
-                  "chance": 0.2
-                }
-              },
-              {
-                "type": "minecraft:set_potion",
-                "id": "minecraft:harming",
-                "condition": {
-                  "type": "random_chance",
-                  "chance": 0.2
-                }
-              }
             ]
-          }
+        },
+        {
+            "rolls": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 3
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 6,
+                    "name": "minecraft:arrow",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 4,
+                            "max": 12
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "minecraft:common/random_tipped_arrow",
+                    "weight": 3,
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": {
+                            "type": "minecraft:uniform",
+                            "min": 2,
+                            "max": 6
+                        }
+                    }
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

@@ -1,0 +1,2 @@
+execute if score blockrace.state state matches 2 run return run function minecraft:blockrace/true_start
+execute if score blockrace.state state matches 3..99 run return run function minecraft:blockrace/over/over

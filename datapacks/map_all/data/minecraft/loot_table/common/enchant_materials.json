@@ -1,0 +1,21 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:lapis_lazuli",
+                    "weight": 3,
+                    "modifier": {"type": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 8, "max": 24}}
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:experience_bottle",
+                    "weight": 3,
+                    "modifier": {"type": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 6, "max": 16}}
+                }
+            ]
+        }
+    ]
+}

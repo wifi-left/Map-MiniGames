@@ -33,6 +33,7 @@ function minecraft:lobby/quickplay_info {category:"休闲类游戏",name:"彩蛋
 function minecraft:lobby/quickplay_info {category:"休闲类游戏",name:"建筑猜猜乐",color:b,join:"function build_guess/join"}
 function minecraft:lobby/quickplay_info {category:"休闲类游戏",name:"不要相信T氏的话",color:b,join:"function t_says/join"}
 function minecraft:lobby/quickplay_info {category:"休闲类游戏",name:"你建我跑",color:b,join:"function build_parkour/join"}
+function minecraft:lobby/quickplay_info {category:"休闲类游戏",name:"方块竞速",color:b,join:"function blockrace/join"}
 
 function minecraft:lobby/quickplay_info {category:"灾难类游戏",name:"灾难：雪灾",color:b,join:"function disaster/snow/join"}
 
@@ -49,7 +50,7 @@ function minecraft:lobby/quickplay_info {category:"PVP类游戏",name:"幸运之
 function minecraft:lobby/quickplay_info {category:"PVP类游戏",name:"生存游戏",color:c,join:"function surgame:join"}
 function minecraft:lobby/quickplay_info {category:"PVP类游戏",name:"起床战争",color:c,join:"function bedwars/message/join"}
 
-function minecraft:lobby/quickplay_info {category:"杂项",name:"搭路练习",color:6,join:"function bridge_practice/join"}
+function minecraft:lobby/quickplay_info {category:"PVP类游戏",name:"生存游戏",color:c,join:"function surgame:join"}
 
 function minecraft:lobby/quickplay_info {category:"单多人休闲类游戏",name:"飞行大赛",color:3,join:"function elytra/join"}
 function minecraft:lobby/quickplay_info {category:"单多人休闲类游戏",name:"桌游",color:3,join:"function desk/join"}

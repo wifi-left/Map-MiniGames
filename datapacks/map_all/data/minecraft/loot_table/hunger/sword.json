@@ -1,264 +1,269 @@
 {
-  "pools": [
-    {
-      "rolls": {
-        "type": "uniform",
-        "min": 1,
-        "max": 2
-      },
-      "entries": [
+    "pools": [
         {
-          "type": "item",
-          "name": "minecraft:bow",
-          "weight": 7,
-          "quality": 1,
-          "modifier": {
-            "type": "minecraft:enchant_with_levels",
-            "levels": {
-              "type": "uniform",
-              "min": 1,
-              "max": 30
-            }
-          }
-        },
-        {
-          "type": "item",
-          "name": "minecraft:wooden_spear",
-          "weight": 5,
-          "quality": 1,
-          "modifier": {
-            "type": "minecraft:enchant_with_levels",
-            "levels": {
-              "type": "uniform",
-              "min": 1,
-              "max": 30
-            }
-          }
-        },
-        {
-          "type": "item",
-          "name": "minecraft:golden_spear",
-          "weight": 4,
-          "quality": 1,
-          "modifier": {
-            "type": "minecraft:enchant_with_levels",
-            "levels": {
-              "type": "uniform",
-              "min": 5,
-              "max": 40
-            }
-          }
-        },
-        {
-          "type": "item",
-          "name": "minecraft:stone_spear",
-          "weight": 4,
-          "quality": 1,
-          "modifier": {
-            "type": "minecraft:enchant_with_levels",
-            "levels": {
-              "type": "uniform",
-              "min": 1,
-              "max": 20
-            }
-          }
-        },
-        {
-          "type": "item",
-          "name": "minecraft:iron_spear",
-          "weight": 3,
-          "quality": 1,
-          "modifier": {
-            "type": "minecraft:enchant_with_levels",
-            "levels": {
-              "type": "uniform",
-              "min": 1,
-              "max": 15
-            }
-          }
-        },
-        {
-          "type": "item",
-          "name": "minecraft:diamond_spear",
-          "weight": 2,
-          "quality": 1,
-          "modifier": {
-            "type": "minecraft:enchant_with_levels",
-            "levels": {
-              "type": "uniform",
-              "min": 1,
-              "max": 10
-            }
-          }
-        },
-        {
-          "type": "item",
-          "name": "minecraft:copper_spear",
-          "weight": 4,
-          "quality": 1,
-          "modifier": {
-            "type": "minecraft:enchant_with_levels",
-            "levels": {
-              "type": "uniform",
-              "min": 1,
-              "max": 20
-            }
-          }
-        },
-        {
-          "type": "item",
-          "name": "minecraft:wooden_sword",
-          "weight": 6,
-          "quality": 3,
-          "modifier": {
-            "type": "minecraft:enchant_with_levels",
-            "levels": {
-              "type": "uniform",
-              "min": 1,
-              "max": 30
-            }
-          }
-        },
-        {
-          "type": "item",
-          "name": "minecraft:iron_sword",
-          "weight": 4,
-          "quality": 3,
-          "modifier": {
-            "type": "minecraft:enchant_with_levels",
-            "levels": {
-              "type": "uniform",
-              "min": 1,
-              "max": 30
-            }
-          }
-        },
-        {
-          "type": "item",
-          "name": "diamond_sword",
-          "weight": 2,
-          "quality": 3,
-          "modifier": {
-            "type": "minecraft:enchant_with_levels",
-            "levels": {
-              "type": "uniform",
-              "min": 1,
-              "max": 30
-            }
-          }
-        },
-        {
-          "type": "item",
-          "name": "wooden_axe",
-          "weight": 4,
-          "modifier": {
-            "type": "minecraft:enchant_with_levels",
-            "levels": {
-              "type": "uniform",
-              "min": 1,
-              "max": 30
-            }
-          }
-        },
-        {
-          "type": "item",
-          "name": "stone_axe",
-          "weight": 3,
-          "quality": 4,
-          "modifier": {
-            "type": "minecraft:enchant_with_levels",
-            "levels": {
-              "type": "uniform",
-              "min": 1,
-              "max": 30
-            }
-          }
-        },
-        {
-          "type": "item",
-          "name": "golden_axe",
-          "weight": 3,
-          "quality": 4,
-          "modifier": {
-            "type": "minecraft:enchant_with_levels",
-            "levels": {
-              "type": "uniform",
-              "min": 1,
-              "max": 30
-            }
-          }
-        },
-        {
-          "type": "item",
-          "name": "golden_sword",
-          "weight": 5,
-          "modifier": {
-            "type": "minecraft:enchant_with_levels",
-            "levels": {
-              "type": "uniform",
-              "min": 1,
-              "max": 30
-            }
-          }
-        },
-        {
-          "type": "item",
-          "name": "iron_axe",
-          "weight": 2,
-          "quality": 3,
-          "modifier": {
-            "type": "minecraft:enchant_with_levels",
-            "levels": {
-              "type": "uniform",
-              "min": 1,
-              "max": 30
-            }
-          }
-        },
-        {
-          "type": "item",
-          "name": "diamond_axe",
-          "weight": 1,
-          "quality": 3,
-          "modifier": {
-            "type": "minecraft:enchant_with_levels",
-            "levels": {
-              "type": "uniform",
-              "min": 1,
-              "max": 30
-            }
-          }
-        },
-        {
-          "type": "item",
-          "name": "stick",
-          "weight": 3,
-          "quality": 3,
-          "modifier": {
-            "type": "set_components",
-            "components": {
-              "minecraft:custom_name": "§f击退棍",
-              "minecraft:enchantments": {
-                "minecraft:knockback": 2
-              }
-            }
-          }
-        },
-        {
-          "type": "item",
-          "name": "fishing_rod",
-          "weight": 5,
-          "quality": 1,
-          "modifier": {
-            "type": "set_components",
-            "components": {
-              "minecraft:enchantments": {
-                "minecraft:knockback": 2
-              }
-            }
-          }
+            "rolls": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+            },
+            "bonus_rolls": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 1
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:bow",
+                    "weight": 6,
+                    "quality": 1,
+                    "modifier": {
+                        "type": "minecraft:enchant_with_levels",
+                        "levels": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 25
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:wooden_sword",
+                    "weight": 6,
+                    "quality": 3,
+                    "modifier": {
+                        "type": "minecraft:enchant_with_levels",
+                        "levels": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 20
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:wooden_spear",
+                    "weight": 5,
+                    "quality": 1,
+                    "modifier": {
+                        "type": "minecraft:enchant_with_levels",
+                        "levels": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 20
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:wooden_axe",
+                    "weight": 4,
+                    "modifier": {
+                        "type": "minecraft:enchant_with_levels",
+                        "levels": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 20
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:stone_spear",
+                    "weight": 4,
+                    "quality": 1,
+                    "modifier": {
+                        "type": "minecraft:enchant_with_levels",
+                        "levels": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 20
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:copper_spear",
+                    "weight": 4,
+                    "quality": 1,
+                    "modifier": {
+                        "type": "minecraft:enchant_with_levels",
+                        "levels": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 20
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:stone_axe",
+                    "weight": 3,
+                    "quality": 4,
+                    "modifier": {
+                        "type": "minecraft:enchant_with_levels",
+                        "levels": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 20
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_sword",
+                    "weight": 5,
+                    "quality": 3,
+                    "modifier": {
+                        "type": "minecraft:enchant_with_levels",
+                        "levels": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 25
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_spear",
+                    "weight": 4,
+                    "quality": 1,
+                    "modifier": {
+                        "type": "minecraft:enchant_with_levels",
+                        "levels": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 25
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_axe",
+                    "weight": 3,
+                    "quality": 3,
+                    "modifier": {
+                        "type": "minecraft:enchant_with_levels",
+                        "levels": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 25
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_sword",
+                    "weight": 4,
+                    "modifier": {
+                        "type": "minecraft:enchant_with_levels",
+                        "levels": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 30
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_spear",
+                    "weight": 3,
+                    "quality": 1,
+                    "modifier": {
+                        "type": "minecraft:enchant_with_levels",
+                        "levels": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 30
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_axe",
+                    "weight": 2,
+                    "quality": 4,
+                    "modifier": {
+                        "type": "minecraft:enchant_with_levels",
+                        "levels": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 30
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_sword",
+                    "weight": 3,
+                    "quality": 3,
+                    "modifier": {
+                        "type": "minecraft:enchant_with_levels",
+                        "levels": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 10
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_spear",
+                    "weight": 2,
+                    "quality": 1,
+                    "modifier": {
+                        "type": "minecraft:enchant_with_levels",
+                        "levels": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 10
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_axe",
+                    "weight": 1,
+                    "quality": 3,
+                    "modifier": {
+                        "type": "minecraft:enchant_with_levels",
+                        "levels": {
+                            "type": "minecraft:uniform",
+                            "min": 1,
+                            "max": 10
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:stick",
+                    "weight": 3,
+                    "quality": 3,
+                    "modifier": {
+                        "type": "minecraft:set_components",
+                        "components": {
+                            "minecraft:custom_name": "§f击退棍",
+                            "minecraft:enchantments": {
+                                "minecraft:knockback": 2
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:fishing_rod",
+                    "weight": 4,
+                    "quality": 1,
+                    "modifier": {
+                        "type": "minecraft:set_components",
+                        "components": {
+                            "minecraft:enchantments": {
+                                "minecraft:knockback": 2
+                            }
+                        }
+                    }
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

@@ -1,2 +1,278 @@
-{}
-
+{
+    "pools": [
+        {
+            "rolls": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 2
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "minecraft:paper",
+                    "modifier": {
+                        "type": "minecraft:set_components",
+                        "components": {
+                            "minecraft:item_name": {
+                                "text": "飓风卷轴",
+                                "color": "aqua",
+                                "italic": false
+                            },
+                            "minecraft:lore": [
+                                {
+                                    "text": "使用后：速度 II / 跳跃提升 I，持续 8 秒",
+                                    "color": "gray",
+                                    "italic": false
+                                }
+                            ],
+                            "minecraft:item_model": "minecraft:feather",
+                            "minecraft:consumable": {
+                                "consume_seconds": 1.0,
+                                "animation": "bow",
+                                "sound": "minecraft:ui.hud.bubble_pop",
+                                "has_consume_particles": false,
+                                "on_consume_effects": [
+                                    {
+                                        "type": "minecraft:apply_effects",
+                                        "effects": [
+                                            {
+                                                "id": "minecraft:speed",
+                                                "amplifier": 1,
+                                                "duration": 160,
+                                                "show_particles": false
+                                            },
+                                            {
+                                                "id": "minecraft:jump_boost",
+                                                "amplifier": 0,
+                                                "duration": 160,
+                                                "show_particles": false
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "minecraft:paper",
+                    "modifier": {
+                        "type": "minecraft:set_components",
+                        "components": {
+                            "minecraft:item_name": {
+                                "text": "坚壁卷轴",
+                                "color": "blue",
+                                "italic": false
+                            },
+                            "minecraft:lore": [
+                                {
+                                    "text": "使用后：抗性提升 I，持续 10 秒",
+                                    "color": "gray",
+                                    "italic": false
+                                }
+                            ],
+                            "minecraft:item_model": "minecraft:shield",
+                            "minecraft:consumable": {
+                                "consume_seconds": 1.5,
+                                "animation": "bow",
+                                "sound": "minecraft:block.amethyst_cluster.place",
+                                "has_consume_particles": false,
+                                "on_consume_effects": [
+                                    {
+                                        "type": "minecraft:apply_effects",
+                                        "effects": [
+                                            {
+                                                "id": "minecraft:resistance",
+                                                "amplifier": 0,
+                                                "duration": 200,
+                                                "show_particles": false
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "minecraft:paper",
+                    "modifier": {
+                        "type": "minecraft:set_components",
+                        "components": {
+                            "minecraft:item_name": {
+                                "text": "狂战卷轴",
+                                "color": "red",
+                                "italic": false
+                            },
+                            "minecraft:lore": [
+                                {
+                                    "text": "使用后：力量 I，持续 12 秒",
+                                    "color": "gray",
+                                    "italic": false
+                                }
+                            ],
+                            "minecraft:item_model": "minecraft:iron_sword",
+                            "minecraft:consumable": {
+                                "consume_seconds": 1.5,
+                                "animation": "bow",
+                                "sound": "minecraft:block.note_block.banjo",
+                                "has_consume_particles": false,
+                                "on_consume_effects": [
+                                    {
+                                        "type": "minecraft:apply_effects",
+                                        "effects": [
+                                            {
+                                                "id": "minecraft:strength",
+                                                "amplifier": 0,
+                                                "duration": 240,
+                                                "show_particles": false
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "minecraft:paper",
+                    "modifier": {
+                        "type": "minecraft:set_components",
+                        "components": {
+                            "minecraft:item_name": {
+                                "text": "隐匿卷轴",
+                                "color": "light_purple",
+                                "italic": false
+                            },
+                            "minecraft:lore": [
+                                {
+                                    "text": "使用后：隐身，持续 10 秒",
+                                    "color": "gray",
+                                    "italic": false
+                                }
+                            ],
+                            "minecraft:item_model": "minecraft:glass",
+                            "minecraft:consumable": {
+                                "consume_seconds": 1.5,
+                                "animation": "bow",
+                                "sound": "minecraft:entity.parrot.ambient",
+                                "has_consume_particles": false,
+                                "on_consume_effects": [
+                                    {
+                                        "type": "minecraft:apply_effects",
+                                        "effects": [
+                                            {
+                                                "id": "minecraft:invisibility",
+                                                "amplifier": 0,
+                                                "duration": 200,
+                                                "show_particles": false
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "minecraft:paper",
+                    "modifier": {
+                        "type": "minecraft:set_components",
+                        "components": {
+                            "minecraft:item_name": {
+                                "text": "急救卷轴",
+                                "color": "gold",
+                                "italic": false
+                            },
+                            "minecraft:lore": [
+                                {
+                                    "text": "使用后：立即恢复 4 颗心",
+                                    "color": "gray",
+                                    "italic": false
+                                }
+                            ],
+                            "minecraft:item_model": "minecraft:golden_apple",
+                            "minecraft:consumable": {
+                                "consume_seconds": 2.0,
+                                "animation": "eat",
+                                "sound": "minecraft:item.brush.brushing.gravel",
+                                "has_consume_particles": false,
+                                "on_consume_effects": [
+                                    {
+                                        "type": "minecraft:apply_effects",
+                                        "effects": [
+                                            {
+                                                "id": "minecraft:instant_health",
+                                                "amplifier": 1,
+                                                "duration": 1,
+                                                "show_particles": false
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 4,
+                    "name": "minecraft:snowball",
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_count",
+                            "count": 4
+                        },
+                        {
+                            "type": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_name": "火球(右键发射)",
+                                "item_model": "fire_charge"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "minecraft:fire_charge",
+                    "modifier": [
+                        {
+                            "type": "minecraft:set_count",
+                            "count": 4
+                        },
+                        {
+                            "type": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_name": "烈焰弹（右键方块点燃火焰）"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "minecraft:ender_pearl",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": 2
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "minecraft:milk_bucket"
+                }
+            ]
+        }
+    ]
+}

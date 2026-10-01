@@ -4,32 +4,60 @@
     {
       "rolls": {
         "type": "minecraft:uniform",
-        "min": 3,
-        "max": 8
+        "min": 4,
+        "max": 6
       },
       "bonus_rolls": {
-        "type": "uniform",
-        "min": 1,
-        "max": 5
+        "type": "minecraft:uniform",
+        "min": 0,
+        "max": 2
       },
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "value": "minecraft:cloud/blocks",
-          "weight": 20
+          "value": "minecraft:common/enchant_materials",
+          "weight": 24
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:netherite_chestplate",
+          "type": "minecraft:loot_table",
+          "value": "minecraft:cloud/common/enchant_book",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:common/random_potion_splash",
           "weight": 10
         },
         {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:common/random_potion_normal",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:common/random_potion_lingering",
+          "weight": 2
+        },
+        {
           "type": "minecraft:item",
-          "name": "minecraft:diamond_boots",
-          "weight": 10,
+          "name": "minecraft:arrow",
+          "weight": 9,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": {
+              "type": "minecraft:uniform",
+              "min": 4,
+              "max": 12
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_helmet",
+          "weight": 5,
           "modifier": {
             "type": "minecraft:enchant_randomly",
-            "enchantments": [
+            "options": [
               "minecraft:protection"
             ],
             "condition": {
@@ -40,53 +68,110 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:diamond_leggings",
-          "weight": 15,
-          "modifier": {
-            "type": "minecraft:enchant_randomly",
-            "enchantments": [
-              "minecraft:protection"
-            ],
-            "condition": {
-              "type": "random_chance",
-              "chance": 0.3
-            }
-          }
-        },
-        {
-          "type": "minecraft:item",
           "name": "minecraft:diamond_chestplate",
-          "weight": 20,
+          "weight": 7,
           "modifier": {
             "type": "minecraft:enchant_randomly",
-            "enchantments": [
+            "options": [
               "minecraft:protection"
             ],
             "condition": {
               "type": "random_chance",
-              "chance": 0.15
+              "chance": 0.6
             }
           }
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:diamond_helmet",
-          "weight": 15,
+          "name": "minecraft:diamond_leggings",
+          "weight": 6,
           "modifier": {
             "type": "minecraft:enchant_randomly",
-            "enchantments": [
+            "options": [
               "minecraft:protection"
             ],
             "condition": {
               "type": "random_chance",
-              "chance": 0.3
+              "chance": 0.5
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_boots",
+          "weight": 5,
+          "modifier": {
+            "type": "minecraft:enchant_randomly",
+            "options": [
+              "minecraft:protection",
+              "minecraft:feather_falling"
+            ],
+            "condition": {
+              "type": "random_chance",
+              "chance": 0.45
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "weight": 6,
+          "modifier": {
+            "type": "minecraft:enchant_randomly",
+            "options": [
+              "minecraft:sharpness",
+              "minecraft:fire_aspect",
+              "minecraft:knockback"
+            ],
+            "condition": {
+              "type": "random_chance",
+              "chance": 0.5
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "weight": 4,
+          "modifier": {
+            "type": "minecraft:enchant_randomly",
+            "options": [
+              "minecraft:power",
+              "minecraft:punch",
+              "minecraft:flame"
+            ],
+            "condition": {
+              "type": "random_chance",
+              "chance": 0.6
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_chestplate",
+          "weight": 8,
+          "modifier": {
+            "type": "minecraft:set_enchantments",
+            "enchantments": {
+              "minecraft:fire_protection": 4
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_leggings",
+          "weight": 6,
+          "modifier": {
+            "type": "minecraft:set_enchantments",
+            "enchantments": {
+              "minecraft:fire_protection": 4
             }
           }
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_sword",
-          "weight": 1,
+          "weight": 5,
           "modifier": {
             "type": "minecraft:set_enchantments",
             "enchantments": {
@@ -96,8 +181,77 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:golden_apple",
-          "weight": 20,
+          "name": "minecraft:stone_sword",
+          "weight": 5,
+          "modifier": {
+            "type": "minecraft:set_enchantments",
+            "enchantments": {
+              "minecraft:fire_aspect": 2
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_axe",
+          "weight": 4,
+          "modifier": {
+            "type": "minecraft:set_enchantments",
+            "enchantments": {
+              "minecraft:sharpness": 2
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "weight": 3,
+          "modifier": {
+            "type": "minecraft:enchant_randomly",
+            "condition": {
+              "type": "random_chance",
+              "chance": 0.5
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "weight": 2,
+          "modifier": {
+            "type": "minecraft:enchant_randomly",
+            "condition": {
+              "type": "random_chance",
+              "chance": 0.5
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "weight": 2,
+          "modifier": {
+            "type": "minecraft:enchant_randomly",
+            "condition": {
+              "type": "random_chance",
+              "chance": 0.5
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword",
+          "weight": 3,
+          "modifier": {
+            "type": "minecraft:set_enchantments",
+            "enchantments": {
+              "minecraft:fire_aspect": 2
+            }
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_golden_apple",
+          "weight": 5,
           "modifier": {
             "type": "minecraft:set_count",
             "count": {
@@ -109,59 +263,48 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:splash_potion",
-          "weight": 15,
-          "modifier": {
-            "type": "minecraft:set_potion",
-            "id": "minecraft:strong_healing"
-          }
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:netherite_sword",
-          "weight": 5,
-          "modifier": {
-            "type": "minecraft:set_enchantments",
-            "enchantments": {
-              "minecraft:fire_aspect": 2
-            }
-          }
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:netherite_boots",
-          "weight": 2,
-          "modifier": {
-            "type": "minecraft:enchant_randomly"
-          }
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:diamond_sword",
-          "weight": 15,
-          "modifier": {
-            "type": "minecraft:set_enchantments",
-            "enchantments": {
-              "minecraft:sharpness": 1
-            },
-            "condition": {
-              "type": "random_chance",
-              "chance": 0.3
-            }
-          }
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:enchanted_golden_apple",
-          "weight": 1,
+          "name": "minecraft:golden_apple",
+          "weight": 9,
           "modifier": {
             "type": "minecraft:set_count",
             "count": {
               "type": "minecraft:uniform",
               "min": 1,
-              "max": 4
+              "max": 2
             }
           }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:snowball",
+          "weight": 4,
+          "modifier": [
+            {
+              "type": "minecraft:set_count",
+              "count": 6
+            },
+            {
+              "type": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "火球(右键发射)",
+                "item_model": "fire_charge"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cobweb",
+          "weight": 3,
+          "modifier": {
+            "type": "minecraft:set_count",
+            "count": 4
+          }
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:water_bucket",
+          "weight": 2
         }
       ]
     }

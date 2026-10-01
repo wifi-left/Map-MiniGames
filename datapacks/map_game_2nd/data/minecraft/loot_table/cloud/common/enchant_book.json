@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "modifier": {
+            "type": "minecraft:enchant_randomly",
+            "options": [
+              "minecraft:sharpness",
+              "minecraft:protection",
+              "minecraft:blast_protection",
+              "minecraft:fire_protection",
+              "minecraft:projectile_protection",
+              "minecraft:feather_falling",
+              "minecraft:thorns",
+              "minecraft:knockback",
+              "minecraft:fire_aspect",
+              "minecraft:power",
+              "minecraft:punch",
+              "minecraft:unbreaking",
+              "minecraft:mending"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
