@@ -8,6 +8,8 @@
 # title @s subtitle ["尽情期待！"]
 # tellraw @s ["\n\u00a7e游戏仍在制作中，尽情期待！\n"]
 # return fail
+execute store result score tmp.team.canjoin board run function minecraft:team/api/can_join {game:"blaze",join:"function blaze/join",pull:1b}
+execute if score tmp.team.canjoin board matches 0 run return 0
 team join blaze.wait @s
 gamemode adventure @s[gamemode=spectator]
 tellraw @a [{"selector":"@s"},"§a 加入了§c燎原烽火§a。"]

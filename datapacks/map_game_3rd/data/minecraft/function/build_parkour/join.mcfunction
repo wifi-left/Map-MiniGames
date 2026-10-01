@@ -2,6 +2,8 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
+execute store result score tmp.team.canjoin board run function minecraft:team/api/can_join {game:"build_parkour",join:"function build_parkour/join",pull:1b}
+execute if score tmp.team.canjoin board matches 0 run return 0
 clear @s
 title @s title [{"text":"你建我跑","color":"#5ed3ff","bold": true}]
 title @s subtitle ["\u00a7rBuild and Run !"]

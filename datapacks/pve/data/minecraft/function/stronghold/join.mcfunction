@@ -1,3 +1,5 @@
+execute store result score tmp.team.canjoin board run function minecraft:team/api/can_join {game:"stronghold",join:"function stronghold/join",pull:1b}
+execute if score tmp.team.canjoin board matches 0 run return 0
 playsound ui.button.click player @s ~ ~ ~ 1 1 1
 execute in lobby run tp @s 195 -8 190 -90 0
 

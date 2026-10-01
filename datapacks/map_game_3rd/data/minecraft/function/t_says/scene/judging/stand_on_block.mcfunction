@@ -11,4 +11,4 @@ execute if score t_says.scene board matches -13 as @a[team=t_says,gamemode=adven
 execute if score t_says.scene board matches -12 as @a[team=t_says,gamemode=adventure,tag=!t_says.finished,tag=!t_says.failed] at @s if block ~ ~-1 ~ pink_concrete run function minecraft:t_says/judge/give_judge/finish
 execute if score t_says.scene board matches -11 as @a[team=t_says,gamemode=adventure,tag=!t_says.finished,tag=!t_says.failed] at @s if block ~ ~-1 ~ brown_concrete run function minecraft:t_says/judge/give_judge/finish
 
-execute as @a[team=t_says,gamemode=adventure,tag=!t_says.finished,tag=!t_says.failed] at @s if block ~ ~-1 ~ #concrete run function minecraft:t_says/judge/give_judge/failed
+execute if score t_says.scene board matches -20..-11 as @a[team=t_says,gamemode=adventure,tag=!t_says.finished,tag=!t_says.failed] at @s if block ~ ~-1 ~ #concrete run function minecraft:t_says/judge/give_judge/failed

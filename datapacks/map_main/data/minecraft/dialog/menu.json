@@ -18,6 +18,13 @@
             }
         },
         {
+            "label": "组队（/trigger team）",
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "/trigger team set 1"
+            }
+        },
+        {
             "label": "全局旁观操作菜单",
             "action": {
                 "type": "show_dialog",

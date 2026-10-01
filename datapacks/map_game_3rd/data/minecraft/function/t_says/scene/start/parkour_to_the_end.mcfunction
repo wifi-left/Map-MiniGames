@@ -1,4 +1,3 @@
-scoreboard players set t_says.time board 30
 tp @a[team=t_says,gamemode=adventure] 165 24 373 -90 0
 
 fill 203 22 393 163 22 353 lava replace air

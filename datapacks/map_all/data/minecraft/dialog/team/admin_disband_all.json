@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:confirmation",
+    "title": { "text": "删除全部队伍", "color": "red", "bold": true },
+    "pause": false,
+    "body": {
+        "type": "minecraft:plain_message",
+        "width": 400,
+        "contents": [
+            { "text": "确定要删除所有队伍吗？\n", "color": "gray" },
+            { "text": "所有队伍的成员都会被移出队伍（含离线成员），待处理的邀请也会一起作废，且无法撤销。", "color": "red" }
+        ]
+    },
+    "yes": {
+        "label": { "text": "删除全部队伍", "color": "red", "bold": true },
+        "tooltip": "确认删除所有队伍与待处理邀请",
+        "action": { "type": "run_command", "command": "/function minecraft:team/api/disband_all" }
+    },
+    "no": {
+        "label": "取消",
+        "tooltip": "保留队伍"
+    }
+}

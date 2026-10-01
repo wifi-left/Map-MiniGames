@@ -24,6 +24,8 @@ tag @a[scores={hub=1..}] add NEWENTER1
 execute as @a[tag=NEWENTER1] unless score @s park.uuid matches 0.. run function minecraft:actions/getuuid
 
 team join lobby @a[tag=NEWENTER1]
+# 回到大厅（/trigger hub）：检查组队状态 —— 队伍不正常的重置，队长独处则自动解散无效队伍
+execute as @a[tag=NEWENTER1] run function minecraft:team/api/on_lobby_enter
 execute as @a[tag=NEWENTER1] at @s run function lobby/cleartags
 execute if entity @a[tag=NEWENTER1] run function lobby/bossbar_refresh
 execute as @a[tag=NEWENTER1] run tellraw @a ["§a§l[MESSAGE] §7",{"selector":"@s","color":"yellow"},"§b 返回了大厅。"]

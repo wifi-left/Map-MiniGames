@@ -1,5 +1,6 @@
 fill 240 -35 39 202 -49 1 air
 fill 240 -34 39 202 -3 1 air
+fill 202 -50 1 240 -50 39 water
 fill 202 -35 1 240 -37 39 minecraft:snow_block
 execute positioned 221 -35 20 run kill @e[type=item,distance=..30]
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{disaster.snow:tool}}}}]

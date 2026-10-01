@@ -10,5 +10,5 @@ tag @a remove mutouren.win_true
 tag @a remove mutouren.win
 execute in parkourworld run fill -4 -53 423 -4 -55 419 minecraft:oak_fence
 team modify mutouren collisionRule never
-
+team modify mutouren friendlyFire false
 kill @e[type=pillager,tag=mutouren.pillager]

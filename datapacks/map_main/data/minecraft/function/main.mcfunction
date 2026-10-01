@@ -39,6 +39,38 @@ scoreboard players enable @a spec
 scoreboard players enable @a quickplay
 
 scoreboard players reset @a[scores={spec=1..}] spec
+
+# 组队（/trigger team）触发器分派
+# 操作走 team 计分板（1..11）；“点了某一行”各自走独立的 team.pick.* 计分板，
+# 值是“对方的 park.uuid / 名册索引”本身、不做偏移，所以不会出现数字区间重叠的问题
+scoreboard players enable @a team
+scoreboard players enable @a team.pick.invite
+scoreboard players enable @a team.pick.kick
+scoreboard players enable @a team.pick.transfer
+# 管理员禁用组队功能时：先提示并清掉触发器值，下面的分派就不会再匹配到人
+execute if score team.disabled board matches 1 as @a[scores={team=1..}] run tellraw @s ["§c组队功能已被管理员禁用。\n"]
+execute if score team.disabled board matches 1 run scoreboard players reset @a[scores={team=1..}] team
+execute if score team.disabled board matches 1 run scoreboard players reset @a[scores={team.pick.invite=1..}] team.pick.invite
+execute if score team.disabled board matches 1 run scoreboard players reset @a[scores={team.pick.kick=1..}] team.pick.kick
+execute if score team.disabled board matches 1 run scoreboard players reset @a[scores={team.pick.transfer=1..}] team.pick.transfer
+execute as @a[scores={team=1}] run function minecraft:team/trigger/menu
+execute as @a[scores={team=2}] run function minecraft:team/trigger/accept
+execute as @a[scores={team=3}] run function minecraft:team/trigger/decline
+execute as @a[scores={team=4}] run function minecraft:team/trigger/invite
+execute as @a[scores={team=5}] run function minecraft:team/trigger/info
+execute as @a[scores={team=6}] run function minecraft:team/trigger/leave
+execute as @a[scores={team=7}] run function minecraft:team/trigger/transfer
+execute as @a[scores={team=8}] run function minecraft:team/trigger/disband
+execute as @a[scores={team=9}] run function minecraft:team/trigger/disband_do
+execute as @a[scores={team=10}] run function minecraft:team/trigger/ignore
+execute as @a[scores={team=11}] run function minecraft:team/trigger/summon
+execute as @a[scores={team.pick.invite=1..}] run function minecraft:team/trigger/invite_pick
+execute as @a[scores={team.pick.kick=1..}] run function minecraft:team/trigger/kick_pick
+execute as @a[scores={team.pick.transfer=1..}] run function minecraft:team/trigger/transfer_pick
+scoreboard players reset @a[scores={team=1..}] team
+scoreboard players reset @a[scores={team.pick.invite=1..}] team.pick.invite
+scoreboard players reset @a[scores={team.pick.kick=1..}] team.pick.kick
+scoreboard players reset @a[scores={team.pick.transfer=1..}] team.pick.transfer
 tag @a[tag=SPEC.JOIN] add GLOBAL.SPEC
 tellraw @a[tag=SPEC.JOIN] ["\n§7  你已开启§b全局旁观者模式§7。\n  §7由于你进入游戏后会变为旁观模式，请使用 §6/trigger hub§7 返回大厅。\n  ",{"text":"§a§l点击此处，或者使用 §6§l/trigger spec set 3 §a§l退出全局旁观者模式","bold":true,"click_event":{"action":"run_command","command":"/trigger spec set 3"},"hover_event":{"action":"show_text","value":"§c点击此处退出全局旁观者模式"}},"\n"]
 tag @a[tag=SPEC.JOIN] remove SPEC.JOIN
@@ -139,7 +171,6 @@ execute in airworld positioned 413 -60 -383 as @a[distance=..2,gamemode=!creativ
 
 execute as @e[type=minecart,tag=lobby.car] at @s if block ~ ~-1 ~ piston_head run data modify entity @s Motion[2] set value -1
 
-execute positioned 29 17 -4 as @a[distance=0..3,gamemode=adventure] at @s run function minecraft:live/ingame/died
 execute if score car.state state matches 1.. run function minecraft:car_race/tick
 
 execute if score sw.state state matches 1.. run function minecraft:cloud/tick

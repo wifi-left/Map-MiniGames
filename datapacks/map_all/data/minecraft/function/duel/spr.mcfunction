@@ -2,15 +2,8 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
-tag @a remove duel.out
-tag @r[team=wait.duel,gamemode=adventure] add duel.out
-scoreboard players add duel.ranteam board 1
-execute if score duel.ranteam board matches 1..1 run team join play.duel.blue @a[tag=duel.out]
-execute if score duel.ranteam board matches 2..2 run team join play.duel.yellow @a[tag=duel.out]
-tellraw @a[tag=duel.out,team=play.duel.yellow] ["§a你加入了 §e战桥黄队"]
-tellraw @a[tag=duel.out,team=play.duel.blue] ["§a你加入了 §9战桥蓝队"]
-
-execute if score duel.ranteam board matches 2.. run scoreboard players set duel.ranteam board 0
-execute as @a[tag=duel.out] at @s run function duel/item
-tag @a remove duel.out
-
+# 组分队：一次把 wait.duel 里的所有人分成蓝 / 黄两队（走通用分队 API utils:team/distribute_cmd）
+#   · 组队优先：同一个组队尽量分到同一队；整队放不下（人数不够或会让人数不平均）时拆开随机分，并提示被拆的人
+#   · 队伍顺序 = cmds 列表顺序；每队上限 = 向上取整(人数 / 2)，所以没有组队时和以前的交替分配一样均匀
+#   · 分队与发装备都在 duel/team/<队>.mcfunction 里（@s = 被分配的玩家）
+function utils:team/distribute_cmd {players:"@a[team=wait.duel,gamemode=adventure]",cmds:["function minecraft:duel/team/blue","function minecraft:duel/team/yellow"]}

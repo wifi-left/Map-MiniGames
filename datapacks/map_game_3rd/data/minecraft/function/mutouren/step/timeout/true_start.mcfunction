@@ -9,6 +9,7 @@ execute in parkourworld run fill -4 -53 423 -4 -55 419 minecraft:air replace oak
 execute as @a[team=mutouren,gamemode=adventure] at @s run function minecraft:mutouren/map/true_start
 scoreboard players set mutouren.state state 3
 execute as @a[team=mutouren] at @s run playsound entity.player.levelup player @s ~ ~ ~ 1 2 1
+team modify mutouren friendlyFire true
 
 
 kill @e[type=pillager,tag=mutouren.pillager]

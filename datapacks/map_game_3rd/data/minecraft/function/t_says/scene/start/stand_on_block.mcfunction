@@ -19,4 +19,3 @@ setblock 182 22 376 black_concrete
 setblock 180 22 376 lime_concrete
 
 # {t_says.equipment:1}
-scoreboard players set t_says.time board 21

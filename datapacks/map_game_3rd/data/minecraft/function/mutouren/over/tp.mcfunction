@@ -3,3 +3,4 @@ execute if entity @a[team=mutouren,tag=play.total] run function minecraft:small_
 execute as @a[team=mutouren,gamemode=survival] run gamemode spectator @s
 execute as @a[team=mutouren,gamemode=adventure] run gamemode spectator @s
 execute as @a[team=mutouren,gamemode=!creative] run function minecraft:mutouren/join
+team modify mutouren friendlyFire false

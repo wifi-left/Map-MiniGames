@@ -2,6 +2,8 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
+execute store result score tmp.team.canjoin board run function minecraft:team/api/can_join {game:"killerever",join:"function killerever/join",pull:1b}
+execute if score tmp.team.canjoin board matches 0 run return 0
 title @s title [{"text":"密室杀手","color":"red","bold": true}]
 title @s subtitle ["\u00a7r小心！ 杀手也许就在你身边！"]
 team join wait.killer @s

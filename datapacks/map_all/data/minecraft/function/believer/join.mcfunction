@@ -2,6 +2,8 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
+execute store result score tmp.team.canjoin board run function minecraft:team/api/can_join {game:"believer",join:"function believer/join",pull:1b}
+execute if score tmp.team.canjoin board matches 0 run return 0
 title @s[team=!play.beli] title [{"text":"Block Believer","color":"#a7d3ff","bold": true}]
 title @s[team=!play.beli] subtitle ["\u00a7rBelieve yourself !"]
 team join wait.beli @s

@@ -2,6 +2,8 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
+execute store result score tmp.team.canjoin board run function minecraft:team/api/can_join {game:"chess",join:"function small_games/chess/join",pull:0b}
+execute if score tmp.team.canjoin board matches 0 run return 0
 execute in overworld run tp @s 87 125 20 -90 0
 title @s title ["\u00a7c\u00a7l棋类游戏"]
 title @s subtitle ["\u00a7f打发时间的休闲小游戏"]

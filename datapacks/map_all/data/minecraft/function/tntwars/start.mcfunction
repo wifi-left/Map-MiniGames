@@ -9,9 +9,9 @@ effect clear @a[team=wait.tntwars,gamemode=adventure]
 tag @a remove tntwars.a
 tellraw @a ["§cTNT Wars §a游戏开始。"]
 tag @a remove tntwars.b
-scoreboard players set rand board 1
 tag @a[team=wait.tntwars,gamemode=adventure] add tnt.tanteam
-execute as @a[tag=tnt.tanteam] run function tntwars/randomteam
+# 分队走 tntwars/randomteam（组队优先），注意是整批一次分完，不要再按人循环调用
+function minecraft:tntwars/randomteam
 team join play.tntwars @a[team=wait.tntwars,gamemode=adventure]
 tellraw @a[team=play.tntwars] ["\n§a「队伍A」",{"selector":"@a[tag=tntwars.a]"},"\n§b「队伍B」",{"selector":"@a[tag=tntwars.b]"},"\n"]
 

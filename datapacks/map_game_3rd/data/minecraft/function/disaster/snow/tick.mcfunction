@@ -13,5 +13,9 @@ execute in airworld as @e[type=falling_block,tag=disaster.snow.falling_block] at
 execute in airworld as @e[type=falling_block,tag=disaster.snow.falling_block] at @s if block ~ ~-1 ~ bubble_column run kill @s
 execute in airworld as @e[type=falling_block,tag=disaster.snow.falling_block] at @s if block ~ ~ ~ bubble_column run kill @s
 
+## 缩圈后场地外是虚空，边缘溢出的掉落物会一直下坠，掉出场地后直接清掉
+execute in airworld as @e[type=armor_stand,tag=disaster.snow.armor_stand] at @s run kill @s[y=-45,dy=-20]
+execute in airworld as @e[type=falling_block,tag=disaster.snow.falling_block] at @s run kill @s[y=-45,dy=-20]
+
 execute as @a[gamemode=adventure,team=disaster.snow] if items entity @s weapon.mainhand bow run function minecraft:disaster/snow/item_effects/bomb_bow
 execute as @a[gamemode=adventure,team=disaster.snow] unless items entity @s weapon.mainhand bow run function minecraft:disaster/snow/item_effects/bomb_bow_clear

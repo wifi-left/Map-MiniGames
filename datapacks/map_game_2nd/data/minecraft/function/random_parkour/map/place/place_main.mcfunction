@@ -1,3 +1,6 @@
+# 记录点：到点、且平台（含四周楼梯 x±2 / z±2）能完整落进跑酷区域才铺，否则顺延到下一段
+execute if score random_parkour.step board <= random_parkour.cpstep board if score random_parkour.x board matches 16..100 if score random_parkour.z board matches 214..244 run return run function minecraft:random_parkour/map/place/place_checkpoint
+
 # setblock ~ ~ ~ emerald_block
 execute store result score random_parkour.rancolor temp run random value 1..16
 # setblock ~ ~1 ~ minecraft:white_wool strict

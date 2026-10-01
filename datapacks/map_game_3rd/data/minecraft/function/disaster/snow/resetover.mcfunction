@@ -15,3 +15,6 @@ scoreboard players set disaster.snow.state state 2
 scoreboard players set disaster.snow.time board 6
 ## 速度
 scoreboard players set disaster.snow.speed board 1
+## 缩圈
+scoreboard players set disaster.snow.shrink board 0
+scoreboard players set disaster.snow.radius board 18

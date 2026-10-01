@@ -3,3 +3,7 @@ team modify random_parkour friendlyFire false
 title @a[team=random_parkour] title ["\u00a7a游戏开始！"]
 tellraw @a[team=random_parkour] ["\u00a7a游戏开始！开始你的跑酷吧！\n\u00a77温馨提示：小心其他人的火球。"]
 title @a[team=random_parkour] subtitle ["开始你的跑酷吧！"]
+
+scoreboard players reset @a[team=random_parkour] park.x
+scoreboard players reset @a[team=random_parkour] park.y
+scoreboard players reset @a[team=random_parkour] park.z

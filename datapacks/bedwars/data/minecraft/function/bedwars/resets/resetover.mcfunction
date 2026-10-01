@@ -31,6 +31,19 @@ title @a[tag=bw.player] subtitle ["\u00a7a游戏开始！"]
 
 execute if score bw.custom_team board matches 0 run function bedwars/before/selected_team
 
+# 组队优先的分队：每队人数上限按“开始分配前的总人数”算一次
+# （不能放到随后的逐人分配里按剩余人数算，否则上限会一路缩水，组队明明放得下也会被拆开）
+scoreboard players set team.total board 0
+execute as @a[team=bw.wait,tag=!GLOBAL.SPEC] run scoreboard players add team.total board 1
+scoreboard players set team.num board 4
+execute if score bw.mode state matches 4..7 run scoreboard players set team.num board 2
+scoreboard players set team.cap board 1
+execute if score team.total board matches 1.. run scoreboard players operation team.cap board = team.total board
+execute if score team.total board matches 1.. run scoreboard players operation team.cap board /= team.num board
+execute if score team.total board matches 1.. run scoreboard players operation team.rem board = team.total board
+execute if score team.total board matches 1.. run scoreboard players operation team.rem board %= team.num board
+execute if score team.rem board matches 1.. run scoreboard players add team.cap board 1
+
 execute if score bw.mode state matches 0..3 run execute as @a[team=bw.wait,tag=!GLOBAL.SPEC] at @s run function minecraft:bedwars/before/random_team
 execute if score bw.mode state matches 4..7 run execute as @a[team=bw.wait,tag=!GLOBAL.SPEC] at @s run function minecraft:bedwars/before/random_team_2teams
 scoreboard players reset * bw.team

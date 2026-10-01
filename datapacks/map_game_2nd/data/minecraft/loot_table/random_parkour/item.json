@@ -57,6 +57,94 @@
               }
             }
           }
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "weight": 6,
+          "quality": 1,
+          "modifier": {
+            "type": "set_components",
+            "components": {
+              "item_name": "跳跃药水 - 右键饮用（跳跃提升 II / 10 秒）",
+              "potion_contents": {
+                "custom_effects": [
+                  {
+                    "id": "jump_boost",
+                    "amplifier": 1,
+                    "duration": 200
+                  }
+                ],
+                "custom_color": 2293580
+              }
+            }
+          }
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "weight": 6,
+          "quality": 1,
+          "modifier": {
+            "type": "set_components",
+            "components": {
+              "item_name": "迅捷药水 - 右键饮用（速度 II / 10 秒）",
+              "potion_contents": {
+                "custom_effects": [
+                  {
+                    "id": "speed",
+                    "amplifier": 1,
+                    "duration": 200
+                  }
+                ],
+                "custom_color": 8171462
+              }
+            }
+          }
+        },
+        {
+          "type": "item",
+          "name": "potion",
+          "weight": 3,
+          "quality": 1,
+          "modifier": {
+            "type": "set_components",
+            "components": {
+              "item_name": "漂浮药水 - 右键饮用（漂浮 I / 10 秒）",
+              "potion_contents": {
+                "custom_effects": [
+                  {
+                    "id": "levitation",
+                    "amplifier": 0,
+                    "duration": 200
+                  }
+                ],
+                "custom_color": 13565951
+              }
+            }
+          }
+        },
+        {
+          "type": "item",
+          "name": "splash_potion",
+          "weight": 8,
+          "quality": 1,
+          "modifier": {
+            "type": "set_components",
+            "components": {
+              "item_name": "缓慢药水 - 右键投掷（缓慢 II / 5 秒）",
+              "potion_contents": {
+                "custom_effects": [
+                  {
+                    "id": "slowness",
+                    "amplifier": 1,
+                    "duration": 100
+                  }
+                ],
+                "custom_color": 5926017
+              }
+            }
+          }
         }
       ]
     }

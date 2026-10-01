@@ -5,3 +5,10 @@ give @s diamond_chestplate 1
 give @s chainmail_chestplate 1
 give @s copper_chestplate 1
 give @s netherite_chestplate 1
+give @s leather_helmet 1
+give @s golden_helmet 1
+give @s iron_helmet 1
+give @s diamond_helmet 1
+give @s chainmail_helmet 1
+give @s copper_helmet 1
+give @s netherite_helmet 1

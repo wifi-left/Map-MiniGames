@@ -2,6 +2,8 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
+execute store result score tmp.team.canjoin board run function minecraft:team/api/can_join {game:"hideseek",join:"function hideseek/join",pull:1b}
+execute if score tmp.team.canjoin board matches 0 run return 0
 tp @s 406 1 -431 -90 0
 team join hide.wait
 title @s title ["\u00a7b\u00a7l方块躲猫猫"]

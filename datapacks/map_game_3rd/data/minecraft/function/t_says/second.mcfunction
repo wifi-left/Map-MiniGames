@@ -1,4 +1,5 @@
-effect give @a[team=t_says] resistance 2 25 true
+# "被箭雨射中"（id 80）期间不发抗性：否则箭矢伤害被完全抵消，命中判定永远触发不了
+execute unless score t_says.scene board matches 80 run effect give @a[team=t_says] resistance 2 25 true
 effect give @a[team=t_says] night_vision 2 25 true
 effect give @a[team=t_says] fire_resistance 2 25 true
 effect give @a[team=t_says] water_breathing 2 25 true

@@ -10,8 +10,8 @@ tellraw @a[team=wait.duel] ["\n§6    游戏开始！\n"]
 ## execute as @a[team=wait.duel] run spreadplayers 22 -65 0 16 false @s
 execute as @a[team=wait.duel] at @s run playsound entity.player.levelup player @s ~ ~ ~ 1 1 1
 #team join play.duel @a[team=wait.duel]
-scoreboard players set duel.ranteam board 1
-execute as @a[team=wait.duel,gamemode=adventure] at @s run function duel/spr
+# 分队走 duel/spr（组队优先），注意是整批一次分完，不要再按人循环调用
+function minecraft:duel/spr
 scoreboard players set duel.state state 1
 scoreboard players set score.yellow tick 0
 scoreboard players set score.blue tick 0

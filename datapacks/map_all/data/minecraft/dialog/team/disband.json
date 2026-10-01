@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:confirmation",
+    "title": { "text": "删除队伍", "color": "red", "bold": true },
+    "pause": false,
+    "body": {
+        "type": "minecraft:plain_message",
+        "width": 400,
+        "contents": [
+            { "text": "确定要删除你的队伍吗？\n", "color": "gray" },
+            { "text": "队伍里所有成员都会被移出队伍，且无法撤销。", "color": "red" }
+        ]
+    },
+    "yes": {
+        "label": { "text": "删除队伍", "color": "red", "bold": true },
+        "tooltip": "确认解散队伍",
+        "action": { "type": "run_command", "command": "/trigger team set 9" }
+    },
+    "no": {
+        "label": "取消",
+        "tooltip": "保留队伍"
+    }
+}

@@ -16,7 +16,7 @@ scoreboard players operation tmp board = wait.player tick
 scoreboard players set 2 board 2
 scoreboard players operation tmp board %= 2 board
 
-execute if score wait.player tick matches 2.. unless score tmp board matches 0 run execute as @a[sort=random,limit=1,team=wait.battle,gamemode=adventure] run function minecraft:battle/spec_not_fair
+execute if score wait.player tick matches 2.. unless score tmp board matches 0 run function minecraft:battle/bench_pick
 
 execute if score wait.player tick matches 2.. run function minecraft:battle/start
 

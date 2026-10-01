@@ -2,6 +2,8 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
+execute store result score tmp.team.canjoin board run function minecraft:team/api/can_join {game:"one_arrow",join:"function one_arrow/join",pull:1b}
+execute if score tmp.team.canjoin board matches 0 run return 0
 team join one_arrow @s
 gamemode adventure @s[gamemode=spectator]
 gamemode adventure @s[gamemode=survival]

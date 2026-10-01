@@ -3,6 +3,8 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 # 绵羊突击队 Sheep Troopers
+execute store result score tmp.team.canjoin board run function minecraft:team/api/can_join {game:"sheepwars",join:"function sheepwars/join",pull:1b}
+execute if score tmp.team.canjoin board matches 0 run return 0
 team join wait.sheepwars @s
 gamemode adventure @s[gamemode=spectator]
 tellraw @a [{"selector":"@s"}," \u00a77加入了 \u00a7b绵羊突击队\u00a77。"]

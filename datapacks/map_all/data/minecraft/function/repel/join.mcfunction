@@ -1,4 +1,6 @@
 ## Repeling War
+execute store result score tmp.team.canjoin board run function minecraft:team/api/can_join {game:"repel",join:"function repel/join",pull:1b}
+execute if score tmp.team.canjoin board matches 0 run return 0
 execute in overworld run tp @s -33 4 -11 0 0
 clear @s
 gamemode adventure @s

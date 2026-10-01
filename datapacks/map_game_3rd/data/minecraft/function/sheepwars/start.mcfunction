@@ -1,5 +1,4 @@
 tag @a[team=wait.sheepwars,gamemode=adventure] add sheepwars.tobeteamed
-scoreboard players set sheep.randomteam temp 0
 function minecraft:sheepwars/random_team
 scoreboard players set sheepwars.state state 1
 title @a[team=play.sheepwars.a] title ["\u00a79队伍A"]

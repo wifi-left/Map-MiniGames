@@ -2,6 +2,8 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
+execute store result score tmp.team.canjoin board run function minecraft:team/api/can_join {game:"hunger",join:"function hunger/join",pull:1b}
+execute if score tmp.team.canjoin board matches 0 run return 0
 team join hunger @s
 tellraw @a ["§a§l[MESSAGE] ",{"selector":"@s"}," §a加入了小游戏 §4§l饥饿战争"]
 execute in airworld run tp @s 453 -49 -308 90 0

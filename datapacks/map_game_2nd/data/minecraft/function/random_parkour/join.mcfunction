@@ -16,6 +16,10 @@ execute in parkourworld run tp @s 8 -54 229 -90 0
 execute at @s run playsound entity.player.levelup player @s ~ ~ ~ 10 1 1
 clear @s
 effect clear @s
+# 记录点：进游戏先清空（park.* 是与大厅跑酷共用的计分项，避免带着别的游戏的坐标进来）
+scoreboard players reset @s park.x
+scoreboard players reset @s park.y
+scoreboard players reset @s park.z
 execute if score random_parkour.state state matches 1.. run function minecraft:random_parkour/spec
 effect give @s instant_health 2 25 true
 

@@ -5,6 +5,8 @@
 
 tellraw @a ["§b§l[Gamom Datapacks] §aReloaded successfully ! §e[Language: 简体中文]"]
 function minecraft:bedwars/setup
+function minecraft:team/setup
+function minecraft:t_says/setup
 bossbar remove boom
 bossbar add boom "拆弹达人"
 bossbar set boom name '\u00a7a拆弹达人 \u00a78| \u00a7b欢迎游玩'

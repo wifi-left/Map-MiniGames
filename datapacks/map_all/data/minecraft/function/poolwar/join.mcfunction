@@ -2,6 +2,8 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
+execute store result score tmp.team.canjoin board run function minecraft:team/api/can_join {game:"poolwar",join:"function poolwar/join",pull:1b}
+execute if score tmp.team.canjoin board matches 0 run return 0
 tellraw @a[team=!pw.wait] ["§a§l[MESSAGE] ",{"selector":"@s"},"§7 加入了 ",{"text":"冬泳怪鸽","color":"#1E90FF","bold":true}," §7!"]
 team join pw.wait
 scoreboard players set wait.player tick 0

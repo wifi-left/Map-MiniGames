@@ -15,6 +15,6 @@ scoreboard players reset * bw.board
 scoreboard players reset * park.x
 scoreboard players reset * park.y
 scoreboard players reset * park.z
-
+function team/api/clear_cache
 # function ttsecond
 

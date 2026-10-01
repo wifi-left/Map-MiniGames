@@ -43,3 +43,8 @@ execute as @e[type=area_effect_cloud,tag=lobby] at @s run data merge entity @s {
 function foodparty:second
 
 function dev/second
+# 组队（/trigger team）：邀请有效期用的秒表，每秒 +1（不要重置，跨重载持续）
+scoreboard players add team.clock board 1
+
+# 组队（/trigger team）：每秒调用一次，内部按 team.sweep 分频，每 10 秒才真正清理一轮邀请
+function minecraft:team/sweep

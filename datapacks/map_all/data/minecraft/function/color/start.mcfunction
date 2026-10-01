@@ -14,6 +14,8 @@ execute as @a[team=wait.color] positioned 13 18 95 run spreadplayers 13 95 0 16 
 execute as @a[team=wait.color] at @s run playsound entity.player.levelup player @s 11 17 93 1 1 1
 team join play.color @a[team=wait.color]
 scoreboard players set color.state state 1
+# 新的一局：轮数计数器清零（第一回合的 summon 里会 +1）
+scoreboard players set color.round tick 0
 schedule clear minecraft:color/summon
 schedule function minecraft:color/summon 3s
 scoreboard players operation color.tt tick = color.time state

@@ -3,6 +3,8 @@
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
 
+execute store result score tmp.team.canjoin board run function minecraft:team/api/can_join {game:"cloud",join:"function cloud/join",pull:1b}
+execute if score tmp.team.canjoin board matches 0 run return 0
 team join wait.sw @s
 gamemode adventure @s
 title @s title ["\u00a7f\u00a7l云端争霸"]

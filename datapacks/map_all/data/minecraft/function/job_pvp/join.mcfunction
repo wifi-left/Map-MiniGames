@@ -4,6 +4,8 @@
 ## 
 
 ## 检测是否禁止启动
+execute store result score tmp.team.canjoin board run function minecraft:team/api/can_join {game:"job_pvp",join:"function job_pvp/join",pull:1b}
+execute if score tmp.team.canjoin board matches 0 run return 0
 execute if score game.pvp board matches 0 run tellraw @s ["§c游戏已被管理员禁用。\n§7如果您是管理员，您可以在大厅设置中切换模式。"]
 execute if score game.pvp board matches 0 run playsound block.anvil.land player @s ~ ~ ~ 1 1 0
 execute if score game.pvp board matches 0 run return 0

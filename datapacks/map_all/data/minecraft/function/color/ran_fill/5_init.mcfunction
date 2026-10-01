@@ -7,7 +7,8 @@ fill -7 17 75 32 17 114 air
 
 # 2-18
 
-execute store result storage minecraft:temp random_value int 1 run random value 2..18
+# 源行由 reroll 每回合掷一次（同一回合内固定）；缺失时才兜底，避免宏缺参把地板留在空气状态
+execute unless data storage minecraft:temp random_value run execute store result storage minecraft:temp random_value int 1 run random value 2..18
 function color/ran_fill/5_place with storage minecraft:temp
 
 function color/rancolor
@@ -16,6 +17,10 @@ execute positioned -52 35 61 run function minecraft:color/ran_fill/3_whichblock
 ## WARNING: 'storage' will not be transformed because we don't know what to do with it.
 data merge storage minecraft:temp {x1:-7,x2:32,y1:17,y2:17,z1:75,z2:114,replace_block:"diamond_block"}
 function color/ran_fill/5_place_block with storage minecraft:temp
+
+# 补洞：本类型的地板来自地图 x36..75 的渐变源行，源行若缺格会留下 air
+# 用当前 $(block) 把 36x36 内的 air 补齐，保证判定前是完整平面
+function color/ran_fill/patch_holes with storage minecraft:temp
 # white
 # orange
 # magenta

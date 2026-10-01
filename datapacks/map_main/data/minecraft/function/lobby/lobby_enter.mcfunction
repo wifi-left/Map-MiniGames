@@ -3,6 +3,8 @@ execute as @a unless score @s old matches 1.. run function minecraft:check_renam
 execute as @a[scores={leave=1..}] in overworld run tp @s 188 124 32
 execute as @a[scores={leave=1..}] run function lobby/rejoin
 gamemode survival @a[scores={leave=1..}]
+# 重新加入游戏：清空自己的组队邀请记录（别人发给我的 + 我发出去的）
+execute as @a[scores={leave=1..}] run function minecraft:team/api/clear_invites_self
 scoreboard players reset @a[scores={leave=1..}] leave
 
 # execute as @a[tag=music.playing] at @s run function main_loop
@@ -10,6 +12,8 @@ scoreboard players reset @a[scores={leave=1..}] leave
 tag @a[gamemode=survival,nbt={Dimension:"minecraft:overworld"}] add NEWENTER
 tp @a[tag=NEWENTER] 188 124 32 0 0
 team join lobby @a[tag=NEWENTER]
+# 回到大厅（登录进图 / 退出游戏回大厅）：检查组队状态 —— 队伍不正常的重置，队长独处则自动解散无效队伍
+execute as @a[tag=NEWENTER] run function minecraft:team/api/on_lobby_enter
 clear @a[tag=NEWENTER]
 execute as @a[tag=NEWENTER] at @s run tag @s add map.old
 execute if entity @a[tag=NEWENTER] run function lobby/bossbar_refresh
