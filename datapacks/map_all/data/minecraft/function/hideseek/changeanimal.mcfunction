@@ -12,10 +12,10 @@ tag @s remove seel
 
 # execute if score @s LRS_START_DJS matches 1 run summon minecraft:cat 335 65 -332 {DeathLootTable:"",Invulnerable:1b,PersistenceRequired:1b,Team:"hide.play.ani",Tags:["hianimal","hide.animals","neww"],NoAI:1b}
 item replace block 0 2 0 container.0 with air
-execute at @s align xyz if block ~ ~-0.3 ~ #hideseek run summon minecraft:block_display ~ ~ ~ {Invulnerable:1b,Tags:["hianimal","hide.animals","neww"],block_state:{Name:"minecraft:diamond_block"}}
+execute at @s align xyz if block ~ ~-0.3 ~ #hideseek run summon minecraft:block_display ~ ~ ~ {Invulnerable:1b,Tags:["hianimal","hide.animals","neww"],block_state:{id:"minecraft:diamond_block"}}
 execute at @s align xyz if block ~ ~-0.3 ~ #hideseek run loot replace block 0 2 0 container.0 mine ~ ~-0.3 ~ shears[enchantments={"minecraft:silk_touch":1}]
 
-execute if data block 0 2 0 Items[0] as @e[tag=neww] run data modify entity @s block_state.Name set from block 0 2 0 Items[0].id
+execute if data block 0 2 0 Items[0] as @e[tag=neww] run data modify entity @s block_state.id set from block 0 2 0 Items[0].id
 execute at @s align xyz if block ~ ~-0.3 ~ #hideseek run scoreboard players reset @e[tag=shouldtp,limit=1]
 execute at @s align xyz if block ~ ~-0.3 ~ #hideseek run kill @e[tag=shouldtp,limit=1]
 tag @e[tag=neww] add hide.cosplay
