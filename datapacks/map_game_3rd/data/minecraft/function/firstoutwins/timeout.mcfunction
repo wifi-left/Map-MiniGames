@@ -1,0 +1,1 @@
+function minecraft:firstoutwins/over/over

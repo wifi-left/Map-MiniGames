@@ -60,6 +60,8 @@ tag @s remove stronghold.alive
 tag @s remove bw.show.target
 tag @s remove merchant.alive
 
+tag @s remove firstoutwins.win
+
 execute store result score temp.ender.p.0 temp run data get entity @s UUID[0]
 execute store result score temp.ender.p.1 temp run data get entity @s UUID[1]
 execute store result score temp.ender.p.2 temp run data get entity @s UUID[2]

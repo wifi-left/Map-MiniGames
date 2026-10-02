@@ -34,6 +34,7 @@ function minecraft:lobby/quickplay_info {category:"休闲类游戏",name:"建筑
 function minecraft:lobby/quickplay_info {category:"休闲类游戏",name:"不要相信T氏的话",color:b,join:"function t_says/join"}
 function minecraft:lobby/quickplay_info {category:"休闲类游戏",name:"你建我跑",color:b,join:"function build_parkour/join"}
 function minecraft:lobby/quickplay_info {category:"休闲类游戏",name:"方块竞速",color:b,join:"function blockrace/join"}
+function minecraft:lobby/quickplay_info {category:"休闲类游戏",name:"谢幕者胜",color:b,join:"function firstoutwins/join"}
 
 function minecraft:lobby/quickplay_info {category:"灾难类游戏",name:"灾难：雪灾",color:b,join:"function disaster/snow/join"}
 

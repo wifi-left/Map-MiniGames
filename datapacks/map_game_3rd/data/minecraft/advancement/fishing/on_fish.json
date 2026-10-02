@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "on_fishing_up": {
+      "trigger": "minecraft:fishing_rod_hooked",
+      "conditions": {}
+    }
+  },
+  "requirements": [
+    [
+      "on_fishing_up"
+    ]
+  ],
+  "rewards": {
+    "loot": {
+        "type": "advancement_reward",
+        "pools": [
+            {
+                "rolls": 1,
+                "entries": [{
+                    "type": "minecraft:loot_table",
+                    "value": "fishing/fishing"
+                }]
+            }
+        ]
+    },
+    "function": "minecraft:fishing/on_fished"
+  }
+}

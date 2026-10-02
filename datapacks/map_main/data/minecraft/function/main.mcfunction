@@ -236,6 +236,7 @@ execute if score elytra.state state matches 1.. in parkourworld run function min
 execute if score mutouren.state state matches 1.. in parkourworld run function minecraft:mutouren/tick
 execute if score disaster.snow.state state matches 1.. in airworld run function minecraft:disaster/snow/tick
 execute if score blockrace.state state matches 1.. in airworld run function minecraft:blockrace/tick
+execute if score firstoutwins.state state matches 1.. in airworld run function minecraft:firstoutwins/tick
 
 
 execute as @e[type=ender_dragon,tag=!dragon.flagged] run function minecraft:lock_dragon

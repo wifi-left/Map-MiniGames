@@ -1,6 +1,6 @@
 $data modify storage minecraft:temp game_enable_state_tmp set value $(keys)
 data modify storage minecraft:temp total_game_list set from storage minecraft:temp random_games_all.games
-function minecraft:small_games/total/games/all
+function minecraft:small_games/total/games/all_total_games
 function minecraft:small_games/total/settings/modify_game_enable_state_dfs
 playsound entity.experience_orb.pickup player @s
 function minecraft:small_games/total/settings/list
