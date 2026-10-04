@@ -5,4 +5,4 @@ execute if score hideseek.settings.map board matches 3 run spreadplayers 391 -56
 data modify block 0 2 0 Items set value []
 execute at @s align xyz if block ~ ~-1 ~ #hideseek run loot replace block 0 2 0 container.0 mine ~ ~-0.3 ~ shears[enchantments={"minecraft:silk_touch":1}]
 execute at @s align xyz unless block ~ ~-1 ~ #hideseek run kill @s
-execute if data block 0 2 0 Items[0] as @e[tag=neww] run data modify entity @s block_state.Name set from block 0 2 0 Items[0].id
+execute if data block 0 2 0 Items[0] as @e[tag=neww] run data modify entity @s block_state set from block 0 2 0 Items[0].id
