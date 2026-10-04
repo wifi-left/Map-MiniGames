@@ -51,7 +51,7 @@ function minecraft:lobby/quickplay_info {category:"PVP类游戏",name:"幸运之
 function minecraft:lobby/quickplay_info {category:"PVP类游戏",name:"生存游戏",color:c,join:"function surgame:join"}
 function minecraft:lobby/quickplay_info {category:"PVP类游戏",name:"起床战争",color:c,join:"function bedwars/message/join"}
 
-function minecraft:lobby/quickplay_info {category:"PVP类游戏",name:"生存游戏",color:c,join:"function surgame:join"}
+function minecraft:lobby/quickplay_info {category:"杂项",name:"搭路练习",color:a,join:"function bridge_practice/join"}
 
 function minecraft:lobby/quickplay_info {category:"单多人休闲类游戏",name:"飞行大赛",color:3,join:"function elytra/join"}
 function minecraft:lobby/quickplay_info {category:"单多人休闲类游戏",name:"桌游",color:3,join:"function desk/join"}
