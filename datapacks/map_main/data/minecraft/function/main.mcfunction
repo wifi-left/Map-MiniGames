@@ -138,6 +138,7 @@ execute as @e[type=spectral_arrow,nbt={inGround:1b}] at @s run function minecraf
 execute if score gametotal state matches 1.. run function minecraft:small_games/total/tick
 # execute if score @a[team=wait.total] run function minecraft:small_games/total/tick
 execute as @a[scores={use.egg=1..}] at @s run function playeruseegg
+execute as @a[scores={use.snowball=1..}] at @s run function playerusesnowball
 execute as @a[scores={fireball=1..}] at @s run function snowtofire
 
 tag @a[tag=sneaking] remove sneaking

@@ -9,6 +9,6 @@ title @a[team=hide.play.hun] actionbar ["\u00a7a你将在 ",{"score":{"objective
 
 execute if score hide.huntgo board matches ..0 run function hideseek/prepare/hungo
 
-execute if score hide.huntgo board matches 25 as @a[team=hide.play.ani] at @s run function hideseek/changeblock
+# execute if score hide.huntgo board matches 25 as @a[team=hide.play.ani] at @s run function hideseek/changeblock
 
 

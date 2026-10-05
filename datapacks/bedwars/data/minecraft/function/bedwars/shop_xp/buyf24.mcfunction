@@ -7,9 +7,9 @@
 execute as @s at @s store result score @s bw.tmp.dm run clear @s diamond 0
 ## Buy.-24
 execute if score @s xp matches 20.. run xp add @s -4 levels
-execute unless score @s xp matches 20.. run tellraw @s ["§c你的资源不够买这个东西!"]
+execute unless score @s xp matches 20.. run tellraw @s ["§c你的资源不够买这个东西！"]
 execute unless score @s xp matches 20.. run playsound minecraft:entity.enderman.teleport player @s ~ ~ ~ 1 0 1
-execute if score @s xp matches 20.. run tellraw @s ["§a你购买了§6Arrow * 4"]
-execute if score @s xp matches 20.. run give @s arrow[can_place_on=[{blocks:"#minecraft:bwplace"}],tooltip_display={hidden_components:[can_place_on,can_break]},can_break=[{blocks:"#minecraft:bedblocks"}]] 4
+execute if score @s xp matches 20.. run tellraw @s ["§a你购买了 §f箭 §7× 4"]
+execute if score @s xp matches 20.. run give @s arrow[item_name="箭",can_place_on=[{blocks:"#minecraft:bwplace"}],tooltip_display={hidden_components:["minecraft:can_place_on","minecraft:can_break"]},can_break=[{blocks:"#minecraft:bedblocks"}]] 4
 
 

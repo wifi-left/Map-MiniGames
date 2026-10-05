@@ -41,6 +41,7 @@ tag @s remove wolf.connected
 tag @s remove sur.killedbyzom
 tag @s remove bw.play
 tag @s remove bw.player
+tag @s remove bw.scrolling
 tag @s remove boat.notinboats
 tag @s remove play.total
 tag @s remove boat.notinboat

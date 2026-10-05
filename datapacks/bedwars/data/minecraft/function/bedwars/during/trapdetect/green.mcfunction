@@ -3,4 +3,4 @@ execute as @a[distance=12..,tag=bw.play,gamemode=adventure,team=!bw.green,tag=bw
 # 检测有没有陷阱
 execute unless score bw.green.trap.1 board matches 1.. run return fail
 # 有陷阱：
-execute as @a[distance=..8,tag=bw.play,gamemode=adventure,team=!bw.green,tag=!bw.triggeredtrap] run function minecraft:bedwars/during/trigger_trap/green
+execute as @a[distance=..8,tag=bw.play,gamemode=adventure,team=!bw.green,tag=!bw.triggeredtrap,tag=!bw.milk] run function minecraft:bedwars/during/trigger_trap/green

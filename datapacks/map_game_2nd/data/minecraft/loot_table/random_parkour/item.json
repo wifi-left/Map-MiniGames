@@ -27,7 +27,7 @@
         {
           "type": "item",
           "name": "fishing_rod",
-          "weight": 10,
+          "weight": 5,
           "quality": 1,
           "modifier": {
             "type": "set_components",
@@ -66,7 +66,7 @@
           "modifier": {
             "type": "set_components",
             "components": {
-              "item_name": "跳跃药水 - 右键饮用（跳跃提升 II / 10 秒）",
+              "custom_name": "跳跃药水 - 右键饮用（跳跃提升 II / 10 秒）",
               "potion_contents": {
                 "custom_effects": [
                   {
@@ -88,7 +88,7 @@
           "modifier": {
             "type": "set_components",
             "components": {
-              "item_name": "迅捷药水 - 右键饮用（速度 II / 10 秒）",
+              "custom_name": "迅捷药水 - 右键饮用（速度 II / 10 秒）",
               "potion_contents": {
                 "custom_effects": [
                   {
@@ -110,7 +110,7 @@
           "modifier": {
             "type": "set_components",
             "components": {
-              "item_name": "漂浮药水 - 右键饮用（漂浮 I / 10 秒）",
+              "custom_name": "漂浮药水 - 右键饮用（漂浮 I / 10 秒）",
               "potion_contents": {
                 "custom_effects": [
                   {
@@ -132,7 +132,7 @@
           "modifier": {
             "type": "set_components",
             "components": {
-              "item_name": "缓慢药水 - 右键投掷（缓慢 II / 5 秒）",
+              "custom_name": "缓慢药水 - 右键投掷（缓慢 II / 5 秒）",
               "potion_contents": {
                 "custom_effects": [
                   {

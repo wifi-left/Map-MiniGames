@@ -1,5 +1,4 @@
 # execute if score bw.mode state matches 3 run function minecraft:bedwars/special/xp_purchase
-# execute if score bw.mode state matches 7 run function minecraft:bedwars/special/xp_purchase
 # IRON INGOT
 scoreboard players reset @s bw.board
 execute as @s store success score @s bw.board run clear @s iron_ingot[custom_data~{shop:iron_ingot}]

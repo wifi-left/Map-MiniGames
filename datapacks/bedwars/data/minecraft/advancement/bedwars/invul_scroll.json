@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "use": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "player": {
+          "type": "entity_properties",
+          "entity": "this",
+          "predicate": {
+            "nbt": "{Tags:[\"bw.player\"]}"
+          }
+        },
+        "item": {
+          "items": "minecraft:paper",
+          "predicates": {
+            "minecraft:custom_data": {
+              "bw_invul": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "use"
+    ]
+  ],
+  "rewards": {
+    "function": "minecraft:bedwars/item/invul_use"
+  },
+  "sends_telemetry_event": false
+}

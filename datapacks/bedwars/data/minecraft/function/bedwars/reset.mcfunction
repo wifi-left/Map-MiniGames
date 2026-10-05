@@ -40,6 +40,13 @@ scoreboard players reset @e[type=sheep,tag=bw.tntsheep]
 kill @e[type=sheep,tag=bw.tntsheep]
 kill @e[type=marker,tag=tntsheep.spawn]
 
+# 新道具：救援平台先把黏液收回来再清标记；防御塔的标记直接清（已搭好的方块交给地图重置）
+execute as @e[tag=bw.pf] at @s run function minecraft:bedwars/item/platform_retract
+kill @e[tag=bw.pf]
+kill @e[tag=bw.tower.building]
+kill @e[tag=bw.tower.spawn]
+tag @a remove bw.scrolling
+
 scoreboard players set bw.state state -1
 schedule clear bedwars/resets/mogu
 schedule clear bedwars/resets/unnamed
@@ -106,10 +113,41 @@ tag @a remove bw.attack
 tag @a remove bw.armor
 tag @a remove bw.fasti
 tag @a remove bw.fastii
+tag @a remove bw.milk
+tag @a remove bw.invul
+scoreboard players reset @a bw.milk.t
+scoreboard players reset @a bw.invul.t
 scoreboard players set bw.em board 0
 scoreboard players set bw.dm board 0
-scoreboard players set bw.gd board 0
-scoreboard players set bw.ir board 0
+# 铁/金/锻造绿宝石：每队各自的倒计时与间隔（只有铁和金分团队；间隔会随锻造炉升级变化，见 shop/forge/apply_all）
+scoreboard players set bw.forge.red board 0
+scoreboard players set bw.forge.blue board 0
+scoreboard players set bw.forge.yellow board 0
+scoreboard players set bw.forge.green board 0
+scoreboard players set bw.ir.red board 0
+scoreboard players set bw.ir.blue board 0
+scoreboard players set bw.ir.yellow board 0
+scoreboard players set bw.ir.green board 0
+scoreboard players set bw.gd.red board 0
+scoreboard players set bw.gd.blue board 0
+scoreboard players set bw.gd.yellow board 0
+scoreboard players set bw.gd.green board 0
+scoreboard players set bw.ef.red board 0
+scoreboard players set bw.ef.blue board 0
+scoreboard players set bw.ef.yellow board 0
+scoreboard players set bw.ef.green board 0
+scoreboard players set bw.set.ir.red board 50
+scoreboard players set bw.set.ir.blue board 50
+scoreboard players set bw.set.ir.yellow board 50
+scoreboard players set bw.set.ir.green board 50
+scoreboard players set bw.set.gd.red board 160
+scoreboard players set bw.set.gd.blue board 160
+scoreboard players set bw.set.gd.yellow board 160
+scoreboard players set bw.set.gd.green board 160
+scoreboard players set bw.set.ef.red board 0
+scoreboard players set bw.set.ef.blue board 0
+scoreboard players set bw.set.ef.yellow board 0
+scoreboard players set bw.set.ef.green board 0
 
 # 加成
 scoreboard players set bw.armor.green board 0
@@ -135,11 +173,9 @@ execute as @a[team=bw.green] run function player:empty_enderchest
 
 tag @a remove bw.triggeredtrap
 
-kill @e[type=arrow]
-kill @e[type=fireball]
-kill @e[type=egg]
-kill @e[type=creeper]
-kill @e[type=item]
+# 掉落物等一律按类型清理的实体都交给 clear_entities（只在起床范围内清）
+# 临时实体（火球 / 蠹虫 / 铁傀儡 / 僵尸 / 各种临时标记）统一走这里，与游戏结束共用同一份清单
+function minecraft:bedwars/resets/clear_entities
 
 scoreboard players set bw.red.trap.1 board -1
 scoreboard players set bw.red.trap.2 board -1
@@ -153,3 +189,20 @@ scoreboard players set bw.green.trap.3 board -1
 scoreboard players set bw.yellow.trap.1 board -1
 scoreboard players set bw.yellow.trap.2 board -1
 scoreboard players set bw.yellow.trap.3 board -1
+
+# 团队增益：治疗池 / 快速重生（0 = 未购买）
+scoreboard players set bw.heal.green board 0
+scoreboard players set bw.heal.red board 0
+scoreboard players set bw.heal.blue board 0
+scoreboard players set bw.heal.yellow board 0
+scoreboard players set bw.respawn.green board 0
+scoreboard players set bw.respawn.red board 0
+scoreboard players set bw.respawn.blue board 0
+scoreboard players set bw.respawn.yellow board 0
+# 永久床模式的重生次数（只有 mode 7 会在 resets/resetover 里改成 6 / 10）
+scoreboard players set bw.lives.green board 0
+scoreboard players set bw.lives.red board 0
+scoreboard players set bw.lives.blue board 0
+scoreboard players set bw.lives.yellow board 0
+# 僵尸潮计时（只有 mode 6 会在 resets/resetover 里改成 120）
+scoreboard players set bw.zombie.t board 0

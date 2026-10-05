@@ -4,7 +4,6 @@
 ## 
 scoreboard players set bw.shopmode board 0
 execute if score bw.mode state matches 3 run scoreboard players set bw.shopmode board 1
-execute if score bw.mode state matches 7 run scoreboard players set bw.shopmode board 1
 ## Diamond Shop
 
 
@@ -16,6 +15,9 @@ execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.6
 
 execute as @s store success score @s bw.board run clear @s iron_pickaxe[custom_data~{shop:7}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.7
+
+execute as @s store success score @s bw.board run clear @s blast_furnace[custom_data~{shop:forge}]
+execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.forge
 
 execute as @s store success score @s bw.board run clear @s diamond_pickaxe[custom_data~{shop:8}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.8
@@ -53,7 +55,7 @@ execute as @s store success score @s bw.board run clear @s ladder[custom_data~{s
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-5
 
 
-execute as @s store success score @s bw.board run clear @s oak_planks[custom_data~{shop:-6}]
+execute as @s store success score @s bw.board run clear @s dark_oak_planks[custom_data~{shop:-6}]
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-6
 
 
@@ -149,27 +151,90 @@ execute as @s store success score @s bw.board run clear @s tnt[custom_data~{shop
 execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-35
 
 
-execute as @s store success score @s bw.board run clear @s wind_charge[custom_data~{shop:-36}]
-execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-36
+execute as @s store success score @s bw.board run clear @s wind_charge[custom_data~{shop:-40}]
+execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-40
 
 #MACE 重锤
 
-execute as @s store success score @s bw.board run clear @s mace[custom_data~{shop:-37}]
-execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-37
+execute as @s store success score @s bw.board run clear @s mace[custom_data~{shop:-41}]
+execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-41
 
 # 海绵
 
-execute as @s store success score @s bw.board run clear @s sponge[custom_data~{shop:-38}]
-execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-38
+execute as @s store success score @s bw.board run clear @s sponge[custom_data~{shop:-42}]
+execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-42
 
 # 盾
 
-execute as @s store success score @s bw.board run clear @s shield[custom_data~{shop:-39}]
-execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-39
-# 虚空回城卷轴
+execute as @s store success score @s bw.board run clear @s shield[custom_data~{shop:-43}]
+execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-43
 
-execute as @s store success score @s bw.board run clear @s paper[custom_data~{shop:void}]
-execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.void
+# 火焰弹
+
+execute as @s store success score @s bw.board run clear @s blaze_powder[custom_data~{shop:-44}]
+execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-44
+# 回城卷轴
+
+execute as @s store success score @s bw.board run clear @s paper[custom_data~{shop:-45}]
+execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-45
+
+# 救援平台
+
+execute as @s store success score @s bw.board run clear @s blaze_rod[custom_data~{shop:-46}]
+execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-46
+
+# 速建防御塔
+
+execute as @s store success score @s bw.board run clear @s zombie_spawn_egg[custom_data~{shop:-47}]
+execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-47
+
+
+
+# 中毒箭
+
+execute as @s store success score @s bw.board run clear @s tipped_arrow[custom_data~{shop:-49}]
+execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-49
+
+# 无敌卷轴
+
+execute as @s store success score @s bw.board run clear @s paper[custom_data~{shop:-50}]
+execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-50
+
+# 附魔金苹果
+
+execute as @s store success score @s bw.board run clear @s enchanted_golden_apple[custom_data~{shop:-51}]
+execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-51
+
+# 铁傀儡守卫
+
+execute as @s store success score @s bw.board run clear @s iron_golem_spawn_egg[custom_data~{shop:-52}]
+execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-52
+
+# 蠹虫雪球
+
+execute as @s store success score @s bw.board run clear @s snowball[custom_data~{shop:-53}]
+execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-53
+
+# 魔法牛奶
+
+execute as @s store success score @s bw.board run clear @s potion[custom_data~{shop:-54}]
+execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-54
+
+# 力量药水 / 抗性提升药水 / 瞬间治疗 II
+
+execute as @s store success score @s bw.board run clear @s potion[custom_data~{shop:-55}]
+execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-55
+
+execute as @s store success score @s bw.board run clear @s potion[custom_data~{shop:-56}]
+execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-56
+
+execute as @s store success score @s bw.board run clear @s potion[custom_data~{shop:-57}]
+execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-57
+
+# 漂浮羽毛
+
+execute as @s store success score @s bw.board run clear @s feather[custom_data~{shop:-58}]
+execute as @s if score @s bw.board matches 1.. run tag @s add bw.buy.-58
 
 ## Diamond Shop
 
@@ -195,6 +260,10 @@ execute as @s[tag=bw.buy.7] at @s run playsound minecraft:block.note_block.pling
 execute as @s[tag=bw.buy.7] run function minecraft:bedwars/shop/buy7
 #/playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
 tag @s remove bw.buy.7
+
+execute as @s[tag=bw.buy.forge] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute as @s[tag=bw.buy.forge] run function minecraft:bedwars/shop/buy_forge
+tag @s remove bw.buy.forge
 
 execute as @s[tag=bw.buy.8] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
 execute as @s[tag=bw.buy.8] run function minecraft:bedwars/shop/buy8
@@ -345,31 +414,108 @@ execute if score bw.shopmode board matches 0 as @s[tag=bw.buy.-35] at @s run fun
 execute if score bw.shopmode board matches 1 as @s[tag=bw.buy.-35] at @s run function minecraft:bedwars/shop_xp/buyf35
 tag @s remove bw.buy.-35
 
-execute as @s[tag=bw.buy.-36] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
-execute if score bw.shopmode board matches 0 as @s[tag=bw.buy.-36] at @s run function minecraft:bedwars/shop/buy36
-execute if score bw.shopmode board matches 1 as @s[tag=bw.buy.-36] at @s run function minecraft:bedwars/shop_xp/buy36
-tag @s remove bw.buy.-36
+execute as @s[tag=bw.buy.-40] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute if score bw.shopmode board matches 0 as @s[tag=bw.buy.-40] at @s run function minecraft:bedwars/shop/buy40
+execute if score bw.shopmode board matches 1 as @s[tag=bw.buy.-40] at @s run function minecraft:bedwars/shop_xp/buy40
+tag @s remove bw.buy.-40
 
 #
-execute as @s[tag=bw.buy.-37] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
-execute if score bw.shopmode board matches 0 as @s[tag=bw.buy.-37] at @s run function minecraft:bedwars/shop/buy37
-execute if score bw.shopmode board matches 1 as @s[tag=bw.buy.-37] at @s run function minecraft:bedwars/shop_xp/buy37
-tag @s remove bw.buy.-37
+execute as @s[tag=bw.buy.-41] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute if score bw.shopmode board matches 0 as @s[tag=bw.buy.-41] at @s run function minecraft:bedwars/shop/buy41
+execute if score bw.shopmode board matches 1 as @s[tag=bw.buy.-41] at @s run function minecraft:bedwars/shop_xp/buy41
+tag @s remove bw.buy.-41
 
-execute as @s[tag=bw.buy.-38] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
-execute if score bw.shopmode board matches 0 as @s[tag=bw.buy.-38] at @s run function minecraft:bedwars/shop/buy38
-execute if score bw.shopmode board matches 1 as @s[tag=bw.buy.-38] at @s run function minecraft:bedwars/shop_xp/buy38
-tag @s remove bw.buy.-38
+execute as @s[tag=bw.buy.-42] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute if score bw.shopmode board matches 0 as @s[tag=bw.buy.-42] at @s run function minecraft:bedwars/shop/buy42
+execute if score bw.shopmode board matches 1 as @s[tag=bw.buy.-42] at @s run function minecraft:bedwars/shop_xp/buy42
+tag @s remove bw.buy.-42
 
-execute as @s[tag=bw.buy.-39] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
-execute if score bw.shopmode board matches 0 as @s[tag=bw.buy.-39] at @s run function minecraft:bedwars/shop/buy39
-execute if score bw.shopmode board matches 1 as @s[tag=bw.buy.-39] at @s run function minecraft:bedwars/shop_xp/buy39
-tag @s remove bw.buy.-39
+execute as @s[tag=bw.buy.-43] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute if score bw.shopmode board matches 0 as @s[tag=bw.buy.-43] at @s run function minecraft:bedwars/shop/buy43
+execute if score bw.shopmode board matches 1 as @s[tag=bw.buy.-43] at @s run function minecraft:bedwars/shop_xp/buy43
+tag @s remove bw.buy.-43
 
-execute as @s[tag=bw.buy.void] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
-execute if score bw.shopmode board matches 0 as @s[tag=bw.buy.void] at @s run function minecraft:bedwars/shop/buyvoid
-execute if score bw.shopmode board matches 1 as @s[tag=bw.buy.void] at @s run function minecraft:bedwars/shop_xp/buyvoid
-tag @s remove bw.buy.void
+execute as @s[tag=bw.buy.-44] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute if score bw.shopmode board matches 0 as @s[tag=bw.buy.-44] at @s run function minecraft:bedwars/shop/buy44
+execute if score bw.shopmode board matches 1 as @s[tag=bw.buy.-44] at @s run function minecraft:bedwars/shop_xp/buy44
+tag @s remove bw.buy.-44
+
+execute as @s[tag=bw.buy.-45] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute if score bw.shopmode board matches 0 as @s[tag=bw.buy.-45] at @s run function minecraft:bedwars/shop/buy45
+execute if score bw.shopmode board matches 1 as @s[tag=bw.buy.-45] at @s run function minecraft:bedwars/shop_xp/buy45
+tag @s remove bw.buy.-45
+
+execute as @s[tag=bw.buy.-46] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute if score bw.shopmode board matches 0 as @s[tag=bw.buy.-46] at @s run function minecraft:bedwars/shop/buy46
+execute if score bw.shopmode board matches 1 as @s[tag=bw.buy.-46] at @s run function minecraft:bedwars/shop_xp/buy46
+tag @s remove bw.buy.-46
+
+execute as @s[tag=bw.buy.-47] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute if score bw.shopmode board matches 0 as @s[tag=bw.buy.-47] run function minecraft:bedwars/shop/buy47
+execute if score bw.shopmode board matches 1 as @s[tag=bw.buy.-47] run function minecraft:bedwars/shop_xp/buy47
+tag @s remove bw.buy.-47
+
+
+
+# 中毒箭
+execute as @s[tag=bw.buy.-49] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute if score bw.shopmode board matches 0 as @s[tag=bw.buy.-49] run function minecraft:bedwars/shop/buyf49
+execute if score bw.shopmode board matches 1 as @s[tag=bw.buy.-49] run function minecraft:bedwars/shop_xp/buyf49
+tag @s remove bw.buy.-49
+
+# 无敌卷轴
+execute as @s[tag=bw.buy.-50] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute if score bw.shopmode board matches 0 as @s[tag=bw.buy.-50] run function minecraft:bedwars/shop/buyf50
+execute if score bw.shopmode board matches 1 as @s[tag=bw.buy.-50] run function minecraft:bedwars/shop_xp/buyf50
+tag @s remove bw.buy.-50
+
+# 附魔金苹果
+execute as @s[tag=bw.buy.-51] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute if score bw.shopmode board matches 0 as @s[tag=bw.buy.-51] run function minecraft:bedwars/shop/buy51
+execute if score bw.shopmode board matches 1 as @s[tag=bw.buy.-51] run function minecraft:bedwars/shop_xp/buy51
+tag @s remove bw.buy.-51
+
+# 铁傀儡守卫
+execute as @s[tag=bw.buy.-52] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute if score bw.shopmode board matches 0 as @s[tag=bw.buy.-52] run function minecraft:bedwars/shop/buy52
+execute if score bw.shopmode board matches 1 as @s[tag=bw.buy.-52] run function minecraft:bedwars/shop_xp/buy52
+tag @s remove bw.buy.-52
+
+# 蠹虫雪球
+execute as @s[tag=bw.buy.-53] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute if score bw.shopmode board matches 0 as @s[tag=bw.buy.-53] run function minecraft:bedwars/shop/buy53
+execute if score bw.shopmode board matches 1 as @s[tag=bw.buy.-53] run function minecraft:bedwars/shop_xp/buy53
+tag @s remove bw.buy.-53
+
+# 魔法牛奶
+execute as @s[tag=bw.buy.-54] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute if score bw.shopmode board matches 0 as @s[tag=bw.buy.-54] run function minecraft:bedwars/shop/buy54
+execute if score bw.shopmode board matches 1 as @s[tag=bw.buy.-54] run function minecraft:bedwars/shop_xp/buy54
+tag @s remove bw.buy.-54
+
+# 力量药水
+execute as @s[tag=bw.buy.-55] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute if score bw.shopmode board matches 0 as @s[tag=bw.buy.-55] run function minecraft:bedwars/shop/buy55
+execute if score bw.shopmode board matches 1 as @s[tag=bw.buy.-55] run function minecraft:bedwars/shop_xp/buy55
+tag @s remove bw.buy.-55
+
+# 抗性提升药水
+execute as @s[tag=bw.buy.-56] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute if score bw.shopmode board matches 0 as @s[tag=bw.buy.-56] run function minecraft:bedwars/shop/buy56
+execute if score bw.shopmode board matches 1 as @s[tag=bw.buy.-56] run function minecraft:bedwars/shop_xp/buy56
+tag @s remove bw.buy.-56
+
+# 瞬间治疗 II 药水
+execute as @s[tag=bw.buy.-57] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute if score bw.shopmode board matches 0 as @s[tag=bw.buy.-57] run function minecraft:bedwars/shop/buy57
+execute if score bw.shopmode board matches 1 as @s[tag=bw.buy.-57] run function minecraft:bedwars/shop_xp/buy57
+tag @s remove bw.buy.-57
+
+# 漂浮羽毛
+execute as @s[tag=bw.buy.-58] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute if score bw.shopmode board matches 0 as @s[tag=bw.buy.-58] run function minecraft:bedwars/shop/buy58
+execute if score bw.shopmode board matches 1 as @s[tag=bw.buy.-58] run function minecraft:bedwars/shop_xp/buy58
+tag @s remove bw.buy.-58
 #
 
 execute as @s[tag=bw.buy.9] at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
@@ -408,6 +554,21 @@ execute as @s if score @s bw.board matches 1.. run function minecraft:bedwars/sh
 execute as @s store success score @s bw.board run clear @s *[custom_data~{shop:trap_3}]
 execute as @s if score @s bw.board matches 1.. run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
 execute as @s if score @s bw.board matches 1.. run function minecraft:bedwars/shop/buy_trap_3
+
+# 治疗池（团队升级）
+execute as @s store success score @s bw.board run clear @s *[custom_data~{shop:heal}]
+execute as @s if score @s bw.board matches 1.. run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute as @s if score @s bw.board matches 1.. run function minecraft:bedwars/shop/buy_heal
+
+# 快速重生（团队升级）
+execute as @s store success score @s bw.board run clear @s *[custom_data~{shop:respawn}]
+execute as @s if score @s bw.board matches 1.. run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute as @s if score @s bw.board matches 1.. run function minecraft:bedwars/shop/buy_respawn
+
+# 警报陷阱（shop:trap_4）
+execute as @s store success score @s bw.board run clear @s *[custom_data~{shop:trap_4}]
+execute as @s if score @s bw.board matches 1.. run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2 1
+execute as @s if score @s bw.board matches 1.. run function minecraft:bedwars/shop/buy_trap_4
 
 
 execute if score bw.shopmode board matches 1 run function minecraft:bedwars/special/xp_purchase

@@ -12,6 +12,7 @@
 /new_datapacks
 /data/JMPlayerSettings.dat
 /data/JMPlayerSettings1.dat
+/datapacks/tools
 /datapacks/develop/data/minecraft/tags/function/dev_on.json
 /datapacks/develop/mcdoc
 /datapacks/develop/data/dev/function/carpet
@@ -19,5 +20,6 @@
 /dimensions/minecraft/the_nether
 /players
 /mcdoc
+
 */.zcode/*
 **/.zcodeignore

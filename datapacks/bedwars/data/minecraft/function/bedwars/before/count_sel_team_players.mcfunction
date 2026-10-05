@@ -18,10 +18,10 @@ scoreboard players set 2 board 2
 scoreboard players operation bw.wait.perteammax tick = bw.wait.total tick
 scoreboard players operation bw.wait.perteammax2 tick = bw.wait.total tick
 ## 4 teams
-execute if score bw.mode state matches 0..3 run scoreboard players operation bw.wait.perteammax tick /= 4 board
-execute if score bw.mode state matches 0..3 run scoreboard players operation bw.wait.perteammax2 tick %= 4 board
+execute unless score bw.teamcount state matches 2 run scoreboard players operation bw.wait.perteammax tick /= 4 board
+execute unless score bw.teamcount state matches 2 run scoreboard players operation bw.wait.perteammax2 tick %= 4 board
 ## 2 teams
-execute if score bw.mode state matches 4..7 run scoreboard players operation bw.wait.perteammax tick /= 2 board
-execute if score bw.mode state matches 4..7 run scoreboard players operation bw.wait.perteammax2 tick %= 2 board
+execute if score bw.teamcount state matches 2 run scoreboard players operation bw.wait.perteammax tick /= 2 board
+execute if score bw.teamcount state matches 2 run scoreboard players operation bw.wait.perteammax2 tick %= 2 board
 ## Total
 execute unless score bw.wait.perteammax2 tick matches 0 run scoreboard players add bw.wait.perteammax tick 1

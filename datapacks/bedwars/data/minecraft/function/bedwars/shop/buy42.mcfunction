@@ -7,10 +7,9 @@ execute as @s at @s store result score @s bw.tmp.gd run clear @s gold_ingot 0
 execute as @s at @s store result score @s bw.tmp.em run clear @s emerald 0
 
 execute as @s at @s store result score @s bw.tmp.dm run clear @s diamond 0
-#-34
+# 商店② 海绵 -42：40 铁锭
 execute if score @s bw.tmp.ir matches 40.. run clear @s iron_ingot 40
-execute unless score @s bw.tmp.ir matches 40.. run tellraw @s ["§c你的资源不够买这个东西!"]
+execute unless score @s bw.tmp.ir matches 40.. run tellraw @s ["§c你的资源不够买这个东西！"]
 execute unless score @s bw.tmp.ir matches 40.. run playsound minecraft:entity.enderman.teleport player @s ~ ~ ~ 1 0 1
-execute if score @s bw.tmp.ir matches 40.. run tellraw @s ["§a你购买了§6海绵 * 1"]
-execute if score @s bw.tmp.ir matches 40.. run give @s sponge[can_place_on=[{blocks:"#minecraft:bwplace"}],tooltip_display={hidden_components:[can_place_on,can_break]},can_break=[{blocks:"#minecraft:bedblocks"}]]
-
+execute if score @s bw.tmp.ir matches 40.. run tellraw @s ["§a你购买了 §f海绵 §7× 1"]
+execute if score @s bw.tmp.ir matches 40.. run give @s sponge[item_name="海绵",can_place_on=[{blocks:"#minecraft:bwplace"}],tooltip_display={hidden_components:["minecraft:can_place_on","minecraft:can_break"]},can_break=[{blocks:"#minecraft:bedblocks"}]]

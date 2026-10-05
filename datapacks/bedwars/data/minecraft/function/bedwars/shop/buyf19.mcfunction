@@ -13,8 +13,8 @@ playsound minecraft:entity.enderman.teleport player @s[scores={bw.pickaxe=3..}] 
 tellraw @s[scores={bw.pickaxe=..1}] ["§c你需要先购买上一级镐子！"]
 playsound minecraft:entity.enderman.teleport player @s[scores={bw.pickaxe=..1}] ~ ~ ~ 1 0 1
 execute if score @s[scores={bw.pickaxe=2..2}] bw.tmp.gd matches 6.. run clear @s gold_ingot 6
-execute unless score @s[scores={bw.pickaxe=2..2}] bw.tmp.gd matches 6.. run tellraw @s ["§c你的资源不够买这个东西!"]
+execute unless score @s[scores={bw.pickaxe=2..2}] bw.tmp.gd matches 6.. run tellraw @s ["§c你的资源不够买这个东西！"]
 execute unless score @s[scores={bw.pickaxe=2..2}] bw.tmp.gd matches 6.. run playsound minecraft:entity.enderman.teleport player @s ~ ~ ~ 1 0 1
-execute if score @s[scores={bw.pickaxe=2..2}] bw.tmp.gd matches 6.. run tellraw @s ["§a你购买了§6永久的Pickaxe (III) (死亡降级)"]
+execute if score @s[scores={bw.pickaxe=2..2}] bw.tmp.gd matches 6.. run tellraw @s ["§a已解锁 §f钻石镐 §7（永久，死亡后降级）"]
 execute if score @s[scores={bw.pickaxe=2..2}] bw.tmp.gd matches 6.. run scoreboard players set @s bw.pickaxe 3
 

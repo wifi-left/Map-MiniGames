@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "\u00a76\u00a7l职业选择",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "\u00a77选定后立即生效，并收走这个道具；\u00a7f每次重生\u00a77只能选一次。"
+    }
+  ],
+  "actions": [
+    {
+      "label": "\u00a7c战士 \u00a77- 铁剑 \u00b7 金苹果 \u00d71",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger bw.class.pick set 1"
+      }
+    },
+    {
+      "label": "\u00a7a弓箭手 \u00a77- 普通弓 \u00b7 箭 \u00d724",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger bw.class.pick set 2"
+      }
+    },
+    {
+      "label": "\u00a7e建筑师 \u00a77- 羊毛 \u00d732 \u00b7 深色橡木木板 \u00d716 \u00b7 梯子 \u00d78",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger bw.class.pick set 3"
+      }
+    },
+    {
+      "label": "\u00a7b矿工 \u00a77- 铁镐 \u00b7 铁斧（临时） \u00b7 羊毛 \u00d78",
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger bw.class.pick set 4"
+      }
+    }
+  ],
+  "exit_action": {
+    "label": "\u00a77稍后再选"
+  },
+  "pause": false
+}

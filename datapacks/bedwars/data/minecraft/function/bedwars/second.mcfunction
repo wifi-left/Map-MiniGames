@@ -12,6 +12,31 @@ execute unless score bw.custom_team board matches 1 if score bw.state state matc
 
 execute as @e[tag=bw.tntsheep] at @s run function bedwars/item/sheepsecond
 
+## 救援平台：每秒递减，15 秒后自动收回
+execute as @e[tag=bw.pf] at @s run function minecraft:bedwars/item/platform_tick
+
+## 蠹虫：45 秒后回收
+execute as @e[tag=bw.bug] at @s run scoreboard players add @s board 1
+execute as @e[tag=bw.bug,scores={board=45..}] run kill @s
+
+## 铁傀儡守卫：每秒刷新索敌目标与寿命
+execute as @e[tag=bw.golem] at @s run function minecraft:bedwars/item/golem_second
+
+## 魔法牛奶 / 无敌卷轴：按秒递减
+execute as @a[scores={bw.milk.t=1..}] run scoreboard players remove @s bw.milk.t 1
+execute as @a[tag=bw.milk,scores={bw.milk.t=..0}] run function minecraft:bedwars/item/milk_end
+execute as @a[scores={bw.invul.t=1..}] run scoreboard players remove @s bw.invul.t 1
+execute as @a[tag=bw.invul,scores={bw.invul.t=..0}] run function minecraft:bedwars/item/invul_end
+
+## 僵尸潮（模式 6）
+execute if score bw.mode state matches 6 run function minecraft:bedwars/special/zombie_wave
+# 僵尸寿命 90 秒：比 2 分钟一波的间隔短，所以每波都会在下一波刷新前清干净
+execute as @e[tag=bw.zombie] at @s run scoreboard players add @s board 1
+execute as @e[tag=bw.zombie,scores={board=90..}] run kill @s
+
+## 永久床（模式 7）：行动栏显示剩余重生次数
+execute if score bw.mode state matches 7 run function minecraft:bedwars/special/lives_bar
+
 function minecraft:bedwars/buffs
 ## Death
 scoreboard players remove @a[tag=bw.fhing] player.board 1
@@ -27,6 +52,6 @@ recipe take @a[tag=bw.player] *
 function bedwars/shop/resetshop
 
 ## Events
-execute if score bw.state state matches 1..3 run function bedwars/events/eventsecond
+execute if score bw.state state matches 1.. run function bedwars/events/eventsecond
 
 fill -216 67 299 -392 72 121 air destroy

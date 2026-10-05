@@ -11,8 +11,8 @@ execute as @s at @s store result score @s bw.tmp.dm run clear @s diamond 0
 tellraw @s[scores={bw.armor=2..}] ["§c你已经购买过这个东西了！"]
 playsound minecraft:entity.enderman.teleport player @s[scores={bw.armor=2..}] ~ ~ ~ 1 0 1
 execute if score @s[scores={bw.armor=..1}] bw.tmp.gd matches 12.. run clear @s gold_ingot 12
-execute unless score @s[scores={bw.armor=..1}] bw.tmp.gd matches 12.. run tellraw @s ["§c你的资源不够买这个东西!"]
+execute unless score @s[scores={bw.armor=..1}] bw.tmp.gd matches 12.. run tellraw @s ["§c你的资源不够买这个东西！"]
 execute unless score @s[scores={bw.armor=..1}] bw.tmp.gd matches 12.. run playsound minecraft:entity.enderman.teleport player @s ~ ~ ~ 1 0 1
-execute if score @s[scores={bw.armor=..1}] bw.tmp.gd matches 12.. run tellraw @s ["§a你购买了§6永久的铁装备"]
+execute if score @s[scores={bw.armor=..1}] bw.tmp.gd matches 12.. run tellraw @s ["§a已解锁 §f铁套装 §7（永久）"]
 execute if score @s[scores={bw.armor=..1}] bw.tmp.gd matches 12.. run scoreboard players set @s bw.armor 2
 

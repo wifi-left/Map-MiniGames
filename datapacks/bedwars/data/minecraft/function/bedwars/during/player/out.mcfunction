@@ -16,3 +16,8 @@ tag @s remove bw.jump
 tag @s remove bw.fasti
 tag @s remove bw.fastii
 tag @s remove bw.shears
+tag @s remove bw.scrolling
+tag @s remove bw.milk
+tag @s remove bw.invul
+scoreboard players reset @s bw.milk.t
+scoreboard players reset @s bw.invul.t

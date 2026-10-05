@@ -31,6 +31,64 @@ scoreboard objectives add bw.tmp.ir dummy
 scoreboard objectives add bw.tmp.gd dummy
 scoreboard objectives add bw.tmp.dm dummy
 scoreboard objectives add bw.tmp.em dummy
+# 爆炸模拟（cmdtnt）：状态存在标记实体自身，同一刻多次爆炸互不干扰
+scoreboard objectives remove cmdtnt.x
+scoreboard objectives remove cmdtnt.y
+scoreboard objectives remove cmdtnt.range
+scoreboard objectives remove cmdtnt.go
+scoreboard objectives remove cmdtnt.age
+scoreboard objectives add cmdtnt.x dummy
+scoreboard objectives add cmdtnt.y dummy
+scoreboard objectives add cmdtnt.range dummy
+scoreboard objectives add cmdtnt.go dummy
+scoreboard objectives add cmdtnt.age dummy
+# 起床战争道具：回城卷轴 / 救援平台 / 速建防御塔（临时变量 + 道具自身状态）
+scoreboard objectives remove bw.tmp.ok
+scoreboard objectives remove bw.tmp.p
+scoreboard objectives remove bw.tmp.x
+scoreboard objectives remove bw.tmp.y
+scoreboard objectives remove bw.tmp.z
+scoreboard objectives add bw.tmp.ok dummy
+scoreboard objectives add bw.tmp.p dummy
+scoreboard objectives add bw.tmp.x dummy
+scoreboard objectives add bw.tmp.y dummy
+scoreboard objectives add bw.tmp.z dummy
+scoreboard objectives remove bw.scroll.t
+scoreboard objectives remove bw.scroll.x
+scoreboard objectives remove bw.scroll.y
+scoreboard objectives remove bw.scroll.z
+scoreboard objectives add bw.scroll.t dummy
+scoreboard objectives add bw.scroll.x dummy
+scoreboard objectives add bw.scroll.y dummy
+scoreboard objectives add bw.scroll.z dummy
+scoreboard objectives remove bw.pf.t
+scoreboard objectives add bw.pf.t dummy
+# 速建防御塔用「放下生物蛋」的统计来确认是谁放的（正常路径靠它，兜底见 item/tower_place_fallback）
+scoreboard objectives remove bw.tower.use
+scoreboard objectives add bw.tower.use minecraft.used:minecraft.zombie_spawn_egg
+# 铁傀儡守卫：同样用「放下生物蛋」的统计认放置者（兜底见 item/golem_owner）
+scoreboard objectives remove bw.golem.use
+scoreboard objectives add bw.golem.use minecraft.used:minecraft.iron_golem_spawn_egg
+# 蠹虫雪球：投掷雪球时触发（照搭桥蛋的 use.egg）
+scoreboard objectives remove use.snowball
+scoreboard objectives add use.snowball used:minecraft.snowball
+# 职业模式：「职业选择」道具走 consumable + 进度 minecraft:bedwars/class_select 触发
+#（右击空气时 minecraft.used:<物品> 统计不触发，所以不能用统计）
+# 对话框里的按钮用 /trigger 回传选择（1 战士 / 2 弓箭手 / 3 建筑师 / 4 矿工）
+scoreboard objectives remove bw.class.pick
+scoreboard objectives add bw.class.pick trigger "起床|职业选择"
+# 丢出「职业选择」道具时，靠这个统计找到是谁丢的
+scoreboard objectives remove bw.class.drop
+scoreboard objectives add bw.class.drop minecraft.dropped:minecraft.paper
+scoreboard objectives remove bw.class.tmp
+scoreboard objectives add bw.class.tmp dummy
+scoreboard objectives remove bw.class
+scoreboard objectives add bw.class dummy "起床|职业"
+# 魔法牛奶 / 无敌卷轴 的剩余秒数
+scoreboard objectives remove bw.milk.t
+scoreboard objectives add bw.milk.t dummy
+scoreboard objectives remove bw.invul.t
+scoreboard objectives add bw.invul.t dummy
 scoreboard objectives remove use.egg
 scoreboard objectives remove bw.team
 scoreboard objectives remove snow.tick
@@ -132,6 +190,9 @@ gamerule max_command_forks 1145141
 gamerule max_command_sequence_length 1145141
 
 scoreboard players reset * bw.board
+
+# 队伍数量开关（bw.teamcount state：2 = 两队，其它值 / 没设过 = 四队）
+# bw.mode state 现在直接用到 0..7，旧存档的 4..7 迁移已删除（否则新模式一 reload 就被冲掉）
 
 
 scoreboard players set GENERAL.dev_mode board 0

@@ -33,7 +33,6 @@ execute as @a[scores={bw.kill=1..}] if score @s bw.tmp.dm matches 1.. run tellra
 execute as @a[scores={bw.kill=1..}] if score @s bw.tmp.em matches 1.. run tellraw @s [{"text":"+ ","color":"dark_green"},{"score":{"objective":"bw.tmp.em","name":"@s"},"color":"dark_green"},{"text":" 绿宝石","color":"dark_green"}]
 
 execute if score bw.mode state matches 3 as @s at @s run function minecraft:bedwars/special/xp_loot
-execute if score bw.mode state matches 7 as @s at @s run function minecraft:bedwars/special/xp_loot
 
 execute as @a[scores={bw.kill=1..}] at @s run function bedwars/during/player/getitem
 # execute unless entity @a[scores={bw.kill=1..}] run function minecraft:bedwars/during/player/loot_spawn_item

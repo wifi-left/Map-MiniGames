@@ -9,8 +9,8 @@ execute as @s at @s store result score @s bw.tmp.dm run clear @s diamond 0
 tellraw @s[scores={bw.axe=1..}] ["§c你已经购买过这个东西了！"]
 playsound minecraft:entity.enderman.teleport player @s[scores={bw.axe=1..}] ~ ~ ~ 1 0 1
 execute if score @s[scores={bw.axe=..0}] xp matches 10.. run xp add @s -10 levels
-execute unless score @s[scores={bw.axe=..0}] xp matches 10.. run tellraw @s ["§c你的资源不够买这个东西!"]
+execute unless score @s[scores={bw.axe=..0}] xp matches 10.. run tellraw @s ["§c你的资源不够买这个东西！"]
 execute unless score @s[scores={bw.axe=..0}] xp matches 10.. run playsound minecraft:entity.enderman.teleport player @s ~ ~ ~ 1 0 1
-execute if score @s[scores={bw.axe=..0}] xp matches 10.. run tellraw @s ["§a你购买了§6永久的Axe (I)"]
+execute if score @s[scores={bw.axe=..0}] xp matches 10.. run tellraw @s ["§a已解锁 §f木斧 §7（永久）"]
 execute if score @s[scores={bw.axe=..0}] xp matches 10.. run scoreboard players set @s bw.axe 1
 
