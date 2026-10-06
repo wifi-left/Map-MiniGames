@@ -22,7 +22,7 @@ scoreboard players operation hotpot.map board = hotpot.map state
 execute if score hotpot.map board matches 0 store result score hotpot.map board run random value 1..3
 execute if score hotpot.map board matches ..1 as @a[team=wait.hotpot] run spreadplayers -83 -82 0 14 under 55 false @s
 execute if score hotpot.map board matches 2 as @a[team=wait.hotpot] run spreadplayers -72 -143 0 25 under 60 false @s
-execute if score hotpot.map board matches 3.. as @a[team=wait.hotpot] run tp @s -106 -46 -118.0 90 0
+execute if score hotpot.map board matches 3.. as @a[team=wait.hotpot] run tp @s -251 -57 -189 90 0
 
 execute as @a[team=wait.hotpot] at @s run playsound entity.player.levelup player @s ~ ~ ~ 1 1 1
 team join play.hotpot @a[team=wait.hotpot]

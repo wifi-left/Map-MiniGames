@@ -8,6 +8,7 @@ execute as @a[team=play.hotpot.k,gamemode=adventure] run scoreboard players add 
 
 execute if score play.hotpot.player tick matches ..1 run function minecraft:hotpotever/over
 effect give @a[team=play.hotpot] resistance 2 25 true
+effect give @a[team=play.hotpot] night_vision 2 25 true
 
 effect give @a[team=play.hotpot] minecraft:water_breathing 2 25 true
 effect give @a[team=play.hotpot] minecraft:fire_resistance 2 25 true
