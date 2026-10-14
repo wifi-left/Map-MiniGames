@@ -1,7 +1,7 @@
 tellraw @s ["\n\u00a7c你成功完成了目标。\n"]
 scoreboard players set game.leftplayer temp 0
-scoreboard players operation game.leftplayer.show temp = game.leftplayer temp
 execute as @a[team=firstoutwins,gamemode=spectator,tag=firstoutwins.win] run scoreboard players add game.leftplayer temp 1
+scoreboard players operation game.leftplayer.show temp = game.leftplayer temp
 
 scoreboard players add game.leftplayer.show temp 1
 title @s subtitle {translate:"你是第 %s 名",with:[{score:{name:"game.leftplayer.show",objective:temp},color:gold}]}

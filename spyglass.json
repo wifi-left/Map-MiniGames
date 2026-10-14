@@ -33,6 +33,7 @@
         ]
     },
     "env": {
-        "gameVersion": "26.3"
+        "gameVersion": "26.3",
+        "enableMcdocCaching": true
     }
 }
