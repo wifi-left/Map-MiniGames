@@ -8,9 +8,9 @@ function bedwars/during/player/onlytpspawn
 # -305 30 265
 # -251 30 211
 # -305 30 157
-
+effect give @s resistance 3 25 true
 title @s clear
-tellraw @s ["§e你已经重生！"]
+tellraw @s ["§e你已经重生！你拥有 \u00a7c3s\u00a7e 出生保护时间。"]
 tag @s remove bw.fhing
 tag @s remove bw.scrolling
 gamemode adventure @s

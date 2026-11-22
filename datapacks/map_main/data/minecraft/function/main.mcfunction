@@ -189,6 +189,9 @@ execute in overworld positioned -376 54 624 as @a[gamemode=adventure,distance=..
 execute if score boom.state state matches 1.. run function minecraft:bomb/tick
 
 execute if entity @a[tag=bw.player] run function minecraft:bedwars/tick
+# 避免以前的状态不结束游戏
+execute unless entity @a[tag=bw.player] unless score bw.state state matches 0 run function minecraft:bedwars/tick
+
 execute if entity @a[tag=parkouring,team=lobby] run function minecraft:npark/tick
 execute if entity @a[team=parkour] run function minecraft:lpark/tick
 execute if entity @a[tag=mazing,team=lobby] run function minecraft:maze/tick
