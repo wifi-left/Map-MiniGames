@@ -2,7 +2,7 @@
 ## Datapack Upgrader v1.0.2 by wifi_left
 ## If you encounter a problem, make an issue on https://github.com/wifi-left/Datapack-Upgrader
 ## 
-function bedwars/during/player/onlytpspawn
+execute unless function bedwars/during/player/onlytpspawn run return run tellraw @s "\n\u00a78[你已离开起床战争，已取消复活]\n"
 
 # -359 30 210
 # -305 30 265

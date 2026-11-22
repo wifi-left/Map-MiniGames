@@ -25,3 +25,8 @@ execute if score bw.mode board matches 7 run tp @s[team=bw.yellow] -382 17 152 -
 execute if score bw.mode board matches 7 run tp @s[team=bw.blue] -382 17 268 -90 0
 execute if score bw.mode board matches 7 run tp @s[team=bw.green] -226 17 268 90 0
 execute if score bw.mode board matches 7 run tp @s[team=bw.red] -226 17 152 90 0
+
+execute if entity @s[team=bw.yellow] run return 1
+execute if entity @s[team=bw.blue] run return 1
+execute if entity @s[team=bw.green] run return 1
+execute if entity @s[team=bw.red] run return 1

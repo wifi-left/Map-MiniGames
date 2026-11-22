@@ -22,6 +22,8 @@ tag @a[team=bw.wait] add bw.player
 
 
 execute if entity @a[tag=bw.player] run function minecraft:bedwars/second
+execute unless entity @a[tag=bw.player] unless score bw.state state matches 0 run function minecraft:bedwars/second
+
 execute if entity @a[tag=parkouring,team=lobby] run function minecraft:npark/second
 execute if entity @a[team=parkour] run function minecraft:lpark/second
 execute if entity @a[tag=mazing,team=lobby] run function minecraft:maze/second
